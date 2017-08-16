@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog - machinelearning</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/machinelearning.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-03-30T00:00:00+08:00</updated><entry><title>Read .mat Files in Python</title><link href="http://synckey.name/posts/2017/03/30/read-mat-files-in-python.html" rel="alternate"></link><published>2017-03-30T00:00:00+08:00</published><updated>2017-03-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-30:/posts/2017/03/30/read-mat-files-in-python.html</id><summary type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.io&lt;/span&gt;
+&lt;span class="n"&gt;mat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loadmat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'file.mat'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Enjoy^_^&lt;/p&gt;
+&lt;h4&gt;Reference&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.io&lt;/span&gt;
+&lt;span class="n"&gt;mat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loadmat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'file.mat'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Enjoy^_^&lt;/p&gt;
+&lt;h4&gt;Reference&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>《概率论》复习笔记</title><link href="http://synckey.name/posts/2017/02/20/review-of-probability.html" rel="alternate"></link><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-20:/posts/2017/02/20/review-of-probability.html</id><summary type="html">&lt;h4&gt;1. 随机事件和概率&lt;/h4&gt;
+&lt;h5&gt;1.1全概率公式&lt;/h5&gt;
+&lt;p&gt;设事件 $A_1,A_2,\cdots,A_n$ 两两互不相容，$P(A_i)&amp;gt;0(i=1,2,\cdots,n)$，且$\sum\limits_{i=1}^{n}{A_i}=\Omega$，
+则对任一事件$B$，有
+$$
+P(B)=\sum_{i=1}^{n}{P(A_i)\cdot P{(B|A_i)}}.
+$$
+满足公式中的$A_1,A_2,\cdots,A_n$  叫&lt;strong&gt;完备事件组&lt;/strong&gt;。&lt;/p&gt;
+&lt;h5&gt;1.2贝叶斯公式 …&lt;/h5&gt;</summary><content type="html">&lt;h4&gt;1. 随机事件和概率&lt;/h4&gt;
+&lt;h5&gt;1.1全概率公式&lt;/h5&gt;
+&lt;p&gt;设事件 $A_1,A_2,\cdots,A_n$ 两两互不相容，$P(A_i)&amp;gt;0(i=1,2,\cdots,n)$，且$\sum\limits_{i=1}^{n}{A_i}=\Omega$，
+则对任一事件$B$，有
+$$
+P(B)=\sum_{i=1}^{n}{P(A_i)\cdot P{(B|A_i)}}.
+$$
+满足公式中的$A_1,A_2,\cdots,A_n$  叫&lt;strong&gt;完备事件组&lt;/strong&gt;。&lt;/p&gt;
+&lt;h5&gt;1.2贝叶斯公式&lt;/h5&gt;
+&lt;p&gt;设事件 $A_1,A_2,\cdots,A_n$ 构成完备事件组，则对任一事件 $B(P(B)&amp;gt;0)$，有
+$$
+  P(A_k|B)=\frac{P(A_k)P(B|A_k)}{\sum_{i=1}^{n}{P(A_i)P(B|A_i)}}   {   (k=1,2,\cdots,n)}.
+$$&lt;/p&gt;
+&lt;h5&gt;1.3伯努利概型&lt;/h5&gt;
+&lt;p&gt;若实验$E$ 只有两种可能的结果：$A$ 及$\overline{A}$，记$P(A)=p,P(\overline{A})=1-p=q$，这种实验称为&lt;strong&gt;伯努利(Bernoulli)实验&lt;/strong&gt;。 若将实验$E$ 重复$n$ 次，且每次实验结果互不影响（相互独立），则称为 &lt;strong&gt;n重伯努利实验&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;设每次实验中，事件$A$发生的概率为$p(0&amp;lt;p&amp;lt;1)$，则在 $n$ 次 重复独立实验中，$A$ 发生$k$次的概率为:
+$$
+P_n(k)=C_n^kp^k(1-p)^{n-k},k=0,1,2,\cdots,n.
+$$&lt;/p&gt;
+&lt;h4&gt;2.随机变量及其分布&lt;/h4&gt;
+&lt;p&gt;设实验$E$的样本空间为$\Omega$，如果对每一个样本点$\omega\in\Omega$，都有唯一实数 $X(\omega)$与之对应，称$X=X(\omega)$为样本空间$\Omega$上的&lt;strong&gt;随机变量&lt;/strong&gt;。
+对于随机变量，一般分两类进行讨论，如果随机变量的取值只有有限个活无限可列个数值，则称这种随机变量为&lt;strong&gt;离散型随机变量&lt;/strong&gt;。其余的统称为非离散型随机变量，在非离散型随机变量中，最重要的是&lt;strong&gt;连续型随机变量&lt;/strong&gt;。&lt;/p&gt;
+&lt;h5&gt;2.1离散型随机变量及其分布&lt;/h5&gt;
+&lt;h6&gt;超几何分布&lt;/h6&gt;
+&lt;p&gt;一般来说，在总共$N$ 件产品中，其中有$M$件次品，先从中任取$n$件（不放回地抽取），则这$n$件中所含的次品数$X$是一个离散随机变量，其概率分布为：
+$$
+P(X=k)=\frac{C_M^kC_{N-M}^{n-k}}{C_N^n},k=0,1,2,\cdots,l
+$$
+其中$l=min(M,n)$。通常称这个概率分布为&lt;strong&gt;超几何分布&lt;/strong&gt;。&lt;/p&gt;
+&lt;h6&gt;两点分布&lt;/h6&gt;
+&lt;p&gt;在&lt;strong&gt;一次&lt;/strong&gt;伯努利实验中， 只有两个可能的结果，$A$或者$\overline{A}$，并且$P(A)=p,P((\overline{A}))=q=1-p$，若以$X$记事件$A$出现的次数，则$X$的分布列为:
+$$
+\begin{array}{c|cc}
+X &amp;amp; 0 &amp;amp; 1   \\
+\hline
+P &amp;amp; q &amp;amp; p   \\
+\end{array}
+$$
+即，$P(X=k)=p^kq^{1-k},k=0,1$，称$X$服从&lt;strong&gt;两点分布&lt;/strong&gt;。&lt;/p&gt;
+&lt;h6&gt;二项分布&lt;/h6&gt;
+&lt;p&gt;在$n$重伯努利实验中，若事件$A$出现的次数记为$X$，则随机变量$X$可能的取值是$0,1,2,\cdots,n$,相应概率分布为
+$$
+P(X=k)=C_n^kp^kq^{n-k},k=0,1,2,\cdots,n.
+$$
+式中$0&amp;lt;p&amp;lt;1,q=1-p$。称$X$服从参数为$n，p$ 的二项分布，记作$X\sim B(n,p)$。$(n+1)p$称为二项分布$B(n,p)$ 的&lt;strong&gt;最可能出现次数&lt;/strong&gt;。&lt;/p&gt;
+&lt;h6&gt;泊松定理&lt;/h6&gt;
+&lt;p&gt;设随即变量$X_n(n=1,2,\cdots,n)$服从参数$n,p_n$的二项分布，若$\mathop{lim}\limits_{n\to\infty}np_n=\lambda$，则有
+$$
+\lim_{n\to\infty}P(X_n=k)=\frac{\lambda ^ k}{k!}e^{-\lambda}
+$$
+根据泊松定理，当$n$较大而$p$较小是，有如下近似公式成立:
+$$
+C_n^kp^k(1-p)^{n-k}\approx\frac{\lambda ^ k}{k!}e^{-\lambda},\lambda=np.
+$$&lt;/p&gt;
+&lt;p&gt;在实际应用中，当$n&amp;gt;10,p&amp;lt;0.1$时，可以用上式近似计算二项分布的概率。&lt;/p&gt;
+&lt;h6&gt;泊松分布&lt;/h6&gt;
+&lt;p&gt;如果随即变量X的概率分布为
+$$
+P(X_n=k)=\frac{\lambda ^ k}{k!}e^{-\lambda},k=0,1,2,\cdots .
+$$
+式中$\lambda&amp;gt;0$是常数，则称$X$服从以$\lambda$为参数的泊松分布，记作$X\sim P(\lambda)$。&lt;/p&gt;
+&lt;h5&gt;References&lt;/h5&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.cn/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E6%95%99%E7%A8%8B-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/dp/B005EV51AO/ref=sr_1_1?ie=UTF8&amp;amp;qid=1487571721&amp;amp;sr=8-1&amp;amp;keywords=%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1+%E5%88%98%E5%BB%BA%E4%BA%9A"&gt;《概率论与数理统计》&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>Summary Concepts of Deep Learning</title><link href="http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html" rel="alternate"></link><published>2016-03-01T00:00:00+08:00</published><updated>2016-03-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-01:/posts/2016/03/01/summary-concepts-of-deep-learning.html</id><summary type="html">&lt;h2&gt;机器学习&lt;/h2&gt;
+&lt;p&gt;input-&amp;gt;feature representation-&amp;gt;learning algorithm&lt;/p&gt;
+&lt;h3&gt;监督学习&lt;/h3&gt;
+&lt;p&gt;标注过的训练数据.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;标注成本高&lt;/li&gt;
+&lt;li&gt;数据稀疏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;非监督学习&lt;/h3&gt;
+&lt;p&gt;未标注的数据,让算法自己决定学到什么.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据量大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;features&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;特征的表示对机器学习性能有巨大的影响.&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;人工特征筛选,处理,需要非常精细的调整和专业知识.&lt;/li&gt;
+&lt;li&gt;在很多任务中,很难知道哪些特征需要被抽取出来.例如,想要识别图像中的汽车,我们知道骑车都有轮子,所以我们可能会将轮子当做一个特征,但是实际上很难精确的描述什么是轮子.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;神经网络&lt;/h2&gt;
+&lt;h3&gt;Neurons&lt;/h3&gt;
+&lt;p&gt;&lt;p align="center"&gt;
+&lt;img alt="SingleNeuron" class="img-responsive" src="/static/images/SingleNeuron.png" width="40%"/&gt;
+&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;机器学习&lt;/h2&gt;
+&lt;p&gt;input-&amp;gt;feature representation-&amp;gt;learning algorithm&lt;/p&gt;
+&lt;h3&gt;监督学习&lt;/h3&gt;
+&lt;p&gt;标注过的训练数据.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;标注成本高&lt;/li&gt;
+&lt;li&gt;数据稀疏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;非监督学习&lt;/h3&gt;
+&lt;p&gt;未标注的数据,让算法自己决定学到什么.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据量大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;features&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;特征的表示对机器学习性能有巨大的影响.&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;人工特征筛选,处理,需要非常精细的调整和专业知识.&lt;/li&gt;
+&lt;li&gt;在很多任务中,很难知道哪些特征需要被抽取出来.例如,想要识别图像中的汽车,我们知道骑车都有轮子,所以我们可能会将轮子当做一个特征,但是实际上很难精确的描述什么是轮子.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;神经网络&lt;/h2&gt;
+&lt;h3&gt;Neurons&lt;/h3&gt;
+&lt;p&gt;&lt;p align="center"&gt;
+&lt;img alt="SingleNeuron" class="img-responsive" src="/static/images/SingleNeuron.png" width="40%"/&gt;
+&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f(\sum_{i=1}^{3}(W_ix_i+b)$为输出的计算单元.
+其中$f:\mathbb{R}\mapsto\mathbb{R}$,被称为激活函数(activation function).常用的激活函数有:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;sigmoid function:$f(z) = \frac{1}{1+\exp(-z)}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;tanh function:$f(z) = \tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rectified linear function: $f(z) = \max(0,x)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这些函数的形状如下:
+&lt;p align="center"&gt;
+&lt;img alt="ActivationFunctions" class="img-responsive" src="/static/images/ActivationFunctions.png" width="50%"/&gt;
+&lt;/p&gt;&lt;/p&gt;
+&lt;h3&gt;神经网络模型&lt;/h3&gt;
+&lt;p&gt;将一系列&lt;strong&gt;神经元&lt;/strong&gt;组合在一起,就构成一个神经网络,一个神经元的输出可以作为另外一个神经元的输入.例如,下图是一个简单的神经网络:
+&lt;p align="center"&gt;
+&lt;img alt="neualNetwork" class="img-responsive" src="/static/images/Network331.png" width="50%"/&gt;
+&lt;/p&gt;
+在这个示意图中,黄色的圆圈代表神经元,蓝色的圆圈代表整个神经网络的输入.被标为$+1$的圆圈称作&lt;strong&gt;bias unit&lt;/strong&gt;,代表&lt;strong&gt;截距项&lt;/strong&gt;(intercept term).
+网络最左边的层叫做&lt;strong&gt;输入层&lt;/strong&gt;(input layer),最右边叫做&lt;strong&gt;输出层&lt;/strong&gt;(output layer).中间所有的节点组成的层叫做&lt;strong&gt;隐藏层&lt;/strong&gt;(hidden layer),因为我们不能在训练样本里面观察到它的值.&lt;/p&gt;
+&lt;p&gt;神经网络也可以有多个输出单元,比如,下面的神经网络有两个隐藏曾,$L_2$和$L_3$,输出层$L_4$有两个输出单元:
+&lt;p align="center"&gt;
+&lt;img alt="MultiOutputNetwork" class="img-responsive" src="/static/images/MultiOutputNetwork.png" width="50%"/&gt;
+&lt;/p&gt;
+如果你的任务是预测多个输出,这种神经网络很适用.&lt;/p&gt;
+&lt;h4&gt;向前传播&lt;/h4&gt;
+&lt;p&gt;每层每个节点的计算方法:
+$$
+\begin{eqnarray*}
+a_1^{(2)} &amp;amp;=&amp;amp; f(W_{11}^{(1)}x_1 + W_{12}^{(1)} x_2 + W_{13}^{(1)} x_3 + b_1^{(1)})  \\
+a_2^{(2)} &amp;amp;=&amp;amp; f(W_{21}^{(1)}x_1 + W_{22}^{(1)} x_2 + W_{23}^{(1)} x_3 + b_2^{(1)})  \\
+a_3^{(2)} &amp;amp;=&amp;amp; f(W_{31}^{(1)}x_1 + W_{32}^{(1)} x_2 + W_{33}^{(1)} x_3 + b_3^{(1)})  \\
+h_{W,b}(x) &amp;amp;=&amp;amp; a_1^{(3)} =  f(W_{11}^{(2)}a_1^{(2)} + W_{12}^{(2)} a_2^{(2)} + W_{13}^{(2)} a_3^{(2)} + b_1^{(2)}) 
+\end{eqnarray*}
+$$&lt;/p&gt;
+&lt;p&gt;我们用$z_i^{(l)}$ 表示第 $l$ 层第 $i$ 单元输入加权和（包括偏置单元），比如，$z_i^{(2)} = \sum_{j=1}^nW^{(1)}_{ij} x_j + b^{(1)}_i$,则 $a^{(l)}_i = f(z^{(l)}_i) $。
+这样就可以得到一种更简洁的表示法。这里我们将激活函数 $ f(\cdot) $ 扩展为用向量（分量的形式）来表示，即 $ f([z_1, z_2, z_3]) = [f(z_1), f(z_2), f(z_3)]$ ，那么，上面的等式可以更简洁地表示为：
+$$
+\begin{eqnarray*}
+z^{(2)} &amp;amp;=&amp;amp; W^{(1)} x + b^{(1)} \\
+a^{(2)} &amp;amp;=&amp;amp; f(z^{(2)}) \\
+z^{(3)} &amp;amp;=&amp;amp; W^{(2)} a^{(2)} + b^{(2)} \\
+h_{W,b}(x) &amp;amp;=&amp;amp; a^{(3)} = f(z^{(3)})
+\end{eqnarray*}
+$$
+我们将上面的计算步骤叫作&lt;strong&gt;前向传播&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4&gt;向后传播&lt;/h4&gt;
+&lt;p&gt;假设我们有一个固定样本集 ${ (x^{(1)}, y^{(1)}), \ldots, (x^{(m)}, y^{(m)}) }$，它包含$m$ 个样例。我们可以用批量梯度下降法来求解神经网络。具体来讲，对于单个样例 $(x,y)$，其代价函数为：
+$$
+\begin{align}
+J(W,b; x,y) = \frac{1}{2} \left| h_{W,b}(x) - y \right|^2.
+\end{align}
+$$
+这是一个（二分之一的）方差代价函数。给定一个包含  $m$ 个样例的数据集，我们可以定义整体代价函数为：&lt;/p&gt;
+&lt;p&gt;$$
+\begin{align}
+J(W,b)
+&amp;amp;= \left[ \frac{1}{m} \sum_{i=1}^m J(W,b;x^{(i)},y^{(i)}) \right]
+                       + \frac{\lambda}{2} \sum_{l=1}^{n_l-1} \; \sum_{i=1}^{s_l} \; \sum_{j=1}^{s_{l+1}} \left( W^{(l)}_{ji} \right)^2 \\
+&amp;amp;= \left[ \frac{1}{m} \sum_{i=1}^m \left( \frac{1}{2} \left| h_{W,b}(x^{(i)}) - y^{(i)} \right|^2 \right) \right]
+                       + \frac{\lambda}{2} \sum_{l=1}^{n_l-1} \; \sum_{i=1}^{s_l} \; \sum_{j=1}^{s_{l+1}} \left( W^{(l)}_{ji} \right)^2
+\end{align}
+$$&lt;/p&gt;
+&lt;p&gt;以上公式中的第一项 $J(W,b)$是一个均方差项。第二项是一个规则化项（也叫权重衰减项），其目的是减小权重的幅度，防止过度拟合。&lt;/p&gt;
+&lt;p&gt;我们的目标是针对参数 $W$和 $b$ 来求其函数 $J(W,b)$ 的最小值。为了求解神经网络，我们需要将每一个参数 $W^{(l)}_{ij}$ 和 $b^{(l)}_i$ 初始化为一个很小的、接近零的随机值（比如说，使用正态分布 $ {Normal}(0,\epsilon^2)$ 生成的随机值，其中 $\epsilon$ 设置为 $0.01$），之后对目标函数使用诸如批量梯度下降法的最优化算法。因为$J(W, b)$ 是一个非凸函数，梯度下降法很可能会收敛到局部最优解；但是在实际应用中，梯度下降法通常能得到令人满意的结果。最后，需要再次强调的是，要将参数进行随机初始化，而不是全部置为$0$。如果所有参数都用相同的值作为初始值，那么所有隐藏层单元最终会得到与输入值有关的、相同的函数（也就是说，对于所有$ i$，$W^{(1)}_{ij}$都会取相同的值，那么对于任何输入$x$ 都会有：$a^{(2)}_1 = a^{(2)}_2 = a^{(2)}_3 = \ldots ）$。随机初始化的目的是使对称失效。
+梯度下降法中每一次迭代都按照如下公式对参数 $W$ 和$b$ 进行更新：
+$$
+\begin{align}
+W_{ij}^{(l)} &amp;amp;= W_{ij}^{(l)} - \alpha \frac{\partial}{\partial W_{ij}^{(l)}} J(W,b) \\
+b_{i}^{(l)} &amp;amp;= b_{i}^{(l)} - \alpha \frac{\partial}{\partial b_{i}^{(l)}} J(W,b)
+\end{align}
+$$
+其中$\alpha$是学习速率。其中关键步骤是计算偏导数。我们现在来讲一下反&lt;strong&gt;向传播算法&lt;/strong&gt;，它是计算偏导数的一种有效方法。&lt;/p&gt;
+&lt;p&gt;反向传播算法的思路如下：给定一个样例 $(x,y)$，我们首先进行“前向传导”运算，计算出网络中所有的激活值，包括$h_{W,b}(x)$ 的输出值。之后，针对第$l$ 层的每一个节点$i$，我们计算出其“残差”$\delta^{(l)}_i$，该残差表明了该节点对最终输出值的残差产生了多少影响。对于最终的输出节点，我们可以直接算出网络产生的激活值与实际值之间的差距，我们将这个差距定义为$\delta^{(n_l)}_i$ （第$ n_l$ 层表示输出层）。对于隐藏单元我们如何处理呢？我们将基于节点残差的加权平均值计算$\delta^{(l)}_i$，这些节点以$a^{(l)}_i$ 作为输入。下面是反向传导算法的细节&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;进行前馈传导计算，利用前向传导公式，得到 $ L_2, L_3, \ldots$  直到输出层 $L_{n_l}$ 的激活值。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对于第$n_l$层（输出层）的每个输出单元$i$，我们根据以下公式计算残差：
+$$
+\begin{align}
+\delta^{(n_l)}_i
+= \frac{\partial}{\partial z^{(n_l)}_i} \;\;
+        \frac{1}{2} \left|y - h_{W,b}(x)\right|^2 = - (y_i - a^{(n_l)}_i) \cdot f'(z^{(n_l)}_i)
+\end{align}
+$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对 $l = n_l-1, n_l-2, n_l-3, \ldots, 2$ 的各个层，第$l$ 层的第$i$个节点的残差计算方法如下：
+$$ \delta^{(l)}_i = \left( \sum_{j=1}^{s_{l+1}} W^{(l)}_{ji} \delta^{(l+1)}_j \right) f'(z^{(l)}_i)$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;计算我们需要的偏导数，计算方法如下:
+$$
+\begin{align}
+\frac{\partial}{\partial W_{ij}^{(l)}} J(W,b; x, y) &amp;amp;= a^{(l)}_j \delta_i^{(l+1)} \\
+\frac{\partial}{\partial b_{i}^{(l)}} J(W,b; x, y) &amp;amp;= \delta_i^{(l+1)}
+\end{align}
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;可以用矩阵-向量表示法重写以上算法。我们使用"$\bullet$" 表示向量乘积运算符。若 $a = b \bullet c$，则$a_i = b_ic_i$。反向传播算法可表示为以下几个步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;进行前馈传导计算，利用前向传导公式，得到$L_2, L_3, \ldots$直到输出层$L_{n_l}$ 的激活值。&lt;/li&gt;
+&lt;li&gt;对输出层（第$n_l$ 层），计算：
+$$
+\begin{align}
+\delta^{(n_l)}
+= - (y - a^{(n_l)}) \bullet f'(z^{(n_l)})
+\end{align}
+$$&lt;/li&gt;
+&lt;li&gt;对于 $l = n_l-1, n_l-2, n_l-3, \ldots, 2$ 的各层，计算:
+$$
+\begin{align}
+\delta^{(l)} = \left((W^{(l)})^T \delta^{(l+1)}\right) \bullet f'(z^{(l)})
+\end{align}
+$$&lt;/li&gt;
+&lt;li&gt;计算最终需要的偏导数值：
+$$
+\begin{align}
+\nabla_{W^{(l)}} J(W,b;x,y) &amp;amp;= \delta^{(l+1)} (a^{(l)})^T, \\
+\nabla_{b^{(l)}} J(W,b;x,y) &amp;amp;= \delta^{(l+1)}.
+\end{align}
+$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;批量梯度下降法中的一次迭代步骤如下:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;对于所有$l$，令$\Delta W^{(l)} := 0$ ,$ \Delta b^{(l)} := 0$ （设置为全零矩阵或全零向量）&lt;/li&gt;
+&lt;li&gt;对于$i = 1 $到$m$，&lt;ul&gt;
+&lt;li&gt;使用反向传播算法计算$\nabla_{W^{(l)}} J(W,b;x,y)$ 和$\nabla_{b^{(l)}} J(W,b;x,y)$。&lt;/li&gt;
+&lt;li&gt;计算$\Delta W^{(l)} := \Delta W^{(l)} + \nabla_{W^{(l)}} J(W,b;x,y)$。&lt;/li&gt;
+&lt;li&gt;计算$\Delta b^{(l)} := \Delta b^{(l)} + \nabla_{b^{(l)}} J(W,b;x,y)$。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;更新权重参数：
+$$
+\begin{align}
+W^{(l)} &amp;amp;= W^{(l)} - \alpha \left[ \left(\frac{1}{m} \Delta W^{(l)} \right) + \lambda W^{(l)}\right] \\
+b^{(l)} &amp;amp;= b^{(l)} - \alpha \left[\frac{1}{m} \Delta b^{(l)}\right]
+\end{align}
+$$
+重复梯度下降法的迭代步骤来减小代价函数$J(W,b)$的值，进而求解神经网络。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;神经网络的问题&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;比较容易过拟合,参数难调.&lt;/li&gt;
+&lt;li&gt;训练速度比较慢,在层次比较少的情况下,并不比其他方法更优.&lt;/li&gt;
+&lt;li&gt;随着网络的深度增加,反向传播的梯度（从输出层到网络的最初几层）的幅度会急剧的减小.这样,当使用梯度下降发的时候,最初的基层的权重变化非常缓慢,以至于他们不能够从样本中有效的学习,这种问题通常被称为&lt;code&gt;梯度的弥散(gradient diffusion)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Deep Learning&lt;/h2&gt;
+&lt;h3&gt;深度学习的基本思想&lt;/h3&gt;
+&lt;h4&gt;自编码器(Autoencoders)&lt;/h4&gt;
+&lt;p&gt;假设我们只有一个没有带类别标签的训练样本集合 ${x^{(1)}, x^{(2)}, x^{(3)}, \ldots}$ ，其中$x^{(i)} \in \Re^{n}$ 。自编码神经网络是一种无监督学习算法，它使用了反向传播算法，并让目标值等于输入值，比如 $y^{(i)} = x^{(i)}$ 。下图是一个自编码神经网络的示例。
+&lt;p align="center"&gt;
+&lt;img alt="Autoencoder636" class="img-responsive" src="/static/images/Autoencoder.png" width="50%"/&gt;
+&lt;/p&gt;
+自编码神经网络尝试学习一个$ h_{W,b}(x) \approx x$ 的函数,它尝试逼近一个恒等函数，从而使得输出 $\hat{x}$ 接近于输入$x$.自编码神经网络的意义在于:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;当我们限制隐藏神经元的数量让它小于输入的神经元个数,就可以得到输入的压缩表示(数据降维).&lt;/li&gt;
+&lt;li&gt;即使隐藏神经单元的个数比输入的神经元个数多,对自编码神经网络施加一些其他的限制条件也可以发现输入数据中的结构,比如,如果给隐藏神经元加入稀疏性限制，那么自编码神经网络即使在隐藏神经元数量较多的情况下仍然可以发现输入数据中一些有趣的结构。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在含有多个隐藏层的自编码神经网络中,每更高一层的隐层都是对低一层的更高阶的抽象.例如,当处理对象是图像时,可以用深度网络学习到"部分-整体"的关系.例如，第一层可以学习如何将图像中的像素组合在一起来检测边缘（正如我们在前面的练习中做的那样）。第二层可以将边缘组合起来检测更长的轮廓或者简单的“目标的部件”。在更深的层次上，可以将这些轮廓进一步组合起来以检测更为复杂的特征。&lt;/p&gt;
+&lt;h4&gt;基本原理&lt;/h4&gt;
+&lt;p&gt;深度学习的过程可以分为两步:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;预训练:首先使用大量的未标注数据训练一个自编码器,这个自编码器能够从数据中学习到数据的最显著特征.&lt;/li&gt;
+&lt;li&gt;微调:再使用已标注数据对训练好的数据进行有监督学习(微调),从而得到最终想要的结果(这一步使用反向传播算法).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;逐层训练方法&lt;/h4&gt;
+&lt;p&gt;与神经网络使用反向训练的方法不同,神经网络使用逐层贪婪训练方法训练模型.主要思路是每次只训练网络中的一层，即我们首先训练一个只含一个隐藏层的网络，仅当这层网络训练结束之后才开始训练一个有两个隐藏层的网络，以此类推。在每一步中，把已经训练好的前$k-1$ 层固定，然后增加第$k$层（也就是将已经训练好的前$k-1$ 的输出作为输入）。每一层的训练可以是有监督的（例如，将每一步的分类误差作为目标函数），但更通常使用无监督方法(例如自动编码器).&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;img alt="DeepLearningFeautures" class="img-responsive" src="/static/images/deeplearningfeatures.png" width="60%"/&gt;
+&lt;/p&gt;
+&lt;h3&gt;深度学习的应用&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;图像识别&lt;/li&gt;
+&lt;li&gt;语音识别&lt;/li&gt;
+&lt;li&gt;nlp&lt;/li&gt;
+&lt;li&gt;其他&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://blog.csdn.net/zouxy09/article/details/8775518"&gt;Deep Learning（深度学习）学习笔记整理系列&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.deeplearningbook.org/"&gt;Deep Learning&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ufldl.stanford.edu/tutorial/"&gt;Deep Learning Tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B"&gt;http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category></entry><entry><title>Plot Sigmoid in Matlab</title><link href="http://synckey.name/posts/2015/12/24/plot-sigmoid-in-matlab.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/plot-sigmoid-in-matlab.html</id><summary type="html">&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;0.1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;.*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)];&lt;/span&gt;
+&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;grid&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;p align="center"&gt;
+&lt;img alt="sigmoid" class="img-responsive" src="/static/images/sigmoid.svg" width="50%"/&gt;
+&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;0.1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;.*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)];&lt;/span&gt;
+&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;grid&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;p align="center"&gt;
+&lt;img alt="sigmoid" class="img-responsive" src="/static/images/sigmoid.svg" width="50%"/&gt;
+&lt;/p&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>Where does sigmoid come from</title><link href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/where-does-sigmoid-come-from.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;主要根据Andrew Ng的教学讲义整理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
+&lt;p align="center"&gt;
+&lt;img alt="sigmoid" class="img-responsive" src="/static/images/sigmoid.svg" width="60%"/&gt;
+&lt;/p&gt;
+书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。&lt;/p&gt;
+&lt;h3&gt;1.逻辑回归的建模&lt;/h3&gt;
+&lt;p&gt;首先从逻辑回归($Logistic$ $Regression$)的基本假设说起。在二分类中，我们假设 $y \in \lbrace0,1\rbrace$,在给定 $x$ 的情况下，很自然
+就想到使用 $Bernoulli$ 对 $y$ 的条件分布进行建模。$Bernoulli$
+分布可以认为是二项分布一个特例($n=1$)，其结果只能取$0$或1。假设实验成功的概率为$p$,则$Bernoulli …&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;p&gt;主要根据Andrew Ng的教学讲义整理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
+&lt;p align="center"&gt;
+&lt;img alt="sigmoid" class="img-responsive" src="/static/images/sigmoid.svg" width="60%"/&gt;
+&lt;/p&gt;
+书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。&lt;/p&gt;
+&lt;h3&gt;1.逻辑回归的建模&lt;/h3&gt;
+&lt;p&gt;首先从逻辑回归($Logistic$ $Regression$)的基本假设说起。在二分类中，我们假设 $y \in \lbrace0,1\rbrace$,在给定 $x$ 的情况下，很自然
+就想到使用 $Bernoulli$ 对 $y$ 的条件分布进行建模。$Bernoulli$
+分布可以认为是二项分布一个特例($n=1$)，其结果只能取$0$或1。假设实验成功的概率为$p$,则$Bernoulli$的概率密度函数和数学期望为:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{eqnarray*}
+    f(x) &amp;amp;=&amp;amp; p^x(1-p)^{1-x}\\
+    E(y) &amp;amp;=&amp;amp; p
+\end{eqnarray*}
+$$&lt;/p&gt;
+&lt;h3&gt;2.指数族分布($The$ $exponential$ $family$ $distribution$)&lt;/h3&gt;
+&lt;p&gt;如果一个分布可以被写成如下形式，就称其服从指数族分布($The$ $exponential$ $family$ $distribution$):&lt;/p&gt;
+&lt;p&gt;$$
+p(y;\eta)=b(x)exp\{\eta^{T}T(x)-a(\eta)\}
+$$&lt;/p&gt;
+&lt;p&gt;选定了 $T,a,b$ 就定义了一个参数为 $\eta$ 的分布族，我们改变 $\eta$ ，就可以在该分布族内得到不同的分布。很多常见的分布 $Bernoulli,$ $Gaussian,$
+$Bimomial,$ $Poisson$ 等，均属于指数族分布。下面的推导过程可以证明 $Bernoulli$ 是属于$The$ $exponential$ $family$ $distribution$ 的。&lt;/p&gt;
+&lt;p&gt;假设 $y\sim Bernoulli(p),y\in\lbrace {0,1}\rbrace$,则有 $ p(y=1) = p,p(y=0)=1-p $,$Bernoulli$的概率密度函数可以改写为:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{eqnarray*}
+p(y) &amp;amp;=&amp;amp; p^y(1-p)^{1-y} \\
+     &amp;amp;=&amp;amp; exp\{log[p^y(1-p)^{1-y}] \} \\
+     &amp;amp;=&amp;amp; exp\{ ylog(p) + (1-y)log(1-p) \} \\
+     &amp;amp;=&amp;amp; exp\{[log(\frac{p}{1-p})]y + log(1-p)\}
+\end{eqnarray*}
+$$&lt;/p&gt;
+&lt;p&gt;令 $\eta=log(\frac{p}{1-p})$, 则我们得到 $p,\eta $之间的关系，即:&lt;/p&gt;
+&lt;p&gt;$$
+    p=\frac{1}{1+e^{-\eta}}
+$$&lt;/p&gt;
+&lt;p&gt;看！这就是我们的&lt;em&gt;$sigmoid$&lt;/em&gt;函数!同时 $p(y)=exp\lbrace \eta y - log(1+e^{\eta}) \rbrace$ ,我们有:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{eqnarray*}
+T(y)        &amp;amp;=&amp;amp; y \\
+a(\eta)     &amp;amp;=&amp;amp; log(1+e^{\eta}) \\
+b(y)        &amp;amp;=&amp;amp; 1
+\end{eqnarray*}
+$$&lt;/p&gt;
+&lt;p&gt;符合指数族分布的定义。&lt;/p&gt;
+&lt;h3&gt;3.广义线性模型($Generalized$ $Linear$ $Models$)&lt;/h3&gt;
+&lt;p&gt;假设我们有一个回归问题($regression$ $problem$)或者分类问题($classification$ $problem$)，我们要预测某些关于 $x$ 的随机变量 $y$ 的值。
+要为这个问题推导一个$GLM$($Generalized$ $Linear$ $Model$),我们对 $y$ 关于 $x$ 的条件分布做以下三个假设:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$y|x;\theta  \sim$  $ExponentialFamily(\eta)$。&lt;/li&gt;
+&lt;li&gt;在给定 $x$ 的情况下，我们的目标是预测 $T(y)$ 的期望。一般情况下，我们有 $ T(y)=y $,这意味着，我们希望我们的假设 $h$ 输出的结果 $h(x)$
+满足 $h(x)=E[y|x]$ 。&lt;/li&gt;
+&lt;li&gt;$\eta(natural parameter)$ 与输入 $x$ 之间线性相关,即: $\eta=\theta^{T}x$。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;其中第三个与其说是假设，倒不如说是我们的&lt;code&gt;设计选择&lt;/code&gt;。有了三个假设，我们就可以推导出来非常优雅的学习算法，称为&lt;code&gt;GLM&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;$$
+\begin{eqnarray*}
+T(y)        &amp;amp;=&amp;amp; y \\
+a(\eta)     &amp;amp;=&amp;amp; log(1+e^{\eta}) \\
+b(y)        &amp;amp;=&amp;amp; 1
+\end{eqnarray*}
+$$&lt;/p&gt;
+&lt;h4&gt;逻辑回归($Logistic$ $Regression$)&lt;/h4&gt;
+&lt;p&gt;在逻辑回归中，我们考虑的是二分类问题，所以有 $y \in \lbrace 0,1\rbrace $，很自然的我们假设 $y$ 是关于 $x$的$Bernoulli$分布，
+即:$Bernoulli(p),y\in\lbrace {0,1}\rbrace$。因为$y|x;\theta  \sim  Bernoulli(p)$,则$E[y|x;\theta]=p$,所以我们有:
+$$
+\begin{eqnarray*}
+h_{\theta}(x)        &amp;amp;=&amp;amp; E[y|x;\theta] \\
+                     &amp;amp;=&amp;amp; p             \\
+                     &amp;amp;=&amp;amp; \frac{1}{1+e^{-\eta}} \\
+                     &amp;amp;=&amp;amp; \frac{1}{1+e^{-\theta x}}
+\end{eqnarray*}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\begin{eqnarray*}
+T(y)        &amp;amp;=&amp;amp; y \\
+a(\eta)     &amp;amp;=&amp;amp; log(1+e^{\eta}) \\
+b(y)        &amp;amp;=&amp;amp; 1
+\end{eqnarray*}
+$$&lt;/p&gt;
+&lt;p&gt;这就是为什么对 $y$  的预测使用 $ h_{\theta}(x)=\frac{1}{1+e^{-\theta x}} $方程。事实上，一旦你假设 $y|x;\theta  \sim  Bernoulli(p)$, 由GLM和指数族
+分布的定义，就自然而然的给出了逻辑回归函数。&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://open.163.com/special/opencourse/machinelearning.html"&gt;Andrew Ng Machine Learning &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf"&gt;Michael I. Jordan The exponential family: Basics&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry></feed>

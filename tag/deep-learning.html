@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>deep learning - Andy's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Thumbnail for wechat, when share links in wechat,it will use this piture for thumbnail.This can be specific for
+         every sigle page. -->
+
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+            src='/static/images/wechat_logo_300x300.jpg'/></div>
+
+    <!--
+    -->
+<meta name="author" content="andy"/>
+<meta name="keywords" content="deep learning"/>
+
+    <!-- Open Graph tags -->
+    <meta property="og:site_name" content="Andy's Blog"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Andy's Blog"/>
+    <meta property="og:url" content="http://synckey.name"/>
+    <meta property="og:description" content="Andy's Blog"/>
+
+
+
+    <script src="http://synckey.name/theme/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://synckey.name/theme/js/bootstrap.min.js"></script>
+
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <script src="http://synckey.name/theme/js/respond.min.js"></script>
+    <!-- highcharts -->
+    <script src="http://synckey.name/theme/js/highcharts.js"></script>
+    <script src="http://synckey.name/theme/js/exporting.js"></script>
+    <script src="http://synckey.name/theme/js/holder.js"></script>
+    <!-- mathtex -->
+    <!--
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$', '$']],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']},
+            processEscapes: true,
+        });
+       MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += 'has-jax';
+        }
+      });
+
+    </script>-->
+    <script type="text/javascript"
+            src="http://synckey.name/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$', '$'], ["\\(", "\\)"]],
+                processEscapes: true
+            },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            "HTML-CSS": {
+                availableFonts: ["TeX"],
+                scale:85,
+                imageFont: null
+            }
+
+        });
+    </script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="http://synckey.name/theme/css/normalize.css"/>
+    <!--
+    <link rel="stylesheet" href="http://synckey.name/theme/css/skeleton.css"/>-->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/style.css"/>
+    <!--
+    <link href="http://synckey.name/theme/css/font-awesome.min.css" rel="stylesheet">
+    -->
+    <link href="http://synckey.name/theme/css/pygments/github.css"
+          rel="stylesheet">
+
+
+    <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
+
+
+
+
+</head>
+
+<body>
+<div class="navbar-default "
+     role="navigation">
+    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-top-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://synckey.name/" class="navbar-brand">
+Andy's Blog            </a>
+            <a class="navbar-brand" href="/">Posts</a></li>
+            <a class="navbar-brand" href="/archives">Archives</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-top-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
+                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--
+<div class="page-header container">
+    <ul class="nav-left">
+        <li class="home"><a href="/">Andy's Blog</a></li>
+        <li class="desktop-only"><a href="/">Posts</a></li>
+        <li><a href="/feeds/all.atom.xml"></a>
+    </ul>
+
+    <ul class="nav-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+
+</div>
+-->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2017/03/30/read-mat-files-in-python.html">Read .mat Files in Python</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-03-30</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :</p>
+<div class="github"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.io</span>
+<span class="n">mat</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">loadmat</span><span class="p">(</span><span class="s1">'file.mat'</span><span class="p">)</span>
+</pre></div>
+<p>Enjoy^_^</p>
+<h4>Reference</h4>
+<p><a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python">read-mat-files-in-python</a></p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2017/03/30/read-mat-files-in-python.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">Rename a Tensor or Operation in Tensorflow</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-03-17</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …</p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2017/02/20/review-of-probability.html">《概率论》复习笔记</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-02-20</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><h4>1. 随机事件和概率</h4>
+<h5>1.1全概率公式</h5>
+<p>设事件 $A_1,A_2,\cdots,A_n$ 两两互不相容，$P(A_i)&gt;0(i=1,2,\cdots,n)$，且$\sum\limits_{i=1}^{n}{A_i}=\Omega$，
+则对任一事件$B$，有
+$$
+P(B)=\sum_{i=1}^{n}{P(A_i)\cdot P{(B|A_i)}}.
+$$
+满足公式中的$A_1,A_2,\cdots,A_n$  叫<strong>完备事件组</strong>。</p>
+<h5>1.2贝叶斯公式 …</h5>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2017/02/20/review-of-probability.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html">Summary Concepts of Deep Learning</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-03-01</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><h2>机器学习</h2>
+<p>input-&gt;feature representation-&gt;learning algorithm</p>
+<h3>监督学习</h3>
+<p>标注过的训练数据.</p>
+<ul>
+<li>标注成本高</li>
+<li>数据稀疏</li>
+</ul>
+<h3>非监督学习</h3>
+<p>未标注的数据,让算法自己决定学到什么.</p>
+<ul>
+<li>数据量大</li>
+</ul>
+<h3>features</h3>
+<p><code>特征的表示对机器学习性能有巨大的影响.</code></p>
+<ul>
+<li>人工特征筛选,处理,需要非常精细的调整和专业知识.</li>
+<li>在很多任务中,很难知道哪些特征需要被抽取出来.例如,想要识别图像中的汽车,我们知道骑车都有轮子,所以我们可能会将轮子当做一个特征,但是实际上很难精确的描述什么是轮子.</li>
+</ul>
+<h2>神经网络</h2>
+<h3>Neurons</h3>
+<p><p align="center">
+<img alt="SingleNeuron" class="img-responsive" src="/static/images/SingleNeuron.png" width="40%"/>
+</p></p>
+<p>神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f …</p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="post-container">
+</div>
+<div class="copyright">
+    &copy; 2017 andy
+    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
+    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+</div>
+</div>
+
+<!--
+<footer>
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-2">
+                <hr>
+            </div>
+            <div class="col-lg-8 col-md-offset-2">
+                <center>
+                    &copy; 2017 andy
+                    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                    <!--
+                    <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+                </center>
+            </div>
+        </div>
+    </div>
+</footer>
+                    -->
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55913313-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- End Google Analytics Code -->
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
+
+</div>
+</body>
+</html>

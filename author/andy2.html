@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Articles by Andy - Andy's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Thumbnail for wechat, when share links in wechat,it will use this piture for thumbnail.This can be specific for
+         every sigle page. -->
+
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+            src='/static/images/wechat_logo_300x300.jpg'/></div>
+
+    <!--
+    -->
+    <meta name="author" content="andy"/>
+
+    <!-- Open Graph tags -->
+    <meta property="og:site_name" content="Andy's Blog"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Andy's Blog"/>
+    <meta property="og:url" content="http://synckey.name"/>
+    <meta property="og:description" content="Andy's Blog"/>
+
+
+
+    <script src="http://synckey.name/theme/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://synckey.name/theme/js/bootstrap.min.js"></script>
+
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <script src="http://synckey.name/theme/js/respond.min.js"></script>
+    <!-- highcharts -->
+    <script src="http://synckey.name/theme/js/highcharts.js"></script>
+    <script src="http://synckey.name/theme/js/exporting.js"></script>
+    <script src="http://synckey.name/theme/js/holder.js"></script>
+    <!-- mathtex -->
+    <!--
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$', '$']],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']},
+            processEscapes: true,
+        });
+       MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += 'has-jax';
+        }
+      });
+
+    </script>-->
+    <script type="text/javascript"
+            src="http://synckey.name/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$', '$'], ["\\(", "\\)"]],
+                processEscapes: true
+            },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            "HTML-CSS": {
+                availableFonts: ["TeX"],
+                scale:85,
+                imageFont: null
+            }
+
+        });
+    </script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="http://synckey.name/theme/css/normalize.css"/>
+    <!--
+    <link rel="stylesheet" href="http://synckey.name/theme/css/skeleton.css"/>-->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/style.css"/>
+    <!--
+    <link href="http://synckey.name/theme/css/font-awesome.min.css" rel="stylesheet">
+    -->
+    <link href="http://synckey.name/theme/css/pygments/github.css"
+          rel="stylesheet">
+
+
+    <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
+
+
+
+
+</head>
+
+<body>
+<div class="navbar-default "
+     role="navigation">
+    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-top-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://synckey.name/" class="navbar-brand">
+Andy's Blog            </a>
+            <a class="navbar-brand" href="/">Posts</a></li>
+            <a class="navbar-brand" href="/archives">Archives</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-top-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
+                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--
+<div class="page-header container">
+    <ul class="nav-left">
+        <li class="home"><a href="/">Andy's Blog</a></li>
+        <li class="desktop-only"><a href="/">Posts</a></li>
+        <li><a href="/feeds/all.atom.xml"></a>
+    </ul>
+
+    <ul class="nav-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+
+</div>
+-->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2014/10/31/the-catcher-in-the-rye.html">The Catcher in the Rye</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2014-10-31</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>Holden Caulfied 是一个16岁的男孩，他因为课程不及格被学校开除，在他的眼里，周围的人要有奇怪的习惯和毛病。</p>
+<p>在离开学校之前他与他的室友打了一家，因为室友和他最喜欢的女生约会，他心里非常不舒服。一个十六岁的男孩，面对自己的梦中小情人，
+宁愿远远的看着她，也不希望她跟别的男孩子约会。更何况她的约会对象在Holden看来根本配不上她。Holden心里当然不高兴。打完架他决定早点离开学校了。</p>
+<p>对于一个青春期的孩子来说，也许最大的恐惧就是不合群，希望和同龄人做一样的事情，上课，考试，放假。可是Hoden却不得不提前开始寒假，又不能回家，
+因为他告诉他妈妈他周三到家，他只能去住酒店。孤身一人落寞的站在房间里，此时此刻只有香烟陪伴他，而他根本睡不着，百无聊赖。只能去酒吧。他回来时与
+开电梯的小伙说好叫一个妓女，妓女来了，还很漂亮，可是他却开始退缩了，尽管他还是处男，他不想就这样跟这个妓女做爱。只希望她陪他说话，此刻对他
+来说，精神上才是最寂寞的。</p>
+<p>在这个世界上，他最爱的人就是他的妹妹，Phoebe。他去街上买了她一直想要的唱片，给她一个惊喜，人在脆弱的时候总是想到自己最爱的人，就算他并不安慰你，
+你也希望看到她 …</p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2014/10/31/the-catcher-in-the-rye.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2014/10/22/big-sarcosaurus.html">Big Sarcosaurus</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2014-10-22</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
+would take an exam today and she would have some time after then. I invited her to come to see me and have lunch 
+together …</p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2014/10/22/big-sarcosaurus.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="post-container">
+<div class="center-block">
+<ul class="pagination">
+    <li class="prev"><a href="http://synckey.name/author/andy.html">&laquo;</a>
+    </li>
+    <li class=""><a
+            href="http://synckey.name/author/andy.html">1</a></li>
+    <li class="active"><a
+            href="http://synckey.name/author/andy2.html">2</a></li>
+    <li class="next disabled"><a href="#">&raquo;</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+    &copy; 2017 andy
+    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
+    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+</div>
+</div>
+
+<!--
+<footer>
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-2">
+                <hr>
+            </div>
+            <div class="col-lg-8 col-md-offset-2">
+                <center>
+                    &copy; 2017 andy
+                    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                    <!--
+                    <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+                </center>
+            </div>
+        </div>
+    </div>
+</footer>
+                    -->
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55913313-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- End Google Analytics Code -->
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
+
+</div>
+</body>
+</html>

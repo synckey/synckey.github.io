@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tools - Andy's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Thumbnail for wechat, when share links in wechat,it will use this piture for thumbnail.This can be specific for
+         every sigle page. -->
+
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+            src='/static/images/wechat_logo_300x300.jpg'/></div>
+
+    <!--
+    -->
+<meta name="author" content="andy"/>
+<meta name="keywords" content="tools"/>
+
+    <!-- Open Graph tags -->
+    <meta property="og:site_name" content="Andy's Blog"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Andy's Blog"/>
+    <meta property="og:url" content="http://synckey.name"/>
+    <meta property="og:description" content="Andy's Blog"/>
+
+
+
+    <script src="http://synckey.name/theme/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://synckey.name/theme/js/bootstrap.min.js"></script>
+
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <script src="http://synckey.name/theme/js/respond.min.js"></script>
+    <!-- highcharts -->
+    <script src="http://synckey.name/theme/js/highcharts.js"></script>
+    <script src="http://synckey.name/theme/js/exporting.js"></script>
+    <script src="http://synckey.name/theme/js/holder.js"></script>
+    <!-- mathtex -->
+    <!--
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$', '$']],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']},
+            processEscapes: true,
+        });
+       MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += 'has-jax';
+        }
+      });
+
+    </script>-->
+    <script type="text/javascript"
+            src="http://synckey.name/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$', '$'], ["\\(", "\\)"]],
+                processEscapes: true
+            },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            "HTML-CSS": {
+                availableFonts: ["TeX"],
+                scale:85,
+                imageFont: null
+            }
+
+        });
+    </script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="http://synckey.name/theme/css/normalize.css"/>
+    <!--
+    <link rel="stylesheet" href="http://synckey.name/theme/css/skeleton.css"/>-->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/style.css"/>
+    <!--
+    <link href="http://synckey.name/theme/css/font-awesome.min.css" rel="stylesheet">
+    -->
+    <link href="http://synckey.name/theme/css/pygments/github.css"
+          rel="stylesheet">
+
+
+    <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
+
+
+
+    <link href="http://synckey.name/feeds/tools.atom.xml" type="application/atom+xml"
+          rel="alternate"
+          title="Andy's Blog tools ATOM Feed"/>
+
+</head>
+
+<body>
+<div class="navbar-default "
+     role="navigation">
+    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-top-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://synckey.name/" class="navbar-brand">
+Andy's Blog            </a>
+            <a class="navbar-brand" href="/">Posts</a></li>
+            <a class="navbar-brand" href="/archives">Archives</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-top-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
+                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--
+<div class="page-header container">
+    <ul class="nav-left">
+        <li class="home"><a href="/">Andy's Blog</a></li>
+        <li class="desktop-only"><a href="/">Posts</a></li>
+        <li><a href="/feeds/all.atom.xml"></a>
+    </ul>
+
+    <ul class="nav-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+
+</div>
+-->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2017/06/04/git-push-to-two-repositories.html">Git Push to Two Repositories at the Same Time</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-06-04</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>Suppose You have 2 repositories:</p>
+<div class="github"><pre><span></span>https://github.com/synckey/synckey.github.io.git
+https://git.coding.net/synckey/synckey.git
+</pre></div>
+<p>You want to push to them within one command.</p>
+<div class="github"><pre><span></span><span class="c1"># if your project is cloned from this repository, </span>
+<span class="c1"># you can simply ignore this first command</span>
+git remote add origin https://git …</pre></div>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2017/06/04/git-push-to-two-repositories.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html">Enable Pelican to Render Markdown Tables</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-03-19</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:</p>
+<div class="github"><pre><span></span><span class="n">MARKDOWN</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'extension_configs'</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">'markdown.extensions.tables'</span><span class="p">:{},</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>Then,you can use the following code to generate the table below:</p>
+<div class="github"><pre><span></span>|First Header  | Second Header|
+|------------- | -------------|
+|Content …</pre></div>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">Rename a Tensor or Operation in Tensorflow</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-03-17</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …</p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2016/10/11/my-bashrc-backup.html">My Bashrc Backup</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-10-11</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><div class="github"><pre><span></span><span class="c1"># .bashrc</span>
+<span class="c1"># Source global definitions</span>
+<span class="k">if</span> <span class="o">[</span> -f /etc/bashrc <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    . /etc/bashrc
+<span class="k">fi</span>
+<span class="c1"># User specific aliases and functions</span>
+
+<span class="nb">export</span> <span class="nv">LS_OPTIONS</span><span class="o">=</span><span class="s1">'--color=auto'</span> <span class="c1"># 如果没有指定，则自动选择颜色</span>
+<span class="nb">export</span> <span class="nv">CLICOLOR</span><span class="o">=</span><span class="s1">'Yes'</span> <span class="c1">#是否输出颜色</span>
+<span class="nb">export</span> <span class="nv">LSCOLORS</span><span class="o">=</span><span class="s1">'Exfxcxdxbxegedabagacad'</span> <span class="c1">#指定颜色</span>
+<span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">'ls -l'</span>
+<span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">"\[\e[0;31m\][\u@\H \w]\\</span>$<span class="s2"> \[\e[m\]"</span>
+<span class="c1"># vim:ts=4:sw=4 …</span></pre></div>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2016/10/11/my-bashrc-backup.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">JVM Monitor Tool---jvisualvm</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-07-26</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><h2>通过 jvisualvm 查看 jvm 内部详细信息</h2>
+<div class="github"><pre><span></span>jvisualvm -Dcom.sun.management.jmxremote.port<span class="o">=</span><span class="m">8999</span> -Dcom.sun.management.jmxremote.ssl<span class="o">=</span><span class="nb">false</span> <span class="se">\</span>
+ -Dcom.sun.management.jmxremote.authenticate<span class="o">=</span><span class="nb">false</span> -Djava.rmi.server.hostname<span class="o">=</span><span class="m">10</span>.86.46.252
+</pre></div>
+<h2>查看哪个线程使用 cpu 最多</h2>
+<div class="github"><pre><span></span>ps -mp <span class="m">2633</span> -o THREAD,tid,time <span class="p">|</span> sort -rn
+</pre></div>
+<p>找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式 …</p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">让VIM记录文件上次编辑的位置</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-03-11</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>在<code>~/.vimrc</code>中加入如下配置:</p>
+<div class="github"><pre><span></span>autocmd BufReadPost *
+<span class="se">\ </span><span class="k">if</span> line<span class="o">(</span><span class="s2">"'\""</span><span class="o">)</span>&gt;0<span class="o">&amp;&amp;</span>line<span class="o">(</span><span class="s2">"'\""</span><span class="o">)</span>&lt;<span class="o">=</span>line<span class="o">(</span><span class="s2">"</span>$<span class="s2">"</span><span class="o">)</span> <span class="p">|</span>
+<span class="se">\ </span>exe <span class="s2">"normal g'\""</span> <span class="p">|</span>
+<span class="se">\ </span>endif
+autocmd BufReadPost *
+<span class="se">\ </span><span class="k">if</span> line<span class="o">(</span><span class="s2">"'\""</span><span class="o">)</span>&gt;0<span class="o">&amp;&amp;</span>line<span class="o">(</span><span class="s2">"'\""</span><span class="o">)</span>&lt;<span class="o">=</span>line<span class="o">(</span><span class="s2">"</span>$<span class="s2">"</span><span class="o">)</span> <span class="p">|</span>
+<span class="se">\ </span>exe <span class="s2">"normal g'\""</span> <span class="p">|</span>
+<span class="se">\ </span>endif
+syntax <span class="nb">enable</span>
+<span class="nb">set</span> nu
+</pre></div>
+<h3>参考</h3>
+<p><a href="http://www.2cto.com/os/201311/255061.html">让VIM记录文件上次编辑的位置</a></p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2015-11-03</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：</p>
+<div class="github"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="kd">implements</span> <span class="n">Function</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Boolean</span><span class="o">&gt;</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">lookupTable</span><span class="o">=</span><span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;();</span>
+
+    <span class="kd">public</span> <span class="nf">Test</span><span class="o">(</span><span class="n">Broadcast</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;&gt;</span> <span class="n">broadcast</span><span class="o">){</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">lookupTable</span><span class="o">=</span><span class="n">broadcast</span><span class="o">.</span><span class="na">value</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="kd">public</span> <span class="n">Boolean</span> <span class="nf">call</span><span class="o">(</span><span class="n">String</span> <span class="n">line</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">lookupTable</span><span class="o">.</span><span class="na">containsKey …</span></pre></div>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2015/11/03/a-misuse-of-spark-broadcast.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2015/05/20/iterm2-clone-session.html">Iterm2 Clone Session</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2015-05-20</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><div class="github"><pre><span></span>vim ~/.ssh/config
+</pre></div>
+<p>贴入如下内容:</p>
+<div class="github"><pre><span></span>Host *
+    ServerAliveInterval <span class="m">30</span>
+    ControlMaster auto
+    ControlPath ~/.ssh/master-%r@%h:%p
+    ControlPersist yes
+</pre></div>
+<p>退出iterm2，重新登录即可。</p>
+<h3>References</h3>
+<p><a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/">Iterm2 auto login 自动登录脚本</a></p>
+<p><a href="http://laughingchs.iteye.com/blog/1317703">linux clone session</a></p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2015/05/20/iterm2-clone-session.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="post-container">
+</div>
+<div class="copyright">
+    &copy; 2017 andy
+    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
+    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+</div>
+</div>
+
+<!--
+<footer>
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-2">
+                <hr>
+            </div>
+            <div class="col-lg-8 col-md-offset-2">
+                <center>
+                    &copy; 2017 andy
+                    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                    <!--
+                    <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+                </center>
+            </div>
+        </div>
+    </div>
+</footer>
+                    -->
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55913313-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- End Google Analytics Code -->
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
+
+</div>
+</body>
+</html>

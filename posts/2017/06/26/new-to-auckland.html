@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Auckland 小记</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Thumbnail for wechat, when share links in wechat,it will use this piture for thumbnail.This can be specific for
+         every sigle page. -->
+
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+            src='/static/images/fern_300x300.jpg'/></div>
+
+    <!--
+<link rel="canonical" href="http://synckey.name/posts/2017/06/26/new-to-auckland.html">
+    -->
+<meta name="author" content="Andy"/>
+<meta name="keywords" content="sfv"/>
+<meta name="description" content="来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。 到奥克兰下飞机已经是早上6.30，跟我一起下飞机的都是中国人。一下飞机就买了一张vodaphone的手机卡，卖手机卡的是中国人，说的是中国话，收银员是个漂亮的高挑当地妹子。在海关排队入境花了大概有半个小时，海关官员看了下签证，问了下我帮朋友带了什么，就放行了。出来还要过一道安检，这次主要是查有没有带危害当地生物安全的食品，种子等，新西兰是一个岛国，生态异常脆弱。 出机场看到外面乌云密布，天空非常的低，在下着小雨，有点冷，还好很快就找到接机的小伙伴，一路送到住所。路两边都是矮矮的两层小楼，路很窄，但是车速很快。 租的房子在一个小山坡上，窗外是大树和花草，室内的感觉有点阴冷。但是这种翠绿，是我非常喜欢的，绿油油。 中午去台湾人开的中餐馆吃了牛排饭，牛排是真的很好吃。下午去超市买买买，收银员妹子很热情，夸我公司发的衣服上的小骆驼很可爱，全程微笑。 最让我差异的就是过人行道，只要站在人行道边，车就自动停下来让行，比国内的红绿灯还灵，可见一斑。 在奥克兰的第二天，跟群里的几个sfver约了在newmarket见面吃饭 …"/>
+
+<meta property="og:site_name" content="Andy's Blog"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Auckland 小记"/>
+<meta property="og:url" content="http://synckey.name/posts/2017/06/26/new-to-auckland.html"/>
+<meta property="og:description" content="来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。 到奥克兰下飞机已经是早上6.30，跟我一起下飞机的都是中国人。一下飞机就买了一张vodaphone的手机卡，卖手机卡的是中国人，说的是中国话，收银员是个漂亮的高挑当地妹子。在海关排队入境花了大概有半个小时，海关官员看了下签证，问了下我帮朋友带了什么，就放行了。出来还要过一道安检，这次主要是查有没有带危害当地生物安全的食品，种子等，新西兰是一个岛国，生态异常脆弱。 出机场看到外面乌云密布，天空非常的低，在下着小雨，有点冷，还好很快就找到接机的小伙伴，一路送到住所。路两边都是矮矮的两层小楼，路很窄，但是车速很快。 租的房子在一个小山坡上，窗外是大树和花草，室内的感觉有点阴冷。但是这种翠绿，是我非常喜欢的，绿油油。 中午去台湾人开的中餐馆吃了牛排饭，牛排是真的很好吃。下午去超市买买买，收银员妹子很热情，夸我公司发的衣服上的小骆驼很可爱，全程微笑。 最让我差异的就是过人行道，只要站在人行道边，车就自动停下来让行，比国内的红绿灯还灵，可见一斑。 在奥克兰的第二天，跟群里的几个sfver约了在newmarket见面吃饭 …"/>
+<meta property="article:published_time" content=" 2017-06-26" />
+<meta property="article:section" content="sfv"/>
+<meta property="article:tag" content="sfv"/>
+<meta property="article:author" content="Andy"/>
+
+
+
+    <script src="http://synckey.name/theme/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://synckey.name/theme/js/bootstrap.min.js"></script>
+
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <script src="http://synckey.name/theme/js/respond.min.js"></script>
+    <!-- highcharts -->
+    <script src="http://synckey.name/theme/js/highcharts.js"></script>
+    <script src="http://synckey.name/theme/js/exporting.js"></script>
+    <script src="http://synckey.name/theme/js/holder.js"></script>
+    <!-- mathtex -->
+    <!--
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$', '$']],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']},
+            processEscapes: true,
+        });
+       MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += 'has-jax';
+        }
+      });
+
+    </script>-->
+    <script type="text/javascript"
+            src="http://synckey.name/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$', '$'], ["\\(", "\\)"]],
+                processEscapes: true
+            },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            "HTML-CSS": {
+                availableFonts: ["TeX"],
+                scale:85,
+                imageFont: null
+            }
+
+        });
+    </script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="http://synckey.name/theme/css/normalize.css"/>
+    <!--
+    <link rel="stylesheet" href="http://synckey.name/theme/css/skeleton.css"/>-->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/style.css"/>
+    <!--
+    <link href="http://synckey.name/theme/css/font-awesome.min.css" rel="stylesheet">
+    -->
+    <link href="http://synckey.name/theme/css/pygments/github.css"
+          rel="stylesheet">
+
+
+    <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
+
+
+
+    <link href="http://synckey.name/feeds/sfv.atom.xml" type="application/atom+xml"
+          rel="alternate"
+          title="Andy's Blog sfv ATOM Feed"/>
+
+</head>
+
+<body>
+<div class="navbar-default "
+     role="navigation">
+    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-top-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://synckey.name/" class="navbar-brand">
+Andy's Blog            </a>
+            <a class="navbar-brand" href="/">Posts</a></li>
+            <a class="navbar-brand" href="/archives">Archives</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-top-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
+                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--
+<div class="page-header container">
+    <ul class="nav-left">
+        <li class="home"><a href="/">Andy's Blog</a></li>
+        <li class="desktop-only"><a href="/">Posts</a></li>
+        <li><a href="/feeds/all.atom.xml"></a>
+    </ul>
+
+    <ul class="nav-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+
+</div>
+-->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3>
+            <a href="http://synckey.name/posts/2017/06/26/new-to-auckland.html">Auckland 小记</a>
+        </h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-06-26</span>
+            <span class="glyphicon glyphicon-home footnote ">Auckland</span>
+
+        </div>
+    </div>
+    <div class="post-content"><!--
+            <div class="panel">
+                <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-06-26T00:00:00+08:00"> 2017.06.26</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+<a href="http://synckey.name/tag/sfv.html">sfv</a>
+    
+</footer>                </div>
+            </div>
+            -->
+        <p>来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。</p>
+<p>到奥克兰下飞机已经是早上6.30，跟我一起下飞机的都是中国人。一下飞机就买了一张vodaphone的手机卡，卖手机卡的是中国人，说的是中国话，收银员是个漂亮的高挑当地妹子。在海关排队入境花了大概有半个小时，海关官员看了下签证，问了下我帮朋友带了什么，就放行了。出来还要过一道安检，这次主要是查有没有带危害当地生物安全的食品，种子等，新西兰是一个岛国，生态异常脆弱。</p>
+<p>出机场看到外面乌云密布，天空非常的低，在下着小雨，有点冷，还好很快就找到接机的小伙伴，一路送到住所。路两边都是矮矮的两层小楼，路很窄，但是车速很快。</p>
+<p>租的房子在一个小山坡上，窗外是大树和花草，室内的感觉有点阴冷。但是这种翠绿，是我非常喜欢的，绿油油。</p>
+<p>中午去台湾人开的中餐馆吃了牛排饭，牛排是真的很好吃。下午去超市买买买，收银员妹子很热情，夸我公司发的衣服上的小骆驼很可爱，全程微笑。</p>
+<p>最让我差异的就是过人行道，只要站在人行道边，车就自动停下来让行，比国内的红绿灯还灵，可见一斑。</p>
+<p>在奥克兰的第二天，跟群里的几个sfver约了在newmarket见面吃饭，小太阳，江江，旭华，吃完饭她们带我们海边看海，风很大，有时候还下小雨，远处的小海岛在烟雨里沉默不语，绿绿葱葱的树木覆盖了整个小岛，在冷风里树木并不飘摇，看不清是否对我们相顾也笑。在海边玩了会以后来到了一个在海边的咖啡馆，服务员妹子也特别热情，笑容常常挂在脸上，尝了本地的白葡萄酒，在不爱酒的人眼里，味道难以形容。</p>
+<p>奥克兰让我感觉最冷的时候是在One Tree Hill，小雨和寒风，只穿了牛仔褂的我，根本顾不上看风景。从One Tree Hill的顶上看奥克兰，除了天空塔，基本没有什么高的建筑。晚上去了一个意大利餐厅吃意面，很难吃。吃完了去一个小咖啡馆看驻场表演，唱歌的大爷大妈估计有60-70了吧，底下的人听得很认真，很热情，感觉这是他们生活的一部分，中国人鲜有的闲情逸致在他们脸上时刻都能找到。</p>
+<p>第三天跟小太阳一起从码头坐轮渡去Devonport，Devonport码头下来就是一个图书管，图书馆不大，但是环境非常好，有老年人在里面读报，也有年轻人在里面学习。从图书馆的桌子就可以直接看到大海，听到海浪一波一波涌来，发出沙沙的声音。图书馆旁边的绿地很多父母带着小孩子在大树下绿草上奔跑，她们的父母在一旁闲聊。中午和小太阳在图书馆对面的餐厅吃了一份牛排，虽然没吃到惠灵顿牛排，但是吃到的已经超级好吃。下午小太阳回去，在Queen St上逛了逛，买了很多东西，Queen St上很多中国人开的店，很多中国人。晚上去CountDown，回来被淋了湿透。</p>
+<p>第四天约了一个以前百度同组已经pr的同事，下午3点喝咖啡，在第一天吃的那家台湾牛排吃完午饭以后，坐公交去了奥克兰大学，从奥克兰大学逛到Auckland Domain,Auckland Domain非常大，爬到山顶，太阳正好出来，草地上是绿油油的一片，天空是纯洁的白云和蓝色，来奥克兰这么几天，第一次见到如此晴朗的阳光，第一次感觉不是来的假奥克兰。下午从Auckland Domain一直步行到Spark大厦，途中路过天空塔，塔下面的流浪汉有点吓人。跟朋友在Spark的楼下喝了一杯咖啡，与他聊天让我获益良多。</p>
+<p>本地人给我的感觉，有友善的，也有不友善的，这点跟中国人应该也是一样的。在机场遇到一个安检的安检员就是特别不友善，打开我的包要检查，因为我语言不好，站在了安检的黄线内，他就特别粗辱。同时，他们也并不守时，在短短4，5天就被放了两个鸽子。一个是BNZ的银行，周五过去开户，说是周一给我电话，结果并没有，还有一个是药店，约的是周二去拿药，结果去了发现药还没有到，白跑一趟。</p>
+<p>可能因为本地私家车普及率特别高，相对天朝公交而言，新西兰的公交车实在不友善。首先，公交车班次间隔时间比较久，如果错过一班可能要等二十分钟甚至半个小时。公交车并不会在每站都停，如果想下车就得提前按铃，车上也没有报站系统和显示屏，这就对外地人很不友善，只能拿着google地图看快要到了，就按铃下车。我的理解是这样做可以提升公交车的运行效率，但是加一个到站的显示屏真的会友善很多。</p>
+<p>总得来说，虽然新西兰的牛羊肉很好吃，但是物价实在是太高了。
+<div class="figure">
+<img alt="auk_domain_1" class="img-responsive carousel-inner img-rounded" src="/static/images/aukland_domain_1.jpg"/>
+<div class="caption">Auckland Domain</div>
+</div>
+<div class="figure">
+<img alt="auk_domain_2" class="img-responsive carousel-inner img-rounded" src="/static/images/aukland_domain_2.jpg"/>
+<div class="caption">Auckland Domain</div>
+</div>
+<div class="figure">
+<img alt="ont_tree_hill" class="img-responsive carousel-inner img-rounded" src="/static/images/one_tree_hill.jpg"/>
+<div class="caption">One Tree Hill</div>
+</div>
+<div class="figure">
+<img alt="steak_and_fries" class="img-responsive carousel-inner img-rounded" src="/static/images/steak_and_fries.jpg"/>
+<div class="caption">Steak&amp;Fries</div>
+</div></p>
+<div class="figure">
+<img alt="albert_park" class="img-responsive carousel-inner img-rounded" src="/static/images/albert_park.jpg"/>
+<div class="caption">Albert Park</div>
+</div>
+<div class="pager">
+    <ul>
+        <li class="previous disabled"><a>&larr; Previous</a></li>
+        <li class="next"><a href="http://synckey.name/posts/2017/06/04/git-push-to-two-repositories.html"
+                            data-toggle="tooltip" title="Git Push to Two Repositories at the Same Time">Next &rarr;</a></li>
+    </ul>
+</div><!--
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'synckey'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+-->
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "http://synckey.name/posts/2017/06/26/new-to-auckland.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "posts/2017/06/26/new-to-auckland.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'http://synckey.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+
+
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+<!-- End Disqus Code -->
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="separator"></div>
+    </div>
+</div>
+<!-- /.entry-content -->
+
+</article>
+</section>
+
+<div class="copyright">
+    &copy; 2017 andy
+    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
+    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+</div>
+</div>
+
+<!--
+<footer>
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-2">
+                <hr>
+            </div>
+            <div class="col-lg-8 col-md-offset-2">
+                <center>
+                    &copy; 2017 andy
+                    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                    <!--
+                    <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+                </center>
+            </div>
+        </div>
+    </div>
+</footer>
+                    -->
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55913313-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- End Google Analytics Code -->
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
+
+</div>
+</body>
+</html>

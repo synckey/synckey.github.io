@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Where does sigmoid come from</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Thumbnail for wechat, when share links in wechat,it will use this piture for thumbnail.This can be specific for
+         every sigle page. -->
+
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+            src='/static/images/wechat_logo_300x300.jpg'/></div>
+
+    <!--
+<link rel="canonical" href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html">
+    -->
+<meta name="author" content="Andy"/>
+<meta name="keywords" content="machine learning,technology,logistic regression"/>
+<meta name="description" content="主要根据Andrew Ng的教学讲义整理。 逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下: 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。 1.逻辑回归的建模 首先从逻辑回归($Logistic$ $Regression$)的基本假设说起。在二分类中，我们假设 $y \in \lbrace0,1\rbrace$,在给定 $x$ 的情况下，很自然 就想到使用 $Bernoulli$ 对 $y$ 的条件分布进行建模。$Bernoulli$ 分布可以认为是二项分布一个特例($n=1$)，其结果只能取$0$或1。假设实验成功的概率为$p$,则$Bernoulli …"/>
+
+<meta property="og:site_name" content="Andy's Blog"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Where does sigmoid come from"/>
+<meta property="og:url" content="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html"/>
+<meta property="og:description" content="主要根据Andrew Ng的教学讲义整理。 逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下: 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。 1.逻辑回归的建模 首先从逻辑回归($Logistic$ $Regression$)的基本假设说起。在二分类中，我们假设 $y \in \lbrace0,1\rbrace$,在给定 $x$ 的情况下，很自然 就想到使用 $Bernoulli$ 对 $y$ 的条件分布进行建模。$Bernoulli$ 分布可以认为是二项分布一个特例($n=1$)，其结果只能取$0$或1。假设实验成功的概率为$p$,则$Bernoulli …"/>
+<meta property="article:published_time" content=" 2015-12-24" />
+<meta property="article:section" content="machinelearning"/>
+<meta property="article:tag" content="machine learning"/>
+<meta property="article:tag" content="technology"/>
+<meta property="article:tag" content="logistic regression"/>
+<meta property="article:author" content="Andy"/>
+
+
+
+    <script src="http://synckey.name/theme/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://synckey.name/theme/js/bootstrap.min.js"></script>
+
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <script src="http://synckey.name/theme/js/respond.min.js"></script>
+    <!-- highcharts -->
+    <script src="http://synckey.name/theme/js/highcharts.js"></script>
+    <script src="http://synckey.name/theme/js/exporting.js"></script>
+    <script src="http://synckey.name/theme/js/holder.js"></script>
+    <!-- mathtex -->
+    <!--
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$', '$']],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']},
+            processEscapes: true,
+        });
+       MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += 'has-jax';
+        }
+      });
+
+    </script>-->
+    <script type="text/javascript"
+            src="http://synckey.name/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$', '$'], ["\\(", "\\)"]],
+                processEscapes: true
+            },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            "HTML-CSS": {
+                availableFonts: ["TeX"],
+                scale:85,
+                imageFont: null
+            }
+
+        });
+    </script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="http://synckey.name/theme/css/normalize.css"/>
+    <!--
+    <link rel="stylesheet" href="http://synckey.name/theme/css/skeleton.css"/>-->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/style.css"/>
+    <!--
+    <link href="http://synckey.name/theme/css/font-awesome.min.css" rel="stylesheet">
+    -->
+    <link href="http://synckey.name/theme/css/pygments/github.css"
+          rel="stylesheet">
+
+
+    <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
+
+
+
+    <link href="http://synckey.name/feeds/machinelearning.atom.xml" type="application/atom+xml"
+          rel="alternate"
+          title="Andy's Blog machinelearning ATOM Feed"/>
+
+</head>
+
+<body>
+<div class="navbar-default "
+     role="navigation">
+    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-top-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://synckey.name/" class="navbar-brand">
+Andy's Blog            </a>
+            <a class="navbar-brand" href="/">Posts</a></li>
+            <a class="navbar-brand" href="/archives">Archives</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-top-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
+                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--
+<div class="page-header container">
+    <ul class="nav-left">
+        <li class="home"><a href="/">Andy's Blog</a></li>
+        <li class="desktop-only"><a href="/">Posts</a></li>
+        <li><a href="/feeds/all.atom.xml"></a>
+    </ul>
+
+    <ul class="nav-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+
+</div>
+-->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3>
+            <a href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html">Where does sigmoid come from</a>
+        </h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2015-12-24</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+
+        </div>
+    </div>
+    <div class="post-content"><!--
+            <div class="panel">
+                <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-12-24T00:00:00+08:00"> 2015.12.24</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+<a href="http://synckey.name/tag/machine-learning.html">machine learning</a>
+/
+<a href="http://synckey.name/tag/technology.html">technology</a>
+/
+<a href="http://synckey.name/tag/logistic-regression.html">logistic regression</a>
+    
+</footer>                </div>
+            </div>
+            -->
+        <blockquote>
+<p>主要根据Andrew Ng的教学讲义整理。</p>
+</blockquote>
+<p>逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
+<p align="center">
+<img alt="sigmoid" class="img-responsive" src="/static/images/sigmoid.svg" width="60%"/>
+</p>
+书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。</p>
+<h3>1.逻辑回归的建模</h3>
+<p>首先从逻辑回归($Logistic$ $Regression$)的基本假设说起。在二分类中，我们假设 $y \in \lbrace0,1\rbrace$,在给定 $x$ 的情况下，很自然
+就想到使用 $Bernoulli$ 对 $y$ 的条件分布进行建模。$Bernoulli$
+分布可以认为是二项分布一个特例($n=1$)，其结果只能取$0$或1。假设实验成功的概率为$p$,则$Bernoulli$的概率密度函数和数学期望为:</p>
+<p>$$
+\begin{eqnarray*}
+    f(x) &amp;=&amp; p^x(1-p)^{1-x}\\
+    E(y) &amp;=&amp; p
+\end{eqnarray*}
+$$</p>
+<h3>2.指数族分布($The$ $exponential$ $family$ $distribution$)</h3>
+<p>如果一个分布可以被写成如下形式，就称其服从指数族分布($The$ $exponential$ $family$ $distribution$):</p>
+<p>$$
+p(y;\eta)=b(x)exp\{\eta^{T}T(x)-a(\eta)\}
+$$</p>
+<p>选定了 $T,a,b$ 就定义了一个参数为 $\eta$ 的分布族，我们改变 $\eta$ ，就可以在该分布族内得到不同的分布。很多常见的分布 $Bernoulli,$ $Gaussian,$
+$Bimomial,$ $Poisson$ 等，均属于指数族分布。下面的推导过程可以证明 $Bernoulli$ 是属于$The$ $exponential$ $family$ $distribution$ 的。</p>
+<p>假设 $y\sim Bernoulli(p),y\in\lbrace {0,1}\rbrace$,则有 $ p(y=1) = p,p(y=0)=1-p $,$Bernoulli$的概率密度函数可以改写为:</p>
+<p>$$
+\begin{eqnarray*}
+p(y) &amp;=&amp; p^y(1-p)^{1-y} \\
+     &amp;=&amp; exp\{log[p^y(1-p)^{1-y}] \} \\
+     &amp;=&amp; exp\{ ylog(p) + (1-y)log(1-p) \} \\
+     &amp;=&amp; exp\{[log(\frac{p}{1-p})]y + log(1-p)\}
+\end{eqnarray*}
+$$</p>
+<p>令 $\eta=log(\frac{p}{1-p})$, 则我们得到 $p,\eta $之间的关系，即:</p>
+<p>$$
+    p=\frac{1}{1+e^{-\eta}}
+$$</p>
+<p>看！这就是我们的<em>$sigmoid$</em>函数!同时 $p(y)=exp\lbrace \eta y - log(1+e^{\eta}) \rbrace$ ,我们有:</p>
+<p>$$
+\begin{eqnarray*}
+T(y)        &amp;=&amp; y \\
+a(\eta)     &amp;=&amp; log(1+e^{\eta}) \\
+b(y)        &amp;=&amp; 1
+\end{eqnarray*}
+$$</p>
+<p>符合指数族分布的定义。</p>
+<h3>3.广义线性模型($Generalized$ $Linear$ $Models$)</h3>
+<p>假设我们有一个回归问题($regression$ $problem$)或者分类问题($classification$ $problem$)，我们要预测某些关于 $x$ 的随机变量 $y$ 的值。
+要为这个问题推导一个$GLM$($Generalized$ $Linear$ $Model$),我们对 $y$ 关于 $x$ 的条件分布做以下三个假设:</p>
+<ol>
+<li>$y|x;\theta  \sim$  $ExponentialFamily(\eta)$。</li>
+<li>在给定 $x$ 的情况下，我们的目标是预测 $T(y)$ 的期望。一般情况下，我们有 $ T(y)=y $,这意味着，我们希望我们的假设 $h$ 输出的结果 $h(x)$
+满足 $h(x)=E[y|x]$ 。</li>
+<li>$\eta(natural parameter)$ 与输入 $x$ 之间线性相关,即: $\eta=\theta^{T}x$。</li>
+</ol>
+<p>其中第三个与其说是假设，倒不如说是我们的<code>设计选择</code>。有了三个假设，我们就可以推导出来非常优雅的学习算法，称为<code>GLM</code>。</p>
+<p>$$
+\begin{eqnarray*}
+T(y)        &amp;=&amp; y \\
+a(\eta)     &amp;=&amp; log(1+e^{\eta}) \\
+b(y)        &amp;=&amp; 1
+\end{eqnarray*}
+$$</p>
+<h4>逻辑回归($Logistic$ $Regression$)</h4>
+<p>在逻辑回归中，我们考虑的是二分类问题，所以有 $y \in \lbrace 0,1\rbrace $，很自然的我们假设 $y$ 是关于 $x$的$Bernoulli$分布，
+即:$Bernoulli(p),y\in\lbrace {0,1}\rbrace$。因为$y|x;\theta  \sim  Bernoulli(p)$,则$E[y|x;\theta]=p$,所以我们有:
+$$
+\begin{eqnarray*}
+h_{\theta}(x)        &amp;=&amp; E[y|x;\theta] \\
+                     &amp;=&amp; p             \\
+                     &amp;=&amp; \frac{1}{1+e^{-\eta}} \\
+                     &amp;=&amp; \frac{1}{1+e^{-\theta x}}
+\end{eqnarray*}
+$$</p>
+<p>$$
+\begin{eqnarray*}
+T(y)        &amp;=&amp; y \\
+a(\eta)     &amp;=&amp; log(1+e^{\eta}) \\
+b(y)        &amp;=&amp; 1
+\end{eqnarray*}
+$$</p>
+<p>这就是为什么对 $y$  的预测使用 $ h_{\theta}(x)=\frac{1}{1+e^{-\theta x}} $方程。事实上，一旦你假设 $y|x;\theta  \sim  Bernoulli(p)$, 由GLM和指数族
+分布的定义，就自然而然的给出了逻辑回归函数。</p>
+<h3>References</h3>
+<p><a href="http://open.163.com/special/opencourse/machinelearning.html">Andrew Ng Machine Learning </a></p>
+<p><a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf">Michael I. Jordan The exponential family: Basics</a></p>
+<div class="pager">
+    <ul>
+        <li class="previous"><a href="http://synckey.name/posts/2015/12/24/plot-sigmoid-in-matlab.html" data-toggle="tooltip"
+                                title="Plot Sigmoid in Matlab">&larr; Previous</a></li>
+        <li class="next"><a href="http://synckey.name/posts/2015/11/03/a-misuse-of-spark-broadcast.html"
+                            data-toggle="tooltip" title="A Misuse of Spark Broadcast">Next &rarr;</a></li>
+    </ul>
+</div><!--
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'synckey'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+-->
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "posts/2015/12/24/where-does-sigmoid-come-from.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'http://synckey.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+
+
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+<!-- End Disqus Code -->
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="separator"></div>
+    </div>
+</div>
+<!-- /.entry-content -->
+
+</article>
+</section>
+
+<div class="copyright">
+    &copy; 2017 andy
+    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
+    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+</div>
+</div>
+
+<!--
+<footer>
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-2">
+                <hr>
+            </div>
+            <div class="col-lg-8 col-md-offset-2">
+                <center>
+                    &copy; 2017 andy
+                    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                    <!--
+                    <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+                </center>
+            </div>
+        </div>
+    </div>
+</footer>
+                    -->
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55913313-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- End Google Analytics Code -->
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
+
+</div>
+</body>
+</html>

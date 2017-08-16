@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Summary Concepts of Deep Learning</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Thumbnail for wechat, when share links in wechat,it will use this piture for thumbnail.This can be specific for
+         every sigle page. -->
+
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+            src='/static/images/wechat_logo_300x300.jpg'/></div>
+
+    <!--
+<link rel="canonical" href="http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html">
+    -->
+<meta name="author" content="Andy"/>
+<meta name="keywords" content="machine learning,deep learning"/>
+<meta name="description" content="机器学习 input-&gt;feature representation-&gt;learning algorithm 监督学习 标注过的训练数据. 标注成本高 数据稀疏 非监督学习 未标注的数据,让算法自己决定学到什么. 数据量大 features 特征的表示对机器学习性能有巨大的影响. 人工特征筛选,处理,需要非常精细的调整和专业知识. 在很多任务中,很难知道哪些特征需要被抽取出来.例如,想要识别图像中的汽车,我们知道骑车都有轮子,所以我们可能会将轮子当做一个特征,但是实际上很难精确的描述什么是轮子. 神经网络 Neurons 神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f …"/>
+
+<meta property="og:site_name" content="Andy's Blog"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Summary Concepts of Deep Learning"/>
+<meta property="og:url" content="http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html"/>
+<meta property="og:description" content="机器学习 input-&gt;feature representation-&gt;learning algorithm 监督学习 标注过的训练数据. 标注成本高 数据稀疏 非监督学习 未标注的数据,让算法自己决定学到什么. 数据量大 features 特征的表示对机器学习性能有巨大的影响. 人工特征筛选,处理,需要非常精细的调整和专业知识. 在很多任务中,很难知道哪些特征需要被抽取出来.例如,想要识别图像中的汽车,我们知道骑车都有轮子,所以我们可能会将轮子当做一个特征,但是实际上很难精确的描述什么是轮子. 神经网络 Neurons 神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f …"/>
+<meta property="article:published_time" content=" 2016-03-01" />
+<meta property="article:section" content="machinelearning"/>
+<meta property="article:tag" content="machine learning"/>
+<meta property="article:tag" content="deep learning"/>
+<meta property="article:author" content="Andy"/>
+
+
+
+    <script src="http://synckey.name/theme/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://synckey.name/theme/js/bootstrap.min.js"></script>
+
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <script src="http://synckey.name/theme/js/respond.min.js"></script>
+    <!-- highcharts -->
+    <script src="http://synckey.name/theme/js/highcharts.js"></script>
+    <script src="http://synckey.name/theme/js/exporting.js"></script>
+    <script src="http://synckey.name/theme/js/holder.js"></script>
+    <!-- mathtex -->
+    <!--
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$', '$']],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']},
+            processEscapes: true,
+        });
+       MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += 'has-jax';
+        }
+      });
+
+    </script>-->
+    <script type="text/javascript"
+            src="http://synckey.name/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$', '$'], ["\\(", "\\)"]],
+                processEscapes: true
+            },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            "HTML-CSS": {
+                availableFonts: ["TeX"],
+                scale:85,
+                imageFont: null
+            }
+
+        });
+    </script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="http://synckey.name/theme/css/normalize.css"/>
+    <!--
+    <link rel="stylesheet" href="http://synckey.name/theme/css/skeleton.css"/>-->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/style.css"/>
+    <!--
+    <link href="http://synckey.name/theme/css/font-awesome.min.css" rel="stylesheet">
+    -->
+    <link href="http://synckey.name/theme/css/pygments/github.css"
+          rel="stylesheet">
+
+
+    <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
+
+
+
+    <link href="http://synckey.name/feeds/machinelearning.atom.xml" type="application/atom+xml"
+          rel="alternate"
+          title="Andy's Blog machinelearning ATOM Feed"/>
+
+</head>
+
+<body>
+<div class="navbar-default "
+     role="navigation">
+    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-top-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://synckey.name/" class="navbar-brand">
+Andy's Blog            </a>
+            <a class="navbar-brand" href="/">Posts</a></li>
+            <a class="navbar-brand" href="/archives">Archives</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-top-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
+                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--
+<div class="page-header container">
+    <ul class="nav-left">
+        <li class="home"><a href="/">Andy's Blog</a></li>
+        <li class="desktop-only"><a href="/">Posts</a></li>
+        <li><a href="/feeds/all.atom.xml"></a>
+    </ul>
+
+    <ul class="nav-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+
+</div>
+-->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3>
+            <a href="http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html">Summary Concepts of Deep Learning</a>
+        </h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-03-01</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+
+        </div>
+    </div>
+    <div class="post-content"><!--
+            <div class="panel">
+                <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-03-01T00:00:00+08:00"> 2016.03.01</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+<a href="http://synckey.name/tag/machine-learning.html">machine learning</a>
+/
+<a href="http://synckey.name/tag/deep-learning.html">deep learning</a>
+    
+</footer>                </div>
+            </div>
+            -->
+        <h2>机器学习</h2>
+<p>input-&gt;feature representation-&gt;learning algorithm</p>
+<h3>监督学习</h3>
+<p>标注过的训练数据.</p>
+<ul>
+<li>标注成本高</li>
+<li>数据稀疏</li>
+</ul>
+<h3>非监督学习</h3>
+<p>未标注的数据,让算法自己决定学到什么.</p>
+<ul>
+<li>数据量大</li>
+</ul>
+<h3>features</h3>
+<p><code>特征的表示对机器学习性能有巨大的影响.</code></p>
+<ul>
+<li>人工特征筛选,处理,需要非常精细的调整和专业知识.</li>
+<li>在很多任务中,很难知道哪些特征需要被抽取出来.例如,想要识别图像中的汽车,我们知道骑车都有轮子,所以我们可能会将轮子当做一个特征,但是实际上很难精确的描述什么是轮子.</li>
+</ul>
+<h2>神经网络</h2>
+<h3>Neurons</h3>
+<p><p align="center">
+<img alt="SingleNeuron" class="img-responsive" src="/static/images/SingleNeuron.png" width="40%"/>
+</p></p>
+<p>神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f(\sum_{i=1}^{3}(W_ix_i+b)$为输出的计算单元.
+其中$f:\mathbb{R}\mapsto\mathbb{R}$,被称为激活函数(activation function).常用的激活函数有:</p>
+<ul>
+<li>
+<p>sigmoid function:$f(z) = \frac{1}{1+\exp(-z)}$</p>
+</li>
+<li>
+<p>tanh function:$f(z) = \tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}$</p>
+</li>
+<li>
+<p>rectified linear function: $f(z) = \max(0,x)$</p>
+</li>
+</ul>
+<p>这些函数的形状如下:
+<p align="center">
+<img alt="ActivationFunctions" class="img-responsive" src="/static/images/ActivationFunctions.png" width="50%"/>
+</p></p>
+<h3>神经网络模型</h3>
+<p>将一系列<strong>神经元</strong>组合在一起,就构成一个神经网络,一个神经元的输出可以作为另外一个神经元的输入.例如,下图是一个简单的神经网络:
+<p align="center">
+<img alt="neualNetwork" class="img-responsive" src="/static/images/Network331.png" width="50%"/>
+</p>
+在这个示意图中,黄色的圆圈代表神经元,蓝色的圆圈代表整个神经网络的输入.被标为$+1$的圆圈称作<strong>bias unit</strong>,代表<strong>截距项</strong>(intercept term).
+网络最左边的层叫做<strong>输入层</strong>(input layer),最右边叫做<strong>输出层</strong>(output layer).中间所有的节点组成的层叫做<strong>隐藏层</strong>(hidden layer),因为我们不能在训练样本里面观察到它的值.</p>
+<p>神经网络也可以有多个输出单元,比如,下面的神经网络有两个隐藏曾,$L_2$和$L_3$,输出层$L_4$有两个输出单元:
+<p align="center">
+<img alt="MultiOutputNetwork" class="img-responsive" src="/static/images/MultiOutputNetwork.png" width="50%"/>
+</p>
+如果你的任务是预测多个输出,这种神经网络很适用.</p>
+<h4>向前传播</h4>
+<p>每层每个节点的计算方法:
+$$
+\begin{eqnarray*}
+a_1^{(2)} &amp;=&amp; f(W_{11}^{(1)}x_1 + W_{12}^{(1)} x_2 + W_{13}^{(1)} x_3 + b_1^{(1)})  \\
+a_2^{(2)} &amp;=&amp; f(W_{21}^{(1)}x_1 + W_{22}^{(1)} x_2 + W_{23}^{(1)} x_3 + b_2^{(1)})  \\
+a_3^{(2)} &amp;=&amp; f(W_{31}^{(1)}x_1 + W_{32}^{(1)} x_2 + W_{33}^{(1)} x_3 + b_3^{(1)})  \\
+h_{W,b}(x) &amp;=&amp; a_1^{(3)} =  f(W_{11}^{(2)}a_1^{(2)} + W_{12}^{(2)} a_2^{(2)} + W_{13}^{(2)} a_3^{(2)} + b_1^{(2)}) 
+\end{eqnarray*}
+$$</p>
+<p>我们用$z_i^{(l)}$ 表示第 $l$ 层第 $i$ 单元输入加权和（包括偏置单元），比如，$z_i^{(2)} = \sum_{j=1}^nW^{(1)}_{ij} x_j + b^{(1)}_i$,则 $a^{(l)}_i = f(z^{(l)}_i) $。
+这样就可以得到一种更简洁的表示法。这里我们将激活函数 $ f(\cdot) $ 扩展为用向量（分量的形式）来表示，即 $ f([z_1, z_2, z_3]) = [f(z_1), f(z_2), f(z_3)]$ ，那么，上面的等式可以更简洁地表示为：
+$$
+\begin{eqnarray*}
+z^{(2)} &amp;=&amp; W^{(1)} x + b^{(1)} \\
+a^{(2)} &amp;=&amp; f(z^{(2)}) \\
+z^{(3)} &amp;=&amp; W^{(2)} a^{(2)} + b^{(2)} \\
+h_{W,b}(x) &amp;=&amp; a^{(3)} = f(z^{(3)})
+\end{eqnarray*}
+$$
+我们将上面的计算步骤叫作<strong>前向传播</strong>。</p>
+<h4>向后传播</h4>
+<p>假设我们有一个固定样本集 ${ (x^{(1)}, y^{(1)}), \ldots, (x^{(m)}, y^{(m)}) }$，它包含$m$ 个样例。我们可以用批量梯度下降法来求解神经网络。具体来讲，对于单个样例 $(x,y)$，其代价函数为：
+$$
+\begin{align}
+J(W,b; x,y) = \frac{1}{2} \left| h_{W,b}(x) - y \right|^2.
+\end{align}
+$$
+这是一个（二分之一的）方差代价函数。给定一个包含  $m$ 个样例的数据集，我们可以定义整体代价函数为：</p>
+<p>$$
+\begin{align}
+J(W,b)
+&amp;= \left[ \frac{1}{m} \sum_{i=1}^m J(W,b;x^{(i)},y^{(i)}) \right]
+                       + \frac{\lambda}{2} \sum_{l=1}^{n_l-1} \; \sum_{i=1}^{s_l} \; \sum_{j=1}^{s_{l+1}} \left( W^{(l)}_{ji} \right)^2 \\
+&amp;= \left[ \frac{1}{m} \sum_{i=1}^m \left( \frac{1}{2} \left| h_{W,b}(x^{(i)}) - y^{(i)} \right|^2 \right) \right]
+                       + \frac{\lambda}{2} \sum_{l=1}^{n_l-1} \; \sum_{i=1}^{s_l} \; \sum_{j=1}^{s_{l+1}} \left( W^{(l)}_{ji} \right)^2
+\end{align}
+$$</p>
+<p>以上公式中的第一项 $J(W,b)$是一个均方差项。第二项是一个规则化项（也叫权重衰减项），其目的是减小权重的幅度，防止过度拟合。</p>
+<p>我们的目标是针对参数 $W$和 $b$ 来求其函数 $J(W,b)$ 的最小值。为了求解神经网络，我们需要将每一个参数 $W^{(l)}_{ij}$ 和 $b^{(l)}_i$ 初始化为一个很小的、接近零的随机值（比如说，使用正态分布 $ {Normal}(0,\epsilon^2)$ 生成的随机值，其中 $\epsilon$ 设置为 $0.01$），之后对目标函数使用诸如批量梯度下降法的最优化算法。因为$J(W, b)$ 是一个非凸函数，梯度下降法很可能会收敛到局部最优解；但是在实际应用中，梯度下降法通常能得到令人满意的结果。最后，需要再次强调的是，要将参数进行随机初始化，而不是全部置为$0$。如果所有参数都用相同的值作为初始值，那么所有隐藏层单元最终会得到与输入值有关的、相同的函数（也就是说，对于所有$ i$，$W^{(1)}_{ij}$都会取相同的值，那么对于任何输入$x$ 都会有：$a^{(2)}_1 = a^{(2)}_2 = a^{(2)}_3 = \ldots ）$。随机初始化的目的是使对称失效。
+梯度下降法中每一次迭代都按照如下公式对参数 $W$ 和$b$ 进行更新：
+$$
+\begin{align}
+W_{ij}^{(l)} &amp;= W_{ij}^{(l)} - \alpha \frac{\partial}{\partial W_{ij}^{(l)}} J(W,b) \\
+b_{i}^{(l)} &amp;= b_{i}^{(l)} - \alpha \frac{\partial}{\partial b_{i}^{(l)}} J(W,b)
+\end{align}
+$$
+其中$\alpha$是学习速率。其中关键步骤是计算偏导数。我们现在来讲一下反<strong>向传播算法</strong>，它是计算偏导数的一种有效方法。</p>
+<p>反向传播算法的思路如下：给定一个样例 $(x,y)$，我们首先进行“前向传导”运算，计算出网络中所有的激活值，包括$h_{W,b}(x)$ 的输出值。之后，针对第$l$ 层的每一个节点$i$，我们计算出其“残差”$\delta^{(l)}_i$，该残差表明了该节点对最终输出值的残差产生了多少影响。对于最终的输出节点，我们可以直接算出网络产生的激活值与实际值之间的差距，我们将这个差距定义为$\delta^{(n_l)}_i$ （第$ n_l$ 层表示输出层）。对于隐藏单元我们如何处理呢？我们将基于节点残差的加权平均值计算$\delta^{(l)}_i$，这些节点以$a^{(l)}_i$ 作为输入。下面是反向传导算法的细节</p>
+<ol>
+<li>进行前馈传导计算，利用前向传导公式，得到 $ L_2, L_3, \ldots$  直到输出层 $L_{n_l}$ 的激活值。</li>
+<li>
+<p>对于第$n_l$层（输出层）的每个输出单元$i$，我们根据以下公式计算残差：
+$$
+\begin{align}
+\delta^{(n_l)}_i
+= \frac{\partial}{\partial z^{(n_l)}_i} \;\;
+        \frac{1}{2} \left|y - h_{W,b}(x)\right|^2 = - (y_i - a^{(n_l)}_i) \cdot f'(z^{(n_l)}_i)
+\end{align}
+$$</p>
+</li>
+<li>
+<p>对 $l = n_l-1, n_l-2, n_l-3, \ldots, 2$ 的各个层，第$l$ 层的第$i$个节点的残差计算方法如下：
+$$ \delta^{(l)}_i = \left( \sum_{j=1}^{s_{l+1}} W^{(l)}_{ji} \delta^{(l+1)}_j \right) f'(z^{(l)}_i)$$</p>
+</li>
+<li>计算我们需要的偏导数，计算方法如下:
+$$
+\begin{align}
+\frac{\partial}{\partial W_{ij}^{(l)}} J(W,b; x, y) &amp;= a^{(l)}_j \delta_i^{(l+1)} \\
+\frac{\partial}{\partial b_{i}^{(l)}} J(W,b; x, y) &amp;= \delta_i^{(l+1)}
+\end{align}
+$$</li>
+</ol>
+<p>可以用矩阵-向量表示法重写以上算法。我们使用"$\bullet$" 表示向量乘积运算符。若 $a = b \bullet c$，则$a_i = b_ic_i$。反向传播算法可表示为以下几个步骤：</p>
+<ol>
+<li>进行前馈传导计算，利用前向传导公式，得到$L_2, L_3, \ldots$直到输出层$L_{n_l}$ 的激活值。</li>
+<li>对输出层（第$n_l$ 层），计算：
+$$
+\begin{align}
+\delta^{(n_l)}
+= - (y - a^{(n_l)}) \bullet f'(z^{(n_l)})
+\end{align}
+$$</li>
+<li>对于 $l = n_l-1, n_l-2, n_l-3, \ldots, 2$ 的各层，计算:
+$$
+\begin{align}
+\delta^{(l)} = \left((W^{(l)})^T \delta^{(l+1)}\right) \bullet f'(z^{(l)})
+\end{align}
+$$</li>
+<li>计算最终需要的偏导数值：
+$$
+\begin{align}
+\nabla_{W^{(l)}} J(W,b;x,y) &amp;= \delta^{(l+1)} (a^{(l)})^T, \\
+\nabla_{b^{(l)}} J(W,b;x,y) &amp;= \delta^{(l+1)}.
+\end{align}
+$$</li>
+</ol>
+<p>批量梯度下降法中的一次迭代步骤如下:</p>
+<ol>
+<li>对于所有$l$，令$\Delta W^{(l)} := 0$ ,$ \Delta b^{(l)} := 0$ （设置为全零矩阵或全零向量）</li>
+<li>对于$i = 1 $到$m$，<ul>
+<li>使用反向传播算法计算$\nabla_{W^{(l)}} J(W,b;x,y)$ 和$\nabla_{b^{(l)}} J(W,b;x,y)$。</li>
+<li>计算$\Delta W^{(l)} := \Delta W^{(l)} + \nabla_{W^{(l)}} J(W,b;x,y)$。</li>
+<li>计算$\Delta b^{(l)} := \Delta b^{(l)} + \nabla_{b^{(l)}} J(W,b;x,y)$。</li>
+</ul>
+</li>
+<li>更新权重参数：
+$$
+\begin{align}
+W^{(l)} &amp;= W^{(l)} - \alpha \left[ \left(\frac{1}{m} \Delta W^{(l)} \right) + \lambda W^{(l)}\right] \\
+b^{(l)} &amp;= b^{(l)} - \alpha \left[\frac{1}{m} \Delta b^{(l)}\right]
+\end{align}
+$$
+重复梯度下降法的迭代步骤来减小代价函数$J(W,b)$的值，进而求解神经网络。</li>
+</ol>
+<h4>神经网络的问题</h4>
+<ul>
+<li>比较容易过拟合,参数难调.</li>
+<li>训练速度比较慢,在层次比较少的情况下,并不比其他方法更优.</li>
+<li>随着网络的深度增加,反向传播的梯度（从输出层到网络的最初几层）的幅度会急剧的减小.这样,当使用梯度下降发的时候,最初的基层的权重变化非常缓慢,以至于他们不能够从样本中有效的学习,这种问题通常被称为<code>梯度的弥散(gradient diffusion)</code>.</li>
+</ul>
+<h2>Deep Learning</h2>
+<h3>深度学习的基本思想</h3>
+<h4>自编码器(Autoencoders)</h4>
+<p>假设我们只有一个没有带类别标签的训练样本集合 ${x^{(1)}, x^{(2)}, x^{(3)}, \ldots}$ ，其中$x^{(i)} \in \Re^{n}$ 。自编码神经网络是一种无监督学习算法，它使用了反向传播算法，并让目标值等于输入值，比如 $y^{(i)} = x^{(i)}$ 。下图是一个自编码神经网络的示例。
+<p align="center">
+<img alt="Autoencoder636" class="img-responsive" src="/static/images/Autoencoder.png" width="50%"/>
+</p>
+自编码神经网络尝试学习一个$ h_{W,b}(x) \approx x$ 的函数,它尝试逼近一个恒等函数，从而使得输出 $\hat{x}$ 接近于输入$x$.自编码神经网络的意义在于:</p>
+<ol>
+<li>当我们限制隐藏神经元的数量让它小于输入的神经元个数,就可以得到输入的压缩表示(数据降维).</li>
+<li>即使隐藏神经单元的个数比输入的神经元个数多,对自编码神经网络施加一些其他的限制条件也可以发现输入数据中的结构,比如,如果给隐藏神经元加入稀疏性限制，那么自编码神经网络即使在隐藏神经元数量较多的情况下仍然可以发现输入数据中一些有趣的结构。</li>
+</ol>
+<p>在含有多个隐藏层的自编码神经网络中,每更高一层的隐层都是对低一层的更高阶的抽象.例如,当处理对象是图像时,可以用深度网络学习到"部分-整体"的关系.例如，第一层可以学习如何将图像中的像素组合在一起来检测边缘（正如我们在前面的练习中做的那样）。第二层可以将边缘组合起来检测更长的轮廓或者简单的“目标的部件”。在更深的层次上，可以将这些轮廓进一步组合起来以检测更为复杂的特征。</p>
+<h4>基本原理</h4>
+<p>深度学习的过程可以分为两步:</p>
+<ol>
+<li>预训练:首先使用大量的未标注数据训练一个自编码器,这个自编码器能够从数据中学习到数据的最显著特征.</li>
+<li>微调:再使用已标注数据对训练好的数据进行有监督学习(微调),从而得到最终想要的结果(这一步使用反向传播算法).</li>
+</ol>
+<h4>逐层训练方法</h4>
+<p>与神经网络使用反向训练的方法不同,神经网络使用逐层贪婪训练方法训练模型.主要思路是每次只训练网络中的一层，即我们首先训练一个只含一个隐藏层的网络，仅当这层网络训练结束之后才开始训练一个有两个隐藏层的网络，以此类推。在每一步中，把已经训练好的前$k-1$ 层固定，然后增加第$k$层（也就是将已经训练好的前$k-1$ 的输出作为输入）。每一层的训练可以是有监督的（例如，将每一步的分类误差作为目标函数），但更通常使用无监督方法(例如自动编码器).</p>
+<p align="center">
+<img alt="DeepLearningFeautures" class="img-responsive" src="/static/images/deeplearningfeatures.png" width="60%"/>
+</p>
+<h3>深度学习的应用</h3>
+<ul>
+<li>图像识别</li>
+<li>语音识别</li>
+<li>nlp</li>
+<li>其他</li>
+</ul>
+<h3>参考</h3>
+<p><a href="http://blog.csdn.net/zouxy09/article/details/8775518">Deep Learning（深度学习）学习笔记整理系列</a></p>
+<p><a href="http://www.deeplearningbook.org/">Deep Learning</a></p>
+<p><a href="http://ufldl.stanford.edu/tutorial/">Deep Learning Tutorial</a></p>
+<p><a href="http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B">http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B</a></p>
+<div class="pager">
+    <ul>
+        <li class="previous"><a href="http://synckey.name/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html" data-toggle="tooltip"
+                                title="让VIM记录文件上次编辑的位置">&larr; Previous</a></li>
+        <li class="next"><a href="http://synckey.name/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html"
+                            data-toggle="tooltip" title="HHKB 设置与快捷键">Next &rarr;</a></li>
+    </ul>
+</div><!--
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'synckey'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+-->
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "posts/2016/03/01/summary-concepts-of-deep-learning.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'http://synckey.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+
+
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+<!-- End Disqus Code -->
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="separator"></div>
+    </div>
+</div>
+<!-- /.entry-content -->
+
+</article>
+</section>
+
+<div class="copyright">
+    &copy; 2017 andy
+    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
+    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+</div>
+</div>
+
+<!--
+<footer>
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-2">
+                <hr>
+            </div>
+            <div class="col-lg-8 col-md-offset-2">
+                <center>
+                    &copy; 2017 andy
+                    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                    <!--
+                    <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+                </center>
+            </div>
+        </div>
+    </div>
+</footer>
+                    -->
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55913313-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- End Google Analytics Code -->
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
+
+</div>
+</body>
+</html>

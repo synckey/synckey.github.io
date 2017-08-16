@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mm - Andy's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Thumbnail for wechat, when share links in wechat,it will use this piture for thumbnail.This can be specific for
+         every sigle page. -->
+
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+            src='/static/images/wechat_logo_300x300.jpg'/></div>
+
+    <!--
+    -->
+<meta name="author" content="andy"/>
+<meta name="keywords" content="mm"/>
+
+    <!-- Open Graph tags -->
+    <meta property="og:site_name" content="Andy's Blog"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Andy's Blog"/>
+    <meta property="og:url" content="http://synckey.name"/>
+    <meta property="og:description" content="Andy's Blog"/>
+
+
+
+    <script src="http://synckey.name/theme/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://synckey.name/theme/js/bootstrap.min.js"></script>
+
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <script src="http://synckey.name/theme/js/respond.min.js"></script>
+    <!-- highcharts -->
+    <script src="http://synckey.name/theme/js/highcharts.js"></script>
+    <script src="http://synckey.name/theme/js/exporting.js"></script>
+    <script src="http://synckey.name/theme/js/holder.js"></script>
+    <!-- mathtex -->
+    <!--
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$', '$']],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']},
+            processEscapes: true,
+        });
+       MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += 'has-jax';
+        }
+      });
+
+    </script>-->
+    <script type="text/javascript"
+            src="http://synckey.name/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$', '$'], ["\\(", "\\)"]],
+                processEscapes: true
+            },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            "HTML-CSS": {
+                availableFonts: ["TeX"],
+                scale:85,
+                imageFont: null
+            }
+
+        });
+    </script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="http://synckey.name/theme/css/normalize.css"/>
+    <!--
+    <link rel="stylesheet" href="http://synckey.name/theme/css/skeleton.css"/>-->
+    <link rel="stylesheet" href="http://synckey.name/theme/css/style.css"/>
+    <!--
+    <link href="http://synckey.name/theme/css/font-awesome.min.css" rel="stylesheet">
+    -->
+    <link href="http://synckey.name/theme/css/pygments/github.css"
+          rel="stylesheet">
+
+
+    <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
+
+
+
+
+</head>
+
+<body>
+<div class="navbar-default "
+     role="navigation">
+    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-top-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://synckey.name/" class="navbar-brand">
+Andy's Blog            </a>
+            <a class="navbar-brand" href="/">Posts</a></li>
+            <a class="navbar-brand" href="/archives">Archives</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-top-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
+                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--
+<div class="page-header container">
+    <ul class="nav-left">
+        <li class="home"><a href="/">Andy's Blog</a></li>
+        <li class="desktop-only"><a href="/">Posts</a></li>
+        <li><a href="/feeds/all.atom.xml"></a>
+    </ul>
+
+    <ul class="nav-right">
+        <li><a href="/about">About</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+
+</div>
+-->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html">第一次去NZ必备物品清单</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-05-24</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><h4>1. 文件</h4>
+<table class="table table-hover table-striped">
+<thead>
+<tr>
+<th align="left">文件</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">护照</td>
+<td align="left">首页、签证页复印携带</td>
+</tr>
+<tr>
+<td align="left">护照标准照片</td>
+<td align="left">10张以上</td>
+</tr>
+<tr>
+<td align="left">驾照</td>
+<td align="left">无实习字样</td>
+</tr>
+<tr>
+<td align="left">出生公证</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">无犯罪证明</td>
+<td align="left">看时效，如果会过期就不用提前做</td>
+</tr>
+<tr>
+<td align="left">雅思成绩单</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">体检证明</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">学士毕业证</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">学士学位证</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">大学成绩单</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">计算机等级考试</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">竞赛获奖证书</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">劳动合同</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">雇主支持信</td>
+<td align="left">带原件（可以后期补）</td>
+</tr>
+<tr>
+<td align="left">离职证明</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">在前公司获奖奖状</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">纳税清单</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">社保证明</td>
+<td align="left">带原件</td>
+</tr>
+<tr>
+<td align="left">照片</td>
+<td align="left">和同事合影，可整理一下保存好</td>
+</tr>
+</tbody>
+</table>
+<h4>2. 资金</h4>
+<table class="table table-hover table-striped">
+<thead>
+<tr>
+<th align="left">资金</th>
+<th align="left">备注 …</th></tr></thead></table>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2017/02/23/2016-summery.html">2016 Full of Serendipities</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-02-23</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p><strong>2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。</strong></p>
+<p>不知道每个人心里是不是都有不愿意提及的往事，在某些时候，你是彻底的骗子，无赖，恶魔。有一阵子活在自己虚设的缱绻而又梦境里，不问对错，不追因果，一切那么自然而然。即使你知道这梦总有梦醒的时刻，结局早已写好，也假装要让它继续圆下去，因为从开始你就是恶魔，恶魔总要让梦破碎。这些事，本可以远离，不用歇斯底里，更不用刨根问底。可喜的是，放弃本不珍贵的东西并不难。高中的时候读过的诗，要过许多年，才解其中意，真正做到的，又能有几个？</p>
+<blockquote>
+<p>爱里不见是非,<br/>
+爱里不见强弱,<br/>
+爱里只有情,<br/>
+情没有对错. </p>
+<p>爱里只见花飞,<br/>
+爱里只见叶落,<br/>
+爱里只有美,<br/>
+美没有善恶.</p>
+<p>宁愿因情生灾,<br/>
+宁愿因美致祸,<br/>
+宁愿情人说谎,<br/>
+可是我不说破.<br/>
+--&lt;爱里&gt; 李敖</p>
+</blockquote>
+<p>五月份的时候，从小南庄小破烂的二居室次卧搬到了自如的一个主卧，生活质量也随着房租提高，房租从2000提高到了3700一个月，肉疼。在那个装修跟房租格格不入的90年二层小楼里，生活其实得到了极大的满足 …</p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2017/02/23/2016-summery.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2016/11/07/eoi-documents.html">EOI 材料准备</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-11-07</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><h3>EOI 地址</h3>
+<p><a href="https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/criteria/skilled-migrant-category-resident-visa?nationality=nationality-CHN&amp;country=residence-CHN&amp;applying=co">eoi 打分系统</a></p>
+<h3>EOI材料准备</h3>
+<h3>出生公正和无犯罪记录证明公正</h3>
+<p><strong>办理地点</strong>：户籍所在地的派出所和公证处</p>
+<p><strong>携带材料</strong>： 父母身份证，户口本，护照，本人身份证，本人近期二寸照片</p>
+<p><strong>费用</strong>：500 一共</p>
+<p><strong>Date</strong>: 2017.06.01</p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2016/11/07/eoi-documents.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2016/11/07/sfv-documents.html">SFV 材料准备</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-11-07</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><h2>需要准备的材料列表</h2>
+<ol>
+<li>护照（原件）</li>
+<li>拍证件照</li>
+<li>体检回执</li>
+<li>银行存款证明</li>
+<li>无犯罪记录证明和公正</li>
+<li>学位学历证书</li>
+<li>雅思成绩单（a，g均可，均分至少6.5）</li>
+</ol>
+<h2>体检</h2>
+<p><strong>携带材料</strong>：护照（原件，复印件）</p>
+<p><strong>费用</strong>： 1590（不同体检机构会有不同）</p>
+<p><strong>Date</strong>: 2016.11.07</p>
+<p>体检必须在指定医院(<a href="http://onlineservices.immigration.govt.nz/migrant/stream/work/skilledmigrant/LinkAdministration/ToolboxLinks/paneldoctors.htm?level=1&amp;_ga=1.144344885.1009309295.1476774310">Panel Physicians</a>)中进行，要提前打电话预约。体检不需要携带照片，会现场拍一个。整个流程大概2小时，当场就能拿到回执。体检如果有问题会当场告知。我当时血液的检查结果还没没出来，医生说如果有问题会打电话告之，没问题的话，就不打电话了。</p>
+<h2>无犯罪记录证明翻译以及公正</h2>
+<p><strong>办理地点</strong>：户籍所在地的派出所和公证处</p>
+<p><strong>携带材料</strong>：身份证（或照片，正反面），户口本（或照片），护照（或照片 …</p>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2016/11/07/sfv-documents.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="http://synckey.name/posts/2016/11/06/succeed-to-get-sfv.html">SFV Got</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-11-06</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><h1>为什么要抢SFV(Silver Fern Job Search Visa)</h1>
+<p>其实这个问题很难回答，也许是我自己没有想清楚，也许是我自己患得患失。早在2014年从前单位离职的时候，当时的直属领导就问我为什么要离职？1 2 3 4 blabla，不好可以细数一大堆。换个工作就没有这些问题了么？他问道。我无法回答，那是我第一次换工作，我无从知晓——在一个地方遇到问题，就想要逃避，不去面对，这个问题永远也解决不了。逃避，不是解决问题的办法。想要出去的想法其实和换工作一样。眼前不好，不代表换个地方就好。去新西兰是否真的就比国内好？我像三年前一样，茫然不晓。  然而，自己的内心里常常知道自己想要什么（尽管大部分想要的常常也得不到）。自己如此强烈的想要出去的原因可能如下：</p>
+<ul>
+<li>污染。从2012年就开始见识了帝都的雾霾，即使戴着口罩也有那种独特的恶心的气味也逃避不掉。无数个想去奔跑的清晨，被困在房间里面做 insanity。有雾霾的日子，心情不会好。 作为一个健身爱好者和惜命如此的少年，并不想在身体蠢蠢欲动的时候被困在室内。尤其是，不想自己的伴侣 …</li></ul>
+        <div class="read-more">
+            <a class="btn" href="http://synckey.name/posts/2016/11/06/succeed-to-get-sfv.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="post-container">
+</div>
+<div class="copyright">
+    &copy; 2017 andy
+    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
+    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+</div>
+</div>
+
+<!--
+<footer>
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-8 col-md-offset-2">
+                <hr>
+            </div>
+            <div class="col-lg-8 col-md-offset-2">
+                <center>
+                    &copy; 2017 andy
+                    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+                    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+                    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                    <!--
+                    <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+                </center>
+            </div>
+        </div>
+    </div>
+</footer>
+                    -->
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55913313-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- End Google Analytics Code -->
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
+
+</div>
+</body>
+</html>

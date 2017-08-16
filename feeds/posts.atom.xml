@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog - posts</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/posts.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-05-10T00:00:00+08:00</updated><entry><title>BFS遍历到图的指定层的一种方法</title><link href="http://synckey.name/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html" rel="alternate"></link><published>2017-05-10T00:00:00+08:00</published><updated>2017-05-10T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-05-10:/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html</id><summary type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;leetcode原题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Only one letter can be changed at a time.&lt;/li&gt;
+&lt;li&gt;Each transformed word must exist in the word list. Note that beginWord is not a transformed …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;leetcode原题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Only one letter can be changed at a time.&lt;/li&gt;
+&lt;li&gt;Each transformed word must exist in the word list. Note that beginWord is not a transformed word.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For example,&lt;/p&gt;
+&lt;p&gt;Given:&lt;/p&gt;
+&lt;p&gt;beginWord = &lt;code&gt;"hit"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;endWord = &lt;code&gt;"cog"&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;wordList = &lt;code&gt;["hot","dot","dog","lot","log","cog"]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;As one shortest transformation is &lt;code&gt;"hit" -&amp;gt; "hot" -&amp;gt; "dot" -&amp;gt; "dog" -&amp;gt; "cog"&lt;/code&gt;,return its length &lt;code&gt;5&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Return 0 if there is no such transformation sequence.&lt;/li&gt;
+&lt;li&gt;All words have the same length.&lt;/li&gt;
+&lt;li&gt;All words contain only lowercase alphabetic characters.&lt;/li&gt;
+&lt;li&gt;You may assume no duplicates in the word list.&lt;/li&gt;
+&lt;li&gt;You may assume beginWord and endWord are non-empty and are not the same.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这个题可以用图的思路来解答，把beginWord当成是图的root节点，每个词通过一次变换的词作为这个节点的子节点，从beginWord开始遍历搜索endWord，所有的路径中最小的那些就是答案。当然，遍历的过程中要注意，这是一个有环图，要记录已经遍历过的节点。因为是路径搜索，要保存路径，所以最简单的想法是使用DFS对整个图进行搜索，最后将最短路径取出来。然而，这个方法行不通，尤其是在字典比较大的时候，树特别深，会超时。如果对整个树进行BFS也会有一样的结果，都会超时。一个优化的思路就是只对graph进行遍历，一直到endWord第一次出现的那一层终止，因为要找的是最短变换，后面的遍历没有必要。传统的BFS算法使用一个队列来保存将要遍历的节点列表，但是并不能知道当前遍历节点所在的层数。所以就用一个Map&lt;string, integer=""&gt;来保存每个节点第一次出现的层数，endWord第一次出现的那一层，就是迭代要终止的那一层，假设为minLevel。在遍历完minLevel以后，就可以终止算法。&lt;/string,&gt;&lt;/p&gt;
+&lt;p&gt;最终要输出变换路径，可以一边遍历，一边构造图的结构。这个问题是有向有环图，可以使用&lt;code&gt;Map&amp;lt;String, Set&amp;lt;String&amp;gt;&amp;gt; graph&lt;/code&gt;来构造整个图。&lt;/p&gt;
+&lt;p&gt;最终，使用递归打印出构造出来的&lt;code&gt;graph&lt;/code&gt;中所有&lt;code&gt;beginWord-&amp;gt;endWord&lt;/code&gt;之间的路径。&lt;/p&gt;
+&lt;p&gt;详细代码见:&lt;a href="https://discuss.leetcode.com/topic/88859/263ms-easy-to-understand-java-solution-using-simple-BFS"&gt;263ms Easy to Understand Java Solution Using Simple BFS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这个问题还有一个简化版的问题&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;Word Ladder&lt;/a&gt;，只要求出&lt;code&gt;beginWord&lt;/code&gt;和&lt;code&gt;endWord&lt;/code&gt;之间最短变换的路径长度。可以用上面的解法，或者直接DFS这个图，第一次遇到&lt;code&gt;endWord&lt;/code&gt;时返回路径长度即可。&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/2857/share-two-similar-java-solution-that-accpted-by-oj/2"&gt;Share two similar Java solution that Accpted by OJ.&lt;/a&gt;&lt;/p&gt;</content><category term="algorithm"></category></entry><entry><title>今朝一别，或是流水十年</title><link href="http://synckey.name/posts/2017/03/19/see-you-ten-years-later.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/posts/2017/03/19/see-you-ten-years-later.html</id><summary type="html">&lt;p&gt;周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。&lt;/p&gt;
+&lt;p&gt;跟jw是大学室友，他的床，就在我的隔壁，每天晚上他爬上床，我都能听到。进大学的第一天，我刚到宿舍，就看到他坐在那里，当时对他的第一印象，头很大，可能头大就是他聪明的原因吧。jw和我一样，来自农村的家庭，家里也不富裕，所以共同语言有不少。当时我们常常一起上课，一起出去买东西，没想到后来还一起来了北京，一起去百度实习。虽然他去百度正式工作的时候，我已经不在百度了。&lt;/p&gt;
+&lt;p&gt;2011年夏天，也就是大三快到大四的下学期，我拿了百度的实习offer，学院跟百度有合作，搞了一个&lt;a href="https://github.com/gmsh/dnscache"&gt;项目实训&lt;/a&gt;，jw，我，还有gms分一组，那时候我们每天都顶着夏日，来到机房，敲代码，调试代码。 后来因为他在项目里面表现优异，百度也给了他面试机会。最终，他也拿到了百度的实习offer，百度运维部实习。跟我不是同一批，如果我没记错，他是在我后面入职的。在百度实习的时候，我们并没有很多交集 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。&lt;/p&gt;
+&lt;p&gt;跟jw是大学室友，他的床，就在我的隔壁，每天晚上他爬上床，我都能听到。进大学的第一天，我刚到宿舍，就看到他坐在那里，当时对他的第一印象，头很大，可能头大就是他聪明的原因吧。jw和我一样，来自农村的家庭，家里也不富裕，所以共同语言有不少。当时我们常常一起上课，一起出去买东西，没想到后来还一起来了北京，一起去百度实习。虽然他去百度正式工作的时候，我已经不在百度了。&lt;/p&gt;
+&lt;p&gt;2011年夏天，也就是大三快到大四的下学期，我拿了百度的实习offer，学院跟百度有合作，搞了一个&lt;a href="https://github.com/gmsh/dnscache"&gt;项目实训&lt;/a&gt;，jw，我，还有gms分一组，那时候我们每天都顶着夏日，来到机房，敲代码，调试代码。 后来因为他在项目里面表现优异，百度也给了他面试机会。最终，他也拿到了百度的实习offer，百度运维部实习。跟我不是同一批，如果我没记错，他是在我后面入职的。在百度实习的时候，我们并没有很多交集，神奇的是他当时的直属经理后来变成了我的上级。我还记得的，就只剩两件事。&lt;/p&gt;
+&lt;p&gt;有一天，好像是周末，jw跟wr一起住的沙河两居室房东，突然要把他们赶出来了，记得当时他们还挺狼狈。我跟xh当时住在沙盒高教园，离沙河只一站地铁。所以他和wr，要到我们这里来借宿。我们当时去帮他们搬东西，乱七八糟的搬了一堆，都搬到我们这里来了，他跟wr就在我们的三居室的客厅寄居了几天。当时似乎并没有太多交流，可能百度的工作也的确是很忙。这件事当时大家好像都没有觉得怎么样，现在回想起来，似乎很辛酸。&lt;/p&gt;
+&lt;p&gt;在百度实习期间，我们的另外一个交集应该是他实习完了回学校之前，我们在辉煌国际下面的麻辣香锅一起吃了一顿饭。那顿饭应该是jw请的，吃了一百多，对当时的我们来说，还挺多。&lt;/p&gt;
+&lt;p&gt;本科毕业jw保研在学校继续读研，而我，则从实习生转正，继续干同样的活。后来他去了卢森堡交流，后来听说跟同去卢森堡的团支书ll在一起了。此间，我们似乎没有怎么联系过。&lt;/p&gt;
+&lt;p&gt;时间很快就来到了2015年，jw已经回国，他去了北京一家小的创业公司实习，好像拿的薪水挺多。此时的我，已经在去哪儿网工作。我们在品质伊犁吃饭，那应该是我们三年多以后的第一次见面。后来他要回学校，放了一个大箱子在我小南庄的房间里，取箱子的时候ll也来了，当时我们三个人坐在我连双人床都放不下的小房间里，房间里有小虫子在飞。jw送了我一个在欧洲买的nike的斜跨包，我很喜欢，后来就一直带着去人大上自习。&lt;/p&gt;
+&lt;p&gt;wd结婚的时候，在济南请班里的同学吃饭，那是我毕业以后第一次回济南。晚上是跟jw一起住在后面半山腰上新建的宿舍楼里过夜，那晚只有我和jw。宿舍的味道还是和以前的一样，人却就只有我和jw了，我们在一起总是有话聊，即使只有我们两个人也不尴尬。那一晚我睡在yrp的床上，他的被子晒的很香。&lt;/p&gt;
+&lt;p&gt;后来jw研究生也毕业了，我还介绍他来我们组面试，可惜当时没有hc，他就去了百度。我们在2016年秋天的时候又聚过一次，在嘉美影城的楼上吃的麻辣诱惑。北京城那么大，好像我们虽是同学，聚的也真不多，熙熙攘攘。过年之前很想请jw吃一次饭，他说要等我妹子来了一起，后来一拖直到今天。&lt;/p&gt;
+&lt;p&gt;从安河桥北到中关村，只有20分钟的地铁，我们约在了离他更近的中关村吃站点pizza。他们可以叫做夫妻了吧（去年领了证），jw稍微有点变胖了，头似乎更大了，ll却比以前更瘦了。jw说，想喝酒，下一次一起喝可能要再过十年八年了。他下去买酒，买了好几罐啤酒，说是把楼下的小超市的啤酒都买光了。我们一人一半，都喝完了，头很晕。ll说了不少他们公司的趣事，也说了很多要去法国租房，工作，担心安全问题，当然我们都很担心的，就是经济问题。作为还有三个月也要只身去异国他乡的我来说，他们的心情，也是我的心情。&lt;/p&gt;
+&lt;p&gt;老同学见老同学，总有说不完的话，此刻不是秋天，内心却很凄凉。6年前，我们在宿舍憧憬着去百度工作，满是期待，彼时正是初夏，万物勃发。6年时间一晃就过去了，我们又要开启各自的新生活，眼神里除了期待，似乎还有一些别的。如果时间能再过一年，我们就要认识十年了，那时候的我们，会是在哪里？ 新西兰与法国，要横跨大半个地球。吃完饭喝完咖啡，我们一起去南京银行办银行卡，办完了我就赶着去办浦发的信用卡，于是就此别过。&lt;/p&gt;
+&lt;p&gt;--“你们飞的时候，反正也是从北京，叫我送你们啊？”&lt;/p&gt;
+&lt;p&gt;--“我们是夜里飞。”&lt;/p&gt;
+&lt;p&gt;--“哦，那算了，有机会再约哈~”&lt;/p&gt;
+&lt;p&gt;在回来的路上想到了两句诗，很是契合心意，似乎有酒有十年，然而终究是想不起来是哪两句了。查来查去，只查到一句“浮云一别后，流水十年间”，说的却是分别十年的久别重逢，那么就用它作为结尾吧。十年以后，我们必定还能相见。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;江汉曾为客，
+相逢每醉还.&lt;br/&gt;
+浮云一别后，
+流水十年间.&lt;br/&gt;
+欢笑情如旧，
+萧疏鬓已斑.&lt;br/&gt;
+何因北归去，
+淮上对秋山.&lt;br/&gt;
+--&amp;lt;淮上喜会梁川故友&amp;gt; 韦应物&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="life"></category></entry><entry><title>Notes for Leetcode</title><link href="http://synckey.name/posts/2016/10/20/notes-for-leetcode.md.html" rel="alternate"></link><published>2016-10-20T00:00:00+08:00</published><updated>2016-10-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-20:/posts/2016/10/20/notes-for-leetcode.md.html</id><summary type="html">&lt;h2&gt;1.Binary Number Representation&lt;/h2&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mb"&gt;0b1111&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// which is equals to `x = 15`; and is useful when use the number for masking.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;2.Rotate Function&lt;/h2&gt;
+&lt;h3&gt;Original Question&lt;/h3&gt;
+&lt;p&gt;原始问题链接：&lt;a href="https://leetcode.com/problems/rotate-function/"&gt;Rotate Function&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Given an array of integers $A$ and let $n$ to be its length.&lt;/p&gt;
+&lt;p&gt;Assume $B_k$ to be an array obtained by …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;1.Binary Number Representation&lt;/h2&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mb"&gt;0b1111&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// which is equals to `x = 15`; and is useful when use the number for masking.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;2.Rotate Function&lt;/h2&gt;
+&lt;h3&gt;Original Question&lt;/h3&gt;
+&lt;p&gt;原始问题链接：&lt;a href="https://leetcode.com/problems/rotate-function/"&gt;Rotate Function&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Given an array of integers $A$ and let $n$ to be its length.&lt;/p&gt;
+&lt;p&gt;Assume $B_k$ to be an array obtained by rotating the array $A$ $k$ positions clock-wise, we define a "rotation function" $F$ on $A$ as follow:
+$$
+F(k) = 0 * B_k[0] + 1 * B_k[1] + \cdots + (n-1) * B_k[n-1].
+$$
+Calculate the maximum value of $F(0), F(1), \cdots, F(n-1)$.
+Example:&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;A = [4, 3, 2, 6]
+F(0) = (0 * 4) + (1 * 3) + (2 * 2) + (3 * 6) = 0 + 3 + 4 + 18 = 25
+F(1) = (0 * 6) + (1 * 4) + (2 * 3) + (3 * 2) = 0 + 4 + 6 + 6 = 16
+F(2) = (0 * 2) + (1 * 6) + (2 * 4) + (3 * 3) = 0 + 6 + 8 + 9 = 23
+F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So the maximum value of $F(0), F(1), F(2), F(3)$ is $F(3) = 26$.&lt;/p&gt;
+&lt;h3&gt;思路(&lt;a href="https://discuss.leetcode.com/topic/58616/java-solution-o-n-with-non-mathametical-explaination/8"&gt;来源&lt;/a&gt;)&lt;/h3&gt;
+&lt;p&gt;定义新的函数 $D(n)$为 $B_k[0]=A[n]$时$F(n)$ 的值，求 $F(n)$ 的最大值等价于求 $D(n)$ 的最大值，从而有：
+$$
+   D(n) = D(n-1) - A.length*A[n];
+$$
+即可得解：&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;maxRotateFunction&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;max&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Integer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;MIN_VALUE&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;sum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;ai&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;sum&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;];&lt;/span&gt;
+        &lt;span class="n"&gt;ai&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;];&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+    &lt;span class="n"&gt;max&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;ai&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;--)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;ai&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="n"&gt;sum&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;];&lt;/span&gt;
+        &lt;span class="n"&gt;max&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;max&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ai&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;3. Pascal's Triangle(杨辉三角)&lt;/h2&gt;
+&lt;h3&gt;问题&lt;/h3&gt;
+&lt;p&gt;原始问题连接:&lt;a href="https://leetcode.com/problems/pascals-triangle-ii/"&gt;Pascal's Triangle II&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Given an index $k(k=1,2,3,\cdots)$ , return the $k^{th}$ row of the Pascal's triangle.&lt;/p&gt;
+&lt;p&gt;For example, given k = 3,&lt;/p&gt;
+&lt;p&gt;Return &lt;code&gt;[1,3,3,1]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;问题很简单，就是打印杨辉三角的指定列。&lt;/p&gt;
+&lt;h3&gt;杨辉三角的性质&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;第$n$行有$n$项。&lt;/li&gt;
+&lt;li&gt;第$n$行数字和为$2^n-1$。 &lt;/li&gt;
+&lt;li&gt;第$n$行的第$m$的数字为$C_{n}^{m-1}$(二项式系数)。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;组合计算&lt;/h3&gt;
+&lt;p&gt;$C_{n}^{m}=\frac{A_{n}^{m}}{n!}=\frac{n(n-1)(n-2)\cdots(n-m+1)}{m!}$&lt;/p&gt;
+&lt;p&gt;上述公式在计算的时候已经避免直接计算$n!$,防止溢出，最终得到的解如下(参考&lt;a href="https://discuss.leetcode.com/topic/62617/java-combination-number"&gt;JAVA combination number&lt;/a&gt;)：&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;combine&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="kt"&gt;long&lt;/span&gt; &lt;span class="n"&gt;res&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;res&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;res&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="n"&gt;res&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Integer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nf"&gt;getRow&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;rowIndex&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;List&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Integer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;ArrayList&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;rowIndex&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;rowIndex&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;add&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;combine&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;rowIndex&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;));&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;4.Convert Char to Numeric&lt;/h3&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Character&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getNumericValue&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="sc"&gt;'5'&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sc"&gt;'5'&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="sc"&gt;'0'&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;5. 将一个数字二进制表示的第一个1后面的所有位都置为1，例如input 是&lt;code&gt;5&lt;/code&gt;，二进制表示是&lt;code&gt;101&lt;/code&gt;，希望得到&lt;code&gt;111&lt;/code&gt;。&lt;/h3&gt;
+&lt;h3&gt;6.素数(prime number)&lt;/h3&gt;
+&lt;h4&gt;素数的定义&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;质数（Prime number），又称素数，指在大于1的自然数中，除了1和该数自身外，无法被其他自然数整除的数（也可定义为只有1与该数本身两个因数的数）。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;7. LinkedHashSet&lt;/h3&gt;
+&lt;p&gt;这个集合会保持元素的插入顺序，所以，如果想要用它做&lt;code&gt;FIFO&lt;/code&gt;队列，出栈的时候要从第一个元素开始删。在&lt;a href="https://leetcode.com/problems/lfu-cache/#/description"&gt;LFU Cache&lt;/a&gt;这题中，可以用到&lt;code&gt;LinkedHashSet&lt;/code&gt;，因为从中删除元素的复杂度是O(1)。&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;LinkedHashSet&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Integer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;LinkedHashSet&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;add&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;add&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;add&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="c1"&gt;//:~output [1, 2, 3]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;8. Word Ladder II&lt;/h3&gt;
+&lt;p&gt;太麻烦了，单独开一篇：&lt;a href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html"&gt;BFS遍历到图的指定层的一种解法。&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;9. 中位数定义&lt;/h3&gt;
+&lt;p&gt;如果有一组数据(假设其个数为n)，将其排序，如果n为奇数，则中间的那个数为中位数，如果n为偶数，则中间两个数的平均值为这组数据的中位数。&lt;/p&gt;
+&lt;h3&gt;10. 计算平均值防止溢出&lt;/h3&gt;
+&lt;p&gt;一般情况下我们想要计算两个int:a,b的平均值时，我们会使用$(a+b)/2$的方式，如果a,b为数组的下标，这么做一般没有问题。但是如果a,b的值很大，a + b &amp;gt; Integer.MAX_VALUE时，这样做就会导致溢出，从而返回错误的结果。所以保守起见，可以使用$a+(a-b)/2$的方式来计算a,b的平均值，不会溢出哦。&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/65028/java-clean-code-with-explanations-and-running-time-2-solutions"&gt;Solution to Convert a Number to Hexadecimal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://leetcode.com/problems/rotate-function/"&gt;Rotate Function&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/58616/java-solution-o-n-with-non-mathametical-explaination/8"&gt;Java Solution O(n) with non mathametical explaination&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0"&gt;素数&lt;/a&gt;&lt;/p&gt;</content><category term="algorithm"></category></entry><entry><title>上品饺子</title><link href="http://synckey.name/posts/2016/04/20/shang-pin-jiao-zi.html" rel="alternate"></link><published>2016-04-20T00:00:00+08:00</published><updated>2016-04-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-04-20:/posts/2016/04/20/shang-pin-jiao-zi.html</id><summary type="html">&lt;p&gt;在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。&lt;/p&gt;
+&lt;p&gt;从此，就爱上了他们家的饺子，破了减肥不吃晚饭的戒。每次下班经过他们家门口，就走不动了，要做一番心里斗争。结果往往是要进去吃一大碗韭菜猪肉的水饺，加一个荷包蛋才会满足。也常常跟同事推荐，“有空一定要带你们一起去尝一尝水饺——都是手工的，他们家也有面条，面条上的猪肝，肉丝，木耳，香菇，都是现炒的，热腾腾的 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。&lt;/p&gt;
+&lt;p&gt;从此，就爱上了他们家的饺子，破了减肥不吃晚饭的戒。每次下班经过他们家门口，就走不动了，要做一番心里斗争。结果往往是要进去吃一大碗韭菜猪肉的水饺，加一个荷包蛋才会满足。也常常跟同事推荐，“有空一定要带你们一起去尝一尝水饺——都是手工的，他们家也有面条，面条上的猪肝，肉丝，木耳，香菇，都是现炒的，热腾腾的”。&lt;/p&gt;
+&lt;p&gt;小店的主人是一位大爷，大概50多岁，大爷的一家都在经营折这家饺子馆——大爷负责送外卖，大娘掌勺，女儿叫晶晶，负责端盘子和收钱，儿子负责包饺子，做凉菜。他们家的第五个成员，一直小黄，叫喵喵。喵喵总是在不停的叫，大爷有时候不去送外卖，就会把喵喵抱在腿上，笑眯眯的看着客人在吃饺子。&lt;/p&gt;
+&lt;p&gt;小店的生意也没有那么好，很少见到有坐满的时候，外卖也没有见到很多。有一次听到晶晶跟他爸爸吵，“要是我在这，这一单人家就不会取消了呀！”。小店的客人大多是附近的居民，有小情侣，妈妈带着孩子。也有一些附近工地上的工人，他们都是5，6个人一起来，有时候要把两张桌子拼起来才能坐得开。他们来了小店就会热闹许多，有烟有酒有欢笑。大多时候，我八点左右才到这里，那时候基本只有我一个人，在角落默默的吃完。走的时候，大爷或晶晶总是会说上一声慢走，有时候也会帮我把门打开。有一次快9点了才到，小妹妹说不买了，关门了。小哥哥想了一下，好像不忍心让我就这么饿着回去，于是就让我吃完他们才打烊。&lt;/p&gt;
+&lt;p&gt;春节前一个星期，突然发现饺子店关门了，大爷一家提前回家过年了，那几天挺失落，晚上回家也没有东西吃了。过完年大概两个星期，大爷一家才来。有时候早上上班碰到大爷过来开门，会热情的打一声招呼，有时候吃面也会聊上几句。&lt;/p&gt;
+&lt;p&gt;过完清明节，小店好像又关门了，这一次是在重新装修。每天路过都希望他们能早点装修完，心里其实也害怕，怕他们不开了。直到有一天店的门又开了，我满心欢喜推门进去，看到一桌的陌生人，没有大爷，一个中年人问道，&lt;/p&gt;
+&lt;p&gt;“想吃什么？”&lt;/p&gt;
+&lt;p&gt;“饺子店不开了么？”&lt;/p&gt;
+&lt;p&gt;“不开了，我们现在卖米饭。”&lt;/p&gt;
+&lt;p&gt;“哦，那算了。”&lt;/p&gt;
+&lt;p&gt;失落的退了出来，真的不开了么？&lt;/p&gt;
+&lt;p&gt;上周六中午，从小店门口路过，看到大爷大妈也在里面，于是又进了小店，想吃一碗饺子，然而大爷大妈只是在这里帮新主人吸引老客户而已，他们真的不开了。他们不开店了将会何去何从？想问却也没问的出口。今晚再次看到大爷在小店里，就走进去要了一份盖饭，大爷叫了我一声小王，像有什么事，没说什么就走了。吃饭的时候，新老板娘说大娘生病了，要回老家养病，才把这家店转让了。不知道大娘得的什么病，也不知道他们看病花了多少钱，有没有医保可以报销。记得大爷以前说他们住在一个地下室，他说他们租不起一套好一点的房子---也许是舍不得租。&lt;/p&gt;
+&lt;p&gt;一场突如其来的病，让一个本充满希望的家庭，又回到了原点。离开北京对他们来说福兮？祸兮？无从知晓。&lt;/p&gt;
+&lt;p&gt;只希望曾经多吃了几碗饺子。&lt;/p&gt;</content><category term="life"></category></entry><entry><title>HHKB 设置与快捷键</title><link href="http://synckey.name/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html" rel="alternate"></link><published>2016-02-26T00:00:00+08:00</published><updated>2016-02-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-02-26:/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html</id><summary type="html">&lt;p&gt;入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.&lt;/p&gt;
+&lt;p&gt;我用hhkb的开关是&lt;code&gt;011001&lt;/code&gt;,主要是使用macintosh的键盘布局并且将delete键设置为'BS'.另外,也安装了&lt;a href="https://pqrs.org/osx/karabiner/index.html.en"&gt;Karabiner&lt;/a&gt;这款神器,它一方面可以设置系统自动识别是否插入了外接键盘,如果插入了外接键盘,可以将mac的键盘disable掉,另一方面它具有强大的改键功能.硬件方面,买了一个miniusb右弯的接头,这样把hhkb放在mac键盘上的时候,线就不会弯曲到挡着屏幕了.&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;img alt="miniusb" class="img-responsive img-rounded" src="/static/images/miniusb.jpg" title="An awesome picture caption!" width="50%"/&gt;
+&lt;/p&gt;
+&lt;p&gt;hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所以小拇指很容易就能按到它,所以hhkb的键盘布局对emacs非常友好.而mac os操作系统对emacs风格的快捷键原生就有支持,在界面中可以通过&lt;code&gt;CTRL+B …&lt;/code&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.&lt;/p&gt;
+&lt;p&gt;我用hhkb的开关是&lt;code&gt;011001&lt;/code&gt;,主要是使用macintosh的键盘布局并且将delete键设置为'BS'.另外,也安装了&lt;a href="https://pqrs.org/osx/karabiner/index.html.en"&gt;Karabiner&lt;/a&gt;这款神器,它一方面可以设置系统自动识别是否插入了外接键盘,如果插入了外接键盘,可以将mac的键盘disable掉,另一方面它具有强大的改键功能.硬件方面,买了一个miniusb右弯的接头,这样把hhkb放在mac键盘上的时候,线就不会弯曲到挡着屏幕了.&lt;/p&gt;
+&lt;p align="center"&gt;
+&lt;img alt="miniusb" class="img-responsive img-rounded" src="/static/images/miniusb.jpg" title="An awesome picture caption!" width="50%"/&gt;
+&lt;/p&gt;
+&lt;p&gt;hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所以小拇指很容易就能按到它,所以hhkb的键盘布局对emacs非常友好.而mac os操作系统对emacs风格的快捷键原生就有支持,在界面中可以通过&lt;code&gt;CTRL+B&lt;/code&gt;等快捷键移动光标,大大减少使用触摸板的时间.为了能充分发挥hhkb的功能,本来打算从vim迁移到emacs的,但是idea里面没有像IdeaVim这样好用的插件,再加上Idea里面的emacs keymap并不好用,所以就放弃了emacs,是的因为idea跟emacs不能很好的工作才放弃emacs的.&lt;/p&gt;
+&lt;p&gt;不过虽然不用emacs,但是记住emacs风格的快捷键还是很有帮助的,下面是一些最常用到的快捷键,在iTerm2和大部分mac应用窗口都可以使用.在浏览器的表单填写页面里面,某些快捷键会失效,比如:在百度的搜索栏俩面填写搜索词的时候&lt;code&gt;CTRL+N&lt;/code&gt;没反应,这个时候在karabiner的emacs模式里面设置下就好了.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ctrl+p shell中上一个命令,或者文本中移动到上一行&lt;/li&gt;
+&lt;li&gt;Ctrl+n shell中下一个命令,或者 文本中移动到下一行&lt;/li&gt;
+&lt;li&gt;Ctrl+r 往后搜索历史命令&lt;/li&gt;
+&lt;li&gt;Ctrl+s 往前搜索历史命令&lt;/li&gt;
+&lt;li&gt;Ctrl+f 光标前移&lt;/li&gt;
+&lt;li&gt;Ctrl+b 光标后退&lt;/li&gt;
+&lt;li&gt;Ctrl+a 到行首&lt;/li&gt;
+&lt;li&gt;Ctrl+e 到行尾&lt;/li&gt;
+&lt;li&gt;Ctrl+d 删除一个字符,删除一个字符,相当于通常的Delete键&lt;/li&gt;
+&lt;li&gt;Ctrl+h 退格删除一个字符,相当于通常的Backspace键&lt;/li&gt;
+&lt;li&gt;Ctrl+u 删除到行首&lt;/li&gt;
+&lt;li&gt;Ctrl+k 删除到行尾&lt;/li&gt;
+&lt;li&gt;Ctrl+l 类似 clear 命令效果&lt;/li&gt;
+&lt;li&gt;Ctrl+y 粘贴&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.xiaozhou.net/got_hhkb_pro_2-2013-06-03.html"&gt;码农神器HHKB Pro2入手与开箱&lt;/a&gt;&lt;/p&gt;</content><category term="hhkb"></category><category term="keyboad"></category></entry><entry><title>我是怎么减掉了30斤</title><link href="http://synckey.name/posts/2015/04/13/my-experience-of-losing-weight.html" rel="alternate"></link><published>2015-04-13T00:00:00+08:00</published><updated>2015-04-13T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-04-13:/posts/2015/04/13/my-experience-of-losing-weight.html</id><summary type="html">&lt;!--
+&lt;div class="figure"&gt;
+&lt;img class='u-full-width' src='/static/images/2015_04_13_weights.svg' style='width: 100%;'&gt;
+        &lt;div class="caption"&gt;体重变化&lt;/div&gt;
+&lt;/div&gt;
+--&gt;
+&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;心理准备&lt;/h2&gt;
+&lt;h3&gt;1.动机——为什么要减肥?&lt;/h3&gt;
+&lt;p&gt;首先，要想清楚为什么要减肥？为了更漂亮，身材更好，为了不当人见人厌的死胖子？&lt;/p&gt;
+&lt;h3&gt;2.目标和计划&lt;/h3&gt;
+&lt;p&gt;有了动机以后就可以制定目标了，很多人一开始就把目标定在减20斤减30斤，这个目标是很具体的，看起来也是可达成的，但是很难坚持下去，
+因为可能折腾了一个月，体重还是没有任何变化，就丧失信心，中途放弃了。对我个人而言，我的目标其实就是完成计划，不是减多少斤，而是坚持了多久，做了多少天运动。
+制定减肥计划最重要的两条就是：a.不能对我的日常生活产生干扰，b.可持续。 所以我每天的运动时间限制在1个小时以内（一开始要更短），这样一来，不需要
+匀出其他时间，就可以实施计划。可持续其实包含两层含义：a.计划不需要太吃力就能完成（&lt;strong&gt;extremely important&lt;/strong&gt;）,如果计划目标定的太高，比如每天跑10公里，
+肯定没人坚持的下去。b …&lt;/p&gt;</summary><content type="html">&lt;!--
+&lt;div class="figure"&gt;
+&lt;img class='u-full-width' src='/static/images/2015_04_13_weights.svg' style='width: 100%;'&gt;
+        &lt;div class="caption"&gt;体重变化&lt;/div&gt;
+&lt;/div&gt;
+--&gt;
+&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;心理准备&lt;/h2&gt;
+&lt;h3&gt;1.动机——为什么要减肥?&lt;/h3&gt;
+&lt;p&gt;首先，要想清楚为什么要减肥？为了更漂亮，身材更好，为了不当人见人厌的死胖子？&lt;/p&gt;
+&lt;h3&gt;2.目标和计划&lt;/h3&gt;
+&lt;p&gt;有了动机以后就可以制定目标了，很多人一开始就把目标定在减20斤减30斤，这个目标是很具体的，看起来也是可达成的，但是很难坚持下去，
+因为可能折腾了一个月，体重还是没有任何变化，就丧失信心，中途放弃了。对我个人而言，我的目标其实就是完成计划，不是减多少斤，而是坚持了多久，做了多少天运动。
+制定减肥计划最重要的两条就是：a.不能对我的日常生活产生干扰，b.可持续。 所以我每天的运动时间限制在1个小时以内（一开始要更短），这样一来，不需要
+匀出其他时间，就可以实施计划。可持续其实包含两层含义：a.计划不需要太吃力就能完成（&lt;strong&gt;extremely important&lt;/strong&gt;）,如果计划目标定的太高，比如每天跑10公里，
+肯定没人坚持的下去。b.就是时间上的保障，对我而言，晨间的时间最可控，因为晚上有工作，社交，看剧等等一堆不可控因素，而这些因素往往给自己不做运动很好的借口。
+人一旦给了自己坚持不下去的理由，肯定就坚持不下去了。&lt;/p&gt;
+&lt;p&gt;计划的实施的过程其实也是一个习惯的养成，养成习惯后，做起来就没那么痛苦了。因为我定在了早上运动，所以我每天都要早起，既然要早起就要早睡，不知不觉，就给自己又养成了一个早睡早起的习惯。
+对我而言，我一开始的计划大概就是：a.每天6点起, b.做一份深蹲，c.做一份pushup,d.做一份situp。 可以把这些计划列一个表格，每天的任务完成了就在旁边
+打个勾。强烈建议把2个月的计划提前打印出来，在纸质上打勾，成就感远远比excel或者evernote上打勾强烈的多。&lt;/p&gt;
+&lt;p&gt;每天的一个小时运动时间，其实已经很多了。我是一天有氧，一天无氧。无氧主要是squat，situp，pushup等，具体每天做多少，可以用软件管理（后续会介绍）。
+有氧的时间主要是跑步，跑步的计划我是按照&lt;a href="http://www.amazon.cn/%E7%88%B1%E4%B8%8A%E8%B7%91%E6%AD%A5%E7%9A%8413%E5%91%A8-%E4%BC%8A%E6%81%A9%C2%B7%E9%BA%A6%E5%85%8B%E5%B0%BC%E5%B0%94/dp/B00K0F7ZU8/ref=sr_1_1?ie=UTF8&amp;amp;qid=1428986015&amp;amp;sr=8-1&amp;amp;keywords=%E7%88%B1%E4%B8%8A%E8%B7%91%E6%AD%A5%E5%8D%81%E4%B8%89%E5%91%A8"&gt;《爱上跑步的十三周》&lt;/a&gt;这本书里面
+里面的计划做的。其实不管是有氧还是无氧，我都没有严格按照他们规定的时间来。比如按照这本书里面里面，一周要跑三次，但是因为帝都雾霾太严重，有时候一周也跑不了一次
+，不过没关系，接着上次的继续跑就行了。需要注意的是，不管是无氧还是有氧，运动量都要按照软件或者书里面的一步一步的来，太心急容易受伤，就坚持不下去了。&lt;/p&gt;
+&lt;p&gt;最后要强调的是，所有的运动都需要记录下来，包括体重，腰围变化，让自己的努力可视化，给自己满满的成就感和坚持下去的动力。&lt;/p&gt;
+&lt;h2&gt;前期准备&lt;/h2&gt;
+&lt;h3&gt;硬件&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;跑步鞋一双，便宜的就行，不解释&lt;/li&gt;
+&lt;li&gt;手套，帽子（冬天有用）&lt;/li&gt;
+&lt;li&gt;手机&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.amazon.cn/%E7%88%B1%E4%B8%8A%E8%B7%91%E6%AD%A5%E7%9A%8413%E5%91%A8-%E4%BC%8A%E6%81%A9%C2%B7%E9%BA%A6%E5%85%8B%E5%B0%BC%E5%B0%94/dp/B00K0F7ZU8/ref=sr_1_1?ie=UTF8&amp;amp;qid=1428986015&amp;amp;sr=8-1&amp;amp;keywords=%E7%88%B1%E4%B8%8A%E8%B7%91%E6%AD%A5%E5%8D%81%E4%B8%89%E5%91%A8"&gt;《爱上跑步的十三周》&lt;/a&gt; 这本书里面详细介绍了跑步的好处，注意事项和训练计划。&lt;/li&gt;
+&lt;li&gt;电子秤 每天记录体重变化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;软件&lt;/h3&gt;
+&lt;p&gt;强烈推荐runtastic系列，可以先用免费版，如果觉得好，可以买pro版。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep 这款软件可以用来记录跑步，也有很多室内的健身课。&lt;/li&gt;
+&lt;li&gt;runtastic 主要用来记录跑步距离和速度，建议用着好可以买一个pro版。这个软件的iPhone版可以后台运行，软件启动后把屏幕关了也能记录跑步。&lt;/li&gt;
+&lt;li&gt;Squats  深蹲，里面有三个level，每个level都有详细的计划，可以不按计划严格执行，每次做一份就好。免费版只能用level1。&lt;/li&gt;
+&lt;li&gt;Pushups 俯卧撑&lt;/li&gt;
+&lt;li&gt;SitUps 仰卧起坐&lt;/li&gt;
+&lt;li&gt;Butt Trainer  美丽翘臀 ^_^&lt;/li&gt;
+&lt;li&gt;Six Packs 六块腹肌&lt;/li&gt;
+&lt;li&gt;MyfitnessPal 记录运动量和饮食卡路里的软件，我主要用它记录体重。Runtastic系列的软件都可以连接到MyfitnessPal,把运动信息同步过来。&lt;/li&gt;
+&lt;li&gt;凤凰fm 运动的时候很无聊，找点好玩的东西听，我主要挺逻辑思维，听的有点想吐了。其他同类产品有蜻蜓fm，podcast。另外podcast上的《real deal English》
+和《潘吉Jenny告诉你》实在太赞，一边运动一边练口语。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="suzhou" class="img-responsive carousel-inner img-rounded" src="/static/images/2015_04_13_softwares.jpg"/&gt;
+&lt;div class="caption"&gt;Useful Apps&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;进行中&lt;/h2&gt;
+&lt;h3&gt;睡眠&lt;/h3&gt;
+&lt;p&gt;好的睡眠肯定是很重要的啦，我自己是每天23：00左右睡，每天6：00起床。一开始6：00起不来，没关系，闹钟响了什么都不要想，
+先站起来再说（忘了那本书里面说的了）。减肥本来就是很辛苦，所以一定要休息好。
+a&lt;/p&gt;
+&lt;h3&gt;饮食&lt;/h3&gt;
+&lt;p&gt;都说减肥要&lt;code&gt;管住嘴，迈开腿&lt;/code&gt;，饮食其实在减肥里面是最重要的，不过一定要保证均衡的营养摄入，吃大量的蔬菜，水果，膳食纤维，蛋白质。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;早餐，早餐一定要吃的非常丰盛。我都是运动完了吃早餐。早餐内容如下：&lt;/li&gt;
+&lt;li&gt;一个水煮鸡蛋。&lt;/li&gt;
+&lt;li&gt;一杯脱脂牛奶（运动以后需要补充大量蛋白质）。&lt;/li&gt;
+&lt;li&gt;两个核桃。&lt;/li&gt;
+&lt;li&gt;一把水煮蔬菜（超市买的那种，一把一把的，随便什么都可以，西兰花，娃娃菜，蒿子秆，青菜，whatever），做法也很简单，就是用开水煮熟，不放油，也不放盐，要是觉得不好吃，可以放一点生姜和香菇。西兰花上面也可以放一些橄榄油，红酒醋加黑胡椒。&lt;/li&gt;
+&lt;li&gt;一根香蕉。&lt;/li&gt;
+&lt;li&gt;一个西红柿（or 一个苹果）。&lt;/li&gt;
+&lt;li&gt;一小碗麦片，麦片推荐&lt;a href="http://www.amazon.cn/Jason%E6%8D%B7%E6%A3%AE%E6%97%A9%E9%A4%90%E9%BA%A6%E7%89%871KG/dp/B003NNUO34/ref=sr_1_3?ie=UTF8&amp;amp;qid=1428989957&amp;amp;sr=8-3&amp;amp;keywords=%E6%8D%B7%E6%A3%AE"&gt;捷森&lt;/a&gt;，优点是有各种葡萄干，水果干之类的，好吃不单调，开水泡，煮，都可以。 麦片也可以换成麦片干，强烈推荐&lt;a href="http://www.amazon.cn/gp/product/B00JTO33RK?psc=1&amp;amp;ref_=oh_aui_detailpage_o07_s00"&gt;Sanitarium&lt;/a&gt;,超级好吃（不过只是我觉得而已，我跟我外甥都喜欢吃，我姐就不喜欢吃，慎入）。&lt;/li&gt;
+&lt;li&gt;早餐不吃麦片，喝一碗燕麦粥，也是可以的。&lt;/li&gt;
+&lt;li&gt;午餐，因为早餐补充了很多水果蔬菜，午餐就可以随意一点，主要是不要吃太多，不要吃高热量的，一定要吃肉，主食可以适量减少。pizza，kfc什么的，前两个月最好不要吃（吃了体重一直不降，影响信心），后面可以稍微吃一点，原味鸡，薯条，辢堡，怎么可以不爱。午餐吃完了最好站立或者步行30min再坐下来。&lt;/li&gt;
+&lt;li&gt;晚餐， 晚餐一定要控制。而且晚餐跟早餐的间隔最好在12h-14h，可以帮助减肥。我因为早餐在7点左右吃，所以晚餐
+一般都是17点吃。晚餐一定不要吃高热的，我一开始的两个月晚餐都是吃一杯麦片，吃完了以后晚上一定不要再吃东西，饿了就喝水（白开水红茶等，空腹最好不要喝咖啡）。后来偶然接触到&lt;code&gt;过午不食&lt;/code&gt;，尝试了下，感觉还行，就坚持下来了，晚餐不吃东西了（这个只是我自己急功近利的一种表现，&lt;strong&gt;过午不食可能对健康不好，不要尝试&lt;/strong&gt;）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果想减肥，一定不要吃零食。薯片，可乐之类的，就不要想了，实在不行可以吃点水果，网上也有很多菠萝干，香蕉干等等，可以尝试下。平时也不要喝奶茶，摩卡什么的，可以喝一些美式，红茶。另外总是不吃美食，实在艰难，每个月也可以让自己放纵一次（cheat day），吃个全家桶什么的。&lt;/p&gt;
+&lt;h3&gt;运动&lt;/h3&gt;
+&lt;p&gt;其实运动是最简单的，就是按照上面推荐的软件和书（其实也可以加一些平板支撑和健腹轮，游泳之类的），按照里面的计划一天天的练就可以了。我自己是每天早上都运动，空气好就跑步，不好就室内，运动完了吃早餐。&lt;/p&gt;
+&lt;p&gt;运动前一定要喝水，喝大量的水。另外运动前后一定要拉伸，如果有不适就停止运动，受伤就不好了。&lt;/p&gt;
+&lt;p&gt;运动的过程其实也是不断战胜自己的过程，冬天早上跑完帽子上结的都是冰，或者你快要放弃了，又坚持下去了，减肥的路上不就是充满了泪水和汗水么（谁让你是个死胖子）？&lt;/p&gt;
+&lt;h3&gt;其他运动课程&lt;/h3&gt;
+&lt;p&gt;除了上面推荐的跑步和 runtastic 系列的课程以外，也可以尝试尝试 Keep 上的各种课程。在有了一定的健身基础以后，也可以撸 insanity，撸 insanity 虽然艰难，但是塑型效果着实不错，insanity运动量比较大，对心肺功能要求比较高，运动的时候注意不要受伤。在做 insanity 的时候，常常会全身汗湿，也常常会产生放弃的想法，这个时候，可以适当减慢自己的动作，告诉自己，千万不要放弃。毕竟生命里面，我们常常战胜不了别人，唯一能够战胜的就是自己，最难战胜的也是自己。&lt;/p&gt;
+&lt;h3&gt;一些值得记录的时刻&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2015.01.01 新的一年，第一次不间断跑完10公里，耗时1小时5分钟，平均配速6:25min/km，跑完腿酸疼的了好几天，但是成就感无以言表，从此开启新世界的大门，在3个多月后的3.22号，完成第一个20km。&lt;/li&gt;
+&lt;li&gt;2015.05.10 TNF 25km 越野跑，这是第一次参加正式比赛，比赛的当天气温很低，下着小雨，冻了半死。&lt;/li&gt;
+&lt;li&gt;2015.09.12 第一次也是唯一一次跑到30km，耗时：02:45:21，平均配速：05:30/km，中途没有补给，真的很饿。&lt;/li&gt;
+&lt;li&gt;2016.04.17 北京国际长跑节半程马拉松，耗时: 01:47:35，平均配速04:55/km。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;有图有真相&lt;/h3&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="suzhou" class="img-responsive carousel-inner img-rounded" src="/static/images/2015_04_13_comparasion.jpg"/&gt;
+&lt;/div&gt;
+&lt;!--
+&lt;container&gt;
+&lt;img src="/static/images/2014_2016_compare.jpg" alt="compare" class="carousel-inner  img-rounded img-responsive center-block" style='width: 60%;'/&gt;
+&lt;img src="/static/images/2014_2015_compare.jpg" alt="compare" class="carousel-inner  img-rounded img-responsive center-block" style='width: 60%;'/&gt;
+&lt;img src="/static/images/2015_tnf_and_half_marathon.jpg" alt="tnf"  class="carousel-inner  img-rounded img-responsive center-block" style='width: 60%;'/&gt;
+&lt;/container&gt;
+--&gt;
+&lt;script&gt;
+$(function () {
+    $('#weight_container').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Weight'
+        },
+
+        //subtitle: {
+        //   text: 'Source: WorldClimate.com'
+        //},
+        xAxis: {
+            categories: ["2014-11-02", "2014-11-03", "2014-11-04", "2014-11-08", "2014-11-09", "2014-11-10", "2014-11-11", "2014-11-12", "2014-11-13", "2014-11-14", "2014-11-15", "2014-11-16", "2014-11-17", "2014-11-18", "2014-11-19", "2014-11-20", "2014-11-21", "2014-11-22", "2014-11-23", "2014-11-24", "2014-11-25", "2014-11-26", "2014-11-27", "2014-11-28", "2014-11-29", "2014-12-01", "2014-12-02", "2014-12-03", "2014-12-04", "2014-12-08", "2014-12-09", "2014-12-10", "2014-12-11", "2014-12-12", "2014-12-13", "2014-12-14", "2014-12-15", "2014-12-16", "2014-12-17", "2014-12-18", "2014-12-19", "2014-12-20", "2014-12-21", "2014-12-22", "2014-12-23", "2014-12-24", "2014-12-25", "2014-12-26", "2014-12-27", "2014-12-28", "2014-12-29", "2014-12-30", "2014-12-31", "2015-01-01", "2015-01-02", "2015-01-03", "2015-01-04", "2015-01-05", "2015-01-06", "2015-01-07", "2015-01-08", "2015-01-09", "2015-01-10", "2015-01-11", "2015-01-12", "2015-01-13", "2015-01-14", "2015-01-15", "2015-01-16", "2015-01-17", "2015-01-18", "2015-01-22", "2015-01-23", "2015-01-24", "2015-02-03", "2015-02-04", "2015-02-05", "2015-02-06", "2015-02-12", "2015-02-13", "2015-02-14", "2015-03-04", "2015-03-05", "2015-03-06", "2015-03-07", "2015-03-08", "2015-03-11", "2015-03-12", "2015-03-13", "2015-03-14", "2015-03-15", "2015-03-16", "2015-03-18", "2015-03-19", "2015-03-20", "2015-03-21", "2015-03-23", "2015-03-24", "2015-03-25", "2015-03-26", "2015-03-27", "2015-04-01", "2015-04-02", "2015-04-03", "2015-04-04", "2015-04-07", "2015-04-08", "2015-04-09", "2015-04-11", "2015-04-12", "2015-04-13","2015-04-14"]
+        },
+        yAxis: {
+            title: {
+                text: 'Weight(kg)'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+            name: 'Weight',
+            data: [84.0, 84.0, 84.0, 83.5, 83.7, 83.2, 83.0, 83.0, 82.6, 82.2, 82.6, 82.6, 82.6, 82.2, 81.8, 82.2, 82.0, 82.0, 82.3, 82.3, 81.6, 81.0, 81.5, 81.5, 81.5, 81.2, 81.0, 81.0, 81.0, 81.6, 80.5, 80.5, 80.5, 80.1, 80.5, 80.1, 80.1, 79.1, 78.4, 77.9, 77.8, 77.7, 77.0, 76.3, 76.3, 76.3, 77.3, 77.3, 77.3, 75.6, 75.7, 75.7, 75.3, 75.3, 75.3, 75.0, 74.5, 74.7, 74.1, 74.5, 73.9, 74.3, 73.8, 73.8, 73.8, 73.7, 73.3, 73.3, 73.1, 73.1, 73.1, 73.0, 73.0, 73.0, 72.5, 71.7, 71.7, 71.7, 71.4, 71.4, 71.4, 73.3, 73.3, 72.4, 72.4, 72.4, 71.9, 71.0, 70.6, 71.1, 71.1, 71.1, 70.6, 70.3, 70.3, 70.3, 69.8, 69.8, 70.2, 70.2, 70.2, 69.9, 69.4, 69.4, 69.4, 69.3, 69.3, 69.3, 69.4, 68.4, 68.4,68.1]
+        }]
+    });
+});
+&lt;/script&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>The Catcher in the Rye</title><link href="http://synckey.name/posts/2014/10/31/the-catcher-in-the-rye.html" rel="alternate"></link><published>2014-10-31T00:00:00+08:00</published><updated>2014-10-31T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-31:/posts/2014/10/31/the-catcher-in-the-rye.html</id><summary type="html">&lt;p&gt;Holden Caulfied 是一个16岁的男孩，他因为课程不及格被学校开除，在他的眼里，周围的人要有奇怪的习惯和毛病。&lt;/p&gt;
+&lt;p&gt;在离开学校之前他与他的室友打了一家，因为室友和他最喜欢的女生约会，他心里非常不舒服。一个十六岁的男孩，面对自己的梦中小情人，
+宁愿远远的看着她，也不希望她跟别的男孩子约会。更何况她的约会对象在Holden看来根本配不上她。Holden心里当然不高兴。打完架他决定早点离开学校了。&lt;/p&gt;
+&lt;p&gt;对于一个青春期的孩子来说，也许最大的恐惧就是不合群，希望和同龄人做一样的事情，上课，考试，放假。可是Hoden却不得不提前开始寒假，又不能回家，
+因为他告诉他妈妈他周三到家，他只能去住酒店。孤身一人落寞的站在房间里，此时此刻只有香烟陪伴他，而他根本睡不着，百无聊赖。只能去酒吧。他回来时与
+开电梯的小伙说好叫一个妓女，妓女来了，还很漂亮，可是他却开始退缩了，尽管他还是处男，他不想就这样跟这个妓女做爱。只希望她陪他说话，此刻对他
+来说，精神上才是最寂寞的。&lt;/p&gt;
+&lt;p&gt;在这个世界上，他最爱的人就是他的妹妹，Phoebe。他去街上买了她一直想要的唱片，给她一个惊喜，人在脆弱的时候总是想到自己最爱的人，就算他并不安慰你，
+你也希望看到她 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Holden Caulfied 是一个16岁的男孩，他因为课程不及格被学校开除，在他的眼里，周围的人要有奇怪的习惯和毛病。&lt;/p&gt;
+&lt;p&gt;在离开学校之前他与他的室友打了一家，因为室友和他最喜欢的女生约会，他心里非常不舒服。一个十六岁的男孩，面对自己的梦中小情人，
+宁愿远远的看着她，也不希望她跟别的男孩子约会。更何况她的约会对象在Holden看来根本配不上她。Holden心里当然不高兴。打完架他决定早点离开学校了。&lt;/p&gt;
+&lt;p&gt;对于一个青春期的孩子来说，也许最大的恐惧就是不合群，希望和同龄人做一样的事情，上课，考试，放假。可是Hoden却不得不提前开始寒假，又不能回家，
+因为他告诉他妈妈他周三到家，他只能去住酒店。孤身一人落寞的站在房间里，此时此刻只有香烟陪伴他，而他根本睡不着，百无聊赖。只能去酒吧。他回来时与
+开电梯的小伙说好叫一个妓女，妓女来了，还很漂亮，可是他却开始退缩了，尽管他还是处男，他不想就这样跟这个妓女做爱。只希望她陪他说话，此刻对他
+来说，精神上才是最寂寞的。&lt;/p&gt;
+&lt;p&gt;在这个世界上，他最爱的人就是他的妹妹，Phoebe。他去街上买了她一直想要的唱片，给她一个惊喜，人在脆弱的时候总是想到自己最爱的人，就算他并不安慰你，
+你也希望看到她，让他在那里陪着你就已经足够。&lt;/p&gt;
+&lt;p&gt;他想去他妹妹经常滑冰的广场给他，可是她没有出现，他只好失望的走了。他偷偷地溜进了自己的家，叫醒了正在睡觉的妹妹，把自己的苦恼说给他听。&lt;/p&gt;
+&lt;p&gt;Phoebe虽然还小但是很懂事，她说出了Holden最大的问题，他到底想要什么？Holden说出了他想做的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anyway, I keep picturing all these little kids playing some game in this big field of rye and all. 
+Thousands of little kids, and nobody's around--nobody big, I mean--except me. And I'm standing on the edge of some crazy 
+cliff. What I have to do, I have to catch everybody if they start to go over the cliff--I mean if they're running and they don't look where they're going I have to come out from somewhere and catch them. That's all I'd do all day. I'd just be the catcher in the rye and all. I know it's crazy, but that's the only thing I'd really like to be.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;想起了一幅画面，一群无忧无忧虑的孩子在绿油油的麦田里奔跑，天上有各种形状的白云，他们一遍奔跑一边幻想自己能够在云间跳跃，从一朵白云跳到另外一朵，永远不会有忧愁。&lt;/p&gt;
+&lt;p&gt;走的时候，他跟他妹妹借钱，因为他没钱了。Phoebe把她圣诞节的所有的钱都给了他，他其实也不想全部都要，但是她坚持要给他。他花的非常节省，因为这是他妹妹的钱。&lt;/p&gt;
+&lt;p&gt;他打电话给他的以前的一个老师去他家借宿，夜里醒来发现老师在抚摸他的脸，他吓坏了，怀疑老师是gay,于是他连夜逃了出来，他产生了一个念头，离家出走，决定去西部，装作一个又聋又哑的人。走前还想跟Phoebe道别，于是给妹妹留了纸条，中午在博物馆门口等她。在学校和博物馆里，他都看到有人在墙上写着&lt;code&gt;Fuck you&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;他等来了妹妹，妹妹却拖着行李箱要和他一起走，他慌了，不希望妹妹和她一起走，因为她是他最爱的人，没有人想要最爱的人跟自己一起做愚蠢的事情。他们一起走到了游乐场，他看着妹妹开心的坐着旋转木马，填空下着大雨，他看着妹妹不停的旋转，心里开心极了，于是决定不走了。&lt;/p&gt;
+&lt;p&gt;也许每个人的内心都和Holden一样，看别人都觉得虚伪做作，总觉得自己才是最对的，最好的。即使这样也有值得牵挂的和珍爱的人，如果幸运，自己珍爱的人也能珍爱你。心中保有的那奔跑在绿色麦田和跳跃在蓝天白云上的小小幻想，跟他们在一起才会想起吧。&lt;/p&gt;</content><category term="notes"></category></entry><entry><title>Big Sarcosaurus</title><link href="http://synckey.name/posts/2014/10/22/big-sarcosaurus.html" rel="alternate"></link><published>2014-10-22T00:00:00+08:00</published><updated>2014-10-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-22:/posts/2014/10/22/big-sarcosaurus.html</id><summary type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
+would take an exam today and she would have some time after then. I invited her to come to see me and have lunch 
+together …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
+would take an exam today and she would have some time after then. I invited her to come to see me and have lunch 
+together. She said that she had bought some Big Sarcosaurus(&lt;code&gt;大懒龙&lt;/code&gt; in Chinese).I  don't know what
+it is and incorrectly, I thought it was a restaurant.I searched it on the baidu map,and the website told me  that it
+was 1h away from me. I might do not have enough time to go there and I told her to cancel the lunch.However,
+I was wrong,Big Sacrosaurus can be taken away. It was significantly nice for Wen to come back(&lt;code&gt;angrily&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;I really enjoy the lunch in Pizza hut,during which we talked about her work,and mine.Joy combined with upset makes her
+work interesting and challenging. I know She can make it and grow up to a good banker.&lt;/p&gt;
+&lt;p&gt;It is not good recently,but I really appreciate the time talking with Wen and the Big Sacrosaurus she brought for me .
+&lt;div align="center"&gt;
+&lt;img alt="Big Sarcosaurus" class="img-responsive carousel-inner img-rounded" src="/static/images/bigsarcosaurus.jpg" style="width:40%;height:40%;"/&gt;
+&lt;/div&gt;&lt;/p&gt;</content><category term="personal"></category></entry></feed>
