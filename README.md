@@ -1,1 +1,1 @@
-# synckey.github.io
+# synckey.name

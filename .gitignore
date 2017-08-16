@@ -1,0 +1,14 @@
+*~
+._*
+*.lock
+.DS_Store
+*.swp
+*.out
+*.py[cod]
+output
+.idea/*
+.env
+*.ipr
+*.iml
+*.iws
+*.pid

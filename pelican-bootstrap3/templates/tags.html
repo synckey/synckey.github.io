@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Tags - {{ SITENAME }}{% endblock %}
+
+{% block breadcrumbs %}
+{% if DISPLAY_BREADCRUMBS %}
+<ol class="breadcrumb">
+    <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
+    <li class="active">Tags</li>
+</ol>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="separator"></div>
+    <div class="tag-list">
+        <section id="tags">
+            {% for tag, articles in tags|sort %}
+            {% for article in articles %}
+            <a href="tags.html#{{tag}}">{{tag}}<sup>{{ articles|count }}</sup></a>
+            {% endfor %}
+            {% endfor %}
+        </section>
+    </div>
+    <div class="tag-post-list">
+        {%- for tag, articles in tags|sort %}
+        <a name="{{tag}}"></a>
+        <h2>{{tag}}({{ articles|count }})</h2>
+        {% for article in articles %}
+        <ul>
+            <li>
+                <p><span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span>
+                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></p>
+            </li>
+        </ul>
+        {% endfor %}
+        {% endfor %}
+    </div>
+
+    </section>
+</div>
+{% endblock %}
