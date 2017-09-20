@@ -1,4 +1,4 @@
-Title: 第一次跑完马拉松
+Title: 第一次跑马
 Date: 2017-09-20
 Category: posts
 Tags: life
