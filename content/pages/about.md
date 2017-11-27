@@ -12,6 +12,6 @@ You can find me on <a href="https://www.facebook.com/synckey">Facebook</a> or Tw
        于是游泳成为唯一的运动方式。我很想叫自己运动员，也自信自己可以靠杀猪谋生。
 -->
 
-本质上这是我私人的笔记本，记录我的想法，学习还有我的生活。
+本质上这是我私人的笔记本，记录我的想法，学习，书摘还有我的生活。
 
 
