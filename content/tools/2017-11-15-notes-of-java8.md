@@ -35,3 +35,12 @@ Lambda的基本语法
 
 
 
+
+```
+graph LR
+A-->B
+C--fuck---D
+```
+
+
+

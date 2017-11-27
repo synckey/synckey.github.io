@@ -64,6 +64,7 @@ that's why I think it really place a huge role
 the consumption of their products   
 can make me burst into laughter   
 the timing is not set in stone   
+inbreeding  
 
 
 
@@ -89,7 +90,6 @@ while "dog breeding" refers specifically to the artificial selection of dogs, in
 Artificial selection in dog breeding has influenced behavior, shape, and size of dogs. Some dogs have certain inheritable
 characteristics that can develop into a disability or disease.（[from wikipedia](https://en.wikipedia.org/wiki/Dog_breeding))
 
-inbreeding
 
 When I met the guy, I absolutely did not have any spark or chemistry or butterflies.
 
