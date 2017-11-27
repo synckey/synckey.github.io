@@ -6,6 +6,7 @@ http://synckey.name/
 http://synckey.name/archives.html
 http://synckey.name/tags.html
 http://synckey.name/categories.html
+http://synckey.name/posts/2017/11/27/life-is-one-man-fight.html
 http://synckey.name/posts/2017/11/26/useful-set-phrases.html
 http://synckey.name/posts/2017/09/20/my-first-marathon.html
 http://synckey.name/posts/2017/06/26/new-to-auckland.html
@@ -41,12 +42,14 @@ http://synckey.name/posts/2014/11/24/distance-learning-vs-school-learning.html
 http://synckey.name/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html
 http://synckey.name/posts/2014/10/31/the-catcher-in-the-rye.html
 http://synckey.name/posts/2014/10/22/big-sarcosaurus.html
+http://synckey.name/category/digest.html
 http://synckey.name/category/ielts.html
 http://synckey.name/category/machinelearning.html
 http://synckey.name/category/posts.html
 http://synckey.name/category/sfv.html
 http://synckey.name/category/summery.html
 http://synckey.name/category/tools.html
+http://synckey.name/tag/yi-ge-ren-de-zhan-dou.html
 http://synckey.name/tag/ielts.html
 http://synckey.name/tag/life.html
 http://synckey.name/tag/sfv.html
