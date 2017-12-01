@@ -42,6 +42,12 @@ Place: Beijing
 
 ## 学历学位证书
 我是自己翻译了毕业证和学位证，然后去学校档案室盖章，可以当原件使用。山东大学的中英文学历、学位证明模板和说明可以在[学校网站上](http://www.bkjx.sdu.edu.cn/info/1032/25229.htm)下载到。
+
+<div class="figure">
+    <img src="/static/images/degree_deploma.jpg" alt="degree_deploma"  width="1200%" class="img-responsive carousel-inner img-rounded"/>
+    <div class="caption">学历学位模板</div>
+ </div>
+ 
 ## 存款证明
 
 **费用**：20
