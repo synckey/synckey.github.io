@@ -24,7 +24,7 @@ Place: Beijing
 
 **Date**: 2016.11.07
 
-体检必须在指定医院([Panel Physicians](http://onlineservices.immigration.govt.nz/migrant/stream/work/skilledmigrant/LinkAdministration/ToolboxLinks/paneldoctors.htm?level=1&_ga=1.144344885.1009309295.1476774310))中进行，要提前打电话预约。体检不需要携带照片，会现场拍一个。整个流程大概2小时，当场就能拿到回执。体检如果有问题会当场告知。我当时血液的检查结果还没没出来，医生说如果有问题会打电话告之，没问题的话，就不打电话了。
+体检必须在指定医院([Panel Physicians](https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/tools-and-information/tools/panel-physicians))中进行，要提前打电话预约。体检不需要携带照片，会现场拍一个。整个流程大概2小时，当场就能拿到回执。体检如果有问题会当场告知。我当时血液的检查结果还没没出来，医生说如果有问题会打电话告之，没问题的话，就不打电话了。
 
 ## 无犯罪记录证明翻译以及公正
 
