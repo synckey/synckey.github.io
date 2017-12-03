@@ -24,7 +24,7 @@
                         <span class="badge pull-right">{{ articles|count }}</span></a>
                 </h4>
             </div>
-            <div id="collapse-{{category.slug}}" class="panel-collapse collapse">
+            <div id="collapse-{{category.slug}}" class="panel-collapse collapse in">
                 <div class="panel-body">
                     {% for article in articles %}
                     <p><span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span>
