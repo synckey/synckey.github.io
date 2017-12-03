@@ -29,8 +29,8 @@ All the work is done in the preprocessor.
 
 
 # Defines our basic inline image
-IMG_EXPR = "<img class='latex-inline math-%s' id='%s'" + \
-    " src='data:image/svg+xml;base64,%s'>"
+IMG_EXPR = "<img class='latex-%s' id='%s'" + " src='data:image/svg+xml;base64,%s'>"
+
 
 
 class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
@@ -60,6 +60,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
                        ("dvisvgm", "args"): "--no-fonts",
                        ("delimiters", "text"): "%%",
                        ("delimiters", "math"): "$$",
+                       ("delimiters", "interrow"): "$$$",
                        ("delimiters", "preamble"): "%%%"}
         """
         try:
@@ -85,6 +86,9 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
         # %%PREAMBLE%% text that modifys the LaTeX preamble for the document
         self.re_preamblemode = build_regexp(self.config[("delimiters",
                                                         "preamble")])
+        # $$$DISPLAY$$$
+        self.re_interrowmode = build_regexp(self.config[("delimiters",
+                                                        "display")])
 
     """The TeX preprocessor has to run prior to all the actual processing
     and can not be parsed in block mode very sanely."""
@@ -170,9 +174,13 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
         self.tex_preamble += "\n\\begin{document}\n"
 
         # Figure out our text strings and math-mode strings
-        tex_expr = [(self.re_textmode, False, x)
+        tex_expr = [(self.re_textmode, "text", x)
                     for x in self.re_textmode.findall(page)]
-        tex_expr += [(self.re_mathmode, True, x)
+
+        tex_expr += [(self.re_mathmode, "inline", x)
+                     for x in self.re_mathmode.findall(page)]
+
+        tex_expr += [(self.re_mathmode, "display", x)
                      for x in self.re_mathmode.findall(page)]
 
         # No sense in doing the extra work
@@ -190,7 +198,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
             if k in self.cached:
                 data = eval(self.cached[k])
             else:
-                data = self._latex_to_base64(expr, math_mode)
+                data = self._latex_to_base64(expr, self.)
                 new_cache[k] = data
             expr = expr.replace('"', "").replace("'", "")
             id += 1

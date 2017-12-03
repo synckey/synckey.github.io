@@ -7,10 +7,18 @@ Place: Beijing
 
 >主要根据%%Andrew Ng%%的教学讲义整理。
 
+$$a+b=c$$
 %%%
 \usepackage[usenames]{xcolor}
 \color{red} 
 %%%
+
+%%
+\begin{eqnarray*}
+    f(x) &=& p^x(1-p)^{1-x}\\
+    E(y) &=& p
+\end{eqnarray*}
+%%
 
 %%
 \begin{displaymath}

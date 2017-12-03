@@ -742,6 +742,8 @@ h2#comment {
     display: none
 }
 
-/*endof duoshuo*/
-
+img.math-false.{
+    display:inline;
+    width:13%;
+}
 
