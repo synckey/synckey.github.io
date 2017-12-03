@@ -15,7 +15,7 @@
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
     <!--
-<link rel="canonical" href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html">
+<link rel="canonical" href="/posts/2015/12/24/where-does-sigmoid-come-from.html">
     -->
 <meta name="author" content="Andy"/>
 <meta name="keywords" content="machine learning,technology,logistic regression"/>
@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="Andy's Blog"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Where does sigmoid come from"/>
-<meta property="og:url" content="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html"/>
+<meta property="og:url" content="/posts/2015/12/24/where-does-sigmoid-come-from.html"/>
 <meta property="og:description" content="主要根据Andrew Ng的教学讲义整理。 逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下: 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。 1.逻辑回归的建模 首先从逻辑回归($Logistic$ $Regression$)的基本假设说起。在二分类中，我们假设 $y \in \lbrace0,1\rbrace$,在给定 $x$ 的情况下，很自然 就想到使用 $Bernoulli$ 对 $y$ 的条件分布进行建模。$Bernoulli$ 分布可以认为是二项分布一个特例($n=1$)，其结果只能取$0$或1。假设实验成功的概率为$p$,则$Bernoulli …"/>
 <meta property="article:published_time" content=" 2015-12-24" />
 <meta property="article:section" content="machinelearning"/>
@@ -35,16 +35,16 @@
 
 
 
-    <script src="http://synckey.name/theme/js/jquery.min.js"></script>
+    <script src="/theme/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://synckey.name/theme/js/bootstrap.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
 
     <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="http://synckey.name/theme/js/respond.min.js"></script>
+    <script src="/theme/js/respond.min.js"></script>
     <!-- highcharts -->
-    <script src="http://synckey.name/theme/js/highcharts.js"></script>
-    <script src="http://synckey.name/theme/js/exporting.js"></script>
-    <script src="http://synckey.name/theme/js/holder.js"></script>
+    <script src="/theme/js/highcharts.js"></script>
+    <script src="/theme/js/exporting.js"></script>
+    <script src="/theme/js/holder.js"></script>
     <!-- mathtex -->
     <!--
     <script type="text/javascript"
@@ -68,7 +68,7 @@
 
     </script>-->
     <script type="text/javascript"
-            src="http://synckey.name/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+            src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
     <script>
         MathJax.Hub.Config({
@@ -90,24 +90,24 @@
 
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://synckey.name/theme/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="http://synckey.name/theme/css/normalize.css"/>
+    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="/theme/css/normalize.css"/>
     <!--
-    <link rel="stylesheet" href="http://synckey.name/theme/css/skeleton.css"/>-->
-    <link rel="stylesheet" href="http://synckey.name/theme/css/style.css"/>
+    <link rel="stylesheet" href="/theme/css/skeleton.css"/>-->
+    <link rel="stylesheet" href="/theme/css/style.css"/>
     <!--
-    <link href="http://synckey.name/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
     -->
-    <link href="http://synckey.name/theme/css/pygments/github.css"
+    <link href="/theme/css/pygments/github.css"
           rel="stylesheet">
 
 
-    <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
           title="Andy's Blog ATOM Feed"/>
 
 
 
-    <link href="http://synckey.name/feeds/machinelearning.atom.xml" type="application/atom+xml"
+    <link href="/feeds/machinelearning.atom.xml" type="application/atom+xml"
           rel="alternate"
           title="Andy's Blog machinelearning ATOM Feed"/>
 
@@ -125,7 +125,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://synckey.name/" class="navbar-brand">
+            <a href="/" class="navbar-brand">
 Andy's Blog            </a>
             <a class="navbar-brand" href="/">Posts</a></li>
             <a class="navbar-brand" href="/archives.html">Archives</a>
@@ -162,7 +162,7 @@ Andy's Blog            </a>
 <div class="post-container">
     <div class="post-header">
         <h3>
-            <a href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html">Where does sigmoid come from</a>
+            <a href="/posts/2015/12/24/where-does-sigmoid-come-from.html">Where does sigmoid come from</a>
         </h3>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
@@ -185,11 +185,11 @@ Andy's Blog            </a>
 
 
 <span class="label label-default">Tags</span>
-<a href="http://synckey.name/tag/machine-learning.html">machine learning</a>
+<a href="/tag/machine-learning.html">machine learning</a>
 /
-<a href="http://synckey.name/tag/technology.html">technology</a>
+<a href="/tag/technology.html">technology</a>
 /
-<a href="http://synckey.name/tag/logistic-regression.html">logistic regression</a>
+<a href="/tag/logistic-regression.html">logistic regression</a>
     
 </footer>                </div>
             </div>
@@ -283,9 +283,9 @@ $$</p>
 <p><a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf">Michael I. Jordan The exponential family: Basics</a></p>
 <div class="pager">
     <ul>
-        <li class="previous"><a href="http://synckey.name/posts/2015/12/24/plot-sigmoid-in-matlab.html" data-toggle="tooltip"
+        <li class="previous"><a href="/posts/2015/12/24/plot-sigmoid-in-matlab.html" data-toggle="tooltip"
                                 title="Plot Sigmoid in Matlab">&larr; Previous</a></li>
-        <li class="next"><a href="http://synckey.name/posts/2015/11/03/a-misuse-of-spark-broadcast.html"
+        <li class="next"><a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html"
                             data-toggle="tooltip" title="A Misuse of Spark Broadcast">Next &rarr;</a></li>
     </ul>
 </div><!--
@@ -313,7 +313,7 @@ $$</p>
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.url = "/posts/2015/12/24/where-does-sigmoid-come-from.html";  // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = "posts/2015/12/24/where-does-sigmoid-come-from.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
