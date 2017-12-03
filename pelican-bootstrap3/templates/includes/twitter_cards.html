@@ -6,22 +6,22 @@
 <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
 <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
 {% endif %}
-<meta name="twitter:domain" content="{{ SITEURL }}">
+<meta name="twitter:domain" content="/">
 {% if article %}
 {% if article.og_image %}
 <meta property="twitter:image"
-      content="{{ SITEURL }}/{{ article.og_image }}"/>
+      content="/{{ article.og_image }}"/>
 {% elif OPEN_GRAPH_IMAGE %}
 <meta property="twitter:image"
-      content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
+      content="/{{ OPEN_GRAPH_IMAGE }}"/>
 {% endif %}
 {% elif page %}
 {% if page.og_image %}
 <meta property="twitter:image"
-      content="{{ SITEURL }}/{{ page.og_image }}"/>
+      content="/{{ page.og_image }}"/>
 {% elif OPEN_GRAPH_IMAGE %}
 <meta property="twitter:image"
-      content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
+      content="/{{ OPEN_GRAPH_IMAGE }}"/>
 {% endif %}
 {% endif %}
 {% endif %}

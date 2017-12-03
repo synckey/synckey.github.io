@@ -17,14 +17,14 @@
     {# Favicons are a touchy subject. For reasoning for the following code, see:
     http://stackoverflow.com/a/23851464/872397 #}
     {% if FAVICON %}
-    <link href="{{ SITEURL }}/{{ FAVICON }}" rel="icon">
+    <link href="/{{ FAVICON }}" rel="icon">
     {% endif %}
     {% if FAVICON_IE %}
     <!--[if IE]>
-    <link rel="shortcut icon" href="{{ SITEURL }}/{{ FAVICON_IE }}"><![endif]-->
+    <link rel="shortcut icon" href="/{{ FAVICON_IE }}"><![endif]-->
     {% endif %}
     {% if TOUCHICON %}
-    <link rel="apple-touch-icon" href="{{ SITEURL }}/{{ TOUCHICON }}">
+    <link rel="apple-touch-icon" href="/{{ TOUCHICON }}">
     {% endif %}
     <!-- Thumbnail for wechat, when share links in wechat,it will use this piture for thumbnail.This can be specific for
          every sigle page. -->
@@ -49,11 +49,11 @@
     <meta property="og:site_name" content="{{ SITENAME }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="{{ SITENAME }}"/>
-    <meta property="og:url" content="{{ SITEURL }}"/>
+    <meta property="og:url" content="/"/>
     <meta property="og:description" content="{{ SITENAME }}"/>
     {% if OPEN_GRAPH_IMAGE %}
     <meta property="og:image"
-          content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
+          content="/{{ OPEN_GRAPH_IMAGE }}"/>
     {% endif %}
     {% endblock %}
     {% endif %}
@@ -62,16 +62,16 @@
     {% include 'includes/twitter_cards.html' %}
 
 
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
 
     <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/respond.min.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/js/respond.min.js"></script>
     <!-- highcharts -->
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/highcharts.js"></script>
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/exporting.js"></script>
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/holder.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/js/highcharts.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/js/exporting.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/js/holder.js"></script>
     <!-- mathtex -->
     <!--
     <script type="text/javascript"
@@ -95,7 +95,7 @@
 
     </script>-->
     <script type="text/javascript"
-            src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+            src="/{{ THEME_STATIC_DIR }}/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
     <script>
         MathJax.Hub.Config({
@@ -118,54 +118,54 @@
 
     <!-- Bootstrap -->
     {% if BOOTSTRAP_THEME %}
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.{{ BOOTSTRAP_THEME }}.min.css"
+    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/bootstrap.{{ BOOTSTRAP_THEME }}.min.css"
           type="text/css"/>
     {% else %}
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/normalize.css"/>
+    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/normalize.css"/>
     <!--
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/skeleton.css"/>-->
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css"/>
+    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/skeleton.css"/>-->
+    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/style.css"/>
     {% endif %}
     <!--
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" rel="stylesheet">
     -->
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css"
+    <link href="/{{ THEME_STATIC_DIR }}/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css"
           rel="stylesheet">
     {% if 'tipue_search' in PLUGINS %}
-    <link href="{{ SITEURL}}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link href="/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.css" rel="stylesheet">
     {% endif %}
     {% if DOCUTIL_CSS %}
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/html4css1.css" rel="stylesheet">
+    <link href="/{{ THEME_STATIC_DIR }}/css/html4css1.css" rel="stylesheet">
     {% endif %}
     {% if TYPOGRIFY %}
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/typogrify.css" rel="stylesheet">
+    <link href="/{{ THEME_STATIC_DIR }}/css/typogrify.css" rel="stylesheet">
     {% endif %}
 
     {% if CUSTOM_CSS %}
-    <link href="{{ SITEURL }}/{{ CUSTOM_CSS }}" rel="stylesheet">
+    <link href="/{{ CUSTOM_CSS }}" rel="stylesheet">
     {% endif %}
     {% if SHARIFF %}
-    <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/shariff/shariff.min.css" rel="stylesheet">
+    <link href="/{{ THEME_STATIC_DIR }}/css/shariff/shariff.min.css" rel="stylesheet">
     {% endif %}
 
     {% if FEED_ALL_ATOM %}
-    <link href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"
+    <link href="/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"
           title="{{ SITENAME }} ATOM Feed"/>
     {% endif %}
 
     {% if FEED_ALL_RSS %}
-    <link href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"
+    <link href="/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"
           title="{{ SITENAME }} RSS Feed"/>
     {% endif %}
 
     {% if tag and TAG_FEED_ATOM %}
-    <link href="{{ SITEURL }}/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate"
+    <link href="/{{ TAG_FEED_ATOM|format(tag.slug) }}" type="application/atom+xml" rel="alternate"
           title="{{ SITENAME }} {{ tag }} ATOM Feed"/>
     {% endif %}
 
     {% if category and CATEGORY_FEED_ATOM %}
-    <link href="{{ SITEURL }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml"
+    <link href="/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" type="application/atom+xml"
           rel="alternate"
           title="{{ SITENAME }} {{ category }} ATOM Feed"/>
     {% endif %}
@@ -184,12 +184,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="{{ SITEURL }}/" class="navbar-brand">
-                {% if SITELOGO %}<img src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}"/> {% endif %}
+            <a href="/" class="navbar-brand">
+                {% if SITELOGO %}<img src="/{{ SITELOGO }}" width="{{ SITELOGO_SIZE }}"/> {% endif %}
                 {% if not HIDE_SITENAME %}{{ SITENAME }}{% endif %}
             </a>
             <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives">Archives</a>
+            <a class="navbar-brand" href="/archives.html">Archives</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbar-top-collapse">
@@ -229,7 +229,7 @@
 {% include 'includes/footer.html' %}
 
 {% if BANNER %}
-<script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bodypadding.js"></script>
+<script src="/{{ THEME_STATIC_DIR }}/js/bodypadding.js"></script>
 {% endif %}
 
 {% include 'includes/github-js.html' %}

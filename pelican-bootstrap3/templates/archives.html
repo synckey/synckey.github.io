@@ -3,7 +3,7 @@
 {% block breadcrumbs %}
 {% if DISPLAY_BREADCRUMBS %}
 <ol class="breadcrumb">
-    <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
+    <li><a href="" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
     <li class="active">Archives</li>
 </ol>
 {% endif %}
@@ -23,7 +23,7 @@
                 {% endif %}
                 <p>
                     <span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.date|strftime('%Y-%m-%d')  }}</time></span>
-                    <span> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}{% if article.subtitle %} - {{
+                    <span> <a href="/{{ article.url }}">{{ article.title }}{% if article.subtitle %} - {{
                         article.subtitle
                         }}{% endif %}</a></span>
                 </p>

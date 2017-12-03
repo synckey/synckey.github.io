@@ -22,18 +22,18 @@
     {% if SHOW_ARTICLE_AUTHOR %}
     {% if article.author %}
     <span class="label label-default">By</span>
-    <a href="{{ SITEURL }}/{{ article.author.url }}"><i class="fa fa-user"></i> {{ article.author }}</a>
+    <a href="/{{ article.author.url }}"><i class="fa fa-user"></i> {{ article.author }}</a>
     {% endif %}
     {% endif %}
 
     {% if SHOW_ARTICLE_CATEGORY %}
     <span class="label label-default">Category</span>
-    <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+    <a href="/{{ article.category.url }}">{{ article.category }}</a>
     {% endif %}
 
     {% if PDF_PROCESSOR %}
     <span class="label label-default">
-            <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
+            <a href="/pdf/{{ article.slug }}.pdf">PDF</a>
         </span>
     {% endif %}
 

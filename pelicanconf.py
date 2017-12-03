@@ -44,7 +44,6 @@ DEFAULT_PAGINATION = 30
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 DISQUS_SITENAME = u"synckey"
-# DUOSHUO_SITENAME = u"synckey"
 THEME = "pelican-bootstrap3"
 HIDE_SIDEBAR = True
 # BOOTSTRAP_FLUID =  True
@@ -57,7 +56,6 @@ EXTRA_PATH_METADATA = {
     "static/images/favicon.ico": {"path": "favicon.ico"},
     "static/CNAME": {"path": "CNAME"},
     "static/robots.txt": {"path": "robots.txt"}
-    #   "static/baidu_verify_eO5agZyv5R.html": {"path": "baidu_verify_eO5agZyv5R.html"},
 }
 
 SITEMAP = {

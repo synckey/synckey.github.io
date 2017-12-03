@@ -6,7 +6,7 @@
     <h5>Previous articles</h5>
     <ul>
         {% for article in article.series.all_previous %}
-        <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+        <li><a href="/{{ article.url }}">{{ article.title }}</a></li>
         {% endfor %}
     </ul>
     {% endif %}
@@ -14,7 +14,7 @@
     <h5>Next articles</h5>
     <ul>
         {% for article in article.series.all_next %}
-        <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+        <li><a href="/{{ article.url }}">{{ article.title }}</a></li>
         {% endfor %}
     </ul>
     {% endif %}

@@ -6,7 +6,7 @@
 <div class="separator"></div>
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+        <h3><a href="/{{ article.url }}">{{ article.title }}</a></h3>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">{{ article.date|strftime('%Y-%m-%d') }}</span>
@@ -23,7 +23,7 @@
     <div class="post-content">{{ article.summary }}
         <div class="read-more">
             {% include 'includes/comment_count.html' %}
-            <a class="btn" href="{{ SITEURL }}/{{ article.url }}">--READ MORE--</a>
+            <a class="btn" href="/{{ article.url }}">--READ MORE--</a>
         </div>
     </div>
 </div>

@@ -5,7 +5,7 @@
 {% block breadcrumbs %}
 {% if DISPLAY_BREADCRUMBS %}
 <ol class="breadcrumb">
-    <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
+    <li><a href="/" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
     <li class="active">Tags</li>
 </ol>
 {% endif %}
@@ -31,7 +31,7 @@
         <ul>
             <li>
                 <p><span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span>
-                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></p>
+                    <a href="/{{ article.url }}">{{ article.title }}</a></p>
             </li>
         </ul>
         {% endfor %}
