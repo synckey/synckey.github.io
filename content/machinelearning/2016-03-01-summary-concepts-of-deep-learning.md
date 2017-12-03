@@ -1,6 +1,6 @@
 Title: Summary Concepts of Deep Learning
 Date: 2016-03-01
-Tags: machine learning, deep learning
+Tags: machine learning,deep learning
 Slug: summary-concepts-of-deep-learning
 Author: Andy
 Place: Beijing
