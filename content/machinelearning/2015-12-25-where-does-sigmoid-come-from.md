@@ -5,7 +5,7 @@ Slug: where-does-sigmoid-come-from
 Author: Andy
 Place: Beijing
 
->主要根据Andrew Ng的教学讲义整理。
+>主要根据%%Andrew Ng%%的教学讲义整理。
 
 %%%
 \usepackage[usenames]{xcolor}
