@@ -86,7 +86,7 @@ function start_up(){
 #  MAIN
 ###
 [[ ($# -eq 0) || ($# -gt 2) ]] && usage
-port=''
+port='80'
 [[ $# -eq 2 ]] && port=$2
 
 if [[ $1 == "stop" ]]; then

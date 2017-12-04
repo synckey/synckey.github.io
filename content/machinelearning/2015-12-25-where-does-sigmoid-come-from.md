@@ -13,21 +13,9 @@ $$a+b=c$$
 \color{red} 
 %%%
 
-%%
-\begin{eqnarray*}
-    f(x) &=& p^x(1-p)^{1-x}\\
-    E(y) &=& p
-\end{eqnarray*}
-%%
 
-%%
-\begin{displaymath}
+###
 \int k\,\mathrm{d}x \ne
 \bm{\int k\,\mathrm{d}x}
-\end{displaymath}
-%%
-
-
-
-
+###
 

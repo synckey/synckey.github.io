@@ -5,16 +5,13 @@ import base64
 import tempfile
 import markdown
 
-
 from subprocess import call, PIPE
-
 
 """
 Licensed under Public Domain Mark 1.0.
 See http://creativecommons.org/publicdomain/mark/1.0/
 Author: Justin Bruce Van Horne <justinvh@gmail.com>
 """
-
 
 """
 Python-Markdown LaTeX Extension
@@ -27,10 +24,8 @@ It encodes data as base64 so there is no need for images directly.
 All the work is done in the preprocessor.
 """
 
-
 # Defines our basic inline image
 IMG_EXPR = "<img class='latex-%s' id='%s'" + " src='data:image/svg+xml;base64,%s'>"
-
 
 
 class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
@@ -60,7 +55,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
                        ("dvisvgm", "args"): "--no-fonts",
                        ("delimiters", "text"): "%%",
                        ("delimiters", "math"): "$$",
-                       ("delimiters", "interrow"): "$$$",
+                       ("delimiters", "display"): "###",
                        ("delimiters", "preamble"): "%%%"}
         """
         try:
@@ -74,6 +69,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
         except configparser.NoSectionError:
             pass
         """
+
         def build_regexp(delim):
             delim = re.escape(delim)
             regexp = r'(?<!\\)' + delim + r'(.+?)(?<!\\)' + delim
@@ -84,14 +80,13 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
         # $MATH$ mode which is the typical LaTeX math mode.
         self.re_mathmode = build_regexp(self.config[("delimiters", "math")])
         # %%PREAMBLE%% text that modifys the LaTeX preamble for the document
-        self.re_preamblemode = build_regexp(self.config[("delimiters",
-                                                        "preamble")])
+        self.re_preamblemode = build_regexp(self.config[("delimiters", "preamble")])
         # $$$DISPLAY$$$
-        self.re_interrowmode = build_regexp(self.config[("delimiters",
-                                                        "display")])
+        self.re_displaymode = build_regexp(self.config[("delimiters", "display")])
 
     """The TeX preprocessor has to run prior to all the actual processing
     and can not be parsed in block mode very sanely."""
+
     def _latex_to_base64(self, tex, math_mode):
         """Generates a base64 representation of TeX string"""
         # Generate the temporary file
@@ -104,8 +99,10 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
         tmp_file.write(self.tex_preamble)
 
         # Figure out the mode that we're in
-        if math_mode:
+        if math_mode == 'inline':
             tmp_file.write("$%s$" % tex)
+        elif math_mode == 'display':
+            tmp_file.write("\\begin{displaymath}%s\end{displaymath}" % tex)
         else:
             tmp_file.write("%s" % tex)
 
@@ -117,7 +114,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
 
         # clean up if the above failed
         if status:
-            #self._cleanup(path, err=True)
+            # self._cleanup(path, err=True)
             raise Exception("Couldn't compile LaTeX document." +
                             "Please read '%s.log' for more detail." % path)
 
@@ -133,7 +130,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
 
         # clean up if we couldn't make the above work
         if status:
-            #self._cleanup(path, err=True)
+            # self._cleanup(path, err=True)
             raise Exception("Couldn't convert LaTeX to image." +
                             "Please read '%s.log' for more detail." % path)
 
@@ -172,7 +169,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
             self.tex_preamble += preamble + "\n"
             page = self.re_preamblemode.sub("", page, 1)
         self.tex_preamble += "\n\\begin{document}\n"
-
+        self.re_textmode.sub();
         # Figure out our text strings and math-mode strings
         tex_expr = [(self.re_textmode, "text", x)
                     for x in self.re_textmode.findall(page)]
@@ -198,7 +195,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
             if k in self.cached:
                 data = eval(self.cached[k])
             else:
-                data = self._latex_to_base64(expr, self.)
+                data = self._latex_to_base64(expr, math_mode)
                 new_cache[k] = data
             expr = expr.replace('"', "").replace("'", "")
             id += 1
@@ -210,6 +207,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
         # Perform the escaping of delimiters and the backslash per se
         tokens = []
         tokens += [self.config[("delimiters", "preamble")]]
+        tokens += [self.config[("delimiters", "display")]]
         tokens += [self.config[("delimiters", "text")]]
         tokens += [self.config[("delimiters", "math")]]
         tokens += ['\\']
@@ -227,15 +225,17 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
 
 
 class LaTeXPostprocessor(markdown.postprocessors.Postprocessor):
-        """This post processor extension just allows us to further
-        refine, if necessary, the document after it has been parsed."""
-        def run(self, text):
-            # Inline a style for default behavior
-            return text
+    """This post processor extension just allows us to further
+    refine, if necessary, the document after it has been parsed."""
+
+    def run(self, text):
+        # Inline a style for default behavior
+        return text
 
 
 class MarkdownLatex(markdown.Extension):
     """Wrapper for LaTeXPreprocessor"""
+
     def extendMarkdown(self, md, md_globals):
         # Our base LaTeX extension
         md.preprocessors.add('latex',
