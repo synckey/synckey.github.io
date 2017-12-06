@@ -25,7 +25,6 @@ MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': {'css_class': 'github'},
         'markdown.extensions.tables': {},
-        'markdown.extensions.latex': {},
     },
 }
 

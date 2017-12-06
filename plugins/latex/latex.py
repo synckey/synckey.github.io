@@ -31,6 +31,8 @@ IMG_EXPR = "<img class='latex-%s' id='%s'" + " src='data:image/svg+xml;base64,%s
 class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
     # These are our cached expressions that are stored in latex.cache
     cached = {}
+    new_cache = {}
+    id = 0
 
     # Basic LaTex Setup as well as our list of expressions to parse
     tex_preamble = r"""\documentclass{article}
@@ -53,9 +55,9 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
 
         self.config = {("general", "preamble"): "",
                        ("dvisvgm", "args"): "--no-fonts",
+                       ("delimiters", "inline"): "$$",
                        ("delimiters", "text"): "%%",
-                       ("delimiters", "math"): "$$",
-                       ("delimiters", "display"): "###",
+                       ("delimiters", "display"): "$$$",
                        ("delimiters", "preamble"): "%%%"}
         """
         try:
@@ -78,7 +80,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
         # %TEXT% mode which is the default LaTeX mode.
         self.re_textmode = build_regexp(self.config[("delimiters", "text")])
         # $MATH$ mode which is the typical LaTeX math mode.
-        self.re_mathmode = build_regexp(self.config[("delimiters", "math")])
+        self.re_inlinemode = build_regexp(self.config[("delimiters", "inline")])
         # %%PREAMBLE%% text that modifys the LaTeX preamble for the document
         self.re_preamblemode = build_regexp(self.config[("delimiters", "preamble")])
         # $$$DISPLAY$$$
@@ -93,7 +95,6 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
         tempfile.tempdir = ""
         path = tempfile.mktemp()
         print(os.path.abspath(path))
-        print(self.config[("delimiters", "math")])
 
         tmp_file = open(path, "w")
         tmp_file.write(self.tex_preamble)
@@ -102,7 +103,7 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
         if math_mode == 'inline':
             tmp_file.write("$%s$" % tex)
         elif math_mode == 'display':
-            tmp_file.write("\\begin{displaymath}%s\end{displaymath}" % tex)
+            tmp_file.write("%s\n" % tex)
         else:
             tmp_file.write("%s" % tex)
 
@@ -157,11 +158,29 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
             except (IOError, OSError):
                 pass
 
+    def proccess_one_type(self, page, reg, type):
+        tex_expr = [(reg, type, x) for x in reg.findall(page)]
+        for reg, math_mode, expr in tex_expr:
+            simp_expr = filter(str.isalnum, expr)
+            # k = "".join(list(simp_expr)[:15])
+            k = "".join(list(simp_expr))
+            if k in self.cached:
+                data = eval(self.cached[k])
+            else:
+                data = self._latex_to_base64(expr, math_mode)
+                self.new_cache[k] = data
+            expr = expr.replace('"', "").replace("'", "")
+            self.id += 1
+            page = reg.sub(IMG_EXPR %
+                           (str(math_mode).lower(),
+                            "".join(list(simp_expr)) + "_" + str(id),
+                            data.decode("utf-8")), page, 1)
+        return page
+
     def run(self, lines):
         """Parses the actual page"""
         # Re-creates the entire page so we can parse in a multine env.
         page = "\n".join(lines)
-
         # Adds a preamble mode
         self.tex_preamble += self.config[("general", "preamble")]
         preambles = self.re_preamblemode.findall(page)
@@ -169,7 +188,11 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
             self.tex_preamble += preamble + "\n"
             page = self.re_preamblemode.sub("", page, 1)
         self.tex_preamble += "\n\\begin{document}\n"
-        self.re_textmode.sub();
+
+        self.proccess_one_type(page, self.re_displaymode, 'display')
+        self.proccess_one_type(page, self.re_inlinemode, 'inline')
+        self.proccess_one_type(page, self.re_textmode, 'text')
+        """
         # Figure out our text strings and math-mode strings
         tex_expr = [(self.re_textmode, "text", x)
                     for x in self.re_textmode.findall(page)]
@@ -205,18 +228,19 @@ class LaTeXPreprocessor(markdown.preprocessors.Preprocessor):
                             "".join(list(simp_expr)) + "_" + str(id),
                             data.decode("utf-8")), page, 1)
         # Perform the escaping of delimiters and the backslash per se
+        """
         tokens = []
         tokens += [self.config[("delimiters", "preamble")]]
         tokens += [self.config[("delimiters", "display")]]
         tokens += [self.config[("delimiters", "text")]]
-        tokens += [self.config[("delimiters", "math")]]
+        tokens += [self.config[("delimiters", "inline")]]
         tokens += ['\\']
         for tok in tokens:
             page = page.replace('\\' + tok, tok)
 
         # Cache our data
         cache_file = open('latex.cache', 'a')
-        for key, value in new_cache.items():
+        for key, value in self.new_cache.items():
             cache_file.write("%s %s\n" % (key, value))
         cache_file.close()
 
