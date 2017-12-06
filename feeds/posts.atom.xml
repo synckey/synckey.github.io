@@ -78,12 +78,12 @@
 &lt;p&gt;后来jw研究生也毕业了，我还介绍他来我们组面试，可惜当时没有hc，他就去了百度。我们在2016年秋天的时候又聚过一次，在嘉美影城的楼上吃的麻辣诱惑。北京城那么大，好像我们虽是同学，聚的也真不多，熙熙攘攘。过年之前很想请jw吃一次饭，他说要等我妹子来了一起，后来一拖直到今天。&lt;/p&gt;
 &lt;p&gt;从安河桥北到中关村，只有20分钟的地铁，我们约在了离他更近的中关村吃站点pizza。他们可以叫做夫妻了吧（去年领了证），jw稍微有点变胖了，头似乎更大了，ll却比以前更瘦了。jw说，想喝酒，下一次一起喝可能要再过十年八年了。他下去买酒，买了好几罐啤酒，说是把楼下的小超市的啤酒都买光了。我们一人一半，都喝完了，头很晕。ll说了不少他们公司的趣事，也说了很多要去法国租房，工作，担心安全问题，当然我们都很担心的，就是经济问题。作为还有三个月也要只身去异国他乡的我来说，他们的心情，也是我的心情。&lt;/p&gt;
 &lt;p&gt;老同学见老同学，总有说不完的话，此刻不是秋天，内心却很凄凉。6年前，我们在宿舍憧憬着去百度工作，满是期待，彼时正是初夏，万物勃发。6年时间一晃就过去了，我们又要开启各自的新生活，眼神里除了期待，似乎还有一些别的。如果时间能再过一年，我们就要认识十年了，那时候的我们，会是在哪里？ 新西兰与法国，要横跨大半个地球。吃完饭喝完咖啡，我们一起去南京银行办银行卡，办完了我就赶着去办浦发的信用卡，于是就此别过。&lt;/p&gt;
-&lt;p&gt;--“你们飞的时候，反正也是从北京，叫我送你们啊？”&lt;/p&gt;
-&lt;p&gt;--“我们是夜里飞。”&lt;/p&gt;
-&lt;p&gt;--“哦，那算了，有机会再约哈~”&lt;/p&gt;
-&lt;p&gt;在回来的路上想到了两句诗，很是契合心意，似乎有酒有十年，然而终究是想不起来是哪两句了。查来查去，只查到一句“浮云一别后，流水十年间”，说的却是分别十年的久别重逢，那么就用它作为结尾吧。十年以后，我们必定还能相见。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;江汉曾为客，
+&lt;p&gt;--“你们飞的时候，反正也是从北京，叫我送你们啊？”&lt;br/&gt;
+--“我们是夜里飞。”&lt;br/&gt;
+--“哦，那算了，有机会再约哈~”&lt;/p&gt;
+&lt;p&gt;在回来的路上想到了两句诗，很是契合心意，似乎有酒有十年，然而终究是想不起来是哪两句了。查来查去，只查到一句“浮云一别后，流水十年间”，说的却是分别十年的久别重逢，那么就用它作为结尾吧。十年以后，我们必定还能相见。
+&lt;blockquote class="center-block"&gt;
+江汉曾为客，
 相逢每醉还.&lt;br/&gt;
 浮云一别后，
 流水十年间.&lt;br/&gt;
@@ -91,8 +91,8 @@
 萧疏鬓已斑.&lt;br/&gt;
 何因北归去，
 淮上对秋山.&lt;br/&gt;
---&amp;lt;淮上喜会梁川故友&amp;gt; 韦应物&lt;/p&gt;
-&lt;/blockquote&gt;</content><category term="life"></category></entry><entry><title>Notes for Leetcode</title><link href="http://synckey.name/posts/2016/10/20/notes-for-leetcode.md.html" rel="alternate"></link><published>2016-10-20T00:00:00+08:00</published><updated>2016-10-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-20:/posts/2016/10/20/notes-for-leetcode.md.html</id><summary type="html">&lt;h2&gt;1.Binary Number Representation&lt;/h2&gt;
+  --&amp;lt;淮上喜会梁川故友&amp;gt; 韦应物
+&lt;/blockquote&gt;&lt;/p&gt;</content><category term="life"></category></entry><entry><title>Notes for Leetcode</title><link href="http://synckey.name/posts/2016/10/20/notes-for-leetcode.md.html" rel="alternate"></link><published>2016-10-20T00:00:00+08:00</published><updated>2016-10-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-20:/posts/2016/10/20/notes-for-leetcode.md.html</id><summary type="html">&lt;h2&gt;1.Binary Number Representation&lt;/h2&gt;
 &lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mb"&gt;0b1111&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// which is equals to `x = 15`; and is useful when use the number for masking.&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;2.Rotate Function&lt;/h2&gt;
