@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Big Sarcosaurus</title>
+    <title>Java 中 volatile, spin lock 和 synchronzied 的语义</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -15,20 +15,20 @@
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
     <!--
-<link rel="canonical" href="/posts/2014/10/22/big-sarcosaurus.html">
+<link rel="canonical" href="/posts/2017/12/02/java-volatile-spinlock-synchronized.html">
     -->
 <meta name="author" content="Andy"/>
-<meta name="keywords" content="personal"/>
-<meta name="description" content="Wen asked me how I was those days in the morning via wechat ,which was kind of a surprise for me.She said that she would take an exam today and she would have some time after then. I invited her to come to see me and have lunch together …"/>
+<meta name="keywords" content="java"/>
+<meta name="description" content="Java内存模型（Java Memory Model） 线程，主内存，工作内存三者之间的关系[1] 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和 其对应的写操作是不是合法，它描述了一个程序可能的行为。 Java中线程共享的数据： 实例变量 静态变量 构成数组对象的元素 线程私有的数据: 局部变量 方法的形式参数 exception handler parameters(catch(Exception e)中的e) 对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。 volatile Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。 Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。 但是&#34;基于volatile变量的运算在并发下是安全的&#34;这个结论并不正确。 References 深入理解Java虚拟机:JVM高级特性与最佳实践(第2版) JSR 133 (Java Memory …"/>
 
 <meta property="og:site_name" content="Andy's Blog"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Big Sarcosaurus"/>
-<meta property="og:url" content="/posts/2014/10/22/big-sarcosaurus.html"/>
-<meta property="og:description" content="Wen asked me how I was those days in the morning via wechat ,which was kind of a surprise for me.She said that she would take an exam today and she would have some time after then. I invited her to come to see me and have lunch together …"/>
-<meta property="article:published_time" content=" 2014-10-22" />
-<meta property="article:section" content="posts"/>
-<meta property="article:tag" content="personal"/>
+<meta property="og:title" content="Java 中 volatile, spin lock 和 synchronzied 的语义"/>
+<meta property="og:url" content="/posts/2017/12/02/java-volatile-spinlock-synchronized.html"/>
+<meta property="og:description" content="Java内存模型（Java Memory Model） 线程，主内存，工作内存三者之间的关系[1] 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和 其对应的写操作是不是合法，它描述了一个程序可能的行为。 Java中线程共享的数据： 实例变量 静态变量 构成数组对象的元素 线程私有的数据: 局部变量 方法的形式参数 exception handler parameters(catch(Exception e)中的e) 对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。 volatile Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。 Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。 但是&#34;基于volatile变量的运算在并发下是安全的&#34;这个结论并不正确。 References 深入理解Java虚拟机:JVM高级特性与最佳实践(第2版) JSR 133 (Java Memory …"/>
+<meta property="article:published_time" content=" 2017-12-02" />
+<meta property="article:section" content="tools"/>
+<meta property="article:tag" content="java"/>
 <meta property="article:author" content="Andy"/>
 
 
@@ -105,9 +105,9 @@
 
 
 
-    <link href="/feeds/posts.atom.xml" type="application/atom+xml"
+    <link href="/feeds/tools.atom.xml" type="application/atom+xml"
           rel="alternate"
-          title="Andy's Blog posts ATOM Feed"/>
+          title="Andy's Blog tools ATOM Feed"/>
 
 </head>
 
@@ -161,11 +161,11 @@ Andy's Blog            </a>
 <div class="post-container">
     <div class="post-header">
         <h3>
-            <a href="/posts/2014/10/22/big-sarcosaurus.html">Big Sarcosaurus</a>
+            <a href="/posts/2017/12/02/java-volatile-spinlock-synchronized.html">Java 中 volatile, spin lock 和 synchronzied 的语义</a>
         </h3>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2014-10-22</span>
+              aria-hidden="true">2017-12-02</span>
             <span class="glyphicon glyphicon-home footnote ">Beijing</span>
 
         </div>
@@ -176,7 +176,7 @@ Andy's Blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-10-22T00:00:00+08:00"> 2014.10.22</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-12-02T00:00:00+08:00"> 2017.12.02</time>
     </span>
 
 
@@ -184,28 +184,43 @@ Andy's Blog            </a>
 
 
 <span class="label label-default">Tags</span>
-<a href="/tag/personal.html">personal</a>
+<a href="/tag/java.html">java</a>
     
 </footer>                </div>
             </div>
             -->
-        <p>Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
-would take an exam today and she would have some time after then. I invited her to come to see me and have lunch 
-together. She said that she had bought some Big Sarcosaurus(<code>大懒龙</code> in Chinese).I  don't know what
-it is and incorrectly, I thought it was a restaurant.I searched it on the baidu map,and the website told me  that it
-was 1h away from me. I might do not have enough time to go there and I told her to cancel the lunch.However,
-I was wrong,Big Sacrosaurus can be taken away. It was significantly nice for Wen to come back(<code>angrily</code>).</p>
-<p>I really enjoy the lunch in Pizza hut,during which we talked about her work,and mine.Joy combined with upset makes her
-work interesting and challenging. I know She can make it and grow up to a good banker.</p>
-<p>It is not good recently,but I really appreciate the time talking with Wen and the Big Sacrosaurus she brought for me .
-<div align="center">
-<img alt="Big Sarcosaurus" class="carousel-inner img-rounded img-responsive" src="/static/images/bigsarcosaurus.jpg" style="width:40%;height:40%;"/>
+        <h3>Java内存模型（Java Memory Model）</h3>
+<p><div class="figure">
+<img alt="degree_deploma" class="carousel-inner img-rounded img-responsive" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/>
+<div class="caption">线程，主内存，工作内存三者之间的关系[<a href="#understand_jvm">1</a>]</div>
 </div></p>
+<p>给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和
+其对应的写操作是不是合法，它描述了一个程序可能的行为。</p>
+<p>Java中线程共享的数据：
+<em> 实例变量
+</em> 静态变量
+<em> 构成数组对象的元素
+线程私有的数据:
+</em> 局部变量
+<em> 方法的形式参数
+</em> exception handler parameters(catch(Exception e)中的e)</p>
+<p>对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。</p>
+<h3>volatile</h3>
+<p>Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。  <br/>
+Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。<br/>
+但是"基于volatile变量的运算在并发下是安全的"这个结论并不正确。</p>
+<h3>References</h3>
+<ol>
+<li><a name="understand_jvm"></a> <a href="https://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-JVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%91%A8%E5%BF%97%E6%98%8E/dp/B00D2ID4PK/ref=sr_1_1?ie=UTF8&amp;qid=1512302879&amp;sr=8-1&amp;keywords=%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E8%99%9A%E6%8B%9F%E6%9C%BA">深入理解Java虚拟机:JVM高级特性与最佳实践(第2版)</a> </li>
+<li><a href="https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html">JSR 133 (Java Memory Model) FAQ</a> </li>
+<li><a href="https://docs.oracle.com/javase/specs/jls/se9/jls9.pdf">jls9</a></li>
+</ol>
 <div class="pager">
     <ul>
-        <li class="previous"><a href="/posts/2014/10/31/the-catcher-in-the-rye.html" data-toggle="tooltip"
-                                title="The Catcher in the Rye">&larr; Previous</a></li>
-        <li class="next disabled"><a>Next &rarr;</a></li>
+        <li class="previous"><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html" data-toggle="tooltip"
+                                title="Produce 1000 Unique Four Digit Numbers">&larr; Previous</a></li>
+        <li class="next"><a href="/posts/2017/11/27/life-is-one-man-fight.html"
+                            data-toggle="tooltip" title="一个人的战争">Next &rarr;</a></li>
     </ul>
 </div><!--
 <div id="disqus_thread"></div>
@@ -232,8 +247,8 @@ work interesting and challenging. I know She can make it and grow up to a good b
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "/posts/2014/10/22/big-sarcosaurus.html";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "posts/2014/10/22/big-sarcosaurus.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "/posts/2017/12/02/java-volatile-spinlock-synchronized.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "posts/2017/12/02/java-volatile-spinlock-synchronized.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

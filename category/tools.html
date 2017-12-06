@@ -155,6 +155,77 @@ Andy's Blog            </a>
 <div class="separator"></div>
 <div class="post-container">
     <div class="post-header">
+        <h3><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">Produce 1000 Unique Four Digit Numbers</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-12-06</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>Conditions: <br/>
+1. No consecutive numbers. 2268, 1155 are not acceptable.<br/>
+2. No sequential numbers. 1234, 1856 are not acceptable.</p>
+<p>题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。</p>
+<div class="github"><pre><span></span><span class="kn">package</span> <span class="nn">com.qunar</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Created by andy on 06 …</span></pre></div>
+        <div class="read-more">
+            <a class="btn" href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="/posts/2017/12/02/java-volatile-spinlock-synchronized.html">Java 中 volatile, spin lock 和 synchronzied 的语义</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-12-02</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><h3>Java内存模型（Java Memory Model）</h3>
+<p><div class="figure">
+<img alt="degree_deploma" class="carousel-inner img-rounded img-responsive" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/>
+<div class="caption">线程，主内存，工作内存三者之间的关系[<a href="#understand_jvm">1</a>]</div>
+</div></p>
+<p>给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和
+其对应的写操作是不是合法，它描述了一个程序可能的行为。</p>
+<p>Java中线程共享的数据：
+<em> 实例变量
+</em> 静态变量
+<em> 构成数组对象的元素
+线程私有的数据:
+</em> 局部变量
+<em> 方法的形式参数
+</em> exception handler parameters(catch(Exception e)中的e)</p>
+<p>对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。</p>
+<h3>volatile</h3>
+<p>Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。  <br/>
+Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。<br/>
+但是"基于volatile变量的运算在并发下是安全的"这个结论并不正确。</p>
+<h3>References</h3>
+<ol>
+<li><a name="understand_jvm"></a> <a href="https://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-JVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%91%A8%E5%BF%97%E6%98%8E/dp/B00D2ID4PK/ref=sr_1_1?ie=UTF8&amp;qid=1512302879&amp;sr=8-1&amp;keywords=%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E8%99%9A%E6%8B%9F%E6%9C%BA">深入理解Java虚拟机:JVM高级特性与最佳实践(第2版)</a> </li>
+<li><a href="https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html">JSR 133 (Java Memory …</a></li></ol>
+        <div class="read-more">
+            <a class="btn" href="/posts/2017/12/02/java-volatile-spinlock-synchronized.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
         <h3><a href="/posts/2017/06/04/git-push-to-two-repositories.html">Git Push to Two Repositories at the Same Time</a></h3>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
