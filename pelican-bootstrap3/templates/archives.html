@@ -14,7 +14,8 @@
 <div class="post-container">
     <div class="post-content">
         <div class="post-header">
-            <h1>Archives for {{ SITENAME }}</h1></div>
+            <h1>Archives for {{ SITENAME }}</h1>
+        </div>
         <div class="archives">
             {% for article in articles %}
             {% if loop.first or article.date.strftime('%Y') != articles[loop.index0-1].date.strftime('%Y') %}

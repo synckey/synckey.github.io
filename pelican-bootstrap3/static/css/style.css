@@ -218,7 +218,7 @@ a {
 .post-container .figure {
     margin-top: 20px;
     margin-bottom: 35px;
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -277,12 +277,18 @@ a {
 
 .post-container blockquote {
     border-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Lora, Georgia, 'Times New Roman', '楷体', 'STKaiti', serif;
+    font-size: 150%;
 }
 
 .post-container blockquote p {
     font-family: Lora, Georgia, 'Times New Roman', '楷体', 'STKaiti', serif;
-    font-style: italic;
-    font-size: 90%;
+    /*font-style: italic;*/
+    font-size: 100%;
 }
 
 .post-container blockquote small {
@@ -740,11 +746,6 @@ h2#comment {
 
 #article-comment #ds-hot-posts, #article-comment .ds-comments-info, #article-comment .ds-login-buttons, #article-comment .ds-meta, #article-comment .ds-post-options, #article-comment .ds-replybox .ds-avatar, #article-comment .ds-toolbar, #article-comment .ds-visitor, .post-list-item a.heading-anchor, .search-page-search #search-spinner {
     display: none
-}
-
-img.math-false.{
-    display:inline;
-    width:13%;
 }
 
 
