@@ -164,6 +164,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width:80%;
 }
 
 .post-content img.pull-left {
@@ -215,14 +216,15 @@ a {
     margin-bottom: 25px;
 }
 
+
 .post-container .figure {
     margin-top: 20px;
     margin-bottom: 35px;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
 }
 
-.post-container .figure.narrow {
+.post-container .figure .narrow {
     max-width: 50%;
     margin-left: auto;
     margin-right: auto;
