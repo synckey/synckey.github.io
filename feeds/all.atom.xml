@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/all.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-12-06T00:00:00+08:00</updated><entry><title>Produce 1000 Unique Four Digit Numbers</title><link href="http://synckey.name/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html" rel="alternate"></link><published>2017-12-06T00:00:00+08:00</published><updated>2017-12-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-06:/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html</id><summary type="html">&lt;p&gt;Conditions: &lt;br/&gt;
-1. No consecutive numbers. 2268, 1155 are not acceptable.&lt;br/&gt;
-2. No sequential numbers. 1234, 1856 are not acceptable.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/all.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-12-06T00:00:00+08:00</updated><entry><title>Produce 1000 Unique Four Digit Numbers</title><link href="http://synckey.name/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html" rel="alternate"></link><published>2017-12-06T00:00:00+08:00</published><updated>2017-12-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-06:/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br/&gt;
+Conditions:  &lt;br/&gt;
+1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br/&gt;
+2. No sequential numbers. 1234, 1856 are not acceptable.  &lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。&lt;/p&gt;
 &lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.ArrayList&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.List&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 
 &lt;span class="cm"&gt;/**&lt;/span&gt;
-&lt;span class="cm"&gt; * Created by andy on 06/12/2017.&lt;/span&gt;
-&lt;span class="cm"&gt; */&lt;/span&gt;
-
-&lt;span class="kd"&gt;public …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Conditions: &lt;br/&gt;
-1. No consecutive numbers. 2268, 1155 are not acceptable.&lt;br/&gt;
-2. No sequential numbers. 1234, 1856 are not acceptable.&lt;/p&gt;
+&lt;span class="cm"&gt; * Created by …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br/&gt;
+Conditions:  &lt;br/&gt;
+1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br/&gt;
+2. No sequential numbers. 1234, 1856 are not acceptable.  &lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。&lt;/p&gt;
 &lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.ArrayList&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.List&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -108,12 +111,12 @@ Java还提供了一种在某些情况下比上锁更便捷的机制---volatile�
 &lt;p&gt;有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from &lt;a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment"&gt;假装在纽约&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="一个人的战争" class="center-block carousel-inner img-rounded img-responsive" src="/static/images/2017.11.27.one-man-fight.jpg" width="50%"/&gt;
+&lt;img alt="一个人的战争" class="carousel-inner img-responsive center-block img-rounded" src="/static/images/2017.11.27.one-man-fight.jpg" width="50%"/&gt;
 &lt;/div&gt;</summary><content type="html">&lt;blockquote&gt;
 &lt;p&gt;有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from &lt;a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment"&gt;假装在纽约&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="一个人的战争" class="center-block carousel-inner img-rounded img-responsive" src="/static/images/2017.11.27.one-man-fight.jpg" width="50%"/&gt;
+&lt;img alt="一个人的战争" class="carousel-inner img-responsive center-block img-rounded" src="/static/images/2017.11.27.one-man-fight.jpg" width="50%"/&gt;
 &lt;/div&gt;</content><category term="一个人的战斗"></category></entry><entry><title>Useful Set Phrases</title><link href="http://synckey.name/posts/2017/11/26/useful-set-phrases.html" rel="alternate"></link><published>2017-11-26T00:00:00+08:00</published><updated>2017-11-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-11-26:/posts/2017/11/26/useful-set-phrases.html</id><summary type="html">&lt;p&gt;Hard liquor (Whiskey, bourbon, vodka), spirits        &lt;br/&gt;
 a shot of whiskey&lt;br/&gt;
 upper hand&lt;br/&gt;
@@ -234,7 +237,7 @@ characteristics that can develop into a disability or disease.（&lt;a href="htt
 所以最后一公里，又恢复了奔跑，一直冲向了有好几道拱门的终点线，那里有穿着性感衣服的拉拉队。&lt;/p&gt;
 &lt;p&gt;最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="babies" class="center-block carousel-inner img-rounded img-responsive" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
+&lt;img alt="babies" class="carousel-inner img-responsive center-block img-rounded" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
 &lt;div class="caption"&gt;2016.06.17 北京马拉松&lt;/div&gt;
 &lt;/div&gt;</content><category term="life"></category></entry><entry><title>Auckland 小记</title><link href="http://synckey.name/posts/2017/06/26/new-to-auckland.html" rel="alternate"></link><published>2017-06-26T00:00:00+08:00</published><updated>2017-06-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-26:/posts/2017/06/26/new-to-auckland.html</id><summary type="html">&lt;p&gt;来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。&lt;/p&gt;
 &lt;p&gt;到奥克兰下飞机已经是早上6.30，跟我一起下飞机的都是中国人。一下飞机就买了一张vodaphone的手机卡，卖手机卡的是中国人，说的是中国话，收银员是个漂亮的高挑当地妹子。在海关排队入境花了大概有半个小时，海关官员看了下签证，问了下我帮朋友带了什么，就放行了。出来还要过一道安检，这次主要是查有没有带危害当地生物安全的食品，种子等，新西兰是一个岛国，生态异常脆弱。&lt;/p&gt;
@@ -294,7 +297,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;p&gt;Then if you want to push to both of them, just rum &lt;code&gt;git push&lt;/code&gt; as normal.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://blog.csdn.net/fancivez/article/details/51544354"&gt;git 添加多个远程库(remote)&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="git"></category></entry><entry><title>第一次去NZ必备物品清单</title><link href="http://synckey.name/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html" rel="alternate"></link><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><author><name>Hollie</name></author><id>tag:synckey.name,2017-05-24:/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html</id><summary type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;文件&lt;/th&gt;
@@ -377,7 +380,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;2. 资金&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;资金&lt;/th&gt;
@@ -391,7 +394,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align="left"&gt;银联卡 …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;文件&lt;/th&gt;
@@ -474,7 +477,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;2. 资金&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;资金&lt;/th&gt;
@@ -497,7 +500,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;3. 服装&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;服装&lt;/th&gt;
@@ -536,7 +539,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;4.日用品&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;日用品&lt;/th&gt;
@@ -579,7 +582,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;5. 电器&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;电器&lt;/th&gt;
@@ -622,7 +625,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;6.药物&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;药物&lt;/th&gt;
@@ -717,7 +720,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 |Content Cell  | Content Cell|
 |Content Cell  | Content Cell|
 &lt;/pre&gt;&lt;/div&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;First Header&lt;/th&gt;
@@ -854,7 +857,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;p&gt;国庆节mm来帝都玩，这是从上大学以来第一次国庆节没有回家，认识了cq,hzf,wym,都是很有趣的人。&lt;/p&gt;
 &lt;p&gt;2016年的运动乏善可陈，4月份和xh参加了一次半马，成绩是01:47:35，平均4m:55s/km，这个成绩我很满意，代表了自己的目前的最高水准吧。跑完了xh和他怀孕的老婆请我吃饭。上半年主要是在人大校园里面跑，后来搬到回龙观，就再也没跑过。
  &lt;div class="figure"&gt;
-&lt;img alt="babies" class="center-block carousel-inner img-rounded img-responsive" src="/static/images/2016.04.17_half_marathon.jpg"/&gt;
+&lt;img alt="babies" class="carousel-inner img-responsive center-block img-rounded" src="/static/images/2016.04.17_half_marathon.jpg"/&gt;
 &lt;div class="caption"&gt;2016.06.09 半马&lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;大概是从2015年开始，心里和纸上就开始频繁的做计算，把自己的各种投资，股票，基金，众筹，加到一起，再把未来的收入一起加进去，算出来，看什么时候能付得起首付。每一次的结论就是：大概2017年4月份。在没有遇到 mm 之前，并不绝望。买房对我像是一个恍惚的未来，好像近在眼前，又遥不可及。如果不是那天中午zh和xy过来找我吃饭，也许我也下不定决心要买。过程很曲折，这是在帝都五年来最绝望的时刻。在清河看过一次老破小，如果不是亲眼见到，真的不敢相信那样的破房子值那么多钱。人常常在某一个时刻感觉自己特别渺小，在星空面前，在时代面前，在潮流面前，在房价面前，更是渺小无力。幸运的是最亲的姐姐姐夫们给了我很大帮助，是我最大的后盾，wjy跑过来跟我一起看房子，最终是她在看好的两套里拍板的这一套，后来还帮我购置了很多物件，在忙碌中来回帝都两次。zh也借了不少钱给我，这是最感念的部分。当然，买房子的过程也有很多不开心，不愿意想起也不愿回忆。很难去要求别人怎么样，有的关系根本不需要维持，自己有钱比什么都重要。这是在这个过程中学到的。&lt;/p&gt;
@@ -863,7 +866,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;p&gt;4月份职称升了一级。从今年开始接触深度学习，用tensorflow跑出了一些demo，对深度学习算是入了门，但是真正深入学习的东西几乎没有。反观自己，我觉得两个原因让自己在专业方面停步不前：1.对技术的热情减少了很多；2.畏难，机器学习跟语言或者其他系统比，要难很多，所以很多东西都是浅尝辄止，深入不下去。在这么浮躁的社会，希望不要忘了立身之本，更不要忘了初心。&lt;/p&gt;
 &lt;p&gt;这一年外甥女忽然一下子长大了，开始问我问题，使我惊喜。看着她如此可爱，时常想，怎么让她保留童真，怎么给最好的给她？外甥也让我感觉特别懂事，看上去很小的孩子，其实已经很有自己的想法，能和人进行很深入的交谈。
 &lt;div class="figure narrow"&gt;
-&lt;img alt="babies" class="center-block carousel-inner img-rounded img-responsive" src="/static/images/2016.06.09_babies.jpg"/&gt;
+&lt;img alt="babies" class="carousel-inner img-responsive center-block img-rounded" src="/static/images/2016.06.09_babies.jpg"/&gt;
 &lt;div class="caption"&gt;2016.06.09 babies&lt;/div&gt;
 &lt;/div&gt;
 2016年总共读了这些书：&lt;/p&gt;
@@ -1028,7 +1031,7 @@ $$
 &lt;h2&gt;收到签证&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt; Date&lt;/strong&gt;: 2016.12.30&lt;/p&gt;
 &lt;h3&gt;费用&lt;/h3&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;Item&lt;/th&gt;
@@ -2206,5 +2209,5 @@ I was wrong,Big Sacrosaurus can be taken away. It was significantly nice for Wen
 work interesting and challenging. I know She can make it and grow up to a good banker.&lt;/p&gt;
 &lt;p&gt;It is not good recently,but I really appreciate the time talking with Wen and the Big Sacrosaurus she brought for me .
 &lt;div align="center"&gt;
-&lt;img alt="Big Sarcosaurus" class="img-rounded carousel-inner img-responsive" src="/static/images/bigsarcosaurus.jpg" style="width:40%;height:40%;"/&gt;
+&lt;img alt="Big Sarcosaurus" class="carousel-inner img-responsive img-rounded" src="/static/images/bigsarcosaurus.jpg" style="width:40%;height:40%;"/&gt;
 &lt;/div&gt;&lt;/p&gt;</content><category term="personal"></category></entry></feed>

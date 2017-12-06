@@ -19,13 +19,13 @@
     -->
 <meta name="author" content="Andy"/>
 <meta name="keywords" content="java,algorithm"/>
-<meta name="description" content="Conditions: 1. No consecutive numbers. 2268, 1155 are not acceptable. 2. No sequential numbers. 1234, 1856 are not acceptable. 题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。 import java.util.ArrayList; import java.util.List; /** * Created by andy on 06/12/2017. */ public …"/>
+<meta name="description" content="Produce 1000 unique four digit numbers. Conditions: 1. No consecutive numbers. 2268, 1155 are not acceptable. 2. No sequential numbers. 1234, 1856 are not acceptable. 题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。 import java.util.ArrayList; import java.util.List; /** * Created by …"/>
 
 <meta property="og:site_name" content="Andy's Blog"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Produce 1000 Unique Four Digit Numbers"/>
 <meta property="og:url" content="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html"/>
-<meta property="og:description" content="Conditions: 1. No consecutive numbers. 2268, 1155 are not acceptable. 2. No sequential numbers. 1234, 1856 are not acceptable. 题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。 import java.util.ArrayList; import java.util.List; /** * Created by andy on 06/12/2017. */ public …"/>
+<meta property="og:description" content="Produce 1000 unique four digit numbers. Conditions: 1. No consecutive numbers. 2268, 1155 are not acceptable. 2. No sequential numbers. 1234, 1856 are not acceptable. 题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。 import java.util.ArrayList; import java.util.List; /** * Created by …"/>
 <meta property="article:published_time" content=" 2017-12-06" />
 <meta property="article:section" content="tools"/>
 <meta property="article:tag" content="java"/>
@@ -192,9 +192,12 @@ Andy's Blog            </a>
 </footer>                </div>
             </div>
             -->
-        <p>Conditions: <br/>
-1. No consecutive numbers. 2268, 1155 are not acceptable.<br/>
-2. No sequential numbers. 1234, 1856 are not acceptable.</p>
+        <blockquote>
+<p>Produce 1000 unique four digit numbers.<br/>
+Conditions:  <br/>
+1. No consecutive numbers. 2268, 1155 are not acceptable. <br/>
+2. No sequential numbers. 1234, 1856 are not acceptable.  </p>
+</blockquote>
 <p>题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。</p>
 <div class="github"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
