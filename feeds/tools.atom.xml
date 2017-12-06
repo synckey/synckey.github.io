@@ -61,7 +61,7 @@ Conditions:  &lt;br/&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</content><category term="java"></category><category term="algorithm"></category></entry><entry><title>Java 中 volatile, spin lock 和 synchronzied 的语义</title><link href="http://synckey.name/posts/2017/12/02/java-volatile-spinlock-synchronized.html" rel="alternate"></link><published>2017-12-02T00:00:00+08:00</published><updated>2017-12-02T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-02:/posts/2017/12/02/java-volatile-spinlock-synchronized.html</id><summary type="html">&lt;h3&gt;Java内存模型（Java Memory Model）&lt;/h3&gt;
 &lt;p&gt;&lt;div class="figure"&gt;
-&lt;img alt="degree_deploma" class="img-responsive carousel-inner img-rounded" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/&gt;
+&lt;img alt="degree_deploma" class="img-rounded img-responsive carousel-inner" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/&gt;
 &lt;div class="caption"&gt;线程，主内存，工作内存三者之间的关系[&lt;a href="#understand_jvm"&gt;1&lt;/a&gt;]&lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和
@@ -84,7 +84,7 @@ Java还提供了一种在某些情况下比上锁更便捷的机制---volatile�
 &lt;li&gt;&lt;a name="understand_jvm"&gt;&lt;/a&gt; &lt;a href="https://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-JVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%91%A8%E5%BF%97%E6%98%8E/dp/B00D2ID4PK/ref=sr_1_1?ie=UTF8&amp;amp;qid=1512302879&amp;amp;sr=8-1&amp;amp;keywords=%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E8%99%9A%E6%8B%9F%E6%9C%BA"&gt;深入理解Java虚拟机:JVM高级特性与最佳实践(第2版)&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html"&gt;JSR 133 (Java Memory …&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;h3&gt;Java内存模型（Java Memory Model）&lt;/h3&gt;
 &lt;p&gt;&lt;div class="figure"&gt;
-&lt;img alt="degree_deploma" class="img-responsive carousel-inner img-rounded" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/&gt;
+&lt;img alt="degree_deploma" class="img-rounded img-responsive carousel-inner" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/&gt;
 &lt;div class="caption"&gt;线程，主内存，工作内存三者之间的关系[&lt;a href="#understand_jvm"&gt;1&lt;/a&gt;]&lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和
@@ -149,7 +149,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 |Content Cell  | Content Cell|
 |Content Cell  | Content Cell|
 &lt;/pre&gt;&lt;/div&gt;
-&lt;table class="table table-hover table-striped"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;First Header&lt;/th&gt;
