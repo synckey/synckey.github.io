@@ -142,7 +142,13 @@ a {
 .footnote ol {
     margin-left: 0px;
     margin-right: 0px;
-    padding-left: 20px;
+    padding-left: 22px;
+}
+.footnote li p{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .pager ul {
