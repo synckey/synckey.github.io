@@ -33,7 +33,7 @@
 所以最后一公里，又恢复了奔跑，一直冲向了有好几道拱门的终点线，那里有穿着性感衣服的拉拉队。&lt;/p&gt;
 &lt;p&gt;最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="babies" class="carousel-inner img-responsive img-rounded center-block" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
+&lt;img alt="babies" class="img-rounded center-block carousel-inner img-responsive" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
 &lt;div class="caption"&gt;2016.06.17 北京马拉松&lt;/div&gt;
 &lt;/div&gt;</content><category term="life"></category></entry><entry><title>BFS遍历到图的指定层的一种方法</title><link href="http://synckey.name/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html" rel="alternate"></link><published>2017-05-10T00:00:00+08:00</published><updated>2017-05-10T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-05-10:/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html</id><summary type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;leetcode原题&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:&lt;/p&gt;
@@ -223,12 +223,12 @@ $$
 &lt;p&gt;只希望曾经多吃了几碗饺子。&lt;/p&gt;</content><category term="life"></category></entry><entry><title>HHKB 设置与快捷键</title><link href="http://synckey.name/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html" rel="alternate"></link><published>2016-02-26T00:00:00+08:00</published><updated>2016-02-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-02-26:/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html</id><summary type="html">&lt;p&gt;入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.&lt;/p&gt;
 &lt;p&gt;我用hhkb的开关是&lt;code&gt;011001&lt;/code&gt;,主要是使用macintosh的键盘布局并且将delete键设置为'BS'.另外,也安装了&lt;a href="https://pqrs.org/osx/karabiner/index.html.en"&gt;Karabiner&lt;/a&gt;这款神器,它一方面可以设置系统自动识别是否插入了外接键盘,如果插入了外接键盘,可以将mac的键盘disable掉,另一方面它具有强大的改键功能.硬件方面,买了一个miniusb右弯的接头,这样把hhkb放在mac键盘上的时候,线就不会弯曲到挡着屏幕了.&lt;/p&gt;
 &lt;p align="center"&gt;
-&lt;img alt="miniusb" class="img-responsive img-rounded" src="/static/images/miniusb.jpg" title="An awesome picture caption!" width="50%"/&gt;
+&lt;img alt="miniusb" class="img-rounded img-responsive" src="/static/images/miniusb.jpg" title="An awesome picture caption!" width="50%"/&gt;
 &lt;/p&gt;
 &lt;p&gt;hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所以小拇指很容易就能按到它,所以hhkb的键盘布局对emacs非常友好.而mac os操作系统对emacs风格的快捷键原生就有支持,在界面中可以通过&lt;code&gt;CTRL+B …&lt;/code&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.&lt;/p&gt;
 &lt;p&gt;我用hhkb的开关是&lt;code&gt;011001&lt;/code&gt;,主要是使用macintosh的键盘布局并且将delete键设置为'BS'.另外,也安装了&lt;a href="https://pqrs.org/osx/karabiner/index.html.en"&gt;Karabiner&lt;/a&gt;这款神器,它一方面可以设置系统自动识别是否插入了外接键盘,如果插入了外接键盘,可以将mac的键盘disable掉,另一方面它具有强大的改键功能.硬件方面,买了一个miniusb右弯的接头,这样把hhkb放在mac键盘上的时候,线就不会弯曲到挡着屏幕了.&lt;/p&gt;
 &lt;p align="center"&gt;
-&lt;img alt="miniusb" class="img-responsive img-rounded" src="/static/images/miniusb.jpg" title="An awesome picture caption!" width="50%"/&gt;
+&lt;img alt="miniusb" class="img-rounded img-responsive" src="/static/images/miniusb.jpg" title="An awesome picture caption!" width="50%"/&gt;
 &lt;/p&gt;
 &lt;p&gt;hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所以小拇指很容易就能按到它,所以hhkb的键盘布局对emacs非常友好.而mac os操作系统对emacs风格的快捷键原生就有支持,在界面中可以通过&lt;code&gt;CTRL+B&lt;/code&gt;等快捷键移动光标,大大减少使用触摸板的时间.为了能充分发挥hhkb的功能,本来打算从vim迁移到emacs的,但是idea里面没有像IdeaVim这样好用的插件,再加上Idea里面的emacs keymap并不好用,所以就放弃了emacs,是的因为idea跟emacs不能很好的工作才放弃emacs的.&lt;/p&gt;
 &lt;p&gt;不过虽然不用emacs,但是记住emacs风格的快捷键还是很有帮助的,下面是一些最常用到的快捷键,在iTerm2和大部分mac应用窗口都可以使用.在浏览器的表单填写页面里面,某些快捷键会失效,比如:在百度的搜索栏俩面填写搜索词的时候&lt;code&gt;CTRL+N&lt;/code&gt;没反应,这个时候在karabiner的emacs模式里面设置下就好了.&lt;/p&gt;
@@ -319,7 +319,7 @@ $$
 和《潘吉Jenny告诉你》实在太赞，一边运动一边练口语。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="suzhou" class="carousel-inner img-responsive img-rounded" src="/static/images/2015_04_13_softwares.jpg"/&gt;
+&lt;img alt="suzhou" class="img-rounded carousel-inner img-responsive" src="/static/images/2015_04_13_softwares.jpg"/&gt;
 &lt;div class="caption"&gt;Useful Apps&lt;/div&gt;
 &lt;/div&gt;
 &lt;h2&gt;进行中&lt;/h2&gt;
@@ -359,7 +359,7 @@ a&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3&gt;有图有真相&lt;/h3&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="suzhou" class="carousel-inner img-responsive img-rounded" src="/static/images/2015_04_13_comparasion.jpg"/&gt;
+&lt;img alt="suzhou" class="img-rounded carousel-inner img-responsive" src="/static/images/2015_04_13_comparasion.jpg"/&gt;
 &lt;/div&gt;
 &lt;!--
 &lt;container&gt;
@@ -443,5 +443,5 @@ I was wrong,Big Sacrosaurus can be taken away. It was significantly nice for Wen
 work interesting and challenging. I know She can make it and grow up to a good banker.&lt;/p&gt;
 &lt;p&gt;It is not good recently,but I really appreciate the time talking with Wen and the Big Sacrosaurus she brought for me .
 &lt;div align="center"&gt;
-&lt;img alt="Big Sarcosaurus" class="carousel-inner img-responsive img-rounded" src="/static/images/bigsarcosaurus.jpg" style="width:40%;height:40%;"/&gt;
+&lt;img alt="Big Sarcosaurus" class="img-rounded carousel-inner img-responsive" src="/static/images/bigsarcosaurus.jpg" style="width:40%;height:40%;"/&gt;
 &lt;/div&gt;&lt;/p&gt;</content><category term="personal"></category></entry></feed>

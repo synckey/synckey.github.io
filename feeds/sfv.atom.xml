@@ -19,26 +19,26 @@
 &lt;p&gt;可能因为本地私家车普及率特别高，相对天朝公交而言，新西兰的公交车实在不友善。首先，公交车班次间隔时间比较久，如果错过一班可能要等二十分钟甚至半个小时。公交车并不会在每站都停，如果想下车就得提前按铃，车上也没有报站系统和显示屏，这就对外地人很不友善，只能拿着google地图看快要到了，就按铃下车。我的理解是这样做可以提升公交车的运行效率，但是加一个到站的显示屏真的会友善很多。&lt;/p&gt;
 &lt;p&gt;总得来说，虽然新西兰的牛羊肉很好吃，但是物价实在是太高了。
 &lt;div class="figure"&gt;
-&lt;img alt="auk_domain_1" class="carousel-inner img-responsive img-rounded" src="/static/images/aukland_domain_1.jpg"/&gt;
+&lt;img alt="auk_domain_1" class="img-rounded carousel-inner img-responsive" src="/static/images/aukland_domain_1.jpg"/&gt;
 &lt;div class="caption"&gt;Auckland Domain&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="auk_domain_2" class="carousel-inner img-responsive img-rounded" src="/static/images/aukland_domain_2.jpg"/&gt;
+&lt;img alt="auk_domain_2" class="img-rounded carousel-inner img-responsive" src="/static/images/aukland_domain_2.jpg"/&gt;
 &lt;div class="caption"&gt;Auckland Domain&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="ont_tree_hill" class="carousel-inner img-responsive img-rounded" src="/static/images/one_tree_hill.jpg"/&gt;
+&lt;img alt="ont_tree_hill" class="img-rounded carousel-inner img-responsive" src="/static/images/one_tree_hill.jpg"/&gt;
 &lt;div class="caption"&gt;One Tree Hill&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="steak_and_fries" class="carousel-inner img-responsive img-rounded" src="/static/images/steak_and_fries.jpg"/&gt;
+&lt;img alt="steak_and_fries" class="img-rounded carousel-inner img-responsive" src="/static/images/steak_and_fries.jpg"/&gt;
 &lt;div class="caption"&gt;Steak&amp;amp;Fries&lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="albert_park" class="carousel-inner img-responsive img-rounded" src="/static/images/albert_park.jpg"/&gt;
+&lt;img alt="albert_park" class="img-rounded carousel-inner img-responsive" src="/static/images/albert_park.jpg"/&gt;
 &lt;div class="caption"&gt;Albert Park&lt;/div&gt;
 &lt;/div&gt;</content><category term="sfv"></category></entry><entry><title>第一次去NZ必备物品清单</title><link href="http://synckey.name/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html" rel="alternate"></link><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><author><name>Hollie</name></author><id>tag:synckey.name,2017-05-24:/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html</id><summary type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
-&lt;table class="table-hover table-striped table"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;文件&lt;/th&gt;
@@ -121,7 +121,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;2. 资金&lt;/h4&gt;
-&lt;table class="table-hover table-striped table"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;资金&lt;/th&gt;
@@ -135,7 +135,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align="left"&gt;银联卡 …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
-&lt;table class="table-hover table-striped table"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;文件&lt;/th&gt;
@@ -218,7 +218,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;2. 资金&lt;/h4&gt;
-&lt;table class="table-hover table-striped table"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;资金&lt;/th&gt;
@@ -241,7 +241,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;3. 服装&lt;/h4&gt;
-&lt;table class="table-hover table-striped table"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;服装&lt;/th&gt;
@@ -280,7 +280,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;4.日用品&lt;/h4&gt;
-&lt;table class="table-hover table-striped table"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;日用品&lt;/th&gt;
@@ -323,7 +323,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;5. 电器&lt;/h4&gt;
-&lt;table class="table-hover table-striped table"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;电器&lt;/th&gt;
@@ -366,7 +366,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;6.药物&lt;/h4&gt;
-&lt;table class="table-hover table-striped table"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;药物&lt;/th&gt;
@@ -452,7 +452,7 @@
 &lt;h2&gt;学历学位证书&lt;/h2&gt;
 &lt;p&gt;我是自己翻译了毕业证和学位证，然后去学校档案室盖章，可以当原件使用。山东大学的中英文学历、学位证明模板和说明可以在&lt;a href="http://www.bkjx.sdu.edu.cn/info/1032/25229.htm"&gt;学校网站上&lt;/a&gt;下载到。&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="degree_deploma" class="carousel-inner img-responsive img-rounded" height="150%" src="/static/images/degree_deploma.jpg" width="1200%"/&gt;
+&lt;img alt="degree_deploma" class="img-rounded carousel-inner img-responsive" height="150%" src="/static/images/degree_deploma.jpg" width="1200%"/&gt;
 &lt;div class="caption"&gt;学历学位模板&lt;/div&gt;
 &lt;/div&gt;
 &lt;h2&gt;存款证明&lt;/h2&gt;
@@ -465,7 +465,7 @@
 &lt;h2&gt;收到签证&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt; Date&lt;/strong&gt;: 2016.12.30&lt;/p&gt;
 &lt;h3&gt;费用&lt;/h3&gt;
-&lt;table class="table-hover table-striped table"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;Item&lt;/th&gt;
