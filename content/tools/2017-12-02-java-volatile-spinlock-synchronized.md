@@ -5,6 +5,18 @@ Slug: java-volatile-spinlock-synchronized
 Author: Andy
 Place: Beijing
 status:draft
+<p>This is <ins>added content</ins> and this is <del>deleted content</del>
+</p>
+<cite>Who Is Killing the Great Chefs of Europe?</cite>
+
+
+<ul>
+<li><input type="checkbox" disabled> foo</li>
+<li><input type="checkbox" disabled checked> bar</li>
+<li><input type="checkbox" disabled> baz</li>
+</ul>
+
+<mark>something</mark>
 
 
 ### Java内存模型（Java Memory Model）
