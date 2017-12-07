@@ -4,7 +4,15 @@ Tags: java
 Slug: java-volatile-spinlock-synchronized
 Author: Andy
 Place: Beijing
+status:draft
 
+
+Apple
+:   Pomaceous fruit of plants of the genus Malus in 
+    the family Rosaceae.
+
+Orange
+:   The fruit of an evergreen tree of the genus Citrus.
 
 ### Java内存模型（Java Memory Model）
 <div class="figure">
@@ -14,6 +22,7 @@ Place: Beijing
  
 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和
 其对应的写操作是不是合法，它描述了一个程序可能的行为。
+{: .quoteblock }
 
 Java中线程共享的数据：
 * 实例变量
@@ -27,6 +36,10 @@ Java中线程共享的数据：
 对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。
 
 
+Footnotes[^1] have a label[^@#$%] and the footnote's content.
+
+[^1]: This is a footnote content.
+[^@#$%]: A footnote on the label: "@#$%".
 
 
 

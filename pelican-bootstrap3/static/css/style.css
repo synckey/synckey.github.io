@@ -139,6 +139,12 @@ a {
     list-style-position: outside;
 }
 
+.footnote ol {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 10px;
+}
+
 .pager ul {
     padding: 0;
 }
@@ -277,7 +283,7 @@ a {
     color: #000;
 }
 
-.post-container blockquote {
+.post-container blockquote  {
     border-left: 0px;
     padding-left: 0px;
     padding-right: 0px;
@@ -285,6 +291,17 @@ a {
     padding-bottom: 5px;
     font-family: Lora, Georgia, 'Times New Roman', '楷体', 'STKaiti', serif;
     font-size: 100%;
+}
+
+.centerquote  {
+    border-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Lora, Georgia, 'Times New Roman', '楷体', 'STKaiti', serif;
+    font-size: 100%;
+    text-align: center;
 }
 
 .post-container blockquote p {
