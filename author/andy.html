@@ -151,6 +151,26 @@ Andy's Blog            </a>
 <div class="separator"></div>
 <div class="post-container">
     <div class="post-header">
+        <h3><a href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">金缕曲词二首(清顾贞观)</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-12-07</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>顺治十四年（公元1657年），好友吴兆骞因“丁酉科场案”被株连而流放宁古塔。顾贞观与吴兆骞私交甚厚，情同手足，为救吴而奔走呼号，遍求满朝权贵。十年后，顾贞观辗转得到吴兆骞的求救信，写道：“塞外苦寒，四时冰雪。呜镝呼风，哀前带血。一身飘寄，双鬓渐星。妇复多病，一男两女，藜藿不充。回念老母，莹然在堂，迢递关河，归省无日……”。读毕情绪激动，夜不能眠，在北京千佛寺大雪之夜作《金缕曲》词两阕（即下面所录的“其一”、“其二”）赠之，哀怨情深，被称为“千古绝调”。纳兰性德见之，泣下数行，认为此词与李陵的《别离诗》及向秀悼念嵇康的《思旧赋》相媲美，求其父明珠相救，康熙二十年，吴兆骞遇赦归京。</p>
+<p>顾贞观与纳兰性德为忘年之交，纳兰性德对顾贞观一见如故，立刻写了一阕 …</p>
+        <div class="read-more">
+            <a class="btn" href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
         <h3><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">Produce 1000 Unique Four Digit Numbers</a></h3>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
@@ -181,48 +201,6 @@ Conditions:  <br/>
 <div class="separator"></div>
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/12/02/java-volatile-spinlock-synchronized.html">Java 中 volatile, spin lock 和 synchronzied 的语义</a></h3>
-        <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-12-02</span>
-            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-        </div>
-    </div>
-
-
-    <div class="post-content"><h3>Java内存模型（Java Memory Model）</h3>
-<p><div class="figure">
-<img alt="degree_deploma" class="img-rounded img-responsive carousel-inner" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/>
-<div class="caption">线程，主内存，工作内存三者之间的关系[<a href="#understand_jvm">1</a>]</div>
-</div></p>
-<p>给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和
-其对应的写操作是不是合法，它描述了一个程序可能的行为。</p>
-<p>Java中线程共享的数据：
-<em> 实例变量
-</em> 静态变量
-<em> 构成数组对象的元素
-线程私有的数据:
-</em> 局部变量
-<em> 方法的形式参数
-</em> exception handler parameters(catch(Exception e)中的e)</p>
-<p>对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。</p>
-<h3>volatile</h3>
-<p>Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。  <br/>
-Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。<br/>
-但是"基于volatile变量的运算在并发下是安全的"这个结论并不正确。</p>
-<h3>References</h3>
-<ol>
-<li><a name="understand_jvm"></a> <a href="https://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-JVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%91%A8%E5%BF%97%E6%98%8E/dp/B00D2ID4PK/ref=sr_1_1?ie=UTF8&amp;qid=1512302879&amp;sr=8-1&amp;keywords=%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E8%99%9A%E6%8B%9F%E6%9C%BA">深入理解Java虚拟机:JVM高级特性与最佳实践(第2版)</a> </li>
-<li><a href="https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html">JSR 133 (Java Memory …</a></li></ol>
-        <div class="read-more">
-            <a class="btn" href="/posts/2017/12/02/java-volatile-spinlock-synchronized.html">--READ MORE--</a>
-        </div>
-    </div>
-</div>
-<div class="separator"></div>
-<div class="separator"></div>
-<div class="post-container">
-    <div class="post-header">
         <h3><a href="/posts/2017/11/27/life-is-one-man-fight.html">一个人的战争</a></h3>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
@@ -235,8 +213,8 @@ Java还提供了一种在某些情况下比上锁更便捷的机制---volatile�
     <div class="post-content"><blockquote>
 <p>有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from <a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment">假装在纽约</a></p>
 </blockquote>
-<div class="figure" max-width="100%">
-<img alt="一个人的战争" class="center-block img-rounded img-responsive carousel-inner" height="" src="/static/images/2017.11.27.one-man-fight.jpg" width="50%"/>
+<div class="figure">
+<img alt="一个人的战争" class="img-rounded center-block img-responsive carousel-inner" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
 </div>
         <div class="read-more">
             <a class="btn" href="/posts/2017/11/27/life-is-one-man-fight.html">--READ MORE--</a>
@@ -488,11 +466,11 @@ git remote add origin https://git …</pre></div>
 <p>爱里不见是非,<br/>
 爱里不见强弱,<br/>
 爱里只有情,<br/>
-情没有对错. </p>
+情没有对错.   </p>
 <p>爱里只见花飞,<br/>
 爱里只见叶落,<br/>
 爱里只有美,<br/>
-美没有善恶.</p>
+美没有善恶.  </p>
 <p>宁愿因情生灾,<br/>
 宁愿因美致祸,<br/>
 宁愿情人说谎,<br/>

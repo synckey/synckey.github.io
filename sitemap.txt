@@ -6,8 +6,8 @@ http://synckey.name/
 http://synckey.name/archives.html
 http://synckey.name/tags.html
 http://synckey.name/categories.html
+http://synckey.name/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html
 http://synckey.name/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html
-http://synckey.name/posts/2017/12/02/java-volatile-spinlock-synchronized.html
 http://synckey.name/posts/2017/11/27/life-is-one-man-fight.html
 http://synckey.name/posts/2017/11/26/useful-set-phrases.html
 http://synckey.name/posts/2017/09/20/my-first-marathon.html
@@ -51,9 +51,10 @@ http://synckey.name/category/posts.html
 http://synckey.name/category/sfv.html
 http://synckey.name/category/summery.html
 http://synckey.name/category/tools.html
+http://synckey.name/tag/poem.html
 http://synckey.name/tag/java.html
 http://synckey.name/tag/algorithm.html
-http://synckey.name/tag/yi-ge-ren-de-zhan-dou.html
+http://synckey.name/tag/digest.html
 http://synckey.name/tag/ielts.html
 http://synckey.name/tag/life.html
 http://synckey.name/tag/sfv.html

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>第一次跑马</title>
+    <title>Java 中 volatile, spin lock 和 synchronzied 的语义</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -15,20 +15,20 @@
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
     <!--
-<link rel="canonical" href="/posts/2017/09/20/my-first-marathon.html">
+<link rel="canonical" href="/drafts/java-volatile-spinlock-synchronized.html">
     -->
 <meta name="author" content="Andy"/>
-<meta name="keywords" content="life"/>
-<meta name="description" content="如果时光回退到2014年，那时候我180斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体， 气喘吁吁，跑了10公里，花了两个小时。那时候没有专业跑步鞋，甚至连运动短裤和T恤都没有。 后来买了最低标准的装备，一双ascis跑步鞋，一条运动短裤，开始正规的跑步训练。那时候严格按照《爱上跑步十三周》练，循序渐进，跑步本身给我的痛苦并不很大。 最大的痛苦来自于冬天早上6点钟从被窝里面爬出来，踏着月色去跑步。最冷的时候，有零下十一度，凌晨的小区只有三三两两的行人，早起的遛狗的大妈，通宵不睡的保安。 一开始连手套都没有买，5s经常被冻关机。跑完了回来，有时候帽子上的汗水已经结成小冰霜。回来拍着帽子上的冰霜，心里想着什么时候能连着跑10公里。 这个目标很快得以实现，练了几个月以后，第一次跑完了10公里，腿疼了好几天，下楼梯腿非常的疼，兴奋也随着这次突破持续了好几天。 有了第一个十公里，很快就有了15公里，20公里。我在早晨和夜晚的798里面钻来钻去，对每条小路很熟悉。 后来第一次参加25公里越野赛(TNF100)，已经是2015年的5月份了，去之前信心满满，因为之前已经跑了好几次20公里 …"/>
+<meta name="keywords" content="java"/>
+<meta name="description" content="Apple Pomaceous fruit of plants of the genus Malus in the family Rosaceae. Orange The fruit of an evergreen tree of the genus Citrus. Java内存模型（Java Memory Model） 线程，主内存，工作内存三者之间的关系[1] 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和 其对应的写操作是不是合法，它描述了一个程序可能的行为。 Java中线程共享的数据： 实例变量 静态变量 构成数组对象的元素 线程私有的数据: 局部变量 方法的形式参数 exception handler parameters(catch(Exception e …"/>
 
 <meta property="og:site_name" content="Andy's Blog"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="第一次跑马"/>
-<meta property="og:url" content="/posts/2017/09/20/my-first-marathon.html"/>
-<meta property="og:description" content="如果时光回退到2014年，那时候我180斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体， 气喘吁吁，跑了10公里，花了两个小时。那时候没有专业跑步鞋，甚至连运动短裤和T恤都没有。 后来买了最低标准的装备，一双ascis跑步鞋，一条运动短裤，开始正规的跑步训练。那时候严格按照《爱上跑步十三周》练，循序渐进，跑步本身给我的痛苦并不很大。 最大的痛苦来自于冬天早上6点钟从被窝里面爬出来，踏着月色去跑步。最冷的时候，有零下十一度，凌晨的小区只有三三两两的行人，早起的遛狗的大妈，通宵不睡的保安。 一开始连手套都没有买，5s经常被冻关机。跑完了回来，有时候帽子上的汗水已经结成小冰霜。回来拍着帽子上的冰霜，心里想着什么时候能连着跑10公里。 这个目标很快得以实现，练了几个月以后，第一次跑完了10公里，腿疼了好几天，下楼梯腿非常的疼，兴奋也随着这次突破持续了好几天。 有了第一个十公里，很快就有了15公里，20公里。我在早晨和夜晚的798里面钻来钻去，对每条小路很熟悉。 后来第一次参加25公里越野赛(TNF100)，已经是2015年的5月份了，去之前信心满满，因为之前已经跑了好几次20公里 …"/>
-<meta property="article:published_time" content=" 2017-09-20" />
-<meta property="article:section" content="posts"/>
-<meta property="article:tag" content="life"/>
+<meta property="og:title" content="Java 中 volatile, spin lock 和 synchronzied 的语义"/>
+<meta property="og:url" content="/drafts/java-volatile-spinlock-synchronized.html"/>
+<meta property="og:description" content="Apple Pomaceous fruit of plants of the genus Malus in the family Rosaceae. Orange The fruit of an evergreen tree of the genus Citrus. Java内存模型（Java Memory Model） 线程，主内存，工作内存三者之间的关系[1] 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和 其对应的写操作是不是合法，它描述了一个程序可能的行为。 Java中线程共享的数据： 实例变量 静态变量 构成数组对象的元素 线程私有的数据: 局部变量 方法的形式参数 exception handler parameters(catch(Exception e …"/>
+<meta property="article:published_time" content=" 2017-12-02" />
+<meta property="article:section" content="tools"/>
+<meta property="article:tag" content="java"/>
 <meta property="article:author" content="Andy"/>
 
 
@@ -105,9 +105,9 @@
 
 
 
-    <link href="/feeds/posts.atom.xml" type="application/atom+xml"
+    <link href="/feeds/tools.atom.xml" type="application/atom+xml"
           rel="alternate"
-          title="Andy's Blog posts ATOM Feed"/>
+          title="Andy's Blog tools ATOM Feed"/>
 
 </head>
 
@@ -161,11 +161,11 @@ Andy's Blog            </a>
 <div class="post-container">
     <div class="post-header">
         <h3>
-            <a href="/posts/2017/09/20/my-first-marathon.html">第一次跑马</a>
+            <a href="/drafts/java-volatile-spinlock-synchronized.html">Java 中 volatile, spin lock 和 synchronzied 的语义</a>
         </h3>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-09-20</span>
+              aria-hidden="true">2017-12-02</span>
             <span class="glyphicon glyphicon-home footnote ">Beijing</span>
 
         </div>
@@ -176,7 +176,7 @@ Andy's Blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-09-20T00:00:00+08:00"> 2017.09.20</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-12-02T00:00:00+08:00"> 2017.12.02</time>
     </span>
 
 
@@ -184,47 +184,60 @@ Andy's Blog            </a>
 
 
 <span class="label label-default">Tags</span>
-<a href="/tag/life.html">life</a>
+<a href="/tag/java.html">java</a>
     
 </footer>                </div>
             </div>
             -->
-        <p>如果时光回退到2014年，那时候我180斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体，
-气喘吁吁，跑了10公里，花了两个小时。那时候没有专业跑步鞋，甚至连运动短裤和T恤都没有。</p>
-<p>后来买了最低标准的装备，一双ascis跑步鞋，一条运动短裤，开始正规的跑步训练。那时候严格按照《爱上跑步十三周》练，循序渐进，跑步本身给我的痛苦并不很大。
-最大的痛苦来自于冬天早上6点钟从被窝里面爬出来，踏着月色去跑步。最冷的时候，有零下十一度，凌晨的小区只有三三两两的行人，早起的遛狗的大妈，通宵不睡的保安。
-一开始连手套都没有买，5s经常被冻关机。跑完了回来，有时候帽子上的汗水已经结成小冰霜。回来拍着帽子上的冰霜，心里想着什么时候能连着跑10公里。</p>
-<p>这个目标很快得以实现，练了几个月以后，第一次跑完了10公里，腿疼了好几天，下楼梯腿非常的疼，兴奋也随着这次突破持续了好几天。
-有了第一个十公里，很快就有了15公里，20公里。我在早晨和夜晚的798里面钻来钻去，对每条小路很熟悉。
-后来第一次参加25公里越野赛(TNF100)，已经是2015年的5月份了，去之前信心满满，因为之前已经跑了好几次20公里，25公里当然也没什么问题。
-不幸的是跑步那天下雨了，没想到5月份的凤凰岭居然会有那么冷，我们三个在寒风冷雨中跑完了20公里。那是我第一次参加官方举办的比赛。</p>
-<p>在参加完越野赛之后，也换了工作，跑步的地方从798换到了人民大学校园，这里是我最喜欢的跑步场所。在人民大学校园里，第一次跑了30公里，还是在没吃早饭的情况下，
-跑完了就两个感觉：a.真的很饿，b.要在乳头上贴好创口贴，不然会磨出血。在人大附近住的日子里，只要天气好，我就会去人大校园跑步，人大的操场每时每刻都有人，
-而我在人大的校园里绕着大圈跑，只要有路，就钻进去，再钻出来，这么跑一圈，正好是1公里。跑了几次就熟悉了人大的每一个角落。
-有时候跑着跑着太阳升起来了，照在坪上，一片灿烂翠绿。</p>
-<p>2016年4月份报名参加了一次北京半马，从故宫一直跑到鸟巢。跑的时候总感觉一直被边上的人超越，所以自己也是一路狂奔，最终第一次把平均速度跑进了5分钟以内，
-也是唯一的一次。本以为凭这个成绩可以抽中北马，但是抽签并没有抽中，但那时起，在心中种下了跑一次全马的种子。</p>
-<p>2017年阴差阳错，有一个机会，获得了一次跑北马的机会。很多事总是这样，在你信心满满，感觉一切都准备好了的时候，命运并不会给你机会去做你想做的事，
-往往却在你没有准备好的时候来临，北马就是这样。大概也就是在开跑的前三天才知道自己有这么次机会可以去跑。虽然在这之前，已经每天跑步机10公里，
-大概坚持了三周，这么看来，也不算完全没有准备。</p>
-<p>跑步之前在网上搜了不少功率，所以买了4个士力架，8颗盐丸，还有3袋能量胶。其实盐丸和能量胶完全没有必要，因为在20多公里以后，赛场就有补充，
-但是在开跑前30分钟到一个小时吃两个士力架感觉还是很有必要的，因为跑完全马要消耗大量的能量。</p>
-<p>每每有重要的事情发生，前一夜就必然失眠，想着怎么补给，什么配速。所有的紧张不安都在开始跑了以后烟消云散，因为目标是42.195公里，所以前面跑的并不快，
-前20公里在很轻松的状态下完成。真正感觉到跑不下去是35公里以后，每一公里都在数着跑。天气越来越热，步子也变得越来越沉，好在北马的补给做的非常好，
-喝了不少水和运动饮料，并没有抽筋，腿也没有受伤。在跑步的时候有一个强大的信念支撑我，那就是跑完可以发朋友圈装逼，我想这大概就是35km-40km处最真实的内心活动吧。
-过了40公里以后，信心会增加不少，但是身体上真的没有力气去跑了，所以在补给处会稍微的走一走。自己的内心也知道，如果真的停下来走，可能就再也爬不起来了，
-所以最后一公里，又恢复了奔跑，一直冲向了有好几道拱门的终点线，那里有穿着性感衣服的拉拉队。</p>
-<p>最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。</p>
-<div class="figure">
-<img alt="babies" class="img-rounded center-block img-responsive carousel-inner" src="/static/images/first_marathon_transcript.jpg" width="30%"/>
-<div class="caption">2016.06.17 北京马拉松</div>
+        <dl>
+<dt>Apple</dt>
+<dd>Pomaceous fruit of plants of the genus Malus in 
+the family Rosaceae.</dd>
+<dt>Orange</dt>
+<dd>The fruit of an evergreen tree of the genus Citrus.</dd>
+</dl>
+<h3>Java内存模型（Java Memory Model）</h3>
+<p><div class="figure">
+<img alt="degree_deploma" class="img-rounded img-responsive carousel-inner" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/>
+<div class="caption">线程，主内存，工作内存三者之间的关系[<a href="#understand_jvm">1</a>]</div>
+</div></p>
+<p class="quoteblock">给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和
+其对应的写操作是不是合法，它描述了一个程序可能的行为。</p>
+<p>Java中线程共享的数据：
+<em> 实例变量
+</em> 静态变量
+<em> 构成数组对象的元素
+线程私有的数据:
+</em> 局部变量
+<em> 方法的形式参数
+</em> exception handler parameters(catch(Exception e)中的e)</p>
+<p>对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。</p>
+<p>Footnotes<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> have a label<sup id="fnref:@#$%"><a class="footnote-ref" href="#fn:@#$%" rel="footnote">2</a></sup> and the footnote's content.</p>
+<h3>volatile</h3>
+<p>Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。  <br/>
+Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。<br/>
+但是"基于volatile变量的运算在并发下是安全的"这个结论并不正确。</p>
+<h3>References</h3>
+<ol>
+<li><a name="understand_jvm"></a> <a href="https://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-JVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%91%A8%E5%BF%97%E6%98%8E/dp/B00D2ID4PK/ref=sr_1_1?ie=UTF8&amp;qid=1512302879&amp;sr=8-1&amp;keywords=%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E8%99%9A%E6%8B%9F%E6%9C%BA">深入理解Java虚拟机:JVM高级特性与最佳实践(第2版)</a> </li>
+<li><a href="https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html">JSR 133 (Java Memory Model) FAQ</a> </li>
+<li><a href="https://docs.oracle.com/javase/specs/jls/se9/jls9.pdf">jls9</a></li>
+</ol>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>This is a footnote content. <a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:@#$%">
+<p>A footnote on the label: "@#$%". <a class="footnote-backref" href="#fnref:@#$%" rev="footnote" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
 </div>
 <div class="pager">
     <ul>
-        <li class="previous"><a href="/posts/2017/11/26/useful-set-phrases.html" data-toggle="tooltip"
-                                title="Useful Set Phrases">&larr; Previous</a></li>
-        <li class="next"><a href="/posts/2017/06/26/new-to-auckland.html"
-                            data-toggle="tooltip" title="Auckland 小记">Next &rarr;</a></li>
+        <li class="previous disabled"><a>&larr; Previous</a></li>
+        <li class="next disabled"><a>Next &rarr;</a></li>
     </ul>
 </div><!--
 <div id="disqus_thread"></div>
@@ -251,8 +264,8 @@ Andy's Blog            </a>
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "/posts/2017/09/20/my-first-marathon.html";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "posts/2017/09/20/my-first-marathon.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "/drafts/java-volatile-spinlock-synchronized.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "drafts/java-volatile-spinlock-synchronized.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

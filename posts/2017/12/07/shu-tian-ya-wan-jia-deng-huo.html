@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Java 中 volatile, spin lock 和 synchronzied 的语义</title>
+    <title>金缕曲词二首(清顾贞观)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -15,20 +15,20 @@
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
     <!--
-<link rel="canonical" href="/posts/2017/12/02/java-volatile-spinlock-synchronized.html">
+<link rel="canonical" href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">
     -->
 <meta name="author" content="Andy"/>
-<meta name="keywords" content="java"/>
-<meta name="description" content="Java内存模型（Java Memory Model） 线程，主内存，工作内存三者之间的关系[1] 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和 其对应的写操作是不是合法，它描述了一个程序可能的行为。 Java中线程共享的数据： 实例变量 静态变量 构成数组对象的元素 线程私有的数据: 局部变量 方法的形式参数 exception handler parameters(catch(Exception e)中的e) 对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。 volatile Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。 Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。 但是&#34;基于volatile变量的运算在并发下是安全的&#34;这个结论并不正确。 References 深入理解Java虚拟机:JVM高级特性与最佳实践(第2版) JSR 133 (Java Memory …"/>
+<meta name="keywords" content="poem"/>
+<meta name="description" content="顺治十四年（公元1657年），好友吴兆骞因“丁酉科场案”被株连而流放宁古塔。顾贞观与吴兆骞私交甚厚，情同手足，为救吴而奔走呼号，遍求满朝权贵。十年后，顾贞观辗转得到吴兆骞的求救信，写道：“塞外苦寒，四时冰雪。呜镝呼风，哀前带血。一身飘寄，双鬓渐星。妇复多病，一男两女，藜藿不充。回念老母，莹然在堂，迢递关河，归省无日……”。读毕情绪激动，夜不能眠，在北京千佛寺大雪之夜作《金缕曲》词两阕（即下面所录的“其一”、“其二”）赠之，哀怨情深，被称为“千古绝调”。纳兰性德见之，泣下数行，认为此词与李陵的《别离诗》及向秀悼念嵇康的《思旧赋》相媲美，求其父明珠相救，康熙二十年，吴兆骞遇赦归京。 顾贞观与纳兰性德为忘年之交，纳兰性德对顾贞观一见如故，立刻写了一阕 …"/>
 
 <meta property="og:site_name" content="Andy's Blog"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Java 中 volatile, spin lock 和 synchronzied 的语义"/>
-<meta property="og:url" content="/posts/2017/12/02/java-volatile-spinlock-synchronized.html"/>
-<meta property="og:description" content="Java内存模型（Java Memory Model） 线程，主内存，工作内存三者之间的关系[1] 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和 其对应的写操作是不是合法，它描述了一个程序可能的行为。 Java中线程共享的数据： 实例变量 静态变量 构成数组对象的元素 线程私有的数据: 局部变量 方法的形式参数 exception handler parameters(catch(Exception e)中的e) 对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。 volatile Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。 Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。 但是&#34;基于volatile变量的运算在并发下是安全的&#34;这个结论并不正确。 References 深入理解Java虚拟机:JVM高级特性与最佳实践(第2版) JSR 133 (Java Memory …"/>
-<meta property="article:published_time" content=" 2017-12-02" />
-<meta property="article:section" content="tools"/>
-<meta property="article:tag" content="java"/>
+<meta property="og:title" content="金缕曲词二首(清顾贞观)"/>
+<meta property="og:url" content="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html"/>
+<meta property="og:description" content="顺治十四年（公元1657年），好友吴兆骞因“丁酉科场案”被株连而流放宁古塔。顾贞观与吴兆骞私交甚厚，情同手足，为救吴而奔走呼号，遍求满朝权贵。十年后，顾贞观辗转得到吴兆骞的求救信，写道：“塞外苦寒，四时冰雪。呜镝呼风，哀前带血。一身飘寄，双鬓渐星。妇复多病，一男两女，藜藿不充。回念老母，莹然在堂，迢递关河，归省无日……”。读毕情绪激动，夜不能眠，在北京千佛寺大雪之夜作《金缕曲》词两阕（即下面所录的“其一”、“其二”）赠之，哀怨情深，被称为“千古绝调”。纳兰性德见之，泣下数行，认为此词与李陵的《别离诗》及向秀悼念嵇康的《思旧赋》相媲美，求其父明珠相救，康熙二十年，吴兆骞遇赦归京。 顾贞观与纳兰性德为忘年之交，纳兰性德对顾贞观一见如故，立刻写了一阕 …"/>
+<meta property="article:published_time" content=" 2017-12-07" />
+<meta property="article:section" content="digest"/>
+<meta property="article:tag" content="poem"/>
 <meta property="article:author" content="Andy"/>
 
 
@@ -105,9 +105,9 @@
 
 
 
-    <link href="/feeds/tools.atom.xml" type="application/atom+xml"
+    <link href="/feeds/digest.atom.xml" type="application/atom+xml"
           rel="alternate"
-          title="Andy's Blog tools ATOM Feed"/>
+          title="Andy's Blog digest ATOM Feed"/>
 
 </head>
 
@@ -161,11 +161,11 @@ Andy's Blog            </a>
 <div class="post-container">
     <div class="post-header">
         <h3>
-            <a href="/posts/2017/12/02/java-volatile-spinlock-synchronized.html">Java 中 volatile, spin lock 和 synchronzied 的语义</a>
+            <a href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">金缕曲词二首(清顾贞观)</a>
         </h3>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-12-02</span>
+              aria-hidden="true">2017-12-07</span>
             <span class="glyphicon glyphicon-home footnote ">Beijing</span>
 
         </div>
@@ -176,7 +176,7 @@ Andy's Blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-12-02T00:00:00+08:00"> 2017.12.02</time>
+        <i class="fa fa-calendar"></i><time datetime="2017-12-07T00:00:00+08:00"> 2017.12.07</time>
     </span>
 
 
@@ -184,43 +184,101 @@ Andy's Blog            </a>
 
 
 <span class="label label-default">Tags</span>
-<a href="/tag/java.html">java</a>
+<a href="/tag/poem.html">poem</a>
     
 </footer>                </div>
             </div>
             -->
-        <h3>Java内存模型（Java Memory Model）</h3>
-<p><div class="figure">
-<img alt="degree_deploma" class="img-rounded img-responsive carousel-inner" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/>
-<div class="caption">线程，主内存，工作内存三者之间的关系[<a href="#understand_jvm">1</a>]</div>
-</div></p>
-<p>给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和
-其对应的写操作是不是合法，它描述了一个程序可能的行为。</p>
-<p>Java中线程共享的数据：
-<em> 实例变量
-</em> 静态变量
-<em> 构成数组对象的元素
-线程私有的数据:
-</em> 局部变量
-<em> 方法的形式参数
-</em> exception handler parameters(catch(Exception e)中的e)</p>
-<p>对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。</p>
-<h3>volatile</h3>
-<p>Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。  <br/>
-Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。<br/>
-但是"基于volatile变量的运算在并发下是安全的"这个结论并不正确。</p>
-<h3>References</h3>
+        <p>顺治十四年（公元1657年），好友吴兆骞因“丁酉科场案”被株连而流放宁古塔。顾贞观与吴兆骞私交甚厚，情同手足，为救吴而奔走呼号，遍求满朝权贵。十年后，顾贞观辗转得到吴兆骞的求救信，写道：“塞外苦寒，四时冰雪。呜镝呼风，哀前带血。一身飘寄，双鬓渐星。妇复多病，一男两女，藜藿不充。回念老母，莹然在堂，迢递关河，归省无日……”。读毕情绪激动，夜不能眠，在北京千佛寺大雪之夜作《金缕曲》词两阕（即下面所录的“其一”、“其二”）赠之，哀怨情深，被称为“千古绝调”。纳兰性德见之，泣下数行，认为此词与李陵的《别离诗》及向秀悼念嵇康的《思旧赋》相媲美，求其父明珠相救，康熙二十年，吴兆骞遇赦归京。</p>
+<p>顾贞观与纳兰性德为忘年之交，纳兰性德对顾贞观一见如故，立刻写了一阕《金缕曲》相赠，词中有“后身缘恐结他生里”句，顾贞观后来记载，当时他看到此句时，甚觉不祥，只说不出来。但他也相当倾折于这位文采风流的相国公子，便和了一阕词（即下面所录的“其五”）。<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></p>
+<h4>其一 （报吴兆骞书）</h4>
+<blockquote>
+<p>季子平安否? <br/>
+便归来，平生万事，那堪回首！  <br/>
+行路悠悠谁慰藉，母老家贫子幼。       <br/>
+记不起，从前杯酒。     <br/>
+魑魅搏人应见惯，总输他覆雨翻云手。 <br/>
+冰与雪，周旋久。  </p>
+<p>泪痕莫滴牛衣透。 <br/>
+数天涯，依然骨肉，几家能够？ <br/>
+比似红颜多命薄，更不如今还有。<br/>
+只绝塞，苦寒难受。 <br/>
+廿载包胥承一诺，盼乌头马角终相救。 <br/>
+置此札，君怀袖。</p>
+</blockquote>
+<h4>其二（报吴兆骞书）</h4>
+<blockquote>
+<p>我亦飘零久。<br/>
+十年来、深恩负尽，死生师友。<br/>
+宿昔齐名非忝窃，试看杜陵消瘦。<br/>
+曾不减、夜郎僝僽。<br/>
+薄命长辞知己别，问人生、到此凄凉否。<br/>
+千万恨，从君剖。  </p>
+<p>兄生辛未吾丁丑。<br/>
+共些时、冰霜摧折，早衰蒲柳。<br/>
+词赋从今须少作，留取心魂相守。<br/>
+但愿得、河清人寿。<br/>
+归日急翻行戍稿，把空名、料理传身后。<br/>
+言不尽，观顿首。</p>
+</blockquote>
+<h4>其三</h4>
+<blockquote>
+<p>马齿加长矣。<br/>
+向天公、投笺试问，生余何意？<br/>
+不信懒残分芋后，富贵如斯而已。<br/>
+惶愧杀、男儿堕地。<br/>
+三十成名身已老，况悠悠、此日还如寄。<br/>
+惊伏枥，壮心起。  </p>
+<p>直须姑妄言之耳，<br/>
+会遭逢、致君事了，拂衣归里。<br/>
+手散黄金歌舞就，购尽异书名士。<br/>
+累公等、他年谥议。<br/>
+班范文章虞褚笔，为微臣、奉敕书碑记。<br/>
+槐影落，酒醒未？  </p>
+</blockquote>
+<h4>其四</h4>
+<blockquote>
+<p>无语湘帘卷，<br/>
+肯输他、画梁双宿，封侯悔遣。<br/>
+红雨立残清露滑，绣雀一帮泥泫。<br/>
+早馁就、吴宫八茧。<br/>
+悄向护花铃索下，听黄鹂、骂彻春阴浅。<br/>
+容易得，远山展。  </p>
+<p>游踪似托韶华显。<br/>
+斗轻狂、谢娘絮薄，沈郎钱扁，<br/>
+何处芳丛争挟弹，横过新丰鸡犬。<br/>
+逞买笑、乡愁告免。<br/>
+不记临行针线密，绿杨丝、系马青衫典。<br/>
+休乞句，带重翦。</p>
+</blockquote>
+<h4>其五</h4>
+<blockquote>
+<p>且住为佳耳，<br/>
+任相猜，驰笺紫阁，曳裾朱第。<br/>
+不是世人皆欲杀，争显怜才真意？ 
+容易得，一人知己，<br/>
+惭愧王孙图报薄，只千金，当洒平生泪，<br/>
+曾不值，一杯水。  </p>
+<p>歌残击筑心逾醉， <br/>
+忆当年，侯生垂老，始逢无忌。<br/>
+亲在许身犹未得，侠烈今生已已。<br/>
+但结托来生休悔，<br/>
+俄顷重投胶在漆，似旧曾相识屠沽里，<br/>
+名预籍，石函记。   </p>
+</blockquote>
+<div class="footnote">
+<hr/>
 <ol>
-<li><a name="understand_jvm"></a> <a href="https://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-JVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%91%A8%E5%BF%97%E6%98%8E/dp/B00D2ID4PK/ref=sr_1_1?ie=UTF8&amp;qid=1512302879&amp;sr=8-1&amp;keywords=%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E8%99%9A%E6%8B%9F%E6%9C%BA">深入理解Java虚拟机:JVM高级特性与最佳实践(第2版)</a> </li>
-<li><a href="https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html">JSR 133 (Java Memory Model) FAQ</a> </li>
-<li><a href="https://docs.oracle.com/javase/specs/jls/se9/jls9.pdf">jls9</a></li>
+<li id="fn:1">
+<p><a href="https://zh.m.wikisource.org/zh-hans/%E9%87%91%E7%B8%B7%E6%9B%B2_(%E9%A1%A7%E8%B2%9E%E8%A7%80)">金缕曲 (顾贞观)</a> <a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
 </ol>
+</div>
 <div class="pager">
     <ul>
-        <li class="previous"><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html" data-toggle="tooltip"
-                                title="Produce 1000 Unique Four Digit Numbers">&larr; Previous</a></li>
-        <li class="next"><a href="/posts/2017/11/27/life-is-one-man-fight.html"
-                            data-toggle="tooltip" title="一个人的战争">Next &rarr;</a></li>
+        <li class="previous disabled"><a>&larr; Previous</a></li>
+        <li class="next"><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html"
+                            data-toggle="tooltip" title="Produce 1000 Unique Four Digit Numbers">Next &rarr;</a></li>
     </ul>
 </div><!--
 <div id="disqus_thread"></div>
@@ -247,8 +305,8 @@ Java还提供了一种在某些情况下比上锁更便捷的机制---volatile�
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "/posts/2017/12/02/java-volatile-spinlock-synchronized.html";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "posts/2017/12/02/java-volatile-spinlock-synchronized.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
