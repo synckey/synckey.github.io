@@ -1,4 +1,4 @@
-Title: 金缕曲词五首(清顾贞观)
+Title: 金缕曲词二首(清顾贞观)
 Date: 2017-12-07
 Category: digest
 Tags: poem
