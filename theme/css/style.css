@@ -166,10 +166,12 @@ a {
 }
 
 .post-container code {
-    color: inherit;
-    border: 1px solid #E3EDF3;
-    background: #F7FAFB;
-    border-radius: 2px;
+    word-break: break-all;
+    background: #eee;
+    /*text-shadow: 0 1px #fff;*/
+    padding: 0 0.2em;
+    border-radius:0 0px;
+    color: #555
 }
 
 .post-content img {

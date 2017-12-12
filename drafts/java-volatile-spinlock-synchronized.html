@@ -19,13 +19,13 @@
     -->
 <meta name="author" content="Andy"/>
 <meta name="keywords" content="java"/>
-<meta name="description" content="This is added content and this is deleted content Who Is Killing the Great Chefs of Europe? foo bar baz something Java内存模型（Java Memory Model） 线程，主内存，工作内存三者之间的关系[1] 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和 其对应的写操作是不是合法，它描述了一个程序可能的行为。 Java中线程共享的数据： 实例变量 静态变量 构成数组对象的元素 线程私有的数据: 局部变量 方法的形式参数 exception handler parameters(catch(Exception e)中的e) 对同一个变量的两个访问(reads …"/>
+<meta name="description" content="Java内存模型（Java Memory Model） 线程，主内存，工作内存三者之间的关系[1] 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和 其对应的写操作是不是合法，它描述了一个程序可能的行为。 Java中线程共享的数据： 实例变量 静态变量 构成数组对象的元素 线程私有的数据: 局部变量 方法的形式参数 exception handler parameters(catch(Exception e)中的e) 对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。 Footnotes1 have a label[^@#$%] and the footnote&#39;s content. volatile Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。 Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。 但是&#34;基于volatile变量的运算在并发下是安全的 …"/>
 
 <meta property="og:site_name" content="Andy's Blog"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Java 中 volatile, spin lock 和 synchronzied 的语义"/>
 <meta property="og:url" content="/drafts/java-volatile-spinlock-synchronized.html"/>
-<meta property="og:description" content="This is added content and this is deleted content Who Is Killing the Great Chefs of Europe? foo bar baz something Java内存模型（Java Memory Model） 线程，主内存，工作内存三者之间的关系[1] 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和 其对应的写操作是不是合法，它描述了一个程序可能的行为。 Java中线程共享的数据： 实例变量 静态变量 构成数组对象的元素 线程私有的数据: 局部变量 方法的形式参数 exception handler parameters(catch(Exception e)中的e) 对同一个变量的两个访问(reads …"/>
+<meta property="og:description" content="Java内存模型（Java Memory Model） 线程，主内存，工作内存三者之间的关系[1] 给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和 其对应的写操作是不是合法，它描述了一个程序可能的行为。 Java中线程共享的数据： 实例变量 静态变量 构成数组对象的元素 线程私有的数据: 局部变量 方法的形式参数 exception handler parameters(catch(Exception e)中的e) 对同一个变量的两个访问(reads or writes)中至少包含一个write操作时，称这两个操作是冲突的。 Footnotes1 have a label[^@#$%] and the footnote&#39;s content. volatile Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。 Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。 但是&#34;基于volatile变量的运算在并发下是安全的 …"/>
 <meta property="article:published_time" content=" 2017-12-02" />
 <meta property="article:section" content="tools"/>
 <meta property="article:tag" content="java"/>
@@ -189,18 +189,9 @@ Andy's Blog            </a>
 </footer>                </div>
             </div>
             -->
-        <p>This is <ins>added content</ins> and this is <del>deleted content</del>
-</p>
-<p><cite>Who Is Killing the Great Chefs of Europe?</cite></p>
-<ul>
-<li><input disabled="" type="checkbox"/> foo</li>
-<li><input checked="" disabled="" type="checkbox"/> bar</li>
-<li><input disabled="" type="checkbox"/> baz</li>
-</ul>
-<p><mark>something</mark></p>
-<h3>Java内存模型（Java Memory Model）</h3>
+        <h3>Java内存模型（Java Memory Model）</h3>
 <p><div class="figure">
-<img alt="degree_deploma" class="carousel-inner img-responsive img-rounded" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/>
+<img alt="degree_deploma" class="carousel-inner img-rounded img-responsive" src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" width="100%"/>
 <div class="caption">线程，主内存，工作内存三者之间的关系[<a href="#understand_jvm">1</a>]</div>
 </div></p>
 <p>给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和
