@@ -35,7 +35,7 @@ Java中线程共享的数据：
 
 
 
-#### volatile
+### volatile
 Java语言允许在线程间共享变量。为了保证共享变量的一致性可靠的更新，每个线程要获得该变量的锁从而对该变量进行排他性访问。    
 Java还提供了一种在某些情况下比上锁更便捷的机制---volatile域。Java内存模型保证被声明为volatile的变量在所有线程中看到的值都是一致的。
 将一个变量声明为volatile之后，它将具备两个特性:
@@ -81,9 +81,9 @@ setLower() 和 setUpper() 操作原子化 —— 而将字段定义为 volatile 
 即便如此，volatile 的总开销仍然要比锁获取低。
 
 
-#### spin lock(自旋锁)
+### spin lock(自旋锁)
 
-#### synchronized
+### synchronized
 
 
 
