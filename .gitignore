@@ -12,3 +12,4 @@ output
 *.iml
 *.iws
 *.pid
+output/*
