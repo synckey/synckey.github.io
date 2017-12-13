@@ -83,7 +83,8 @@ setLower() 和 setUpper() 操作原子化 —— 而将字段定义为 volatile 
 
 
 ### spin lock(自旋锁)
-Java中
+Java中使用互斥同步对性能影响比较大的是阻塞的实现，线程在等待获取一个排他锁到时候将会转入blocked状态，这个状态的转入和恢复都需要转入内核态中完成，
+这些操作给系统的并发性能带来了很大的压力。
 
 ### synchronized
 
