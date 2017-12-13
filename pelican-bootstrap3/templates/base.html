@@ -63,6 +63,7 @@
 
 
     <script src="/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/js/jquery.browser.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
 
@@ -72,6 +73,8 @@
     <script src="/{{ THEME_STATIC_DIR }}/js/highcharts.js"></script>
     <script src="/{{ THEME_STATIC_DIR }}/js/exporting.js"></script>
     <script src="/{{ THEME_STATIC_DIR }}/js/holder.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="/{{ THEME_STATIC_DIR }}/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
     <!-- mathtex -->
     <!--
     <script type="text/javascript"
@@ -114,6 +117,7 @@
 
         });
 
+
     </script>
 
 
@@ -133,6 +137,8 @@
     -->
     <link href="/{{ THEME_STATIC_DIR }}/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css"
           rel="stylesheet">
+
+    <link href="/{{ THEME_STATIC_DIR }}/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
     {% if 'tipue_search' in PLUGINS %}
     <link href="/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.css" rel="stylesheet">
     {% endif %}
@@ -242,6 +248,26 @@
 {% include 'includes/ga.html' %}
 {% include 'includes/ba.html' %}
 {% block scripts %}{% endblock %}
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.post-container').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+});
+</script>
+
 
 </div>
 </body>
