@@ -1,4 +1,4 @@
-Title: Java 中 volatile, spin lock 和 synchronzied 的语义
+Title: Java 中 volatile, spin lock 和 synchroized 的语义
 Date: 2017.12.02
 Tags: java
 Slug: java-volatile-spinlock-synchronized
@@ -6,6 +6,7 @@ Author: Andy
 Place: Beijing
 status:draft
 
+读《深入理解Java虚拟机》[^1]，对volatile，spin lock，synchronized　有了新的认识，整理记录如下。
 
 ### Java内存模型（Java Memory Model）
 <div class="figure">
@@ -82,6 +83,7 @@ setLower() 和 setUpper() 操作原子化 —— 而将字段定义为 volatile 
 
 
 ### spin lock(自旋锁)
+Java中
 
 ### synchronized
 
