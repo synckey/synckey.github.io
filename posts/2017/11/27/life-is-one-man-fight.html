@@ -34,6 +34,7 @@
 
 
     <script src="/theme/js/jquery.min.js"></script>
+    <script src="/theme/js/jquery.browser.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/theme/js/bootstrap.min.js"></script>
 
@@ -43,6 +44,7 @@
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
     <script src="/theme/js/holder.js"></script>
+    <script src="/theme/fancybox/jquery.fancybox.min.js"></script>
     <!-- mathtex -->
     <!--
     <script type="text/javascript"
@@ -84,6 +86,12 @@
             }
 
         });
+
+
+
+
+
+
     </script>
 
 
@@ -98,6 +106,8 @@
     -->
     <link href="/theme/css/pygments/github.css"
           rel="stylesheet">
+
+    <link href="/theme/fancybox/jquery.fancybox.min.css" rel="stylesheet">
 
 
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
@@ -193,7 +203,7 @@ Andy's Blog            </a>
 <p>有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from <a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment">假装在纽约</a></p>
 </blockquote>
 <div class="figure">
-<img alt="一个人的战争" class="img-rounded img-responsive center-block carousel-inner" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
+<img alt="一个人的战争" class="carousel-inner img-rounded img-responsive center-block" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
 </div>
 <div class="pager">
     <ul>
@@ -337,6 +347,40 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.post-container').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('data-fancybox')) return;
+      var alt = this.alt;
+      /*if (alt) $(this).after('<span class="caption">' + alt + '</span>');*/
+      $(this).wrap('<a href="' + this.src + '"  data-fancybox ></a>');
+    });
+    $(this).find('.data-fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  $('[data-fancybox]').fancybox({
+    toolbar : false,
+    margin : [60, 60],
+
+    smallBtn : true,
+    image : {
+        // Wait for images to load before displaying
+        // Requires predefined image dimensions
+        // If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
+        preload : true
+    },
+  });
+
+});
+
+
+
+
+</script>
+
 
 </div>
 </body>

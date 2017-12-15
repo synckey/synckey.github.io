@@ -34,6 +34,7 @@
 
 
     <script src="/theme/js/jquery.min.js"></script>
+    <script src="/theme/js/jquery.browser.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/theme/js/bootstrap.min.js"></script>
 
@@ -43,6 +44,7 @@
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
     <script src="/theme/js/holder.js"></script>
+    <script src="/theme/fancybox/jquery.fancybox.min.js"></script>
     <!-- mathtex -->
     <!--
     <script type="text/javascript"
@@ -84,6 +86,12 @@
             }
 
         });
+
+
+
+
+
+
     </script>
 
 
@@ -98,6 +106,8 @@
     -->
     <link href="/theme/css/pygments/github.css"
           rel="stylesheet">
+
+    <link href="/theme/fancybox/jquery.fancybox.min.css" rel="stylesheet">
 
 
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
@@ -216,7 +226,7 @@ Andy's Blog            </a>
 所以最后一公里，又恢复了奔跑，一直冲向了有好几道拱门的终点线，那里有穿着性感衣服的拉拉队。</p>
 <p>最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。</p>
 <div class="figure">
-<img alt="babies" class="img-rounded img-responsive center-block carousel-inner" src="/static/images/first_marathon_transcript.jpg" width="30%"/>
+<img alt="babies" class="carousel-inner img-rounded img-responsive center-block" src="/static/images/first_marathon_transcript.jpg" width="30%"/>
 <div class="caption">2016.06.17 北京马拉松</div>
 </div>
 <div class="pager">
@@ -361,6 +371,40 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.post-container').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('data-fancybox')) return;
+      var alt = this.alt;
+      /*if (alt) $(this).after('<span class="caption">' + alt + '</span>');*/
+      $(this).wrap('<a href="' + this.src + '"  data-fancybox ></a>');
+    });
+    $(this).find('.data-fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  $('[data-fancybox]').fancybox({
+    toolbar : false,
+    margin : [60, 60],
+
+    smallBtn : true,
+    image : {
+        // Wait for images to load before displaying
+        // Requires predefined image dimensions
+        // If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
+        preload : true
+    },
+  });
+
+});
+
+
+
+
+</script>
+
 
 </div>
 </body>

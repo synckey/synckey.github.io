@@ -29,6 +29,7 @@
 
 
     <script src="/theme/js/jquery.min.js"></script>
+    <script src="/theme/js/jquery.browser.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/theme/js/bootstrap.min.js"></script>
 
@@ -38,6 +39,7 @@
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
     <script src="/theme/js/holder.js"></script>
+    <script src="/theme/fancybox/jquery.fancybox.min.js"></script>
     <!-- mathtex -->
     <!--
     <script type="text/javascript"
@@ -79,6 +81,12 @@
             }
 
         });
+
+
+
+
+
+
     </script>
 
 
@@ -93,6 +101,8 @@
     -->
     <link href="/theme/css/pygments/github.css"
           rel="stylesheet">
+
+    <link href="/theme/fancybox/jquery.fancybox.min.css" rel="stylesheet">
 
 
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
@@ -238,7 +248,7 @@ $$
 <h2>神经网络</h2>
 <h3>Neurons</h3>
 <p><p align="center">
-<img alt="SingleNeuron" class="img-responsive" src="/static/images/SingleNeuron.png" width="40%"/>
+<img alt="SingleNeuron" class="" src="/static/images/SingleNeuron.png" width="40%"/>
 </p></p>
 <p>神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f …</p>
         <div class="read-more">
@@ -266,7 +276,7 @@ $$
 <span class="n">grid</span> <span class="n">on</span><span class="p">;</span>
 </pre></div>
 <p><p align="center">
-<img alt="sigmoid" class="img-responsive" src="/static/images/sigmoid.svg" width="50%"/>
+<img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="50%"/>
 </p></p>
         <div class="read-more">
             <a class="btn" href="/posts/2015/12/24/plot-sigmoid-in-matlab.html">--READ MORE--</a>
@@ -291,7 +301,7 @@ $$
 </blockquote>
 <p>逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
 <p align="center">
-<img alt="sigmoid" class="img-responsive" src="/static/images/sigmoid.svg" width="60%"/>
+<img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="60%"/>
 </p>
 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。</p>
 <h3>1.逻辑回归的建模</h3>
@@ -381,6 +391,40 @@ $$
 </script>
 
 <!-- End Google Analytics Code -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.post-container').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('data-fancybox')) return;
+      var alt = this.alt;
+      /*if (alt) $(this).after('<span class="caption">' + alt + '</span>');*/
+      $(this).wrap('<a href="' + this.src + '"  data-fancybox ></a>');
+    });
+    $(this).find('.data-fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  $('[data-fancybox]').fancybox({
+    toolbar : false,
+    margin : [60, 60],
+
+    smallBtn : true,
+    image : {
+        // Wait for images to load before displaying
+        // Requires predefined image dimensions
+        // If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
+        preload : true
+    },
+  });
+
+});
+
+
+
+
+</script>
+
 
 </div>
 </body>

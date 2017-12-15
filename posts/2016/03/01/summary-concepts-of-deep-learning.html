@@ -35,6 +35,7 @@
 
 
     <script src="/theme/js/jquery.min.js"></script>
+    <script src="/theme/js/jquery.browser.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/theme/js/bootstrap.min.js"></script>
 
@@ -44,6 +45,7 @@
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
     <script src="/theme/js/holder.js"></script>
+    <script src="/theme/fancybox/jquery.fancybox.min.js"></script>
     <!-- mathtex -->
     <!--
     <script type="text/javascript"
@@ -85,6 +87,12 @@
             }
 
         });
+
+
+
+
+
+
     </script>
 
 
@@ -99,6 +107,8 @@
     -->
     <link href="/theme/css/pygments/github.css"
           rel="stylesheet">
+
+    <link href="/theme/fancybox/jquery.fancybox.min.css" rel="stylesheet">
 
 
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
@@ -214,7 +224,7 @@ Andy's Blog            </a>
 <h2>神经网络</h2>
 <h3>Neurons</h3>
 <p><p align="center">
-<img alt="SingleNeuron" class="img-responsive" src="/static/images/SingleNeuron.png" width="40%"/>
+<img alt="SingleNeuron" class="" src="/static/images/SingleNeuron.png" width="40%"/>
 </p></p>
 <p>神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f(\sum_{i=1}^{3}(W_ix_i+b)$为输出的计算单元.
 其中$f:\mathbb{R}\mapsto\mathbb{R}$,被称为激活函数(activation function).常用的激活函数有:</p>
@@ -231,18 +241,18 @@ Andy's Blog            </a>
 </ul>
 <p>这些函数的形状如下:
 <p align="center">
-<img alt="ActivationFunctions" class="img-responsive" src="/static/images/ActivationFunctions.png" width="50%"/>
+<img alt="ActivationFunctions" class="" src="/static/images/ActivationFunctions.png" width="50%"/>
 </p></p>
 <h3>神经网络模型</h3>
 <p>将一系列<strong>神经元</strong>组合在一起,就构成一个神经网络,一个神经元的输出可以作为另外一个神经元的输入.例如,下图是一个简单的神经网络:
 <p align="center">
-<img alt="neualNetwork" class="img-responsive" src="/static/images/Network331.png" width="50%"/>
+<img alt="neualNetwork" class="" src="/static/images/Network331.png" width="50%"/>
 </p>
 在这个示意图中,黄色的圆圈代表神经元,蓝色的圆圈代表整个神经网络的输入.被标为$+1$的圆圈称作<strong>bias unit</strong>,代表<strong>截距项</strong>(intercept term).
 网络最左边的层叫做<strong>输入层</strong>(input layer),最右边叫做<strong>输出层</strong>(output layer).中间所有的节点组成的层叫做<strong>隐藏层</strong>(hidden layer),因为我们不能在训练样本里面观察到它的值.</p>
 <p>神经网络也可以有多个输出单元,比如,下面的神经网络有两个隐藏曾,$L_2$和$L_3$,输出层$L_4$有两个输出单元:
 <p align="center">
-<img alt="MultiOutputNetwork" class="img-responsive" src="/static/images/MultiOutputNetwork.png" width="50%"/>
+<img alt="MultiOutputNetwork" class="" src="/static/images/MultiOutputNetwork.png" width="50%"/>
 </p>
 如果你的任务是预测多个输出,这种神经网络很适用.</p>
 <h4>向前传播</h4>
@@ -371,7 +381,7 @@ $$
 <h4>自编码器(Autoencoders)</h4>
 <p>假设我们只有一个没有带类别标签的训练样本集合 ${x^{(1)}, x^{(2)}, x^{(3)}, \ldots}$ ，其中$x^{(i)} \in \Re^{n}$ 。自编码神经网络是一种无监督学习算法，它使用了反向传播算法，并让目标值等于输入值，比如 $y^{(i)} = x^{(i)}$ 。下图是一个自编码神经网络的示例。
 <p align="center">
-<img alt="Autoencoder636" class="img-responsive" src="/static/images/Autoencoder.png" width="50%"/>
+<img alt="Autoencoder636" class="" src="/static/images/Autoencoder.png" width="50%"/>
 </p>
 自编码神经网络尝试学习一个$ h_{W,b}(x) \approx x$ 的函数,它尝试逼近一个恒等函数，从而使得输出 $\hat{x}$ 接近于输入$x$.自编码神经网络的意义在于:</p>
 <ol>
@@ -388,7 +398,7 @@ $$
 <h4>逐层训练方法</h4>
 <p>与神经网络使用反向训练的方法不同,神经网络使用逐层贪婪训练方法训练模型.主要思路是每次只训练网络中的一层，即我们首先训练一个只含一个隐藏层的网络，仅当这层网络训练结束之后才开始训练一个有两个隐藏层的网络，以此类推。在每一步中，把已经训练好的前$k-1$ 层固定，然后增加第$k$层（也就是将已经训练好的前$k-1$ 的输出作为输入）。每一层的训练可以是有监督的（例如，将每一步的分类误差作为目标函数），但更通常使用无监督方法(例如自动编码器).</p>
 <p align="center">
-<img alt="DeepLearningFeautures" class="img-responsive" src="/static/images/deeplearningfeatures.png" width="60%"/>
+<img alt="DeepLearningFeautures" class="" src="/static/images/deeplearningfeatures.png" width="60%"/>
 </p>
 <h3>深度学习的应用</h3>
 <ul>
@@ -544,6 +554,40 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.post-container').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('data-fancybox')) return;
+      var alt = this.alt;
+      /*if (alt) $(this).after('<span class="caption">' + alt + '</span>');*/
+      $(this).wrap('<a href="' + this.src + '"  data-fancybox ></a>');
+    });
+    $(this).find('.data-fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  $('[data-fancybox]').fancybox({
+    toolbar : false,
+    margin : [60, 60],
+
+    smallBtn : true,
+    image : {
+        // Wait for images to load before displaying
+        // Requires predefined image dimensions
+        // If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
+        preload : true
+    },
+  });
+
+});
+
+
+
+
+</script>
+
 
 </div>
 </body>
