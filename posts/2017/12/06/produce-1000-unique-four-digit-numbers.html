@@ -88,11 +88,6 @@
 
         });
 
-
-
-
-
-
     </script>
 
 
@@ -350,6 +345,54 @@ s.setAttribute('data-timestamp', +new Date());
 </footer>
                     -->
 
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.post-container').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('data-fancybox')) return;
+      var alt = this.alt;
+      /*if (alt) $(this).after('<span class="caption">' + alt + '</span>');*/
+      $(this).wrap('<a href="' + this.src + '"  data-fancybox ></a>');
+    });
+    $(this).find('.data-fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  $('[data-fancybox]').fancybox({
+    toolbar : false,
+    /*margin : [60, 60],*/
+
+    smallBtn : true,
+    image : {
+        // Wait for images to load before displaying
+        // Requires predefined image dimensions
+        // If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
+        preload : true
+    },
+     mobile : {
+        idleTime : false,
+        margin   : 40,
+
+        clickContent : function( current, event ) {
+            return current.type === 'image' ? 'toggleControls' : 'close';
+        },
+        clickSlide : 'close',
+        clickOutside : 'close',
+        dblclickContent : false,
+        dblclickSlide : false,
+        clickOutside : false,
+    },
+
+  });
+
+});
+
+</script>
+
+<!--
+-->
+
 <!-- Google Analytics -->
 <script type="text/javascript">
 
@@ -394,39 +437,7 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
-<script type="text/javascript">
 
-$(document).ready(function(){
-  $('.post-container').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('data-fancybox')) return;
-      var alt = this.alt;
-      /*if (alt) $(this).after('<span class="caption">' + alt + '</span>');*/
-      $(this).wrap('<a href="' + this.src + '"  data-fancybox ></a>');
-    });
-    $(this).find('.data-fancybox').each(function(){
-      $(this).attr('rel', 'article' + i);
-    });
-  });
-  $('[data-fancybox]').fancybox({
-    toolbar : false,
-    margin : [60, 60],
-
-    smallBtn : true,
-    image : {
-        // Wait for images to load before displaying
-        // Requires predefined image dimensions
-        // If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
-        preload : true
-    },
-  });
-
-});
-
-
-
-
-</script>
 
 
 </div>
