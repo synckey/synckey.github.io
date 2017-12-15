@@ -6,10 +6,8 @@ Author: Andy
 Place: Beijing
 status:draft
 
-<a href="https://source.unsplash.com/RF5sv5dv1Zc/1500x1000" data-fancybox data-caption="This image has a caption">
-      <img src="https://source.unsplash.com/RF5sv5dv1Zc/1500x1000" /></a>
 
-<img src="https://source.unsplash.com/RF5sv5dv1Zc/1500x1000" alt="fuck"/>
+<img src="/static/images/2016.06.09_babies.jpg" alt="fuck"/>
 
   
 读《深入理解Java虚拟机》[^1]，对volatile，spin lock，synchronized　有了新的认识，整理记录如下。
