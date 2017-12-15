@@ -116,11 +116,6 @@
 
         });
 
-
-
-
-
-
     </script>
 
 
@@ -246,44 +241,18 @@
 <script src="/{{ THEME_STATIC_DIR }}/js/bodypadding.js"></script>
 {% endif %}
 
+{% include 'includes/fancybox.html' %}
+
 {% include 'includes/github-js.html' %}
+
+<!--
 {% include 'includes/piwik.html' %}
+-->
+
 {% include 'includes/ga.html' %}
 {% include 'includes/ba.html' %}
 {% block scripts %}{% endblock %}
-<script type="text/javascript">
 
-$(document).ready(function(){
-  $('.post-container').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('data-fancybox')) return;
-      var alt = this.alt;
-      /*if (alt) $(this).after('<span class="caption">' + alt + '</span>');*/
-      $(this).wrap('<a href="' + this.src + '"  data-fancybox ></a>');
-    });
-    $(this).find('.data-fancybox').each(function(){
-      $(this).attr('rel', 'article' + i);
-    });
-  });
-  $('[data-fancybox]').fancybox({
-    toolbar : false,
-    margin : [60, 60],
-
-    smallBtn : true,
-    image : {
-        // Wait for images to load before displaying
-        // Requires predefined image dimensions
-        // If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
-        preload : true
-    },
-  });
-
-});
-
-
-
-
-</script>
 
 
 </div>
