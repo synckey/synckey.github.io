@@ -5,9 +5,9 @@ Slug: measuring-metrics-for-binary-classification
 Author: Andy
 Place: Beijing
 
-True Positive(TP)
-False Positive(FP)
-True Negative(TN)
-False Negative(FN)
+__True Positive(TP)__  
+__False Positive(FP)__  
+__True Negative(TN)__  
+__False Negative(FN)__
 
 
