@@ -54,7 +54,6 @@ http://synckey.name/category/summery.html
 http://synckey.name/category/tools.html
 http://synckey.name/tag/life.html
 http://synckey.name/tag/posts.html
-http://synckey.name/tag/mm.html
 http://synckey.name/tag/summery.html
 http://synckey.name/tag/poem.html
 http://synckey.name/tag/java.html
@@ -64,6 +63,7 @@ http://synckey.name/tag/ielts.html
 http://synckey.name/tag/sfv.html
 http://synckey.name/tag/tools.html
 http://synckey.name/tag/git.html
+http://synckey.name/tag/mm.html
 http://synckey.name/tag/machine-learning.html
 http://synckey.name/tag/deep-learning.html
 http://synckey.name/tag/probability.html
