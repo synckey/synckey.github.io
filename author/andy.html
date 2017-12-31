@@ -183,28 +183,6 @@ Andy's Blog            </a>
 <div class="separator"></div>
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/12/24/measuring-metrics-for-binary-classification.html">二分类任务的评估指标</a></h3>
-        <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-12-24</span>
-            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-        </div>
-    </div>
-
-
-    <div class="post-content"><p><strong>True Positive(TP)</strong><br/>
-<strong>False Positive(FP)</strong><br/>
-<strong>True Negative(TN)</strong><br/>
-<strong>False Negative(FN)</strong></p>
-        <div class="read-more">
-            <a class="btn" href="/posts/2017/12/24/measuring-metrics-for-binary-classification.html">--READ MORE--</a>
-        </div>
-    </div>
-</div>
-<div class="separator"></div>
-<div class="separator"></div>
-<div class="post-container">
-    <div class="post-header">
         <h3><a href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">金缕曲词二首(清顾贞观)</a></h3>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
@@ -272,7 +250,7 @@ Conditions:  <br/>
 <p>有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from <a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment">假装在纽约</a></p>
 </blockquote>
 <div class="figure">
-<img alt="一个人的战争" class="img-rounded carousel-inner center-block img-responsive" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
+<img alt="一个人的战争" class="img-responsive img-rounded center-block carousel-inner" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
 </div>
         <div class="read-more">
             <a class="btn" href="/posts/2017/11/27/life-is-one-man-fight.html">--READ MORE--</a>
@@ -967,6 +945,37 @@ syntax <span class="nb">enable</span>
         <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">lookupTable</span><span class="o">.</span><span class="na">containsKey …</span></pre></div>
         <div class="read-more">
             <a class="btn" href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-header">
+        <h3><a href="/posts/2015/05/20/iterm2-clone-session.html">Iterm2 Clone Session</a></h3>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2015-05-20</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><div class="github"><pre><span></span>vim ~/.ssh/config
+</pre></div>
+<p>贴入如下内容:</p>
+<div class="github"><pre><span></span>Host *
+    ServerAliveInterval <span class="m">30</span>
+    ControlMaster auto
+    ControlPath ~/.ssh/master-%r@%h:%p
+    ControlPersist yes
+</pre></div>
+<p>退出iterm2，重新登录即可。</p>
+<h3>References</h3>
+<p><a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/">Iterm2 auto login 自动登录脚本</a></p>
+<p><a href="http://laughingchs.iteye.com/blog/1317703">linux clone session</a></p>
+        <div class="read-more">
+            <a class="btn" href="/posts/2015/05/20/iterm2-clone-session.html">--READ MORE--</a>
         </div>
     </div>
 </div>
