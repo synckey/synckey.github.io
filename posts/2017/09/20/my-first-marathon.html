@@ -105,9 +105,14 @@
     <link href="/theme/fancybox/jquery.fancybox.min.css" rel="stylesheet">
 
 
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
 
 
 
+    <link href="/feeds/posts.atom.xml" type="application/atom+xml"
+          rel="alternate"
+          title="Andy's Blog posts ATOM Feed"/>
 
 </head>
 
@@ -128,7 +133,6 @@ Andy's Blog            </a>
             <a class="navbar-brand" href="/">Posts</a></li>
             <a class="navbar-brand" href="/archives.html">Archives</a>
             <a class="navbar-brand" href="/categories.html">Categories</a>
-            <a class="navbar-brand" href="/drafts">Drafts</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbar-top-collapse">
@@ -217,7 +221,7 @@ Andy's Blog            </a>
 所以最后一公里，又恢复了奔跑，一直冲向了有好几道拱门的终点线，那里有穿着性感衣服的拉拉队。</p>
 <p>最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。</p>
 <div class="figure">
-<img alt="babies" class="img-responsive center-block carousel-inner img-rounded" src="/static/images/first_marathon_transcript.jpg" width="30%"/>
+<img alt="babies" class="carousel-inner img-rounded center-block img-responsive" src="/static/images/first_marathon_transcript.jpg" width="30%"/>
 <div class="caption">2016.06.17 北京马拉松</div>
 </div>
 <div class="pager">
@@ -365,6 +369,50 @@ $(document).ready(function(){
 <!--
 -->
 
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55913313-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- End Google Analytics Code -->
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
 
 
 

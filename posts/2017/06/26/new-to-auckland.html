@@ -105,9 +105,14 @@
     <link href="/theme/fancybox/jquery.fancybox.min.css" rel="stylesheet">
 
 
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
 
 
 
+    <link href="/feeds/sfv.atom.xml" type="application/atom+xml"
+          rel="alternate"
+          title="Andy's Blog sfv ATOM Feed"/>
 
 </head>
 
@@ -128,7 +133,6 @@ Andy's Blog            </a>
             <a class="navbar-brand" href="/">Posts</a></li>
             <a class="navbar-brand" href="/archives.html">Archives</a>
             <a class="navbar-brand" href="/categories.html">Categories</a>
-            <a class="navbar-brand" href="/drafts">Drafts</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbar-top-collapse">
@@ -204,23 +208,23 @@ Andy's Blog            </a>
 <p>可能因为本地私家车普及率特别高，相对天朝公交而言，新西兰的公交车实在不友善。首先，公交车班次间隔时间比较久，如果错过一班可能要等二十分钟甚至半个小时。公交车并不会在每站都停，如果想下车就得提前按铃，车上也没有报站系统和显示屏，这就对外地人很不友善，只能拿着google地图看快要到了，就按铃下车。我的理解是这样做可以提升公交车的运行效率，但是加一个到站的显示屏真的会友善很多。</p>
 <p>总得来说，虽然新西兰的牛羊肉很好吃，但是物价实在是太高了。
 <div class="figure">
-<img alt="auk_domain_1" class="img-responsive carousel-inner img-rounded" src="/static/images/aukland_domain_1.jpg"/>
+<img alt="auk_domain_1" class="carousel-inner img-rounded img-responsive" src="/static/images/aukland_domain_1.jpg"/>
 <div class="caption">Auckland Domain</div>
 </div>
 <div class="figure">
-<img alt="auk_domain_2" class="img-responsive carousel-inner img-rounded" src="/static/images/aukland_domain_2.jpg"/>
+<img alt="auk_domain_2" class="carousel-inner img-rounded img-responsive" src="/static/images/aukland_domain_2.jpg"/>
 <div class="caption">Auckland Domain</div>
 </div>
 <div class="figure">
-<img alt="ont_tree_hill" class="img-responsive carousel-inner img-rounded" src="/static/images/one_tree_hill.jpg"/>
+<img alt="ont_tree_hill" class="carousel-inner img-rounded img-responsive" src="/static/images/one_tree_hill.jpg"/>
 <div class="caption">One Tree Hill</div>
 </div>
 <div class="figure">
-<img alt="steak_and_fries" class="img-responsive carousel-inner img-rounded" src="/static/images/steak_and_fries.jpg"/>
+<img alt="steak_and_fries" class="carousel-inner img-rounded img-responsive" src="/static/images/steak_and_fries.jpg"/>
 <div class="caption">Steak&amp;Fries</div>
 </div></p>
 <div class="figure">
-<img alt="albert_park" class="img-responsive carousel-inner img-rounded" src="/static/images/albert_park.jpg"/>
+<img alt="albert_park" class="carousel-inner img-rounded img-responsive" src="/static/images/albert_park.jpg"/>
 <div class="caption">Albert Park</div>
 </div>
 <div class="pager">
@@ -368,6 +372,50 @@ $(document).ready(function(){
 <!--
 -->
 
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55913313-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- End Google Analytics Code -->
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
 
 
 
