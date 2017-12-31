@@ -4,6 +4,7 @@ Tags: machine learning
 Slug: measuring-metrics-for-binary-classification
 Author: Andy
 Place: Beijing
+Status: draft
 
 __True Positive(TP)__  
 __False Positive(FP)__  
