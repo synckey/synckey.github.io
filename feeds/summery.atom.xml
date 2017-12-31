@@ -1,5 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog - summery</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/summery.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-02-23T00:00:00+08:00</updated><entry><title>2016 Full of Serendipities</title><link href="http://synckey.name/posts/2017/02/23/2016-summery.html" rel="alternate"></link><published>2017-02-23T00:00:00+08:00</published><updated>2017-02-23T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-23:/posts/2017/02/23/2016-summery.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。&lt;/strong&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog - summery</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/summery.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2018-01-01T00:00:00+08:00</updated><entry><title>2016 Full of Changes</title><link href="http://synckey.name/posts/2018/01/01/2017-summery.html" rel="alternate"></link><published>2018-01-01T00:00:00+08:00</published><updated>2018-01-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-01-01:/posts/2018/01/01/2017-summery.html</id><summary type="html">&lt;p&gt;2017年马上就要过去了，回望这一年，最大的感觉就是变化，事情在变，想法在变，人也在变。&lt;/p&gt;
+&lt;p&gt;2017年的开始本以为这会是最惊心动魄的一年，因为在前一年我决定了要去新西兰工作。在2017年刚开始，一切都已经准备就绪了，签证已经办好，
+决心也已经下定。过完年已经开始着手准备登录以后的EOI的材料（出生公正，无犯罪记录证明）。机票订好了以后就开始准备找工作，
+根据新西兰的格式改了一份简历，在Seek上查看各种相关和不太相关的职位，投了大概有20份。这些简历大部分是石沉大海，唯一收到的回应就是拒绝。
+此时才开始意识到，自己对于去新西兰找到一份工作还是太乐观了，对新西兰能给出的薪资也不再抱有很高的期望。那一阵子非常焦躁不安。为了给自己增加一点竞争力，
+就开始刷Leetcode，因为对新西兰的面试一无所知，所以只能从最基础的算法开始做，一边刷题一边继续投简历。虽然我很喜欢不确定性带来的巨大可能性，
+但是真正身处其中之时，内心对于未知的恐惧会被放大很多倍。在距离去程的机票起飞时间差不多还有两个月的时候，收到了一封来自亚马逊HR的邮件，
+说是6月份会在北京举办一场Hiring Event。这种邮件之前也不是没有收到过，根本没去回应，从来没想过要去亚马逊。但是现在对去新西兰找工作已然不再乐观，
+于是就抱着一种why not give it a try的想法，给HR回了一封邮件，决定要去试一下。由于招聘会的时间跟之前订的机票时间冲突 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;2017年马上就要过去了，回望这一年，最大的感觉就是变化，事情在变，想法在变，人也在变。&lt;/p&gt;
+&lt;p&gt;2017年的开始本以为这会是最惊心动魄的一年，因为在前一年我决定了要去新西兰工作。在2017年刚开始，一切都已经准备就绪了，签证已经办好，
+决心也已经下定。过完年已经开始着手准备登录以后的EOI的材料（出生公正，无犯罪记录证明）。机票订好了以后就开始准备找工作，
+根据新西兰的格式改了一份简历，在Seek上查看各种相关和不太相关的职位，投了大概有20份。这些简历大部分是石沉大海，唯一收到的回应就是拒绝。
+此时才开始意识到，自己对于去新西兰找到一份工作还是太乐观了，对新西兰能给出的薪资也不再抱有很高的期望。那一阵子非常焦躁不安。为了给自己增加一点竞争力，
+就开始刷Leetcode，因为对新西兰的面试一无所知，所以只能从最基础的算法开始做，一边刷题一边继续投简历。虽然我很喜欢不确定性带来的巨大可能性，
+但是真正身处其中之时，内心对于未知的恐惧会被放大很多倍。在距离去程的机票起飞时间差不多还有两个月的时候，收到了一封来自亚马逊HR的邮件，
+说是6月份会在北京举办一场Hiring Event。这种邮件之前也不是没有收到过，根本没去回应，从来没想过要去亚马逊。但是现在对去新西兰找工作已然不再乐观，
+于是就抱着一种why not give it a try的想法，给HR回了一封邮件，决定要去试一下。由于招聘会的时间跟之前订的机票时间冲突，又重新订了一张机票。&lt;/p&gt;
+&lt;p&gt;决定要去面试以后就开始疯狂的刷题，直到面试前，总共刷了200道题。刷题的过程很痛苦，想不出答案调不出结果时会怀疑自己的智商。
+两个月内，早上5-6点起床刷题，下班和周末和上下班的路上，基本也都在研究算法题。这段可能是这一年学习效率最高的时间了，所谓&lt;code&gt;三更灯火五更鸡&lt;/code&gt;。
+我觉得当时之所以这么努力孤注一掷，更多的是出于对去新西兰的恐惧而不是对于去亚马逊的渴望。&lt;/p&gt;
+&lt;p&gt;在出发去新西兰的前一天，收到了面试通过的邮件。无论如何，立刻就决定放弃新西兰了，因为直到后来离开新西兰，也没有收到过新西兰一家公司的面试邀请。&lt;/p&gt;
+&lt;p&gt;这个offer让许多事，一下子发生了转变。它让新西兰之旅变得轻松了许多，基本变成随心所欲的旅游了。这是我第一次出国。在新西兰呆了一周，也算是收获满满，至少如果不来一次，
+可能不会发现祖国的很多优点。&lt;/p&gt;
+&lt;p&gt;2017年是不务正业的一年，在技术的进步上乏善可陈，心思也没有太多花在技术上。主要的收获就是为了准备面试，刷的那200道算法题，使我对算法理解更深，
+也知道了它的重要性，对后来的代码有一些帮助。另一个收获就是折腾了一阵子使用深度学习给图片质量打分，虽然没达到论文里面的效果，但是对Tensorflow有了更深一点的认识，
+这个工具使用起来很复杂，要用好还有很长的路要走。&lt;/p&gt;
+&lt;p&gt;在技术上其实是迷茫的一年，我知道我要去亚马逊了，但是并不知道要入职的组会使用什么技术，需要做什么技术储备。只是趁机学了一遍Java8的新功能。
+从功利的角度来说，我更喜欢机器学习。虽然在这个方向上只能算是小小的入门，数学一直也不是我的强项。但是门槛高可能也是优势，所以直到11月份，
+才决定要重新拾起机器学习，不管未来怎么变化，机器学习一定是很值得投入的方向。只有自己学好了，才有资格说喜欢。所以2018年不管会怎么变，学习主线要放在机器学习上。&lt;/p&gt;
+&lt;p&gt;2017年也不是完全没有收获。上半年因为心烦，也因为把大部分的时间投入在了刷题里面，基本没有运动。主要的运动集中在下半年。从8月底开始，基本每天10公里跑步。
+全年的跑步里程是842公里，这其中包含第一次全程马拉松(4h33min)。
+认真运动以来，今年的体重大概下降了8kg。在Keep上已经连续运动了125天，虽然每天运动会有小小的负担，记录的意义就在于能让自己更好的坚持运动下去。&lt;/p&gt;
+&lt;p&gt;另外get到了一个新技能，弹电子琴。到现在上了15节课，每节课大概对应5-10小时的练习时间，所以150小时的训练结果就是现在能弹一些简单的曲子，
+能跟得上节拍器，能弹出附点音符和16分音符。当然也花了很多时间学习乐理和认识五线谱。学习音乐给我带来的收获就是&lt;code&gt;绝知此事要躬行&lt;/code&gt;，
+如果一个曲子弹不熟，就不断重复，终有跨过临界点，到了得心应手的程度，其他事也是如此。&lt;/p&gt;
+&lt;p&gt;在精神生活上，这是失落的一年。这一年，每期必看的《锵锵三人行》停播了，这是最喜欢的节目，在这个自媒体泛滥的时代，这个尽量展现事实，给各方表达观点并讨论的节目可能仅此一家。
+它最大的看点就是会邀请很多不同领域的嘉宾，给出很专业的观点。
+另外一个每期必看的纯逗乐节目《今晚八零后》也停播了，虽然这个节目越做越不好看，但是我还是希望有看它的权利。所幸的是，《暴走大事件》停更了一阵子以后，还在。
+对文化节目有洁癖，并没有找到《锵锵三人行》的替代，所以决定重温李敖，一边跑步一边听完了2014年《李敖有话说》，共214集。年末传出李敖病重的消息，祝福他，他是真正的战士。
+使我失落的，不仅仅是不能看这个节目了，一个播了19年的节目，说停就停了，不禁想起那个时代，离我们真的很遥远么？或许，就在明天？&lt;/p&gt;
+&lt;p&gt;10月份做了一次检查，从那以后常常跑医院，吃药不停，好在其中一项已经治愈了。总的来说，职工保险加上商业保险，这种小病个人的支出很少。同时，
+只要提前挂号，也基本能挂到号。这比道听途说的发达国家医疗优势太大。当然健康是最可贵的，要健康就要有所节制。&lt;/p&gt;
+&lt;p&gt;2017年组里面的人离职了五个，只剩三个，虽然知天下没有不散的宴席，后走的终究多几分伤感。这些同事是最朴实勤恳的，祝福他们。&lt;/p&gt;
+&lt;p&gt;这一年躲在焦躁不安，庸人自扰中度过。Anyway，终究是跨出了那一步。&lt;/p&gt;
+&lt;p&gt;用一首李敖的诗结束这善变2017，同时是对2018新年的祝愿！&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我将归来开放&lt;br/&gt;
+因为我从来是那样，&lt;br/&gt;
+所以你以为我永远是那样。&lt;br/&gt;
+可是这一回你错了，&lt;br/&gt;
+我改变得令你难以想象。&lt;br/&gt;
+坏的终能变得好，&lt;br/&gt;
+弱的总会变得壮。&lt;br/&gt;
+谁能想到丑陋的一个蛹，&lt;br/&gt;
+却会变成翩翩的蝴蝶模样？&lt;br/&gt;
+像一朵入夜的荷花，&lt;br/&gt;
+像一只归巢的宿鸟，&lt;br/&gt;
+或像一个隐居的老哲人，&lt;br/&gt;
+我消逝了我所有的锋芒与光亮。&lt;br/&gt;
+漆黑的隧道终会凿穿，&lt;br/&gt;
+千仞的高岗必被爬上。&lt;br/&gt;
+当百花凋谢的日子，&lt;br/&gt;
+我将归来开放！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;读的书不太多，列在以下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;《智能时代》吴军 2017.01.08&lt;/li&gt;
+&lt;li&gt;《阿里传》波特埃里斯曼 2017.02.17&lt;/li&gt;
+&lt;li&gt;《新西兰》2017.02.11&lt;/li&gt;
+&lt;li&gt;《激荡三十年》吴晓波 2017.03.10&lt;/li&gt;
+&lt;li&gt;《人类的群星闪耀时》斯蒂芬·茨威格 2017.04.27&lt;/li&gt;
+&lt;li&gt;《白银时代》王小波 2017.05.02&lt;/li&gt;
+&lt;li&gt;《程序员面试金典》（Cracking the Coding Interview）Gayle Laakmann McDowell &lt;/li&gt;
+&lt;li&gt;《Head First 设计模式》&lt;/li&gt;
+&lt;li&gt;《中东生死门--巴以行走观察》周轶君&lt;/li&gt;
+&lt;li&gt;《走出中东》周轶君&lt;/li&gt;
+&lt;li&gt;《精通乐理不是梦》蔡文展&lt;/li&gt;
+&lt;li&gt;《娱乐至死》&lt;/li&gt;
+&lt;li&gt;《Lucene实战》&lt;/li&gt;
+&lt;li&gt;《毛泽东传》&lt;/li&gt;
+&lt;li&gt;《红楼梦》2017.11&lt;/li&gt;
+&lt;li&gt;《牧羊少年奇幻之旅》2017.11&lt;/li&gt;
+&lt;li&gt;《Java8 in Action》&lt;/li&gt;
+&lt;li&gt;《深入理解Java虚拟机》2017.12.03&lt;/li&gt;
+&lt;li&gt;《苏东坡传》林语堂&lt;/li&gt;
+&lt;li&gt;《美的历程》&lt;/li&gt;
+&lt;/ul&gt;</content><category term="life"></category><category term="posts"></category><category term="mm"></category><category term="summery"></category></entry><entry><title>2016 Full of Serendipities</title><link href="http://synckey.name/posts/2017/02/23/2016-summery.html" rel="alternate"></link><published>2017-02-23T00:00:00+08:00</published><updated>2017-02-23T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-23:/posts/2017/02/23/2016-summery.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;不知道每个人心里是不是都有不愿意提及的往事，在某些时候，你是彻底的骗子，无赖，恶魔。有一阵子活在自己虚设的缱绻而又梦境里，不问对错，不追因果，一切那么自然而然。即使你知道这梦总有梦醒的时刻，结局早已写好，也假装要让它继续圆下去，因为从开始你就是恶魔，恶魔总要让梦破碎。这些事，本可以远离，不用歇斯底里，更不用刨根问底。可喜的是，放弃本不珍贵的东西并不难。高中的时候读过的诗，要过许多年，才解其中意，真正做到的，又能有几个？&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;爱里不见是非,&lt;br/&gt;
@@ -62,13 +148,13 @@
 &lt;p&gt;后来mm邀请我去参加她的毕业典礼，我想她大概是在暗示什么？开心归开心，惆怅也是有的，我这么丑，甚至都没有一套正装，怎么好意思去参加别人的毕业典礼？后来再一次证明我是想多了，毕业典礼也没去成，心里有所解脱之余，满是失望。幸运的是，我们还是在她回苏州之前见了一面，在蓝色港湾的站点pizza，站点pizza是我选的，蓝色港湾是mm选的。那天点的pizza并不好吃。如果吃饭的时候她没有一直跟我提她的一位男同事，并且吃完想跟我看一场《魔兽》我也不会爱上她吧？看完魔兽我送她回学校，夏天很热，她第二天就要离开帝都回苏州了，我很想抱她一下，终究未能如愿。&lt;/p&gt;
 &lt;p&gt;2016年应该是我长大的一年吧，9月份跟mm一起去南京，见到了姐姐，姐夫，外甥外甥女，在玄武湖上荡舟并不浪漫。后来也是第一次见到她姐姐，第一次去她家里，无论如何，跨出了这一步，是我之前从未敢想的。&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="suzhou" class="img-responsive carousel-inner img-rounded" src="/static/images/2016.11.13_su_zhou.jpg"/&gt;
+&lt;img alt="suzhou" class="img-rounded img-responsive carousel-inner" src="/static/images/2016.11.13_su_zhou.jpg"/&gt;
 &lt;div class="caption"&gt;2016.11.13 苏州博物馆&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;国庆节mm来帝都玩，这是从上大学以来第一次国庆节没有回家，认识了cq,hzf,wym,都是很有趣的人。&lt;/p&gt;
 &lt;p&gt;2016年的运动乏善可陈，4月份和xh参加了一次半马，成绩是01:47:35，平均4m:55s/km，这个成绩我很满意，代表了自己的目前的最高水准吧。跑完了xh和他怀孕的老婆请我吃饭。上半年主要是在人大校园里面跑，后来搬到回龙观，就再也没跑过。
  &lt;div class="figure"&gt;
-&lt;img alt="babies" class="img-responsive carousel-inner img-rounded center-block" src="/static/images/2016.04.17_half_marathon.jpg"/&gt;
+&lt;img alt="babies" class="img-rounded carousel-inner img-responsive center-block" src="/static/images/2016.04.17_half_marathon.jpg"/&gt;
 &lt;div class="caption"&gt;2016.06.09 半马&lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;大概是从2015年开始，心里和纸上就开始频繁的做计算，把自己的各种投资，股票，基金，众筹，加到一起，再把未来的收入一起加进去，算出来，看什么时候能付得起首付。每一次的结论就是：大概2017年4月份。在没有遇到 mm 之前，并不绝望。买房对我像是一个恍惚的未来，好像近在眼前，又遥不可及。如果不是那天中午zh和xy过来找我吃饭，也许我也下不定决心要买。过程很曲折，这是在帝都五年来最绝望的时刻。在清河看过一次老破小，如果不是亲眼见到，真的不敢相信那样的破房子值那么多钱。人常常在某一个时刻感觉自己特别渺小，在星空面前，在时代面前，在潮流面前，在房价面前，更是渺小无力。幸运的是最亲的姐姐姐夫们给了我很大帮助，是我最大的后盾，wjy跑过来跟我一起看房子，最终是她在看好的两套里拍板的这一套，后来还帮我购置了很多物件，在忙碌中来回帝都两次。zh也借了不少钱给我，这是最感念的部分。当然，买房子的过程也有很多不开心，不愿意想起也不愿回忆。很难去要求别人怎么样，有的关系根本不需要维持，自己有钱比什么都重要。这是在这个过程中学到的。&lt;/p&gt;
@@ -77,7 +163,7 @@
 &lt;p&gt;4月份职称升了一级。从今年开始接触深度学习，用tensorflow跑出了一些demo，对深度学习算是入了门，但是真正深入学习的东西几乎没有。反观自己，我觉得两个原因让自己在专业方面停步不前：1.对技术的热情减少了很多；2.畏难，机器学习跟语言或者其他系统比，要难很多，所以很多东西都是浅尝辄止，深入不下去。在这么浮躁的社会，希望不要忘了立身之本，更不要忘了初心。&lt;/p&gt;
 &lt;p&gt;这一年外甥女忽然一下子长大了，开始问我问题，使我惊喜。看着她如此可爱，时常想，怎么让她保留童真，怎么给最好的给她？外甥也让我感觉特别懂事，看上去很小的孩子，其实已经很有自己的想法，能和人进行很深入的交谈。
 &lt;div class="figure narrow"&gt;
-&lt;img alt="babies" class="img-responsive carousel-inner img-rounded center-block" src="/static/images/2016.06.09_babies.jpg"/&gt;
+&lt;img alt="babies" class="img-rounded carousel-inner img-responsive center-block" src="/static/images/2016.06.09_babies.jpg"/&gt;
 &lt;div class="caption"&gt;2016.06.09 babies&lt;/div&gt;
 &lt;/div&gt;
 2016年总共读了这些书：&lt;/p&gt;

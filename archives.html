@@ -160,8 +160,19 @@ Andy's Blog            </a>
             <h1>Archives for Andy's Blog</h1>
         </div>
         <div class="archives">
+            <h2>2018</h2>
+            <ul>
+                <p>
+                    <span class="categories-timestamp"><time datetime="2018-01-01T00:00:00+08:00">2018-01-01</time></span>
+                    <span> <a href="/posts/2018/01/01/2017-summery.html">2016 Full of Changes</a></span>
+                </p>
+            </ul>
             <h2>2017</h2>
             <ul>
+                <p>
+                    <span class="categories-timestamp"><time datetime="2017-12-24T00:00:00+08:00">2017-12-24</time></span>
+                    <span> <a href="/posts/2017/12/24/measuring-metrics-for-binary-classification.html">二分类任务的评估指标</a></span>
+                </p>
                 <p>
                     <span class="categories-timestamp"><time datetime="2017-12-07T00:00:00+08:00">2017-12-07</time></span>
                     <span> <a href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">金缕曲词二首(清顾贞观)</a></span>
@@ -330,7 +341,7 @@ Andy's Blog            </a>
 </div>
 
 <div class="copyright">
-    &copy; 2017 andy
+    &copy; 2018 andy
     &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
     <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
     <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
@@ -348,7 +359,7 @@ Andy's Blog            </a>
             </div>
             <div class="col-lg-8 col-md-offset-2">
                 <center>
-                    &copy; 2017 andy
+                    &copy; 2018 andy
                     &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
                     <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
                     <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                    <!--
@@ -376,7 +387,7 @@ $(document).ready(function(){
   });
   $('[data-fancybox]').fancybox({
     toolbar : false,
-    /*margin : [60, 60],*/
+    /*margin : [60, 40],*/
 
     smallBtn : true,
     image : {
@@ -388,7 +399,6 @@ $(document).ready(function(){
      mobile : {
         idleTime : false,
         margin   : 40,
-
         clickContent : function( current, event ) {
             return current.type === 'image' ? 'toggleControls' : 'close';
         },

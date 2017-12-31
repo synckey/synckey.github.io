@@ -318,7 +318,7 @@ $(document).ready(function(){
   });
   $('[data-fancybox]').fancybox({
     toolbar : false,
-    /*margin : [60, 60],*/
+    /*margin : [60, 40],*/
 
     smallBtn : true,
     image : {
@@ -330,7 +330,6 @@ $(document).ready(function(){
      mobile : {
         idleTime : false,
         margin   : 40,
-
         clickContent : function( current, event ) {
             return current.type === 'image' ? 'toggleControls' : 'close';
         },

@@ -106,14 +106,9 @@
     <link href="/theme/fancybox/jquery.fancybox.min.css" rel="stylesheet">
 
 
-    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-          title="Andy's Blog ATOM Feed"/>
 
 
 
-    <link href="/feeds/posts.atom.xml" type="application/atom+xml"
-          rel="alternate"
-          title="Andy's Blog posts ATOM Feed"/>
 
 </head>
 
@@ -134,6 +129,7 @@ Andy's Blog            </a>
             <a class="navbar-brand" href="/">Posts</a></li>
             <a class="navbar-brand" href="/archives.html">Archives</a>
             <a class="navbar-brand" href="/categories.html">Categories</a>
+            <a class="navbar-brand" href="/drafts">Drafts</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbar-top-collapse">
@@ -402,7 +398,7 @@ s.setAttribute('data-timestamp', +new Date());
 </section>
 
 <div class="copyright">
-    &copy; 2017 andy
+    &copy; 2018 andy
     &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
     <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
     <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
@@ -420,7 +416,7 @@ s.setAttribute('data-timestamp', +new Date());
             </div>
             <div class="col-lg-8 col-md-offset-2">
                 <center>
-                    &copy; 2017 andy
+                    &copy; 2018 andy
                     &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
                     <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
                     <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                    <!--
@@ -448,7 +444,7 @@ $(document).ready(function(){
   });
   $('[data-fancybox]').fancybox({
     toolbar : false,
-    /*margin : [60, 60],*/
+    /*margin : [60, 40],*/
 
     smallBtn : true,
     image : {
@@ -460,7 +456,6 @@ $(document).ready(function(){
      mobile : {
         idleTime : false,
         margin   : 40,
-
         clickContent : function( current, event ) {
             return current.type === 'image' ? 'toggleControls' : 'close';
         },
@@ -480,50 +475,6 @@ $(document).ready(function(){
 <!--
 -->
 
-<!-- Google Analytics -->
-<script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-55913313-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-</script>
-<!-- End Google Analytics Code -->
-<!-- Baidu Analytics -->
-<script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-
-</script>
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
-<!-- End Google Analytics Code -->
 
 
 
