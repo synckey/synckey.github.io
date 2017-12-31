@@ -33,7 +33,7 @@
 所以最后一公里，又恢复了奔跑，一直冲向了有好几道拱门的终点线，那里有穿着性感衣服的拉拉队。&lt;/p&gt;
 &lt;p&gt;最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="babies" class="carousel-inner img-rounded center-block img-responsive" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
+&lt;img alt="babies" class="center-block carousel-inner img-responsive img-rounded" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
 &lt;div class="caption"&gt;2016.06.17 北京马拉松&lt;/div&gt;
 &lt;/div&gt;</content><category term="life"></category></entry><entry><title>BFS遍历到图的指定层的一种方法</title><link href="http://synckey.name/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html" rel="alternate"></link><published>2017-05-10T00:00:00+08:00</published><updated>2017-05-10T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-05-10:/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html</id><summary type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;leetcode原题&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:&lt;/p&gt;
@@ -319,7 +319,7 @@ $$
 和《潘吉Jenny告诉你》实在太赞，一边运动一边练口语。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="suzhou" class="carousel-inner img-rounded img-responsive" src="/static/images/2015_04_13_softwares.jpg"/&gt;
+&lt;img alt="suzhou" class="carousel-inner img-responsive img-rounded" src="/static/images/2015_04_13_softwares.jpg"/&gt;
 &lt;div class="caption"&gt;Useful Apps&lt;/div&gt;
 &lt;/div&gt;
 &lt;h2&gt;进行中&lt;/h2&gt;
@@ -359,7 +359,7 @@ a&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3&gt;有图有真相&lt;/h3&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="suzhou" class="carousel-inner img-rounded img-responsive" src="/static/images/2015_04_13_comparasion.jpg"/&gt;
+&lt;img alt="suzhou" class="carousel-inner img-responsive img-rounded" src="/static/images/2015_04_13_comparasion.jpg"/&gt;
 &lt;/div&gt;
 &lt;!--
 &lt;container&gt;
@@ -443,5 +443,5 @@ I was wrong,Big Sacrosaurus can be taken away. It was significantly nice for Wen
 work interesting and challenging. I know She can make it and grow up to a good banker.&lt;/p&gt;
 &lt;p&gt;It is not good recently,but I really appreciate the time talking with Wen and the Big Sacrosaurus she brought for me .
 &lt;div align="center"&gt;
-&lt;img alt="Big Sarcosaurus" class="carousel-inner img-rounded img-responsive" src="/static/images/bigsarcosaurus.jpg" style="width:40%;height:40%;"/&gt;
+&lt;img alt="Big Sarcosaurus" class="carousel-inner img-responsive img-rounded" src="/static/images/bigsarcosaurus.jpg" style="width:40%;height:40%;"/&gt;
 &lt;/div&gt;&lt;/p&gt;</content><category term="personal"></category></entry></feed>
