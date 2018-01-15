@@ -109,24 +109,6 @@
     <script type="text/javascript"
             src="/{{ THEME_STATIC_DIR }}/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
-    <script>
-        MathJax.Hub.Config({
-            tex2jax: {
-                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-                inlineMath: [['$', '$'], ["\\(", "\\)"]],
-                processEscapes: true
-            },
-            extensions: ["tex2jax.js"],
-            jax: ["input/TeX", "output/HTML-CSS"],
-            "HTML-CSS": {
-                availableFonts: ["TeX"],
-                scale:85,
-                imageFont: null
-            }
-
-        });
-
-    </script>
 
 
     <!-- Bootstrap -->
@@ -221,21 +203,7 @@
 
     </div>
 </div>
-<!--
-<div class="page-header container">
-    <ul class="nav-left">
-        <li class="home"><a href="/">Andy's Blog</a></li>
-        <li class="desktop-only"><a href="/">Posts</a></li>
-        <li><a href="/feeds/all.atom.xml"></a>
-    </ul>
 
-    <ul class="nav-right">
-        <li><a href="/about">About</a></li>
-        <li><a href="/rss.xml">RSS</a></li>
-    </ul>
-
-</div>
--->
 <!-- Banner -->
 {% if BANNER and BANNER_ALL_PAGES %}
 {% include 'includes/banner.html' %}
@@ -251,19 +219,16 @@
 <script src="/{{ THEME_STATIC_DIR }}/js/bodypadding.js"></script>
 {% endif %}
 
-{% include 'includes/fancybox.html' %}
 
 {% include 'includes/github-js.html' %}
 
 <!--
 {% include 'includes/piwik.html' %}
 -->
-
+<script src="/{{ THEME_STATIC_DIR }}/js/theme.js"></script>
 {% include 'includes/ga.html' %}
 {% include 'includes/ba.html' %}
 {% block scripts %}{% endblock %}
-
-
 
 </div>
 </body>
