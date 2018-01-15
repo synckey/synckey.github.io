@@ -38,7 +38,17 @@
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
     <script src="/theme/js/holder.js"></script>
-    <script src="/theme/fancybox/jquery.fancybox.min.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
     <!-- mathtex -->
     <!--
     <script type="text/javascript"
@@ -64,24 +74,6 @@
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
-    <script>
-        MathJax.Hub.Config({
-            tex2jax: {
-                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-                inlineMath: [['$', '$'], ["\\(", "\\)"]],
-                processEscapes: true
-            },
-            extensions: ["tex2jax.js"],
-            jax: ["input/TeX", "output/HTML-CSS"],
-            "HTML-CSS": {
-                availableFonts: ["TeX"],
-                scale:85,
-                imageFont: null
-            }
-
-        });
-
-    </script>
 
 
     <!-- Bootstrap -->
@@ -96,7 +88,6 @@
     <link href="/theme/css/pygments/github.css"
           rel="stylesheet">
 
-    <link href="/theme/fancybox/jquery.fancybox.min.css" rel="stylesheet">
 
 
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
@@ -136,21 +127,7 @@ Andy's Blog            </a>
 
     </div>
 </div>
-<!--
-<div class="page-header container">
-    <ul class="nav-left">
-        <li class="home"><a href="/">Andy's Blog</a></li>
-        <li class="desktop-only"><a href="/">Posts</a></li>
-        <li><a href="/feeds/all.atom.xml"></a>
-    </ul>
 
-    <ul class="nav-right">
-        <li><a href="/about">About</a></li>
-        <li><a href="/rss.xml">RSS</a></li>
-    </ul>
-
-</div>
--->
 <!-- Banner -->
 <!-- End Banner -->
 <div class="separator"></div>
@@ -250,7 +227,7 @@ Conditions:  <br/>
 <p>有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from <a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment">假装在纽约</a></p>
 </blockquote>
 <div class="figure">
-<img alt="一个人的战争" class="center-block carousel-inner img-responsive img-rounded" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
+<img alt="一个人的战争" class="center-block img-responsive carousel-inner img-rounded" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
 </div>
         <div class="read-more">
             <a class="btn" href="/posts/2017/11/27/life-is-one-man-fight.html">--READ MORE--</a>
@@ -1109,53 +1086,11 @@ syntax <span class="nb">enable</span>
 </footer>
                     -->
 
-<script type="text/javascript">
 
-$(document).ready(function(){
-  $('.post-container').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('data-fancybox')) return;
-      var alt = this.alt;
-      /*if (alt) $(this).after('<span class="caption">' + alt + '</span>');*/
-      $(this).wrap('<a href="' + this.src + '"  data-fancybox ></a>');
-    });
-    $(this).find('.data-fancybox').each(function(){
-      $(this).attr('rel', 'article' + i);
-    });
-  });
-  $('[data-fancybox]').fancybox({
-    toolbar : false,
-    /*margin : [60, 40],*/
-
-    smallBtn : true,
-    image : {
-        // Wait for images to load before displaying
-        // Requires predefined image dimensions
-        // If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
-        preload : true
-    },
-     mobile : {
-        idleTime : false,
-        margin   : 40,
-        clickContent : function( current, event ) {
-            return current.type === 'image' ? 'toggleControls' : 'close';
-        },
-        clickSlide : 'close',
-        clickOutside : 'close',
-        dblclickContent : false,
-        dblclickSlide : false,
-        clickOutside : false,
-    },
-
-  });
-
-});
-
-</script>
 
 <!--
 -->
-
+<script src="/theme/js/theme.js"></script>
 <!-- Google Analytics -->
 <script type="text/javascript">
 
@@ -1200,8 +1135,6 @@ $(document).ready(function(){
 </script>
 
 <!-- End Google Analytics Code -->
-
-
 
 </div>
 </body>
