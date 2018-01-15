@@ -73,7 +73,17 @@
     <script src="/{{ THEME_STATIC_DIR }}/js/highcharts.js"></script>
     <script src="/{{ THEME_STATIC_DIR }}/js/exporting.js"></script>
     <script src="/{{ THEME_STATIC_DIR }}/js/holder.js"></script>
-    <script src="/{{ THEME_STATIC_DIR }}/fancybox/jquery.fancybox.min.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/{{ THEME_STATIC_DIR }}/fancybox/source/jquery.fancybox.pack.js"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/{{ THEME_STATIC_DIR }}/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="/{{ THEME_STATIC_DIR }}/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/{{ THEME_STATIC_DIR }}/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
     <!-- mathtex -->
     <!--
     <script type="text/javascript"
