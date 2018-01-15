@@ -24,19 +24,17 @@ $(document).ready(function(){
             closeBtn: true,
             fitToView: true,
             autoSize: true,
-            image : {
-                           // Wait for images to load before displaying
-                           // Requires predefined image dimensions
-                           // If 'auto' - will zoom in thumbnail if 'width' and 'height' attributes are found
-                           preload : true
-                       },
-            /*
             helper:{
+            /*
                 title:{
                     type: 'outside',
                     position:top,
-                }
-            },*/
+                },*/
+                thumbs	: {
+                				width	: 50,
+                				height	: 50
+                			}
+            },
         }
          $('.post-container').each(function(i){
            $(this).find('img').each(function(){
