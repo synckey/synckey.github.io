@@ -43,7 +43,7 @@ $(document).ready(function(){
              if ($(this).parent().hasClass('data-fancybox')) return;
              var alt = this.alt;
              /*if (alt) $(this).after('<span class="caption">' + alt + '</span>');*/
-             $(this).wrap('<a href="' + this.src + '"  data-fancybox ></a>');
+             $(this).wrap('<a href="' + this.src + '"  data-fancybox rel='img'></a>');
            });
            $(this).find('.data-fancybox').each(function(){
              $(this).attr('rel', 'article' + i);
