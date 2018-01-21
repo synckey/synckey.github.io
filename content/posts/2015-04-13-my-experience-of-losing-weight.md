@@ -5,13 +5,6 @@ Tags: ielts,writing
 Slug: my-experience-of-losing-weight
 Author: Andy
 Place: Beijing
-<!--
-<div class="figure">
-<img class='u-full-width' src='/static/images/2015_04_13_weights.svg' style='width: 100%;'>
-        <div class="caption">体重变化</div>
-</div>
--->
-
 <div id="weight_container" style=" margin: 0 auto"></div>
 
 >声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。
@@ -54,10 +47,6 @@ Place: Beijing
 
 强烈推荐runtastic系列，可以先用免费版，如果觉得好，可以买pro版。
 
-
-
-
-
 - Keep 这款软件可以用来记录跑步，也有很多室内的健身课。
 - runtastic 主要用来记录跑步距离和速度，建议用着好可以买一个pro版。这个软件的iPhone版可以后台运行，软件启动后把屏幕关了也能记录跑步。
 - Squats  深蹲，里面有三个level，每个level都有详细的计划，可以不按计划严格执行，每次做一份就好。免费版只能用level1。
@@ -70,7 +59,7 @@ Place: Beijing
 和《潘吉Jenny告诉你》实在太赞，一边运动一边练口语。
 
 <div class="figure">
-    <img src="/static/images/2015_04_13_softwares.jpg" alt="suzhou" class="img-responsive carousel-inner img-rounded"/>
+    <img src="/static/images/2015_04_13_softwares.jpg" alt="Useful Apps" class="img-responsive carousel-inner img-rounded"/>
     <div class="caption">Useful Apps</div>
 </div>
 
@@ -124,15 +113,8 @@ a
 ###有图有真相
 
 <div class="figure">
-    <img src="/static/images/2015_04_13_comparasion.jpg" alt="suzhou" class="img-responsive carousel-inner img-rounded"/>
+    <img src="/static/images/2015_04_13_comparasion.jpg" alt="体重对比" class="img-responsive carousel-inner img-rounded"/>
 </div>
-<!--
-<container>
-<img src="/static/images/2014_2016_compare.jpg" alt="compare" class="carousel-inner  img-rounded img-responsive center-block" style='width: 60%;'/>
-<img src="/static/images/2014_2015_compare.jpg" alt="compare" class="carousel-inner  img-rounded img-responsive center-block" style='width: 60%;'/>
-<img src="/static/images/2015_tnf_and_half_marathon.jpg" alt="tnf"  class="carousel-inner  img-rounded img-responsive center-block" style='width: 60%;'/>
-</container>
--->
 
 <script>
 $(function () {

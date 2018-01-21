@@ -24,9 +24,9 @@ input->feature representation->learning algorithm
 
 ## 神经网络
 ###Neurons
-<p align="center">
+<div class="figure">
 <img src="/static/images/SingleNeuron.png" alt="SingleNeuron"  width="40%" />
-</p>
+</div>
 
 神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f(\sum_{i=1}^{3}(W_ix_i+b)$为输出的计算单元.
 其中$f:\mathbb{R}\mapsto\mathbb{R}$,被称为激活函数(activation function).常用的激活函数有:
@@ -38,15 +38,15 @@ input->feature representation->learning algorithm
 * rectified linear function: $f(z) = \max(0,x)$
 
 这些函数的形状如下:
-<p align="center">
+<div class="figure">
 <img src="/static/images/ActivationFunctions.png" alt="ActivationFunctions"  width="50%" />
-</p>
+</div>
 
 ###神经网络模型
 将一系列**神经元**组合在一起,就构成一个神经网络,一个神经元的输出可以作为另外一个神经元的输入.例如,下图是一个简单的神经网络:
-<p align="center">
+<div class="figure">
 <img src="/static/images/Network331.png" alt="neualNetwork"  width="50%" />
-</p>
+</div>
 在这个示意图中,黄色的圆圈代表神经元,蓝色的圆圈代表整个神经网络的输入.被标为$+1$的圆圈称作**bias unit**,代表**截距项**(intercept term).
 网络最左边的层叫做**输入层**(input layer),最右边叫做**输出层**(output layer).中间所有的节点组成的层叫做**隐藏层**(hidden layer),因为我们不能在训练样本里面观察到它的值.
 
@@ -187,9 +187,9 @@ $$
 ###深度学习的基本思想
 ####自编码器(Autoencoders)
 假设我们只有一个没有带类别标签的训练样本集合 $\{x^{(1)}, x^{(2)}, x^{(3)}, \ldots\}$ ，其中$x^{(i)} \in \Re^{n}$ 。自编码神经网络是一种无监督学习算法，它使用了反向传播算法，并让目标值等于输入值，比如 $y^{(i)} = x^{(i)}$ 。下图是一个自编码神经网络的示例。
-<p align="center">
+<div class="figure">
 <img src="/static/images/Autoencoder.png" alt="Autoencoder636"  width="50%" />
-</p>
+</div>
 自编码神经网络尝试学习一个$ h_{W,b}(x) \approx x$ 的函数,它尝试逼近一个恒等函数，从而使得输出 $\hat{x}$ 接近于输入$x$.自编码神经网络的意义在于:
 
 1. 当我们限制隐藏神经元的数量让它小于输入的神经元个数,就可以得到输入的压缩表示(数据降维).
@@ -205,11 +205,9 @@ $$
 
 #### 逐层训练方法
 与神经网络使用反向训练的方法不同,神经网络使用逐层贪婪训练方法训练模型.主要思路是每次只训练网络中的一层，即我们首先训练一个只含一个隐藏层的网络，仅当这层网络训练结束之后才开始训练一个有两个隐藏层的网络，以此类推。在每一步中，把已经训练好的前$k-1$ 层固定，然后增加第$k$层（也就是将已经训练好的前$k-1$ 的输出作为输入）。每一层的训练可以是有监督的（例如，将每一步的分类误差作为目标函数），但更通常使用无监督方法(例如自动编码器).
-
-<p align="center">
+<div class="figure">
 <img src="/static/images/deeplearningfeatures.png" alt="DeepLearningFeautures"  width="60%" />
-</p>
-
+</div>
 ###深度学习的应用
 * 图像识别
 * 语音识别
