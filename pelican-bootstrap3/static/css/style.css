@@ -192,7 +192,7 @@ a {
 }
 
 .post-container span.footnote {
-    font-size: 70%;
+    /*font-size: 70%;*/
     color: #777;
 }
 
@@ -401,6 +401,12 @@ a {
         display: inline-block;
     }
 
+    .navbar-collapse{
+        border-top: 0px;
+        -webkit-box-shadow:none;
+        box-shadow: none;
+    }
+
     .post-header {
         margin: 0 auto;
         padding: 0;
@@ -519,6 +525,7 @@ a {
     .series-links ol {
         margin-left: 40px;
     }
+
 }
 
 .archive-link {

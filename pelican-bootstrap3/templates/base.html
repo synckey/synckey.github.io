@@ -8,7 +8,7 @@
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
     {% if 'liquid_tags.notebook' in PLUGINS %}
     {% include 'includes/liquid_tags_nb_header.html' %}
@@ -26,11 +26,10 @@
     {% if TOUCHICON %}
     <link rel="apple-touch-icon" href="/{{ TOUCHICON }}">
     {% endif %}
+
     <!-- Thumbnail for wechat, when share links in wechat,it will use this piture for thumbnail.This can be specific for
          every sigle page. -->
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
-            src='/static/images/{% block wechat_pic %}{{DEFAULT_WECHAT_PIC}}{% endblock %}'/></div>
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img src='/static/images/{% block wechat_pic %}{{DEFAULT_WECHAT_PIC}}{% endblock %}'/></div>
 
     <!--
         {% block canonical_rel %}{% endblock %}
@@ -84,32 +83,9 @@
 
     <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
     <script type="text/javascript" src="/{{ THEME_STATIC_DIR }}/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
-    <!-- mathtex -->
-    <!--
-    <script type="text/javascript"
-            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-
-
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {inlineMath: [['$', '$']],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']},
-            processEscapes: true,
-        });
-       MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += 'has-jax';
-        }
-      });
-
-    </script>-->
     <script type="text/javascript"
             src="/{{ THEME_STATIC_DIR }}/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
-
 
     <!-- Bootstrap -->
     {% if BOOTSTRAP_THEME %}
@@ -118,13 +94,9 @@
     {% else %}
     <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/normalize.css"/>
-    <!--
-    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/skeleton.css"/>-->
     <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/style.css"/>
     {% endif %}
-    <!--
-    <link href="/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" rel="stylesheet">
-    -->
+
     <link href="/{{ THEME_STATIC_DIR }}/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css"
           rel="stylesheet">
 
