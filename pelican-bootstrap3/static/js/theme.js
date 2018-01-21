@@ -24,11 +24,11 @@ $(document).ready(function () {
         fitToView: true,
         autoSize: true,
         helpers: {
-/*
-                title:{
-                    type: 'outside',
-                    position:top,
-                },*/
+            /*
+                            title:{
+                                type: 'outside',
+                                position:top,
+                            },*/
             thumbs: {
                 width: 80,
                 height: 80
@@ -39,7 +39,7 @@ $(document).ready(function () {
         $(this).find('img').each(function () {
             if ($(this).parent().hasClass('data-fancybox')) return;
             var alt = this.alt;
-            $(this).wrap('<a href="' + this.src + '"  data-fancybox rel="fancybox-thumb" class="fancybox-thumb"></a>');
+            $(this).wrap('<a href="' + this.src + '"  data-fancybox rel="fancybox-thumb" class="fancybox-thumb" title="' + alt + '"></a>');
         });
         /*
         $(this).find('.data-fancybox').each(function () {
