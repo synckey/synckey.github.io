@@ -23,15 +23,15 @@ $(document).ready(function () {
         closeBtn: true,
         fitToView: true,
         autoSize: true,
-        helper: {
-            /*
+        helpers: {
+/*
                 title:{
                     type: 'outside',
                     position:top,
                 },*/
             thumbs: {
-                width: 50,
-                height: 50
+                width: 80,
+                height: 80
             }
         },
     }
@@ -39,13 +39,13 @@ $(document).ready(function () {
         $(this).find('img').each(function () {
             if ($(this).parent().hasClass('data-fancybox')) return;
             var alt = this.alt;
-            $(this).wrap('<a href="' + this.src + '"  data-fancybox rel="fancybox-thumb"></a>');
+            $(this).wrap('<a href="' + this.src + '"  data-fancybox rel="fancybox-thumb" class="fancybox-thumb"></a>');
         });
         /*
         $(this).find('.data-fancybox').each(function () {
             $(this).attr('rel', 'fancybox-thumb');
         });*/
     });
-    $('[data-fancybox]').fancybox(fancybox_settings);
+    $('.fancybox-thumb').fancybox(fancybox_settings);
 
 });

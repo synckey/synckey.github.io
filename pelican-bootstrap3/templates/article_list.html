@@ -3,10 +3,11 @@
 {% block content %}
 {% if articles %}
 {% for article in (articles_page.object_list if articles_page else articles) %}
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/{{ article.url }}">{{ article.title }}</a></h3>
+        <h2><a href="/{{ article.url }}">{{ article.title }}</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">{{ article.date|strftime('%Y-%m-%d') }}</span>
