@@ -33,7 +33,7 @@
 所以最后一公里，又恢复了奔跑，一直冲向了有好几道拱门的终点线，那里有穿着性感衣服的拉拉队。&lt;/p&gt;
 &lt;p&gt;最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="babies" class="img-responsive center-block carousel-inner img-rounded" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
+&lt;img alt="2016.06.17 北京马拉松" class="img-responsive carousel-inner center-block img-rounded" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
 &lt;div class="caption"&gt;2016.06.17 北京马拉松&lt;/div&gt;
 &lt;/div&gt;</content><category term="life"></category></entry><entry><title>BFS遍历到图的指定层的一种方法</title><link href="http://synckey.name/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html" rel="alternate"></link><published>2017-05-10T00:00:00+08:00</published><updated>2017-05-10T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-05-10:/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html</id><summary type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;leetcode原题&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:&lt;/p&gt;
@@ -249,13 +249,7 @@ $$
 &lt;li&gt;Ctrl+y 粘贴&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.xiaozhou.net/got_hhkb_pro_2-2013-06-03.html"&gt;码农神器HHKB Pro2入手与开箱&lt;/a&gt;&lt;/p&gt;</content><category term="hhkb"></category><category term="keyboad"></category></entry><entry><title>我是怎么减掉了30斤</title><link href="http://synckey.name/posts/2015/04/13/my-experience-of-losing-weight.html" rel="alternate"></link><published>2015-04-13T00:00:00+08:00</published><updated>2015-04-13T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-04-13:/posts/2015/04/13/my-experience-of-losing-weight.html</id><summary type="html">&lt;!--
-&lt;div class="figure"&gt;
-&lt;img class='u-full-width' src='/static/images/2015_04_13_weights.svg' style='width: 100%;'&gt;
-        &lt;div class="caption"&gt;体重变化&lt;/div&gt;
-&lt;/div&gt;
---&gt;
-&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="http://www.xiaozhou.net/got_hhkb_pro_2-2013-06-03.html"&gt;码农神器HHKB Pro2入手与开箱&lt;/a&gt;&lt;/p&gt;</content><category term="hhkb"></category><category term="keyboad"></category></entry><entry><title>我是怎么减掉了30斤</title><link href="http://synckey.name/posts/2015/04/13/my-experience-of-losing-weight.html" rel="alternate"></link><published>2015-04-13T00:00:00+08:00</published><updated>2015-04-13T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-04-13:/posts/2015/04/13/my-experience-of-losing-weight.html</id><summary type="html">&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -267,13 +261,7 @@ $$
 因为可能折腾了一个月，体重还是没有任何变化，就丧失信心，中途放弃了。对我个人而言，我的目标其实就是完成计划，不是减多少斤，而是坚持了多久，做了多少天运动。
 制定减肥计划最重要的两条就是：a.不能对我的日常生活产生干扰，b.可持续。 所以我每天的运动时间限制在1个小时以内（一开始要更短），这样一来，不需要
 匀出其他时间，就可以实施计划。可持续其实包含两层含义：a.计划不需要太吃力就能完成（&lt;strong&gt;extremely important&lt;/strong&gt;）,如果计划目标定的太高，比如每天跑10公里，
-肯定没人坚持的下去。b …&lt;/p&gt;</summary><content type="html">&lt;!--
-&lt;div class="figure"&gt;
-&lt;img class='u-full-width' src='/static/images/2015_04_13_weights.svg' style='width: 100%;'&gt;
-        &lt;div class="caption"&gt;体重变化&lt;/div&gt;
-&lt;/div&gt;
---&gt;
-&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
+肯定没人坚持的下去。b …&lt;/p&gt;</summary><content type="html">&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -319,7 +307,7 @@ $$
 和《潘吉Jenny告诉你》实在太赞，一边运动一边练口语。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="suzhou" class="img-responsive carousel-inner img-rounded" src="/static/images/2015_04_13_softwares.jpg"/&gt;
+&lt;img alt="Useful Apps" class="img-responsive carousel-inner img-rounded" src="/static/images/2015_04_13_softwares.jpg"/&gt;
 &lt;div class="caption"&gt;Useful Apps&lt;/div&gt;
 &lt;/div&gt;
 &lt;h2&gt;进行中&lt;/h2&gt;
@@ -359,15 +347,8 @@ a&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3&gt;有图有真相&lt;/h3&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="suzhou" class="img-responsive carousel-inner img-rounded" src="/static/images/2015_04_13_comparasion.jpg"/&gt;
+&lt;img alt="体重对比" class="img-responsive carousel-inner img-rounded" src="/static/images/2015_04_13_comparasion.jpg"/&gt;
 &lt;/div&gt;
-&lt;!--
-&lt;container&gt;
-&lt;img src="/static/images/2014_2016_compare.jpg" alt="compare" class="carousel-inner  img-rounded img-responsive center-block" style='width: 60%;'/&gt;
-&lt;img src="/static/images/2014_2015_compare.jpg" alt="compare" class="carousel-inner  img-rounded img-responsive center-block" style='width: 60%;'/&gt;
-&lt;img src="/static/images/2015_tnf_and_half_marathon.jpg" alt="tnf"  class="carousel-inner  img-rounded img-responsive center-block" style='width: 60%;'/&gt;
-&lt;/container&gt;
---&gt;
 &lt;script&gt;
 $(function () {
     $('#weight_container').highcharts({

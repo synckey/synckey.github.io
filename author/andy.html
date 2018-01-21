@@ -5,14 +5,11 @@
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
 
-    <!-- Thumbnail for wechat, when share links in wechat,it will use this piture for thumbnail.This can be specific for
-         every sigle page. -->
 
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
-            src='/static/images/wechat_logo_300x300.jpg'/></div>
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img src='/static/images/wechat_logo_300x300.jpg'/></div>
 
     <!--
     -->
@@ -49,42 +46,15 @@
 
     <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
     <script type="text/javascript" src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
-    <!-- mathtex -->
-    <!--
-    <script type="text/javascript"
-            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-
-
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {inlineMath: [['$', '$']],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']},
-            processEscapes: true,
-        });
-       MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += 'has-jax';
-        }
-      });
-
-    </script>-->
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="/theme/css/normalize.css"/>
-    <!--
-    <link rel="stylesheet" href="/theme/css/skeleton.css"/>-->
     <link rel="stylesheet" href="/theme/css/style.css"/>
-    <!--
-    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
-    -->
+
     <link href="/theme/css/pygments/github.css"
           rel="stylesheet">
 
@@ -129,10 +99,11 @@ Andy's Blog            </a>
 
 <!-- Banner -->
 <!-- End Banner -->
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2018/01/01/2017-summery.html">2017 Full of Changes</a></h3>
+        <h2><a href="/posts/2018/01/01/2017-summery.html">2017 Full of Changes</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2018-01-01</span>
@@ -156,10 +127,11 @@ Andy's Blog            </a>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">金缕曲词二首(清顾贞观)</a></h3>
+        <h2><a href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">金缕曲词二首(清顾贞观)</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-12-07</span>
@@ -180,10 +152,11 @@ Andy's Blog            </a>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">Produce 1000 Unique Four Digit Numbers</a></h3>
+        <h2><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">Produce 1000 Unique Four Digit Numbers</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-12-06</span>
@@ -210,10 +183,11 @@ Conditions:  <br/>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/11/27/life-is-one-man-fight.html">一个人的战争</a></h3>
+        <h2><a href="/posts/2017/11/27/life-is-one-man-fight.html">一个人的战争</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-11-27</span>
@@ -226,7 +200,7 @@ Conditions:  <br/>
 <p>有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from <a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment">假装在纽约</a></p>
 </blockquote>
 <div class="figure">
-<img alt="一个人的战争" class="img-responsive center-block carousel-inner img-rounded" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
+<img alt="一个人的战争" class="img-responsive carousel-inner center-block img-rounded" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
 </div>
         <div class="read-more">
             <a class="btn" href="/posts/2017/11/27/life-is-one-man-fight.html">--READ MORE--</a>
@@ -234,10 +208,11 @@ Conditions:  <br/>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/11/26/useful-set-phrases.html">Useful Set Phrases</a></h3>
+        <h2><a href="/posts/2017/11/26/useful-set-phrases.html">Useful Set Phrases</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-11-26</span>
@@ -266,10 +241,11 @@ the dust has settled …</p>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/09/20/my-first-marathon.html">第一次跑马</a></h3>
+        <h2><a href="/posts/2017/09/20/my-first-marathon.html">第一次跑马</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-09-20</span>
@@ -292,10 +268,11 @@ the dust has settled …</p>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/06/26/new-to-auckland.html">Auckland 小记</a></h3>
+        <h2><a href="/posts/2017/06/26/new-to-auckland.html">Auckland 小记</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-06-26</span>
@@ -317,10 +294,11 @@ the dust has settled …</p>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/06/04/git-push-to-two-repositories.html">Git Push to Two Repositories at the Same Time</a></h3>
+        <h2><a href="/posts/2017/06/04/git-push-to-two-repositories.html">Git Push to Two Repositories at the Same Time</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-06-04</span>
@@ -343,10 +321,11 @@ git remote add origin https://git …</pre></div>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html">BFS遍历到图的指定层的一种方法</a></h3>
+        <h2><a href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html">BFS遍历到图的指定层的一种方法</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-05-10</span>
@@ -366,10 +345,11 @@ git remote add origin https://git …</pre></div>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/03/30/read-mat-files-in-python.html">Read .mat Files in Python</a></h3>
+        <h2><a href="/posts/2017/03/30/read-mat-files-in-python.html">Read .mat Files in Python</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-03-30</span>
@@ -391,10 +371,11 @@ git remote add origin https://git …</pre></div>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html">Enable Pelican to Render Markdown Tables</a></h3>
+        <h2><a href="/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html">Enable Pelican to Render Markdown Tables</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-03-19</span>
@@ -420,10 +401,11 @@ git remote add origin https://git …</pre></div>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/03/19/see-you-ten-years-later.html">今朝一别，或是流水十年</a></h3>
+        <h2><a href="/posts/2017/03/19/see-you-ten-years-later.html">今朝一别，或是流水十年</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-03-19</span>
@@ -441,10 +423,11 @@ git remote add origin https://git …</pre></div>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">Rename a Tensor or Operation in Tensorflow</a></h3>
+        <h2><a href="/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">Rename a Tensor or Operation in Tensorflow</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-03-17</span>
@@ -460,10 +443,11 @@ git remote add origin https://git …</pre></div>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/02/23/2016-summery.html">2016 Full of Serendipities</a></h3>
+        <h2><a href="/posts/2017/02/23/2016-summery.html">2016 Full of Serendipities</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-02-23</span>
@@ -496,10 +480,11 @@ git remote add origin https://git …</pre></div>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2017/02/20/review-of-probability.html">《概率论》复习笔记</a></h3>
+        <h2><a href="/posts/2017/02/20/review-of-probability.html">《概率论》复习笔记</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2017-02-20</span>
@@ -523,10 +508,11 @@ $$
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/11/07/eoi-documents.html">出生公正和无犯罪记录证明公正</a></h3>
+        <h2><a href="/posts/2016/11/07/eoi-documents.html">出生公正和无犯罪记录证明公正</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-11-07</span>
@@ -549,10 +535,11 @@ $$
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/11/07/sfv-documents.html">SFV 材料准备</a></h3>
+        <h2><a href="/posts/2016/11/07/sfv-documents.html">SFV 材料准备</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-11-07</span>
@@ -585,10 +572,11 @@ $$
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/11/06/succeed-to-get-sfv.html">SFV Got</a></h3>
+        <h2><a href="/posts/2016/11/06/succeed-to-get-sfv.html">SFV Got</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-11-06</span>
@@ -607,10 +595,11 @@ $$
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/10/20/notes-for-leetcode.md.html">Notes for Leetcode</a></h3>
+        <h2><a href="/posts/2016/10/20/notes-for-leetcode.md.html">Notes for Leetcode</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-10-20</span>
@@ -633,10 +622,11 @@ $$
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/10/11/my-bashrc-backup.html">My Bashrc Backup</a></h3>
+        <h2><a href="/posts/2016/10/11/my-bashrc-backup.html">My Bashrc Backup</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-10-11</span>
@@ -664,10 +654,11 @@ $$
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">JVM Monitor Tool---jvisualvm</a></h3>
+        <h2><a href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">JVM Monitor Tool---jvisualvm</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-07-26</span>
@@ -690,10 +681,11 @@ $$
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/04/20/shang-pin-jiao-zi.html">上品饺子</a></h3>
+        <h2><a href="/posts/2016/04/20/shang-pin-jiao-zi.html">上品饺子</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-04-20</span>
@@ -710,10 +702,11 @@ $$
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/03/26/notes-of-grammar-in-use.html">Grammar in Use 笔记</a></h3>
+        <h2><a href="/posts/2016/03/26/notes-of-grammar-in-use.html">Grammar in Use 笔记</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-03-26</span>
@@ -741,10 +734,11 @@ $$
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">让VIM记录文件上次编辑的位置</a></h3>
+        <h2><a href="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">让VIM记录文件上次编辑的位置</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-03-11</span>
@@ -773,10 +767,11 @@ syntax <span class="nb">enable</span>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/03/01/summary-concepts-of-deep-learning.html">Summary Concepts of Deep Learning</a></h3>
+        <h2><a href="/posts/2016/03/01/summary-concepts-of-deep-learning.html">Summary Concepts of Deep Learning</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-03-01</span>
@@ -806,9 +801,9 @@ syntax <span class="nb">enable</span>
 </ul>
 <h2>神经网络</h2>
 <h3>Neurons</h3>
-<p><p align="center">
+<p><div class="figure">
 <img alt="SingleNeuron" class="" src="/static/images/SingleNeuron.png" width="40%"/>
-</p></p>
+</div></p>
 <p>神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f …</p>
         <div class="read-more">
             <a class="btn" href="/posts/2016/03/01/summary-concepts-of-deep-learning.html">--READ MORE--</a>
@@ -816,10 +811,11 @@ syntax <span class="nb">enable</span>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html">HHKB 设置与快捷键</a></h3>
+        <h2><a href="/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html">HHKB 设置与快捷键</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2016-02-26</span>
@@ -840,10 +836,11 @@ syntax <span class="nb">enable</span>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2015/12/24/plot-sigmoid-in-matlab.html">Plot Sigmoid in Matlab</a></h3>
+        <h2><a href="/posts/2015/12/24/plot-sigmoid-in-matlab.html">Plot Sigmoid in Matlab</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2015-12-24</span>
@@ -867,10 +864,11 @@ syntax <span class="nb">enable</span>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2015/12/24/where-does-sigmoid-come-from.html">Where does sigmoid come from</a></h3>
+        <h2><a href="/posts/2015/12/24/where-does-sigmoid-come-from.html">Where does sigmoid come from</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2015-12-24</span>
@@ -897,10 +895,11 @@ syntax <span class="nb">enable</span>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></h3>
+        <h2><a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2015-11-03</span>
@@ -925,10 +924,11 @@ syntax <span class="nb">enable</span>
     </div>
 </div>
 <div class="separator"></div>
-<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
-        <h3><a href="/posts/2015/05/20/iterm2-clone-session.html">Iterm2 Clone Session</a></h3>
+        <h2><a href="/posts/2015/05/20/iterm2-clone-session.html">Iterm2 Clone Session</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2015-05-20</span>
