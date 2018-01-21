@@ -16,7 +16,7 @@ body {
 
 .navbar-brand {
     padding-left: 10px;
-    font-size: 15px;
+    /*font-size: 15px;*/
 }
 
 a {
@@ -773,6 +773,9 @@ h2#comment {
 
 #article-comment #ds-hot-posts, #article-comment .ds-comments-info, #article-comment .ds-login-buttons, #article-comment .ds-meta, #article-comment .ds-post-options, #article-comment .ds-replybox .ds-avatar, #article-comment .ds-toolbar, #article-comment .ds-visitor, .post-list-item a.heading-anchor, .search-page-search #search-spinner {
     display: none
+}
+.navbar-nav > li > a{
+    font-size: 18px;
 }
 
 
