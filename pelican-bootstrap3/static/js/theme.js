@@ -39,11 +39,12 @@ $(document).ready(function () {
         $(this).find('img').each(function () {
             if ($(this).parent().hasClass('data-fancybox')) return;
             var alt = this.alt;
-            $(this).wrap('<a href="' + this.src + '"  data-fancybox rel="gallery"></a>');
+            $(this).wrap('<a href="' + this.src + '"  data-fancybox rel="fancybox-thumb"></a>');
         });
+        /*
         $(this).find('.data-fancybox').each(function () {
             $(this).attr('rel', 'fancybox-thumb');
-        });
+        });*/
     });
     $('[data-fancybox]').fancybox(fancybox_settings);
 
