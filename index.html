@@ -103,6 +103,29 @@ Andy's Blog            </a>
 <div class="separator"></div>-->
 <div class="post-container">
     <div class="post-header">
+        <h2><a href="/posts/2018/02/03/a-job.html">笑话一则</a></h2>
+        <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2018-02-03</span>
+            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        </div>
+    </div>
+
+
+    <div class="post-content"><p>有一座庙，庙里和尚都说道性很高，可戒女色。有人要测验他们，请他们围成一个大圆圈，每人都盘腿坐下，两腿中间，放一面鼓。然后青睐一个美女，在圈中大跳脱衣舞。
+不料一跳之下，所有小和尚腿上的鼓都咚咚敲响起来，唯有老和尚的寂然不动。大家对老和尚佩服极了。不料把鼓拿起来一看，原来鼓皮都给捅破了。
+这个故事说明了一件事，就是人要”不可见欲“才能自治。</p>
+<p>--李敖《上山上山爱》</p>
+        <div class="read-more">
+            <a class="btn" href="/posts/2018/02/03/a-job.html">--READ MORE--</a>
+        </div>
+    </div>
+</div>
+<div class="separator"></div>
+<!--
+<div class="separator"></div>-->
+<div class="post-container">
+    <div class="post-header">
         <h2><a href="/posts/2018/01/01/2017-summery.html">2017 Full of Changes</a></h2>
         <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
@@ -200,7 +223,7 @@ Conditions:  <br/>
 <p>有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from <a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment">假装在纽约</a></p>
 </blockquote>
 <div class="figure">
-<img alt="一个人的战争" class="img-responsive carousel-inner center-block img-rounded" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
+<img alt="一个人的战争" class="center-block img-responsive img-rounded carousel-inner" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
 </div>
         <div class="read-more">
             <a class="btn" href="/posts/2017/11/27/life-is-one-man-fight.html">--READ MORE--</a>
@@ -335,7 +358,7 @@ git remote add origin https://git …</pre></div>
 
 
     <div class="post-content"><h4>1. 文件</h4>
-<table class="table-striped table-hover table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
 <th align="left">文件</th>
@@ -418,7 +441,7 @@ git remote add origin https://git …</pre></div>
 </tbody>
 </table>
 <h4>2. 资金</h4>
-<table class="table-striped table-hover table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
 <th align="left">资金</th>
@@ -1008,35 +1031,6 @@ syntax <span class="nb">enable</span>
 分布可以认为是二项分布一个特例($n=1$)，其结果只能取$0$或1。假设实验成功的概率为$p$,则$Bernoulli …</p>
         <div class="read-more">
             <a class="btn" href="/posts/2015/12/24/where-does-sigmoid-come-from.html">--READ MORE--</a>
-        </div>
-    </div>
-</div>
-<div class="separator"></div>
-<!--
-<div class="separator"></div>-->
-<div class="post-container">
-    <div class="post-header">
-        <h2><a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></h2>
-        <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2015-11-03</span>
-            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-        </div>
-    </div>
-
-
-    <div class="post-content"><p>在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：</p>
-<div class="github"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="kd">implements</span> <span class="n">Function</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Boolean</span><span class="o">&gt;</span> <span class="o">{</span>
-
-    <span class="kd">private</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">lookupTable</span><span class="o">=</span><span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;();</span>
-
-    <span class="kd">public</span> <span class="nf">Test</span><span class="o">(</span><span class="n">Broadcast</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;&gt;</span> <span class="n">broadcast</span><span class="o">){</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">lookupTable</span><span class="o">=</span><span class="n">broadcast</span><span class="o">.</span><span class="na">value</span><span class="o">();</span>
-    <span class="o">}</span>
-    <span class="kd">public</span> <span class="n">Boolean</span> <span class="nf">call</span><span class="o">(</span><span class="n">String</span> <span class="n">line</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-        <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">lookupTable</span><span class="o">.</span><span class="na">containsKey …</span></pre></div>
-        <div class="read-more">
-            <a class="btn" href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">--READ MORE--</a>
         </div>
     </div>
 </div>
