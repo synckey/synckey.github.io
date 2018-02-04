@@ -21,7 +21,7 @@ Place: Beijing
 
 <div class="center-block">
 <div>
-<audio controls="controls" autoplay="autoplay">
+<audio controls="controls" >
 <source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg">
 </audio>
 </div>
@@ -31,7 +31,7 @@ Place: Beijing
 
 <div class="center-block">
 <div>
-<embed src="http://player.video.qiyi.com/84e8c3d6905e41281ed9579f1495ffc8/0/0/w_19rtd9yrst.swf-albumId=5153565009-tvId=5153565009-isPurchase=0-cnId=27" allowFullScreen="true" quality="high" width="480" height="350" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+<embed src="http://player.video.qiyi.com/84e8c3d6905e41281ed9579f1495ffc8/0/0/w_19rtd9yrst.swf-albumId=5153565009-tvId=5153565009-isPurchase=0-cnId=27" allowFullScreen="true" quality="high" width="70%" height="350" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 </div>
 <div class="caption">《彩云追月》李云迪</div>
 </div>
@@ -40,7 +40,7 @@ Place: Beijing
 
 <div class="center-block">
 <div>
-<video controls="controls" width="480" height="350">
+<video controls="controls" width="70%" height="350">
   <source src="/static/media/jiduhualuoshifengfeifei.mp4" type="video/mp4" />
 </video>
 </div>
