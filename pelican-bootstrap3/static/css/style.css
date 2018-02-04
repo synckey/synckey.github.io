@@ -23,7 +23,6 @@ a {
     text-decoration: none;
 }
 
-
 .page-header {
     margin: 0px;
     margin-top: 40px;
@@ -144,7 +143,8 @@ a {
     margin-right: 0px;
     padding-left: 22px;
 }
-.footnote li p{
+
+.footnote li p {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
@@ -170,7 +170,7 @@ a {
     background: #eee;
     /*text-shadow: 0 1px #fff;*/
     padding: 0 0.2em;
-    border-radius:0 0px;
+    border-radius: 0 0px;
     color: #555
 }
 
@@ -178,7 +178,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width:80%;
+    width: 80%;
 }
 
 .post-content img.pull-left {
@@ -229,7 +229,6 @@ a {
     box-sizing: content-box;
     margin-bottom: 25px;
 }
-
 
 .post-container .figure {
     margin-top: 20px;
@@ -291,7 +290,7 @@ a {
     color: #000;
 }
 
-.post-container blockquote  {
+.post-container blockquote {
     border-left: 0px;
     padding-left: 0px;
     padding-right: 0px;
@@ -301,7 +300,7 @@ a {
     font-size: 100%;
 }
 
-.centerquote  {
+.centerquote {
     border-left: 0px;
     padding-left: 0px;
     padding-right: 0px;
@@ -401,9 +400,9 @@ a {
         display: inline-block;
     }
 
-    .navbar-collapse{
+    .navbar-collapse {
         border-top: 0px;
-        -webkit-box-shadow:none;
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
 
@@ -457,10 +456,9 @@ a {
         line-height: 1.3;
     }
 
-    .navbar-default{
+    .navbar-default {
         margin-bottom: 0px;
     }
-
 
 }
 
@@ -787,13 +785,14 @@ h2#comment {
 #article-comment #ds-hot-posts, #article-comment .ds-comments-info, #article-comment .ds-login-buttons, #article-comment .ds-meta, #article-comment .ds-post-options, #article-comment .ds-replybox .ds-avatar, #article-comment .ds-toolbar, #article-comment .ds-visitor, .post-list-item a.heading-anchor, .search-page-search #search-spinner {
     display: none
 }
-.navbar-nav > li > a{
+
+.navbar-nav > li > a {
     font-size: 18px;
 }
 
-.nav.navbar-nav.navbar-right{
-    float:right;
-    border-color:transparent;
+.nav.navbar-nav.navbar-right {
+    float: right;
+    border-color: transparent;
 }
 
 
