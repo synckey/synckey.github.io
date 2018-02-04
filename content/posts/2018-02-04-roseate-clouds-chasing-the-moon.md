@@ -19,19 +19,32 @@ Place: Beijing
 
 
 
-
 <div class="center-block">
-<embed src="http://player.video.qiyi.com/aa76f251e9ee95ae29c420ef76ba5faf/0/0/w_19rs9lhllx.swf-albumId=2720753609-tvId=2720753609-isPurchase=0-cnId=5" allowFullScreen="true" quality="high" width="480" height="350" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+<div>
+<audio controls="controls" autoplay="autoplay">
+<source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg">
+</audio>
+</div>
+<div class="caption">《彩云追月》交响乐版</div>
 </div>
 
+
 <div class="center-block">
+<div>
 <embed src="http://player.video.qiyi.com/84e8c3d6905e41281ed9579f1495ffc8/0/0/w_19rtd9yrst.swf-albumId=5153565009-tvId=5153565009-isPurchase=0-cnId=27" allowFullScreen="true" quality="high" width="480" height="350" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 </div>
+<div class="caption">《彩云追月》李云迪</div>
+</div>
+
+
 
 <div class="center-block">
+<div>
 <video controls="controls" width="480" height="350">
-  <source src="/static/videos/jiduhualuoshifengfeifei.mp4" type="video/mp4" />
+  <source src="/static/media/jiduhualuoshifengfeifei.mp4" type="video/mp4" />
 </video>
+</div>
+<div class="caption">《几度花落时》凤飞飞</div>
 </div>
 
 
