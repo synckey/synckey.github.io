@@ -33,7 +33,7 @@
 所以最后一公里，又恢复了奔跑，一直冲向了有好几道拱门的终点线，那里有穿着性感衣服的拉拉队。&lt;/p&gt;
 &lt;p&gt;最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="2016.06.17 北京马拉松" class="img-responsive carousel-inner center-block img-rounded" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
+&lt;img alt="2016.06.17 北京马拉松" class="center-block img-responsive carousel-inner img-rounded" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
 &lt;div class="caption"&gt;2016.06.17 北京马拉松&lt;/div&gt;
 &lt;/div&gt;</content><category term="life"></category></entry><entry><title>BFS遍历到图的指定层的一种方法</title><link href="http://synckey.name/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html" rel="alternate"></link><published>2017-05-10T00:00:00+08:00</published><updated>2017-05-10T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-05-10:/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html</id><summary type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;leetcode原题&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:&lt;/p&gt;
