@@ -31,7 +31,7 @@ Place: Beijing
 
 <div class="center-block">
 <div>
-<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=y0129wez66g&tiny=0&auto=0" width="70%" allowfullscreen></iframe>
+<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=y0129wez66g&tiny=0&auto=0" width="70%" height="350" allowfullscreen></iframe>
 </div>
 <div class="caption">《彩云追月》李云迪</div>
 </div>
