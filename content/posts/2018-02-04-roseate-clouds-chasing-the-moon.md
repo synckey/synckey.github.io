@@ -31,7 +31,7 @@ Place: Beijing
 
 <div class="center-block">
 <div>
-<iframe src="http://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=84e8c3d6905e41281ed9579f1495ffc8&tvId=5153565009&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%" frameborder="0" allowfullscreen="true" width="70%" height="350"></iframe>
+<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=y0129wez66g&tiny=0&auto=0" width="70%" allowfullscreen></iframe>
 </div>
 <div class="caption">《彩云追月》李云迪</div>
 </div>
