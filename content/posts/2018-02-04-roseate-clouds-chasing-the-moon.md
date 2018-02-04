@@ -17,6 +17,9 @@ Place: Beijing
 可是对我来说，虽然没有歌词，听歌可以任凭想象了，依然听不到轻松和写意。从2011年8月到2018年2月，6年半的时间，事事变迁，什么都变了，情却惊人的相似，
 在北京的生活以《几度花落时》始，以《彩月追月》终，怎么叫人伤感。
 
+
+
+
 <div class="center-block">
 <embed src="http://player.video.qiyi.com/aa76f251e9ee95ae29c420ef76ba5faf/0/0/w_19rs9lhllx.swf-albumId=2720753609-tvId=2720753609-isPurchase=0-cnId=5" allowFullScreen="true" quality="high" width="480" height="350" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 </div>
