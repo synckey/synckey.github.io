@@ -30,8 +30,8 @@ Place: Beijing
 
 
 <div class="center-block">
-<div>
-<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=y0129wez66g&tiny=0&auto=0" width="70%" height="auto" allowfullscreen></iframe>
+<div class="iframevideo">
+<iframe width="70%" height="100%" src="https://v.qq.com/iframe/player.html?vid=y0129wez66g&tiny=0&auto=0" frameborder=0 allowfullscreen></iframe>
 </div>
 <div class="caption">《彩云追月》李云迪</div>
 </div>
@@ -39,10 +39,8 @@ Place: Beijing
 
 
 <div class="center-block">
-<div>
-<video controls="controls" width="70%" height="350">
-  <source src="/static/media/jiduhualuoshifengfeifei.mp4" type="video/mp4" />
-</video>
+<div class="iframevideo">
+<iframe height="100%" width="70%" src='http://player.youku.com/embed/XMzIwMTY1MTg0NA==' frameborder=0 'allowfullscreen'></iframe>
 </div>
 <div class="caption">《几度花落时》凤飞飞</div>
 </div>
