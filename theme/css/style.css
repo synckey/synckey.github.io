@@ -613,179 +613,6 @@ a {
     text-align: center;
 }
 
-/**多说评论框*/
-#article-comment .ds-login-buttons, .search-page-search .search-cancelled #search-result-meta {
-    visibility: hidden
-}
-
-#ds-smilies-tooltip .ds-smilies-tabs {
-    max-height: 100%
-}
-
-#ds-reset a.ds-highlight {
-    color: #cd5c5c !important
-}
-
-#article-comment .ds-toolbar {
-    padding-top: 2em !important
-}
-
-#article-comment #ds-thread:hover .ds-login-buttons {
-    visibility: visible
-}
-
-#article-comment .ds-comments {
-    margin-top: 1.8em !important
-}
-
-#article-comment .ds-border {
-    border-top: none !important
-}
-
-#article-comment .ds-post-self {
-    padding-right: 0 !important
-}
-
-#article-comment #ds-thread, #article-comment .ds-comments, #article-comment .ds-post, #article-comment .ds-post-self {
-    border: none !important
-}
-
-#article-comment #ds-thread p, #article-comment .ds-comments p, #article-comment .ds-post p, #article-comment .ds-post-self p {
-    font-size: 14px !important;
-    line-height: 1.7em !important;
-    letter-spacing: .3px
-}
-
-#article-comment .ds-avatar {
-    box-shadow: none !important;
-    background: #eee !important
-}
-
-#article-comment .ds-avatar img {
-    border-radius: 24px !important
-}
-
-#article-comment .ds-replybox {
-    padding: 0 !important
-}
-
-#article-comment .ds-replybox .ds-textarea-wrapper {
-    color: #616161 !important;
-    background: #eee !important;
-    border: none !important;
-    border-bottom: 1px solid rgba(0, 0, 0, .12) !important;
-    margin-top: 2em !important;
-    margin-right: 6.5em !important;
-    padding-right: 0 !important
-}
-
-#article-comment .ds-replybox .ds-textarea-wrapper textarea {
-    line-height: 1.6em !important;
-    height: 3.4em !important;
-    padding: 0 .3em !important;
-    width: 99% !important
-}
-
-#article-comment .ds-replybox .ds-textarea-wrapper .ds-hidden-text {
-    display: none !important
-}
-
-#article-comment .ds-replybox .ds-post-button {
-    border: none !important;
-    width: 3em !important;
-    margin-top: -2.68em !important;
-    right: 0 !important;
-    border-radius: 24px !important
-}
-
-#article-comment .ds-replybox .ds-toolbar-buttons {
-    width: 100%
-}
-
-#article-comment .ds-replybox .ds-toolbar-buttons .ds-toolbar-button {
-    position: absolute;
-    right: 4.5em;
-    top: -3em
-}
-
-#article-comment #ds-reset > .ds-replybox .ds-textarea-wrapper {
-    padding: 1.5em 0 0 !important;
-    line-height: 3em !important;
-    width: 100% !important
-}
-
-#article-comment #ds-reset > .ds-replybox .ds-textarea-wrapper textarea {
-    height: 5.1em !important;
-    font-size: 14px !important
-}
-
-#article-comment #ds-reset > .ds-replybox .ds-textarea-wrapper:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 1px;
-    width: 0;
-    background: 0 0;
-    -webkit-transition: width .5s ease-out, background-color .5s ease-out;
-    transition: width .5s ease-out, background-color .5s ease-out
-}
-
-#article-comment #ds-reset > .ds-replybox .ds-post-button {
-    margin-top: .7em !important;
-    border-radius: 24px !important
-}
-
-#article-comment #ds-reset > .ds-replybox .ds-toolbar-buttons .ds-toolbar-button {
-    top: 1em
-}
-
-#article-comment:hover #ds-reset > .ds-replybox .ds-textarea-wrapper:after {
-    width: 105%;
-    background-color: #555
-}
-
-#article-comment .ds-paginator {
-    border-bottom: 1px dashed #cfcfcf !important;
-    margin-bottom: .5em
-}
-
-#article-comment .ds-powered-by {
-    margin-right: .2em;
-    padding: 0 !important
-}
-
-#article-comment .ds-powered-by a {
-    font-size: 12px !important
-}
-
-#ds-smilies-tooltip img, #ds-smilies-tooltip li {
-    margin: 0 !important;
-    padding: 0 !important
-}
-
-#article-comment {
-    margin: 0 -3em;
-    padding: .5em 3em 1em;
-    background-color: #eee;
-    border-radius: 0 0 2px 2px;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s
-}
-
-#article-comment.animated {
-    margin-top: 1em;
-    overflow-y: auto
-}
-
-h2#comment {
-    visibility: hidden;
-    position: absolute
-}
-
-#article-comment #ds-hot-posts, #article-comment .ds-comments-info, #article-comment .ds-login-buttons, #article-comment .ds-meta, #article-comment .ds-post-options, #article-comment .ds-replybox .ds-avatar, #article-comment .ds-toolbar, #article-comment .ds-visitor, .post-list-item a.heading-anchor, .search-page-search #search-spinner {
-    display: none
-}
-
 .navbar-nav > li > a {
     font-size: 18px;
 }
@@ -795,4 +622,32 @@ h2#comment {
     border-color: transparent;
 }
 
+.iframevideo {
+    width: 100%;
+    height: 450px;
+}
+
+@media only screen and (max-width: 959px) {
+    .iframevideo {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .iframevideo {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .iframevideo {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .iframevideo {
+        height: 250px;
+    }
+}
 
