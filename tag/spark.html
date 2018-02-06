@@ -5,11 +5,26 @@
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
+<script type="text/javascript">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-55913313-1');
+</script>
 
 
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img src='/static/images/wechat_logo_300x300.jpg'/></div>
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+            src='/static/images/wechat_logo_300x300.jpg'/></div>
 
     <!--
     -->
@@ -36,17 +51,24 @@
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
     <script src="/theme/js/holder.js"></script>
+    <script src="/theme/js/jquery-ias.min.js"></script>
     <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
+          media="screen"/>
     <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
 
     <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript" src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
+          type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
 
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
+          type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
@@ -89,7 +111,8 @@ Andy's Blog            </a>
 
         <div class="collapse navbar-collapse" id="navbar-top-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span class="icon-label">Categories</span></a></li>
+                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
+                        class="icon-label">Categories</span></a></li>
                 <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
                 <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
                 </li>
@@ -100,20 +123,20 @@ Andy's Blog            </a>
 
 <!-- Banner -->
 <!-- End Banner -->
-<!--
-<div class="separator"></div>-->
-<div class="post-container">
-    <div class="post-header">
-        <h2><a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></h2>
-        <div class="post-meta">
+<div class="article-list">
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></h2>
+                <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">2015-11-03</span>
-            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-        </div>
-    </div>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
 
 
-    <div class="post-content"><p>在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：</p>
+            <div class="post-content"><p>在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：</p>
 <div class="github"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="kd">implements</span> <span class="n">Function</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Boolean</span><span class="o">&gt;</span> <span class="o">{</span>
 
     <span class="kd">private</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">lookupTable</span><span class="o">=</span><span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;();</span>
@@ -123,13 +146,15 @@ Andy's Blog            </a>
     <span class="o">}</span>
     <span class="kd">public</span> <span class="n">Boolean</span> <span class="nf">call</span><span class="o">(</span><span class="n">String</span> <span class="n">line</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
         <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">lookupTable</span><span class="o">.</span><span class="na">containsKey …</span></pre></div>
-        <div class="read-more">
-            <a class="btn" href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">--READ MORE--</a>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">--READ MORE--</a>
+                </div>
+            </div>
         </div>
+        <div class="separator"></div>
     </div>
-</div>
-<div class="separator"></div>
-<div class="post-container">
+    <div class="post-container">
+    </div>
 </div>
 <div class="copyright">
     &copy; 2015 andy
@@ -139,51 +164,10 @@ Andy's Blog            </a>
     Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
 </div>
-</div>
-
-<!--
-<footer>
-    <div class="container ">
-        <div class="row">
-            <div class="col-lg-8 col-md-offset-2">
-                <hr>
-            </div>
-            <div class="col-lg-8 col-md-offset-2">
-                <center>
-                    &copy; 2015 andy
-                    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-                    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-                    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>                    <!--
-                    <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
-                </center>
-            </div>
-        </div>
-    </div>
-</footer>
-                    -->
 
 
 
-<!--
--->
 <script src="/theme/js/theme.js"></script>
-<!-- Google Analytics -->
-<script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-55913313-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-</script>
-<!-- End Google Analytics Code -->
 <!-- Baidu Analytics -->
 <script type="text/javascript">
     var _hmt = _hmt || [];

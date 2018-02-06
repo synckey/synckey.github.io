@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>posts - Andy's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
+<script type="text/javascript">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-55913313-1');
+</script>
+
+
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+            src='/static/images/wechat_logo_300x300.jpg'/></div>
+
+    <!--
+    -->
+<meta name="author" content="andy"/>
+<meta name="keywords" content="posts"/>
+
+    <!-- Open Graph tags -->
+    <meta property="og:site_name" content="Andy's Blog"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Andy's Blog"/>
+    <meta property="og:url" content="/"/>
+    <meta property="og:description" content="Andy's Blog"/>
+
+
+
+    <script src="/theme/js/jquery.min.js"></script>
+    <script src="/theme/js/jquery.browser.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/theme/js/bootstrap.min.js"></script>
+
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <script src="/theme/js/respond.min.js"></script>
+    <!-- highcharts -->
+    <script src="/theme/js/highcharts.js"></script>
+    <script src="/theme/js/exporting.js"></script>
+    <script src="/theme/js/holder.js"></script>
+    <script src="/theme/js/jquery-ias.min.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
+          media="screen"/>
+    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
+          type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
+          type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript"
+            src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="/theme/css/normalize.css"/>
+    <link rel="stylesheet" href="/theme/css/style.css"/>
+
+    <link href="/theme/css/pygments/github.css"
+          rel="stylesheet">
+
+
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
+
+
+
+    <link href="/feeds/posts.atom.xml" type="application/atom+xml"
+          rel="alternate"
+          title="Andy's Blog posts ATOM Feed"/>
+
+</head>
+
+<body>
+<div class="navbar-default "
+     role="navigation">
+    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-top-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Andy's Blog            </a>
+            <a class="navbar-brand" href="/">Posts</a></li>
+            <a class="navbar-brand" href="/archives.html">Archives</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-top-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
+                        class="icon-label">Categories</span></a></li>
+                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
+                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Banner -->
+<!-- End Banner -->
+<div class="article-list">
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2016/10/20/notes-for-leetcode.md.html">Notes for Leetcode</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-10-20</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
+
+
+            <div class="post-content"><h2>1.Binary Number Representation</h2>
+<div class="github"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mb">0b1111</span><span class="o">;</span> <span class="c1">// which is equals to `x = 15`; and is useful when use the number for masking.</span>
+</pre></div>
+<h2>2.Rotate Function</h2>
+<h3>Original Question</h3>
+<p>原始问题链接：<a href="https://leetcode.com/problems/rotate-function/">Rotate Function</a>.</p>
+<p>Given an array of integers $A$ and let $n$ to be its length.</p>
+<p>Assume $B_k$ to be an array obtained by …</p>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2016/10/20/notes-for-leetcode.md.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2016/04/20/shang-pin-jiao-zi.html">上品饺子</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-04-20</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
+
+
+            <div class="post-content"><p>在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。</p>
+<p>从此，就爱上了他们家的饺子，破了减肥不吃晚饭的戒。每次下班经过他们家门口，就走不动了，要做一番心里斗争。结果往往是要进去吃一大碗韭菜猪肉的水饺，加一个荷包蛋才会满足。也常常跟同事推荐，“有空一定要带你们一起去尝一尝水饺——都是手工的，他们家也有面条，面条上的猪肝，肉丝，木耳，香菇，都是现炒的，热腾腾的 …</p>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2016/04/20/shang-pin-jiao-zi.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html">HHKB 设置与快捷键</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2016-02-26</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
+
+
+            <div class="post-content"><p>入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.</p>
+<p>我用hhkb的开关是<code>011001</code>,主要是使用macintosh的键盘布局并且将delete键设置为'BS'.另外,也安装了<a href="https://pqrs.org/osx/karabiner/index.html.en">Karabiner</a>这款神器,它一方面可以设置系统自动识别是否插入了外接键盘,如果插入了外接键盘,可以将mac的键盘disable掉,另一方面它具有强大的改键功能.硬件方面,买了一个miniusb右弯的接头,这样把hhkb放在mac键盘上的时候,线就不会弯曲到挡着屏幕了.</p>
+<p align="center">
+<img alt="miniusb" class="img-responsive img-rounded" src="/static/images/miniusb.jpg" title="An awesome picture caption!" width="50%"/>
+</p>
+<p>hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所以小拇指很容易就能按到它,所以hhkb的键盘布局对emacs非常友好.而mac os操作系统对emacs风格的快捷键原生就有支持,在界面中可以通过<code>CTRL+B …</code></p>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="post-container">
+
+<div class="pagination">
+    <a href="/category/posts3.html" class="next">&raquo;</a>
+</div>
+
+    </div>
+</div>
+<div class="copyright">
+    &copy; 2017 andy
+    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
+    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+</div>
+
+
+
+<script src="/theme/js/theme.js"></script>
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
+
+</div>
+</body>
+</html>

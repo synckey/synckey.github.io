@@ -49,3 +49,28 @@ $(document).ready(function () {
     $('.fancybox-thumb').fancybox(fancybox_settings);
 
 });
+
+/*
+异步分页
+https://infiniteajaxscroll.com/docs/getting-started.html
+*/
+var ias = jQuery.ias({
+    container: '.article-list',
+    item: '.excerpt',
+    pagination: '.pagination',
+    next: '.next'
+});
+ias.extension(new IASSpinnerExtension(
+
+));
+
+ias.extension(new IASTriggerExtension({
+    offset: 30,
+    text: '<a class="load-more J_listLoadMore" href="javascript:;" id="info_flows_next_link">点击加载更多</a>',
+}));
+
+ias.extension(new IASNoneLeftExtension({text: "内容已经全部加载完毕"}));
+
+ias.on('rendered', function () {
+    //lazyload();
+});
