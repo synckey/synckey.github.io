@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog - machinelearning</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/machinelearning.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-03-30T00:00:00+08:00</updated><entry><title>Read .mat Files in Python</title><link href="http://synckey.name/read-mat-files-in-python.html" rel="alternate"></link><published>2017-03-30T00:00:00+08:00</published><updated>2017-03-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-30:/read-mat-files-in-python.html</id><summary type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.io&lt;/span&gt;
-&lt;span class="n"&gt;mat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loadmat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;file.mat&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog - machinelearning</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/machinelearning.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-03-30T00:00:00+08:00</updated><entry><title>Read .mat Files in Python</title><link href="http://synckey.name/posts/2017/03/30/read-mat-files-in-python.html" rel="alternate"></link><published>2017-03-30T00:00:00+08:00</published><updated>2017-03-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-30:/posts/2017/03/30/read-mat-files-in-python.html</id><summary type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.io&lt;/span&gt;
+&lt;span class="n"&gt;mat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loadmat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'file.mat'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;Enjoy^_^&lt;/p&gt;
 &lt;h4&gt;Reference&lt;/h4&gt;
 &lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.io&lt;/span&gt;
-&lt;span class="n"&gt;mat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loadmat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;file.mat&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.io&lt;/span&gt;
+&lt;span class="n"&gt;mat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loadmat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'file.mat'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;Enjoy^_^&lt;/p&gt;
 &lt;h4&gt;Reference&lt;/h4&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>《概率论》复习笔记</title><link href="http://synckey.name/review-of-probability.html" rel="alternate"></link><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-20:/review-of-probability.html</id><summary type="html">&lt;h4&gt;1. 随机事件和概率&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>《概率论》复习笔记</title><link href="http://synckey.name/posts/2017/02/20/review-of-probability.html" rel="alternate"></link><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-20:/posts/2017/02/20/review-of-probability.html</id><summary type="html">&lt;h4&gt;1. 随机事件和概率&lt;/h4&gt;
 &lt;h5&gt;1.1全概率公式&lt;/h5&gt;
 &lt;p&gt;设事件 $A_1,A_2,\cdots,A_n$ 两两互不相容，$P(A_i)&amp;gt;0(i=1,2,\cdots,n)$，且$\sum\limits_{i=1}^{n}{A_i}=\Omega$，
 则对任一事件$B$，有
@@ -85,7 +81,7 @@ P(X_n=k)=\frac{\lambda ^ k}{k!}e^{-\lambda},k=0,1,2,\cdots .
 $$
 式中$\lambda&amp;gt;0$是常数，则称$X$服从以$\lambda$为参数的泊松分布，记作$X\sim P(\lambda)$。&lt;/p&gt;
 &lt;h5&gt;References&lt;/h5&gt;
-&lt;p&gt;&lt;a href="https://www.amazon.cn/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E6%95%99%E7%A8%8B-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/dp/B005EV51AO/ref=sr_1_1?ie=UTF8&amp;amp;qid=1487571721&amp;amp;sr=8-1&amp;amp;keywords=%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1+%E5%88%98%E5%BB%BA%E4%BA%9A"&gt;《概率论与数理统计》&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>Summary Concepts of Deep Learning</title><link href="http://synckey.name/summary-concepts-of-deep-learning.html" rel="alternate"></link><published>2016-03-01T00:00:00+08:00</published><updated>2016-03-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-01:/summary-concepts-of-deep-learning.html</id><summary type="html">&lt;h2&gt;机器学习&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.cn/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E6%95%99%E7%A8%8B-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/dp/B005EV51AO/ref=sr_1_1?ie=UTF8&amp;amp;qid=1487571721&amp;amp;sr=8-1&amp;amp;keywords=%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1+%E5%88%98%E5%BB%BA%E4%BA%9A"&gt;《概率论与数理统计》&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>Summary Concepts of Deep Learning</title><link href="http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html" rel="alternate"></link><published>2016-03-01T00:00:00+08:00</published><updated>2016-03-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-01:/posts/2016/03/01/summary-concepts-of-deep-learning.html</id><summary type="html">&lt;h2&gt;机器学习&lt;/h2&gt;
 &lt;p&gt;input-&amp;gt;feature representation-&amp;gt;learning algorithm&lt;/p&gt;
 &lt;h3&gt;监督学习&lt;/h3&gt;
 &lt;p&gt;标注过的训练数据.&lt;/p&gt;
@@ -107,7 +103,7 @@ $$
 &lt;h2&gt;神经网络&lt;/h2&gt;
 &lt;h3&gt;Neurons&lt;/h3&gt;
 &lt;p&gt;&lt;div class="figure"&gt;
-&lt;img src="/static/images/SingleNeuron.png" alt="SingleNeuron"  width="40%" /&gt;
+&lt;img alt="SingleNeuron" class="" src="/static/images/SingleNeuron.png" width="40%"/&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;机器学习&lt;/h2&gt;
 &lt;p&gt;input-&amp;gt;feature representation-&amp;gt;learning algorithm&lt;/p&gt;
@@ -131,7 +127,7 @@ $$
 &lt;h2&gt;神经网络&lt;/h2&gt;
 &lt;h3&gt;Neurons&lt;/h3&gt;
 &lt;p&gt;&lt;div class="figure"&gt;
-&lt;img src="/static/images/SingleNeuron.png" alt="SingleNeuron"  width="40%" /&gt;
+&lt;img alt="SingleNeuron" class="" src="/static/images/SingleNeuron.png" width="40%"/&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f(\sum_{i=1}^{3}(W_ix_i+b)$为输出的计算单元.
 其中$f:\mathbb{R}\mapsto\mathbb{R}$,被称为激活函数(activation function).常用的激活函数有:&lt;/p&gt;
@@ -148,18 +144,18 @@ $$
 &lt;/ul&gt;
 &lt;p&gt;这些函数的形状如下:
 &lt;div class="figure"&gt;
-&lt;img src="/static/images/ActivationFunctions.png" alt="ActivationFunctions"  width="50%" /&gt;
+&lt;img alt="ActivationFunctions" class="" src="/static/images/ActivationFunctions.png" width="50%"/&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;h3&gt;神经网络模型&lt;/h3&gt;
 &lt;p&gt;将一系列&lt;strong&gt;神经元&lt;/strong&gt;组合在一起,就构成一个神经网络,一个神经元的输出可以作为另外一个神经元的输入.例如,下图是一个简单的神经网络:
 &lt;div class="figure"&gt;
-&lt;img src="/static/images/Network331.png" alt="neualNetwork"  width="50%" /&gt;
+&lt;img alt="neualNetwork" class="" src="/static/images/Network331.png" width="50%"/&gt;
 &lt;/div&gt;
 在这个示意图中,黄色的圆圈代表神经元,蓝色的圆圈代表整个神经网络的输入.被标为$+1$的圆圈称作&lt;strong&gt;bias unit&lt;/strong&gt;,代表&lt;strong&gt;截距项&lt;/strong&gt;(intercept term).
 网络最左边的层叫做&lt;strong&gt;输入层&lt;/strong&gt;(input layer),最右边叫做&lt;strong&gt;输出层&lt;/strong&gt;(output layer).中间所有的节点组成的层叫做&lt;strong&gt;隐藏层&lt;/strong&gt;(hidden layer),因为我们不能在训练样本里面观察到它的值.&lt;/p&gt;
 &lt;p&gt;神经网络也可以有多个输出单元,比如,下面的神经网络有两个隐藏曾,$L_2$和$L_3$,输出层$L_4$有两个输出单元:
 &lt;p align="center"&gt;
-&lt;img src="/static/images/MultiOutputNetwork.png" alt="MultiOutputNetwork"  width="50%" /&gt;
+&lt;img alt="MultiOutputNetwork" class="" src="/static/images/MultiOutputNetwork.png" width="50%"/&gt;
 &lt;/p&gt;
 如果你的任务是预测多个输出,这种神经网络很适用.&lt;/p&gt;
 &lt;h4&gt;向前传播&lt;/h4&gt;
@@ -288,7 +284,7 @@ $$
 &lt;h4&gt;自编码器(Autoencoders)&lt;/h4&gt;
 &lt;p&gt;假设我们只有一个没有带类别标签的训练样本集合 ${x^{(1)}, x^{(2)}, x^{(3)}, \ldots}$ ，其中$x^{(i)} \in \Re^{n}$ 。自编码神经网络是一种无监督学习算法，它使用了反向传播算法，并让目标值等于输入值，比如 $y^{(i)} = x^{(i)}$ 。下图是一个自编码神经网络的示例。
 &lt;div class="figure"&gt;
-&lt;img src="/static/images/Autoencoder.png" alt="Autoencoder636"  width="50%" /&gt;
+&lt;img alt="Autoencoder636" class="" src="/static/images/Autoencoder.png" width="50%"/&gt;
 &lt;/div&gt;
 自编码神经网络尝试学习一个$ h_{W,b}(x) \approx x$ 的函数,它尝试逼近一个恒等函数，从而使得输出 $\hat{x}$ 接近于输入$x$.自编码神经网络的意义在于:&lt;/p&gt;
 &lt;ol&gt;
@@ -305,7 +301,7 @@ $$
 &lt;h4&gt;逐层训练方法&lt;/h4&gt;
 &lt;p&gt;与神经网络使用反向训练的方法不同,神经网络使用逐层贪婪训练方法训练模型.主要思路是每次只训练网络中的一层，即我们首先训练一个只含一个隐藏层的网络，仅当这层网络训练结束之后才开始训练一个有两个隐藏层的网络，以此类推。在每一步中，把已经训练好的前$k-1$ 层固定，然后增加第$k$层（也就是将已经训练好的前$k-1$ 的输出作为输入）。每一层的训练可以是有监督的（例如，将每一步的分类误差作为目标函数），但更通常使用无监督方法(例如自动编码器).
 &lt;div class="figure"&gt;
-&lt;img src="/static/images/deeplearningfeatures.png" alt="DeepLearningFeautures"  width="60%" /&gt;
+&lt;img alt="DeepLearningFeautures" class="" src="/static/images/deeplearningfeatures.png" width="60%"/&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;h3&gt;深度学习的应用&lt;/h3&gt;
 &lt;ul&gt;
@@ -318,32 +314,28 @@ $$
 &lt;p&gt;&lt;a href="http://blog.csdn.net/zouxy09/article/details/8775518"&gt;Deep Learning（深度学习）学习笔记整理系列&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.deeplearningbook.org/"&gt;Deep Learning&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://ufldl.stanford.edu/tutorial/"&gt;Deep Learning Tutorial&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B"&gt;http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category></entry><entry><title>Plot Sigmoid in Matlab</title><link href="http://synckey.name/plot-sigmoid-in-matlab.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/plot-sigmoid-in-matlab.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;p&gt;&lt;a href="http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B"&gt;http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category></entry><entry><title>Plot Sigmoid in Matlab</title><link href="http://synckey.name/posts/2015/12/24/plot-sigmoid-in-matlab.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/plot-sigmoid-in-matlab.html</id><summary type="html">&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;0.1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;.*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)];&lt;/span&gt;
-&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;b&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="n"&gt;grid&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;&lt;p align="center"&gt;
-&lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" /&gt;
-&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="50%"/&gt;
+&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;0.1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;.*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)];&lt;/span&gt;
-&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;b&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="n"&gt;grid&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;&lt;p align="center"&gt;
-&lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" /&gt;
-&lt;/p&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>Where does sigmoid come from</title><link href="http://synckey.name/where-does-sigmoid-come-from.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/where-does-sigmoid-come-from.html</id><summary type="html">&lt;blockquote&gt;
+&lt;img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="50%"/&gt;
+&lt;/p&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>Where does sigmoid come from</title><link href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/where-does-sigmoid-come-from.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;主要根据Andrew Ng的教学讲义整理。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
 &lt;p align="center"&gt;
-&lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="60%" /&gt;
+&lt;img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="60%"/&gt;
 &lt;/p&gt;
 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。&lt;/p&gt;
 &lt;h3&gt;1.逻辑回归的建模&lt;/h3&gt;
@@ -354,7 +346,7 @@ $$
 &lt;/blockquote&gt;
 &lt;p&gt;逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
 &lt;p align="center"&gt;
-&lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="60%" /&gt;
+&lt;img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="60%"/&gt;
 &lt;/p&gt;
 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。&lt;/p&gt;
 &lt;h3&gt;1.逻辑回归的建模&lt;/h3&gt;

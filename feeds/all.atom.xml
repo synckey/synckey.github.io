@@ -1,64 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/all.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2018-02-04T00:00:00+08:00</updated><entry><title>《彩云追月》</title><link href="http://synckey.name/colorful-clouds-chasing-the-moon.html" rel="alternate"></link><published>2018-02-04T00:00:00+08:00</published><updated>2018-02-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-02-04:/colorful-clouds-chasing-the-moon.html</id><summary type="html">&lt;p&gt;2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/all.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2018-02-04T00:00:00+08:00</updated><entry><title>《彩云追月》</title><link href="http://synckey.name/posts/2018/02/04/colorful-clouds-chasing-the-moon.html" rel="alternate"></link><published>2018-02-04T00:00:00+08:00</published><updated>2018-02-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-02-04:/posts/2018/02/04/colorful-clouds-chasing-the-moon.html</id><summary type="html">&lt;p&gt;2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
 唱出了女子在花落之时与情人约见而情人爽约的失望和愁苦。&lt;/p&gt;
 &lt;p&gt;阴差阳错的，在昨天居然听到了这个歌曲的交响乐版，原来《几度花落时》的曲修改自《彩月追月》，初衷也不是男欢女爱。《彩云追月》来自广东民间，最早见于清代，
-描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐&lt;sup id="fnref-1"&gt;&lt;a class="footnote-ref" href="#fn-1"&gt;1&lt;/a&gt;&lt;/sup&gt;。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。&lt;/p&gt;
+描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。&lt;/p&gt;
 &lt;p&gt;网上有很多彩云追月的音频，有李云迪和郎朗分别演奏的钢琴solo，好听自不细说。但是中国交响乐团的交响曲版更加可听，小提琴和大提琴交替演奏的主旋律比钢琴solo更能触动心弦。&lt;/p&gt;
 &lt;p&gt;可是对我来说，虽然没有歌词，听歌可以任凭想象了，依然听不到轻松和写意。从2011年8月到2018年2月，6年半的时间，事事变迁，什么都变了，情却惊人的相似，
 在北京的生活以《几度花落时》始，以《彩月追月》终，怎不叫人伤感。&lt;/p&gt;
 &lt;div class="center-block"&gt;
 &lt;div&gt;
-&lt;audio controls="controls" &gt;
-&lt;source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"&gt;
+&lt;audio controls="controls"&gt;
+&lt;source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"/&gt;
 &lt;/audio&gt;
 &lt;/div&gt;
 &lt;div class="caption"&gt;《彩云追月 …&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
 唱出了女子在花落之时与情人约见而情人爽约的失望和愁苦。&lt;/p&gt;
 &lt;p&gt;阴差阳错的，在昨天居然听到了这个歌曲的交响乐版，原来《几度花落时》的曲修改自《彩月追月》，初衷也不是男欢女爱。《彩云追月》来自广东民间，最早见于清代，
-描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐&lt;sup id="fnref-1"&gt;&lt;a class="footnote-ref" href="#fn-1"&gt;1&lt;/a&gt;&lt;/sup&gt;。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。&lt;/p&gt;
+描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。&lt;/p&gt;
 &lt;p&gt;网上有很多彩云追月的音频，有李云迪和郎朗分别演奏的钢琴solo，好听自不细说。但是中国交响乐团的交响曲版更加可听，小提琴和大提琴交替演奏的主旋律比钢琴solo更能触动心弦。&lt;/p&gt;
 &lt;p&gt;可是对我来说，虽然没有歌词，听歌可以任凭想象了，依然听不到轻松和写意。从2011年8月到2018年2月，6年半的时间，事事变迁，什么都变了，情却惊人的相似，
 在北京的生活以《几度花落时》始，以《彩月追月》终，怎不叫人伤感。&lt;/p&gt;
 &lt;div class="center-block"&gt;
 &lt;div&gt;
-&lt;audio controls="controls" &gt;
-&lt;source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"&gt;
+&lt;audio controls="controls"&gt;
+&lt;source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"/&gt;
 &lt;/audio&gt;
 &lt;/div&gt;
 &lt;div class="caption"&gt;《彩云追月》交响乐版&lt;/div&gt;
 &lt;/div&gt;
-
 &lt;div class="center-block"&gt;
 &lt;div class="iframevideo"&gt;
-&lt;iframe width="70%" height="100%" src="https://v.qq.com/iframe/player.html?vid=y0129wez66g&amp;tiny=0&amp;auto=0" frameborder=0 allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe allowfullscreen="" frameborder="0" height="100%" src="https://v.qq.com/iframe/player.html?vid=y0129wez66g&amp;amp;tiny=0&amp;amp;auto=0" width="70%"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;div class="caption"&gt;《彩云追月》李云迪&lt;/div&gt;
 &lt;/div&gt;
-
 &lt;div class="center-block"&gt;
 &lt;div class="iframevideo"&gt;
-&lt;iframe height="100%" width="70%" src='http://player.youku.com/embed/XMzIwMTY1MTg0NA==' frameborder=0 'allowfullscreen'&gt;&lt;/iframe&gt;
+&lt;iframe 'allowfullscreen'="" frameborder="0" height="100%" src="http://player.youku.com/embed/XMzIwMTY1MTg0NA==" width="70%"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;div class="caption"&gt;《几度花落时》凤飞飞&lt;/div&gt;
 &lt;/div&gt;
-
 &lt;div class="footnote"&gt;
-&lt;hr&gt;
+&lt;hr/&gt;
 &lt;ol&gt;
-&lt;li id="fn-1"&gt;
-&lt;p&gt;&lt;a href="https://baike.baidu.com/item/%E5%BD%A9%E4%BA%91%E8%BF%BD%E6%9C%88/949874?fr=aladdin"&gt;彩云追月&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://baike.baidu.com/item/%E5%BD%A9%E4%BA%91%E8%BF%BD%E6%9C%88/949874?fr=aladdin"&gt;彩云追月&lt;/a&gt; &lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-2"&gt;
-&lt;p&gt;&lt;a href="https://music.163.com/#/song?id=396860"&gt;《彩云追月》交响乐版，网易云音乐&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;&lt;a href="https://music.163.com/#/song?id=396860"&gt;《彩云追月》交响乐版，网易云音乐&lt;/a&gt; &lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="life"></category><category term="posts"></category><category term="summery"></category></entry><entry><title>笑话一则</title><link href="http://synckey.name/a-job.html" rel="alternate"></link><published>2018-02-03T00:00:00+08:00</published><updated>2018-02-03T00:00:00+08:00</updated><author><name>Liao</name></author><id>tag:synckey.name,2018-02-03:/a-job.html</id><summary type="html">&lt;p&gt;有一座庙，庙里和尚都说道性很高，可戒女色。有人要测验他们，请他们围成一个大圆圈，每人都盘腿坐下，两腿中间，放一面鼓。然后青睐一个美女，在圈中大跳脱衣舞。
+&lt;/div&gt;</content><category term="life"></category><category term="posts"></category><category term="summery"></category></entry><entry><title>笑话一则</title><link href="http://synckey.name/posts/2018/02/03/a-job.html" rel="alternate"></link><published>2018-02-03T00:00:00+08:00</published><updated>2018-02-03T00:00:00+08:00</updated><author><name>Liao</name></author><id>tag:synckey.name,2018-02-03:/posts/2018/02/03/a-job.html</id><summary type="html">&lt;p&gt;有一座庙，庙里和尚都说道性很高，可戒女色。有人要测验他们，请他们围成一个大圆圈，每人都盘腿坐下，两腿中间，放一面鼓。然后青睐一个美女，在圈中大跳脱衣舞。
 不料一跳之下，所有小和尚腿上的鼓都咚咚敲响起来，唯有老和尚的寂然不动。大家对老和尚佩服极了。不料把鼓拿起来一看，原来鼓皮都给捅破了。
 这个故事说明了一件事，就是人要”不可见欲“才能自治。&lt;/p&gt;
 &lt;p&gt;--李敖《上山上山爱》&lt;/p&gt;</summary><content type="html">&lt;p&gt;有一座庙，庙里和尚都说道性很高，可戒女色。有人要测验他们，请他们围成一个大圆圈，每人都盘腿坐下，两腿中间，放一面鼓。然后青睐一个美女，在圈中大跳脱衣舞。
 不料一跳之下，所有小和尚腿上的鼓都咚咚敲响起来，唯有老和尚的寂然不动。大家对老和尚佩服极了。不料把鼓拿起来一看，原来鼓皮都给捅破了。
 这个故事说明了一件事，就是人要”不可见欲“才能自治。&lt;/p&gt;
-&lt;p&gt;--李敖《上山上山爱》&lt;/p&gt;</content><category term="digest"></category></entry><entry><title>2017 Full of Changes</title><link href="http://synckey.name/2017-summery.html" rel="alternate"></link><published>2018-01-01T00:00:00+08:00</published><updated>2018-01-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-01-01:/2017-summery.html</id><summary type="html">&lt;p&gt;2017年马上就要过去了，回望这一年，最大的感觉就是变化，事情在变，想法在变，人也在变。&lt;/p&gt;
+&lt;p&gt;--李敖《上山上山爱》&lt;/p&gt;</content><category term="digest"></category></entry><entry><title>2017 Full of Changes</title><link href="http://synckey.name/posts/2018/01/01/2017-summery.html" rel="alternate"></link><published>2018-01-01T00:00:00+08:00</published><updated>2018-01-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-01-01:/posts/2018/01/01/2017-summery.html</id><summary type="html">&lt;p&gt;2017年马上就要过去了，回望这一年，最大的感觉就是变化，事情在变，想法在变，人也在变。&lt;/p&gt;
 &lt;p&gt;2017年的开始本以为这会是最惊心动魄的一年，因为在前一年我决定了要去新西兰工作。在2017年刚开始，一切都已经准备就绪了，签证已经办好，
 决心也已经下定。过完年已经开始着手准备登录以后的EOI的材料（出生公正，无犯罪记录证明）。机票订好了以后就开始准备找工作，
 根据新西兰的格式改了一份简历，在Seek上查看各种相关和不太相关的职位，投了大概有20份。这些简历大部分是石沉大海，唯一收到的回应就是拒绝。
@@ -90,11 +87,10 @@
 &lt;p&gt;2017年也不是完全没有收获。上半年因为心烦，也因为把大部分的时间投入在了刷题里面，基本没有运动。主要的运动集中在下半年。从8月底开始，基本每天10公里跑步。
 全年的跑步里程是842公里，这其中包含第一次全程马拉松(4h33min)。
 认真运动以来，今年的体重大概下降了8kg。在Keep上已经连续运动了125天，虽然每天运动会有小小的负担，记录的意义就在于能让自己更好的坚持运动下去。&lt;/p&gt;
-&lt;div class="figure"&gt; 
-    &lt;img src="/static/images/2017_running_records.jpg" alt="运动记录"  width="40%" class="carousel-inner  img-rounded img-responsive center-block"/&gt;
-    &lt;div class="caption"&gt;运动记录&lt;/div&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="运动记录" class="carousel-inner center-block img-responsive img-rounded" src="/static/images/2017_running_records.jpg" width="40%"/&gt;
+&lt;div class="caption"&gt;运动记录&lt;/div&gt;
 &lt;/div&gt;
-
 &lt;p&gt;Get了一个新技能，弹电子琴。到现已经上了15节课，每节课大概对应5-10小时的练习时间，所以150小时的训练结果就是现在能弹一些简单的曲子，
 能跟得上节拍器，能弹出附点音符和16分音符。当然也花了很多时间学习乐理和认识五线谱。学习音乐给我带来的收获就是&lt;code&gt;绝知此事要躬行&lt;/code&gt;，
 如果一个曲子弹不熟，就不断重复，终有跨过临界点，到了得心应手的程度，其他事也是如此。&lt;/p&gt;
@@ -110,22 +106,22 @@
 &lt;p&gt;这一年躲在焦躁不安，庸人自扰中度过。Anyway，终究是跨出了那一步，虽然还身未动，也算是向前徐行，“莫听穿林打叶声，何妨吟啸且徐行。竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。”。&lt;/p&gt;
 &lt;p&gt;谁怕？用一首李敖的诗结束这善变的2017，同时也是对2018新年的祝愿！&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;我将归来开放&lt;br&gt;
-因为我从来是那样，&lt;br&gt;
-所以你以为我永远是那样。&lt;br&gt;
-可是这一回你错了，&lt;br&gt;
-我改变得令你难以想象。&lt;br&gt;
-坏的终能变得好，&lt;br&gt;
-弱的总会变得壮。&lt;br&gt;
-谁能想到丑陋的一个蛹，&lt;br&gt;
-却会变成翩翩的蝴蝶模样？&lt;br&gt;
-像一朵入夜的荷花，&lt;br&gt;
-像一只归巢的宿鸟，&lt;br&gt;
-或像一个隐居的老哲人，&lt;br&gt;
-我消逝了我所有的锋芒与光亮。&lt;br&gt;
-漆黑的隧道终会凿穿，&lt;br&gt;
-千仞的高岗必被爬上。&lt;br&gt;
-当百花凋谢的日子，&lt;br&gt;
+&lt;p&gt;我将归来开放&lt;br/&gt;
+因为我从来是那样，&lt;br/&gt;
+所以你以为我永远是那样。&lt;br/&gt;
+可是这一回你错了，&lt;br/&gt;
+我改变得令你难以想象。&lt;br/&gt;
+坏的终能变得好，&lt;br/&gt;
+弱的总会变得壮。&lt;br/&gt;
+谁能想到丑陋的一个蛹，&lt;br/&gt;
+却会变成翩翩的蝴蝶模样？&lt;br/&gt;
+像一朵入夜的荷花，&lt;br/&gt;
+像一只归巢的宿鸟，&lt;br/&gt;
+或像一个隐居的老哲人，&lt;br/&gt;
+我消逝了我所有的锋芒与光亮。&lt;br/&gt;
+漆黑的隧道终会凿穿，&lt;br/&gt;
+千仞的高岗必被爬上。&lt;br/&gt;
+当百花凋谢的日子，&lt;br/&gt;
 我将归来开放！&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;读的书不太多，列在以下：&lt;/p&gt;
@@ -150,7 +146,7 @@
 &lt;li&gt;《深入理解Java虚拟机》2017.12.03&lt;/li&gt;
 &lt;li&gt;《苏东坡传》林语堂&lt;/li&gt;
 &lt;li&gt;《美的历程》&lt;/li&gt;
-&lt;/ul&gt;</content><category term="life"></category><category term="posts"></category><category term="summery"></category></entry><entry><title>金缕曲词二首(清顾贞观)</title><link href="http://synckey.name/shu-tian-ya-wan-jia-deng-huo.html" rel="alternate"></link><published>2017-12-07T00:00:00+08:00</published><updated>2017-12-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-07:/shu-tian-ya-wan-jia-deng-huo.html</id><summary type="html">&lt;p&gt;李敖在《北京法源寺》的楔子中写道“时间年复一年的在前进、风俗周而复始的在重演。团圆、团圆、大团圆，多少中国人民在风霜里、在烽火下、在骨肉离散中，
+&lt;/ul&gt;</content><category term="life"></category><category term="posts"></category><category term="summery"></category></entry><entry><title>金缕曲词二首(清顾贞观)</title><link href="http://synckey.name/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html" rel="alternate"></link><published>2017-12-07T00:00:00+08:00</published><updated>2017-12-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-07:/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html</id><summary type="html">&lt;p&gt;李敖在《北京法源寺》的楔子中写道“时间年复一年的在前进、风俗周而复始的在重演。团圆、团圆、大团圆，多少中国人民在风霜里、在烽火下、在骨肉离散中，
 为这一梦想揉进了辛酸与涕泪。”。他又时常在他的节目中提到“数天涯，依然骨肉，几家能够？”这几句词，道尽了中国人自古的离别相思苦。
 这首词后面有一段感人的故事，羁旅之客，读之神悲。维基文库上有关这首词的介绍和原文摘抄如下。&lt;/p&gt;
 &lt;p&gt;顺治十四年（公元1657年），好友吴兆骞因“丁酉科场案”被株连而流放宁古塔。顾贞观与吴兆骞私交甚厚，情同手足，为救吴而奔走呼号，遍求满朝权贵。
@@ -163,74 +159,74 @@
 莹然在堂，迢递关河，归省无日……”。读毕情绪激动，夜不能眠，在北京千佛寺大雪之夜作《金缕曲》词两阕（即下面所录的“其一”、“其二”）赠之，哀怨情深，
 被称为“千古绝调”。纳兰性德见之，泣下数行，认为此词与李陵的《别离诗》及向秀悼念嵇康的《思旧赋》相媲美，求其父明珠相救，康熙二十年，吴兆骞遇赦归京。&lt;/p&gt;
 &lt;p&gt;顾贞观与纳兰性德为忘年之交，纳兰性德对顾贞观一见如故，立刻写了一阕《金缕曲》相赠，词中有“后身缘恐结他生里”句，顾贞观后来记载，当时他看到此句时，
-甚觉不祥，只说不出来。但他也相当倾折于这位文采风流的相国公子，便和了一阕词。&lt;sup id="fnref-1"&gt;&lt;a class="footnote-ref" href="#fn-1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+甚觉不祥，只说不出来。但他也相当倾折于这位文采风流的相国公子，便和了一阕词。&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;寄吴汉槎宁古塔，以词代书，丙辰冬寓京师千佛寺，冰雪中作。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4&gt;其一 （报吴兆骞书）&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;季子平安否？    &lt;br&gt;
-便归来，平生万事，那堪回首！  &lt;br&gt;
-行路悠悠谁慰藉，母老家贫子幼。       &lt;br&gt;
-记不起，从前杯酒。     &lt;br&gt;
-魑魅搏人应见惯，总输他覆雨翻云手。 &lt;br&gt;
+&lt;p&gt;季子平安否？    &lt;br/&gt;
+便归来，平生万事，那堪回首！  &lt;br/&gt;
+行路悠悠谁慰藉，母老家贫子幼。       &lt;br/&gt;
+记不起，从前杯酒。     &lt;br/&gt;
+魑魅搏人应见惯，总输他覆雨翻云手。 &lt;br/&gt;
 冰与雪，周旋久。  &lt;/p&gt;
-&lt;p&gt;泪痕莫滴牛衣透。 &lt;br&gt;
-数天涯，依然骨肉，几家能够？ &lt;br&gt;
-比似红颜多命薄，更不如今还有。&lt;br&gt;
-只绝塞，苦寒难受。 &lt;br&gt;
-廿载包胥承一诺，盼乌头马角终相救。 &lt;br&gt;
+&lt;p&gt;泪痕莫滴牛衣透。 &lt;br/&gt;
+数天涯，依然骨肉，几家能够？ &lt;br/&gt;
+比似红颜多命薄，更不如今还有。&lt;br/&gt;
+只绝塞，苦寒难受。 &lt;br/&gt;
+廿载包胥承一诺，盼乌头马角终相救。 &lt;br/&gt;
 置此札，君怀袖。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;“数天涯，依然骨肉，几家能够？”让人不禁想起宋朝人写的这首诗&lt;sup id="fnref-2"&gt;&lt;a class="footnote-ref" href="#fn-2"&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;p&gt;“数天涯，依然骨肉，几家能够？”让人不禁想起宋朝人写的这首诗&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;月儿弯弯照九州，几家欢乐几家愁。&lt;br&gt;
+&lt;p&gt;月儿弯弯照九州，几家欢乐几家愁。&lt;br/&gt;
 几家夫妇同罗帐，几个飘零在外头？&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4&gt;其二（报吴兆骞书）&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;我亦飘零久。&lt;br&gt;
-十年来、深恩负尽，死生师友。&lt;br&gt;
-宿昔齐名非忝窃，试看杜陵消瘦。&lt;br&gt;
-曾不减、夜郎僝僽。&lt;br&gt;
-薄命长辞知己别，问人生、到此凄凉否。&lt;br&gt;
+&lt;p&gt;我亦飘零久。&lt;br/&gt;
+十年来、深恩负尽，死生师友。&lt;br/&gt;
+宿昔齐名非忝窃，试看杜陵消瘦。&lt;br/&gt;
+曾不减、夜郎僝僽。&lt;br/&gt;
+薄命长辞知己别，问人生、到此凄凉否。&lt;br/&gt;
 千万恨，从君剖。  &lt;/p&gt;
-&lt;p&gt;兄生辛未吾丁丑。&lt;br&gt;
-共些时、冰霜摧折，早衰蒲柳。&lt;br&gt;
-词赋从今须少作，留取心魂相守。&lt;br&gt;
-但愿得、河清人寿。&lt;br&gt;
-归日急翻行戍稿，把空名、料理传身后。&lt;br&gt;
+&lt;p&gt;兄生辛未吾丁丑。&lt;br/&gt;
+共些时、冰霜摧折，早衰蒲柳。&lt;br/&gt;
+词赋从今须少作，留取心魂相守。&lt;br/&gt;
+但愿得、河清人寿。&lt;br/&gt;
+归日急翻行戍稿，把空名、料理传身后。&lt;br/&gt;
 言不尽，观顿首。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class="footnote"&gt;
-&lt;hr&gt;
+&lt;hr/&gt;
 &lt;ol&gt;
-&lt;li id="fn-1"&gt;
-&lt;p&gt;&lt;a href="https://zh.m.wikisource.org/zh-hans/%E9%87%91%E7%B8%B7%E6%9B%B2_(%E9%A1%A7%E8%B2%9E%E8%A7%80)"&gt;金缕曲 (顾贞观)&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://zh.m.wikisource.org/zh-hans/%E9%87%91%E7%B8%B7%E6%9B%B2_(%E9%A1%A7%E8%B2%9E%E8%A7%80)"&gt;金缕曲 (顾贞观)&lt;/a&gt; &lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li id="fn-2"&gt;
-&lt;p&gt;&lt;a href="http://www.dugushici.com/mingju/12761"&gt;月儿弯弯照九州&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref-2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;&lt;a href="http://www.dugushici.com/mingju/12761"&gt;月儿弯弯照九州&lt;/a&gt; &lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="poem"></category></entry><entry><title>Produce 1000 Unique Four Digit Numbers</title><link href="http://synckey.name/produce-1000-unique-four-digit-numbers.html" rel="alternate"></link><published>2017-12-06T00:00:00+08:00</published><updated>2017-12-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-06:/produce-1000-unique-four-digit-numbers.html</id><summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br&gt;
-Conditions:  &lt;br&gt;
-1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br&gt;
+&lt;/div&gt;</content><category term="poem"></category></entry><entry><title>Produce 1000 Unique Four Digit Numbers</title><link href="http://synckey.name/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html" rel="alternate"></link><published>2017-12-06T00:00:00+08:00</published><updated>2017-12-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-06:/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br/&gt;
+Conditions:  &lt;br/&gt;
+1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br/&gt;
 2. No sequential numbers. 1234, 1856 are not acceptable.  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.ArrayList&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.ArrayList&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.List&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 
 &lt;span class="cm"&gt;/**&lt;/span&gt;
 &lt;span class="cm"&gt; * Created by …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;blockquote&gt;
-&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br&gt;
-Conditions:  &lt;br&gt;
-1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br&gt;
+&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br/&gt;
+Conditions:  &lt;br/&gt;
+1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br/&gt;
 2. No sequential numbers. 1234, 1856 are not acceptable.  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.ArrayList&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.ArrayList&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.List&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 
 &lt;span class="cm"&gt;/**&lt;/span&gt;
@@ -272,88 +268,88 @@ Conditions:  &lt;br&gt;
         &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;size&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
     &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="java"></category><category term="algorithm"></category></entry><entry><title>一个人的战争</title><link href="http://synckey.name/life-is-one-man-fight.html" rel="alternate"></link><published>2017-11-27T00:00:00+08:00</published><updated>2017-11-27T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-11-27:/life-is-one-man-fight.html</id><summary type="html">&lt;blockquote&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="java"></category><category term="algorithm"></category></entry><entry><title>一个人的战争</title><link href="http://synckey.name/posts/2017/11/27/life-is-one-man-fight.html" rel="alternate"></link><published>2017-11-27T00:00:00+08:00</published><updated>2017-11-27T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-11-27:/posts/2017/11/27/life-is-one-man-fight.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from &lt;a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment"&gt;假装在纽约&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class="figure" &gt; 
-    &lt;img src="/static/images/2017.11.27.one-man-fight.jpg" alt="一个人的战争"  class="carousel-inner img-rounded img-responsive center-block" style="width:100%" /&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="一个人的战争" class="carousel-inner center-block img-responsive img-rounded" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/&gt;
 &lt;/div&gt;</summary><content type="html">&lt;blockquote&gt;
 &lt;p&gt;有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from &lt;a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment"&gt;假装在纽约&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class="figure" &gt; 
-    &lt;img src="/static/images/2017.11.27.one-man-fight.jpg" alt="一个人的战争"  class="carousel-inner img-rounded img-responsive center-block" style="width:100%" /&gt;
-&lt;/div&gt;</content><category term="digest"></category></entry><entry><title>Useful Set Phrases</title><link href="http://synckey.name/useful-set-phrases.html" rel="alternate"></link><published>2017-11-26T00:00:00+08:00</published><updated>2017-11-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-11-26:/useful-set-phrases.html</id><summary type="html">&lt;p&gt;Hard liquor (Whiskey, bourbon, vodka), spirits        &lt;br&gt;
-a shot of whiskey&lt;br&gt;
-upper hand&lt;br&gt;
-let off steam: 释放鸭梨&lt;br&gt;
-hang over:喝断片&lt;br&gt;
-Shish kebab:羊肉串&lt;br&gt;
-roasted mutton cubes on spit  烤羊肉串 &lt;br&gt;
-his good deeds&lt;br&gt;
-gin and tonic (金汤力)&lt;br&gt;
-I am inclined to believe that&lt;br&gt;
-same-sex&lt;br&gt;
-opposite-sex&lt;br&gt;
-for the better&lt;br&gt;
-the dust has settled …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hard liquor (Whiskey, bourbon, vodka), spirits        &lt;br&gt;
-a shot of whiskey&lt;br&gt;
-upper hand&lt;br&gt;
-let off steam: 释放鸭梨&lt;br&gt;
-hang over:喝断片&lt;br&gt;
-Shish kebab:羊肉串&lt;br&gt;
-roasted mutton cubes on spit  烤羊肉串 &lt;br&gt;
-his good deeds&lt;br&gt;
-gin and tonic (金汤力)&lt;br&gt;
-I am inclined to believe that&lt;br&gt;
-same-sex&lt;br&gt;
-opposite-sex&lt;br&gt;
-for the better&lt;br&gt;
-the dust has settled&lt;br&gt;
-out of the way&lt;br&gt;
-she is well into&lt;br&gt;
-goose meat &lt;br&gt;
-dynasty &lt;br&gt;
-the highlight of the show&lt;br&gt;
-pay no mind&lt;br&gt;
-push your boundaries&lt;br&gt;
-hitting all the notes&lt;br&gt;
-live on the edge!&lt;br&gt;
-horticulturist&lt;br&gt;
-create flower and produce fruits&lt;br&gt;
-outdoorsy&lt;br&gt;
-self employed&lt;br&gt;
-unspoiled&lt;br&gt;
-synonymous&lt;br&gt;
-impressive&lt;br&gt;
-live up to&lt;br&gt;
-She sang like a woman possessed, hitting every note.&lt;br&gt;
-the better part of&lt;br&gt;
-to this very(specific) day&lt;br&gt;
-devoid&lt;br&gt;
-Not everybody are good at those subjects&lt;br&gt;
-things like that&lt;br&gt;
-fossil fuels&lt;br&gt;
-highlight of the show&lt;br&gt;
-emerging from the soil&lt;br&gt;
-mesh well together&lt;br&gt;
-bright vs dark&lt;br&gt;
-come across&lt;br&gt;
-take by storm(攻克)&lt;br&gt;
-have a chitchat &lt;br&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="一个人的战争" class="carousel-inner center-block img-responsive img-rounded" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/&gt;
+&lt;/div&gt;</content><category term="digest"></category></entry><entry><title>Useful Set Phrases</title><link href="http://synckey.name/posts/2017/11/26/useful-set-phrases.html" rel="alternate"></link><published>2017-11-26T00:00:00+08:00</published><updated>2017-11-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-11-26:/posts/2017/11/26/useful-set-phrases.html</id><summary type="html">&lt;p&gt;Hard liquor (Whiskey, bourbon, vodka), spirits        &lt;br/&gt;
+a shot of whiskey&lt;br/&gt;
+upper hand&lt;br/&gt;
+let off steam: 释放鸭梨&lt;br/&gt;
+hang over:喝断片&lt;br/&gt;
+Shish kebab:羊肉串&lt;br/&gt;
+roasted mutton cubes on spit  烤羊肉串 &lt;br/&gt;
+his good deeds&lt;br/&gt;
+gin and tonic (金汤力)&lt;br/&gt;
+I am inclined to believe that&lt;br/&gt;
+same-sex&lt;br/&gt;
+opposite-sex&lt;br/&gt;
+for the better&lt;br/&gt;
+the dust has settled …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hard liquor (Whiskey, bourbon, vodka), spirits        &lt;br/&gt;
+a shot of whiskey&lt;br/&gt;
+upper hand&lt;br/&gt;
+let off steam: 释放鸭梨&lt;br/&gt;
+hang over:喝断片&lt;br/&gt;
+Shish kebab:羊肉串&lt;br/&gt;
+roasted mutton cubes on spit  烤羊肉串 &lt;br/&gt;
+his good deeds&lt;br/&gt;
+gin and tonic (金汤力)&lt;br/&gt;
+I am inclined to believe that&lt;br/&gt;
+same-sex&lt;br/&gt;
+opposite-sex&lt;br/&gt;
+for the better&lt;br/&gt;
+the dust has settled&lt;br/&gt;
+out of the way&lt;br/&gt;
+she is well into&lt;br/&gt;
+goose meat &lt;br/&gt;
+dynasty &lt;br/&gt;
+the highlight of the show&lt;br/&gt;
+pay no mind&lt;br/&gt;
+push your boundaries&lt;br/&gt;
+hitting all the notes&lt;br/&gt;
+live on the edge!&lt;br/&gt;
+horticulturist&lt;br/&gt;
+create flower and produce fruits&lt;br/&gt;
+outdoorsy&lt;br/&gt;
+self employed&lt;br/&gt;
+unspoiled&lt;br/&gt;
+synonymous&lt;br/&gt;
+impressive&lt;br/&gt;
+live up to&lt;br/&gt;
+She sang like a woman possessed, hitting every note.&lt;br/&gt;
+the better part of&lt;br/&gt;
+to this very(specific) day&lt;br/&gt;
+devoid&lt;br/&gt;
+Not everybody are good at those subjects&lt;br/&gt;
+things like that&lt;br/&gt;
+fossil fuels&lt;br/&gt;
+highlight of the show&lt;br/&gt;
+emerging from the soil&lt;br/&gt;
+mesh well together&lt;br/&gt;
+bright vs dark&lt;br/&gt;
+come across&lt;br/&gt;
+take by storm(攻克)&lt;br/&gt;
+have a chitchat &lt;br/&gt;
 alleviate their pressure.
-frankly speaking it's hard to say because... &lt;br&gt;
-sell animal parts for luxury&lt;br&gt;
-so they can live safe and sound&lt;br&gt;
-to maintain the balance of the nature &lt;br&gt;
-some of us butcher animals for food...they kill animals in  very brutal ways... &lt;br&gt;
-if some animals will go under extinction...&lt;br&gt;
-those kind of ads provide the best information that you need&lt;br&gt;
-they are able to attract a huge number of consumers&lt;br&gt;
-it is one of the best gadgets for entertainment and communication &lt;br&gt;
-that's why I think it really place a huge role &lt;br&gt;
-the consumption of their products &lt;br&gt;
-can make me burst into laughter &lt;br&gt;
-the timing is not set in stone &lt;br&gt;
+frankly speaking it's hard to say because... &lt;br/&gt;
+sell animal parts for luxury&lt;br/&gt;
+so they can live safe and sound&lt;br/&gt;
+to maintain the balance of the nature &lt;br/&gt;
+some of us butcher animals for food...they kill animals in  very brutal ways... &lt;br/&gt;
+if some animals will go under extinction...&lt;br/&gt;
+those kind of ads provide the best information that you need&lt;br/&gt;
+they are able to attract a huge number of consumers&lt;br/&gt;
+it is one of the best gadgets for entertainment and communication &lt;br/&gt;
+that's why I think it really place a huge role &lt;br/&gt;
+the consumption of their products &lt;br/&gt;
+can make me burst into laughter &lt;br/&gt;
+the timing is not set in stone &lt;br/&gt;
 inbreeding  &lt;/p&gt;
 &lt;p&gt;I would like to share my story which took place when i was 5 years old.  &lt;/p&gt;
 &lt;p&gt;She will be able to gain a huge amount of money from it.&lt;/p&gt;
@@ -368,7 +364,7 @@ while "dog breeding" refers specifically to the artificial selection of dogs, in
 Artificial selection in dog breeding has influenced behavior, shape, and size of dogs. Some dogs have certain inheritable
 characteristics that can develop into a disability or disease.（&lt;a href="https://en.wikipedia.org/wiki/Dog_breeding"&gt;from wikipedia&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;When I met the guy, I absolutely did not have any spark or chemistry or butterflies.&lt;/p&gt;
-&lt;h5&gt;extreme sports&lt;/h5&gt;</content><category term="ielts"></category></entry><entry><title>第一次跑马</title><link href="http://synckey.name/my-first-marathon.html" rel="alternate"></link><published>2017-09-20T00:00:00+08:00</published><updated>2017-09-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-09-20:/my-first-marathon.html</id><summary type="html">&lt;p&gt;如果时光回退到2014年，那时候我180斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体，
+&lt;h5&gt;extreme sports&lt;/h5&gt;</content><category term="ielts"></category></entry><entry><title>第一次跑马</title><link href="http://synckey.name/posts/2017/09/20/my-first-marathon.html" rel="alternate"></link><published>2017-09-20T00:00:00+08:00</published><updated>2017-09-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-09-20:/posts/2017/09/20/my-first-marathon.html</id><summary type="html">&lt;p&gt;如果时光回退到2014年，那时候我180斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体，
 气喘吁吁，跑了10公里，花了两个小时。那时候没有专业跑步鞋，甚至连运动短裤和T恤都没有。&lt;/p&gt;
 &lt;p&gt;后来买了最低标准的装备，一双ascis跑步鞋，一条运动短裤，开始正规的跑步训练。那时候严格按照《爱上跑步十三周》练，循序渐进，跑步本身给我的痛苦并不很大。
 最大的痛苦来自于冬天早上6点钟从被窝里面爬出来，踏着月色去跑步。最冷的时候，有零下十一度，凌晨的小区只有三三两两的行人，早起的遛狗的大妈，通宵不睡的保安。
@@ -401,10 +397,10 @@ characteristics that can develop into a disability or disease.（&lt;a href="htt
 过了40公里以后，信心会增加不少，但是身体上真的没有力气去跑了，所以在补给处会稍微的走一走。自己的内心也知道，如果真的停下来走，可能就再也爬不起来了，
 所以最后一公里，又恢复了奔跑，一直冲向了有好几道拱门的终点线，那里有穿着性感衣服的拉拉队。&lt;/p&gt;
 &lt;p&gt;最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。&lt;/p&gt;
-&lt;div class="figure"&gt; 
-    &lt;img src="/static/images/first_marathon_transcript.jpg" alt="2016.06.17 北京马拉松"  width="30%" class="carousel-inner  img-rounded img-responsive center-block"/&gt;
-    &lt;div class="caption"&gt;2016.06.17 北京马拉松&lt;/div&gt;
-&lt;/div&gt;</content><category term="life"></category></entry><entry><title>Auckland 小记</title><link href="http://synckey.name/new-to-auckland.html" rel="alternate"></link><published>2017-06-26T00:00:00+08:00</published><updated>2017-06-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-26:/new-to-auckland.html</id><summary type="html">&lt;p&gt;来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。&lt;/p&gt;
+&lt;div class="figure"&gt;
+&lt;img alt="2016.06.17 北京马拉松" class="carousel-inner center-block img-responsive img-rounded" src="/static/images/first_marathon_transcript.jpg" width="30%"/&gt;
+&lt;div class="caption"&gt;2016.06.17 北京马拉松&lt;/div&gt;
+&lt;/div&gt;</content><category term="life"></category></entry><entry><title>Auckland 小记</title><link href="http://synckey.name/posts/2017/06/26/new-to-auckland.html" rel="alternate"></link><published>2017-06-26T00:00:00+08:00</published><updated>2017-06-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-26:/posts/2017/06/26/new-to-auckland.html</id><summary type="html">&lt;p&gt;来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。&lt;/p&gt;
 &lt;p&gt;到奥克兰下飞机已经是早上6.30，跟我一起下飞机的都是中国人。一下飞机就买了一张vodaphone的手机卡，卖手机卡的是中国人，说的是中国话，收银员是个漂亮的高挑当地妹子。在海关排队入境花了大概有半个小时，海关官员看了下签证，问了下我帮朋友带了什么，就放行了。出来还要过一道安检，这次主要是查有没有带危害当地生物安全的食品，种子等，新西兰是一个岛国，生态异常脆弱。&lt;/p&gt;
 &lt;p&gt;出机场看到外面乌云密布，天空非常的低，在下着小雨，有点冷，还好很快就找到接机的小伙伴，一路送到住所。路两边都是矮矮的两层小楼，路很窄，但是车速很快。&lt;/p&gt;
 &lt;p&gt;租的房子在一个小山坡上，窗外是大树和花草，室内的感觉有点阴冷。但是这种翠绿，是我非常喜欢的，绿油油。&lt;/p&gt;
@@ -424,51 +420,45 @@ characteristics that can develop into a disability or disease.（&lt;a href="htt
 &lt;p&gt;可能因为本地私家车普及率特别高，相对天朝公交而言，新西兰的公交车实在不友善。首先，公交车班次间隔时间比较久，如果错过一班可能要等二十分钟甚至半个小时。公交车并不会在每站都停，如果想下车就得提前按铃，车上也没有报站系统和显示屏，这就对外地人很不友善，只能拿着google地图看快要到了，就按铃下车。我的理解是这样做可以提升公交车的运行效率，但是加一个到站的显示屏真的会友善很多。&lt;/p&gt;
 &lt;p&gt;总得来说，虽然新西兰的牛羊肉很好吃，但是物价实在是太高了。
 &lt;div class="figure"&gt;
-    &lt;img src="/static/images/aukland_domain_1.jpg" alt="auk_domain_1" class="img-responsive carousel-inner img-rounded"/&gt;
-    &lt;div class="caption"&gt;Auckland Domain&lt;/div&gt;
+&lt;img alt="auk_domain_1" class="carousel-inner img-responsive img-rounded" src="/static/images/aukland_domain_1.jpg"/&gt;
+&lt;div class="caption"&gt;Auckland Domain&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="figure"&gt;
-    &lt;img src="/static/images/aukland_domain_2.jpg" alt="auk_domain_2" class="img-responsive carousel-inner img-rounded"/&gt;
-    &lt;div class="caption"&gt;Auckland Domain&lt;/div&gt;
+&lt;img alt="auk_domain_2" class="carousel-inner img-responsive img-rounded" src="/static/images/aukland_domain_2.jpg"/&gt;
+&lt;div class="caption"&gt;Auckland Domain&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="figure"&gt;
-    &lt;img src="/static/images/one_tree_hill.jpg" alt="ont_tree_hill" class="img-responsive carousel-inner img-rounded"/&gt;
-    &lt;div class="caption"&gt;One Tree Hill&lt;/div&gt;
+&lt;img alt="ont_tree_hill" class="carousel-inner img-responsive img-rounded" src="/static/images/one_tree_hill.jpg"/&gt;
+&lt;div class="caption"&gt;One Tree Hill&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="figure"&gt;
-    &lt;img src="/static/images/steak_and_fries.jpg" alt="steak_and_fries" class="img-responsive carousel-inner img-rounded"/&gt;
-    &lt;div class="caption"&gt;Steak&amp;amp;Fries&lt;/div&gt;
+&lt;img alt="steak_and_fries" class="carousel-inner img-responsive img-rounded" src="/static/images/steak_and_fries.jpg"/&gt;
+&lt;div class="caption"&gt;Steak&amp;amp;Fries&lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;div class="figure"&gt;
-    &lt;img src="/static/images/albert_park.jpg" alt="albert_park" class="img-responsive carousel-inner img-rounded"/&gt;
-    &lt;div class="caption"&gt;Albert Park&lt;/div&gt;
-&lt;/div&gt;</content><category term="sfv"></category></entry><entry><title>Git Push to Two Repositories at the Same Time</title><link href="http://synckey.name/git-push-to-two-repositories.html" rel="alternate"></link><published>2017-06-04T00:00:00+08:00</published><updated>2017-06-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-04:/git-push-to-two-repositories.html</id><summary type="html">&lt;p&gt;Suppose You have 2 repositories:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;https://github.com/synckey/synckey.github.io.git
+&lt;img alt="albert_park" class="carousel-inner img-responsive img-rounded" src="/static/images/albert_park.jpg"/&gt;
+&lt;div class="caption"&gt;Albert Park&lt;/div&gt;
+&lt;/div&gt;</content><category term="sfv"></category></entry><entry><title>Git Push to Two Repositories at the Same Time</title><link href="http://synckey.name/posts/2017/06/04/git-push-to-two-repositories.html" rel="alternate"></link><published>2017-06-04T00:00:00+08:00</published><updated>2017-06-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-04:/posts/2017/06/04/git-push-to-two-repositories.html</id><summary type="html">&lt;p&gt;Suppose You have 2 repositories:&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;You want to push to them within one command.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# if your project is cloned from this repository, &lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# if your project is cloned from this repository, &lt;/span&gt;
 &lt;span class="c1"&gt;# you can simply ignore this first command&lt;/span&gt;
 git remote add origin https://git …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Suppose You have 2 repositories:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;https://github.com/synckey/synckey.github.io.git
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;You want to push to them within one command.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# if your project is cloned from this repository, &lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# if your project is cloned from this repository, &lt;/span&gt;
 &lt;span class="c1"&gt;# you can simply ignore this first command&lt;/span&gt;
 git remote add origin https://git.coding.net/synckey/synckey.git
 git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;Then if you want to push to both of them, just rum &lt;code&gt;git push&lt;/code&gt; as normal.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://blog.csdn.net/fancivez/article/details/51544354"&gt;git 添加多个远程库(remote)&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="git"></category></entry><entry><title>第一次去NZ必备物品清单</title><link href="http://synckey.name/necessities-you-should-take-for-the-first-time-go-to-nz.html" rel="alternate"></link><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><author><name>Hollie</name></author><id>tag:synckey.name,2017-05-24:/necessities-you-should-take-for-the-first-time-go-to-nz.html</id><summary type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
-&lt;table&gt;
+&lt;p&gt;&lt;a href="http://blog.csdn.net/fancivez/article/details/51544354"&gt;git 添加多个远程库(remote)&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="git"></category></entry><entry><title>第一次去NZ必备物品清单</title><link href="http://synckey.name/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html" rel="alternate"></link><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><author><name>Hollie</name></author><id>tag:synckey.name,2017-05-24:/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html</id><summary type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;文件&lt;/th&gt;
@@ -551,7 +541,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;2. 资金&lt;/h4&gt;
-&lt;table&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;资金&lt;/th&gt;
@@ -565,7 +555,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align="left"&gt;银联卡 …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
-&lt;table&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;文件&lt;/th&gt;
@@ -648,7 +638,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;2. 资金&lt;/h4&gt;
-&lt;table&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;资金&lt;/th&gt;
@@ -671,7 +661,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;3. 服装&lt;/h4&gt;
-&lt;table&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;服装&lt;/th&gt;
@@ -710,7 +700,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;4.日用品&lt;/h4&gt;
-&lt;table&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;日用品&lt;/th&gt;
@@ -753,7 +743,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;5. 电器&lt;/h4&gt;
-&lt;table&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;电器&lt;/th&gt;
@@ -796,7 +786,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;6.药物&lt;/h4&gt;
-&lt;table&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;药物&lt;/th&gt;
@@ -826,7 +816,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
   $(document).ready(function () {
     $("table").addClass("table table-condensed table-striped");
   });
-&lt;/script&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>BFS遍历到图的指定层的一种方法</title><link href="http://synckey.name/BFS-to-the-specific-level-of-a-graph.html" rel="alternate"></link><published>2017-05-10T00:00:00+08:00</published><updated>2017-05-10T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-05-10:/BFS-to-the-specific-level-of-a-graph.html</id><summary type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;leetcode原题&lt;/a&gt;&lt;/p&gt;
+&lt;/script&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>BFS遍历到图的指定层的一种方法</title><link href="http://synckey.name/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html" rel="alternate"></link><published>2017-05-10T00:00:00+08:00</published><updated>2017-05-10T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-05-10:/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html</id><summary type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;leetcode原题&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Only one letter can be changed at a time.&lt;/li&gt;
@@ -850,58 +840,48 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;li&gt;You may assume no duplicates in the word list.&lt;/li&gt;
 &lt;li&gt;You may assume beginWord and endWord are non-empty and are not the same.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;这个题可以用图的思路来解答，把beginWord当成是图的root节点，每个词通过一次变换的词作为这个节点的子节点，从beginWord开始遍历搜索endWord，所有的路径中最小的那些就是答案。当然，遍历的过程中要注意，这是一个有环图，要记录已经遍历过的节点。因为是路径搜索，要保存路径，所以最简单的想法是使用DFS对整个图进行搜索，最后将最短路径取出来。然而，这个方法行不通，尤其是在字典比较大的时候，树特别深，会超时。如果对整个树进行BFS也会有一样的结果，都会超时。一个优化的思路就是只对graph进行遍历，一直到endWord第一次出现的那一层终止，因为要找的是最短变换，后面的遍历没有必要。传统的BFS算法使用一个队列来保存将要遍历的节点列表，但是并不能知道当前遍历节点所在的层数。所以就用一个Map&lt;String, Integer&gt;来保存每个节点第一次出现的层数，endWord第一次出现的那一层，就是迭代要终止的那一层，假设为minLevel。在遍历完minLevel以后，就可以终止算法。&lt;/p&gt;
+&lt;p&gt;这个题可以用图的思路来解答，把beginWord当成是图的root节点，每个词通过一次变换的词作为这个节点的子节点，从beginWord开始遍历搜索endWord，所有的路径中最小的那些就是答案。当然，遍历的过程中要注意，这是一个有环图，要记录已经遍历过的节点。因为是路径搜索，要保存路径，所以最简单的想法是使用DFS对整个图进行搜索，最后将最短路径取出来。然而，这个方法行不通，尤其是在字典比较大的时候，树特别深，会超时。如果对整个树进行BFS也会有一样的结果，都会超时。一个优化的思路就是只对graph进行遍历，一直到endWord第一次出现的那一层终止，因为要找的是最短变换，后面的遍历没有必要。传统的BFS算法使用一个队列来保存将要遍历的节点列表，但是并不能知道当前遍历节点所在的层数。所以就用一个Map&lt;string, integer=""&gt;来保存每个节点第一次出现的层数，endWord第一次出现的那一层，就是迭代要终止的那一层，假设为minLevel。在遍历完minLevel以后，就可以终止算法。&lt;/string,&gt;&lt;/p&gt;
 &lt;p&gt;最终要输出变换路径，可以一边遍历，一边构造图的结构。这个问题是有向有环图，可以使用&lt;code&gt;Map&amp;lt;String, Set&amp;lt;String&amp;gt;&amp;gt; graph&lt;/code&gt;来构造整个图。&lt;/p&gt;
 &lt;p&gt;最终，使用递归打印出构造出来的&lt;code&gt;graph&lt;/code&gt;中所有&lt;code&gt;beginWord-&amp;gt;endWord&lt;/code&gt;之间的路径。&lt;/p&gt;
 &lt;p&gt;详细代码见:&lt;a href="https://discuss.leetcode.com/topic/88859/263ms-easy-to-understand-java-solution-using-simple-BFS"&gt;263ms Easy to Understand Java Solution Using Simple BFS&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这个问题还有一个简化版的问题&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;Word Ladder&lt;/a&gt;，只要求出&lt;code&gt;beginWord&lt;/code&gt;和&lt;code&gt;endWord&lt;/code&gt;之间最短变换的路径长度。可以用上面的解法，或者直接DFS这个图，第一次遇到&lt;code&gt;endWord&lt;/code&gt;时返回路径长度即可。&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/2857/share-two-similar-java-solution-that-accpted-by-oj/2"&gt;Share two similar Java solution that Accpted by OJ.&lt;/a&gt;&lt;/p&gt;</content><category term="algorithm"></category></entry><entry><title>Read .mat Files in Python</title><link href="http://synckey.name/read-mat-files-in-python.html" rel="alternate"></link><published>2017-03-30T00:00:00+08:00</published><updated>2017-03-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-30:/read-mat-files-in-python.html</id><summary type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.io&lt;/span&gt;
-&lt;span class="n"&gt;mat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loadmat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;file.mat&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/2857/share-two-similar-java-solution-that-accpted-by-oj/2"&gt;Share two similar Java solution that Accpted by OJ.&lt;/a&gt;&lt;/p&gt;</content><category term="algorithm"></category></entry><entry><title>Read .mat Files in Python</title><link href="http://synckey.name/posts/2017/03/30/read-mat-files-in-python.html" rel="alternate"></link><published>2017-03-30T00:00:00+08:00</published><updated>2017-03-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-30:/posts/2017/03/30/read-mat-files-in-python.html</id><summary type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.io&lt;/span&gt;
+&lt;span class="n"&gt;mat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loadmat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'file.mat'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;Enjoy^_^&lt;/p&gt;
 &lt;h4&gt;Reference&lt;/h4&gt;
 &lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.io&lt;/span&gt;
-&lt;span class="n"&gt;mat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loadmat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;file.mat&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;scipy.io&lt;/span&gt;
+&lt;span class="n"&gt;mat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;scipy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;loadmat&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'file.mat'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;Enjoy^_^&lt;/p&gt;
 &lt;h4&gt;Reference&lt;/h4&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>Enable Pelican to Render Markdown Tables</title><link href="http://synckey.name/enable-pelican-to-render-markdown-tables.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/enable-pelican-to-render-markdown-tables.html</id><summary type="html">&lt;p&gt;Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;MARKDOWN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s1"&gt;&amp;#39;extension_configs&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="s1"&gt;&amp;#39;markdown.extensions.tables&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:{},&lt;/span&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>Enable Pelican to Render Markdown Tables</title><link href="http://synckey.name/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html</id><summary type="html">&lt;p&gt;Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;MARKDOWN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s1"&gt;'extension_configs'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="s1"&gt;'markdown.extensions.tables'&lt;/span&gt;&lt;span class="p"&gt;:{},&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;Then,you can use the following code to generate the table below:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;|First Header  | Second Header|
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;|First Header  | Second Header|
 |------------- | -------------|
 |Content …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;MARKDOWN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s1"&gt;&amp;#39;extension_configs&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="s1"&gt;&amp;#39;markdown.extensions.tables&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:{},&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;MARKDOWN&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s1"&gt;'extension_configs'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="s1"&gt;'markdown.extensions.tables'&lt;/span&gt;&lt;span class="p"&gt;:{},&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;Then,you can use the following code to generate the table below:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;|First Header  | Second Header|
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;|First Header  | Second Header|
 |------------- | -------------|
 |Content Cell  | Content Cell|
 |Content Cell  | Content Cell|
 &lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;table&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;First Header&lt;/th&gt;
@@ -920,17 +900,15 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;By default,if you use bootstrap, the table will not have borders, you can tackle this problem by adding the following codes  to the end of your html file.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nx"&gt;script&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
   &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;table&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;class&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;table table-condensed table-bordered&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"table"&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"class"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;"table table-condensed table-bordered"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="p"&gt;});&lt;/span&gt;
 &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="err"&gt;/script&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://pythonhosted.org/Markdown/extensions/tables.html"&gt;Markdown extensions&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican Document&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="pelican"></category><category term="blog"></category></entry><entry><title>今朝一别，或是流水十年</title><link href="http://synckey.name/see-you-ten-years-later.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/see-you-ten-years-later.html</id><summary type="html">&lt;p&gt;周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican Document&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="pelican"></category><category term="blog"></category></entry><entry><title>今朝一别，或是流水十年</title><link href="http://synckey.name/posts/2017/03/19/see-you-ten-years-later.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/posts/2017/03/19/see-you-ten-years-later.html</id><summary type="html">&lt;p&gt;周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。&lt;/p&gt;
 &lt;p&gt;跟jw是大学室友，他的床，就在我的隔壁，每天晚上他爬上床，我都能听到。进大学的第一天，我刚到宿舍，就看到他坐在那里，当时对他的第一印象，头很大，可能头大就是他聪明的原因吧。jw和我一样，来自农村的家庭，家里也不富裕，所以共同语言有不少。当时我们常常一起上课，一起出去买东西，没想到后来还一起来了北京，一起去百度实习。虽然他去百度正式工作的时候，我已经不在百度了。&lt;/p&gt;
 &lt;p&gt;2011年夏天，也就是大三快到大四的下学期，我拿了百度的实习offer，学院跟百度有合作，搞了一个&lt;a href="https://github.com/gmsh/dnscache"&gt;项目实训&lt;/a&gt;，jw，我，还有gms分一组，那时候我们每天都顶着夏日，来到机房，敲代码，调试代码。 后来因为他在项目里面表现优异，百度也给了他面试机会。最终，他也拿到了百度的实习offer，百度运维部实习。跟我不是同一批，如果我没记错，他是在我后面入职的。在百度实习的时候，我们并没有很多交集 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。&lt;/p&gt;
 &lt;p&gt;跟jw是大学室友，他的床，就在我的隔壁，每天晚上他爬上床，我都能听到。进大学的第一天，我刚到宿舍，就看到他坐在那里，当时对他的第一印象，头很大，可能头大就是他聪明的原因吧。jw和我一样，来自农村的家庭，家里也不富裕，所以共同语言有不少。当时我们常常一起上课，一起出去买东西，没想到后来还一起来了北京，一起去百度实习。虽然他去百度正式工作的时候，我已经不在百度了。&lt;/p&gt;
@@ -944,92 +922,88 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;p&gt;从安河桥北到中关村，只有20分钟的地铁，我们约在了离他更近的中关村吃站点pizza。他们可以叫做夫妻了吧（去年领了证），jw稍微有点变胖了，
 头似乎更大了，ll却比以前更瘦了。jw说，想喝酒，下一次一起喝可能要再过十年八年了。他下去买酒，买了好几罐啤酒，说是把楼下的小超市的啤酒都买光了。我们一人一半，都喝完了，头很晕。ll说了不少他们公司的趣事，也说了很多要去法国租房，工作，担心安全问题，当然我们都很担心的，就是经济问题。作为还有三个月也要只身去异国他乡的我来说，他们的心情，也是我的心情。&lt;/p&gt;
 &lt;p&gt;老同学见老同学，总有说不完的话，此刻不是秋天，内心却很凄凉。6年前，我们在宿舍憧憬着去百度工作，满是期待，彼时正是初夏，万物勃发。6年时间一晃就过去了，我们又要开启各自的新生活，眼神里除了期待，似乎还有一些别的。如果时间能再过一年，我们就要认识十年了，那时候的我们，会是在哪里？ 新西兰与法国，要横跨大半个地球。吃完饭喝完咖啡，我们一起去南京银行办银行卡，办完了我就赶着去办浦发的信用卡，于是就此别过。&lt;/p&gt;
-&lt;p&gt;--“你们飞的时候，反正也是从北京，叫我送你们啊？”&lt;br&gt;
---“我们是夜里飞。”&lt;br&gt;
+&lt;p&gt;--“你们飞的时候，反正也是从北京，叫我送你们啊？”&lt;br/&gt;
+--“我们是夜里飞。”&lt;br/&gt;
 --“哦，那算了，有机会再约哈~”&lt;/p&gt;
 &lt;p&gt;在回来的路上想到了两句诗，很是契合心意，似乎有酒有十年，然而终究是想不起来是哪两句了。查来查去，只查到一句“浮云一别后，流水十年间”，说的却是分别十年的久别重逢，那么就用它作为结尾吧。十年以后，我们必定还能相见。
 &lt;blockquote class="center-block"&gt;
 江汉曾为客，
-相逢每醉还.&lt;br&gt;
+相逢每醉还.&lt;br/&gt;
 浮云一别后，
-流水十年间.&lt;br&gt;
+流水十年间.&lt;br/&gt;
 欢笑情如旧，
-萧疏鬓已斑.&lt;br&gt;
+萧疏鬓已斑.&lt;br/&gt;
 何因北归去，
-淮上对秋山.&lt;br&gt;
+淮上对秋山.&lt;br/&gt;
   --&amp;lt;淮上喜会梁川故友&amp;gt; 韦应物
-&lt;/blockquote&gt;&lt;/p&gt;</content><category term="life"></category></entry><entry><title>Rename a Tensor or Operation in Tensorflow</title><link href="http://synckey.name/rename-a-tensor-or-operation-in-tensorflow.html" rel="alternate"></link><published>2017-03-17T00:00:00+08:00</published><updated>2017-03-17T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-17:/rename-a-tensor-or-operation-in-tensorflow.html</id><summary type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost no runtime cost:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;tf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name_scope&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;abc&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/blockquote&gt;&lt;/p&gt;</content><category term="life"></category></entry><entry><title>Rename a Tensor or Operation in Tensorflow</title><link href="http://synckey.name/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html" rel="alternate"></link><published>2017-03-17T00:00:00+08:00</published><updated>2017-03-17T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-17:/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html</id><summary type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost no runtime cost:&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="n"&gt;tf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name_scope&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"abc"&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;
-    &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;identity&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;z&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;identity&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"z"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;The tf.identity function returns a Tensor with the same shape and contents as the input Tensor or value.&lt;/p&gt;
 &lt;p&gt;The recommended way to structure your name scope is to assign the name of the scope itself to the "output" from the scope (if there is a single output op):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;with tf.name_scope(&amp;quot;abc&amp;quot;) as scope:
-    # z will get the name &amp;quot;abc&amp;quot;. x and y will have names in &amp;quot;abc/...&amp;quot; if they
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;with tf.name_scope("abc") as scope:
+    # z will get the name "abc". x and y will have names in "abc/..." if they
     # are converted to tensors.
     z = tf.add(x, y, name=scope)
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;This is how the TensorFlow libraries are structured, and it tends to give the best visualization in TensorBoard.&lt;/p&gt;
 &lt;h4&gt;References&lt;/h4&gt;
-&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/34399588/how-to-rename-a-variable-which-respects-the-name-scope/34399966#34399966"&gt;How to rename a variable which respects the name scope?&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="tools."></category></entry><entry><title>2016 Full of Serendipities</title><link href="http://synckey.name/2016-summery.html" rel="alternate"></link><published>2017-02-23T00:00:00+08:00</published><updated>2017-02-23T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-23:/2016-summery.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/34399588/how-to-rename-a-variable-which-respects-the-name-scope/34399966#34399966"&gt;How to rename a variable which respects the name scope?&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="tools."></category></entry><entry><title>2016 Full of Serendipities</title><link href="http://synckey.name/posts/2017/02/23/2016-summery.html" rel="alternate"></link><published>2017-02-23T00:00:00+08:00</published><updated>2017-02-23T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-23:/posts/2017/02/23/2016-summery.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;不知道每个人心里是不是都有不愿意提及的往事，在某些时候，你是彻底的骗子，无赖，恶魔。有一阵子活在自己虚设的缱绻而又梦境里，不问对错，不追因果，一切那么自然而然。即使你知道这梦总有梦醒的时刻，结局早已写好，也假装要让它继续圆下去，因为从开始你就是恶魔，恶魔总要让梦破碎。这些事，本可以远离，不用歇斯底里，更不用刨根问底。可喜的是，放弃本不珍贵的东西并不难。高中的时候读过的诗，要过许多年，才解其中意，真正做到的，又能有几个？&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;爱里不见是非,&lt;br&gt;
-爱里不见强弱,&lt;br&gt;
-爱里只有情,&lt;br&gt;
+&lt;p&gt;爱里不见是非,&lt;br/&gt;
+爱里不见强弱,&lt;br/&gt;
+爱里只有情,&lt;br/&gt;
 情没有对错.   &lt;/p&gt;
-&lt;p&gt;爱里只见花飞,&lt;br&gt;
-爱里只见叶落,&lt;br&gt;
-爱里只有美,&lt;br&gt;
+&lt;p&gt;爱里只见花飞,&lt;br/&gt;
+爱里只见叶落,&lt;br/&gt;
+爱里只有美,&lt;br/&gt;
 美没有善恶.  &lt;/p&gt;
-&lt;p&gt;宁愿因情生灾,&lt;br&gt;
-宁愿因美致祸,&lt;br&gt;
-宁愿情人说谎,&lt;br&gt;
-可是我不说破.&lt;br&gt;
+&lt;p&gt;宁愿因情生灾,&lt;br/&gt;
+宁愿因美致祸,&lt;br/&gt;
+宁愿情人说谎,&lt;br/&gt;
+可是我不说破.&lt;br/&gt;
 --&amp;lt;爱里&amp;gt; 李敖&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;五月份的时候，从小南庄小破烂的二居室次卧搬到了自如的一个主卧，生活质量也随着房租提高，房租从2000提高到了3700一个月，肉疼。在那个装修跟房租格格不入的90年二层小楼里，生活其实得到了极大的满足 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;不知道每个人心里是不是都有不愿意提及的往事，在某些时候，你是彻底的骗子，无赖，恶魔。有一阵子活在自己虚设的缱绻而又梦境里，不问对错，不追因果，一切那么自然而然。即使你知道这梦总有梦醒的时刻，结局早已写好，也假装要让它继续圆下去，因为从开始你就是恶魔，恶魔总要让梦破碎。这些事，本可以远离，不用歇斯底里，更不用刨根问底。可喜的是，放弃本不珍贵的东西并不难。高中的时候读过的诗，要过许多年，才解其中意，真正做到的，又能有几个？&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;爱里不见是非,&lt;br&gt;
-爱里不见强弱,&lt;br&gt;
-爱里只有情,&lt;br&gt;
+&lt;p&gt;爱里不见是非,&lt;br/&gt;
+爱里不见强弱,&lt;br/&gt;
+爱里只有情,&lt;br/&gt;
 情没有对错.   &lt;/p&gt;
-&lt;p&gt;爱里只见花飞,&lt;br&gt;
-爱里只见叶落,&lt;br&gt;
-爱里只有美,&lt;br&gt;
+&lt;p&gt;爱里只见花飞,&lt;br/&gt;
+爱里只见叶落,&lt;br/&gt;
+爱里只有美,&lt;br/&gt;
 美没有善恶.  &lt;/p&gt;
-&lt;p&gt;宁愿因情生灾,&lt;br&gt;
-宁愿因美致祸,&lt;br&gt;
-宁愿情人说谎,&lt;br&gt;
-可是我不说破.&lt;br&gt;
+&lt;p&gt;宁愿因情生灾,&lt;br/&gt;
+宁愿因美致祸,&lt;br/&gt;
+宁愿情人说谎,&lt;br/&gt;
+可是我不说破.&lt;br/&gt;
 --&amp;lt;爱里&amp;gt; 李敖&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;五月份的时候，从小南庄小破烂的二居室次卧搬到了自如的一个主卧，生活质量也随着房租提高，房租从2000提高到了3700一个月，肉疼。在那个装修跟房租格格不入的90年二层小楼里，生活其实得到了极大的满足。这里有我要的安静，楼下有很多吃的，离人大也不远。把两张大桌子搬进自己的房间，把书都理好，堆在上面，光是看着这两张桌子，就很满意。总觉得没有好桌子，不开着台灯握着笔，就不能读书，可能这是生活里仅剩的一点仪式感。在这个房间里，得到滋润的，还有我的吊兰，我把它从将府家园搬到小南庄的38号楼，再搬到30号楼，给它施了从家里带过来的菜籽饼，放在阳台的护栏上，每天可以沐浴阳光，经过一个夏天，它吊出了很多新的小吊兰，垂了下来。阳台的前面，有一棵大树，夏天的傍晚，风一吹就沙沙的响，虽然比不上小时候家门口那几棵参天的大白杨，在这喧嚣的城市里，能寻觅到一丝幽静，已经很满足。常常从后面的水果店买上半个西瓜，一边用勺子挖了吃，一边听，空调吹在脸上，浪费掉最美的午后。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;海已经漫上来了&lt;br&gt;
-漫过 生命的沙滩&lt;br&gt;
-这黄昏的海岸&lt;br&gt;
-是什么 让我&lt;br&gt;
-充满诗意 是什么 &lt;br&gt;
+&lt;p&gt;海已经漫上来了&lt;br/&gt;
+漫过 生命的沙滩&lt;br/&gt;
+这黄昏的海岸&lt;br/&gt;
+是什么 让我&lt;br/&gt;
+充满诗意 是什么 &lt;br/&gt;
 让你流连忘返&lt;/p&gt;
-&lt;p&gt;那样忧郁一季&lt;br&gt;
-海蓝 是我心间&lt;br&gt;
-满溢的热情&lt;br&gt;
-那样澎湃的一晨&lt;br&gt;
-潮涨 是梦中&lt;br&gt;
+&lt;p&gt;那样忧郁一季&lt;br/&gt;
+海蓝 是我心间&lt;br/&gt;
+满溢的热情&lt;br/&gt;
+那样澎湃的一晨&lt;br/&gt;
+潮涨 是梦中&lt;br/&gt;
 飘忽的爱恋 
-只愿 陪你入梦&lt;br&gt;
-好让你遇上&lt;br&gt;
-那一袭如诗的轻纱&lt;br&gt;
-那个如画的身影&lt;br&gt;
-好让你 遇我&lt;br&gt;
-一海冰清的柔情&lt;br&gt;
+只愿 陪你入梦&lt;br/&gt;
+好让你遇上&lt;br/&gt;
+那一袭如诗的轻纱&lt;br/&gt;
+那个如画的身影&lt;br/&gt;
+好让你 遇我&lt;br/&gt;
+一海冰清的柔情&lt;br/&gt;
 ——《永恒的夏娃·听海》旖旎&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;次卧的人周末不在，所以一个人也很自在，这个地方，离公司走路也就二十分钟，独来独往，并不感觉寂寞。在这里刷完了 insanity max，insanity maxout 每节课只有30分钟，虽然中途并不休息，但是效果没有 insanity 好，所以做完了以后在体型上并没有改观。 在这里还上完了之前跟献会一起买的35h的51talk英语口语课，认识了两个美女老师，其中一位来自南非，移民到阿根廷，擅长说故事，&lt;em&gt;serendipity&lt;/em&gt;这个词，也是她教给我的。另外一位是一个开朗的，不用智能手机的，每天健身的美国妹子。学完了曾经一度自我感觉良好，有个老外甚至问我有没有在国外留学过。现实终究是现实，后来被雅思又一次狠狠的打了脸，欣慰的是，口语总算从5.5到6.0，也算是有所进步。&lt;/p&gt;
@@ -1039,15 +1013,14 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;p&gt;后来mm邀请我去参加她的毕业典礼，我想她大概是在暗示什么？开心归开心，惆怅也是有的，我这么丑，甚至都没有一套正装，怎么好意思去参加别人的毕业典礼？后来再一次证明我是想多了，毕业典礼也没去成，心里有所解脱之余，满是失望。幸运的是，我们还是在她回苏州之前见了一面，在蓝色港湾的站点pizza，站点pizza是我选的，蓝色港湾是mm选的。那天点的pizza并不好吃。如果吃饭的时候她没有一直跟我提她的一位男同事，并且吃完想跟我看一场《魔兽》我也不会爱上她吧？看完魔兽我送她回学校，夏天很热，她第二天就要离开帝都回苏州了，我很想抱她一下，终究未能如愿。&lt;/p&gt;
 &lt;p&gt;2016年应该是我长大的一年吧，9月份跟mm一起去南京，见到了姐姐，姐夫，外甥外甥女，在玄武湖上荡舟并不浪漫。后来也是第一次见到她姐姐，第一次去她家里，无论如何，跨出了这一步，是我之前从未敢想的。&lt;/p&gt;
 &lt;div class="figure"&gt;
-    &lt;img src="/static/images/2016.11.13_su_zhou.jpg" alt="suzhou" class="img-responsive carousel-inner img-rounded"/&gt;
-    &lt;div class="caption"&gt;2016.11.13 苏州博物馆&lt;/div&gt;
- &lt;/div&gt;
-
+&lt;img alt="suzhou" class="carousel-inner img-responsive img-rounded" src="/static/images/2016.11.13_su_zhou.jpg"/&gt;
+&lt;div class="caption"&gt;2016.11.13 苏州博物馆&lt;/div&gt;
+&lt;/div&gt;
 &lt;p&gt;国庆节mm来帝都玩，这是从上大学以来第一次国庆节没有回家，认识了cq,hzf,wym,都是很有趣的人。&lt;/p&gt;
 &lt;p&gt;2016年的运动乏善可陈，4月份和xh参加了一次半马，成绩是01:47:35，平均4m:55s/km，这个成绩我很满意，代表了自己的目前的最高水准吧。跑完了xh和他怀孕的老婆请我吃饭。上半年主要是在人大校园里面跑，后来搬到回龙观，就再也没跑过。
- &lt;div class="figure"&gt; 
-        &lt;img src="/static/images/2016.04.17_half_marathon.jpg" alt="babies" class="carousel-inner  img-rounded img-responsive center-block"/&gt;
-        &lt;div class="caption"&gt;2016.06.09 半马&lt;/div&gt;
+ &lt;div class="figure"&gt;
+&lt;img alt="babies" class="carousel-inner center-block img-responsive img-rounded" src="/static/images/2016.04.17_half_marathon.jpg"/&gt;
+&lt;div class="caption"&gt;2016.06.09 半马&lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;大概是从2015年开始，心里和纸上就开始频繁的做计算，把自己的各种投资，股票，基金，众筹，加到一起，再把未来的收入一起加进去，算出来，看什么时候能付得起首付。每一次的结论就是：大概2017年4月份。在没有遇到 mm 之前，并不绝望。买房对我像是一个恍惚的未来，好像近在眼前，又遥不可及。如果不是那天中午zh和xy过来找我吃饭，也许我也下不定决心要买。过程很曲折，这是在帝都五年来最绝望的时刻。在清河看过一次老破小，如果不是亲眼见到，真的不敢相信那样的破房子值那么多钱。人常常在某一个时刻感觉自己特别渺小，在星空面前，在时代面前，在潮流面前，在房价面前，更是渺小无力。幸运的是最亲的姐姐姐夫们给了我很大帮助，是我最大的后盾，wjy跑过来跟我一起看房子，最终是她在看好的两套里拍板的这一套，后来还帮我购置了很多物件，在忙碌中来回帝都两次。zh也借了不少钱给我，这是最感念的部分。当然，买房子的过程也有很多不开心，不愿意想起也不愿回忆。很难去要求别人怎么样，有的关系根本不需要维持，自己有钱比什么都重要。这是在这个过程中学到的。&lt;/p&gt;
 &lt;p&gt;十月，老子他们一行十来个人过来帮助我庆贺，这是wjy提议的，老子他们对这个房子挺满意，这使我最感欣慰。带着他们去了故宫，鸟巢，长城。带他们玩的时候，我的表现很不好，没有耐心。不能拿对自己的要求，对待父母，他们年级大了，让他们生气是我不想，他们给了我最好的，我也该把我最好的给他们。这是我要反思的。&lt;/p&gt;
@@ -1055,8 +1028,8 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;p&gt;4月份职称升了一级。从今年开始接触深度学习，用tensorflow跑出了一些demo，对深度学习算是入了门，但是真正深入学习的东西几乎没有。反观自己，我觉得两个原因让自己在专业方面停步不前：1.对技术的热情减少了很多；2.畏难，机器学习跟语言或者其他系统比，要难很多，所以很多东西都是浅尝辄止，深入不下去。在这么浮躁的社会，希望不要忘了立身之本，更不要忘了初心。&lt;/p&gt;
 &lt;p&gt;这一年外甥女忽然一下子长大了，开始问我问题，使我惊喜。看着她如此可爱，时常想，怎么让她保留童真，怎么给最好的给她？外甥也让我感觉特别懂事，看上去很小的孩子，其实已经很有自己的想法，能和人进行很深入的交谈。
 &lt;div class="figure narrow"&gt;
-        &lt;img src="/static/images/2016.06.09_babies.jpg" alt="babies" class="carousel-inner  img-rounded img-responsive center-block"/&gt;
-        &lt;div class="caption"&gt;2016.06.09 babies&lt;/div&gt;
+&lt;img alt="babies" class="carousel-inner center-block img-responsive img-rounded" src="/static/images/2016.06.09_babies.jpg"/&gt;
+&lt;div class="caption"&gt;2016.06.09 babies&lt;/div&gt;
 &lt;/div&gt;
 2016年总共读了这些书：&lt;/p&gt;
 &lt;ul&gt;
@@ -1081,7 +1054,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 8月跟跟mm在苏州看了一场奶茶的演唱会，喜欢她的不少歌。&lt;/p&gt;
 &lt;p&gt;从今年来开始关注窦文涛的《锵锵三人行》，每集都看，他在优酷做的圆桌派第一季也看完了。
 其他每集都看的节目《有今晚八零后》和《暴走大事件》。以上就是本年的全部精神生活。&lt;/p&gt;
-&lt;p&gt;2016，full of serendipities！&lt;/p&gt;</content><category term="life"></category><category term="posts"></category><category term="mm"></category><category term="summery"></category></entry><entry><title>《概率论》复习笔记</title><link href="http://synckey.name/review-of-probability.html" rel="alternate"></link><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-20:/review-of-probability.html</id><summary type="html">&lt;h4&gt;1. 随机事件和概率&lt;/h4&gt;
+&lt;p&gt;2016，full of serendipities！&lt;/p&gt;</content><category term="life"></category><category term="posts"></category><category term="mm"></category><category term="summery"></category></entry><entry><title>《概率论》复习笔记</title><link href="http://synckey.name/posts/2017/02/20/review-of-probability.html" rel="alternate"></link><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-20:/posts/2017/02/20/review-of-probability.html</id><summary type="html">&lt;h4&gt;1. 随机事件和概率&lt;/h4&gt;
 &lt;h5&gt;1.1全概率公式&lt;/h5&gt;
 &lt;p&gt;设事件 $A_1,A_2,\cdots,A_n$ 两两互不相容，$P(A_i)&amp;gt;0(i=1,2,\cdots,n)$，且$\sum\limits_{i=1}^{n}{A_i}=\Omega$，
 则对任一事件$B$，有
@@ -1151,7 +1124,7 @@ P(X_n=k)=\frac{\lambda ^ k}{k!}e^{-\lambda},k=0,1,2,\cdots .
 $$
 式中$\lambda&amp;gt;0$是常数，则称$X$服从以$\lambda$为参数的泊松分布，记作$X\sim P(\lambda)$。&lt;/p&gt;
 &lt;h5&gt;References&lt;/h5&gt;
-&lt;p&gt;&lt;a href="https://www.amazon.cn/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E6%95%99%E7%A8%8B-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/dp/B005EV51AO/ref=sr_1_1?ie=UTF8&amp;amp;qid=1487571721&amp;amp;sr=8-1&amp;amp;keywords=%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1+%E5%88%98%E5%BB%BA%E4%BA%9A"&gt;《概率论与数理统计》&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>出生公正和无犯罪记录证明公正</title><link href="http://synckey.name/eoi-documents.html" rel="alternate"></link><published>2016-11-07T00:00:00+08:00</published><updated>2016-11-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-07:/eoi-documents.html</id><summary type="html">&lt;h3&gt;EOI 地址&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.cn/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E6%95%99%E7%A8%8B-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/dp/B005EV51AO/ref=sr_1_1?ie=UTF8&amp;amp;qid=1487571721&amp;amp;sr=8-1&amp;amp;keywords=%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1+%E5%88%98%E5%BB%BA%E4%BA%9A"&gt;《概率论与数理统计》&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>出生公正和无犯罪记录证明公正</title><link href="http://synckey.name/posts/2016/11/07/eoi-documents.html" rel="alternate"></link><published>2016-11-07T00:00:00+08:00</published><updated>2016-11-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-07:/posts/2016/11/07/eoi-documents.html</id><summary type="html">&lt;h3&gt;EOI 地址&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/criteria/skilled-migrant-category-resident-visa?nationality=nationality-CHN&amp;amp;country=residence-CHN&amp;amp;applying=co"&gt;eoi 打分系统&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;EOI材料准备&lt;/h3&gt;
 &lt;h3&gt;出生公正和无犯罪记录证明公正&lt;/h3&gt;
@@ -1165,7 +1138,7 @@ $$
 &lt;p&gt;&lt;strong&gt;办理地点&lt;/strong&gt;：户籍所在地的派出所和公证处&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;携带材料&lt;/strong&gt;： 父母身份证，户口本，护照，本人身份证，本人近期二寸照片&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;费用&lt;/strong&gt;：500 一共&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Date&lt;/strong&gt;: 2017.06.01&lt;/p&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>SFV 材料准备</title><link href="http://synckey.name/sfv-documents.html" rel="alternate"></link><published>2016-11-07T00:00:00+08:00</published><updated>2016-11-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-07:/sfv-documents.html</id><summary type="html">&lt;h2&gt;需要准备的材料列表&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Date&lt;/strong&gt;: 2017.06.01&lt;/p&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>SFV 材料准备</title><link href="http://synckey.name/posts/2016/11/07/sfv-documents.html" rel="alternate"></link><published>2016-11-07T00:00:00+08:00</published><updated>2016-11-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-07:/posts/2016/11/07/sfv-documents.html</id><summary type="html">&lt;h2&gt;需要准备的材料列表&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;护照（原件）&lt;/li&gt;
 &lt;li&gt;拍证件照&lt;/li&gt;
@@ -1207,10 +1180,9 @@ $$
 &lt;h2&gt;学历学位证书&lt;/h2&gt;
 &lt;p&gt;我是自己翻译了毕业证和学位证，然后去学校档案室盖章，可以当原件使用。山东大学的中英文学历、学位证明模板和说明可以在&lt;a href="http://www.bkjx.sdu.edu.cn/info/1032/25229.htm"&gt;学校网站上&lt;/a&gt;下载到。&lt;/p&gt;
 &lt;div class="figure"&gt;
-    &lt;img src="/static/images/degree_deploma.jpg" alt="degree_deploma" height="150%" width="1200%" class="img-responsive carousel-inner img-rounded"/&gt;
-    &lt;div class="caption"&gt;学历学位模板&lt;/div&gt;
- &lt;/div&gt;
-
+&lt;img alt="degree_deploma" class="carousel-inner img-responsive img-rounded" height="150%" src="/static/images/degree_deploma.jpg" width="1200%"/&gt;
+&lt;div class="caption"&gt;学历学位模板&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2&gt;存款证明&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;费用&lt;/strong&gt;：20&lt;/p&gt;
 &lt;p&gt;开了一张6万的存款证明，没有冻结。&lt;/p&gt;
@@ -1221,7 +1193,7 @@ $$
 &lt;h2&gt;收到签证&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt; Date&lt;/strong&gt;: 2016.12.30&lt;/p&gt;
 &lt;h3&gt;费用&lt;/h3&gt;
-&lt;table&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;Item&lt;/th&gt;
@@ -1267,7 +1239,7 @@ $$
   $(document).ready(function () {
     $("table").attr("class","table table-condensed table-bordered");
   });
-&lt;/script&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>SFV Got</title><link href="http://synckey.name/succeed-to-get-sfv.html" rel="alternate"></link><published>2016-11-06T00:00:00+08:00</published><updated>2016-11-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-06:/succeed-to-get-sfv.html</id><summary type="html">&lt;h1&gt;为什么要抢SFV(Silver Fern Job Search Visa)&lt;/h1&gt;
+&lt;/script&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>SFV Got</title><link href="http://synckey.name/posts/2016/11/06/succeed-to-get-sfv.html" rel="alternate"></link><published>2016-11-06T00:00:00+08:00</published><updated>2016-11-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-06:/posts/2016/11/06/succeed-to-get-sfv.html</id><summary type="html">&lt;h1&gt;为什么要抢SFV(Silver Fern Job Search Visa)&lt;/h1&gt;
 &lt;p&gt;其实这个问题很难回答，也许是我自己没有想清楚，也许是我自己患得患失。早在2014年从前单位离职的时候，当时的直属领导就问我为什么要离职？1 2 3 4 blabla，不好可以细数一大堆。换个工作就没有这些问题了么？他问道。我无法回答，那是我第一次换工作，我无从知晓——在一个地方遇到问题，就想要逃避，不去面对，这个问题永远也解决不了。逃避，不是解决问题的办法。想要出去的想法其实和换工作一样。眼前不好，不代表换个地方就好。去新西兰是否真的就比国内好？我像三年前一样，茫然不晓。  然而，自己的内心里常常知道自己想要什么（尽管大部分想要的常常也得不到）。自己如此强烈的想要出去的原因可能如下：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;污染。从2012年就开始见识了帝都的雾霾，即使戴着口罩也有那种独特的恶心的气味也逃避不掉。无数个想去奔跑的清晨，被困在房间里面做 insanity。有雾霾的日子，心情不会好。 作为一个健身爱好者和惜命如此的少年，并不想在身体蠢蠢欲动的时候被困在室内。尤其是，不想自己的伴侣 …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;为什么要抢SFV(Silver Fern Job Search Visa)&lt;/h1&gt;
@@ -1296,20 +1268,16 @@ $$
 &lt;li&gt;趁年轻，趁还能折腾，也为了能跟妹子过上赤脚跑步的生活，折腾一下，大不了两年以后拿了永久回头签回来。给自己，也是给未来一次机会。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;从决定抢 SFV，到抢到 SFV，到决定使用这个签证去新西兰，心路变化大致如上，有惊喜有失落。自己的命运被托付在一个网页上，甚至从未蒙面的中介手里，却只能旁观，这种感觉也挺神奇和无奈。&lt;/p&gt;
-&lt;p&gt;如果是命运注定要漂泊，大江大海等我来！&lt;/p&gt;</content><category term="mm"></category><category term="life"></category><category term="SFV"></category></entry><entry><title>Notes for Leetcode</title><link href="http://synckey.name/notes-for-leetcode.md.html" rel="alternate"></link><published>2016-10-20T00:00:00+08:00</published><updated>2016-10-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-20:/notes-for-leetcode.md.html</id><summary type="html">&lt;h2&gt;1.Binary Number Representation&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mb"&gt;0b1111&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// which is equals to `x = 15`; and is useful when use the number for masking.&lt;/span&gt;
+&lt;p&gt;如果是命运注定要漂泊，大江大海等我来！&lt;/p&gt;</content><category term="mm"></category><category term="life"></category><category term="SFV"></category></entry><entry><title>Notes for Leetcode</title><link href="http://synckey.name/posts/2016/10/20/notes-for-leetcode.md.html" rel="alternate"></link><published>2016-10-20T00:00:00+08:00</published><updated>2016-10-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-20:/posts/2016/10/20/notes-for-leetcode.md.html</id><summary type="html">&lt;h2&gt;1.Binary Number Representation&lt;/h2&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mb"&gt;0b1111&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// which is equals to `x = 15`; and is useful when use the number for masking.&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h2&gt;2.Rotate Function&lt;/h2&gt;
 &lt;h3&gt;Original Question&lt;/h3&gt;
 &lt;p&gt;原始问题链接：&lt;a href="https://leetcode.com/problems/rotate-function/"&gt;Rotate Function&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Given an array of integers $A$ and let $n$ to be its length.&lt;/p&gt;
 &lt;p&gt;Assume $B_k$ to be an array obtained by …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;1.Binary Number Representation&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mb"&gt;0b1111&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// which is equals to `x = 15`; and is useful when use the number for masking.&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mb"&gt;0b1111&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// which is equals to `x = 15`; and is useful when use the number for masking.&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h2&gt;2.Rotate Function&lt;/h2&gt;
 &lt;h3&gt;Original Question&lt;/h3&gt;
 &lt;p&gt;原始问题链接：&lt;a href="https://leetcode.com/problems/rotate-function/"&gt;Rotate Function&lt;/a&gt;.&lt;/p&gt;
@@ -1320,14 +1288,12 @@ F(k) = 0 * B_k[0] + 1 * B_k[1] + \cdots + (n-1) * B_k[n-1].
 $$
 Calculate the maximum value of $F(0), F(1), \cdots, F(n-1)$.
 Example:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;A = [4, 3, 2, 6]
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;A = [4, 3, 2, 6]
 F(0) = (0 * 4) + (1 * 3) + (2 * 2) + (3 * 6) = 0 + 3 + 4 + 18 = 25
 F(1) = (0 * 6) + (1 * 4) + (2 * 3) + (3 * 2) = 0 + 4 + 6 + 6 = 16
 F(2) = (0 * 2) + (1 * 6) + (2 * 4) + (3 * 3) = 0 + 6 + 8 + 9 = 23
 F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;So the maximum value of $F(0), F(1), F(2), F(3)$ is $F(3) = 26$.&lt;/p&gt;
 &lt;h3&gt;思路(&lt;a href="https://discuss.leetcode.com/topic/58616/java-solution-o-n-with-non-mathametical-explaination/8"&gt;来源&lt;/a&gt;)&lt;/h3&gt;
 &lt;p&gt;定义新的函数 $D(n)$为 $B_k[0]=A[n]$时$F(n)$ 的值，求 $F(n)$ 的最大值等价于求 $D(n)$ 的最大值，从而有：
@@ -1335,7 +1301,7 @@ $$
    D(n) = D(n-1) - A.length*A[n];
 $$
 即可得解：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;maxRotateFunction&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;maxRotateFunction&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;length&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="o"&gt;}&lt;/span&gt;
@@ -1354,8 +1320,6 @@ $$
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h2&gt;3. Pascal's Triangle(杨辉三角)&lt;/h2&gt;
 &lt;h3&gt;问题&lt;/h3&gt;
 &lt;p&gt;原始问题连接:&lt;a href="https://leetcode.com/problems/pascals-triangle-ii/"&gt;Pascal's Triangle II&lt;/a&gt;.&lt;/p&gt;
@@ -1372,7 +1336,7 @@ $$
 &lt;h3&gt;组合计算&lt;/h3&gt;
 &lt;p&gt;$C_{n}^{m}=\frac{A_{n}^{m}}{n!}=\frac{n(n-1)(n-2)\cdots(n-m+1)}{m!}$&lt;/p&gt;
 &lt;p&gt;上述公式在计算的时候已经避免直接计算$n!$,防止溢出，最终得到的解如下(参考&lt;a href="https://discuss.leetcode.com/topic/62617/java-combination-number"&gt;JAVA combination number&lt;/a&gt;)：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;combine&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;combine&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kt"&gt;long&lt;/span&gt; &lt;span class="n"&gt;res&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="n"&gt;res&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;res&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1388,14 +1352,10 @@ $$
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="o"&gt;}}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h3&gt;4.Convert Char to Numeric&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Character&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getNumericValue&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="sc"&gt;&amp;#39;5&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sc"&gt;&amp;#39;5&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="sc"&gt;&amp;#39;0&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Character&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getNumericValue&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="sc"&gt;'5'&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sc"&gt;'5'&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="sc"&gt;'0'&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h3&gt;5. 将一个数字二进制表示的第一个1后面的所有位都置为1，例如input 是&lt;code&gt;5&lt;/code&gt;，二进制表示是&lt;code&gt;101&lt;/code&gt;，希望得到&lt;code&gt;111&lt;/code&gt;。&lt;/h3&gt;
 &lt;h3&gt;6.素数(prime number)&lt;/h3&gt;
 &lt;h4&gt;素数的定义&lt;/h4&gt;
@@ -1404,15 +1364,13 @@ $$
 &lt;/blockquote&gt;
 &lt;h3&gt;7. LinkedHashSet&lt;/h3&gt;
 &lt;p&gt;这个集合会保持元素的插入顺序，所以，如果想要用它做&lt;code&gt;FIFO&lt;/code&gt;队列，出栈的时候要从第一个元素开始删。在&lt;a href="https://leetcode.com/problems/lfu-cache/#/description"&gt;LFU Cache&lt;/a&gt;这题中，可以用到&lt;code&gt;LinkedHashSet&lt;/code&gt;，因为从中删除元素的复杂度是O(1)。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;LinkedHashSet&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Integer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;LinkedHashSet&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;LinkedHashSet&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Integer&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;set&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;LinkedHashSet&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
 &lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;add&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
 &lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;add&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
 &lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;add&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
 &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;set&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
 &lt;span class="c1"&gt;//:~output [1, 2, 3]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h3&gt;8. Word Ladder II&lt;/h3&gt;
 &lt;p&gt;太麻烦了，单独开一篇：&lt;a href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html"&gt;BFS遍历到图的指定层的一种解法。&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;9. 中位数定义&lt;/h3&gt;
@@ -1423,68 +1381,56 @@ $$
 &lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/65028/java-clean-code-with-explanations-and-running-time-2-solutions"&gt;Solution to Convert a Number to Hexadecimal&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://leetcode.com/problems/rotate-function/"&gt;Rotate Function&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/58616/java-solution-o-n-with-non-mathametical-explaination/8"&gt;Java Solution O(n) with non mathametical explaination&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0"&gt;素数&lt;/a&gt;&lt;/p&gt;</content><category term="algorithm"></category></entry><entry><title>My Bashrc Backup</title><link href="http://synckey.name/my-bashrc-backup.html" rel="alternate"></link><published>2016-10-11T00:00:00+08:00</published><updated>2016-10-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-11:/my-bashrc-backup.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# .bashrc&lt;/span&gt;
+&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0"&gt;素数&lt;/a&gt;&lt;/p&gt;</content><category term="algorithm"></category></entry><entry><title>My Bashrc Backup</title><link href="http://synckey.name/posts/2016/10/11/my-bashrc-backup.html" rel="alternate"></link><published>2016-10-11T00:00:00+08:00</published><updated>2016-10-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-11:/posts/2016/10/11/my-bashrc-backup.html</id><summary type="html">&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# .bashrc&lt;/span&gt;
 &lt;span class="c1"&gt;# Source global definitions&lt;/span&gt;
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -f /etc/bashrc &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
     . /etc/bashrc
 &lt;span class="k"&gt;fi&lt;/span&gt;
 &lt;span class="c1"&gt;# User specific aliases and functions&lt;/span&gt;
 
-&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LS_OPTIONS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;--color=auto&amp;#39;&lt;/span&gt; &lt;span class="c1"&gt;# 如果没有指定，则自动选择颜色&lt;/span&gt;
-&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;CLICOLOR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Yes&amp;#39;&lt;/span&gt; &lt;span class="c1"&gt;#是否输出颜色&lt;/span&gt;
-&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LSCOLORS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Exfxcxdxbxegedabagacad&amp;#39;&lt;/span&gt; &lt;span class="c1"&gt;#指定颜色&lt;/span&gt;
-&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;ll&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ls -l&amp;#39;&lt;/span&gt;
-&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PS1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;\[\e[0;31m\][\u@\H \w]\\&lt;/span&gt;$&lt;span class="s2"&gt; \[\e[m\]&amp;quot;&lt;/span&gt;
-&lt;span class="c1"&gt;# vim:ts=4:sw=4 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# .bashrc&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LS_OPTIONS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'--color=auto'&lt;/span&gt; &lt;span class="c1"&gt;# 如果没有指定，则自动选择颜色&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;CLICOLOR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'Yes'&lt;/span&gt; &lt;span class="c1"&gt;#是否输出颜色&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LSCOLORS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'Exfxcxdxbxegedabagacad'&lt;/span&gt; &lt;span class="c1"&gt;#指定颜色&lt;/span&gt;
+&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;ll&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'ls -l'&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PS1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"\[\e[0;31m\][\u@\H \w]\\&lt;/span&gt;$&lt;span class="s2"&gt; \[\e[m\]"&lt;/span&gt;
+&lt;span class="c1"&gt;# vim:ts=4:sw=4 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# .bashrc&lt;/span&gt;
 &lt;span class="c1"&gt;# Source global definitions&lt;/span&gt;
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -f /etc/bashrc &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
     . /etc/bashrc
 &lt;span class="k"&gt;fi&lt;/span&gt;
 &lt;span class="c1"&gt;# User specific aliases and functions&lt;/span&gt;
 
-&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LS_OPTIONS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;--color=auto&amp;#39;&lt;/span&gt; &lt;span class="c1"&gt;# 如果没有指定，则自动选择颜色&lt;/span&gt;
-&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;CLICOLOR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Yes&amp;#39;&lt;/span&gt; &lt;span class="c1"&gt;#是否输出颜色&lt;/span&gt;
-&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LSCOLORS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Exfxcxdxbxegedabagacad&amp;#39;&lt;/span&gt; &lt;span class="c1"&gt;#指定颜色&lt;/span&gt;
-&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;ll&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ls -l&amp;#39;&lt;/span&gt;
-&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PS1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;\[\e[0;31m\][\u@\H \w]\\&lt;/span&gt;$&lt;span class="s2"&gt; \[\e[m\]&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LS_OPTIONS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'--color=auto'&lt;/span&gt; &lt;span class="c1"&gt;# 如果没有指定，则自动选择颜色&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;CLICOLOR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'Yes'&lt;/span&gt; &lt;span class="c1"&gt;#是否输出颜色&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LSCOLORS&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'Exfxcxdxbxegedabagacad'&lt;/span&gt; &lt;span class="c1"&gt;#指定颜色&lt;/span&gt;
+&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;ll&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;'ls -l'&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PS1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"\[\e[0;31m\][\u@\H \w]\\&lt;/span&gt;$&lt;span class="s2"&gt; \[\e[m\]"&lt;/span&gt;
 &lt;span class="c1"&gt;# vim:ts=4:sw=4&lt;/span&gt;
 &lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PATH&lt;/span&gt;:/usr/local/bin/
-&lt;/pre&gt;&lt;/div&gt;</content><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category><category term="macos"></category></entry><entry><title>JVM Monitor Tool---jvisualvm</title><link href="http://synckey.name/jvm-monitor-tool-jvisualvm.html" rel="alternate"></link><published>2016-07-26T00:00:00+08:00</published><updated>2016-07-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-07-26:/jvm-monitor-tool-jvisualvm.html</id><summary type="html">&lt;h2&gt;通过 jvisualvm 查看 jvm 内部详细信息&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jvisualvm -Dcom.sun.management.jmxremote.port&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;8999&lt;/span&gt; -Dcom.sun.management.jmxremote.ssl&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;false&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category><category term="macos"></category></entry><entry><title>JVM Monitor Tool---jvisualvm</title><link href="http://synckey.name/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html" rel="alternate"></link><published>2016-07-26T00:00:00+08:00</published><updated>2016-07-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-07-26:/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html</id><summary type="html">&lt;h2&gt;通过 jvisualvm 查看 jvm 内部详细信息&lt;/h2&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jvisualvm -Dcom.sun.management.jmxremote.port&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;8999&lt;/span&gt; -Dcom.sun.management.jmxremote.ssl&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;false&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
  -Dcom.sun.management.jmxremote.authenticate&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;false&lt;/span&gt; -Djava.rmi.server.hostname&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;.86.46.252
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h2&gt;查看哪个线程使用 cpu 最多&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ps -mp &lt;span class="m"&gt;2633&lt;/span&gt; -o THREAD,tid,time &lt;span class="p"&gt;|&lt;/span&gt; sort -rn
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ps -mp &lt;span class="m"&gt;2633&lt;/span&gt; -o THREAD,tid,time &lt;span class="p"&gt;|&lt;/span&gt; sort -rn
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式 …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;通过 jvisualvm 查看 jvm 内部详细信息&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jvisualvm -Dcom.sun.management.jmxremote.port&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;8999&lt;/span&gt; -Dcom.sun.management.jmxremote.ssl&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;false&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jvisualvm -Dcom.sun.management.jmxremote.port&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;8999&lt;/span&gt; -Dcom.sun.management.jmxremote.ssl&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;false&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
  -Dcom.sun.management.jmxremote.authenticate&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;false&lt;/span&gt; -Djava.rmi.server.hostname&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;10&lt;/span&gt;.86.46.252
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h2&gt;查看哪个线程使用 cpu 最多&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ps -mp &lt;span class="m"&gt;2633&lt;/span&gt; -o THREAD,tid,time &lt;span class="p"&gt;|&lt;/span&gt; sort -rn
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ps -mp &lt;span class="m"&gt;2633&lt;/span&gt; -o THREAD,tid,time &lt;span class="p"&gt;|&lt;/span&gt; sort -rn
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; :::bash
- printf &amp;quot;%x\n&amp;quot; 3626
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; :::bash
+ printf "%x\n" 3626
  e18
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;最后用 jstack 查看线程的运行 stack:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jstack &lt;span class="m"&gt;2633&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;grep e18 -A &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;jstack &lt;span class="m"&gt;2633&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;grep e18 -A &lt;span class="m"&gt;30&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://blog.chinaunix.net/uid-10449864-id-3463151.html"&gt;生产环境下JAVA进程高CPU占用故障排查&lt;/a&gt;&lt;/p&gt;</content><category term="java"></category><category term="posts"></category><category term="jvm"></category><category term="profile"></category><category term="trouble shooting"></category></entry><entry><title>上品饺子</title><link href="http://synckey.name/shang-pin-jiao-zi.html" rel="alternate"></link><published>2016-04-20T00:00:00+08:00</published><updated>2016-04-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-04-20:/shang-pin-jiao-zi.html</id><summary type="html">&lt;p&gt;在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.chinaunix.net/uid-10449864-id-3463151.html"&gt;生产环境下JAVA进程高CPU占用故障排查&lt;/a&gt;&lt;/p&gt;</content><category term="java"></category><category term="posts"></category><category term="jvm"></category><category term="profile"></category><category term="trouble shooting"></category></entry><entry><title>上品饺子</title><link href="http://synckey.name/posts/2016/04/20/shang-pin-jiao-zi.html" rel="alternate"></link><published>2016-04-20T00:00:00+08:00</published><updated>2016-04-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-04-20:/posts/2016/04/20/shang-pin-jiao-zi.html</id><summary type="html">&lt;p&gt;在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。&lt;/p&gt;
 &lt;p&gt;从此，就爱上了他们家的饺子，破了减肥不吃晚饭的戒。每次下班经过他们家门口，就走不动了，要做一番心里斗争。结果往往是要进去吃一大碗韭菜猪肉的水饺，加一个荷包蛋才会满足。也常常跟同事推荐，“有空一定要带你们一起去尝一尝水饺——都是手工的，他们家也有面条，面条上的猪肝，肉丝，木耳，香菇，都是现炒的，热腾腾的 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。&lt;/p&gt;
 &lt;p&gt;从此，就爱上了他们家的饺子，破了减肥不吃晚饭的戒。每次下班经过他们家门口，就走不动了，要做一番心里斗争。结果往往是要进去吃一大碗韭菜猪肉的水饺，加一个荷包蛋才会满足。也常常跟同事推荐，“有空一定要带你们一起去尝一尝水饺——都是手工的，他们家也有面条，面条上的猪肝，肉丝，木耳，香菇，都是现炒的，热腾腾的”。&lt;/p&gt;
 &lt;p&gt;小店的主人是一位大爷，大概50多岁，大爷的一家都在经营折这家饺子馆——大爷负责送外卖，大娘掌勺，女儿叫晶晶，负责端盘子和收钱，儿子负责包饺子，做凉菜。他们家的第五个成员，一直小黄，叫喵喵。喵喵总是在不停的叫，大爷有时候不去送外卖，就会把喵喵抱在腿上，笑眯眯的看着客人在吃饺子。&lt;/p&gt;
@@ -1498,7 +1444,7 @@ $$
 &lt;p&gt;失落的退了出来，真的不开了么？&lt;/p&gt;
 &lt;p&gt;上周六中午，从小店门口路过，看到大爷大妈也在里面，于是又进了小店，想吃一碗饺子，然而大爷大妈只是在这里帮新主人吸引老客户而已，他们真的不开了。他们不开店了将会何去何从？想问却也没问的出口。今晚再次看到大爷在小店里，就走进去要了一份盖饭，大爷叫了我一声小王，像有什么事，没说什么就走了。吃饭的时候，新老板娘说大娘生病了，要回老家养病，才把这家店转让了。不知道大娘得的什么病，也不知道他们看病花了多少钱，有没有医保可以报销。记得大爷以前说他们住在一个地下室，他说他们租不起一套好一点的房子---也许是舍不得租。&lt;/p&gt;
 &lt;p&gt;一场突如其来的病，让一个本充满希望的家庭，又回到了原点。离开北京对他们来说福兮？祸兮？无从知晓。&lt;/p&gt;
-&lt;p&gt;只希望曾经多吃了几碗饺子。&lt;/p&gt;</content><category term="life"></category></entry><entry><title>Grammar in Use 笔记</title><link href="http://synckey.name/notes-of-grammar-in-use.html" rel="alternate"></link><published>2016-03-26T00:00:00+08:00</published><updated>2016-03-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-26:/notes-of-grammar-in-use.html</id><summary type="html">&lt;h3&gt;主要的时态&lt;/h3&gt;
+&lt;p&gt;只希望曾经多吃了几碗饺子。&lt;/p&gt;</content><category term="life"></category></entry><entry><title>Grammar in Use 笔记</title><link href="http://synckey.name/posts/2016/03/26/notes-of-grammar-in-use.html" rel="alternate"></link><published>2016-03-26T00:00:00+08:00</published><updated>2016-03-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-26:/posts/2016/03/26/notes-of-grammar-in-use.html</id><summary type="html">&lt;h3&gt;主要的时态&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;past(I did)&lt;/li&gt;
 &lt;li&gt;present continuous(I am doing)&lt;/li&gt;
@@ -1641,37 +1587,33 @@ $$
 &lt;li&gt;begin-&amp;gt;began-&amp;gt;begun&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="英语"></category><category term="语法"></category></entry><entry><title>让VIM记录文件上次编辑的位置</title><link href="http://synckey.name/set-vim-to-remember-previous-eidt-place.html" rel="alternate"></link><published>2016-03-11T00:00:00+08:00</published><updated>2016-03-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-11:/set-vim-to-remember-previous-eidt-place.html</id><summary type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;autocmd BufReadPost *
-&lt;span class="se"&gt;\ &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;gt;0&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;lt;&lt;span class="o"&gt;=&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;$&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
-&lt;span class="se"&gt;\ &lt;/span&gt;exe &lt;span class="s2"&gt;&amp;quot;normal g&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
+&lt;/ul&gt;</content><category term="英语"></category><category term="语法"></category></entry><entry><title>让VIM记录文件上次编辑的位置</title><link href="http://synckey.name/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html" rel="alternate"></link><published>2016-03-11T00:00:00+08:00</published><updated>2016-03-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-11:/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html</id><summary type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;autocmd BufReadPost *
+&lt;span class="se"&gt;\ &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"'\""&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;gt;0&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"'\""&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;lt;&lt;span class="o"&gt;=&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;$&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
+&lt;span class="se"&gt;\ &lt;/span&gt;exe &lt;span class="s2"&gt;"normal g'\""&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
 &lt;span class="se"&gt;\ &lt;/span&gt;endif
 autocmd BufReadPost *
-&lt;span class="se"&gt;\ &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;gt;0&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;lt;&lt;span class="o"&gt;=&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;$&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
-&lt;span class="se"&gt;\ &lt;/span&gt;exe &lt;span class="s2"&gt;&amp;quot;normal g&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
+&lt;span class="se"&gt;\ &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"'\""&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;gt;0&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"'\""&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;lt;&lt;span class="o"&gt;=&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;$&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
+&lt;span class="se"&gt;\ &lt;/span&gt;exe &lt;span class="s2"&gt;"normal g'\""&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
 &lt;span class="se"&gt;\ &lt;/span&gt;endif
 syntax &lt;span class="nb"&gt;enable&lt;/span&gt;
 &lt;span class="nb"&gt;set&lt;/span&gt; nu
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h3&gt;参考&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.2cto.com/os/201311/255061.html"&gt;让VIM记录文件上次编辑的位置&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;autocmd BufReadPost *
-&lt;span class="se"&gt;\ &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;gt;0&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;lt;&lt;span class="o"&gt;=&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;$&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
-&lt;span class="se"&gt;\ &lt;/span&gt;exe &lt;span class="s2"&gt;&amp;quot;normal g&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;autocmd BufReadPost *
+&lt;span class="se"&gt;\ &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"'\""&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;gt;0&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"'\""&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;lt;&lt;span class="o"&gt;=&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;$&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
+&lt;span class="se"&gt;\ &lt;/span&gt;exe &lt;span class="s2"&gt;"normal g'\""&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
 &lt;span class="se"&gt;\ &lt;/span&gt;endif
 autocmd BufReadPost *
-&lt;span class="se"&gt;\ &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;gt;0&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;lt;&lt;span class="o"&gt;=&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;$&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
-&lt;span class="se"&gt;\ &lt;/span&gt;exe &lt;span class="s2"&gt;&amp;quot;normal g&amp;#39;\&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
+&lt;span class="se"&gt;\ &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"'\""&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;gt;0&lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"'\""&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&amp;lt;&lt;span class="o"&gt;=&lt;/span&gt;line&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"&lt;/span&gt;$&lt;span class="s2"&gt;"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
+&lt;span class="se"&gt;\ &lt;/span&gt;exe &lt;span class="s2"&gt;"normal g'\""&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt;
 &lt;span class="se"&gt;\ &lt;/span&gt;endif
 syntax &lt;span class="nb"&gt;enable&lt;/span&gt;
 &lt;span class="nb"&gt;set&lt;/span&gt; nu
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;h3&gt;参考&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.2cto.com/os/201311/255061.html"&gt;让VIM记录文件上次编辑的位置&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category></entry><entry><title>Summary Concepts of Deep Learning</title><link href="http://synckey.name/summary-concepts-of-deep-learning.html" rel="alternate"></link><published>2016-03-01T00:00:00+08:00</published><updated>2016-03-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-01:/summary-concepts-of-deep-learning.html</id><summary type="html">&lt;h2&gt;机器学习&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.2cto.com/os/201311/255061.html"&gt;让VIM记录文件上次编辑的位置&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category></entry><entry><title>Summary Concepts of Deep Learning</title><link href="http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html" rel="alternate"></link><published>2016-03-01T00:00:00+08:00</published><updated>2016-03-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-01:/posts/2016/03/01/summary-concepts-of-deep-learning.html</id><summary type="html">&lt;h2&gt;机器学习&lt;/h2&gt;
 &lt;p&gt;input-&amp;gt;feature representation-&amp;gt;learning algorithm&lt;/p&gt;
 &lt;h3&gt;监督学习&lt;/h3&gt;
 &lt;p&gt;标注过的训练数据.&lt;/p&gt;
@@ -1693,7 +1635,7 @@ syntax &lt;span class="nb"&gt;enable&lt;/span&gt;
 &lt;h2&gt;神经网络&lt;/h2&gt;
 &lt;h3&gt;Neurons&lt;/h3&gt;
 &lt;p&gt;&lt;div class="figure"&gt;
-&lt;img src="/static/images/SingleNeuron.png" alt="SingleNeuron"  width="40%" /&gt;
+&lt;img alt="SingleNeuron" class="" src="/static/images/SingleNeuron.png" width="40%"/&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;机器学习&lt;/h2&gt;
 &lt;p&gt;input-&amp;gt;feature representation-&amp;gt;learning algorithm&lt;/p&gt;
@@ -1717,7 +1659,7 @@ syntax &lt;span class="nb"&gt;enable&lt;/span&gt;
 &lt;h2&gt;神经网络&lt;/h2&gt;
 &lt;h3&gt;Neurons&lt;/h3&gt;
 &lt;p&gt;&lt;div class="figure"&gt;
-&lt;img src="/static/images/SingleNeuron.png" alt="SingleNeuron"  width="40%" /&gt;
+&lt;img alt="SingleNeuron" class="" src="/static/images/SingleNeuron.png" width="40%"/&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f(\sum_{i=1}^{3}(W_ix_i+b)$为输出的计算单元.
 其中$f:\mathbb{R}\mapsto\mathbb{R}$,被称为激活函数(activation function).常用的激活函数有:&lt;/p&gt;
@@ -1734,18 +1676,18 @@ syntax &lt;span class="nb"&gt;enable&lt;/span&gt;
 &lt;/ul&gt;
 &lt;p&gt;这些函数的形状如下:
 &lt;div class="figure"&gt;
-&lt;img src="/static/images/ActivationFunctions.png" alt="ActivationFunctions"  width="50%" /&gt;
+&lt;img alt="ActivationFunctions" class="" src="/static/images/ActivationFunctions.png" width="50%"/&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;h3&gt;神经网络模型&lt;/h3&gt;
 &lt;p&gt;将一系列&lt;strong&gt;神经元&lt;/strong&gt;组合在一起,就构成一个神经网络,一个神经元的输出可以作为另外一个神经元的输入.例如,下图是一个简单的神经网络:
 &lt;div class="figure"&gt;
-&lt;img src="/static/images/Network331.png" alt="neualNetwork"  width="50%" /&gt;
+&lt;img alt="neualNetwork" class="" src="/static/images/Network331.png" width="50%"/&gt;
 &lt;/div&gt;
 在这个示意图中,黄色的圆圈代表神经元,蓝色的圆圈代表整个神经网络的输入.被标为$+1$的圆圈称作&lt;strong&gt;bias unit&lt;/strong&gt;,代表&lt;strong&gt;截距项&lt;/strong&gt;(intercept term).
 网络最左边的层叫做&lt;strong&gt;输入层&lt;/strong&gt;(input layer),最右边叫做&lt;strong&gt;输出层&lt;/strong&gt;(output layer).中间所有的节点组成的层叫做&lt;strong&gt;隐藏层&lt;/strong&gt;(hidden layer),因为我们不能在训练样本里面观察到它的值.&lt;/p&gt;
 &lt;p&gt;神经网络也可以有多个输出单元,比如,下面的神经网络有两个隐藏曾,$L_2$和$L_3$,输出层$L_4$有两个输出单元:
 &lt;p align="center"&gt;
-&lt;img src="/static/images/MultiOutputNetwork.png" alt="MultiOutputNetwork"  width="50%" /&gt;
+&lt;img alt="MultiOutputNetwork" class="" src="/static/images/MultiOutputNetwork.png" width="50%"/&gt;
 &lt;/p&gt;
 如果你的任务是预测多个输出,这种神经网络很适用.&lt;/p&gt;
 &lt;h4&gt;向前传播&lt;/h4&gt;
@@ -1874,7 +1816,7 @@ $$
 &lt;h4&gt;自编码器(Autoencoders)&lt;/h4&gt;
 &lt;p&gt;假设我们只有一个没有带类别标签的训练样本集合 ${x^{(1)}, x^{(2)}, x^{(3)}, \ldots}$ ，其中$x^{(i)} \in \Re^{n}$ 。自编码神经网络是一种无监督学习算法，它使用了反向传播算法，并让目标值等于输入值，比如 $y^{(i)} = x^{(i)}$ 。下图是一个自编码神经网络的示例。
 &lt;div class="figure"&gt;
-&lt;img src="/static/images/Autoencoder.png" alt="Autoencoder636"  width="50%" /&gt;
+&lt;img alt="Autoencoder636" class="" src="/static/images/Autoencoder.png" width="50%"/&gt;
 &lt;/div&gt;
 自编码神经网络尝试学习一个$ h_{W,b}(x) \approx x$ 的函数,它尝试逼近一个恒等函数，从而使得输出 $\hat{x}$ 接近于输入$x$.自编码神经网络的意义在于:&lt;/p&gt;
 &lt;ol&gt;
@@ -1891,7 +1833,7 @@ $$
 &lt;h4&gt;逐层训练方法&lt;/h4&gt;
 &lt;p&gt;与神经网络使用反向训练的方法不同,神经网络使用逐层贪婪训练方法训练模型.主要思路是每次只训练网络中的一层，即我们首先训练一个只含一个隐藏层的网络，仅当这层网络训练结束之后才开始训练一个有两个隐藏层的网络，以此类推。在每一步中，把已经训练好的前$k-1$ 层固定，然后增加第$k$层（也就是将已经训练好的前$k-1$ 的输出作为输入）。每一层的训练可以是有监督的（例如，将每一步的分类误差作为目标函数），但更通常使用无监督方法(例如自动编码器).
 &lt;div class="figure"&gt;
-&lt;img src="/static/images/deeplearningfeatures.png" alt="DeepLearningFeautures"  width="60%" /&gt;
+&lt;img alt="DeepLearningFeautures" class="" src="/static/images/deeplearningfeatures.png" width="60%"/&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;h3&gt;深度学习的应用&lt;/h3&gt;
 &lt;ul&gt;
@@ -1904,18 +1846,16 @@ $$
 &lt;p&gt;&lt;a href="http://blog.csdn.net/zouxy09/article/details/8775518"&gt;Deep Learning（深度学习）学习笔记整理系列&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.deeplearningbook.org/"&gt;Deep Learning&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://ufldl.stanford.edu/tutorial/"&gt;Deep Learning Tutorial&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B"&gt;http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category></entry><entry><title>HHKB 设置与快捷键</title><link href="http://synckey.name/hhkb-settings-and-shortcut-keys.html" rel="alternate"></link><published>2016-02-26T00:00:00+08:00</published><updated>2016-02-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-02-26:/hhkb-settings-and-shortcut-keys.html</id><summary type="html">&lt;p&gt;入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B"&gt;http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category></entry><entry><title>HHKB 设置与快捷键</title><link href="http://synckey.name/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html" rel="alternate"></link><published>2016-02-26T00:00:00+08:00</published><updated>2016-02-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-02-26:/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html</id><summary type="html">&lt;p&gt;入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.&lt;/p&gt;
 &lt;p&gt;我用hhkb的开关是&lt;code&gt;011001&lt;/code&gt;,主要是使用macintosh的键盘布局并且将delete键设置为'BS'.另外,也安装了&lt;a href="https://pqrs.org/osx/karabiner/index.html.en"&gt;Karabiner&lt;/a&gt;这款神器,它一方面可以设置系统自动识别是否插入了外接键盘,如果插入了外接键盘,可以将mac的键盘disable掉,另一方面它具有强大的改键功能.硬件方面,买了一个miniusb右弯的接头,这样把hhkb放在mac键盘上的时候,线就不会弯曲到挡着屏幕了.&lt;/p&gt;
 &lt;p align="center"&gt;
-&lt;img src="/static/images/miniusb.jpg" alt="miniusb"  width="50%" class="img-responsive img-rounded"  title="An awesome picture caption!" /&gt;
+&lt;img alt="miniusb" class="img-responsive img-rounded" src="/static/images/miniusb.jpg" title="An awesome picture caption!" width="50%"/&gt;
 &lt;/p&gt;
-
 &lt;p&gt;hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所以小拇指很容易就能按到它,所以hhkb的键盘布局对emacs非常友好.而mac os操作系统对emacs风格的快捷键原生就有支持,在界面中可以通过&lt;code&gt;CTRL+B …&lt;/code&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.&lt;/p&gt;
 &lt;p&gt;我用hhkb的开关是&lt;code&gt;011001&lt;/code&gt;,主要是使用macintosh的键盘布局并且将delete键设置为'BS'.另外,也安装了&lt;a href="https://pqrs.org/osx/karabiner/index.html.en"&gt;Karabiner&lt;/a&gt;这款神器,它一方面可以设置系统自动识别是否插入了外接键盘,如果插入了外接键盘,可以将mac的键盘disable掉,另一方面它具有强大的改键功能.硬件方面,买了一个miniusb右弯的接头,这样把hhkb放在mac键盘上的时候,线就不会弯曲到挡着屏幕了.&lt;/p&gt;
 &lt;p align="center"&gt;
-&lt;img src="/static/images/miniusb.jpg" alt="miniusb"  width="50%" class="img-responsive img-rounded"  title="An awesome picture caption!" /&gt;
+&lt;img alt="miniusb" class="img-responsive img-rounded" src="/static/images/miniusb.jpg" title="An awesome picture caption!" width="50%"/&gt;
 &lt;/p&gt;
-
 &lt;p&gt;hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所以小拇指很容易就能按到它,所以hhkb的键盘布局对emacs非常友好.而mac os操作系统对emacs风格的快捷键原生就有支持,在界面中可以通过&lt;code&gt;CTRL+B&lt;/code&gt;等快捷键移动光标,大大减少使用触摸板的时间.为了能充分发挥hhkb的功能,本来打算从vim迁移到emacs的,但是idea里面没有像IdeaVim这样好用的插件,再加上Idea里面的emacs keymap并不好用,所以就放弃了emacs,是的因为idea跟emacs不能很好的工作才放弃emacs的.&lt;/p&gt;
 &lt;p&gt;不过虽然不用emacs,但是记住emacs风格的快捷键还是很有帮助的,下面是一些最常用到的快捷键,在iTerm2和大部分mac应用窗口都可以使用.在浏览器的表单填写页面里面,某些快捷键会失效,比如:在百度的搜索栏俩面填写搜索词的时候&lt;code&gt;CTRL+N&lt;/code&gt;没反应,这个时候在karabiner的emacs模式里面设置下就好了.&lt;/p&gt;
 &lt;ul&gt;
@@ -1935,32 +1875,28 @@ $$
 &lt;li&gt;Ctrl+y 粘贴&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.xiaozhou.net/got_hhkb_pro_2-2013-06-03.html"&gt;码农神器HHKB Pro2入手与开箱&lt;/a&gt;&lt;/p&gt;</content><category term="hhkb"></category><category term="keyboad"></category></entry><entry><title>Plot Sigmoid in Matlab</title><link href="http://synckey.name/plot-sigmoid-in-matlab.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/plot-sigmoid-in-matlab.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;p&gt;&lt;a href="http://www.xiaozhou.net/got_hhkb_pro_2-2013-06-03.html"&gt;码农神器HHKB Pro2入手与开箱&lt;/a&gt;&lt;/p&gt;</content><category term="hhkb"></category><category term="keyboad"></category></entry><entry><title>Plot Sigmoid in Matlab</title><link href="http://synckey.name/posts/2015/12/24/plot-sigmoid-in-matlab.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/plot-sigmoid-in-matlab.html</id><summary type="html">&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;0.1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;.*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)];&lt;/span&gt;
-&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;b&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="n"&gt;grid&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;&lt;p align="center"&gt;
-&lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" /&gt;
-&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="50%"/&gt;
+&lt;/p&gt;&lt;/p&gt;</summary><content type="html">&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mf"&gt;0.1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;exp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;.*&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)];&lt;/span&gt;
-&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;b&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'b'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="n"&gt;grid&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;&lt;p align="center"&gt;
-&lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" /&gt;
-&lt;/p&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>Where does sigmoid come from</title><link href="http://synckey.name/where-does-sigmoid-come-from.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/where-does-sigmoid-come-from.html</id><summary type="html">&lt;blockquote&gt;
+&lt;img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="50%"/&gt;
+&lt;/p&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>Where does sigmoid come from</title><link href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/where-does-sigmoid-come-from.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;主要根据Andrew Ng的教学讲义整理。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
 &lt;p align="center"&gt;
-&lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="60%" /&gt;
+&lt;img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="60%"/&gt;
 &lt;/p&gt;
 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。&lt;/p&gt;
 &lt;h3&gt;1.逻辑回归的建模&lt;/h3&gt;
@@ -1971,7 +1907,7 @@ $$
 &lt;/blockquote&gt;
 &lt;p&gt;逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
 &lt;p align="center"&gt;
-&lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="60%" /&gt;
+&lt;img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="60%"/&gt;
 &lt;/p&gt;
 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。&lt;/p&gt;
 &lt;h3&gt;1.逻辑回归的建模&lt;/h3&gt;
@@ -2052,8 +1988,8 @@ $$&lt;/p&gt;
 分布的定义，就自然而然的给出了逻辑回归函数。&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://open.163.com/special/opencourse/machinelearning.html"&gt;Andrew Ng Machine Learning &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf"&gt;Michael I. Jordan The exponential family: Basics&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>A Misuse of Spark Broadcast</title><link href="http://synckey.name/a-misuse-of-spark-broadcast.html" rel="alternate"></link><published>2015-11-03T00:00:00+08:00</published><updated>2015-11-03T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-11-03:/a-misuse-of-spark-broadcast.html</id><summary type="html">&lt;p&gt;在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Test&lt;/span&gt; &lt;span class="kd"&gt;implements&lt;/span&gt; &lt;span class="n"&gt;Function&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Boolean&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+&lt;p&gt;&lt;a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf"&gt;Michael I. Jordan The exponential family: Basics&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>A Misuse of Spark Broadcast</title><link href="http://synckey.name/posts/2015/11/03/a-misuse-of-spark-broadcast.html" rel="alternate"></link><published>2015-11-03T00:00:00+08:00</published><updated>2015-11-03T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-11-03:/posts/2015/11/03/a-misuse-of-spark-broadcast.html</id><summary type="html">&lt;p&gt;在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：&lt;/p&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Test&lt;/span&gt; &lt;span class="kd"&gt;implements&lt;/span&gt; &lt;span class="n"&gt;Function&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Boolean&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 
     &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="n"&gt;Map&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;lookupTable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;HashMap&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;();&lt;/span&gt;
 
@@ -2062,7 +1998,7 @@ $$&lt;/p&gt;
     &lt;span class="o"&gt;}&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;Boolean&lt;/span&gt; &lt;span class="nf"&gt;call&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;Exception&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;lookupTable&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;containsKey …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Test&lt;/span&gt; &lt;span class="kd"&gt;implements&lt;/span&gt; &lt;span class="n"&gt;Function&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Boolean&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Test&lt;/span&gt; &lt;span class="kd"&gt;implements&lt;/span&gt; &lt;span class="n"&gt;Function&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Boolean&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 
     &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="n"&gt;Map&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;lookupTable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;HashMap&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;();&lt;/span&gt;
 
@@ -2077,11 +2013,9 @@ $$&lt;/p&gt;
     &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;结果发现task的序列化时间还是很长。事实上，这个类实在Driver上被实例化的，Test的成员变量&lt;code&gt;lookupTable&lt;/code&gt;是要被序列化并奋发到worker的。改成如下
 的代码，才能正确的使用spark的broadcast广播数据。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Test&lt;/span&gt; &lt;span class="kd"&gt;implements&lt;/span&gt; &lt;span class="n"&gt;Function&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Boolean&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Test&lt;/span&gt; &lt;span class="kd"&gt;implements&lt;/span&gt; &lt;span class="n"&gt;Function&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;Boolean&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="n"&gt;Broadcast&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Map&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;bLookupTable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="nf"&gt;Test&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Broadcast&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;Map&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;broadcast&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
         &lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;bLookupTable&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;broadcast&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -2096,40 +2030,31 @@ $$&lt;/p&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="spark"></category></entry><entry><title>Iterm2 Clone Session</title><link href="http://synckey.name/iterm2-clone-session.html" rel="alternate"></link><published>2015-05-20T00:00:00+08:00</published><updated>2015-05-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-05-20:/iterm2-clone-session.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vim ~/.ssh/config
+&lt;/pre&gt;&lt;/div&gt;</content><category term="spark"></category></entry><entry><title>Iterm2 Clone Session</title><link href="http://synckey.name/posts/2015/05/20/iterm2-clone-session.html" rel="alternate"></link><published>2015-05-20T00:00:00+08:00</published><updated>2015-05-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-05-20:/posts/2015/05/20/iterm2-clone-session.html</id><summary type="html">&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vim ~/.ssh/config
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;贴入如下内容:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Host *
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Host *
     ServerAliveInterval &lt;span class="m"&gt;30&lt;/span&gt;
     ControlMaster auto
     ControlPath ~/.ssh/master-%r@%h:%p
     ControlPersist yes
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;退出iterm2，重新登录即可。&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/"&gt;Iterm2 auto login 自动登录脚本&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://laughingchs.iteye.com/blog/1317703"&gt;linux clone session&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vim ~/.ssh/config
+&lt;p&gt;&lt;a href="http://laughingchs.iteye.com/blog/1317703"&gt;linux clone session&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vim ~/.ssh/config
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;贴入如下内容:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Host *
+&lt;div class="github"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Host *
     ServerAliveInterval &lt;span class="m"&gt;30&lt;/span&gt;
     ControlMaster auto
     ControlPath ~/.ssh/master-%r@%h:%p
     ControlPersist yes
 &lt;/pre&gt;&lt;/div&gt;
-
-
 &lt;p&gt;退出iterm2，重新登录即可。&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/"&gt;Iterm2 auto login 自动登录脚本&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://laughingchs.iteye.com/blog/1317703"&gt;linux clone session&lt;/a&gt;&lt;/p&gt;</content><category term="iterm2"></category><category term="mac"></category><category term="sesssion"></category></entry><entry><title>我是怎么减掉了30斤</title><link href="http://synckey.name/my-experience-of-losing-weight.html" rel="alternate"></link><published>2015-04-13T00:00:00+08:00</published><updated>2015-04-13T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-04-13:/my-experience-of-losing-weight.html</id><summary type="html">&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
-
+&lt;p&gt;&lt;a href="http://laughingchs.iteye.com/blog/1317703"&gt;linux clone session&lt;/a&gt;&lt;/p&gt;</content><category term="iterm2"></category><category term="mac"></category><category term="sesssion"></category></entry><entry><title>我是怎么减掉了30斤</title><link href="http://synckey.name/posts/2015/04/13/my-experience-of-losing-weight.html" rel="alternate"></link><published>2015-04-13T00:00:00+08:00</published><updated>2015-04-13T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-04-13:/posts/2015/04/13/my-experience-of-losing-weight.html</id><summary type="html">&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2142,7 +2067,6 @@ $$&lt;/p&gt;
 制定减肥计划最重要的两条就是：a.不能对我的日常生活产生干扰，b.可持续。 所以我每天的运动时间限制在1个小时以内（一开始要更短），这样一来，不需要
 匀出其他时间，就可以实施计划。可持续其实包含两层含义：a.计划不需要太吃力就能完成（&lt;strong&gt;extremely important&lt;/strong&gt;）,如果计划目标定的太高，比如每天跑10公里，
 肯定没人坚持的下去。b …&lt;/p&gt;</summary><content type="html">&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2188,10 +2112,9 @@ $$&lt;/p&gt;
 和《潘吉Jenny告诉你》实在太赞，一边运动一边练口语。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="figure"&gt;
-    &lt;img src="/static/images/2015_04_13_softwares.jpg" alt="Useful Apps" class="img-responsive carousel-inner img-rounded"/&gt;
-    &lt;div class="caption"&gt;Useful Apps&lt;/div&gt;
+&lt;img alt="Useful Apps" class="carousel-inner img-responsive img-rounded" src="/static/images/2015_04_13_softwares.jpg"/&gt;
+&lt;div class="caption"&gt;Useful Apps&lt;/div&gt;
 &lt;/div&gt;
-
 &lt;h2&gt;进行中&lt;/h2&gt;
 &lt;h3&gt;睡眠&lt;/h3&gt;
 &lt;p&gt;好的睡眠肯定是很重要的啦，我自己是每天23：00左右睡，每天6：00起床。一开始6：00起不来，没关系，闹钟响了什么都不要想，
@@ -2229,9 +2152,8 @@ a&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3&gt;有图有真相&lt;/h3&gt;
 &lt;div class="figure"&gt;
-    &lt;img src="/static/images/2015_04_13_comparasion.jpg" alt="体重对比" class="img-responsive carousel-inner img-rounded"/&gt;
+&lt;img alt="体重对比" class="carousel-inner img-responsive img-rounded" src="/static/images/2015_04_13_comparasion.jpg"/&gt;
 &lt;/div&gt;
-
 &lt;script&gt;
 $(function () {
     $('#weight_container').highcharts({
@@ -2267,7 +2189,7 @@ $(function () {
         }]
     });
 });
-&lt;/script&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Improve Safety On The Road</title><link href="http://synckey.name/improve-safety-on-the-road.html" rel="alternate"></link><published>2014-12-30T00:00:00+08:00</published><updated>2014-12-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-30:/improve-safety-on-the-road.html</id><summary type="html">&lt;blockquote&gt;
+&lt;/script&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Improve Safety On The Road</title><link href="http://synckey.name/posts/2014/12/30/improve-safety-on-the-road.html" rel="alternate"></link><published>2014-12-30T00:00:00+08:00</published><updated>2014-12-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-30:/posts/2014/12/30/improve-safety-on-the-road.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;The only way to improve safety on the road is to severely punish driving offenders. To what extent do you agree or disagree?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).&lt;/p&gt;
@@ -2289,7 +2211,7 @@ seriously break a certain law,such as drunk driving,he may lose the right to dri
 the improvement of road safety.&lt;/p&gt;
 &lt;p&gt;In conclusion,we can help people to improve the traffic safety by teaching them the importance of safe driving.Although punishment
 is also a good way to do so,but it is not the best way and only way.Pedestrians and drivers should all  obey traffic regulations and
-laws to keep safe.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Use Animals For Humans</title><link href="http://synckey.name/use-animals-for-humans.html" rel="alternate"></link><published>2014-12-22T00:00:00+08:00</published><updated>2014-12-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-22:/use-animals-for-humans.html</id><summary type="html">&lt;blockquote&gt;
+laws to keep safe.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Use Animals For Humans</title><link href="http://synckey.name/posts/2014/12/22/use-animals-for-humans.html" rel="alternate"></link><published>2014-12-22T00:00:00+08:00</published><updated>2014-12-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-22:/posts/2014/12/22/use-animals-for-humans.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that it is acceptable to use animals for the benefit of humans. Others, however, think that it is wrong to exploit animals for human purposes. Discuss both these views and give your own opinion.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach.I …&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
@@ -2310,7 +2232,7 @@ We should focus on how to minimize the sufferings that animals experienced when 
 &lt;p&gt;In sum,animal is an extremely important source of food for human beings which can contribute to the science as well.We can surely use
 animals to live on,but we should use them scientifically and ethically.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://ielts-simon.com/ielts-help-and-english-pr/2011/06/ielts-writing-task-2-gender-and-university-essay.html"&gt;IELTS globalisation essay&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Forcing the Employers to Hire the Same Number of Men and Women</title><link href="http://synckey.name/gender-balance.html" rel="alternate"></link><published>2014-12-16T00:00:00+08:00</published><updated>2014-12-16T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-16:/gender-balance.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="http://ielts-simon.com/ielts-help-and-english-pr/2011/06/ielts-writing-task-2-gender-and-university-essay.html"&gt;IELTS globalisation essay&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Forcing the Employers to Hire the Same Number of Men and Women</title><link href="http://synckey.name/posts/2014/12/16/gender-balance.html" rel="alternate"></link><published>2014-12-16T00:00:00+08:00</published><updated>2014-12-16T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-16:/posts/2014/12/16/gender-balance.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that employers should be required to employ equal numbers of men and women. To what extent do you agree or disagree?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).&lt;/p&gt;
@@ -2334,7 +2256,7 @@ number of men and women seems to be the best choice for them.&lt;/p&gt;
 &lt;p&gt;In conclusion, making the most of the gender advantages is benificial for both companies and society.That is why I don't
 agree with the view that forcing the employers to hire the same number of men and women.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://ielts-simon.com/ielts-help-and-english-pr/2011/06/ielts-writing-task-2-gender-and-university-essay.html"&gt;IELTS globalisation essay&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Distance Learning vs School Learing</title><link href="http://synckey.name/distance-learning-vs-school-learning.html" rel="alternate"></link><published>2014-11-24T00:00:00+08:00</published><updated>2014-11-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-24:/distance-learning-vs-school-learning.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="http://ielts-simon.com/ielts-help-and-english-pr/2011/06/ielts-writing-task-2-gender-and-university-essay.html"&gt;IELTS globalisation essay&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Distance Learning vs School Learing</title><link href="http://synckey.name/posts/2014/11/24/distance-learning-vs-school-learning.html" rel="alternate"></link><published>2014-11-24T00:00:00+08:00</published><updated>2014-11-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-24:/posts/2014/11/24/distance-learning-vs-school-learning.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Many people use distance-learning programmes(study material post, TV, Internet, etc.) to study at home,
 but some people think that it cannot bring the same benefits of attending college or university.
 To what extent do you agree or disagree.&lt;/p&gt;
@@ -2360,7 +2282,7 @@ learning.&lt;/p&gt;
 on the class,he can download some courses from Internet to make up for it.An adult can also turn to classes for help
 when he encounter some problems which he can not tackle all by himself.&lt;/p&gt;
 &lt;p&gt;So, while we are taking advantage of technology,we should not neglect the importance of traditional learning.We should
-chose our learning methods according to our circumstances.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>What Should Be the Main Function Of A University</title><link href="http://synckey.name/what-shuld-be-the-main-function-of-a-university.html" rel="alternate"></link><published>2014-11-12T00:00:00+08:00</published><updated>2014-11-12T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-12:/what-shuld-be-the-main-function-of-a-university.html</id><summary type="html">&lt;blockquote&gt;
+chose our learning methods according to our circumstances.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>What Should Be the Main Function Of A University</title><link href="http://synckey.name/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html" rel="alternate"></link><published>2014-11-12T00:00:00+08:00</published><updated>2014-11-12T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-12:/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that universities should provide graduates with the knowledge and skills needed in the workplace. 
 Others think that the true function of a university should be to give access to knowledge for its own sake,
 regardless of whether the course is useful to an employer.&lt;/p&gt;
@@ -2390,7 +2312,7 @@ ignore the requirements of the job market,alternatively,they can invite some com
 kind of skill they want.&lt;/p&gt;
 &lt;p&gt;In summary,although the main goal of going to universities of many students is finding a ideal job after graduating,universities
 should help their students to build a good knowledge system and help them to be quick learners and problem solvers instead of
-just teaching them job-related skills.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>The Catcher in the Rye</title><link href="http://synckey.name/the-catcher-in-the-rye.html" rel="alternate"></link><published>2014-10-31T00:00:00+08:00</published><updated>2014-10-31T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-31:/the-catcher-in-the-rye.html</id><summary type="html">&lt;p&gt;Holden Caulfied 是一个16岁的男孩，他因为课程不及格被学校开除，在他的眼里，周围的人要有奇怪的习惯和毛病。&lt;/p&gt;
+just teaching them job-related skills.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>The Catcher in the Rye</title><link href="http://synckey.name/posts/2014/10/31/the-catcher-in-the-rye.html" rel="alternate"></link><published>2014-10-31T00:00:00+08:00</published><updated>2014-10-31T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-31:/posts/2014/10/31/the-catcher-in-the-rye.html</id><summary type="html">&lt;p&gt;Holden Caulfied 是一个16岁的男孩，他因为课程不及格被学校开除，在他的眼里，周围的人要有奇怪的习惯和毛病。&lt;/p&gt;
 &lt;p&gt;在离开学校之前他与他的室友打了一家，因为室友和他最喜欢的女生约会，他心里非常不舒服。一个十六岁的男孩，面对自己的梦中小情人，
 宁愿远远的看着她，也不希望她跟别的男孩子约会。更何况她的约会对象在Holden看来根本配不上她。Holden心里当然不高兴。打完架他决定早点离开学校了。&lt;/p&gt;
 &lt;p&gt;对于一个青春期的孩子来说，也许最大的恐惧就是不合群，希望和同龄人做一样的事情，上课，考试，放假。可是Hoden却不得不提前开始寒假，又不能回家，
@@ -2418,7 +2340,7 @@ cliff. What I have to do, I have to catch everybody if they start to go over the
 &lt;p&gt;走的时候，他跟他妹妹借钱，因为他没钱了。Phoebe把她圣诞节的所有的钱都给了他，他其实也不想全部都要，但是她坚持要给他。他花的非常节省，因为这是他妹妹的钱。&lt;/p&gt;
 &lt;p&gt;他打电话给他的以前的一个老师去他家借宿，夜里醒来发现老师在抚摸他的脸，他吓坏了，怀疑老师是gay,于是他连夜逃了出来，他产生了一个念头，离家出走，决定去西部，装作一个又聋又哑的人。走前还想跟Phoebe道别，于是给妹妹留了纸条，中午在博物馆门口等她。在学校和博物馆里，他都看到有人在墙上写着&lt;code&gt;Fuck you&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;他等来了妹妹，妹妹却拖着行李箱要和他一起走，他慌了，不希望妹妹和她一起走，因为她是他最爱的人，没有人想要最爱的人跟自己一起做愚蠢的事情。他们一起走到了游乐场，他看着妹妹开心的坐着旋转木马，填空下着大雨，他看着妹妹不停的旋转，心里开心极了，于是决定不走了。&lt;/p&gt;
-&lt;p&gt;也许每个人的内心都和Holden一样，看别人都觉得虚伪做作，总觉得自己才是最对的，最好的。即使这样也有值得牵挂的和珍爱的人，如果幸运，自己珍爱的人也能珍爱你。心中保有的那奔跑在绿色麦田和跳跃在蓝天白云上的小小幻想，跟他们在一起才会想起吧。&lt;/p&gt;</content><category term="notes"></category></entry><entry><title>Big Sarcosaurus</title><link href="http://synckey.name/big-sarcosaurus.html" rel="alternate"></link><published>2014-10-22T00:00:00+08:00</published><updated>2014-10-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-22:/big-sarcosaurus.html</id><summary type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
+&lt;p&gt;也许每个人的内心都和Holden一样，看别人都觉得虚伪做作，总觉得自己才是最对的，最好的。即使这样也有值得牵挂的和珍爱的人，如果幸运，自己珍爱的人也能珍爱你。心中保有的那奔跑在绿色麦田和跳跃在蓝天白云上的小小幻想，跟他们在一起才会想起吧。&lt;/p&gt;</content><category term="notes"></category></entry><entry><title>Big Sarcosaurus</title><link href="http://synckey.name/posts/2014/10/22/big-sarcosaurus.html" rel="alternate"></link><published>2014-10-22T00:00:00+08:00</published><updated>2014-10-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-22:/posts/2014/10/22/big-sarcosaurus.html</id><summary type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
 would take an exam today and she would have some time after then. I invited her to come to see me and have lunch 
 together …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
 would take an exam today and she would have some time after then. I invited her to come to see me and have lunch 
@@ -2430,5 +2352,5 @@ I was wrong,Big Sacrosaurus can be taken away. It was significantly nice for Wen
 work interesting and challenging. I know She can make it and grow up to a good banker.&lt;/p&gt;
 &lt;p&gt;It is not good recently,but I really appreciate the time talking with Wen and the Big Sacrosaurus she brought for me .
 &lt;div align="center"&gt;
-    &lt;img src="/static/images/bigsarcosaurus.jpg" alt="Big Sarcosaurus" class="carousel-inner img-responsive img-rounded" style="width:40%;height:40%;"/&gt;
+&lt;img alt="Big Sarcosaurus" class="carousel-inner img-responsive img-rounded" src="/static/images/bigsarcosaurus.jpg" style="width:40%;height:40%;"/&gt;
 &lt;/div&gt;&lt;/p&gt;</content><category term="personal"></category></entry></feed>

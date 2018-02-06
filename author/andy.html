@@ -1,109 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>A Pelican Blog - Andy</title>
-        <link rel="stylesheet" href="http://synckey.name/theme/css/main.css" />
-        <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+    <title>Articles by Andy - Andy's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
+<script type="text/javascript">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    gtag('config', 'UA-55913313-1');
+</script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
+<!-- End Google Tag Manager -->
+
+
+    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+            src='/static/images/wechat_logo_300x300.jpg'/></div>
+
+    <!--
+    -->
+    <meta name="author" content="andy"/>
+
+    <!-- Open Graph tags -->
+    <meta property="og:site_name" content="Andy's Blog"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Andy's Blog"/>
+    <meta property="og:url" content="/"/>
+    <meta property="og:description" content="Andy's Blog"/>
+
+
+
+    <script src="/theme/js/jquery.min.js"></script>
+    <script src="/theme/js/jquery.browser.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/theme/js/bootstrap.min.js"></script>
+
+    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+    <script src="/theme/js/respond.min.js"></script>
+    <!-- highcharts -->
+    <script src="/theme/js/highcharts.js"></script>
+    <script src="/theme/js/exporting.js"></script>
+    <script src="/theme/js/holder.js"></script>
+    <script src="/theme/js/jquery-ias.min.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
+          media="screen"/>
+    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
+          type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
+          type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript"
+            src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="/theme/css/normalize.css"/>
+    <link rel="stylesheet" href="/theme/css/style.css"/>
+
+    <link href="/theme/css/pygments/github.css"
+          rel="stylesheet">
+
+
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
+
+
+
+
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://synckey.name/">A Pelican Blog </a></h1>
-                <nav><ul>
-                    <li><a href="http://synckey.name/category/digest.html">digest</a></li>
-                    <li><a href="http://synckey.name/category/ielts.html">ielts</a></li>
-                    <li><a href="http://synckey.name/category/life.html">life</a></li>
-                    <li><a href="http://synckey.name/category/machinelearning.html">machinelearning</a></li>
-                    <li><a href="http://synckey.name/category/posts.html">posts</a></li>
-                    <li><a href="http://synckey.name/category/sfv.html">sfv</a></li>
-                    <li><a href="http://synckey.name/category/summery.html">summery</a></li>
-                    <li><a href="http://synckey.name/category/tools.html">tools</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://synckey.name/colorful-clouds-chasing-the-moon.html">《彩云追月》</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2018-02-04T00:00:00+08:00">
-                Published: Sun 04 February 2018
-        </abbr>
+<div class="navbar-default "
+     role="navigation">
+    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-top-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Andy's Blog            </a>
+            <a class="navbar-brand" href="/">Posts</a></li>
+            <a class="navbar-brand" href="/archives.html">Archives</a>
+        </div>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/life.html">life</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/life.html">life</a> <a href="http://synckey.name/tag/posts.html">posts</a> <a href="http://synckey.name/tag/summery.html">summery</a> </p>
-</footer><!-- /.post-info --><p>2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
+        <div class="collapse navbar-collapse" id="navbar-top-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
+                        class="icon-label">Categories</span></a></li>
+                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
+                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Banner -->
+<!-- End Banner -->
+<div class="article-list">
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2018/02/04/colorful-clouds-chasing-the-moon.html">《彩云追月》</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2018-02-04</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
+
+
+            <div class="post-content"><p>2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
 唱出了女子在花落之时与情人约见而情人爽约的失望和愁苦。</p>
 <p>阴差阳错的，在昨天居然听到了这个歌曲的交响乐版，原来《几度花落时》的曲修改自《彩月追月》，初衷也不是男欢女爱。《彩云追月》来自广东民间，最早见于清代，
-描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐<sup id="fnref-1"><a class="footnote-ref" href="#fn-1">1</a></sup>。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。</p>
+描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。</p>
 <p>网上有很多彩云追月的音频，有李云迪和郎朗分别演奏的钢琴solo，好听自不细说。但是中国交响乐团的交响曲版更加可听，小提琴和大提琴交替演奏的主旋律比钢琴solo更能触动心弦。</p>
 <p>可是对我来说，虽然没有歌词，听歌可以任凭想象了，依然听不到轻松和写意。从2011年8月到2018年2月，6年半的时间，事事变迁，什么都变了，情却惊人的相似，
 在北京的生活以《几度花落时》始，以《彩月追月》终，怎不叫人伤感。</p>
 <div class="center-block">
 <div>
-<audio controls="controls" >
-<source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg">
+<audio controls="controls">
+<source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"/>
 </audio>
 </div>
-<div class="caption">《彩云追月》交响乐版</div>
-</div>
+<div class="caption">《彩云追月 …</div></div>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2018/02/04/colorful-clouds-chasing-the-moon.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2018/01/01/2017-summery.html">2017 Full of Changes</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2018-01-01</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
 
-<div class="center-block">
-<div class="iframevideo">
-<iframe width="70%" height="100%" src="https://v.qq.com/iframe/player.html?vid=y0129wez66g&tiny=0&auto=0" frameborder=0 allowfullscreen></iframe>
-</div>
-<div class="caption">《彩云追月》李云迪</div>
-</div>
 
-<div class="center-block">
-<div class="iframevideo">
-<iframe height="100%" width="70%" src='http://player.youku.com/embed/XMzIwMTY1MTg0NA==' frameborder=0 'allowfullscreen'></iframe>
-</div>
-<div class="caption">《几度花落时》凤飞飞</div>
-</div>
-
-<div class="footnote">
-<hr>
-<ol>
-<li id="fn-1">
-<p><a href="https://baike.baidu.com/item/%E5%BD%A9%E4%BA%91%E8%BF%BD%E6%9C%88/949874?fr=aladdin">彩云追月</a>&#160;<a class="footnote-backref" href="#fnref-1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn-2">
-<p><a href="https://music.163.com/#/song?id=396860">《彩云追月》交响乐版，网易云音乐</a>&#160;<a class="footnote-backref" href="#fnref-2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/2017-summery.html" rel="bookmark"
-                           title="Permalink to 2017 Full of Changes">2017 Full of Changes</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-01-01T00:00:00+08:00">
-                Published: Mon 01 January 2018
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/summery.html">summery</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/life.html">life</a> <a href="http://synckey.name/tag/posts.html">posts</a> <a href="http://synckey.name/tag/summery.html">summery</a> </p>
-</footer><!-- /.post-info -->                <p>2017年马上就要过去了，回望这一年，最大的感觉就是变化，事情在变，想法在变，人也在变。</p>
+            <div class="post-content"><p>2017年马上就要过去了，回望这一年，最大的感觉就是变化，事情在变，想法在变，人也在变。</p>
 <p>2017年的开始本以为这会是最惊心动魄的一年，因为在前一年我决定了要去新西兰工作。在2017年刚开始，一切都已经准备就绪了，签证已经办好，
 决心也已经下定。过完年已经开始着手准备登录以后的EOI的材料（出生公正，无犯罪记录证明）。机票订好了以后就开始准备找工作，
 根据新西兰的格式改了一份简历，在Seek上查看各种相关和不太相关的职位，投了大概有20份。这些简历大部分是石沉大海，唯一收到的回应就是拒绝。
@@ -112,150 +189,140 @@
 但是真正身处其中之时，内心对于未知的恐惧会被放大很多倍。在距离去程的机票起飞时间差不多还有两个月的时候，收到了一封来自亚马逊HR的邮件，
 说是6月份会在北京举办一场Hiring Event。这种邮件之前也不是没有收到过，根本没去回应，从来没想过要去亚马逊。但是现在对去新西兰找工作已然不再乐观，
 于是就抱着一种why not give it a try的想法，给HR回了一封邮件，决定要去试一下。由于招聘会的时间跟之前订的机票时间冲突 …</p>
-                <a class="readmore" href="http://synckey.name/2017-summery.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2018/01/01/2017-summery.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">金缕曲词二首(清顾贞观)</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-12-07</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/shu-tian-ya-wan-jia-deng-huo.html" rel="bookmark"
-                           title="Permalink to 金缕曲词二首(清顾贞观)">金缕曲词二首(清顾贞观)</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-12-07T00:00:00+08:00">
-                Published: Thu 07 December 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/digest.html">digest</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/poem.html">poem</a> </p>
-</footer><!-- /.post-info -->                <p>李敖在《北京法源寺》的楔子中写道“时间年复一年的在前进、风俗周而复始的在重演。团圆、团圆、大团圆，多少中国人民在风霜里、在烽火下、在骨肉离散中，
+            <div class="post-content"><p>李敖在《北京法源寺》的楔子中写道“时间年复一年的在前进、风俗周而复始的在重演。团圆、团圆、大团圆，多少中国人民在风霜里、在烽火下、在骨肉离散中，
 为这一梦想揉进了辛酸与涕泪。”。他又时常在他的节目中提到“数天涯，依然骨肉，几家能够？”这几句词，道尽了中国人自古的离别相思苦。
 这首词后面有一段感人的故事，羁旅之客，读之神悲。维基文库上有关这首词的介绍和原文摘抄如下。</p>
 <p>顺治十四年（公元1657年），好友吴兆骞因“丁酉科场案”被株连而流放宁古塔。顾贞观与吴兆骞私交甚厚，情同手足，为救吴而奔走呼号，遍求满朝权贵。
 十年后，顾贞观辗转得到吴兆骞的求救信，写道：“塞外苦寒，四时冰雪。呜镝呼风，哀前带血。一身飘寄，双鬓渐星。妇复多病，一男两女，藜藿不充。回念老母，
 莹然在堂，迢递关河，归省无日……”。读毕情绪激动，夜不能眠，在北京千佛寺大雪之夜作 …</p>
-                <a class="readmore" href="http://synckey.name/shu-tian-ya-wan-jia-deng-huo.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">Produce 1000 Unique Four Digit Numbers</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-12-06</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/produce-1000-unique-four-digit-numbers.html" rel="bookmark"
-                           title="Permalink to Produce 1000 Unique Four Digit Numbers">Produce 1000 Unique Four Digit Numbers</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-12-06T00:00:00+08:00">
-                Published: Wed 06 December 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/java.html">java</a> <a href="http://synckey.name/tag/algorithm.html">algorithm</a> </p>
-</footer><!-- /.post-info -->                <blockquote>
-<p>Produce 1000 unique four digit numbers.<br>
-Conditions:  <br>
-1. No consecutive numbers. 2268, 1155 are not acceptable. <br>
+            <div class="post-content"><blockquote>
+<p>Produce 1000 unique four digit numbers.<br/>
+Conditions:  <br/>
+1. No consecutive numbers. 2268, 1155 are not acceptable. <br/>
 2. No sequential numbers. 1234, 1856 are not acceptable.  </p>
 </blockquote>
 <p>题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<div class="github"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
 
 <span class="cm">/**</span>
 <span class="cm"> * Created by …</span></pre></div>
-                <a class="readmore" href="http://synckey.name/produce-1000-unique-four-digit-numbers.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2017/11/27/life-is-one-man-fight.html">一个人的战争</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-11-27</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/life-is-one-man-fight.html" rel="bookmark"
-                           title="Permalink to 一个人的战争">一个人的战争</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-11-27T00:00:00+08:00">
-                Published: Mon 27 November 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/digest.html">digest</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/digest.html">digest</a> </p>
-</footer><!-- /.post-info -->                <blockquote>
+            <div class="post-content"><blockquote>
 <p>有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from <a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment">假装在纽约</a></p>
 </blockquote>
-<div class="figure" > 
-    <img src="/static/images/2017.11.27.one-man-fight.jpg" alt="一个人的战争"  class="carousel-inner img-rounded img-responsive center-block" style="width:100%" />
+<div class="figure">
+<img alt="一个人的战争" class="carousel-inner center-block img-responsive img-rounded" src="/static/images/2017.11.27.one-man-fight.jpg" style="width:100%"/>
 </div>
-                <a class="readmore" href="http://synckey.name/life-is-one-man-fight.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2017/11/27/life-is-one-man-fight.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2017/11/26/useful-set-phrases.html">Useful Set Phrases</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-11-26</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/useful-set-phrases.html" rel="bookmark"
-                           title="Permalink to Useful Set Phrases">Useful Set Phrases</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-11-26T00:00:00+08:00">
-                Published: Sun 26 November 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/ielts.html">ielts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/ielts.html">ielts</a> </p>
-</footer><!-- /.post-info -->                <p>Hard liquor (Whiskey, bourbon, vodka), spirits        <br>
-a shot of whiskey<br>
-upper hand<br>
-let off steam: 释放鸭梨<br>
-hang over:喝断片<br>
-Shish kebab:羊肉串<br>
-roasted mutton cubes on spit  烤羊肉串 <br>
-his good deeds<br>
-gin and tonic (金汤力)<br>
-I am inclined to believe that<br>
-same-sex<br>
-opposite-sex<br>
-for the better<br>
+            <div class="post-content"><p>Hard liquor (Whiskey, bourbon, vodka), spirits        <br/>
+a shot of whiskey<br/>
+upper hand<br/>
+let off steam: 释放鸭梨<br/>
+hang over:喝断片<br/>
+Shish kebab:羊肉串<br/>
+roasted mutton cubes on spit  烤羊肉串 <br/>
+his good deeds<br/>
+gin and tonic (金汤力)<br/>
+I am inclined to believe that<br/>
+same-sex<br/>
+opposite-sex<br/>
+for the better<br/>
 the dust has settled …</p>
-                <a class="readmore" href="http://synckey.name/useful-set-phrases.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2017/11/26/useful-set-phrases.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2017/09/20/my-first-marathon.html">第一次跑马</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-09-20</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/my-first-marathon.html" rel="bookmark"
-                           title="Permalink to 第一次跑马">第一次跑马</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-09-20T00:00:00+08:00">
-                Published: Wed 20 September 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/life.html">life</a> </p>
-</footer><!-- /.post-info -->                <p>如果时光回退到2014年，那时候我180斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体，
+            <div class="post-content"><p>如果时光回退到2014年，那时候我180斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体，
 气喘吁吁，跑了10公里，花了两个小时。那时候没有专业跑步鞋，甚至连运动短裤和T恤都没有。</p>
 <p>后来买了最低标准的装备，一双ascis跑步鞋，一条运动短裤，开始正规的跑步训练。那时候严格按照《爱上跑步十三周》练，循序渐进，跑步本身给我的痛苦并不很大。
 最大的痛苦来自于冬天早上6点钟从被窝里面爬出来，踏着月色去跑步。最冷的时候，有零下十一度，凌晨的小区只有三三两两的行人，早起的遛狗的大妈，通宵不睡的保安。
@@ -263,1013 +330,138 @@ the dust has settled …</p>
 <p>这个目标很快得以实现，练了几个月以后，第一次跑完了10公里，腿疼了好几天，下楼梯腿非常的疼，兴奋也随着这次突破持续了好几天。
 有了第一个十公里，很快就有了15公里，20公里。我在早晨和夜晚的798里面钻来钻去，对每条小路很熟悉。
 后来第一次参加25公里越野赛(TNF100)，已经是2015年的5月份了，去之前信心满满，因为之前已经跑了好几次20公里 …</p>
-                <a class="readmore" href="http://synckey.name/my-first-marathon.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2017/09/20/my-first-marathon.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2017/06/26/new-to-auckland.html">Auckland 小记</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-06-26</span>
+                    <span class="glyphicon glyphicon-home footnote ">Auckland</span>
+                </div>
+            </div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/new-to-auckland.html" rel="bookmark"
-                           title="Permalink to Auckland 小记">Auckland 小记</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-06-26T00:00:00+08:00">
-                Published: Mon 26 June 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/sfv.html">sfv</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/sfv.html">sfv</a> </p>
-</footer><!-- /.post-info -->                <p>来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。</p>
+            <div class="post-content"><p>来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。</p>
 <p>到奥克兰下飞机已经是早上6.30，跟我一起下飞机的都是中国人。一下飞机就买了一张vodaphone的手机卡，卖手机卡的是中国人，说的是中国话，收银员是个漂亮的高挑当地妹子。在海关排队入境花了大概有半个小时，海关官员看了下签证，问了下我帮朋友带了什么，就放行了。出来还要过一道安检，这次主要是查有没有带危害当地生物安全的食品，种子等，新西兰是一个岛国，生态异常脆弱。</p>
 <p>出机场看到外面乌云密布，天空非常的低，在下着小雨，有点冷，还好很快就找到接机的小伙伴，一路送到住所。路两边都是矮矮的两层小楼，路很窄，但是车速很快。</p>
 <p>租的房子在一个小山坡上，窗外是大树和花草，室内的感觉有点阴冷。但是这种翠绿，是我非常喜欢的，绿油油。</p>
 <p>中午去台湾人开的中餐馆吃了牛排饭，牛排是真的很好吃。下午去超市买买买，收银员妹子很热情，夸我公司发的衣服上的小骆驼很可爱，全程微笑。</p>
 <p>最让我差异的就是过人行道，只要站在人行道边，车就自动停下来让行，比国内的红绿灯还灵，可见一斑。</p>
 <p>在奥克兰的第二天，跟群里的几个sfver约了在newmarket见面吃饭 …</p>
-                <a class="readmore" href="http://synckey.name/new-to-auckland.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2017/06/26/new-to-auckland.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2017/06/04/git-push-to-two-repositories.html">Git Push to Two Repositories at the Same Time</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-06-04</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/git-push-to-two-repositories.html" rel="bookmark"
-                           title="Permalink to Git Push to Two Repositories at the Same Time">Git Push to Two Repositories at the Same Time</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-06-04T00:00:00+08:00">
-                Published: Sun 04 June 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/tools.html">tools</a> <a href="http://synckey.name/tag/git.html">git</a> </p>
-</footer><!-- /.post-info -->                <p>Suppose You have 2 repositories:</p>
-<div class="highlight"><pre><span></span>https://github.com/synckey/synckey.github.io.git
+            <div class="post-content"><p>Suppose You have 2 repositories:</p>
+<div class="github"><pre><span></span>https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
 </pre></div>
-
-
 <p>You want to push to them within one command.</p>
-<div class="highlight"><pre><span></span><span class="c1"># if your project is cloned from this repository, </span>
+<div class="github"><pre><span></span><span class="c1"># if your project is cloned from this repository, </span>
 <span class="c1"># you can simply ignore this first command</span>
 git remote add origin https://git …</pre></div>
-                <a class="readmore" href="http://synckey.name/git-push-to-two-repositories.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2017/06/04/git-push-to-two-repositories.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html">BFS遍历到图的指定层的一种方法</a></h2>
+                <div class="post-meta">
+        <span class="glyphicon glyphicon-calendar footnote"
+              aria-hidden="true">2017-05-10</span>
+                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+                </div>
+            </div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/BFS-to-the-specific-level-of-a-graph.html" rel="bookmark"
-                           title="Permalink to BFS遍历到图的指定层的一种方法">BFS遍历到图的指定层的一种方法</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-05-10T00:00:00+08:00">
-                Published: Wed 10 May 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/algorithm.html">algorithm</a> </p>
-</footer><!-- /.post-info -->                <p><a href="https://leetcode.com/problems/word-ladder/#/description">leetcode原题</a></p>
+            <div class="post-content"><p><a href="https://leetcode.com/problems/word-ladder/#/description">leetcode原题</a></p>
 <p>Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:</p>
 <ol>
 <li>Only one letter can be changed at a time.</li>
 <li>Each transformed word must exist in the word list. Note that beginWord is not a transformed …</li></ol>
-                <a class="readmore" href="http://synckey.name/BFS-to-the-specific-level-of-a-graph.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/read-mat-files-in-python.html" rel="bookmark"
-                           title="Permalink to Read .mat Files in Python">Read .mat Files in Python</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-03-30T00:00:00+08:00">
-                Published: Thu 30 March 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/machinelearning.html">machinelearning</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/machine-learning.html">machine learning</a> <a href="http://synckey.name/tag/deep-learning.html">deep learning</a> <a href="http://synckey.name/tag/probability.html">probability</a> </p>
-</footer><!-- /.post-info -->                <p>Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.io</span>
-<span class="n">mat</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">loadmat</span><span class="p">(</span><span class="s1">&#39;file.mat&#39;</span><span class="p">)</span>
-</pre></div>
-
-
-<p>Enjoy^_^</p>
-<h4>Reference</h4>
-<p><a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python">read-mat-files-in-python</a></p>
-                <a class="readmore" href="http://synckey.name/read-mat-files-in-python.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/enable-pelican-to-render-markdown-tables.html" rel="bookmark"
-                           title="Permalink to Enable Pelican to Render Markdown Tables">Enable Pelican to Render Markdown Tables</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-03-19T00:00:00+08:00">
-                Published: Sun 19 March 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/tools.html">tools</a> <a href="http://synckey.name/tag/pelican.html">pelican</a> <a href="http://synckey.name/tag/blog.html">blog</a> </p>
-</footer><!-- /.post-info -->                <p>Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:</p>
-<div class="highlight"><pre><span></span><span class="n">MARKDOWN</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;extension_configs&#39;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s1">&#39;markdown.extensions.tables&#39;</span><span class="p">:{},</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<p>Then,you can use the following code to generate the table below:</p>
-<div class="highlight"><pre><span></span>|First Header  | Second Header|
-|------------- | -------------|
-|Content …</pre></div>
-                <a class="readmore" href="http://synckey.name/enable-pelican-to-render-markdown-tables.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/see-you-ten-years-later.html" rel="bookmark"
-                           title="Permalink to 今朝一别，或是流水十年">今朝一别，或是流水十年</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-03-19T00:00:00+08:00">
-                Published: Sun 19 March 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/life.html">life</a> </p>
-</footer><!-- /.post-info -->                <p>周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。</p>
-<p>跟jw是大学室友，他的床，就在我的隔壁，每天晚上他爬上床，我都能听到。进大学的第一天，我刚到宿舍，就看到他坐在那里，当时对他的第一印象，头很大，可能头大就是他聪明的原因吧。jw和我一样，来自农村的家庭，家里也不富裕，所以共同语言有不少。当时我们常常一起上课，一起出去买东西，没想到后来还一起来了北京，一起去百度实习。虽然他去百度正式工作的时候，我已经不在百度了。</p>
-<p>2011年夏天，也就是大三快到大四的下学期，我拿了百度的实习offer，学院跟百度有合作，搞了一个<a href="https://github.com/gmsh/dnscache">项目实训</a>，jw，我，还有gms分一组，那时候我们每天都顶着夏日，来到机房，敲代码，调试代码。 后来因为他在项目里面表现优异，百度也给了他面试机会。最终，他也拿到了百度的实习offer，百度运维部实习。跟我不是同一批，如果我没记错，他是在我后面入职的。在百度实习的时候，我们并没有很多交集 …</p>
-                <a class="readmore" href="http://synckey.name/see-you-ten-years-later.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/rename-a-tensor-or-operation-in-tensorflow.html" rel="bookmark"
-                           title="Permalink to Rename a Tensor or Operation in Tensorflow">Rename a Tensor or Operation in Tensorflow</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-03-17T00:00:00+08:00">
-                Published: Fri 17 March 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/machine-learning.html">machine learning</a> <a href="http://synckey.name/tag/deep-learning.html">deep learning</a> <a href="http://synckey.name/tag/tools.html">tools.</a> </p>
-</footer><!-- /.post-info -->                <p>Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …</p>
-                <a class="readmore" href="http://synckey.name/rename-a-tensor-or-operation-in-tensorflow.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/2016-summery.html" rel="bookmark"
-                           title="Permalink to 2016 Full of Serendipities">2016 Full of Serendipities</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-02-23T00:00:00+08:00">
-                Published: Thu 23 February 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/summery.html">summery</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/life.html">life</a> <a href="http://synckey.name/tag/posts.html">posts</a> <a href="http://synckey.name/tag/mm.html">mm</a> <a href="http://synckey.name/tag/summery.html">summery</a> </p>
-</footer><!-- /.post-info -->                <p><strong>2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。</strong></p>
-<p>不知道每个人心里是不是都有不愿意提及的往事，在某些时候，你是彻底的骗子，无赖，恶魔。有一阵子活在自己虚设的缱绻而又梦境里，不问对错，不追因果，一切那么自然而然。即使你知道这梦总有梦醒的时刻，结局早已写好，也假装要让它继续圆下去，因为从开始你就是恶魔，恶魔总要让梦破碎。这些事，本可以远离，不用歇斯底里，更不用刨根问底。可喜的是，放弃本不珍贵的东西并不难。高中的时候读过的诗，要过许多年，才解其中意，真正做到的，又能有几个？</p>
-<blockquote>
-<p>爱里不见是非,<br>
-爱里不见强弱,<br>
-爱里只有情,<br>
-情没有对错.   </p>
-<p>爱里只见花飞,<br>
-爱里只见叶落,<br>
-爱里只有美,<br>
-美没有善恶.  </p>
-<p>宁愿因情生灾,<br>
-宁愿因美致祸,<br>
-宁愿情人说谎,<br>
-可是我不说破.<br>
---&lt;爱里&gt; 李敖</p>
-</blockquote>
-<p>五月份的时候，从小南庄小破烂的二居室次卧搬到了自如的一个主卧，生活质量也随着房租提高，房租从2000提高到了3700一个月，肉疼。在那个装修跟房租格格不入的90年二层小楼里，生活其实得到了极大的满足 …</p>
-                <a class="readmore" href="http://synckey.name/2016-summery.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/review-of-probability.html" rel="bookmark"
-                           title="Permalink to 《概率论》复习笔记">《概率论》复习笔记</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-02-20T00:00:00+08:00">
-                Published: Mon 20 February 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/machinelearning.html">machinelearning</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/machine-learning.html">machine learning</a> <a href="http://synckey.name/tag/deep-learning.html">deep learning</a> <a href="http://synckey.name/tag/probability.html">probability</a> </p>
-</footer><!-- /.post-info -->                <h4>1. 随机事件和概率</h4>
-<h5>1.1全概率公式</h5>
-<p>设事件 $A_1,A_2,\cdots,A_n$ 两两互不相容，$P(A_i)&gt;0(i=1,2,\cdots,n)$，且$\sum\limits_{i=1}^{n}{A_i}=\Omega$，
-则对任一事件$B$，有
-$$
-P(B)=\sum_{i=1}^{n}{P(A_i)\cdot P{(B|A_i)}}.
-$$
-满足公式中的$A_1,A_2,\cdots,A_n$  叫<strong>完备事件组</strong>。</p>
-<h5>1.2贝叶斯公式 …</h5>
-                <a class="readmore" href="http://synckey.name/review-of-probability.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/eoi-documents.html" rel="bookmark"
-                           title="Permalink to 出生公正和无犯罪记录证明公正">出生公正和无犯罪记录证明公正</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-11-07T00:00:00+08:00">
-                Published: Mon 07 November 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/sfv.html">sfv</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/mm.html">mm</a> <a href="http://synckey.name/tag/life.html">life</a> <a href="http://synckey.name/tag/sfv.html">sfv</a> </p>
-</footer><!-- /.post-info -->                <h3>EOI 地址</h3>
-<p><a href="https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/criteria/skilled-migrant-category-resident-visa?nationality=nationality-CHN&amp;country=residence-CHN&amp;applying=co">eoi 打分系统</a></p>
-<h3>EOI材料准备</h3>
-<h3>出生公正和无犯罪记录证明公正</h3>
-<p><strong>办理地点</strong>：户籍所在地的派出所和公证处</p>
-<p><strong>携带材料</strong>： 父母身份证，户口本，护照，本人身份证，本人近期二寸照片</p>
-<p><strong>费用</strong>：500 一共</p>
-<p><strong>Date</strong>: 2017.06.01</p>
-                <a class="readmore" href="http://synckey.name/eoi-documents.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/sfv-documents.html" rel="bookmark"
-                           title="Permalink to SFV 材料准备">SFV 材料准备</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-11-07T00:00:00+08:00">
-                Published: Mon 07 November 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/sfv.html">sfv</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/mm.html">mm</a> <a href="http://synckey.name/tag/life.html">life</a> <a href="http://synckey.name/tag/sfv.html">sfv</a> </p>
-</footer><!-- /.post-info -->                <h2>需要准备的材料列表</h2>
-<ol>
-<li>护照（原件）</li>
-<li>拍证件照</li>
-<li>体检回执</li>
-<li>银行存款证明</li>
-<li>无犯罪记录证明和公正</li>
-<li>毕业证和学位证</li>
-<li>雅思成绩单（a，g均可，均分至少6.5）</li>
-</ol>
-<h2>体检</h2>
-<p><strong>携带材料</strong>：护照（原件，复印件）</p>
-<p><strong>费用</strong>： 1590（不同体检机构会有不同）</p>
-<p><strong>Date</strong>: 2016.11.07</p>
-<p>体检必须在指定医院(<a href="https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/tools-and-information/tools/panel-physicians">Panel Physicians</a>)中进行，要提前打电话预约。体检不需要携带照片，会现场拍一个。整个流程大概2小时，当场就能拿到回执。体检如果有问题会当场告知。我当时血液的检查结果还没没出来，医生说如果有问题会打电话告之，没问题的话，就不打电话了。</p>
-<h2>无犯罪记录证明翻译以及公正</h2>
-<p><strong>办理地点</strong>：户籍所在地的派出所和公证处</p>
-<p><strong>携带材料</strong>：身份证（或照片，正反面），户口本（或照片），护照（或照片 …</p>
-                <a class="readmore" href="http://synckey.name/sfv-documents.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/succeed-to-get-sfv.html" rel="bookmark"
-                           title="Permalink to SFV Got">SFV Got</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-11-06T00:00:00+08:00">
-                Published: Sun 06 November 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/sfv.html">SFV</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/mm.html">mm</a> <a href="http://synckey.name/tag/life.html">life</a> <a href="http://synckey.name/tag/sfv.html">SFV</a> </p>
-</footer><!-- /.post-info -->                <h1>为什么要抢SFV(Silver Fern Job Search Visa)</h1>
-<p>其实这个问题很难回答，也许是我自己没有想清楚，也许是我自己患得患失。早在2014年从前单位离职的时候，当时的直属领导就问我为什么要离职？1 2 3 4 blabla，不好可以细数一大堆。换个工作就没有这些问题了么？他问道。我无法回答，那是我第一次换工作，我无从知晓——在一个地方遇到问题，就想要逃避，不去面对，这个问题永远也解决不了。逃避，不是解决问题的办法。想要出去的想法其实和换工作一样。眼前不好，不代表换个地方就好。去新西兰是否真的就比国内好？我像三年前一样，茫然不晓。  然而，自己的内心里常常知道自己想要什么（尽管大部分想要的常常也得不到）。自己如此强烈的想要出去的原因可能如下：</p>
-<ul>
-<li>污染。从2012年就开始见识了帝都的雾霾，即使戴着口罩也有那种独特的恶心的气味也逃避不掉。无数个想去奔跑的清晨，被困在房间里面做 insanity。有雾霾的日子，心情不会好。 作为一个健身爱好者和惜命如此的少年，并不想在身体蠢蠢欲动的时候被困在室内。尤其是，不想自己的伴侣 …</li></ul>
-                <a class="readmore" href="http://synckey.name/succeed-to-get-sfv.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/notes-for-leetcode.md.html" rel="bookmark"
-                           title="Permalink to Notes for Leetcode">Notes for Leetcode</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-10-20T00:00:00+08:00">
-                Published: Thu 20 October 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/algorithm.html">algorithm</a> </p>
-</footer><!-- /.post-info -->                <h2>1.Binary Number Representation</h2>
-<div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mb">0b1111</span><span class="o">;</span> <span class="c1">// which is equals to `x = 15`; and is useful when use the number for masking.</span>
-</pre></div>
-
-
-<h2>2.Rotate Function</h2>
-<h3>Original Question</h3>
-<p>原始问题链接：<a href="https://leetcode.com/problems/rotate-function/">Rotate Function</a>.</p>
-<p>Given an array of integers $A$ and let $n$ to be its length.</p>
-<p>Assume $B_k$ to be an array obtained by …</p>
-                <a class="readmore" href="http://synckey.name/notes-for-leetcode.md.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/my-bashrc-backup.html" rel="bookmark"
-                           title="Permalink to My Bashrc Backup">My Bashrc Backup</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-10-11T00:00:00+08:00">
-                Published: Tue 11 October 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/tools.html">tools</a> <a href="http://synckey.name/tag/vim.html">vim</a> <a href="http://synckey.name/tag/linux.html">linux</a> <a href="http://synckey.name/tag/config.html">config</a> <a href="http://synckey.name/tag/macos.html">macos</a> </p>
-</footer><!-- /.post-info -->                <div class="highlight"><pre><span></span><span class="c1"># .bashrc</span>
-<span class="c1"># Source global definitions</span>
-<span class="k">if</span> <span class="o">[</span> -f /etc/bashrc <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-    . /etc/bashrc
-<span class="k">fi</span>
-<span class="c1"># User specific aliases and functions</span>
-
-<span class="nb">export</span> <span class="nv">LS_OPTIONS</span><span class="o">=</span><span class="s1">&#39;--color=auto&#39;</span> <span class="c1"># 如果没有指定，则自动选择颜色</span>
-<span class="nb">export</span> <span class="nv">CLICOLOR</span><span class="o">=</span><span class="s1">&#39;Yes&#39;</span> <span class="c1">#是否输出颜色</span>
-<span class="nb">export</span> <span class="nv">LSCOLORS</span><span class="o">=</span><span class="s1">&#39;Exfxcxdxbxegedabagacad&#39;</span> <span class="c1">#指定颜色</span>
-<span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">&#39;ls -l&#39;</span>
-<span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;\[\e[0;31m\][\u@\H \w]\\</span>$<span class="s2"> \[\e[m\]&quot;</span>
-<span class="c1"># vim:ts=4:sw=4 …</span></pre></div>
-                <a class="readmore" href="http://synckey.name/my-bashrc-backup.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/jvm-monitor-tool-jvisualvm.html" rel="bookmark"
-                           title="Permalink to JVM Monitor Tool---jvisualvm">JVM Monitor Tool---jvisualvm</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-07-26T00:00:00+08:00">
-                Published: Tue 26 July 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/java.html">java</a> <a href="http://synckey.name/tag/posts.html">posts</a> <a href="http://synckey.name/tag/jvm.html">jvm</a> <a href="http://synckey.name/tag/profile.html">profile</a> <a href="http://synckey.name/tag/trouble-shooting.html">trouble shooting</a> </p>
-</footer><!-- /.post-info -->                <h2>通过 jvisualvm 查看 jvm 内部详细信息</h2>
-<div class="highlight"><pre><span></span>jvisualvm -Dcom.sun.management.jmxremote.port<span class="o">=</span><span class="m">8999</span> -Dcom.sun.management.jmxremote.ssl<span class="o">=</span><span class="nb">false</span> <span class="se">\</span>
- -Dcom.sun.management.jmxremote.authenticate<span class="o">=</span><span class="nb">false</span> -Djava.rmi.server.hostname<span class="o">=</span><span class="m">10</span>.86.46.252
-</pre></div>
-
-
-<h2>查看哪个线程使用 cpu 最多</h2>
-<div class="highlight"><pre><span></span>ps -mp <span class="m">2633</span> -o THREAD,tid,time <span class="p">|</span> sort -rn
-</pre></div>
-
-
-<p>找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式 …</p>
-                <a class="readmore" href="http://synckey.name/jvm-monitor-tool-jvisualvm.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/shang-pin-jiao-zi.html" rel="bookmark"
-                           title="Permalink to 上品饺子">上品饺子</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-04-20T00:00:00+08:00">
-                Published: Wed 20 April 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/life.html">life</a> </p>
-</footer><!-- /.post-info -->                <p>在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。</p>
-<p>从此，就爱上了他们家的饺子，破了减肥不吃晚饭的戒。每次下班经过他们家门口，就走不动了，要做一番心里斗争。结果往往是要进去吃一大碗韭菜猪肉的水饺，加一个荷包蛋才会满足。也常常跟同事推荐，“有空一定要带你们一起去尝一尝水饺——都是手工的，他们家也有面条，面条上的猪肝，肉丝，木耳，香菇，都是现炒的，热腾腾的 …</p>
-                <a class="readmore" href="http://synckey.name/shang-pin-jiao-zi.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/notes-of-grammar-in-use.html" rel="bookmark"
-                           title="Permalink to Grammar in Use 笔记">Grammar in Use 笔记</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-03-26T00:00:00+08:00">
-                Published: Sat 26 March 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/ielts.html">ielts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/ying-yu.html">英语</a> <a href="http://synckey.name/tag/yu-fa.html">语法</a> </p>
-</footer><!-- /.post-info -->                <h3>主要的时态</h3>
-<ul>
-<li>past(I did)</li>
-<li>present continuous(I am doing)</li>
-<li>present simple(I do)</li>
-<li>past simple(I did)</li>
-<li>past continuous(I was doing)</li>
-<li>present perfect(I have done)</li>
-<li>present perfect continuous(I have been doing),强调从过去到现在的一个过程.</li>
-<li>present perfect simple </li>
-<li>past perfect(I had done)</li>
-<li>
-<p>past perfect continuous(I had been doing …</p></li></ul>
-                <a class="readmore" href="http://synckey.name/notes-of-grammar-in-use.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/set-vim-to-remember-previous-eidt-place.html" rel="bookmark"
-                           title="Permalink to 让VIM记录文件上次编辑的位置">让VIM记录文件上次编辑的位置</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-03-11T00:00:00+08:00">
-                Published: Fri 11 March 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/tools.html">tools</a> <a href="http://synckey.name/tag/vim.html">vim</a> <a href="http://synckey.name/tag/linux.html">linux</a> <a href="http://synckey.name/tag/config.html">config</a> </p>
-</footer><!-- /.post-info -->                <p>在<code>~/.vimrc</code>中加入如下配置:</p>
-<div class="highlight"><pre><span></span>autocmd BufReadPost *
-<span class="se">\ </span><span class="k">if</span> line<span class="o">(</span><span class="s2">&quot;&#39;\&quot;&quot;</span><span class="o">)</span>&gt;0<span class="o">&amp;&amp;</span>line<span class="o">(</span><span class="s2">&quot;&#39;\&quot;&quot;</span><span class="o">)</span>&lt;<span class="o">=</span>line<span class="o">(</span><span class="s2">&quot;</span>$<span class="s2">&quot;</span><span class="o">)</span> <span class="p">|</span>
-<span class="se">\ </span>exe <span class="s2">&quot;normal g&#39;\&quot;&quot;</span> <span class="p">|</span>
-<span class="se">\ </span>endif
-autocmd BufReadPost *
-<span class="se">\ </span><span class="k">if</span> line<span class="o">(</span><span class="s2">&quot;&#39;\&quot;&quot;</span><span class="o">)</span>&gt;0<span class="o">&amp;&amp;</span>line<span class="o">(</span><span class="s2">&quot;&#39;\&quot;&quot;</span><span class="o">)</span>&lt;<span class="o">=</span>line<span class="o">(</span><span class="s2">&quot;</span>$<span class="s2">&quot;</span><span class="o">)</span> <span class="p">|</span>
-<span class="se">\ </span>exe <span class="s2">&quot;normal g&#39;\&quot;&quot;</span> <span class="p">|</span>
-<span class="se">\ </span>endif
-syntax <span class="nb">enable</span>
-<span class="nb">set</span> nu
-</pre></div>
-
-
-<h3>参考</h3>
-<p><a href="http://www.2cto.com/os/201311/255061.html">让VIM记录文件上次编辑的位置</a></p>
-                <a class="readmore" href="http://synckey.name/set-vim-to-remember-previous-eidt-place.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/summary-concepts-of-deep-learning.html" rel="bookmark"
-                           title="Permalink to Summary Concepts of Deep Learning">Summary Concepts of Deep Learning</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-03-01T00:00:00+08:00">
-                Published: Tue 01 March 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/machinelearning.html">machinelearning</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/machine-learning.html">machine learning</a> <a href="http://synckey.name/tag/deep-learning.html">deep learning</a> </p>
-</footer><!-- /.post-info -->                <h2>机器学习</h2>
-<p>input-&gt;feature representation-&gt;learning algorithm</p>
-<h3>监督学习</h3>
-<p>标注过的训练数据.</p>
-<ul>
-<li>标注成本高</li>
-<li>数据稀疏</li>
-</ul>
-<h3>非监督学习</h3>
-<p>未标注的数据,让算法自己决定学到什么.</p>
-<ul>
-<li>数据量大</li>
-</ul>
-<h3>features</h3>
-<p><code>特征的表示对机器学习性能有巨大的影响.</code></p>
-<ul>
-<li>人工特征筛选,处理,需要非常精细的调整和专业知识.</li>
-<li>在很多任务中,很难知道哪些特征需要被抽取出来.例如,想要识别图像中的汽车,我们知道骑车都有轮子,所以我们可能会将轮子当做一个特征,但是实际上很难精确的描述什么是轮子.</li>
-</ul>
-<h2>神经网络</h2>
-<h3>Neurons</h3>
-<p><div class="figure">
-<img src="/static/images/SingleNeuron.png" alt="SingleNeuron"  width="40%" />
-</div></p>
-<p>神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f …</p>
-                <a class="readmore" href="http://synckey.name/summary-concepts-of-deep-learning.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/hhkb-settings-and-shortcut-keys.html" rel="bookmark"
-                           title="Permalink to HHKB 设置与快捷键">HHKB 设置与快捷键</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-02-26T00:00:00+08:00">
-                Published: Fri 26 February 2016
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/hhkb.html">hhkb</a> <a href="http://synckey.name/tag/keyboad.html">keyboad</a> </p>
-</footer><!-- /.post-info -->                <p>入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.</p>
-<p>我用hhkb的开关是<code>011001</code>,主要是使用macintosh的键盘布局并且将delete键设置为'BS'.另外,也安装了<a href="https://pqrs.org/osx/karabiner/index.html.en">Karabiner</a>这款神器,它一方面可以设置系统自动识别是否插入了外接键盘,如果插入了外接键盘,可以将mac的键盘disable掉,另一方面它具有强大的改键功能.硬件方面,买了一个miniusb右弯的接头,这样把hhkb放在mac键盘上的时候,线就不会弯曲到挡着屏幕了.</p>
-<p align="center">
-<img src="/static/images/miniusb.jpg" alt="miniusb"  width="50%" class="img-responsive img-rounded"  title="An awesome picture caption!" />
-</p>
-
-<p>hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所以小拇指很容易就能按到它,所以hhkb的键盘布局对emacs非常友好.而mac os操作系统对emacs风格的快捷键原生就有支持,在界面中可以通过<code>CTRL+B …</code></p>
-                <a class="readmore" href="http://synckey.name/hhkb-settings-and-shortcut-keys.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/plot-sigmoid-in-matlab.html" rel="bookmark"
-                           title="Permalink to Plot Sigmoid in Matlab">Plot Sigmoid in Matlab</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-12-24T00:00:00+08:00">
-                Published: Thu 24 December 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/machinelearning.html">machinelearning</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/machine-learning.html">machine learning</a> <a href="http://synckey.name/tag/technology.html">technology</a> <a href="http://synckey.name/tag/logistic-regression.html">logistic regression</a> </p>
-</footer><!-- /.post-info -->                <div class="highlight"><pre><span></span><span class="n">a</span><span class="p">=</span><span class="mi">2</span><span class="p">;</span>
-<span class="n">x</span><span class="p">=</span><span class="o">-</span><span class="mi">10</span><span class="p">:</span><span class="mf">0.1</span><span class="p">:</span><span class="mi">10</span><span class="p">;</span>
-<span class="n">y</span><span class="p">=</span><span class="mf">1.</span><span class="o">/</span><span class="p">[</span><span class="mi">1</span><span class="o">+</span><span class="nb">exp</span><span class="p">(</span><span class="o">-</span><span class="n">a</span><span class="o">.*</span><span class="n">x</span><span class="p">)];</span>
-<span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s">&#39;b&#39;</span><span class="p">);</span>
-<span class="n">grid</span> <span class="n">on</span><span class="p">;</span>
-</pre></div>
-
-
-<p><p align="center">
-<img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" />
-</p></p>
-                <a class="readmore" href="http://synckey.name/plot-sigmoid-in-matlab.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/where-does-sigmoid-come-from.html" rel="bookmark"
-                           title="Permalink to Where does sigmoid come from">Where does sigmoid come from</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-12-24T00:00:00+08:00">
-                Published: Thu 24 December 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/machinelearning.html">machinelearning</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/machine-learning.html">machine learning</a> <a href="http://synckey.name/tag/technology.html">technology</a> <a href="http://synckey.name/tag/logistic-regression.html">logistic regression</a> </p>
-</footer><!-- /.post-info -->                <blockquote>
-<p>主要根据Andrew Ng的教学讲义整理。</p>
-</blockquote>
-<p>逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
-<p align="center">
-<img src="/static/images/sigmoid.svg" alt="sigmoid"  width="60%" />
-</p>
-书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。</p>
-<h3>1.逻辑回归的建模</h3>
-<p>首先从逻辑回归($Logistic$ $Regression$)的基本假设说起。在二分类中，我们假设 $y \in \lbrace0,1\rbrace$,在给定 $x$ 的情况下，很自然
-就想到使用 $Bernoulli$ 对 $y$ 的条件分布进行建模。$Bernoulli$
-分布可以认为是二项分布一个特例($n=1$)，其结果只能取$0$或1。假设实验成功的概率为$p$,则$Bernoulli …</p>
-                <a class="readmore" href="http://synckey.name/where-does-sigmoid-come-from.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/a-misuse-of-spark-broadcast.html" rel="bookmark"
-                           title="Permalink to A Misuse of Spark Broadcast">A Misuse of Spark Broadcast</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-11-03T00:00:00+08:00">
-                Published: Tue 03 November 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/spark.html">spark</a> </p>
-</footer><!-- /.post-info -->                <p>在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：</p>
-<div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="kd">implements</span> <span class="n">Function</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Boolean</span><span class="o">&gt;</span> <span class="o">{</span>
-
-    <span class="kd">private</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">lookupTable</span><span class="o">=</span><span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;();</span>
-
-    <span class="kd">public</span> <span class="nf">Test</span><span class="o">(</span><span class="n">Broadcast</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;&gt;</span> <span class="n">broadcast</span><span class="o">){</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">lookupTable</span><span class="o">=</span><span class="n">broadcast</span><span class="o">.</span><span class="na">value</span><span class="o">();</span>
-    <span class="o">}</span>
-    <span class="kd">public</span> <span class="n">Boolean</span> <span class="nf">call</span><span class="o">(</span><span class="n">String</span> <span class="n">line</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-        <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">lookupTable</span><span class="o">.</span><span class="na">containsKey …</span></pre></div>
-                <a class="readmore" href="http://synckey.name/a-misuse-of-spark-broadcast.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/iterm2-clone-session.html" rel="bookmark"
-                           title="Permalink to Iterm2 Clone Session">Iterm2 Clone Session</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-05-20T00:00:00+08:00">
-                Published: Wed 20 May 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/iterm2.html">iterm2</a> <a href="http://synckey.name/tag/mac.html">mac</a> <a href="http://synckey.name/tag/sesssion.html">sesssion</a> </p>
-</footer><!-- /.post-info -->                <div class="highlight"><pre><span></span>vim ~/.ssh/config
-</pre></div>
-
-
-<p>贴入如下内容:</p>
-<div class="highlight"><pre><span></span>Host *
-    ServerAliveInterval <span class="m">30</span>
-    ControlMaster auto
-    ControlPath ~/.ssh/master-%r@%h:%p
-    ControlPersist yes
-</pre></div>
-
-
-<p>退出iterm2，重新登录即可。</p>
-<h3>References</h3>
-<p><a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/">Iterm2 auto login 自动登录脚本</a></p>
-<p><a href="http://laughingchs.iteye.com/blog/1317703">linux clone session</a></p>
-                <a class="readmore" href="http://synckey.name/iterm2-clone-session.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/my-experience-of-losing-weight.html" rel="bookmark"
-                           title="Permalink to 我是怎么减掉了30斤">我是怎么减掉了30斤</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-04-13T00:00:00+08:00">
-                Published: Mon 13 April 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/ielts.html">ielts</a> <a href="http://synckey.name/tag/writing.html">writing</a> </p>
-</footer><!-- /.post-info -->                <div id="weight_container" style=" margin: 0 auto"></div>
-
-<blockquote>
-<p>声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。</p>
-</blockquote>
-<h2>心理准备</h2>
-<h3>1.动机——为什么要减肥?</h3>
-<p>首先，要想清楚为什么要减肥？为了更漂亮，身材更好，为了不当人见人厌的死胖子？</p>
-<h3>2.目标和计划</h3>
-<p>有了动机以后就可以制定目标了，很多人一开始就把目标定在减20斤减30斤，这个目标是很具体的，看起来也是可达成的，但是很难坚持下去，
-因为可能折腾了一个月，体重还是没有任何变化，就丧失信心，中途放弃了。对我个人而言，我的目标其实就是完成计划，不是减多少斤，而是坚持了多久，做了多少天运动。
-制定减肥计划最重要的两条就是：a.不能对我的日常生活产生干扰，b.可持续。 所以我每天的运动时间限制在1个小时以内（一开始要更短），这样一来，不需要
-匀出其他时间，就可以实施计划。可持续其实包含两层含义：a.计划不需要太吃力就能完成（<strong>extremely important</strong>）,如果计划目标定的太高，比如每天跑10公里，
-肯定没人坚持的下去。b …</p>
-                <a class="readmore" href="http://synckey.name/my-experience-of-losing-weight.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/improve-safety-on-the-road.html" rel="bookmark"
-                           title="Permalink to Improve Safety On The Road">Improve Safety On The Road</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-12-30T00:00:00+08:00">
-                Published: Tue 30 December 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/ielts.html">ielts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/ielts.html">ielts</a> <a href="http://synckey.name/tag/writing.html">writing</a> </p>
-</footer><!-- /.post-info -->                <blockquote>
-<p>The only way to improve safety on the road is to severely punish driving offenders. To what extent do you agree or disagree?</p>
-</blockquote>
-<p><strong>Notice:</strong> this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).</p>
-<p>The number …</p>
-                <a class="readmore" href="http://synckey.name/improve-safety-on-the-road.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/use-animals-for-humans.html" rel="bookmark"
-                           title="Permalink to Use Animals For Humans">Use Animals For Humans</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-12-22T00:00:00+08:00">
-                Published: Mon 22 December 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/ielts.html">ielts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/ielts.html">ielts</a> <a href="http://synckey.name/tag/writing.html">writing</a> </p>
-</footer><!-- /.post-info -->                <blockquote>
-<p>Some people think that it is acceptable to use animals for the benefit of humans. Others, however, think that it is wrong to exploit animals for human purposes. Discuss both these views and give your own opinion.</p>
-</blockquote>
-<p><strong>Notice:</strong> this is my practice writing  which may be the worst approach.I …</p>
-                <a class="readmore" href="http://synckey.name/use-animals-for-humans.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/gender-balance.html" rel="bookmark"
-                           title="Permalink to Forcing the Employers to Hire the Same Number of Men and Women">Forcing the Employers to Hire the Same Number of Men and Women</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-12-16T00:00:00+08:00">
-                Published: Tue 16 December 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/ielts.html">ielts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/ielts.html">ielts</a> <a href="http://synckey.name/tag/writing.html">writing</a> </p>
-</footer><!-- /.post-info -->                <blockquote>
-<p>Some people think that employers should be required to employ equal numbers of men and women. To what extent do you agree or disagree?</p>
-</blockquote>
-<p><strong>Notice:</strong> this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).</p>
-<p>It …</p>
-                <a class="readmore" href="http://synckey.name/gender-balance.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/distance-learning-vs-school-learning.html" rel="bookmark"
-                           title="Permalink to Distance Learning vs School Learing">Distance Learning vs School Learing</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-11-24T00:00:00+08:00">
-                Published: Mon 24 November 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/ielts.html">ielts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/ielts.html">ielts</a> <a href="http://synckey.name/tag/writing.html">writing</a> </p>
-</footer><!-- /.post-info -->                <blockquote>
-<p>Many people use distance-learning programmes(study material post, TV, Internet, etc.) to study at home,
-but some people think that it cannot bring the same benefits of attending college or university.
-To what extent do you agree or disagree.</p>
-</blockquote>
-<p><strong>Notice:</strong> this is my practice writing  which may be the worst …</p>
-                <a class="readmore" href="http://synckey.name/distance-learning-vs-school-learning.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/what-shuld-be-the-main-function-of-a-university.html" rel="bookmark"
-                           title="Permalink to What Should Be the Main Function Of A University">What Should Be the Main Function Of A University</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-11-12T00:00:00+08:00">
-                Published: Wed 12 November 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/ielts.html">ielts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/ielts.html">ielts</a> <a href="http://synckey.name/tag/writing.html">writing</a> </p>
-</footer><!-- /.post-info -->                <blockquote>
-<p>Some people think that universities should provide graduates with the knowledge and skills needed in the workplace. 
-Others think that the true function of a university should be to give access to knowledge for its own sake,
-regardless of whether the course is useful to an employer.</p>
-<p>What, in your …</p></blockquote>
-                <a class="readmore" href="http://synckey.name/what-shuld-be-the-main-function-of-a-university.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/the-catcher-in-the-rye.html" rel="bookmark"
-                           title="Permalink to The Catcher in the Rye">The Catcher in the Rye</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-10-31T00:00:00+08:00">
-                Published: Fri 31 October 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/posts.html">Posts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/notes.html">notes</a> </p>
-</footer><!-- /.post-info -->                <p>Holden Caulfied 是一个16岁的男孩，他因为课程不及格被学校开除，在他的眼里，周围的人要有奇怪的习惯和毛病。</p>
-<p>在离开学校之前他与他的室友打了一家，因为室友和他最喜欢的女生约会，他心里非常不舒服。一个十六岁的男孩，面对自己的梦中小情人，
-宁愿远远的看着她，也不希望她跟别的男孩子约会。更何况她的约会对象在Holden看来根本配不上她。Holden心里当然不高兴。打完架他决定早点离开学校了。</p>
-<p>对于一个青春期的孩子来说，也许最大的恐惧就是不合群，希望和同龄人做一样的事情，上课，考试，放假。可是Hoden却不得不提前开始寒假，又不能回家，
-因为他告诉他妈妈他周三到家，他只能去住酒店。孤身一人落寞的站在房间里，此时此刻只有香烟陪伴他，而他根本睡不着，百无聊赖。只能去酒吧。他回来时与
-开电梯的小伙说好叫一个妓女，妓女来了，还很漂亮，可是他却开始退缩了，尽管他还是处男，他不想就这样跟这个妓女做爱。只希望她陪他说话，此刻对他
-来说，精神上才是最寂寞的。</p>
-<p>在这个世界上，他最爱的人就是他的妹妹，Phoebe。他去街上买了她一直想要的唱片，给她一个惊喜，人在脆弱的时候总是想到自己最爱的人，就算他并不安慰你，
-你也希望看到她 …</p>
-                <a class="readmore" href="http://synckey.name/the-catcher-in-the-rye.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://synckey.name/big-sarcosaurus.html" rel="bookmark"
-                           title="Permalink to Big Sarcosaurus">Big Sarcosaurus</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-10-22T00:00:00+08:00">
-                Published: Wed 22 October 2014
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
-        </address>
-<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
-<p>tags: <a href="http://synckey.name/tag/personal.html">personal</a> </p>
-</footer><!-- /.post-info -->                <p>Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
-would take an exam today and she would have some time after then. I invited her to come to see me and have lunch 
-together …</p>
-                <a class="readmore" href="http://synckey.name/big-sarcosaurus.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
-    <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-55913313-1', 'auto');
-    ga('send', 'pageview');
-    </script>
+                <div class="read-more">
+                    <a class="btn" href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="post-container">
+
+<div class="pagination">
+    <a href="/author/andy2.html" class="next">&raquo;</a>
+</div>
+
+    </div>
+</div>
+<div class="copyright">
+    &copy; 2018 andy
+    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
+    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+</div>
+
+
+
+<script src="/theme/js/theme.js"></script>
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
+
+</div>
 </body>
 </html>
