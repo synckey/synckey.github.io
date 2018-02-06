@@ -9,7 +9,7 @@ import sys
 # explicitly specify it as your config file.
 
 sys.path.append(os.curdir)
-
+from pelicanconf import *
 TIMEZONE = 'Asia/Shanghai'
 SITEURL = 'http://synckey.name'
 RELATIVE_URLS = False
