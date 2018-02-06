@@ -9,8 +9,8 @@
 &lt;div class="center-block"&gt;
 &lt;div&gt;
 &lt;audio controls="controls"&gt;
-&lt;source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"/&gt;
-&lt;/audio&gt;
+&lt;source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"&gt;
+&lt;/source&gt;&lt;/audio&gt;
 &lt;/div&gt;
 &lt;div class="caption"&gt;《彩云追月 …&lt;/div&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
 唱出了女子在花落之时与情人约见而情人爽约的失望和愁苦。&lt;/p&gt;
@@ -22,8 +22,8 @@
 &lt;div class="center-block"&gt;
 &lt;div&gt;
 &lt;audio controls="controls"&gt;
-&lt;source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"/&gt;
-&lt;/audio&gt;
+&lt;source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"&gt;
+&lt;/source&gt;&lt;/audio&gt;
 &lt;/div&gt;
 &lt;div class="caption"&gt;《彩云追月》交响乐版&lt;/div&gt;
 &lt;/div&gt;
