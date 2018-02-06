@@ -33,9 +33,6 @@
     <div id='wx_pic' style='margin:0 auto;display:none;'><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
-    <!--
-<link rel="canonical" href="/drafts/notes-of-java8.html">
-    -->
 <meta name="author" content="Andy"/>
 <meta name="keywords" content="tools,java8"/>
 <meta name="description" content="Lambda Lambda的基本语法 (parameters) -&gt; expression (parameters) -&gt; {statements;} 从上述例子可以看粗Lambda有三个组成部分:a.参数列表，b.箭头，c.Lambda主体。主体部分如果只有一个简单的表达式，可以不加花括号，如果Lambda主体有多条语句，或者为控制流语句，则需要加花括号。以下是两条合法的Lambda表达式。 (Apple a1, Apple a2) -&gt; a1.getWeight().compareTo(a2.getWeight()); (Integer i) -&gt; {return &#34;Alan&#34; + i;} 其中第二条因为return是一条控制流语句，必须要使用花括号。 函数式接口就是只定义一个抽象方法的接口。如: public interface Runnable{ void run(); } 可以用@FunctionalInterface来标注一个函数式接口。 函数式接口的抽象方法的签名称为函数描述符。 如果一个Lambda的主体是一个语句表达式 …"/>
@@ -88,7 +85,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="/theme/css/normalize.css"/>
+    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
     <link rel="stylesheet" href="/theme/css/style.css"/>
 
     <link href="/theme/css/pygments/github.css"

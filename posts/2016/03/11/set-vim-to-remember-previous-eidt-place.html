@@ -33,9 +33,6 @@
     <div id='wx_pic' style='margin:0 auto;display:none;'><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
-    <!--
-<link rel="canonical" href="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">
-    -->
 <meta name="author" content="Andy"/>
 <meta name="keywords" content="tools,vim,linux,config"/>
 <meta name="description" content="在~/.vimrc中加入如下配置: autocmd BufReadPost * \ if line(&#34;&#39;\&#34;&#34;)&gt;0&amp;&amp;line(&#34;&#39;\&#34;&#34;)&lt;=line(&#34;$&#34;) | \ exe &#34;normal g&#39;\&#34;&#34; | \ endif autocmd BufReadPost * \ if line(&#34;&#39;\&#34;&#34;)&gt;0&amp;&amp;line(&#34;&#39;\&#34;&#34;)&lt;=line(&#34;$&#34;) | \ exe &#34;normal g&#39;\&#34;&#34; | \ endif syntax enable set nu 参考 让VIM记录文件上次编辑的位置"/>
@@ -90,7 +87,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="/theme/css/normalize.css"/>
+    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
     <link rel="stylesheet" href="/theme/css/style.css"/>
 
     <link href="/theme/css/pygments/github.css"

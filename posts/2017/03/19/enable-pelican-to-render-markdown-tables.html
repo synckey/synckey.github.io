@@ -33,9 +33,6 @@
     <div id='wx_pic' style='margin:0 auto;display:none;'><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
-    <!--
-<link rel="canonical" href="/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html">
-    -->
 <meta name="author" content="Andy"/>
 <meta name="keywords" content="tools,pelican,blog"/>
 <meta name="description" content="Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py: MARKDOWN = { &#39;extension_configs&#39;: { &#39;markdown.extensions.tables&#39;:{}, } } Then,you can use the following code to generate the table below: |First Header | Second Header| |------------- | -------------| |Content …"/>
@@ -89,7 +86,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="/theme/css/normalize.css"/>
+    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
     <link rel="stylesheet" href="/theme/css/style.css"/>
 
     <link href="/theme/css/pygments/github.css"
@@ -193,7 +190,7 @@ Andy's Blog            </a>
 |Content Cell  | Content Cell|
 |Content Cell  | Content Cell|
 </pre></div>
-<table class="table-hover table-striped table">
+<table class="table table-hover table-striped">
 <thead>
 <tr>
 <th>First Header</th>

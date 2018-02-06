@@ -33,9 +33,6 @@
     <div id='wx_pic' style='margin:0 auto;display:none;'><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
-    <!--
-<link rel="canonical" href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">
-    -->
 <meta name="author" content="Andy"/>
 <meta name="keywords" content="spark"/>
 <meta name="description" content="在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表： public class Test implements Function&lt;String, Boolean&gt; { private Map&lt;String,String&gt; lookupTable=new HashMap&lt;String, String&gt;(); public Test(Broadcast&lt;Map&lt;String,String&gt;&gt; broadcast){ this.lookupTable=broadcast.value(); } public Boolean call(String line) throws Exception { if (this.lookupTable.containsKey …"/>
@@ -87,7 +84,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="/theme/css/normalize.css"/>
+    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
     <link rel="stylesheet" href="/theme/css/style.css"/>
 
     <link href="/theme/css/pygments/github.css"
