@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog - sfv</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/sfv.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-06-26T00:00:00+08:00</updated><entry><title>Auckland 小记</title><link href="http://synckey.name/posts/2017/06/26/new-to-auckland.html" rel="alternate"></link><published>2017-06-26T00:00:00+08:00</published><updated>2017-06-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-26:/posts/2017/06/26/new-to-auckland.html</id><summary type="html">&lt;p&gt;来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog - sfv</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/sfv.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-06-26T00:00:00+08:00</updated><entry><title>Auckland 小记</title><link href="http://synckey.name/new-to-auckland.html" rel="alternate"></link><published>2017-06-26T00:00:00+08:00</published><updated>2017-06-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-26:/new-to-auckland.html</id><summary type="html">&lt;p&gt;来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。&lt;/p&gt;
 &lt;p&gt;到奥克兰下飞机已经是早上6.30，跟我一起下飞机的都是中国人。一下飞机就买了一张vodaphone的手机卡，卖手机卡的是中国人，说的是中国话，收银员是个漂亮的高挑当地妹子。在海关排队入境花了大概有半个小时，海关官员看了下签证，问了下我帮朋友带了什么，就放行了。出来还要过一道安检，这次主要是查有没有带危害当地生物安全的食品，种子等，新西兰是一个岛国，生态异常脆弱。&lt;/p&gt;
 &lt;p&gt;出机场看到外面乌云密布，天空非常的低，在下着小雨，有点冷，还好很快就找到接机的小伙伴，一路送到住所。路两边都是矮矮的两层小楼，路很窄，但是车速很快。&lt;/p&gt;
 &lt;p&gt;租的房子在一个小山坡上，窗外是大树和花草，室内的感觉有点阴冷。但是这种翠绿，是我非常喜欢的，绿油油。&lt;/p&gt;
@@ -19,26 +19,26 @@
 &lt;p&gt;可能因为本地私家车普及率特别高，相对天朝公交而言，新西兰的公交车实在不友善。首先，公交车班次间隔时间比较久，如果错过一班可能要等二十分钟甚至半个小时。公交车并不会在每站都停，如果想下车就得提前按铃，车上也没有报站系统和显示屏，这就对外地人很不友善，只能拿着google地图看快要到了，就按铃下车。我的理解是这样做可以提升公交车的运行效率，但是加一个到站的显示屏真的会友善很多。&lt;/p&gt;
 &lt;p&gt;总得来说，虽然新西兰的牛羊肉很好吃，但是物价实在是太高了。
 &lt;div class="figure"&gt;
-&lt;img alt="auk_domain_1" class="img-responsive carousel-inner img-rounded" src="/static/images/aukland_domain_1.jpg"/&gt;
-&lt;div class="caption"&gt;Auckland Domain&lt;/div&gt;
+    &lt;img src="/static/images/aukland_domain_1.jpg" alt="auk_domain_1" class="img-responsive carousel-inner img-rounded"/&gt;
+    &lt;div class="caption"&gt;Auckland Domain&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="auk_domain_2" class="img-responsive carousel-inner img-rounded" src="/static/images/aukland_domain_2.jpg"/&gt;
-&lt;div class="caption"&gt;Auckland Domain&lt;/div&gt;
+    &lt;img src="/static/images/aukland_domain_2.jpg" alt="auk_domain_2" class="img-responsive carousel-inner img-rounded"/&gt;
+    &lt;div class="caption"&gt;Auckland Domain&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="ont_tree_hill" class="img-responsive carousel-inner img-rounded" src="/static/images/one_tree_hill.jpg"/&gt;
-&lt;div class="caption"&gt;One Tree Hill&lt;/div&gt;
+    &lt;img src="/static/images/one_tree_hill.jpg" alt="ont_tree_hill" class="img-responsive carousel-inner img-rounded"/&gt;
+    &lt;div class="caption"&gt;One Tree Hill&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="steak_and_fries" class="img-responsive carousel-inner img-rounded" src="/static/images/steak_and_fries.jpg"/&gt;
-&lt;div class="caption"&gt;Steak&amp;amp;Fries&lt;/div&gt;
+    &lt;img src="/static/images/steak_and_fries.jpg" alt="steak_and_fries" class="img-responsive carousel-inner img-rounded"/&gt;
+    &lt;div class="caption"&gt;Steak&amp;amp;Fries&lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="albert_park" class="img-responsive carousel-inner img-rounded" src="/static/images/albert_park.jpg"/&gt;
-&lt;div class="caption"&gt;Albert Park&lt;/div&gt;
-&lt;/div&gt;</content><category term="sfv"></category></entry><entry><title>第一次去NZ必备物品清单</title><link href="http://synckey.name/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html" rel="alternate"></link><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><author><name>Hollie</name></author><id>tag:synckey.name,2017-05-24:/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html</id><summary type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
-&lt;table class="table-striped table-hover table"&gt;
+    &lt;img src="/static/images/albert_park.jpg" alt="albert_park" class="img-responsive carousel-inner img-rounded"/&gt;
+    &lt;div class="caption"&gt;Albert Park&lt;/div&gt;
+&lt;/div&gt;</content><category term="sfv"></category></entry><entry><title>第一次去NZ必备物品清单</title><link href="http://synckey.name/necessities-you-should-take-for-the-first-time-go-to-nz.html" rel="alternate"></link><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><author><name>Hollie</name></author><id>tag:synckey.name,2017-05-24:/necessities-you-should-take-for-the-first-time-go-to-nz.html</id><summary type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;文件&lt;/th&gt;
@@ -121,7 +121,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;2. 资金&lt;/h4&gt;
-&lt;table class="table-striped table-hover table"&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;资金&lt;/th&gt;
@@ -135,7 +135,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align="left"&gt;银联卡 …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
-&lt;table class="table-striped table-hover table"&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;文件&lt;/th&gt;
@@ -218,7 +218,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;2. 资金&lt;/h4&gt;
-&lt;table class="table-striped table-hover table"&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;资金&lt;/th&gt;
@@ -241,7 +241,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;3. 服装&lt;/h4&gt;
-&lt;table class="table-striped table-hover table"&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;服装&lt;/th&gt;
@@ -280,7 +280,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;4.日用品&lt;/h4&gt;
-&lt;table class="table-striped table-hover table"&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;日用品&lt;/th&gt;
@@ -323,7 +323,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;5. 电器&lt;/h4&gt;
-&lt;table class="table-striped table-hover table"&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;电器&lt;/th&gt;
@@ -366,7 +366,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;6.药物&lt;/h4&gt;
-&lt;table class="table-striped table-hover table"&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;药物&lt;/th&gt;
@@ -396,7 +396,7 @@
   $(document).ready(function () {
     $("table").addClass("table table-condensed table-striped");
   });
-&lt;/script&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>出生公正和无犯罪记录证明公正</title><link href="http://synckey.name/posts/2016/11/07/eoi-documents.html" rel="alternate"></link><published>2016-11-07T00:00:00+08:00</published><updated>2016-11-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-07:/posts/2016/11/07/eoi-documents.html</id><summary type="html">&lt;h3&gt;EOI 地址&lt;/h3&gt;
+&lt;/script&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>出生公正和无犯罪记录证明公正</title><link href="http://synckey.name/eoi-documents.html" rel="alternate"></link><published>2016-11-07T00:00:00+08:00</published><updated>2016-11-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-07:/eoi-documents.html</id><summary type="html">&lt;h3&gt;EOI 地址&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/criteria/skilled-migrant-category-resident-visa?nationality=nationality-CHN&amp;amp;country=residence-CHN&amp;amp;applying=co"&gt;eoi 打分系统&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;EOI材料准备&lt;/h3&gt;
 &lt;h3&gt;出生公正和无犯罪记录证明公正&lt;/h3&gt;
@@ -410,7 +410,7 @@
 &lt;p&gt;&lt;strong&gt;办理地点&lt;/strong&gt;：户籍所在地的派出所和公证处&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;携带材料&lt;/strong&gt;： 父母身份证，户口本，护照，本人身份证，本人近期二寸照片&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;费用&lt;/strong&gt;：500 一共&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Date&lt;/strong&gt;: 2017.06.01&lt;/p&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>SFV 材料准备</title><link href="http://synckey.name/posts/2016/11/07/sfv-documents.html" rel="alternate"></link><published>2016-11-07T00:00:00+08:00</published><updated>2016-11-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-07:/posts/2016/11/07/sfv-documents.html</id><summary type="html">&lt;h2&gt;需要准备的材料列表&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Date&lt;/strong&gt;: 2017.06.01&lt;/p&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>SFV 材料准备</title><link href="http://synckey.name/sfv-documents.html" rel="alternate"></link><published>2016-11-07T00:00:00+08:00</published><updated>2016-11-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-07:/sfv-documents.html</id><summary type="html">&lt;h2&gt;需要准备的材料列表&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;护照（原件）&lt;/li&gt;
 &lt;li&gt;拍证件照&lt;/li&gt;
@@ -452,9 +452,10 @@
 &lt;h2&gt;学历学位证书&lt;/h2&gt;
 &lt;p&gt;我是自己翻译了毕业证和学位证，然后去学校档案室盖章，可以当原件使用。山东大学的中英文学历、学位证明模板和说明可以在&lt;a href="http://www.bkjx.sdu.edu.cn/info/1032/25229.htm"&gt;学校网站上&lt;/a&gt;下载到。&lt;/p&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="degree_deploma" class="img-responsive carousel-inner img-rounded" height="150%" src="/static/images/degree_deploma.jpg" width="1200%"/&gt;
-&lt;div class="caption"&gt;学历学位模板&lt;/div&gt;
-&lt;/div&gt;
+    &lt;img src="/static/images/degree_deploma.jpg" alt="degree_deploma" height="150%" width="1200%" class="img-responsive carousel-inner img-rounded"/&gt;
+    &lt;div class="caption"&gt;学历学位模板&lt;/div&gt;
+ &lt;/div&gt;
+
 &lt;h2&gt;存款证明&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;费用&lt;/strong&gt;：20&lt;/p&gt;
 &lt;p&gt;开了一张6万的存款证明，没有冻结。&lt;/p&gt;
@@ -465,7 +466,7 @@
 &lt;h2&gt;收到签证&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt; Date&lt;/strong&gt;: 2016.12.30&lt;/p&gt;
 &lt;h3&gt;费用&lt;/h3&gt;
-&lt;table class="table-striped table-hover table"&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;Item&lt;/th&gt;
@@ -511,7 +512,7 @@
   $(document).ready(function () {
     $("table").attr("class","table table-condensed table-bordered");
   });
-&lt;/script&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>SFV Got</title><link href="http://synckey.name/posts/2016/11/06/succeed-to-get-sfv.html" rel="alternate"></link><published>2016-11-06T00:00:00+08:00</published><updated>2016-11-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-06:/posts/2016/11/06/succeed-to-get-sfv.html</id><summary type="html">&lt;h1&gt;为什么要抢SFV(Silver Fern Job Search Visa)&lt;/h1&gt;
+&lt;/script&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>SFV Got</title><link href="http://synckey.name/succeed-to-get-sfv.html" rel="alternate"></link><published>2016-11-06T00:00:00+08:00</published><updated>2016-11-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-06:/succeed-to-get-sfv.html</id><summary type="html">&lt;h1&gt;为什么要抢SFV(Silver Fern Job Search Visa)&lt;/h1&gt;
 &lt;p&gt;其实这个问题很难回答，也许是我自己没有想清楚，也许是我自己患得患失。早在2014年从前单位离职的时候，当时的直属领导就问我为什么要离职？1 2 3 4 blabla，不好可以细数一大堆。换个工作就没有这些问题了么？他问道。我无法回答，那是我第一次换工作，我无从知晓——在一个地方遇到问题，就想要逃避，不去面对，这个问题永远也解决不了。逃避，不是解决问题的办法。想要出去的想法其实和换工作一样。眼前不好，不代表换个地方就好。去新西兰是否真的就比国内好？我像三年前一样，茫然不晓。  然而，自己的内心里常常知道自己想要什么（尽管大部分想要的常常也得不到）。自己如此强烈的想要出去的原因可能如下：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;污染。从2012年就开始见识了帝都的雾霾，即使戴着口罩也有那种独特的恶心的气味也逃避不掉。无数个想去奔跑的清晨，被困在房间里面做 insanity。有雾霾的日子，心情不会好。 作为一个健身爱好者和惜命如此的少年，并不想在身体蠢蠢欲动的时候被困在室内。尤其是，不想自己的伴侣 …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;为什么要抢SFV(Silver Fern Job Search Visa)&lt;/h1&gt;

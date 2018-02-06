@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Produce 1000 Unique Four Digit Numbers</title>
+        <link rel="stylesheet" href="http://synckey.name/theme/css/main.css" />
+        <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://synckey.name/">A Pelican Blog </a></h1>
+                <nav><ul>
+                    <li><a href="http://synckey.name/category/digest.html">digest</a></li>
+                    <li><a href="http://synckey.name/category/ielts.html">ielts</a></li>
+                    <li><a href="http://synckey.name/category/life.html">life</a></li>
+                    <li><a href="http://synckey.name/category/machinelearning.html">machinelearning</a></li>
+                    <li><a href="http://synckey.name/category/posts.html">posts</a></li>
+                    <li><a href="http://synckey.name/category/sfv.html">sfv</a></li>
+                    <li><a href="http://synckey.name/category/summery.html">summery</a></li>
+                    <li class="active"><a href="http://synckey.name/category/tools.html">tools</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://synckey.name/produce-1000-unique-four-digit-numbers.html" rel="bookmark"
+           title="Permalink to Produce 1000 Unique Four Digit Numbers">Produce 1000 Unique Four Digit Numbers</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-12-06T00:00:00+08:00">
+                Published: Wed 06 December 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/java.html">java</a> <a href="http://synckey.name/tag/algorithm.html">algorithm</a> </p>
+</footer><!-- /.post-info -->      <blockquote>
+<p>Produce 1000 unique four digit numbers.<br>
+Conditions:  <br>
+1. No consecutive numbers. 2268, 1155 are not acceptable. <br>
+2. No sequential numbers. 1234, 1856 are not acceptable.  </p>
+</blockquote>
+<p>题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * Created by andy on 06/12/2017.</span>
+<span class="cm"> */</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">GenNumbers</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">digits</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[]{</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">7</span><span class="o">,</span> <span class="mi">8</span><span class="o">,</span> <span class="mi">9</span><span class="o">,};</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">RESULT_SIZE</span> <span class="o">=</span> <span class="mi">1000</span><span class="o">;</span>
+
+    <span class="cm">/**</span>
+<span class="cm">     * @param tempresult</span>
+<span class="cm">     * @param previous  </span>
+<span class="cm">     * @param result</span>
+<span class="cm">     */</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">genNumber</span><span class="o">(</span><span class="kt">int</span> <span class="n">tempresult</span><span class="o">,</span> <span class="kt">int</span> <span class="n">previous</span><span class="o">,</span> 
+                                  <span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">result</span><span class="o">,</span> <span class="kt">int</span> <span class="n">depth</span><span class="o">,</span> 
+                                  <span class="kt">int</span> <span class="n">maxDepth</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">result</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">&gt;=</span> <span class="n">RESULT_SIZE</span> <span class="o">||</span> <span class="n">depth</span> <span class="o">&gt;</span> <span class="n">maxDepth</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">:</span> <span class="n">digits</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">previous</span> <span class="o">||</span> <span class="n">i</span> <span class="o">==</span> <span class="n">previous</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">continue</span><span class="o">;</span>
+            <span class="o">}</span>
+            <span class="kt">int</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">tempresult</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">i</span><span class="o">;</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">depth</span> <span class="o">==</span> <span class="n">maxDepth</span> <span class="o">&amp;&amp;</span> <span class="n">result</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">&lt;</span> <span class="n">RESULT_SIZE</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">result</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">tmp</span><span class="o">);</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                <span class="n">genNumber</span><span class="o">(</span><span class="n">tmp</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span> <span class="n">result</span><span class="o">,</span> <span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="o">,</span> <span class="n">maxDepth</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">result</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;(</span><span class="n">RESULT_SIZE</span><span class="o">);</span>
+        <span class="n">genNumber</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">,</span> <span class="n">result</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">result</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">result</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55913313-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
+</html>

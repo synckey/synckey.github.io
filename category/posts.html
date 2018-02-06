@@ -1,253 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>posts - Andy's Blog</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
-<script type="text/javascript">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    window.dataLayer = window.dataLayer || [];
+        <meta charset="utf-8" />
+        <title>A Pelican Blog - posts</title>
+        <link rel="stylesheet" href="http://synckey.name/theme/css/main.css" />
+        <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'UA-55913313-1');
-</script>
-
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
-            src='/static/images/wechat_logo_300x300.jpg'/></div>
-
-    <!--
-    -->
-<meta name="author" content="andy"/>
-<meta name="keywords" content="posts"/>
-
-    <!-- Open Graph tags -->
-    <meta property="og:site_name" content="Andy's Blog"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Andy's Blog"/>
-    <meta property="og:url" content="/"/>
-    <meta property="og:description" content="Andy's Blog"/>
-
-
-
-    <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
-    <script src="/theme/js/highcharts.js"></script>
-    <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
-    <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
-    <script type="text/javascript"
-            src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="/theme/css/normalize.css"/>
-    <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
-    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-          title="Andy's Blog ATOM Feed"/>
-
-
-
-    <link href="/feeds/posts.atom.xml" type="application/atom+xml"
-          rel="alternate"
-          title="Andy's Blog posts ATOM Feed"/>
-
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 </head>
 
-<body>
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://synckey.name/">A Pelican Blog </a></h1>
+                <nav><ul>
+                    <li><a href="http://synckey.name/category/digest.html">digest</a></li>
+                    <li><a href="http://synckey.name/category/ielts.html">ielts</a></li>
+                    <li><a href="http://synckey.name/category/life.html">life</a></li>
+                    <li><a href="http://synckey.name/category/machinelearning.html">machinelearning</a></li>
+                    <li class="active"><a href="http://synckey.name/category/posts.html">posts</a></li>
+                    <li><a href="http://synckey.name/category/sfv.html">sfv</a></li>
+                    <li><a href="http://synckey.name/category/summery.html">summery</a></li>
+                    <li><a href="http://synckey.name/category/tools.html">tools</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
 
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="http://synckey.name/my-first-marathon.html">第一次跑马</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2017-09-20T00:00:00+08:00">
+                Published: Wed 20 September 2017
+        </abbr>
 
-<!-- Banner -->
-<!-- End Banner -->
-<div class="article-list">
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2017/09/20/my-first-marathon.html">第一次跑马</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-09-20</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-                </div>
-            </div>
-
-
-            <div class="post-content"><p>如果时光回退到2014年，那时候我180斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体，
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/life.html">life</a> </p>
+</footer><!-- /.post-info --><p>如果时光回退到2014年，那时候我180斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体，
 气喘吁吁，跑了10公里，花了两个小时。那时候没有专业跑步鞋，甚至连运动短裤和T恤都没有。</p>
 <p>后来买了最低标准的装备，一双ascis跑步鞋，一条运动短裤，开始正规的跑步训练。那时候严格按照《爱上跑步十三周》练，循序渐进，跑步本身给我的痛苦并不很大。
 最大的痛苦来自于冬天早上6点钟从被窝里面爬出来，踏着月色去跑步。最冷的时候，有零下十一度，凌晨的小区只有三三两两的行人，早起的遛狗的大妈，通宵不睡的保安。
 一开始连手套都没有买，5s经常被冻关机。跑完了回来，有时候帽子上的汗水已经结成小冰霜。回来拍着帽子上的冰霜，心里想着什么时候能连着跑10公里。</p>
 <p>这个目标很快得以实现，练了几个月以后，第一次跑完了10公里，腿疼了好几天，下楼梯腿非常的疼，兴奋也随着这次突破持续了好几天。
 有了第一个十公里，很快就有了15公里，20公里。我在早晨和夜晚的798里面钻来钻去，对每条小路很熟悉。
-后来第一次参加25公里越野赛(TNF100)，已经是2015年的5月份了，去之前信心满满，因为之前已经跑了好几次20公里 …</p>
-                <div class="read-more">
-                    <a class="btn" href="/posts/2017/09/20/my-first-marathon.html">--READ MORE--</a>
-                </div>
-            </div>
-        </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html">BFS遍历到图的指定层的一种方法</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-05-10</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-                </div>
-            </div>
+后来第一次参加25公里越野赛(TNF100)，已经是2015年的5月份了，去之前信心满满，因为之前已经跑了好几次20公里，25公里当然也没什么问题。
+不幸的是跑步那天下雨了，没想到5月份的凤凰岭居然会有那么冷，我们三个在寒风冷雨中跑完了20公里。那是我第一次参加官方举办的比赛。</p>
+<p>在参加完越野赛之后，也换了工作，跑步的地方从798换到了人民大学校园，这里是我最喜欢的跑步场所。在人民大学校园里，第一次跑了30公里，还是在没吃早饭的情况下，
+跑完了就两个感觉：a.真的很饿，b.要在乳头上贴好创口贴，不然会磨出血。在人大附近住的日子里，只要天气好，我就会去人大校园跑步，人大的操场每时每刻都有人，
+而我在人大的校园里绕着大圈跑，只要有路，就钻进去，再钻出来，这么跑一圈，正好是1公里。跑了几次就熟悉了人大的每一个角落。
+有时候跑着跑着太阳升起来了，照在坪上，一片灿烂翠绿。</p>
+<p>2016年4月份报名参加了一次北京半马，从故宫一直跑到鸟巢。跑的时候总感觉一直被边上的人超越，所以自己也是一路狂奔，最终第一次把平均速度跑进了5分钟以内，
+也是唯一的一次。本以为凭这个成绩可以抽中北马，但是抽签并没有抽中，但那时起，在心中种下了跑一次全马的种子。</p>
+<p>2017年阴差阳错，有一个机会，获得了一次跑北马的机会。很多事总是这样，在你信心满满，感觉一切都准备好了的时候，命运并不会给你机会去做你想做的事，
+往往却在你没有准备好的时候来临，北马就是这样。大概也就是在开跑的前三天才知道自己有这么次机会可以去跑。虽然在这之前，已经每天跑步机10公里，
+大概坚持了三周，这么看来，也不算完全没有准备。</p>
+<p>跑步之前在网上搜了不少功率，所以买了4个士力架，8颗盐丸，还有3袋能量胶。其实盐丸和能量胶完全没有必要，因为在20多公里以后，赛场就有补充，
+但是在开跑前30分钟到一个小时吃两个士力架感觉还是很有必要的，因为跑完全马要消耗大量的能量。</p>
+<p>每每有重要的事情发生，前一夜就必然失眠，想着怎么补给，什么配速。所有的紧张不安都在开始跑了以后烟消云散，因为目标是42.195公里，所以前面跑的并不快，
+前20公里在很轻松的状态下完成。真正感觉到跑不下去是35公里以后，每一公里都在数着跑。天气越来越热，步子也变得越来越沉，好在北马的补给做的非常好，
+喝了不少水和运动饮料，并没有抽筋，腿也没有受伤。在跑步的时候有一个强大的信念支撑我，那就是跑完可以发朋友圈装逼，我想这大概就是35km-40km处最真实的内心活动吧。
+过了40公里以后，信心会增加不少，但是身体上真的没有力气去跑了，所以在补给处会稍微的走一走。自己的内心也知道，如果真的停下来走，可能就再也爬不起来了，
+所以最后一公里，又恢复了奔跑，一直冲向了有好几道拱门的终点线，那里有穿着性感衣服的拉拉队。</p>
+<p>最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。</p>
+<div class="figure"> 
+    <img src="/static/images/first_marathon_transcript.jpg" alt="2016.06.17 北京马拉松"  width="30%" class="carousel-inner  img-rounded img-responsive center-block"/>
+    <div class="caption">2016.06.17 北京马拉松</div>
+</div>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
 
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://synckey.name/BFS-to-the-specific-level-of-a-graph.html" rel="bookmark"
+                           title="Permalink to BFS遍历到图的指定层的一种方法">BFS遍历到图的指定层的一种方法</a></h1>
+                </header>
 
-            <div class="post-content"><p><a href="https://leetcode.com/problems/word-ladder/#/description">leetcode原题</a></p>
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-05-10T00:00:00+08:00">
+                Published: Wed 10 May 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/algorithm.html">algorithm</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://leetcode.com/problems/word-ladder/#/description">leetcode原题</a></p>
 <p>Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:</p>
 <ol>
 <li>Only one letter can be changed at a time.</li>
 <li>Each transformed word must exist in the word list. Note that beginWord is not a transformed …</li></ol>
-                <div class="read-more">
-                    <a class="btn" href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html">--READ MORE--</a>
-                </div>
-            </div>
-        </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2017/03/19/see-you-ten-years-later.html">今朝一别，或是流水十年</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-03-19</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-                </div>
-            </div>
+                <a class="readmore" href="http://synckey.name/BFS-to-the-specific-level-of-a-graph.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://synckey.name/see-you-ten-years-later.html" rel="bookmark"
+                           title="Permalink to 今朝一别，或是流水十年">今朝一别，或是流水十年</a></h1>
+                </header>
 
-            <div class="post-content"><p>周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。</p>
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-03-19T00:00:00+08:00">
+                Published: Sun 19 March 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/life.html">life</a> </p>
+</footer><!-- /.post-info -->                <p>周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。</p>
 <p>跟jw是大学室友，他的床，就在我的隔壁，每天晚上他爬上床，我都能听到。进大学的第一天，我刚到宿舍，就看到他坐在那里，当时对他的第一印象，头很大，可能头大就是他聪明的原因吧。jw和我一样，来自农村的家庭，家里也不富裕，所以共同语言有不少。当时我们常常一起上课，一起出去买东西，没想到后来还一起来了北京，一起去百度实习。虽然他去百度正式工作的时候，我已经不在百度了。</p>
 <p>2011年夏天，也就是大三快到大四的下学期，我拿了百度的实习offer，学院跟百度有合作，搞了一个<a href="https://github.com/gmsh/dnscache">项目实训</a>，jw，我，还有gms分一组，那时候我们每天都顶着夏日，来到机房，敲代码，调试代码。 后来因为他在项目里面表现优异，百度也给了他面试机会。最终，他也拿到了百度的实习offer，百度运维部实习。跟我不是同一批，如果我没记错，他是在我后面入职的。在百度实习的时候，我们并没有很多交集 …</p>
-                <div class="read-more">
-                    <a class="btn" href="/posts/2017/03/19/see-you-ten-years-later.html">--READ MORE--</a>
-                </div>
-            </div>
-        </div>
-        <div class="separator"></div>
-    </div>
-    <div class="post-container">
+                <a class="readmore" href="http://synckey.name/see-you-ten-years-later.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
-<div class="pagination">
-    <a href="/category/posts2.html" class="next">&raquo;</a>
-</div>
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://synckey.name/notes-for-leetcode.md.html" rel="bookmark"
+                           title="Permalink to Notes for Leetcode">Notes for Leetcode</a></h1>
+                </header>
 
-    </div>
-</div>
-<div class="copyright">
-    &copy; 2017 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
-</div>
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-10-20T00:00:00+08:00">
+                Published: Thu 20 October 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/algorithm.html">algorithm</a> </p>
+</footer><!-- /.post-info -->                <h2>1.Binary Number Representation</h2>
+<div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mb">0b1111</span><span class="o">;</span> <span class="c1">// which is equals to `x = 15`; and is useful when use the number for masking.</span>
+</pre></div>
 
 
+<h2>2.Rotate Function</h2>
+<h3>Original Question</h3>
+<p>原始问题链接：<a href="https://leetcode.com/problems/rotate-function/">Rotate Function</a>.</p>
+<p>Given an array of integers $A$ and let $n$ to be its length.</p>
+<p>Assume $B_k$ to be an array obtained by …</p>
+                <a class="readmore" href="http://synckey.name/notes-for-leetcode.md.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
-<script src="/theme/js/theme.js"></script>
-<!-- Baidu Analytics -->
-<script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://synckey.name/shang-pin-jiao-zi.html" rel="bookmark"
+                           title="Permalink to 上品饺子">上品饺子</a></h1>
+                </header>
 
-</script>
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-04-20T00:00:00+08:00">
+                Published: Wed 20 April 2016
+        </abbr>
 
-<!-- End Google Analytics Code -->
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/life.html">life</a> </p>
+</footer><!-- /.post-info -->                <p>在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。</p>
+<p>从此，就爱上了他们家的饺子，破了减肥不吃晚饭的戒。每次下班经过他们家门口，就走不动了，要做一番心里斗争。结果往往是要进去吃一大碗韭菜猪肉的水饺，加一个荷包蛋才会满足。也常常跟同事推荐，“有空一定要带你们一起去尝一尝水饺——都是手工的，他们家也有面条，面条上的猪肝，肉丝，木耳，香菇，都是现炒的，热腾腾的 …</p>
+                <a class="readmore" href="http://synckey.name/shang-pin-jiao-zi.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
-</div>
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://synckey.name/hhkb-settings-and-shortcut-keys.html" rel="bookmark"
+                           title="Permalink to HHKB 设置与快捷键">HHKB 设置与快捷键</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-02-26T00:00:00+08:00">
+                Published: Fri 26 February 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/hhkb.html">hhkb</a> <a href="http://synckey.name/tag/keyboad.html">keyboad</a> </p>
+</footer><!-- /.post-info -->                <p>入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.</p>
+<p>我用hhkb的开关是<code>011001</code>,主要是使用macintosh的键盘布局并且将delete键设置为'BS'.另外,也安装了<a href="https://pqrs.org/osx/karabiner/index.html.en">Karabiner</a>这款神器,它一方面可以设置系统自动识别是否插入了外接键盘,如果插入了外接键盘,可以将mac的键盘disable掉,另一方面它具有强大的改键功能.硬件方面,买了一个miniusb右弯的接头,这样把hhkb放在mac键盘上的时候,线就不会弯曲到挡着屏幕了.</p>
+<p align="center">
+<img src="/static/images/miniusb.jpg" alt="miniusb"  width="50%" class="img-responsive img-rounded"  title="An awesome picture caption!" />
+</p>
+
+<p>hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所以小拇指很容易就能按到它,所以hhkb的键盘布局对emacs非常友好.而mac os操作系统对emacs风格的快捷键原生就有支持,在界面中可以通过<code>CTRL+B …</code></p>
+                <a class="readmore" href="http://synckey.name/hhkb-settings-and-shortcut-keys.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://synckey.name/my-experience-of-losing-weight.html" rel="bookmark"
+                           title="Permalink to 我是怎么减掉了30斤">我是怎么减掉了30斤</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-04-13T00:00:00+08:00">
+                Published: Mon 13 April 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/ielts.html">ielts</a> <a href="http://synckey.name/tag/writing.html">writing</a> </p>
+</footer><!-- /.post-info -->                <div id="weight_container" style=" margin: 0 auto"></div>
+
+<blockquote>
+<p>声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。</p>
+</blockquote>
+<h2>心理准备</h2>
+<h3>1.动机——为什么要减肥?</h3>
+<p>首先，要想清楚为什么要减肥？为了更漂亮，身材更好，为了不当人见人厌的死胖子？</p>
+<h3>2.目标和计划</h3>
+<p>有了动机以后就可以制定目标了，很多人一开始就把目标定在减20斤减30斤，这个目标是很具体的，看起来也是可达成的，但是很难坚持下去，
+因为可能折腾了一个月，体重还是没有任何变化，就丧失信心，中途放弃了。对我个人而言，我的目标其实就是完成计划，不是减多少斤，而是坚持了多久，做了多少天运动。
+制定减肥计划最重要的两条就是：a.不能对我的日常生活产生干扰，b.可持续。 所以我每天的运动时间限制在1个小时以内（一开始要更短），这样一来，不需要
+匀出其他时间，就可以实施计划。可持续其实包含两层含义：a.计划不需要太吃力就能完成（<strong>extremely important</strong>）,如果计划目标定的太高，比如每天跑10公里，
+肯定没人坚持的下去。b …</p>
+                <a class="readmore" href="http://synckey.name/my-experience-of-losing-weight.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://synckey.name/the-catcher-in-the-rye.html" rel="bookmark"
+                           title="Permalink to The Catcher in the Rye">The Catcher in the Rye</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-10-31T00:00:00+08:00">
+                Published: Fri 31 October 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/posts.html">Posts</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/notes.html">notes</a> </p>
+</footer><!-- /.post-info -->                <p>Holden Caulfied 是一个16岁的男孩，他因为课程不及格被学校开除，在他的眼里，周围的人要有奇怪的习惯和毛病。</p>
+<p>在离开学校之前他与他的室友打了一家，因为室友和他最喜欢的女生约会，他心里非常不舒服。一个十六岁的男孩，面对自己的梦中小情人，
+宁愿远远的看着她，也不希望她跟别的男孩子约会。更何况她的约会对象在Holden看来根本配不上她。Holden心里当然不高兴。打完架他决定早点离开学校了。</p>
+<p>对于一个青春期的孩子来说，也许最大的恐惧就是不合群，希望和同龄人做一样的事情，上课，考试，放假。可是Hoden却不得不提前开始寒假，又不能回家，
+因为他告诉他妈妈他周三到家，他只能去住酒店。孤身一人落寞的站在房间里，此时此刻只有香烟陪伴他，而他根本睡不着，百无聊赖。只能去酒吧。他回来时与
+开电梯的小伙说好叫一个妓女，妓女来了，还很漂亮，可是他却开始退缩了，尽管他还是处男，他不想就这样跟这个妓女做爱。只希望她陪他说话，此刻对他
+来说，精神上才是最寂寞的。</p>
+<p>在这个世界上，他最爱的人就是他的妹妹，Phoebe。他去街上买了她一直想要的唱片，给她一个惊喜，人在脆弱的时候总是想到自己最爱的人，就算他并不安慰你，
+你也希望看到她 …</p>
+                <a class="readmore" href="http://synckey.name/the-catcher-in-the-rye.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://synckey.name/big-sarcosaurus.html" rel="bookmark"
+                           title="Permalink to Big Sarcosaurus">Big Sarcosaurus</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2014-10-22T00:00:00+08:00">
+                Published: Wed 22 October 2014
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/posts.html">posts</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/personal.html">personal</a> </p>
+</footer><!-- /.post-info -->                <p>Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
+would take an exam today and she would have some time after then. I invited her to come to see me and have lunch 
+together …</p>
+                <a class="readmore" href="http://synckey.name/big-sarcosaurus.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55913313-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 </body>
 </html>

@@ -1,199 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>jvm - Andy's Blog</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
-<script type="text/javascript">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    window.dataLayer = window.dataLayer || [];
+        <meta charset="utf-8" />
+        <title>A Pelican Blog - jvm</title>
+        <link rel="stylesheet" href="http://synckey.name/theme/css/main.css" />
+        <link href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'UA-55913313-1');
-</script>
-
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
-            src='/static/images/wechat_logo_300x300.jpg'/></div>
-
-    <!--
-    -->
-<meta name="author" content="andy"/>
-<meta name="keywords" content="jvm"/>
-
-    <!-- Open Graph tags -->
-    <meta property="og:site_name" content="Andy's Blog"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Andy's Blog"/>
-    <meta property="og:url" content="/"/>
-    <meta property="og:description" content="Andy's Blog"/>
-
-
-
-    <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
-    <script src="/theme/js/highcharts.js"></script>
-    <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
-    <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
-    <script type="text/javascript"
-            src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="/theme/css/normalize.css"/>
-    <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
-    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-          title="Andy's Blog ATOM Feed"/>
-
-
-
-
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 </head>
 
-<body>
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://synckey.name/">A Pelican Blog </a></h1>
+                <nav><ul>
+                    <li><a href="http://synckey.name/category/digest.html">digest</a></li>
+                    <li><a href="http://synckey.name/category/ielts.html">ielts</a></li>
+                    <li><a href="http://synckey.name/category/life.html">life</a></li>
+                    <li><a href="http://synckey.name/category/machinelearning.html">machinelearning</a></li>
+                    <li><a href="http://synckey.name/category/posts.html">posts</a></li>
+                    <li><a href="http://synckey.name/category/sfv.html">sfv</a></li>
+                    <li><a href="http://synckey.name/category/summery.html">summery</a></li>
+                    <li><a href="http://synckey.name/category/tools.html">tools</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
 
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="http://synckey.name/jvm-monitor-tool-jvisualvm.html">JVM Monitor Tool---jvisualvm</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2016-07-26T00:00:00+08:00">
+                Published: Tue 26 July 2016
+        </abbr>
 
-<!-- Banner -->
-<!-- End Banner -->
-<div class="article-list">
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">JVM Monitor Tool---jvisualvm</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2016-07-26</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-                </div>
-            </div>
-
-
-            <div class="post-content"><h2>通过 jvisualvm 查看 jvm 内部详细信息</h2>
-<div class="github"><pre><span></span>jvisualvm -Dcom.sun.management.jmxremote.port<span class="o">=</span><span class="m">8999</span> -Dcom.sun.management.jmxremote.ssl<span class="o">=</span><span class="nb">false</span> <span class="se">\</span>
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://synckey.name/author/andy.html">Andy</a>
+        </address>
+<p>In <a href="http://synckey.name/category/tools.html">tools</a>.</p>
+<p>tags: <a href="http://synckey.name/tag/java.html">java</a> <a href="http://synckey.name/tag/posts.html">posts</a> <a href="http://synckey.name/tag/jvm.html">jvm</a> <a href="http://synckey.name/tag/profile.html">profile</a> <a href="http://synckey.name/tag/trouble-shooting.html">trouble shooting</a> </p>
+</footer><!-- /.post-info --><h2>通过 jvisualvm 查看 jvm 内部详细信息</h2>
+<div class="highlight"><pre><span></span>jvisualvm -Dcom.sun.management.jmxremote.port<span class="o">=</span><span class="m">8999</span> -Dcom.sun.management.jmxremote.ssl<span class="o">=</span><span class="nb">false</span> <span class="se">\</span>
  -Dcom.sun.management.jmxremote.authenticate<span class="o">=</span><span class="nb">false</span> -Djava.rmi.server.hostname<span class="o">=</span><span class="m">10</span>.86.46.252
 </pre></div>
+
+
 <h2>查看哪个线程使用 cpu 最多</h2>
-<div class="github"><pre><span></span>ps -mp <span class="m">2633</span> -o THREAD,tid,time <span class="p">|</span> sort -rn
+<div class="highlight"><pre><span></span>ps -mp <span class="m">2633</span> -o THREAD,tid,time <span class="p">|</span> sort -rn
 </pre></div>
-<p>找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式 …</p>
-                <div class="read-more">
-                    <a class="btn" href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">--READ MORE--</a>
-                </div>
-            </div>
-        </div>
-        <div class="separator"></div>
-    </div>
-    <div class="post-container">
-    </div>
-</div>
-<div class="copyright">
-    &copy; 2016 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
-</div>
 
 
+<p>找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式:</p>
+<div class="highlight"><pre><span></span> :::bash
+ printf &quot;%x\n&quot; 3626
+ e18
+</pre></div>
 
-<script src="/theme/js/theme.js"></script>
-<!-- Baidu Analytics -->
-<script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
 
-</script>
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
+<p>最后用 jstack 查看线程的运行 stack:</p>
+<div class="highlight"><pre><span></span>jstack <span class="m">2633</span> <span class="p">|</span>grep e18 -A <span class="m">30</span>
+</pre></div>
 
-<!-- End Google Analytics Code -->
 
-</div>
+<h3>References</h3>
+<p><a href="http://blog.chinaunix.net/uid-10449864-id-3463151.html">生产环境下JAVA进程高CPU占用故障排查</a></p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://synckey.name/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55913313-1', 'auto');
+    ga('send', 'pageview');
+    </script>
 </body>
 </html>
