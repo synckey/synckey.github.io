@@ -1,10 +1,11 @@
 body {
-    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB", "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: url(/static/images/bg.jpg) right top;
     background-size: 100%;
     background-color: #f5f7f9;
     background-attachment: fixed;
-    font-size: 16px;
+    font-size: 18px;
+    line-height:1.5;
 }
 
 .navbar-default {
@@ -433,12 +434,7 @@ a {
         padding-left: 0px;
     }
 
-    /*
-        .post-container .highlight pre {
-            margin-left: 60px;
-            margin-right: 60px;
-        }
-    */
+
     .comment-container {
         margin: 0 auto;
         padding: 0;
@@ -494,22 +490,11 @@ a {
         width: 75%;
     }
 
-    /* .post-container ul, .post-container ol {
-         margin-left: 155px;
-         margin-right: 130px;
-     }
-     */
     .post-container .one-third-center {
         max-width: 100%;
         width: 350px;
     }
 
-    /*
-        .post-container .highlight pre {
-            margin-left: 130px;
-            margin-right: 130px;
-        }
-    */
     .comment-container {
         padding-left: 50px;
         padding-right: 50px;
@@ -650,4 +635,3 @@ a {
         height: 250px;
     }
 }
-
