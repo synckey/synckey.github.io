@@ -2,37 +2,39 @@
 {% block title %}{{SITENAME}}{% endblock %}
 {% block content %}
 {% if articles %}
-{% for article in (articles_page.object_list if articles_page else articles) %}
-<!--
-<div class="separator"></div>-->
-<div class="post-container">
-    <div class="post-header">
-        <h2><a href="/{{ article.url }}">{{ article.title }}</a></h2>
-        <div class="post-meta">
+<div class="article-list">
+    {% for article in (articles_page.object_list if articles_page else articles) %}
+    <div class="excerpt">
+        <div class="post-container">
+            <div class="post-header">
+                <h2><a href="/{{ article.url }}">{{ article.title }}</a></h2>
+                <div class="post-meta">
         <span class="glyphicon glyphicon-calendar footnote"
               aria-hidden="true">{{ article.date|strftime('%Y-%m-%d') }}</span>
-            <span class="glyphicon glyphicon-home footnote ">{{article.place}}</span>
+                    <span class="glyphicon glyphicon-home footnote ">{{article.place}}</span>
+                </div>
+            </div>
+
+
+            {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
+            <div class="post-content">
+                {% include "includes/article_info.html" %}
+            </div>
+            {% endif %}
+            <div class="post-content">{{ article.summary }}
+                <div class="read-more">
+                    {% include 'includes/comment_count.html' %}
+                    <a class="btn" href="/{{ article.url }}">--READ MORE--</a>
+                </div>
+            </div>
         </div>
+        <div class="separator"></div>
     </div>
-
-
-    {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
-    <div class="post-content">
-        {% include "includes/article_info.html" %}
-    </div>
+    {% endfor %}
     {% endif %}
-    <div class="post-content">{{ article.summary }}
-        <div class="read-more">
-            {% include 'includes/comment_count.html' %}
-            <a class="btn" href="/{{ article.url }}">--READ MORE--</a>
-        </div>
+    <div class="post-container">
+        {% include 'includes/ias_pagination.html' %}
     </div>
-</div>
-<div class="separator"></div>
-{% endfor %}
-{% endif %}
-<div class="post-container">
-    {% include 'includes/pagination.html' %}
 </div>
 {% endblock content %}
 
