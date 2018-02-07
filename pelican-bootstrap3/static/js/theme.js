@@ -74,3 +74,7 @@ ias.extension(new IASNoneLeftExtension({text: "内容已经全部加载完毕"})
 ias.on('rendered', function () {
     //lazyload();
 });
+
+$(document).ready(function () {
+    $('body').css('padding-top', $('.navbar').height() + 'px');
+});
