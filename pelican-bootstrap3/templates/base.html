@@ -31,9 +31,6 @@
     <div id='wx_pic' style='margin:0 auto;display:none;'><img
             src='/static/images/{% block wechat_pic %}{{DEFAULT_WECHAT_PIC}}{% endblock %}'/></div>
 
-    <!--
-        {% block canonical_rel %}{% endblock %}
-    -->
     {% block meta %}
     <meta name="author" content="{{ AUTHOR }}"/>
     {% endblock %}
@@ -100,7 +97,7 @@
           type="text/css"/>
     {% else %}
     <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/normalize.css"/>
+    <!--<link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/normalize.css"/>-->
     <link rel="stylesheet" href="/{{ THEME_STATIC_DIR }}/css/style.css"/>
     {% endif %}
 
