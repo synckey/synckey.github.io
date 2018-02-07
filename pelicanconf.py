@@ -47,7 +47,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 DISQUS_SITENAME = u"synckey"
-THEME = "simple_theme"
+THEME = "astro"
 HIDE_SIDEBAR = True
 # BOOTSTRAP_FLUID =  True
 # PDF_PROCESSOR = True
@@ -87,3 +87,7 @@ BOOTSTRAPIFY = {
     'table': ['table', 'table-striped', 'table-hover'],
     'img': []
 }
+
+FAVICON = '/favicon.ico'
+FAVICON_IE = FAVICON
+TOUCHICON = FAVICON

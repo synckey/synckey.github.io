@@ -2,31 +2,24 @@
 {% block title %}Archives - {{ SITENAME }}{% endblock %}
 
 {% block content %}
-<div class="separator"></div>
-<div class="post-container">
-    <div class="post-content">
-        <div class="post-header">
-            <h1>Archives for {{ SITENAME }}</h1>
-        </div>
-        <div class="archives">
-            {% for article in articles %}
-            {% if loop.first or article.date.strftime('%Y') != articles[loop.index0-1].date.strftime('%Y') %}
-            <h2>{{ article.date.strftime('%Y') }}</h2>
-            <ul>
-                {% endif %}
-                <p>
-                    <span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.date|strftime('%Y-%m-%d')  }}</time></span>
-                    <span> <a href="/{{ article.url }}">{{ article.title }}{% if article.subtitle %} - {{
-                        article.subtitle
-                        }}{% endif %}</a></span>
-                </p>
-                {% if loop.last or article.date.strftime('%Y') != articles[loop.index0+1].date.strftime('%Y') %}
-            </ul>
-            {% endif %}
-            {% endfor %}
-        </div>
+{% if articles %}
+{% set arch_date = articles[0].date.strftime('%Y') %}
+<div id="wrapper">
+    <div class="post">
+        <header>
+            <h1>归档</h1>
+            <h2 class="headline">{{arch_date}}</h2>
+        </header>
     </div>
-    <div class="separator"></div>
+    <ul id="post-list">
+        {% for article in (articles_page.object_list if articles_page else articles) %}
+        <li><a href="/{{ article.url }}">
+            <aside class="dates">{{ article.date|strftime('%Y-%m-%d') }}</aside>
+        </a><a href="{{ article.url }}">{{ article.title }}{% if article.subtitle %} - {{
+            article.subtitle
+            }}{% endif %}</a></li>
+        {% endfor %}
+    </ul>
 </div>
-
+{%endif%}
 {% endblock %}

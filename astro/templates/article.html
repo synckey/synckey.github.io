@@ -50,44 +50,13 @@
 <link rel="canonical" href="/{{ article.url }}">
 {% endblock %}
 
-{% block breadcrumbs %}
-{% if DISPLAY_BREADCRUMBS %}
-{% if DISPLAY_CATEGORY_IN_BREADCRUMBS %}
-<ol class="breadcrumb">
-    <li><a href="/" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
-    <li><a href="/{{ article.category.url }}" title="{{ article.category }}">{{ article.category }}</a>
-    </li>
-    <li class="active">{{ article.title }}</li>
-</ol>
-{% else %}
-<ol class="breadcrumb">
-    <li><a href="/" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
-    <li class="active">{{ article.title }}</li>
-</ol>
-{% endif %}
-{% endif %}
-{% endblock %}
-
 {% block content %}
-<div class="post-container">
-    <div class="post-header">
-        <h2>
-            <a href="/{{ article.url }}">{{ article.title }}</a>
-        </h2>
-        <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">{{ article.date|strftime('%Y-%m-%d') }}</span>
-            <span class="glyphicon glyphicon-home footnote ">{{article.place}}</span>
-
-        </div>
-    </div>
-    <div class="post-content"><!--
-            <div class="panel">
-                <div class="panel-body">
-                    {% include "includes/article_info.html" %}
-                </div>
-            </div>
-            -->
+<div id="wrapper">
+    <div class="post">
+        <header>
+            <h1>{{ article.title }}</h1>
+            <h2 class="headline">{{ article.date|strftime('%Y-%m-%d') }} {{article.place}} </h2>
+        </header>
         {{ article.content }}
         {% include 'includes/neighbors.html' %}
         {% include 'includes/comments.html' %}
