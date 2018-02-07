@@ -18,16 +18,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 USE_FOLDER_AS_CATEGORY = True
-
-# EXTENSIONS = (['codehilite(css_class=github)', 'markdown.extensions.tables'])
+SUMMARY_MAX_LENGTH=50
+#EXTENSIONS = (['codehilite(css_class=github)', 'markdown.extensions.tables'])
 
 MARKDOWN = {
     'extension_configs': {
-        # 'markdown.extensions.codehilite': {'css_class': 'github'},
+        #'markdown.extensions.codehilite': {'css_class': 'github'},
         'markdown.extensions.tables': {},
         'markdown.extensions.def_list': {},
         'markdown.extensions.attr_list': {},
         'markdown.extensions.footnotes': {},
+        'markdown.extensions.extra': {},
     },
 }
 

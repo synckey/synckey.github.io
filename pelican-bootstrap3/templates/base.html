@@ -18,14 +18,14 @@
     {# Favicons are a touchy subject. For reasoning for the following code, see:
     http://stackoverflow.com/a/23851464/872397 #}
     {% if FAVICON %}
-    <link href="/{{ FAVICON }}" rel="icon">
+    <link href="{{ FAVICON }}" rel="icon">
     {% endif %}
     {% if FAVICON_IE %}
     <!--[if IE]>
-    <link rel="shortcut icon" href="/{{ FAVICON_IE }}"><![endif]-->
+    <link rel="shortcut icon" href="{{ FAVICON_IE }}"><![endif]-->
     {% endif %}
     {% if TOUCHICON %}
-    <link rel="apple-touch-icon" href="/{{ TOUCHICON }}">
+    <link rel="apple-touch-icon" href="{{ TOUCHICON }}">
     {% endif %}
 
     <div id='wx_pic' style='margin:0 auto;display:none;'><img

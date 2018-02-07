@@ -13,17 +13,17 @@
     {# Favicons are a touchy subject. For reasoning for the following code, see:
     http://stackoverflow.com/a/23851464/872397 #}
     {% if FAVICON %}
-    <link href="/{{ FAVICON }}" rel="icon">
+    <link href="{{ FAVICON }}" rel="icon">
     {% endif %}
     {% if FAVICON_IE %}
     <!--[if IE]>
-    <link rel="shortcut icon" href="/{{ FAVICON_IE }}"><![endif]-->
+    <link rel="shortcut icon" href="{{ FAVICON_IE }}"><![endif]-->
     {% endif %}
     {% if TOUCHICON %}
-    <link rel="apple-touch-icon" href="/{{ TOUCHICON }}">
+    <link rel="apple-touch-icon" href="{{ TOUCHICON }}">
     {% endif %}
 
-    <div id='wx_pic' class="hidden"><img
+    <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/{% block wechat_pic %}{{DEFAULT_WECHAT_PIC}}{% endblock %}'/></div>
 
     {% block meta %}
