@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Archives - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<div class="separator"></div>
+<div class="post-container">
+    <div class="post-content">
+        <div class="post-header">
+            <h1>Archives for {{ SITENAME }}</h1>
+        </div>
+        <div class="archives">
+            {% for article in articles %}
+            {% if loop.first or article.date.strftime('%Y') != articles[loop.index0-1].date.strftime('%Y') %}
+            <h2>{{ article.date.strftime('%Y') }}</h2>
+            <ul>
+                {% endif %}
+                <p>
+                    <span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.date|strftime('%Y-%m-%d')  }}</time></span>
+                    <span> <a href="/{{ article.url }}">{{ article.title }}{% if article.subtitle %} - {{
+                        article.subtitle
+                        }}{% endif %}</a></span>
+                </p>
+                {% if loop.last or article.date.strftime('%Y') != articles[loop.index0+1].date.strftime('%Y') %}
+            </ul>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="separator"></div>
+</div>
+
+{% endblock %}

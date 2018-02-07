@@ -47,7 +47,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 DISQUS_SITENAME = u"synckey"
-THEME = "pelican-bootstrap3"
+THEME = "simple_theme"
 HIDE_SIDEBAR = True
 # BOOTSTRAP_FLUID =  True
 # PDF_PROCESSOR = True

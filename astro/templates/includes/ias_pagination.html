@@ -1,0 +1,9 @@
+{% if articles_page and articles_paginator.num_pages > 1 %}
+
+<div class="pagination">
+    {% if articles_page.has_next() %}
+    <a href="/{{ articles_next_page.url }}" class="next">&raquo;</a>
+    {% endif %}
+</div>
+
+{% endif %}
