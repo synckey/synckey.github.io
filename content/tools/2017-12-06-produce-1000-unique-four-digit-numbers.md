@@ -13,10 +13,12 @@ Place: Beijing
 
 题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。
 
-    :::java
-    import java.util.ArrayList;
-    import java.util.List;
-    
+```
+import java.util.ArrayList;
+import java.util.List;
+```
+import java.util.ArrayList;
+import java.util.List;
     /**
      * Created by andy on 06/12/2017.
      */
@@ -56,4 +58,4 @@ Place: Beijing
             System.out.println(result.size());
         }
     }
-
+```
