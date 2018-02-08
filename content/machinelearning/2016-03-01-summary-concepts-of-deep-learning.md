@@ -32,9 +32,7 @@ input->feature representation->learning algorithm
 其中$f:\mathbb{R}\mapsto\mathbb{R}$,被称为激活函数(activation function).常用的激活函数有:
 
 * sigmoid function:$f(z) = \frac{1}{1+\exp(-z)}$
-
 * tanh function:$f(z) = \tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}$
-
 * rectified linear function: $f(z) = \max(0,x)$
 
 这些函数的形状如下:
