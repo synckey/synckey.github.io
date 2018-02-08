@@ -1,0 +1,9 @@
+<ul id="post-list">
+    {% for article in (articles_page.object_list if articles_page else articles) %}
+    <li><a href="/{{ article.url }}">
+        <aside class="dates">{{ article.date|strftime('%Y-%m-%d') }}</aside>
+    </a><a href="{{ article.url }}">{{ article.title }}{% if article.subtitle %} - {{
+        article.subtitle
+        }}{% endif %}</a></li>
+    {% endfor %}
+</ul>
