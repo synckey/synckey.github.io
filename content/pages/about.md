@@ -5,5 +5,5 @@ Status: Hidden
 Slug: about
 Save_as: about.html
 
-本质上这是我私人的笔记本，记录我的想法，学习，书摘还有我的生活。
+这是我私人的笔记本，记录我的想法，学习，书摘还有我的生活。
 

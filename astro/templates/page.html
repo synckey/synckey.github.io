@@ -44,6 +44,8 @@
         </header>
     </div>
     {{ page.content }}
+    {% if page.slug == "404" %}
     {% include 'includes/archive_list.html' %}
+    {% endif %}
 </div>
 {% endblock %}
