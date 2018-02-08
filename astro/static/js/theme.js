@@ -46,7 +46,7 @@ $(document).ready(function () {
 https://infiniteajaxscroll.com/docs/getting-started.html
 */
 var ias = jQuery.ias({
-    container: '.article-list',
+    container: '.article-list,#post-list',
     item: '.excerpt',
     pagination: '.pagination',
     next: '.next'

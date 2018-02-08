@@ -121,7 +121,7 @@ h2 {
     color: #bbb
 }
 
-.profile #wrapper, {
+.profile #wrapper {
     max-width: 800px;
     margin: 0 auto;
     padding: 100px 40px 0
@@ -352,7 +352,8 @@ p.small {
 
 blockquote {
     padding-left: 20px;
-    border-left: 3px solid #eee
+    border-left: 3px solid #eee;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, DFKai-SB, NSimSun, serif;
 }
 
 .tip {
@@ -993,4 +994,11 @@ sup {
 
 .list-content {
     margin-top: 35px;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    text-shadow: none;
+    line-height: 1.2;
+    font-size: 90%;
 }
