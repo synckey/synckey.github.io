@@ -7,8 +7,9 @@ Author: Andy
 Place: Beijing
 
 ## 1.Binary Number Representation 
-    :::java
-    x = 0b1111; // which is equals to `x = 15`; and is useful when use the number for masking.
+```language-java
+x = 0b1111; // which is equals to `x = 15`; and is useful when use the number for masking.
+```
     
 ## 2.Rotate Function
 ### Original Question
@@ -22,12 +23,13 @@ F(k) = 0 * B_k[0] + 1 * B_k[1] + \cdots + (n-1) * B_k[n-1].
 $$
 Calculate the maximum value of $F(0), F(1), \cdots, F(n-1)$.
 Example:
-
-    A = [4, 3, 2, 6]
-    F(0) = (0 * 4) + (1 * 3) + (2 * 2) + (3 * 6) = 0 + 3 + 4 + 18 = 25
-    F(1) = (0 * 6) + (1 * 4) + (2 * 3) + (3 * 2) = 0 + 4 + 6 + 6 = 16
-    F(2) = (0 * 2) + (1 * 6) + (2 * 4) + (3 * 3) = 0 + 6 + 8 + 9 = 23
-    F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
+```language-java
+A = [4, 3, 2, 6]
+F(0) = (0 * 4) + (1 * 3) + (2 * 2) + (3 * 6) = 0 + 3 + 4 + 18 = 25
+F(1) = (0 * 6) + (1 * 4) + (2 * 3) + (3 * 2) = 0 + 4 + 6 + 6 = 16
+F(2) = (0 * 2) + (1 * 6) + (2 * 4) + (3 * 3) = 0 + 6 + 8 + 9 = 23
+F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
+```
 
 So the maximum value of $F(0), F(1), F(2), F(3)$ is $F(3) = 26$.
 
@@ -38,26 +40,26 @@ $$
 $$
 即可得解：
 
-    :::java
-    public int maxRotateFunction(int[] A) {
-        if (A.length <= 1) {
-            return 0;
-        }
-        int max = Integer.MIN_VALUE;
-        int sum = 0;
-        int ai = 0;
-        for (int i = 0; i < A.length; i++) {
-            sum += A[i];
-            ai += i * A[i];
-        }
-        max = ai;
-        for (int i = A.length - 1; i > 0; i--) {
-            ai += sum - A.length * A[i];
-            max = Math.max(max, ai);
-        }
-        return max;
-    } 
-    
+```language-java
+public int maxRotateFunction(int[] A) {
+    if (A.length <= 1) {
+        return 0;
+    }
+    int max = Integer.MIN_VALUE;
+    int sum = 0;
+    int ai = 0;
+    for (int i = 0; i < A.length; i++) {
+        sum += A[i];
+        ai += i * A[i];
+    }
+    max = ai;
+    for (int i = A.length - 1; i > 0; i--) {
+        ai += sum - A.length * A[i];
+        max = Math.max(max, ai);
+    }
+    return max;
+} 
+``` 
 ## 3. Pascal's Triangle(杨辉三角)
 ### 问题
 
@@ -80,30 +82,31 @@ $C_{n}^{m}=\frac{A_{n}^{m}}{n!}=\frac{n(n-1)(n-2)\cdots(n-m+1)}{m!}$
 
 上述公式在计算的时候已经避免直接计算$n!$,防止溢出，最终得到的解如下(参考[JAVA combination number](https://discuss.leetcode.com/topic/62617/java-combination-number))：
 
-    :::java
-    public int combine(int m, int n) {
-        long res = 1;
-        for (int i = 1; i <= n; i++) {
-            res = res * (m - i + 1) / i;
-        }
-        return (int) res;
+```language-java
+public int combine(int m, int n) {
+    long res = 1;
+    for (int i = 1; i <= n; i++) {
+        res = res * (m - i + 1) / i;
     }
+    return (int) res;
+}
 
-    public List<Integer> getRow(int rowIndex) {
-        List<Integer> result = new ArrayList(rowIndex);
-        for (int i = 0; i <= rowIndex; i++) {
-            result.add(combine(rowIndex, i));
-        }
-        return result;
-    }}
-    
+public List<Integer> getRow(int rowIndex) {
+    List<Integer> result = new ArrayList(rowIndex);
+    for (int i = 0; i <= rowIndex; i++) {
+        result.add(combine(rowIndex, i));
+    }
+    return result;
+    }
+}
+``` 
     
 ### 4.Convert Char to Numeric
 
-    :::java
-    Character.getNumericValue('5');
-    int number = '5' - '0';
-
+```language-java
+Character.getNumericValue('5');
+int number = '5' - '0';
+```
 ### 5. 将一个数字二进制表示的第一个1后面的所有位都置为1，例如input 是`5`，二进制表示是`101`，希望得到`111`。
 
 ### 6.素数(prime number)
@@ -112,14 +115,14 @@ $C_{n}^{m}=\frac{A_{n}^{m}}{n!}=\frac{n(n-1)(n-2)\cdots(n-m+1)}{m!}$
 ### 7. LinkedHashSet
 这个集合会保持元素的插入顺序，所以，如果想要用它做`FIFO`队列，出栈的时候要从第一个元素开始删。在[LFU Cache](https://leetcode.com/problems/lfu-cache/#/description)这题中，可以用到`LinkedHashSet`，因为从中删除元素的复杂度是O(1)。
     
-    :::java
-    LinkedHashSet<Integer> set =new LinkedHashSet();
-    set.add(1);
-    set.add(2);
-    set.add(3);
-    System.out.println(set);
-    //:~output [1, 2, 3]
-
+```language-java 
+LinkedHashSet<Integer> set = new LinkedHashSet();
+set.add(1);
+set.add(2);
+set.add(3);
+System.out.println(set);
+//:~output [1, 2, 3]
+```
 ### 8. Word Ladder II
 太麻烦了，单独开一篇：[BFS遍历到图的指定层的一种解法。](/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html)
     

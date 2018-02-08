@@ -5,17 +5,18 @@ Tags: iterm2,mac,sesssion
 Author: Andy
 Place: Beijing
 
-    :::bash
-    vim ~/.ssh/config
-    
+```language-bash   
+vim ~/.ssh/config
+``` 
 贴入如下内容:
 
-    :::bash
-    Host *
-        ServerAliveInterval 30
-        ControlMaster auto
-        ControlPath ~/.ssh/master-%r@%h:%p
-        ControlPersist yes 
+```language-bash   
+Host *
+ServerAliveInterval 30
+ControlMaster auto
+ControlPath ~/.ssh/master-%r@%h:%p
+ControlPersist yes 
+``` 
     
 退出iterm2，重新登录即可。
 

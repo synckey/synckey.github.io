@@ -7,18 +7,19 @@ Place: Beijing
 
 Suppose You have 2 repositories:
 
-    :::
-    https://github.com/synckey/synckey.github.io.git
-    https://git.coding.net/synckey/synckey.git
+```language-shell
+https://github.com/synckey/synckey.github.io.git
+https://git.coding.net/synckey/synckey.git
+```
 
 You want to push to them within one command.
 
-    :::shell
-    # if your project is cloned from this repository, 
-    # you can simply ignore this first command
-    git remote add origin https://git.coding.net/synckey/synckey.git
-    git remote set-url --add https://git.coding.net/synckey/synckey.git
-
+```language-shell
+# if your project is cloned from this repository, 
+# you can simply ignore this first command
+git remote add origin https://git.coding.net/synckey/synckey.git
+git remote set-url --add https://git.coding.net/synckey/synckey.git
+```
 
 Then if you want to push to both of them, just rum `git push` as normal.
 

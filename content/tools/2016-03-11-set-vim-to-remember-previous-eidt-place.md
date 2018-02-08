@@ -7,17 +7,18 @@ Place: Beijing
 
 在`~/.vimrc`中加入如下配置:
 
-    :::bash
-    autocmd BufReadPost *
-    \ if line("'\"")>0&&line("'\"")<=line("$") |
-    \ exe "normal g'\"" |
-    \ endif
-    autocmd BufReadPost *
-    \ if line("'\"")>0&&line("'\"")<=line("$") |
-    \ exe "normal g'\"" |
-    \ endif
-    syntax enable
-    set nu
+```language-vim
+autocmd BufReadPost *
+\ if line("'\"")>0&&line("'\"")<=line("$") |
+\ exe "normal g'\"" |
+\ endif
+autocmd BufReadPost *
+\ if line("'\"")>0&&line("'\"")<=line("$") |
+\ exe "normal g'\"" |
+\ endif
+syntax enable
+set nu
+```
     
 ###参考
 [让VIM记录文件上次编辑的位置](http://www.2cto.com/os/201311/255061.html)

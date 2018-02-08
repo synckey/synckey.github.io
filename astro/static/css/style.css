@@ -7,12 +7,14 @@
     border: 0
 }
 
-.figure {
+.figure, .center-block {
     text-align: center;
 }
 
-.figure .caption{
+.caption {
     font-size: 80%;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -120,7 +122,7 @@ h2 {
 }
 
 .profile #wrapper {
-    max-width: 680px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 100px 40px 0
 }
@@ -184,13 +186,13 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-    max-width: 680px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 60px 40px 100px
 }
 
 #wrapper.home {
-    max-width: 680px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 40px 20px
 }
@@ -276,13 +278,13 @@ em, i {
 .post h1 {
     font: 300 30px/1.4em Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     margin-bottom: 14px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #222
 }
 
 .post h2 {
     font: 300 24px/1.5 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     color: #111
 }
 
@@ -378,25 +380,6 @@ hr {
     background: #eee
 }
 
-span.code {
-    font-family: Menlo, Monaco, Courier;
-    font-size: 14px;
-    background-color: #eee
-}
-
-pre {
-    font-family: 'Source Code Pro', Menlo, monospace;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.5em;
-    overflow: auto;
-    padding: 20px;
-    white-space: pre-wrap;
-    color: #d0d4d7;
-    border-radius: 3px;
-    background: #fdfdfd
-}
-
 table {
     border-spacing: 0;
     font-size: 13px;
@@ -475,7 +458,7 @@ img {
 #post-list a {
     font: 300 19px/1.7 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     display: block;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #333
 }
 
@@ -737,18 +720,6 @@ a.symbol:hover {
     color: #bcd4da
 }
 
-code {
-    font-family: 'Droid Sans Mono', PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', Monospace;
-    font-size: 14px;
-    padding: 1px 4px;
-    color: #d15656;
-    border-radius: 2px;
-    background-color: rgba(209, 86, 86, .1)
-}
-
-pre code {
-    padding: 0
-}
 
 .readmore {
     margin-top: 50px
@@ -858,8 +829,6 @@ pre code {
     -o-font-smoothing: antialiased;
     font-smoothing: antialiased
 }
-
-
 
 .comment_change, .comment_create, .comment_num {
     font-size: 15px;
@@ -979,4 +948,22 @@ pre code {
         margin-top: 4px;
         margin-left: 0
     }
+}
+
+.footnote ol {
+    padding-left: 22px;
+}
+
+.footnote li {
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+
+.footnote li p {
+    margin: 0;
+}
+
+.iframevideo {
+    width: 100%;
+    height: 450px;
 }

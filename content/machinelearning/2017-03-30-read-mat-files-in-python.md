@@ -6,10 +6,10 @@ Author: Andy
 Place: Beijing
 Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :
 
-    :::python
-    import scipy.io
-    mat = scipy.io.loadmat('file.mat')
-
+```language-python
+import scipy.io
+mat = scipy.io.loadmat('file.mat')
+```
 Enjoy^_^
 
 ####Reference
