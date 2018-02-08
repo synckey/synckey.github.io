@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>原谅自己</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
 <script type="text/javascript">
@@ -28,9 +22,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
+    <title>原谅自己</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/favicon.ico" rel="icon">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="/favicon.ico">
 
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+    <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
 <meta name="author" content="Andy"/>
@@ -47,142 +49,46 @@
 <meta property="article:tag" content="life"/>
 <meta property="article:author" content="Andy"/>
 
-
-
     <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
     <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="/theme/js/prism.js"></script>
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
+    <link rel="stylesheet" href="/theme/css/prism.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
           title="Andy's Blog ATOM Feed"/>
-
-
-
-    <link href="/feeds/posts.atom.xml" type="application/atom+xml"
-          rel="alternate"
-          title="Andy's Blog posts ATOM Feed"/>
 
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+<nav class="main-nav"><a href="/">首页</a> <a href="/archives.html">归档</a><a href="/about.html">About</a><a
+        href="/feeds/all.atom.xml">订阅</a></nav>
 
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Banner -->
-<!-- End Banner -->
-<div class="post-container">
-    <div class="post-header">
-        <h2>
-            <a href="/drafts/forgive-yourself.html">原谅自己</a>
-        </h2>
-        <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-08-11</span>
-            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-
-        </div>
-    </div>
-    <div class="post-content"><!--
-            <div class="panel">
-                <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-08-11T00:00:00+08:00"> 2017.08.11</time>
-    </span>
-
-
-
-
-
-<span class="label label-default">Tags</span>
-<a href="/tag/life.html">life</a>
-    
-</footer>                </div>
-            </div>
-            -->
+<div id="wrapper">
+    <div class="post">
+        <header>
+            <h1>原谅自己</h1>
+            <h2 class="headline">2017-08-11 Beijing </h2>
+        </header>
         <p>走在奔三的路上，懂得越来越多的道理。很多时候自己过的不开心，就是自己跟自己过不去。所以想要开心，首先要能原谅自己。</p>
 <p>小时候，总觉得自己无所不能，幻想自己能够像神仙一样踩着白云在天上跳来跳去，那个时候天很蓝，心很大。记不清是几岁的夏天，我躺在竹床上，看着飘进屋子的蒲公英种子，突然就想到，这是不是命运给我的一次机会？我如果抓住它或者让它飞，我的命运会不会就此改变？身边的世界是不是因我而存在？我走到哪里，世界才会实时渲染出来，就像眼前的这片飞鸿，我躺在这，造物主才让他飞过来。那时的我觉得自己是宇宙的中心，一切都是为了我而安排，我自己终有一天，无所不能。后来这个天真的想法随着年龄增大，慢慢淡化，但是仍然相信“心之所向，无所不能”，只要自己努力，勤奋，别人能做到的，我也能做到。</p>
 <p>第一次最大的挫败感来自于高中数学，初中的数学明明很很简单，但是高中以后常常不及格。为了学好数学，喝了很多鸡汤，比如报道说刘德华年轻时异常努力，一天只睡4个小时，于是我也试着在夏天的晚上做数学，夏天的晚上闷热闷热，窗外的树也不摇。坐在台灯下，偶尔来几只飞蛾，深夜里写题根本写不进去，坐在那硬撑到一两点，算是给自己一个交代。这样的生活过不了多久当然就会宣告失败，整个高中，甚至大学跟数学较劲的生活依然在目。不肯放过自己，所以数学于我，就是夏天的燥热夜晚，或者40度夏天没有空调的大学教室里散发出消毒液味道的教室。</p>
 <p>在刚跟女朋友谈恋爱的时候，非常的自卑，觉得自己什么都不好，害怕自己在她面前展示出任何的不好。尤其是她说她妈妈是特别爱干净，特别会把家里整理的一层不染的人。她来北京找我时，我把厨房洗了又洗，但是锅还边的黑斑还是洗不掉，这使我很沮丧，一定是我平时就只洗锅的里面，而不洗锅的外面才会这样。回到老家，看到父母的锅，也是那样，我也是特别生气，虽然我自己做不到，我希望他们的锅最外面，总是洗的亮亮的。我一度以为，这是合理的，我工作忙，有借口，父母每天大部分的时间就是围着厨房转，有什么理由洗不好？直到在女朋友家里看到她家的锅也是那样，突然间羞愧难当，顿时就理解的父母，原来并不是他们做的不好，也不是自己做的不好，而是自己内心奇怪的感情在作祟。</p>
 <p>跑步的时候也会遇到一样的问题，出发去跑步前，往往会给自己定个目标，比如10公里。有时候自己明明很累，根本跑不快，或者根本跑步下去了，还要跑，这样做的结果往往是自己很痛苦的跑完了，或者有一点受伤。其实，反过来想一想，自己穿上跑步鞋，开始跑步的那一刻，就已经很不错了，何必要求自己非要跑在6min/km以内，把目标改一改，会让自己更轻松。比如在自己跑步下去的时候，就跑慢一点，自己的目标是10公里，那就跑10公里，跑不动就走。适当的向自己妥协，也许能让自己跑的更远。</p>
 <p>有一次早上8点多坐北京13号线，一个妹子挤上来以后就掏出口袋里的小镜子，对着车窗匆忙化妆，用粉饼在脸上拍来拍去，却怎么也掩盖不掉脸上的疲倦。车窗外，高楼矮楼依次而过。我看着她，心生怜悯，这个城市对于她，好像只有白天黑夜，只有拥挤，和匆忙，甚至来不及把自己好好打扮一番再出门。我甚至想，就算她打扮的十分精致，也会在被人挤上列车的那一刻，被挤的粉碎，这个城市早出晚归的人们，多是不易。想着想着，我瞥见车窗里的自己，头发松乱，睡眼迷离，甚至都没有粉饼去掩饰自己的狼狈。看到这一切，突然就原谅自己了，原谅自己下班趴在床上什么都不干，原谅自己莫名心烦。在熙熙攘攘的城市里，大部分的人都过着雷同的生活，每一张脸的背后，都有一颗疲惫的心。</p>
-<div class="pager">
-    <ul>
-        <li class="previous disabled"><a>&larr; Previous</a></li>
-        <li class="next disabled"><a>Next &rarr;</a></li>
-    </ul>
-</div><!--
+<nav id="post-nav">
+</nav><!--
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -238,19 +144,13 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
-
-</article>
-</section>
-
-<div class="copyright">
-    &copy; 2018 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+<div id="wrapper">
+    <div class="footer">
+        &copy; 2018 andy
+        &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    </div>
 </div>
-
 
 
 <script src="/theme/js/theme.js"></script>

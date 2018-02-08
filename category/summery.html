@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>summery - Andy's Blog</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
 <script type="text/javascript">
@@ -28,9 +22,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
+    <title>summery - Andy's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/favicon.ico" rel="icon">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="/favicon.ico">
 
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+    <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
 <meta name="author" content="andy"/>
@@ -43,113 +45,41 @@
     <meta property="og:url" content="/"/>
     <meta property="og:description" content="Andy's Blog"/>
 
-
-
     <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
     <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="/theme/js/prism.js"></script>
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
+    <link rel="stylesheet" href="/theme/css/prism.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
           title="Andy's Blog ATOM Feed"/>
-
-
-
-    <link href="/feeds/summery.atom.xml" type="application/atom+xml"
-          rel="alternate"
-          title="Andy's Blog summery ATOM Feed"/>
 
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+<nav class="main-nav"><a href="/">首页</a> <a href="/archives.html">归档</a><a href="/about.html">About</a><a
+        href="/feeds/all.atom.xml">订阅</a></nav>
 
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Banner -->
-<!-- End Banner -->
-<div class="article-list">
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2018/01/01/2017-summery.html">2017 Full of Changes</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2018-01-01</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+<div id="wrapper">
+    <div class="article-list">
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2018/01/01/2017-summery.html">2017 Full of Changes</a></h1>
+                    <h2 class="headline">2018-01-01 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><p>2017年马上就要过去了，回望这一年，最大的感觉就是变化，事情在变，想法在变，人也在变。</p>
+                <div><p>2017年马上就要过去了，回望这一年，最大的感觉就是变化，事情在变，想法在变，人也在变。</p>
 <p>2017年的开始本以为这会是最惊心动魄的一年，因为在前一年我决定了要去新西兰工作。在2017年刚开始，一切都已经准备就绪了，签证已经办好，
 决心也已经下定。过完年已经开始着手准备登录以后的EOI的材料（出生公正，无犯罪记录证明）。机票订好了以后就开始准备找工作，
 根据新西兰的格式改了一份简历，在Seek上查看各种相关和不太相关的职位，投了大概有20份。这些简历大部分是石沉大海，唯一收到的回应就是拒绝。
@@ -157,27 +87,19 @@ Andy's Blog            </a>
 就开始刷Leetcode，因为对新西兰的面试一无所知，所以只能从最基础的算法开始做，一边刷题一边继续投简历。虽然我很喜欢不确定性带来的巨大可能性，
 但是真正身处其中之时，内心对于未知的恐惧会被放大很多倍。在距离去程的机票起飞时间差不多还有两个月的时候，收到了一封来自亚马逊HR的邮件，
 说是6月份会在北京举办一场Hiring Event。这种邮件之前也不是没有收到过，根本没去回应，从来没想过要去亚马逊。但是现在对去新西兰找工作已然不再乐观，
-于是就抱着一种why not give it a try的想法，给HR回了一封邮件，决定要去试一下。由于招聘会的时间跟之前订的机票时间冲突 …</p>
-                <div class="read-more">
+于是就抱着一种why not give it a try的想法，给HR回了一封邮件，决定要去试一下。由于招聘会的时间跟之前订的机票时间冲突 …</p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2018/01/01/2017-summery.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2017/02/23/2016-summery.html">2016 Full of Serendipities</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-02-23</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2017/02/23/2016-summery.html">2016 Full of Serendipities</a></h1>
+                    <h2 class="headline">2017-02-23 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><p><strong>2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。</strong></p>
+                <div><p><strong>2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。</strong></p>
 <p>不知道每个人心里是不是都有不愿意提及的往事，在某些时候，你是彻底的骗子，无赖，恶魔。有一阵子活在自己虚设的缱绻而又梦境里，不问对错，不追因果，一切那么自然而然。即使你知道这梦总有梦醒的时刻，结局早已写好，也假装要让它继续圆下去，因为从开始你就是恶魔，恶魔总要让梦破碎。这些事，本可以远离，不用歇斯底里，更不用刨根问底。可喜的是，放弃本不珍贵的东西并不难。高中的时候读过的诗，要过许多年，才解其中意，真正做到的，又能有几个？</p>
 <blockquote>
 <p>爱里不见是非,<br/>
@@ -194,26 +116,21 @@ Andy's Blog            </a>
 可是我不说破.<br/>
 --&lt;爱里&gt; 李敖</p>
 </blockquote>
-<p>五月份的时候，从小南庄小破烂的二居室次卧搬到了自如的一个主卧，生活质量也随着房租提高，房租从2000提高到了3700一个月，肉疼。在那个装修跟房租格格不入的90年二层小楼里，生活其实得到了极大的满足 …</p>
-                <div class="read-more">
+<p>五月份的时候，从小南庄小破烂的二居室次卧搬到了自如的一个主卧，生活质量也随着房租提高，房租从2000提高到了3700一个月，肉疼。在那个装修跟房租格格不入的90年二层小楼里，生活其实得到了极大的满足 …</p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2017/02/23/2016-summery.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="post-container">
     </div>
 </div>
-<div class="copyright">
-    &copy; 2018 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+<div id="wrapper">
+    <div class="footer">
+        &copy; 2018 andy
+        &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    </div>
 </div>
-
 
 
 <script src="/theme/js/theme.js"></script>

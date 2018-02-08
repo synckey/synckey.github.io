@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Auckland 小记</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
 <script type="text/javascript">
@@ -28,9 +22,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
+    <title>Auckland 小记</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/favicon.ico" rel="icon">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="/favicon.ico">
 
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+    <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/fern_300x300.jpg'/></div>
 
 <meta name="author" content="Andy"/>
@@ -47,130 +49,38 @@
 <meta property="article:tag" content="sfv"/>
 <meta property="article:author" content="Andy"/>
 
-
-
     <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
     <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="/theme/js/prism.js"></script>
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
+    <link rel="stylesheet" href="/theme/css/prism.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
           title="Andy's Blog ATOM Feed"/>
-
-
-
-    <link href="/feeds/sfv.atom.xml" type="application/atom+xml"
-          rel="alternate"
-          title="Andy's Blog sfv ATOM Feed"/>
 
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+<nav class="main-nav"><a href="/">首页</a> <a href="/archives.html">归档</a><a href="/about.html">About</a><a
+        href="/feeds/all.atom.xml">订阅</a></nav>
 
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Banner -->
-<!-- End Banner -->
-<div class="post-container">
-    <div class="post-header">
-        <h2>
-            <a href="/posts/2017/06/26/new-to-auckland.html">Auckland 小记</a>
-        </h2>
-        <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-06-26</span>
-            <span class="glyphicon glyphicon-home footnote ">Auckland</span>
-
-        </div>
-    </div>
-    <div class="post-content"><!--
-            <div class="panel">
-                <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-06-26T00:00:00+08:00"> 2017.06.26</time>
-    </span>
-
-
-
-
-
-<span class="label label-default">Tags</span>
-<a href="/tag/sfv.html">sfv</a>
-    
-</footer>                </div>
-            </div>
-            -->
+<div id="wrapper">
+    <div class="post">
+        <header>
+            <h1>Auckland 小记</h1>
+            <h2 class="headline">2017-06-26 Auckland </h2>
+        </header>
         <p>来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。</p>
 <p>到奥克兰下飞机已经是早上6.30，跟我一起下飞机的都是中国人。一下飞机就买了一张vodaphone的手机卡，卖手机卡的是中国人，说的是中国话，收银员是个漂亮的高挑当地妹子。在海关排队入境花了大概有半个小时，海关官员看了下签证，问了下我帮朋友带了什么，就放行了。出来还要过一道安检，这次主要是查有没有带危害当地生物安全的食品，种子等，新西兰是一个岛国，生态异常脆弱。</p>
 <p>出机场看到外面乌云密布，天空非常的低，在下着小雨，有点冷，还好很快就找到接机的小伙伴，一路送到住所。路两边都是矮矮的两层小楼，路很窄，但是车速很快。</p>
@@ -185,33 +95,31 @@ Andy's Blog            </a>
 <p>可能因为本地私家车普及率特别高，相对天朝公交而言，新西兰的公交车实在不友善。首先，公交车班次间隔时间比较久，如果错过一班可能要等二十分钟甚至半个小时。公交车并不会在每站都停，如果想下车就得提前按铃，车上也没有报站系统和显示屏，这就对外地人很不友善，只能拿着google地图看快要到了，就按铃下车。我的理解是这样做可以提升公交车的运行效率，但是加一个到站的显示屏真的会友善很多。</p>
 <p>总得来说，虽然新西兰的牛羊肉很好吃，但是物价实在是太高了。
 <div class="figure">
-<img alt="auk_domain_1" class="img-rounded img-responsive carousel-inner" src="/static/images/aukland_domain_1.jpg"/>
+<img alt="auk_domain_1" class="carousel-inner img-rounded img-responsive" src="/static/images/aukland_domain_1.jpg"/>
 <div class="caption">Auckland Domain</div>
 </div>
 <div class="figure">
-<img alt="auk_domain_2" class="img-rounded img-responsive carousel-inner" src="/static/images/aukland_domain_2.jpg"/>
+<img alt="auk_domain_2" class="carousel-inner img-rounded img-responsive" src="/static/images/aukland_domain_2.jpg"/>
 <div class="caption">Auckland Domain</div>
 </div>
 <div class="figure">
-<img alt="ont_tree_hill" class="img-rounded img-responsive carousel-inner" src="/static/images/one_tree_hill.jpg"/>
+<img alt="ont_tree_hill" class="carousel-inner img-rounded img-responsive" src="/static/images/one_tree_hill.jpg"/>
 <div class="caption">One Tree Hill</div>
 </div>
 <div class="figure">
-<img alt="steak_and_fries" class="img-rounded img-responsive carousel-inner" src="/static/images/steak_and_fries.jpg"/>
+<img alt="steak_and_fries" class="carousel-inner img-rounded img-responsive" src="/static/images/steak_and_fries.jpg"/>
 <div class="caption">Steak&amp;Fries</div>
 </div></p>
 <div class="figure">
-<img alt="albert_park" class="img-rounded img-responsive carousel-inner" src="/static/images/albert_park.jpg"/>
+<img alt="albert_park" class="carousel-inner img-rounded img-responsive" src="/static/images/albert_park.jpg"/>
 <div class="caption">Albert Park</div>
 </div>
-<div class="pager">
-    <ul>
-        <li class="previous"><a href="/posts/2017/09/20/my-first-marathon.html" data-toggle="tooltip"
-                                title="第一次跑马">&larr; Previous</a></li>
-        <li class="next"><a href="/posts/2017/06/04/git-push-to-two-repositories.html"
-                            data-toggle="tooltip" title="Git Push to Two Repositories at the Same Time">Next &rarr;</a></li>
-    </ul>
-</div><!--
+<nav id="post-nav">
+    <span class="prev">
+        <a href="/posts/2017/09/20/my-first-marathon.html">
+            <span class="arrow">←</span> Previous</a></span>
+    <span class="next"><a href="/posts/2017/06/04/git-push-to-two-repositories.html">Next <span class="arrow">→</span></a></span>
+</nav><!--
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -267,19 +175,13 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
-
-</article>
-</section>
-
-<div class="copyright">
-    &copy; 2018 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+<div id="wrapper">
+    <div class="footer">
+        &copy; 2018 andy
+        &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    </div>
 </div>
-
 
 
 <script src="/theme/js/theme.js"></script>

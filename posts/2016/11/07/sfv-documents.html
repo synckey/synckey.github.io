@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SFV 材料准备</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
 <script type="text/javascript">
@@ -28,9 +22,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
+    <title>SFV 材料准备</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/favicon.ico" rel="icon">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="/favicon.ico">
 
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+    <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/fern_300x300.jpg'/></div>
 
 <meta name="author" content="Andy"/>
@@ -49,134 +51,38 @@
 <meta property="article:tag" content="sfv"/>
 <meta property="article:author" content="Andy"/>
 
-
-
     <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
     <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="/theme/js/prism.js"></script>
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
+    <link rel="stylesheet" href="/theme/css/prism.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
           title="Andy's Blog ATOM Feed"/>
-
-
-
-    <link href="/feeds/sfv.atom.xml" type="application/atom+xml"
-          rel="alternate"
-          title="Andy's Blog sfv ATOM Feed"/>
 
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+<nav class="main-nav"><a href="/">首页</a> <a href="/archives.html">归档</a><a href="/about.html">About</a><a
+        href="/feeds/all.atom.xml">订阅</a></nav>
 
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Banner -->
-<!-- End Banner -->
-<div class="post-container">
-    <div class="post-header">
-        <h2>
-            <a href="/posts/2016/11/07/sfv-documents.html">SFV 材料准备</a>
-        </h2>
-        <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2016-11-07</span>
-            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-
-        </div>
-    </div>
-    <div class="post-content"><!--
-            <div class="panel">
-                <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-11-07T00:00:00+08:00"> 2016.11.07</time>
-    </span>
-
-
-
-
-
-<span class="label label-default">Tags</span>
-<a href="/tag/mm.html">mm</a>
-/
-<a href="/tag/life.html">life</a>
-/
-<a href="/tag/sfv.html">sfv</a>
-    
-</footer>                </div>
-            </div>
-            -->
+<div id="wrapper">
+    <div class="post">
+        <header>
+            <h1>SFV 材料准备</h1>
+            <h2 class="headline">2016-11-07 Beijing </h2>
+        </header>
         <h2>需要准备的材料列表</h2>
 <ol>
 <li>护照（原件）</li>
@@ -202,7 +108,7 @@ Andy's Blog            </a>
 <h2>学历学位证书</h2>
 <p>我是自己翻译了毕业证和学位证，然后去学校档案室盖章，可以当原件使用。山东大学的中英文学历、学位证明模板和说明可以在<a href="http://www.bkjx.sdu.edu.cn/info/1032/25229.htm">学校网站上</a>下载到。</p>
 <div class="figure">
-<img alt="degree_deploma" class="img-rounded img-responsive carousel-inner" height="150%" src="/static/images/degree_deploma.jpg" width="1200%"/>
+<img alt="degree_deploma" class="carousel-inner img-rounded img-responsive" height="150%" src="/static/images/degree_deploma.jpg" width="1200%"/>
 <div class="caption">学历学位模板</div>
 </div>
 <h2>存款证明</h2>
@@ -215,7 +121,7 @@ Andy's Blog            </a>
 <h2>收到签证</h2>
 <p><strong> Date</strong>: 2016.12.30</p>
 <h3>费用</h3>
-<table class="table table-hover table-striped">
+<table class="table-striped table table-hover">
 <thead>
 <tr>
 <th align="left">Item</th>
@@ -262,14 +168,12 @@ Andy's Blog            </a>
     $("table").attr("class","table table-condensed table-bordered");
   });
 </script>
-<div class="pager">
-    <ul>
-        <li class="previous"><a href="/posts/2016/11/07/eoi-documents.html" data-toggle="tooltip"
-                                title="出生公正和无犯罪记录证明公正">&larr; Previous</a></li>
-        <li class="next"><a href="/posts/2016/11/06/succeed-to-get-sfv.html"
-                            data-toggle="tooltip" title="SFV Got">Next &rarr;</a></li>
-    </ul>
-</div><!--
+<nav id="post-nav">
+    <span class="prev">
+        <a href="/posts/2016/11/07/eoi-documents.html">
+            <span class="arrow">←</span> Previous</a></span>
+    <span class="next"><a href="/posts/2016/11/06/succeed-to-get-sfv.html">Next <span class="arrow">→</span></a></span>
+</nav><!--
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -325,19 +229,13 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
-
-</article>
-</section>
-
-<div class="copyright">
-    &copy; 2018 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+<div id="wrapper">
+    <div class="footer">
+        &copy; 2018 andy
+        &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    </div>
 </div>
-
 
 
 <script src="/theme/js/theme.js"></script>

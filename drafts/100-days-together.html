@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>100天</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
 <script type="text/javascript">
@@ -28,9 +22,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
+    <title>100天</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/favicon.ico" rel="icon">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="/favicon.ico">
 
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+    <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/xiang_jian_yi_wu_shi_300x300.jpg'/></div>
 
 <meta name="author" content="Andy"/>
@@ -49,134 +51,38 @@
 <meta property="article:tag" content="mm"/>
 <meta property="article:author" content="Andy"/>
 
-
-
     <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
     <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="/theme/js/prism.js"></script>
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
+    <link rel="stylesheet" href="/theme/css/prism.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
           title="Andy's Blog ATOM Feed"/>
-
-
-
-    <link href="/feeds/mm.atom.xml" type="application/atom+xml"
-          rel="alternate"
-          title="Andy's Blog mm ATOM Feed"/>
 
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+<nav class="main-nav"><a href="/">首页</a> <a href="/archives.html">归档</a><a href="/about.html">About</a><a
+        href="/feeds/all.atom.xml">订阅</a></nav>
 
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Banner -->
-<!-- End Banner -->
-<div class="post-container">
-    <div class="post-header">
-        <h2>
-            <a href="/drafts/100-days-together.html">100天</a>
-        </h2>
-        <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2016-10-31</span>
-            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-
-        </div>
-    </div>
-    <div class="post-content"><!--
-            <div class="panel">
-                <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-10-31T00:00:00+08:00"> 2016.10.31</time>
-    </span>
-
-
-
-
-
-<span class="label label-default">Tags</span>
-<a href="/tag/life.html">life</a>
-/
-<a href="/tag/posts.html">posts</a>
-/
-<a href="/tag/mm.html">mm</a>
-    
-</footer>                </div>
-            </div>
-            -->
+<div id="wrapper">
+    <div class="post">
+        <header>
+            <h1>100天</h1>
+            <h2 class="headline">2016-10-31 Beijing </h2>
+        </header>
         <p>亲爱的 mm：</p>
 <p>好像已经对你说了全世界的情话，又好像说什么都不够。不知不觉，从那天(2016.07.23)在苏州的街上第一次拉你的手开始，地球已经照常转了100次，我的生命却好像幸福了几个世纪。从日复一日的单调，到日复一日的甜蜜，每天既期待开始，又期待结束。</p>
 <p>2015年08月28号，我们第一次见面，已经不记得你穿的什么衣服，只记得你还没成熟的“装扮”，一看就能看出来，你打扮过，可是当时你还不那么会打扮，我特别喜欢。那一次被你的善解人意所吸引，当然，更吸引我的，还有你的美丽。</p>
@@ -189,7 +95,7 @@ Andy's Blog            </a>
 主角都是你。如果说爱上你有什么不好的地方，好像我变得很挑剔，觉得这个也配不上你，那个也配不上你，甚至我都对我的家人有了一些要求，我知道这样不好，他们能给我的，已经是最好，就像我能给你的，也是我的最好。</p>
 <p>2016年对我来说好像变化太多，从你毕业前的那晚开始，每天都很兴奋，兴奋之余，我想，我们终究会过上平淡的在一起的生活（相见亦无事），而这一点，已经又让我兴奋。100天只是一个起点，我说过，我们会在一起1000天，10000天……我有点害怕天荒地老，如果有一天，什么都没有了，地球上没有我们相爱过的痕迹，没有人知道我们的爱情故事，那会是有多可惜。所以你要教我好好写作，后面还有很多纪念日等着我们去书写呢。
 <div align="center">
-<img alt="cinema" class="img-rounded img-responsive carousel-inner" src="/static/images/xiang_jian_yi_wu_shi.jpg" style="width:40%;height:40%;"/>
+<img alt="cinema" class="carousel-inner img-rounded img-responsive" src="/static/images/xiang_jian_yi_wu_shi.jpg" style="width:40%;height:40%;"/>
 </div></p>
 <p>最后，送上仿佛只是为我们写的歌：</p>
 <blockquote>
@@ -223,12 +129,8 @@ Andy's Blog            </a>
 绝对不用去怀疑<br/>
 我的心只可容纳一个你  </p>
 </blockquote>
-<div class="pager">
-    <ul>
-        <li class="previous disabled"><a>&larr; Previous</a></li>
-        <li class="next disabled"><a>Next &rarr;</a></li>
-    </ul>
-</div><!--
+<nav id="post-nav">
+</nav><!--
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -284,19 +186,13 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
-
-</article>
-</section>
-
-<div class="copyright">
-    &copy; 2018 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+<div id="wrapper">
+    <div class="footer">
+        &copy; 2018 andy
+        &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    </div>
 </div>
-
 
 
 <script src="/theme/js/theme.js"></script>

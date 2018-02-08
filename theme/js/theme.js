@@ -14,7 +14,7 @@ MathJax.Hub.Config({
 
 });
 
-
+/*
 $(document).ready(function () {
     var fancybox_settings = {
         padding: 0,
@@ -24,11 +24,6 @@ $(document).ready(function () {
         fitToView: true,
         autoSize: true,
         helpers: {
-            /*
-                            title:{
-                                type: 'outside',
-                                position:top,
-                            },*/
             thumbs: {
                 width: 80,
                 height: 80
@@ -41,21 +36,17 @@ $(document).ready(function () {
             var alt = this.alt;
             $(this).wrap('<a href="' + this.src + '"  data-fancybox rel="fancybox-thumb" class="fancybox-thumb" title="' + alt + '"></a>');
         });
-        /*
-        $(this).find('.data-fancybox').each(function () {
-            $(this).attr('rel', 'fancybox-thumb');
-        });*/
     });
     $('.fancybox-thumb').fancybox(fancybox_settings);
 
 });
-
+*/
 /*
 异步分页
 https://infiniteajaxscroll.com/docs/getting-started.html
 */
 var ias = jQuery.ias({
-    container: '.article-list',
+    container: '.article-list,#post-list',
     item: '.excerpt',
     pagination: '.pagination',
     next: '.next'
@@ -69,8 +60,12 @@ ias.extension(new IASTriggerExtension({
     text: '<a class="load-more J_listLoadMore" href="javascript:;" id="info_flows_next_link">点击加载更多</a>',
 }));
 
-ias.extension(new IASNoneLeftExtension({text: "内容已经全部加载完毕"}));
+ias.extension(new IASNoneLeftExtension({text: ""}));
 
 ias.on('rendered', function () {
     //lazyload();
+});
+
+$(document).ready(function () {
+    $('body').css('padding-top', $('.navbar').height() + 'px');
 });

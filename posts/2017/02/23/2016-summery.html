@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>2016 Full of Serendipities</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
 <script type="text/javascript">
@@ -28,9 +22,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
+    <title>2016 Full of Serendipities</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/favicon.ico" rel="icon">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="/favicon.ico">
 
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+    <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
 <meta name="author" content="Andy"/>
@@ -50,136 +52,38 @@
 <meta property="article:tag" content="summery"/>
 <meta property="article:author" content="Andy"/>
 
-
-
     <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
     <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="/theme/js/prism.js"></script>
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
+    <link rel="stylesheet" href="/theme/css/prism.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
           title="Andy's Blog ATOM Feed"/>
-
-
-
-    <link href="/feeds/summery.atom.xml" type="application/atom+xml"
-          rel="alternate"
-          title="Andy's Blog summery ATOM Feed"/>
 
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+<nav class="main-nav"><a href="/">首页</a> <a href="/archives.html">归档</a><a href="/about.html">About</a><a
+        href="/feeds/all.atom.xml">订阅</a></nav>
 
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Banner -->
-<!-- End Banner -->
-<div class="post-container">
-    <div class="post-header">
-        <h2>
-            <a href="/posts/2017/02/23/2016-summery.html">2016 Full of Serendipities</a>
-        </h2>
-        <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-02-23</span>
-            <span class="glyphicon glyphicon-home footnote ">Beijing</span>
-
-        </div>
-    </div>
-    <div class="post-content"><!--
-            <div class="panel">
-                <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-02-23T00:00:00+08:00"> 2017.02.23</time>
-    </span>
-
-
-
-
-
-<span class="label label-default">Tags</span>
-<a href="/tag/life.html">life</a>
-/
-<a href="/tag/posts.html">posts</a>
-/
-<a href="/tag/mm.html">mm</a>
-/
-<a href="/tag/summery.html">summery</a>
-    
-</footer>                </div>
-            </div>
-            -->
+<div id="wrapper">
+    <div class="post">
+        <header>
+            <h1>2016 Full of Serendipities</h1>
+            <h2 class="headline">2017-02-23 Beijing </h2>
+        </header>
         <p><strong>2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。</strong></p>
 <p>不知道每个人心里是不是都有不愿意提及的往事，在某些时候，你是彻底的骗子，无赖，恶魔。有一阵子活在自己虚设的缱绻而又梦境里，不问对错，不追因果，一切那么自然而然。即使你知道这梦总有梦醒的时刻，结局早已写好，也假装要让它继续圆下去，因为从开始你就是恶魔，恶魔总要让梦破碎。这些事，本可以远离，不用歇斯底里，更不用刨根问底。可喜的是，放弃本不珍贵的东西并不难。高中的时候读过的诗，要过许多年，才解其中意，真正做到的，又能有几个？</p>
 <blockquote>
@@ -226,13 +130,13 @@ Andy's Blog            </a>
 <p>后来mm邀请我去参加她的毕业典礼，我想她大概是在暗示什么？开心归开心，惆怅也是有的，我这么丑，甚至都没有一套正装，怎么好意思去参加别人的毕业典礼？后来再一次证明我是想多了，毕业典礼也没去成，心里有所解脱之余，满是失望。幸运的是，我们还是在她回苏州之前见了一面，在蓝色港湾的站点pizza，站点pizza是我选的，蓝色港湾是mm选的。那天点的pizza并不好吃。如果吃饭的时候她没有一直跟我提她的一位男同事，并且吃完想跟我看一场《魔兽》我也不会爱上她吧？看完魔兽我送她回学校，夏天很热，她第二天就要离开帝都回苏州了，我很想抱她一下，终究未能如愿。</p>
 <p>2016年应该是我长大的一年吧，9月份跟mm一起去南京，见到了姐姐，姐夫，外甥外甥女，在玄武湖上荡舟并不浪漫。后来也是第一次见到她姐姐，第一次去她家里，无论如何，跨出了这一步，是我之前从未敢想的。</p>
 <div class="figure">
-<img alt="suzhou" class="img-rounded img-responsive carousel-inner" src="/static/images/2016.11.13_su_zhou.jpg"/>
+<img alt="suzhou" class="carousel-inner img-rounded img-responsive" src="/static/images/2016.11.13_su_zhou.jpg"/>
 <div class="caption">2016.11.13 苏州博物馆</div>
 </div>
 <p>国庆节mm来帝都玩，这是从上大学以来第一次国庆节没有回家，认识了cq,hzf,wym,都是很有趣的人。</p>
 <p>2016年的运动乏善可陈，4月份和xh参加了一次半马，成绩是01:47:35，平均4m:55s/km，这个成绩我很满意，代表了自己的目前的最高水准吧。跑完了xh和他怀孕的老婆请我吃饭。上半年主要是在人大校园里面跑，后来搬到回龙观，就再也没跑过。
  <div class="figure">
-<img alt="babies" class="center-block img-rounded img-responsive carousel-inner" src="/static/images/2016.04.17_half_marathon.jpg"/>
+<img alt="babies" class="carousel-inner center-block img-rounded img-responsive" src="/static/images/2016.04.17_half_marathon.jpg"/>
 <div class="caption">2016.06.09 半马</div>
 </div></p>
 <p>大概是从2015年开始，心里和纸上就开始频繁的做计算，把自己的各种投资，股票，基金，众筹，加到一起，再把未来的收入一起加进去，算出来，看什么时候能付得起首付。每一次的结论就是：大概2017年4月份。在没有遇到 mm 之前，并不绝望。买房对我像是一个恍惚的未来，好像近在眼前，又遥不可及。如果不是那天中午zh和xy过来找我吃饭，也许我也下不定决心要买。过程很曲折，这是在帝都五年来最绝望的时刻。在清河看过一次老破小，如果不是亲眼见到，真的不敢相信那样的破房子值那么多钱。人常常在某一个时刻感觉自己特别渺小，在星空面前，在时代面前，在潮流面前，在房价面前，更是渺小无力。幸运的是最亲的姐姐姐夫们给了我很大帮助，是我最大的后盾，wjy跑过来跟我一起看房子，最终是她在看好的两套里拍板的这一套，后来还帮我购置了很多物件，在忙碌中来回帝都两次。zh也借了不少钱给我，这是最感念的部分。当然，买房子的过程也有很多不开心，不愿意想起也不愿回忆。很难去要求别人怎么样，有的关系根本不需要维持，自己有钱比什么都重要。这是在这个过程中学到的。</p>
@@ -241,7 +145,7 @@ Andy's Blog            </a>
 <p>4月份职称升了一级。从今年开始接触深度学习，用tensorflow跑出了一些demo，对深度学习算是入了门，但是真正深入学习的东西几乎没有。反观自己，我觉得两个原因让自己在专业方面停步不前：1.对技术的热情减少了很多；2.畏难，机器学习跟语言或者其他系统比，要难很多，所以很多东西都是浅尝辄止，深入不下去。在这么浮躁的社会，希望不要忘了立身之本，更不要忘了初心。</p>
 <p>这一年外甥女忽然一下子长大了，开始问我问题，使我惊喜。看着她如此可爱，时常想，怎么让她保留童真，怎么给最好的给她？外甥也让我感觉特别懂事，看上去很小的孩子，其实已经很有自己的想法，能和人进行很深入的交谈。
 <div class="figure narrow">
-<img alt="babies" class="center-block img-rounded img-responsive carousel-inner" src="/static/images/2016.06.09_babies.jpg"/>
+<img alt="babies" class="carousel-inner center-block img-rounded img-responsive" src="/static/images/2016.06.09_babies.jpg"/>
 <div class="caption">2016.06.09 babies</div>
 </div>
 2016年总共读了这些书：</p>
@@ -268,14 +172,12 @@ Andy's Blog            </a>
 <p>从今年来开始关注窦文涛的《锵锵三人行》，每集都看，他在优酷做的圆桌派第一季也看完了。
 其他每集都看的节目《有今晚八零后》和《暴走大事件》。以上就是本年的全部精神生活。</p>
 <p>2016，full of serendipities！</p>
-<div class="pager">
-    <ul>
-        <li class="previous"><a href="/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html" data-toggle="tooltip"
-                                title="Rename a Tensor or Operation in Tensorflow">&larr; Previous</a></li>
-        <li class="next"><a href="/posts/2017/02/20/review-of-probability.html"
-                            data-toggle="tooltip" title="《概率论》复习笔记">Next &rarr;</a></li>
-    </ul>
-</div><!--
+<nav id="post-nav">
+    <span class="prev">
+        <a href="/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">
+            <span class="arrow">←</span> Previous</a></span>
+    <span class="next"><a href="/posts/2017/02/20/review-of-probability.html">Next <span class="arrow">→</span></a></span>
+</nav><!--
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -331,19 +233,13 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
-
-</article>
-</section>
-
-<div class="copyright">
-    &copy; 2018 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+<div id="wrapper">
+    <div class="footer">
+        &copy; 2018 andy
+        &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    </div>
 </div>
-
 
 
 <script src="/theme/js/theme.js"></script>

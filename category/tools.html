@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>tools - Andy's Blog</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
 <script type="text/javascript">
@@ -28,9 +22,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
+    <title>tools - Andy's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/favicon.ico" rel="icon">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="/favicon.ico">
 
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+    <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
 <meta name="author" content="andy"/>
@@ -43,373 +45,231 @@
     <meta property="og:url" content="/"/>
     <meta property="og:description" content="Andy's Blog"/>
 
-
-
     <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
     <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="/theme/js/prism.js"></script>
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
+    <link rel="stylesheet" href="/theme/css/prism.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
           title="Andy's Blog ATOM Feed"/>
-
-
-
-    <link href="/feeds/tools.atom.xml" type="application/atom+xml"
-          rel="alternate"
-          title="Andy's Blog tools ATOM Feed"/>
 
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+<nav class="main-nav"><a href="/">首页</a> <a href="/archives.html">归档</a><a href="/about.html">About</a><a
+        href="/feeds/all.atom.xml">订阅</a></nav>
 
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Banner -->
-<!-- End Banner -->
-<div class="article-list">
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">Produce 1000 Unique Four Digit Numbers</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-12-06</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+<div id="wrapper">
+    <div class="article-list">
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">Produce 1000 Unique Four Digit Numbers</a></h1>
+                    <h2 class="headline">2017-12-06 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><blockquote>
+                <div><blockquote>
 <p>Produce 1000 unique four digit numbers.<br/>
 Conditions:  <br/>
 1. No consecutive numbers. 2268, 1155 are not acceptable. <br/>
 2. No sequential numbers. 1234, 1856 are not acceptable.  </p>
 </blockquote>
 <p>题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。</p>
-<div class="github"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+<pre><code class="language-java">import java.util.ArrayList;
+import java.util.List;
 
-<span class="cm">/**</span>
-<span class="cm"> * Created by …</span></pre></div>
-                <div class="read-more">
+/**
+ * Created by …</code></pre></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2017/06/04/git-push-to-two-repositories.html">Git Push to Two Repositories at the Same Time</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-06-04</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2017/06/04/git-push-to-two-repositories.html">Git Push to Two Repositories at the Same Time</a></h1>
+                    <h2 class="headline">2017-06-04 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><p>Suppose You have 2 repositories:</p>
-<div class="github"><pre><span></span>https://github.com/synckey/synckey.github.io.git
+                <div><p>Suppose You have 2 repositories:</p>
+<pre><code class="language-shell">https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
-</pre></div>
+</code></pre>
 <p>You want to push to them within one command.</p>
-<div class="github"><pre><span></span><span class="c1"># if your project is cloned from this repository, </span>
-<span class="c1"># you can simply ignore this first command</span>
-git remote add origin https://git …</pre></div>
-                <div class="read-more">
+<pre><code class="language-shell"># if your project is cloned from this repository, 
+# you can simply ignore this first command
+git remote add origin https://git …</code></pre></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2017/06/04/git-push-to-two-repositories.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html">Enable Pelican to Render Markdown Tables</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-03-19</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html">Enable Pelican to Render Markdown Tables</a></h1>
+                    <h2 class="headline">2017-03-19 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><p>Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:</p>
-<div class="github"><pre><span></span><span class="n">MARKDOWN</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">'extension_configs'</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s1">'markdown.extensions.tables'</span><span class="p">:{},</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
+                <div><p>Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:</p>
+<pre><code class="language-python">MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.tables':{},
+    }
+}
+</code></pre>
 <p>Then,you can use the following code to generate the table below:</p>
-<div class="github"><pre><span></span>|First Header  | Second Header|
+<pre><code class="language-markdown">|First Header  | Second Header|
 |------------- | -------------|
-|Content …</pre></div>
-                <div class="read-more">
+|Content …</code></pre></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">Rename a Tensor or Operation in Tensorflow</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2017-03-17</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">Rename a Tensor or Operation in Tensorflow</a></h1>
+                    <h2 class="headline">2017-03-17 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><p>Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …</p>
-                <div class="read-more">
+                <div><p>Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …</p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2016/10/11/my-bashrc-backup.html">My Bashrc Backup</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2016-10-11</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2016/10/11/my-bashrc-backup.html">My Bashrc Backup</a></h1>
+                    <h2 class="headline">2016-10-11 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><div class="github"><pre><span></span><span class="c1"># .bashrc</span>
-<span class="c1"># Source global definitions</span>
-<span class="k">if</span> <span class="o">[</span> -f /etc/bashrc <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+                <div><pre><code class="language-bash"># .bashrc
+# Source global definitions
+if [ -f /etc/bashrc ]; then
     . /etc/bashrc
-<span class="k">fi</span>
-<span class="c1"># User specific aliases and functions</span>
-
-<span class="nb">export</span> <span class="nv">LS_OPTIONS</span><span class="o">=</span><span class="s1">'--color=auto'</span> <span class="c1"># 如果没有指定，则自动选择颜色</span>
-<span class="nb">export</span> <span class="nv">CLICOLOR</span><span class="o">=</span><span class="s1">'Yes'</span> <span class="c1">#是否输出颜色</span>
-<span class="nb">export</span> <span class="nv">LSCOLORS</span><span class="o">=</span><span class="s1">'Exfxcxdxbxegedabagacad'</span> <span class="c1">#指定颜色</span>
-<span class="nb">alias</span> <span class="nv">ll</span><span class="o">=</span><span class="s1">'ls -l'</span>
-<span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">"\[\e[0;31m\][\u@\H \w]\\</span>$<span class="s2"> \[\e[m\]"</span>
-<span class="c1"># vim:ts=4:sw=4 …</span></pre></div>
-                <div class="read-more">
+fi
+# User specific aliases and functions
+export LS_OPTIONS='--color=auto' # 如果没有指定，则自动选择颜色
+export CLICOLOR='Yes' #是否输出颜色
+export LSCOLORS='Exfxcxdxbxegedabagacad' #指定颜色
+alias ll='ls -l'
+export PS1="\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]"
+# vim:ts=4:sw=4 …</code></pre></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2016/10/11/my-bashrc-backup.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">JVM Monitor Tool---jvisualvm</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2016-07-26</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">JVM Monitor Tool---jvisualvm</a></h1>
+                    <h2 class="headline">2016-07-26 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><h2>通过 jvisualvm 查看 jvm 内部详细信息</h2>
-<div class="github"><pre><span></span>jvisualvm -Dcom.sun.management.jmxremote.port<span class="o">=</span><span class="m">8999</span> -Dcom.sun.management.jmxremote.ssl<span class="o">=</span><span class="nb">false</span> <span class="se">\</span>
- -Dcom.sun.management.jmxremote.authenticate<span class="o">=</span><span class="nb">false</span> -Djava.rmi.server.hostname<span class="o">=</span><span class="m">10</span>.86.46.252
-</pre></div>
+                <div><h2>通过 jvisualvm 查看 jvm 内部详细信息</h2>
+<pre><code class="language-bash">jvisualvm -Dcom.sun.management.jmxremote.port=8999 -Dcom.sun.management.jmxremote.ssl=false \
+-Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=10.86.46.252
+</code></pre>
 <h2>查看哪个线程使用 cpu 最多</h2>
-<div class="github"><pre><span></span>ps -mp <span class="m">2633</span> -o THREAD,tid,time <span class="p">|</span> sort -rn
-</pre></div>
-<p>找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式 …</p>
-                <div class="read-more">
+<pre><code class="language-bash">ps -mp 2633 -o THREAD,tid,time | sort -rn
+</code></pre>
+<p>找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式 …</p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">让VIM记录文件上次编辑的位置</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2016-03-11</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">让VIM记录文件上次编辑的位置</a></h1>
+                    <h2 class="headline">2016-03-11 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><p>在<code>~/.vimrc</code>中加入如下配置:</p>
-<div class="github"><pre><span></span>autocmd BufReadPost *
-<span class="se">\ </span><span class="k">if</span> line<span class="o">(</span><span class="s2">"'\""</span><span class="o">)</span>&gt;0<span class="o">&amp;&amp;</span>line<span class="o">(</span><span class="s2">"'\""</span><span class="o">)</span>&lt;<span class="o">=</span>line<span class="o">(</span><span class="s2">"</span>$<span class="s2">"</span><span class="o">)</span> <span class="p">|</span>
-<span class="se">\ </span>exe <span class="s2">"normal g'\""</span> <span class="p">|</span>
-<span class="se">\ </span>endif
+                <div><p>在<code>~/.vimrc</code>中加入如下配置:</p>
+<pre><code class="language-vim">autocmd BufReadPost *
+\ if line("'\"")&gt;0&amp;&amp;line("'\"")&lt;=line("$") |
+\ exe "normal g'\"" |
+\ endif
 autocmd BufReadPost *
-<span class="se">\ </span><span class="k">if</span> line<span class="o">(</span><span class="s2">"'\""</span><span class="o">)</span>&gt;0<span class="o">&amp;&amp;</span>line<span class="o">(</span><span class="s2">"'\""</span><span class="o">)</span>&lt;<span class="o">=</span>line<span class="o">(</span><span class="s2">"</span>$<span class="s2">"</span><span class="o">)</span> <span class="p">|</span>
-<span class="se">\ </span>exe <span class="s2">"normal g'\""</span> <span class="p">|</span>
-<span class="se">\ </span>endif
-syntax <span class="nb">enable</span>
-<span class="nb">set</span> nu
-</pre></div>
+\ if line("'\"")&gt;0&amp;&amp;line("'\"")&lt;=line("$") |
+\ exe "normal g'\"" |
+\ endif
+syntax enable
+set nu
+</code></pre>
 <h3>参考</h3>
-<p><a href="http://www.2cto.com/os/201311/255061.html">让VIM记录文件上次编辑的位置</a></p>
-                <div class="read-more">
+<p><a href="http://www.2cto.com/os/201311/255061.html">让VIM记录文件上次编辑的位置</a></p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2015-11-03</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></h1>
+                    <h2 class="headline">2015-11-03 Beijing </h2>
                 </div>
-            </div>
+                <div><p>在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：</p>
+<pre><code class="language-java">public class Test implements Function&lt;String, Boolean&gt; {
 
+    private Map&lt;String,String&gt; lookupTable=new HashMap&lt;String, String&gt;();
 
-            <div class="post-content"><p>在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：</p>
-<div class="github"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="kd">implements</span> <span class="n">Function</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Boolean</span><span class="o">&gt;</span> <span class="o">{</span>
-
-    <span class="kd">private</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">lookupTable</span><span class="o">=</span><span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">String</span><span class="o">&gt;();</span>
-
-    <span class="kd">public</span> <span class="nf">Test</span><span class="o">(</span><span class="n">Broadcast</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span><span class="n">String</span><span class="o">&gt;&gt;</span> <span class="n">broadcast</span><span class="o">){</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">lookupTable</span><span class="o">=</span><span class="n">broadcast</span><span class="o">.</span><span class="na">value</span><span class="o">();</span>
-    <span class="o">}</span>
-    <span class="kd">public</span> <span class="n">Boolean</span> <span class="nf">call</span><span class="o">(</span><span class="n">String</span> <span class="n">line</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-        <span class="k">if</span> <span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">lookupTable</span><span class="o">.</span><span class="na">containsKey …</span></pre></div>
-                <div class="read-more">
+    public Test(Broadcast&lt;Map&lt;String,String&gt;&gt; broadcast){
+       this.lookupTable=broadcast.value();
+    }
+    public Boolean call(String line) throws Exception {
+        if (this.lookupTable.containsKey …</code></pre></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2015/05/20/iterm2-clone-session.html">Iterm2 Clone Session</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2015-05-20</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2015/05/20/iterm2-clone-session.html">Iterm2 Clone Session</a></h1>
+                    <h2 class="headline">2015-05-20 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><div class="github"><pre><span></span>vim ~/.ssh/config
-</pre></div>
+                <div><pre><code class="language-bash">vim ~/.ssh/config
+</code></pre>
 <p>贴入如下内容:</p>
-<div class="github"><pre><span></span>Host *
-    ServerAliveInterval <span class="m">30</span>
-    ControlMaster auto
-    ControlPath ~/.ssh/master-%r@%h:%p
-    ControlPersist yes
-</pre></div>
+<pre><code class="language-bash">Host *
+ServerAliveInterval 30
+ControlMaster auto
+ControlPath ~/.ssh/master-%r@%h:%p
+ControlPersist yes 
+</code></pre>
 <p>退出iterm2，重新登录即可。</p>
 <h3>References</h3>
 <p><a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/">Iterm2 auto login 自动登录脚本</a></p>
-<p><a href="http://laughingchs.iteye.com/blog/1317703">linux clone session</a></p>
-                <div class="read-more">
+<p><a href="http://laughingchs.iteye.com/blog/1317703">linux clone session</a></p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2015/05/20/iterm2-clone-session.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="post-container">
     </div>
 </div>
-<div class="copyright">
-    &copy; 2017 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+<div id="wrapper">
+    <div class="footer">
+        &copy; 2017 andy
+        &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    </div>
 </div>
-
 
 
 <script src="/theme/js/theme.js"></script>

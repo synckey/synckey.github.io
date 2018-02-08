@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>writing - Andy's Blog</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
 <script type="text/javascript">
@@ -28,9 +22,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
+    <title>writing - Andy's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/favicon.ico" rel="icon">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="/favicon.ico">
 
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+    <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
 <meta name="author" content="andy"/>
@@ -43,110 +45,41 @@
     <meta property="og:url" content="/"/>
     <meta property="og:description" content="Andy's Blog"/>
 
-
-
     <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
     <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="/theme/js/prism.js"></script>
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
+    <link rel="stylesheet" href="/theme/css/prism.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
           title="Andy's Blog ATOM Feed"/>
-
-
-
 
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+<nav class="main-nav"><a href="/">首页</a> <a href="/archives.html">归档</a><a href="/about.html">About</a><a
+        href="/feeds/all.atom.xml">订阅</a></nav>
 
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Banner -->
-<!-- End Banner -->
-<div class="article-list">
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2015/04/13/my-experience-of-losing-weight.html">我是怎么减掉了30斤</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2015-04-13</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+<div id="wrapper">
+    <div class="article-list">
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2015/04/13/my-experience-of-losing-weight.html">我是怎么减掉了30斤</a></h1>
+                    <h2 class="headline">2015-04-13 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><div id="weight_container" style=" margin: 0 auto"></div>
+                <div><div id="weight_container" style=" margin: 0 auto"></div>
 <blockquote>
 <p>声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。</p>
 </blockquote>
@@ -158,146 +91,101 @@ Andy's Blog            </a>
 因为可能折腾了一个月，体重还是没有任何变化，就丧失信心，中途放弃了。对我个人而言，我的目标其实就是完成计划，不是减多少斤，而是坚持了多久，做了多少天运动。
 制定减肥计划最重要的两条就是：a.不能对我的日常生活产生干扰，b.可持续。 所以我每天的运动时间限制在1个小时以内（一开始要更短），这样一来，不需要
 匀出其他时间，就可以实施计划。可持续其实包含两层含义：a.计划不需要太吃力就能完成（<strong>extremely important</strong>）,如果计划目标定的太高，比如每天跑10公里，
-肯定没人坚持的下去。b …</p>
-                <div class="read-more">
+肯定没人坚持的下去。b …</p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2015/04/13/my-experience-of-losing-weight.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2014/12/30/improve-safety-on-the-road.html">Improve Safety On The Road</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2014-12-30</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2014/12/30/improve-safety-on-the-road.html">Improve Safety On The Road</a></h1>
+                    <h2 class="headline">2014-12-30 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><blockquote>
+                <div><blockquote>
 <p>The only way to improve safety on the road is to severely punish driving offenders. To what extent do you agree or disagree?</p>
 </blockquote>
 <p><strong>Notice:</strong> this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).</p>
-<p>The number …</p>
-                <div class="read-more">
+<p>The number …</p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2014/12/30/improve-safety-on-the-road.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2014/12/22/use-animals-for-humans.html">Use Animals For Humans</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2014-12-22</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2014/12/22/use-animals-for-humans.html">Use Animals For Humans</a></h1>
+                    <h2 class="headline">2014-12-22 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><blockquote>
+                <div><blockquote>
 <p>Some people think that it is acceptable to use animals for the benefit of humans. Others, however, think that it is wrong to exploit animals for human purposes. Discuss both these views and give your own opinion.</p>
 </blockquote>
-<p><strong>Notice:</strong> this is my practice writing  which may be the worst approach.I …</p>
-                <div class="read-more">
+<p><strong>Notice:</strong> this is my practice writing  which may be the worst approach.I …</p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2014/12/22/use-animals-for-humans.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2014/12/16/gender-balance.html">Forcing the Employers to Hire the Same Number of Men and Women</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2014-12-16</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2014/12/16/gender-balance.html">Forcing the Employers to Hire the Same Number of Men and Women</a></h1>
+                    <h2 class="headline">2014-12-16 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><blockquote>
+                <div><blockquote>
 <p>Some people think that employers should be required to employ equal numbers of men and women. To what extent do you agree or disagree?</p>
 </blockquote>
 <p><strong>Notice:</strong> this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).</p>
-<p>It …</p>
-                <div class="read-more">
+<p>It …</p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2014/12/16/gender-balance.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2014/11/24/distance-learning-vs-school-learning.html">Distance Learning vs School Learing</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2014-11-24</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2014/11/24/distance-learning-vs-school-learning.html">Distance Learning vs School Learing</a></h1>
+                    <h2 class="headline">2014-11-24 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><blockquote>
+                <div><blockquote>
 <p>Many people use distance-learning programmes(study material post, TV, Internet, etc.) to study at home,
 but some people think that it cannot bring the same benefits of attending college or university.
 To what extent do you agree or disagree.</p>
 </blockquote>
-<p><strong>Notice:</strong> this is my practice writing  which may be the worst …</p>
-                <div class="read-more">
+<p><strong>Notice:</strong> this is my practice writing  which may be the worst …</p></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2014/11/24/distance-learning-vs-school-learning.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="excerpt">
-        <div class="post-container">
-            <div class="post-header">
-                <h2><a href="/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html">What Should Be the Main Function Of A University</a></h2>
-                <div class="post-meta">
-        <span class="glyphicon glyphicon-calendar footnote"
-              aria-hidden="true">2014-11-12</span>
-                    <span class="glyphicon glyphicon-home footnote ">Beijing</span>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html">What Should Be the Main Function Of A University</a></h1>
+                    <h2 class="headline">2014-11-12 Beijing </h2>
                 </div>
-            </div>
-
-
-            <div class="post-content"><blockquote>
+                <div><blockquote>
 <p>Some people think that universities should provide graduates with the knowledge and skills needed in the workplace. 
 Others think that the true function of a university should be to give access to knowledge for its own sake,
 regardless of whether the course is useful to an employer.</p>
-<p>What, in your …</p></blockquote>
-                <div class="read-more">
+<p>What, in your …</p></blockquote></div>
+                <div class="center-block">
                     <a class="btn" href="/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html">--READ MORE--</a>
                 </div>
             </div>
         </div>
-        <div class="separator"></div>
-    </div>
-    <div class="post-container">
     </div>
 </div>
-<div class="copyright">
-    &copy; 2015 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+<div id="wrapper">
+    <div class="footer">
+        &copy; 2015 andy
+        &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    </div>
 </div>
-
 
 
 <script src="/theme/js/theme.js"></script>

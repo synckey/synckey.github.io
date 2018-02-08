@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Categories - Andy's Blog</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
 <script type="text/javascript">
@@ -28,9 +22,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
+    <title>Categories - Andy's Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/favicon.ico" rel="icon">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="/favicon.ico">
 
-
-    <div id='wx_pic' style='margin:0 auto;display:none;'><img
+    <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
     <meta name="author" content="andy"/>
@@ -42,289 +44,261 @@
     <meta property="og:url" content="/"/>
     <meta property="og:description" content="Andy's Blog"/>
 
-
-
     <script src="/theme/js/jquery.min.js"></script>
-    <script src="/theme/js/jquery.browser.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/theme/js/bootstrap.min.js"></script>
-
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="/theme/js/respond.min.js"></script>
-    <!-- highcharts -->
     <script src="/theme/js/highcharts.js"></script>
     <script src="/theme/js/exporting.js"></script>
-    <script src="/theme/js/holder.js"></script>
     <script src="/theme/js/jquery-ias.min.js"></script>
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
-          media="screen"/>
-    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
-          type="text/css" media="screen"/>
-    <script type="text/javascript"
-            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="/theme/js/prism.js"></script>
     <script type="text/javascript"
             src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/theme/css/bootstrap.css" type="text/css"/>
-    <!--<link rel="stylesheet" href="/theme/css/normalize.css"/>-->
+    <link rel="stylesheet" href="/theme/css/prism.css"/>
     <link rel="stylesheet" href="/theme/css/style.css"/>
-
-    <link href="/theme/css/pygments/github.css"
-          rel="stylesheet">
-
-
-
     <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
           title="Andy's Blog ATOM Feed"/>
-
-
-
 
 </head>
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
+<nav class="main-nav"><a href="/">首页</a> <a href="/archives.html">归档</a><a href="/about.html">About</a><a
+        href="/feeds/all.atom.xml">订阅</a></nav>
 
-<div class="navbar-default "
-     role="navigation">
-    <div class="post-container" style="background: rgba(0,0,0,0); border: 0px;border-radius: 0px;box-shadow: none">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#navbar-top-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="/" class="navbar-brand">
-Andy's Blog            </a>
-            <a class="navbar-brand" href="/">Posts</a></li>
-            <a class="navbar-brand" href="/archives.html">Archives</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar-top-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/categories.html"><i class="fa fa-th-list"></i><span
-                        class="icon-label">Categories</span></a></li>
-                <li><a href="/about.html"><i class="fa fa-th-list"></i><span class="icon-label">About</span></a></li>
-                <li><a href="/feeds/all.atom.xml"><i class="fa fa-th-list"></i><span class="icon-label">RSS</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- Banner -->
-<!-- End Banner -->
-<div class="separator"></div>
-<div class="post-container">
-    <div class="post-content">
-        <div class="post-header">
+<div id="wrapper">
+    <div class="post">
+        <div class="header">
             <h1>All Categories for Andy's Blog</h1>
         </div>
-        <div class="archives">
+        <div class="list-category">
             <h2>digest(3)</h2>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2018-02-03T00:00:00+08:00">2018.02.03</time></span>
-                    <a href="/posts/2018/02/03/a-job.html">笑话一则</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-12-07T00:00:00+08:00">2017.12.07</time></span>
-                    <a href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">金缕曲词二首(清顾贞观)</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-11-27T00:00:00+08:00">2017.11.27</time></span>
-                    <a href="/posts/2017/11/27/life-is-one-man-fight.html">一个人的战争</a></p>
-            </ul>
+            <p>
+            <span class="dates"><time
+                    datetime="2018-02-03T00:00:00+08:00">2018.02.03</time></span>
+                <a href="/posts/2018/02/03/a-job.html">笑话一则</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-12-07T00:00:00+08:00">2017.12.07</time></span>
+                <a href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html">金缕曲词二首(清顾贞观)</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-11-27T00:00:00+08:00">2017.11.27</time></span>
+                <a href="/posts/2017/11/27/life-is-one-man-fight.html">一个人的战争</a>
+            </p>
             <h2>ielts(7)</h2>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-11-26T00:00:00+08:00">2017.11.26</time></span>
-                    <a href="/posts/2017/11/26/useful-set-phrases.html">Useful Set Phrases</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-03-26T00:00:00+08:00">2016.03.26</time></span>
-                    <a href="/posts/2016/03/26/notes-of-grammar-in-use.html">Grammar in Use 笔记</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2014-12-30T00:00:00+08:00">2014.12.30</time></span>
-                    <a href="/posts/2014/12/30/improve-safety-on-the-road.html">Improve Safety On The Road</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2014-12-22T00:00:00+08:00">2014.12.22</time></span>
-                    <a href="/posts/2014/12/22/use-animals-for-humans.html">Use Animals For Humans</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2014-12-16T00:00:00+08:00">2014.12.16</time></span>
-                    <a href="/posts/2014/12/16/gender-balance.html">Forcing the Employers to Hire the Same Number of Men and Women</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2014-11-24T00:00:00+08:00">2014.11.24</time></span>
-                    <a href="/posts/2014/11/24/distance-learning-vs-school-learning.html">Distance Learning vs School Learing</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2014-11-12T00:00:00+08:00">2014.11.12</time></span>
-                    <a href="/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html">What Should Be the Main Function Of A University</a></p>
-            </ul>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-11-26T00:00:00+08:00">2017.11.26</time></span>
+                <a href="/posts/2017/11/26/useful-set-phrases.html">Useful Set Phrases</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-03-26T00:00:00+08:00">2016.03.26</time></span>
+                <a href="/posts/2016/03/26/notes-of-grammar-in-use.html">Grammar in Use 笔记</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2014-12-30T00:00:00+08:00">2014.12.30</time></span>
+                <a href="/posts/2014/12/30/improve-safety-on-the-road.html">Improve Safety On The Road</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2014-12-22T00:00:00+08:00">2014.12.22</time></span>
+                <a href="/posts/2014/12/22/use-animals-for-humans.html">Use Animals For Humans</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2014-12-16T00:00:00+08:00">2014.12.16</time></span>
+                <a href="/posts/2014/12/16/gender-balance.html">Forcing the Employers to Hire the Same Number of Men and Women</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2014-11-24T00:00:00+08:00">2014.11.24</time></span>
+                <a href="/posts/2014/11/24/distance-learning-vs-school-learning.html">Distance Learning vs School Learing</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2014-11-12T00:00:00+08:00">2014.11.12</time></span>
+                <a href="/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html">What Should Be the Main Function Of A University</a>
+            </p>
             <h2>life(1)</h2>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2018-02-04T00:00:00+08:00">2018.02.04</time></span>
-                    <a href="/posts/2018/02/04/colorful-clouds-chasing-the-moon.html">《彩云追月》</a></p>
-            </ul>
+            <p>
+            <span class="dates"><time
+                    datetime="2018-02-04T00:00:00+08:00">2018.02.04</time></span>
+                <a href="/posts/2018/02/04/colorful-clouds-chasing-the-moon.html">《彩云追月》</a>
+            </p>
             <h2>machinelearning(5)</h2>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-03-30T00:00:00+08:00">2017.03.30</time></span>
-                    <a href="/posts/2017/03/30/read-mat-files-in-python.html">Read .mat Files in Python</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-02-20T00:00:00+08:00">2017.02.20</time></span>
-                    <a href="/posts/2017/02/20/review-of-probability.html">《概率论》复习笔记</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-03-01T00:00:00+08:00">2016.03.01</time></span>
-                    <a href="/posts/2016/03/01/summary-concepts-of-deep-learning.html">Summary Concepts of Deep Learning</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2015-12-24T00:00:00+08:00">2015.12.24</time></span>
-                    <a href="/posts/2015/12/24/plot-sigmoid-in-matlab.html">Plot Sigmoid in Matlab</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2015-12-24T00:00:00+08:00">2015.12.24</time></span>
-                    <a href="/posts/2015/12/24/where-does-sigmoid-come-from.html">Where does sigmoid come from</a></p>
-            </ul>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-03-30T00:00:00+08:00">2017.03.30</time></span>
+                <a href="/posts/2017/03/30/read-mat-files-in-python.html">Read .mat Files in Python</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-02-20T00:00:00+08:00">2017.02.20</time></span>
+                <a href="/posts/2017/02/20/review-of-probability.html">《概率论》复习笔记</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-03-01T00:00:00+08:00">2016.03.01</time></span>
+                <a href="/posts/2016/03/01/summary-concepts-of-deep-learning.html">Summary Concepts of Deep Learning</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2015-12-24T00:00:00+08:00">2015.12.24</time></span>
+                <a href="/posts/2015/12/24/plot-sigmoid-in-matlab.html">Plot Sigmoid in Matlab</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2015-12-24T00:00:00+08:00">2015.12.24</time></span>
+                <a href="/posts/2015/12/24/where-does-sigmoid-come-from.html">Where does sigmoid come from</a>
+            </p>
             <h2>posts(9)</h2>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-09-20T00:00:00+08:00">2017.09.20</time></span>
-                    <a href="/posts/2017/09/20/my-first-marathon.html">第一次跑马</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-05-10T00:00:00+08:00">2017.05.10</time></span>
-                    <a href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html">BFS遍历到图的指定层的一种方法</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-03-19T00:00:00+08:00">2017.03.19</time></span>
-                    <a href="/posts/2017/03/19/see-you-ten-years-later.html">今朝一别，或是流水十年</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-10-20T00:00:00+08:00">2016.10.20</time></span>
-                    <a href="/posts/2016/10/20/notes-for-leetcode.md.html">Notes for Leetcode</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-04-20T00:00:00+08:00">2016.04.20</time></span>
-                    <a href="/posts/2016/04/20/shang-pin-jiao-zi.html">上品饺子</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-02-26T00:00:00+08:00">2016.02.26</time></span>
-                    <a href="/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html">HHKB 设置与快捷键</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2015-04-13T00:00:00+08:00">2015.04.13</time></span>
-                    <a href="/posts/2015/04/13/my-experience-of-losing-weight.html">我是怎么减掉了30斤</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2014-10-31T00:00:00+08:00">2014.10.31</time></span>
-                    <a href="/posts/2014/10/31/the-catcher-in-the-rye.html">The Catcher in the Rye</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2014-10-22T00:00:00+08:00">2014.10.22</time></span>
-                    <a href="/posts/2014/10/22/big-sarcosaurus.html">Big Sarcosaurus</a></p>
-            </ul>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-09-20T00:00:00+08:00">2017.09.20</time></span>
+                <a href="/posts/2017/09/20/my-first-marathon.html">第一次跑马</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-05-10T00:00:00+08:00">2017.05.10</time></span>
+                <a href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html">BFS遍历到图的指定层的一种方法</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-03-19T00:00:00+08:00">2017.03.19</time></span>
+                <a href="/posts/2017/03/19/see-you-ten-years-later.html">今朝一别，或是流水十年</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-10-20T00:00:00+08:00">2016.10.20</time></span>
+                <a href="/posts/2016/10/20/notes-for-leetcode.md.html">Notes for Leetcode</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-04-20T00:00:00+08:00">2016.04.20</time></span>
+                <a href="/posts/2016/04/20/shang-pin-jiao-zi.html">上品饺子</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-02-26T00:00:00+08:00">2016.02.26</time></span>
+                <a href="/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html">HHKB 设置与快捷键</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2015-04-13T00:00:00+08:00">2015.04.13</time></span>
+                <a href="/posts/2015/04/13/my-experience-of-losing-weight.html">我是怎么减掉了30斤</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2014-10-31T00:00:00+08:00">2014.10.31</time></span>
+                <a href="/posts/2014/10/31/the-catcher-in-the-rye.html">The Catcher in the Rye</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2014-10-22T00:00:00+08:00">2014.10.22</time></span>
+                <a href="/posts/2014/10/22/big-sarcosaurus.html">Big Sarcosaurus</a>
+            </p>
             <h2>sfv(5)</h2>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-06-26T00:00:00+08:00">2017.06.26</time></span>
-                    <a href="/posts/2017/06/26/new-to-auckland.html">Auckland 小记</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-05-24T00:00:00+08:00">2017.05.24</time></span>
-                    <a href="/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html">第一次去NZ必备物品清单</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-11-07T00:00:00+08:00">2016.11.07</time></span>
-                    <a href="/posts/2016/11/07/eoi-documents.html">出生公正和无犯罪记录证明公正</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-11-07T00:00:00+08:00">2016.11.07</time></span>
-                    <a href="/posts/2016/11/07/sfv-documents.html">SFV 材料准备</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-11-06T00:00:00+08:00">2016.11.06</time></span>
-                    <a href="/posts/2016/11/06/succeed-to-get-sfv.html">SFV Got</a></p>
-            </ul>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-06-26T00:00:00+08:00">2017.06.26</time></span>
+                <a href="/posts/2017/06/26/new-to-auckland.html">Auckland 小记</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-05-24T00:00:00+08:00">2017.05.24</time></span>
+                <a href="/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html">第一次去NZ必备物品清单</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-11-07T00:00:00+08:00">2016.11.07</time></span>
+                <a href="/posts/2016/11/07/eoi-documents.html">出生公正和无犯罪记录证明公正</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-11-07T00:00:00+08:00">2016.11.07</time></span>
+                <a href="/posts/2016/11/07/sfv-documents.html">SFV 材料准备</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-11-06T00:00:00+08:00">2016.11.06</time></span>
+                <a href="/posts/2016/11/06/succeed-to-get-sfv.html">SFV Got</a>
+            </p>
             <h2>summery(2)</h2>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2018-01-01T00:00:00+08:00">2018.01.01</time></span>
-                    <a href="/posts/2018/01/01/2017-summery.html">2017 Full of Changes</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-02-23T00:00:00+08:00">2017.02.23</time></span>
-                    <a href="/posts/2017/02/23/2016-summery.html">2016 Full of Serendipities</a></p>
-            </ul>
+            <p>
+            <span class="dates"><time
+                    datetime="2018-01-01T00:00:00+08:00">2018.01.01</time></span>
+                <a href="/posts/2018/01/01/2017-summery.html">2017 Full of Changes</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-02-23T00:00:00+08:00">2017.02.23</time></span>
+                <a href="/posts/2017/02/23/2016-summery.html">2016 Full of Serendipities</a>
+            </p>
             <h2>tools(9)</h2>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-12-06T00:00:00+08:00">2017.12.06</time></span>
-                    <a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">Produce 1000 Unique Four Digit Numbers</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-06-04T00:00:00+08:00">2017.06.04</time></span>
-                    <a href="/posts/2017/06/04/git-push-to-two-repositories.html">Git Push to Two Repositories at the Same Time</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-03-19T00:00:00+08:00">2017.03.19</time></span>
-                    <a href="/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html">Enable Pelican to Render Markdown Tables</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2017-03-17T00:00:00+08:00">2017.03.17</time></span>
-                    <a href="/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">Rename a Tensor or Operation in Tensorflow</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-10-11T00:00:00+08:00">2016.10.11</time></span>
-                    <a href="/posts/2016/10/11/my-bashrc-backup.html">My Bashrc Backup</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-07-26T00:00:00+08:00">2016.07.26</time></span>
-                    <a href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">JVM Monitor Tool---jvisualvm</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2016-03-11T00:00:00+08:00">2016.03.11</time></span>
-                    <a href="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">让VIM记录文件上次编辑的位置</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2015-11-03T00:00:00+08:00">2015.11.03</time></span>
-                    <a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></p>
-            </ul>
-            <ul>
-                <p><span class="categories-timestamp"><time datetime="2015-05-20T00:00:00+08:00">2015.05.20</time></span>
-                    <a href="/posts/2015/05/20/iterm2-clone-session.html">Iterm2 Clone Session</a></p>
-            </ul>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-12-06T00:00:00+08:00">2017.12.06</time></span>
+                <a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">Produce 1000 Unique Four Digit Numbers</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-06-04T00:00:00+08:00">2017.06.04</time></span>
+                <a href="/posts/2017/06/04/git-push-to-two-repositories.html">Git Push to Two Repositories at the Same Time</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-03-19T00:00:00+08:00">2017.03.19</time></span>
+                <a href="/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html">Enable Pelican to Render Markdown Tables</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2017-03-17T00:00:00+08:00">2017.03.17</time></span>
+                <a href="/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html">Rename a Tensor or Operation in Tensorflow</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-10-11T00:00:00+08:00">2016.10.11</time></span>
+                <a href="/posts/2016/10/11/my-bashrc-backup.html">My Bashrc Backup</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-07-26T00:00:00+08:00">2016.07.26</time></span>
+                <a href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">JVM Monitor Tool---jvisualvm</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2016-03-11T00:00:00+08:00">2016.03.11</time></span>
+                <a href="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">让VIM记录文件上次编辑的位置</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2015-11-03T00:00:00+08:00">2015.11.03</time></span>
+                <a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a>
+            </p>
+            <p>
+            <span class="dates"><time
+                    datetime="2015-05-20T00:00:00+08:00">2015.05.20</time></span>
+                <a href="/posts/2015/05/20/iterm2-clone-session.html">Iterm2 Clone Session</a>
+            </p>
         </div>
-
-        </section>
     </div>
 </div>
-<div class="copyright">
-    &copy; 2018 andy
-    &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-    <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-    <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>,
-    Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-    <!--<div style='margin:0 auto;width:40%;height:40%;'><img src='/static/images/coding.svg'/>-->
+<div id="wrapper">
+    <div class="footer">
+        &copy; 2018 andy
+        &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    </div>
 </div>
-
 
 
 <script src="/theme/js/theme.js"></script>
