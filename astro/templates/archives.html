@@ -2,13 +2,13 @@
 {% block title %}Archives - {{ SITENAME }}{% endblock %}
 {% block content %}
 {% if articles %}
-{% set arch_date = articles[0].date.strftime('%Y') %}
+
 <div id="wrapper">
     {%block header%}
     <div class="post">
         <header>
             <h1>归档</h1>
-            <h2 class="headline">{{arch_date}}</h2>
+            <h2 class="headline">From {{articles[-1].date.strftime('%Y')}}</h2>
         </header>
     </div>
     {%endblock%}
