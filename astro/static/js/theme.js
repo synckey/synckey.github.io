@@ -60,7 +60,7 @@ ias.extension(new IASTriggerExtension({
     text: '<a class="load-more J_listLoadMore" href="javascript:;" id="info_flows_next_link">点击加载更多</a>',
 }));
 
-ias.extension(new IASNoneLeftExtension({text: "内容已经全部加载完毕"}));
+ias.extension(new IASNoneLeftExtension({text: ""}));
 
 ias.on('rendered', function () {
     //lazyload();
