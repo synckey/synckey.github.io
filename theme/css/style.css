@@ -188,7 +188,7 @@ nav.main-nav a.cta {
 #wrapper, .wrapper {
     max-width: 800px;
     margin: 0 auto;
-    padding: 60px 40px 100px
+    padding: 30px 40px 100px;
 }
 
 #wrapper.home, .wrapper.home {
@@ -504,7 +504,7 @@ img {
     text-align: center;
 }
 
-.post {
+.post, .profile {
     margin: 80px 0 0
 }
 
@@ -549,7 +549,8 @@ img {
     font-size: 13px;
     font-weight: 500;
     margin-top: 20px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 #post-nav span {
@@ -702,6 +703,10 @@ h2.month {
 
     .post h2 {
         font-size: 20px
+    }
+
+    .mob-hidden {
+        display: none;
     }
 }
 
@@ -1001,4 +1006,8 @@ pre[class*="language-"] {
     text-shadow: none;
     line-height: 1.2;
     font-size: 90%;
+}
+
+.footnote-backref {
+    display: none;
 }
