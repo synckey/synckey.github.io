@@ -1,5 +1,6 @@
-{% extends "article" %}
+{% extends "article.html" %}
 {% block canonical_rel %}<link rel="canonical" href="/" xmlns="http://www.w3.org/1999/html">{% endblock %}
+aaaaaaaaaa
 {% block content %}
 <div id="wrapper">
     <div class="post">
@@ -7,7 +8,7 @@
             <h1>{{ article.title }}</h1>
             <h2 class="headline">{{ article.date|strftime('%Y-%m-%d') }} {{article.place}} </h2>
         </header>
-
+        this is is
     </div>
 </div>
 <!--
