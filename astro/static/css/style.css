@@ -95,7 +95,7 @@ body, html {
 }
 
 body {
-    font: 16px/1 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+    font: 17px/1 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     color: #666;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility
@@ -538,7 +538,7 @@ img {
 }
 
 #post-nav {
-    font-size: 13px;
+    font-size: 85%;
     font-weight: 500;
     margin-top: 20px;
     text-align: center;
@@ -805,29 +805,6 @@ a.symbol:hover {
     animation-name: fadeInDown
 }
 
-@font-face {
-    font-family: 'Mono Social Icons Font';
-    font-weight: 400;
-    font-style: normal;
-    src: url(../fonts/MonoSocialIconsFont-1.10.eot);
-    src: url(../fonts/MonoSocialIconsFont-1.10.eot?#iefix) format('embedded-opentype'), url(../fonts/MonoSocialIconsFont-1.10.woff) format('woff'), url(../fonts/MonoSocialIconsFont-1.10.ttf) format('truetype'), url(../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont) format('svg');
-    src: url(../fonts/MonoSocialIconsFont-1.10.ttf) format('truetype')
-}
-
-.symbol, a.symbol:before {
-    font-family: 'Mono Social Icons Font';
-    -webkit-text-rendering: optimizeLegibility;
-    -moz-text-rendering: optimizeLegibility;
-    -ms-text-rendering: optimizeLegibility;
-    -o-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -ms-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased
-}
-
 .comment_change, .comment_create, .comment_num {
     font-size: 15px;
     font-weight: 700;
@@ -997,9 +974,10 @@ code[class*="language-"],
 pre[class*="language-"] {
     text-shadow: none;
     line-height: 1.2;
-    font-size: 90%;
+    font-size: 95%;
 }
 
 .footnote-backref {
     display: none;
 }
+
