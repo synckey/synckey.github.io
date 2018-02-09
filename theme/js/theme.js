@@ -14,7 +14,6 @@ MathJax.Hub.Config({
 
 });
 
-/*
 $(document).ready(function () {
     var fancybox_settings = {
         padding: 0,
@@ -23,14 +22,18 @@ $(document).ready(function () {
         closeBtn: true,
         fitToView: true,
         autoSize: true,
+        openEffect	: 'none',
+        closeEffect	: 'none',
+        prevEffect	: 'none',
+        nextEffect	: 'none',
         helpers: {
             thumbs: {
-                width: 80,
-                height: 80
+                width	: 50,
+                height	: 50
             }
         },
     }
-    $('.post-container').each(function (i) {
+    $('#wrapper').each(function (i) {
         $(this).find('img').each(function () {
             if ($(this).parent().hasClass('data-fancybox')) return;
             var alt = this.alt;
@@ -40,7 +43,6 @@ $(document).ready(function () {
     $('.fancybox-thumb').fancybox(fancybox_settings);
 
 });
-*/
 /*
 异步分页
 https://infiniteajaxscroll.com/docs/getting-started.html

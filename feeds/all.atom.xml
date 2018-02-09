@@ -475,7 +475,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;p&gt;Then if you want to push to both of them, just rum &lt;code&gt;git push&lt;/code&gt; as normal.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://blog.csdn.net/fancivez/article/details/51544354"&gt;git 添加多个远程库(remote)&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="git"></category></entry><entry><title>第一次去NZ必备物品清单</title><link href="http://synckey.name/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html" rel="alternate"></link><published>2017-05-24T00:00:00+08:00</published><updated>2017-05-24T00:00:00+08:00</updated><author><name>Hollie</name></author><id>tag:synckey.name,2017-05-24:/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html</id><summary type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;文件&lt;/th&gt;
@@ -558,7 +558,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;2. 资金&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;资金&lt;/th&gt;
@@ -572,7 +572,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align="left"&gt;银联卡 …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;h4&gt;1. 文件&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;文件&lt;/th&gt;
@@ -655,7 +655,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;2. 资金&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;资金&lt;/th&gt;
@@ -678,7 +678,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;3. 服装&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;服装&lt;/th&gt;
@@ -717,7 +717,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;4.日用品&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;日用品&lt;/th&gt;
@@ -760,7 +760,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;5. 电器&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;电器&lt;/th&gt;
@@ -803,7 +803,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4&gt;6.药物&lt;/h4&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;药物&lt;/th&gt;
@@ -898,7 +898,7 @@ mat = scipy.io.loadmat('file.mat')
 |Content Cell  | Content Cell|
 |Content Cell  | Content Cell|
 &lt;/code&gt;&lt;/pre&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;First Header&lt;/th&gt;
@@ -1210,7 +1210,7 @@ $$
 &lt;h2&gt;收到签证&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt; Date&lt;/strong&gt;: 2016.12.30&lt;/p&gt;
 &lt;h3&gt;费用&lt;/h3&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table-striped table-hover table"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th align="left"&gt;Item&lt;/th&gt;
