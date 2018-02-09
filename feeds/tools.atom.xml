@@ -100,7 +100,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 |Content Cell  | Content Cell|
 |Content Cell  | Content Cell|
 &lt;/code&gt;&lt;/pre&gt;
-&lt;table class="table-striped table-hover table"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;First Header&lt;/th&gt;
@@ -279,4 +279,4 @@ ControlPersist yes
 &lt;p&gt;退出iterm2，重新登录即可。&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/"&gt;Iterm2 auto login 自动登录脚本&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://laughingchs.iteye.com/blog/1317703"&gt;linux clone session&lt;/a&gt;&lt;/p&gt;</content><category term="iterm2"></category><category term="mac"></category><category term="sesssion"></category></entry></feed>
+&lt;p&gt;&lt;a href="http://laughingchs.iteye.com/blog/1317703"&gt;linux clone session&lt;/a&gt;&lt;/p&gt;</content><category term="iterm2"></category><category term="mac"></category><category term="session"></category></entry></feed>
