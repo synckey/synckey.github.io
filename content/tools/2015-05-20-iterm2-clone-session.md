@@ -1,7 +1,7 @@
 Title: Iterm2 Clone Session
 Date: 2015-05-20
 Slug: iterm2-clone-session
-Tags: iterm2,mac,sesssion
+Tags: iterm2,mac,session
 Author: Andy
 Place: Beijing
 

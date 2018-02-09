@@ -89,7 +89,6 @@ BOOTSTRAPIFY = {
     'img': []
 }
 
-
 FAVICON = '/favicon.ico'
 FAVICON_IE = FAVICON
 TOUCHICON = FAVICON

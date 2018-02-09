@@ -18,5 +18,5 @@ work interesting and challenging. I know She can make it and grow up to a good b
 
 It is not good recently,but I really appreciate the time talking with Wen and the Big Sacrosaurus she brought for me .
 <div align="center">
-    <img src="/static/images/bigsarcosaurus.jpg" alt="Big Sarcosaurus" class="carousel-inner img-responsive img-rounded" style="width:40%;height:40%;"/>
+    <img src="/static/images/bigsarcosaurus.jpg" alt="Big Sarcosaurus"  style="width:60%"/>
 </div>
