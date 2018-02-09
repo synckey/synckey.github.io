@@ -45,8 +45,8 @@ blockquote:after, blockquote:before, q:after, q:before {
     display: none
 }
 
-/* google material icons
- *
+/**
+ * https://material.io/icons/
  */
 @font-face {
     font-family: 'Material Icons';
