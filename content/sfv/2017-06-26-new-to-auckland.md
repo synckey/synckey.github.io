@@ -37,11 +37,11 @@ Place: Auckland
 
 总得来说，虽然新西兰的牛羊肉很好吃，但是物价实在是太高了。
 <div class="figure">
-    <img src="/static/images/aukland_domain_1.jpg" alt="auk_domain_1" class="img-responsive carousel-inner img-rounded"/>
+    <img src="/static/images/aukland_domain_1.jpg" alt="auk_domain_1" />
     <div class="caption">Auckland Domain</div>
 </div>
 <div class="figure">
-    <img src="/static/images/aukland_domain_2.jpg" alt="auk_domain_2" class="img-responsive carousel-inner img-rounded"/>
+    <img src="/static/images/aukland_domain_2.jpg" alt="auk_domain_2" />
     <div class="caption">Auckland Domain</div>
 </div>
 <div class="figure">

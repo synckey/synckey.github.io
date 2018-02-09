@@ -28,12 +28,12 @@ $(document).ready(function () {
         nextEffect	: 'none',
         helpers: {
             thumbs: {
-                width	: 50,
-                height	: 50
+                width	: 30,
+                height	: 30
             }
         },
     }
-    $('#wrapper').each(function (i) {
+    $('.post').each(function (i) {
         $(this).find('img').each(function () {
             if ($(this).parent().hasClass('data-fancybox')) return;
             var alt = this.alt;
