@@ -14,7 +14,6 @@ MathJax.Hub.Config({
 
 });
 
-/*
 $(document).ready(function () {
     var fancybox_settings = {
         padding: 0,
@@ -40,7 +39,6 @@ $(document).ready(function () {
     $('.fancybox-thumb').fancybox(fancybox_settings);
 
 });
-*/
 /*
 异步分页
 https://infiniteajaxscroll.com/docs/getting-started.html
