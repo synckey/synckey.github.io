@@ -221,7 +221,7 @@ ul, ol {
 li {
     list-style-position: inside;
     line-height: 1.5;
-    list-style-type: circle;
+    /*list-style-type: circle;*/
 }
 
 #post-body, .tip, p {
