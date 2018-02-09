@@ -1,10 +1,9 @@
 <nav id="post-nav">
     {% if article.next_article %}
     <span class="prev">
-        <a href="/{{ article.next_article.url }}">
-            <span class="arrow">←</span> Previous</a></span>
+        <a href="/{{ article.next_article.url }}" title="{{article.next_article.title}}">Previous</a></span>
     {%endif%}
     {% if article.prev_article %}
-    <span class="next"><a href="/{{ article.prev_article.url}}">Next <span class="arrow">→</span></a></span>
+    <span class="next"><a href="/{{ article.prev_article.url}}" title="{{article.prev_article.title}}">Next</a></span>
     {%endif%}
 </nav>
