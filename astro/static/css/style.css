@@ -45,54 +45,46 @@ blockquote:after, blockquote:before, q:after, q:before {
     display: none
 }
 
+/* google material icons
+ *
+ */
 @font-face {
-    font-family: icons;
-    font-weight: 400;
+    font-family: 'Material Icons';
     font-style: normal;
-    src: url(../fonts/icons.eot);
-    src: url(../fonts/icons.eot#iefix) format('embedded-opentype'), url(../fonts/icons.woff) format('woff'), url(../fonts/icons.ttf) format('truetype'), url(../fonts/icons.svg#icons) format('svg')
+    font-weight: 400;
+    src: url(../fonts/material-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/material-icons/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../fonts/material-icons/MaterialIcons-Regular.woff) format('woff'),
+    url(../fonts/material-icons/MaterialIcons-Regular.ttf) format('truetype');
 }
 
-[class*=' icon-']:before, [class^=icon-]:before {
-    font-family: icons;
-    font-weight: 400;
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
     font-style: normal;
-    font-variant: normal;
-    line-height: 1em;
+    font-size: 24px;  /* Preferred icon size */
     display: inline-block;
-    text-align: center;
-    text-decoration: inherit;
+    line-height: 1;
     text-transform: none;
-    speak: none
-}
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
 
-.icon-facebook:before {
-    content: '\e802'
-}
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
 
-.icon-facebook-squared:before {
-    content: '\e800'
-}
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
 
-.icon-twitter:before {
-    content: '\e801'
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
-
-.icon-twitter-1:before {
-    content: '\e804'
-}
-
-.icon-facebook-circled:before {
-    content: '\e805'
-}
-
-.icon-twitter-circled:before {
-    content: '\e806'
-}
-
-.icon-facebook-rect:before {
-    content: '\e803'
-}
+/*end of google material icons*/
 
 .post h1, .post-body ul, .tip, blockquote, h3, h4, h5, ol, p, pre {
     margin-bottom: 20px
