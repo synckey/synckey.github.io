@@ -2,7 +2,7 @@
     {% for article in (articles_page.object_list if articles_page else articles) %}
     <div class="excerpt">
         <li><a href="/{{ article.url }}">
-            <aside class="dates">{{ article.date|strftime('%Y.%m.%d') }}</aside>
+            <aside class="dates">{{ article.date|strftime('%b %d %Y') }}</aside>
         </a><a href="{{ article.url }}">{{ article.title }}{% if article.subtitle %} - {{
             article.subtitle
             }}{% endif %}</a></li>
