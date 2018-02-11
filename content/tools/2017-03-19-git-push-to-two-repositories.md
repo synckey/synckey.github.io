@@ -7,14 +7,14 @@ Place: Beijing
 
 Suppose You have 2 repositories:
 
-```language-shell
+```language-bash
 https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
 ```
 
 You want to push to them within one command.
 
-```language-shell
+```language-bash
 # if your project is cloned from this repository, 
 # you can simply ignore this first command
 git remote add origin https://git.coding.net/synckey/synckey.git
