@@ -308,7 +308,7 @@ System.out.println(set);
 和《潘吉Jenny告诉你》实在太赞，一边运动一边练口语。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="Useful Apps" class="carousel-inner img-responsive img-rounded" src="/static/images/2015_04_13_softwares.jpg"/&gt;
+&lt;img alt="Useful Apps" class="carousel-inner img-rounded img-responsive" src="/static/images/2015_04_13_softwares.jpg"/&gt;
 &lt;div class="caption"&gt;Useful Apps&lt;/div&gt;
 &lt;/div&gt;
 &lt;h2&gt;进行中&lt;/h2&gt;
@@ -348,7 +348,7 @@ a&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3&gt;有图有真相&lt;/h3&gt;
 &lt;div class="figure"&gt;
-&lt;img alt="体重对比" class="carousel-inner img-responsive img-rounded" src="/static/images/2015_04_13_comparasion.jpg"/&gt;
+&lt;img alt="体重对比" class="carousel-inner img-rounded img-responsive" src="/static/images/2015_04_13_comparasion.jpg"/&gt;
 &lt;/div&gt;
 &lt;script&gt;
 $(function () {

@@ -59,18 +59,18 @@ public class GenNumbers {
     }
 }
 &lt;/code&gt;&lt;/pre&gt;</content><category term="java"></category><category term="algorithm"></category></entry><entry><title>Git Push to Two Repositories at the Same Time</title><link href="http://synckey.name/posts/2017/06/04/git-push-to-two-repositories.html" rel="alternate"></link><published>2017-06-04T00:00:00+08:00</published><updated>2017-06-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-04:/posts/2017/06/04/git-push-to-two-repositories.html</id><summary type="html">&lt;p&gt;Suppose You have 2 repositories:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-shell"&gt;https://github.com/synckey/synckey.github.io.git
+&lt;pre&gt;&lt;code class="language-bash"&gt;https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You want to push to them within one command.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-shell"&gt;# if your project is cloned from this repository, 
+&lt;pre&gt;&lt;code class="language-bash"&gt;# if your project is cloned from this repository, 
 # you can simply ignore this first command
 git remote add origin https://git …&lt;/code&gt;&lt;/pre&gt;</summary><content type="html">&lt;p&gt;Suppose You have 2 repositories:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-shell"&gt;https://github.com/synckey/synckey.github.io.git
+&lt;pre&gt;&lt;code class="language-bash"&gt;https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You want to push to them within one command.&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-shell"&gt;# if your project is cloned from this repository, 
+&lt;pre&gt;&lt;code class="language-bash"&gt;# if your project is cloned from this repository, 
 # you can simply ignore this first command
 git remote add origin https://git.coding.net/synckey/synckey.git
 git remote set-url --add https://git.coding.net/synckey/synckey.git
@@ -100,7 +100,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 |Content Cell  | Content Cell|
 |Content Cell  | Content Cell|
 &lt;/code&gt;&lt;/pre&gt;
-&lt;table class="table table-hover table-striped"&gt;
+&lt;table class="table-striped table table-hover"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;First Header&lt;/th&gt;

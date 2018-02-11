@@ -45,8 +45,8 @@ blockquote:after, blockquote:before, q:after, q:before {
     display: none
 }
 
-/* google material icons
- *
+/**
+ * https://material.io/icons/
  */
 @font-face {
     font-family: 'Material Icons';
@@ -64,7 +64,7 @@ blockquote:after, blockquote:before, q:after, q:before {
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px; /* Preferred icon size */
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -84,6 +84,7 @@ blockquote:after, blockquote:before, q:after, q:before {
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
+
 /*end of google material icons*/
 
 .post h1, .post-body ul, .tip, blockquote, h3, h4, h5, ol, p, pre {
@@ -343,9 +344,12 @@ p.small {
 }
 
 blockquote {
-    padding-left: 20px;
-    border-left: 3px solid #eee;
+    padding-left: 1em;
+    border-left: 0.25em solid #dfe2e5;
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, DFKai-SB, NSimSun, serif;
+}
+blockquote p{
+    line-height: 1.5;
 }
 
 .tip {
@@ -372,6 +376,25 @@ hr {
     margin: 40px auto;
     border: none;
     background: #eee
+}
+
+span.code {
+    font-family: Menlo, Monaco, Courier;
+    font-size: 14px;
+    background-color: #eee
+}
+
+pre {
+    font-family: 'Source Code Pro', Menlo, monospace;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5em;
+    overflow: auto;
+    padding: 20px;
+    white-space: pre-wrap;
+    color: #d0d4d7;
+    border-radius: 3px;
+    background: #fdfdfd
 }
 
 table {
@@ -719,6 +742,19 @@ a.symbol:hover {
     color: #bcd4da
 }
 
+code {
+    font-family: PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', Monospace;
+    font-size: 100%;
+    padding: 0.1em 0.1em;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+
+}
+
+pre code {
+    padding: 0
+}
+
 .readmore {
     margin-top: 50px
 }
@@ -968,13 +1004,6 @@ sup {
 
 .list-content {
     margin-top: 35px;
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-    text-shadow: none;
-    line-height: 1.2;
-    font-size: 95%;
 }
 
 .footnote-backref {
