@@ -15,8 +15,8 @@
 &lt;div class="center-block"&gt;
 &lt;div&gt;
 &lt;audio controls="controls"&gt;
-&lt;source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"/&gt;
-&lt;/audio&gt;
+&lt;source src="/static/media/caiyunzuiyue.mp3" type="audio/mpeg"&gt;
+&lt;/source&gt;&lt;/audio&gt;
 &lt;/div&gt;
 &lt;div class="caption"&gt;《彩云追月》交响乐版&lt;/div&gt;
 &lt;/div&gt;

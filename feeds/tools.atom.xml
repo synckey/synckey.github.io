@@ -100,7 +100,7 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 |Content Cell  | Content Cell|
 |Content Cell  | Content Cell|
 &lt;/code&gt;&lt;/pre&gt;
-&lt;table class="table-striped table table-hover"&gt;
+&lt;table class="table table-hover table-striped"&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;First Header&lt;/th&gt;
