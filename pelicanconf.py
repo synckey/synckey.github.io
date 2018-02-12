@@ -27,13 +27,14 @@ MARKDOWN = {
         'markdown.extensions.tables': {},
         'markdown.extensions.def_list': {},
         'markdown.extensions.attr_list': {},
-        'markdown.extensions.footnotes': {},
+        # 'markdown.extensions.footnotes': {},
         'markdown.extensions.extra': {},
     },
 }
 
 # MD_EXTENSIONS = (['codehilite(css_class=github)', 'markdown.extensions.tables','extra'])
 # Blogroll
+
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
@@ -75,7 +76,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 PLUGIN_PATHS = ["plugins"]
 
 # PLUGINS = ["neighbors", "bootstrapify", "better_tables","render_math"]
-PLUGINS = ["neighbors", "bootstrapify", "better_tables", "sitemap"]
+PLUGINS = ["neighbors", "sitemap"]
 
 DEFAULT_WECHAT_PIC = "wechat_logo_300x300.jpg"
 ## for test
