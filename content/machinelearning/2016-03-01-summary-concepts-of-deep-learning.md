@@ -212,12 +212,8 @@ $$
 * nlp
 * 其他
 
-###参考
-[Deep Learning（深度学习）学习笔记整理系列](http://blog.csdn.net/zouxy09/article/details/8775518)
-
-[Deep Learning](http://www.deeplearningbook.org/)
-
-[Deep Learning Tutorial](http://ufldl.stanford.edu/tutorial/)
-
-[http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B](http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B)
+[^1]:[Deep Learning（深度学习）学习笔记整理系列](http://blog.csdn.net/zouxy09/article/details/8775518)
+[^2]:[Deep Learning](http://www.deeplearningbook.org/)
+[^3]:[Deep Learning Tutorial](http://ufldl.stanford.edu/tutorial/)
+[^4]:[http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B](http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B)
 

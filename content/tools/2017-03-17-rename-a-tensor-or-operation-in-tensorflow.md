@@ -24,5 +24,4 @@ with tf.name_scope("abc") as scope:
 
 This is how the TensorFlow libraries are structured, and it tends to give the best visualization in TensorBoard.
 
-#### References
-[How to rename a variable which respects the name scope?](https://stackoverflow.com/questions/34399588/how-to-rename-a-variable-which-respects-the-name-scope/34399966#34399966)
+[^1]:[How to rename a variable which respects the name scope?](https://stackoverflow.com/questions/34399588/how-to-rename-a-variable-which-respects-the-name-scope/34399966#34399966)

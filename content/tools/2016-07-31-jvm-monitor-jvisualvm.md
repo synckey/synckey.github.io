@@ -28,5 +28,4 @@ e18
 jstack 2633 |grep e18 -A 30
 ```
     
-###References
-[生产环境下JAVA进程高CPU占用故障排查](http://blog.chinaunix.net/uid-10449864-id-3463151.html)
+[^1]:[生产环境下JAVA进程高CPU占用故障排查](http://blog.chinaunix.net/uid-10449864-id-3463151.html)

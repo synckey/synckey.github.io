@@ -12,7 +12,5 @@ mat = scipy.io.loadmat('file.mat')
 ```
 Enjoy^_^
 
-####Reference
-
-[read-mat-files-in-python](http://stackoverflow.com/questions/874461/read-mat-files-in-python)
+[^1]:[read-mat-files-in-python](http://stackoverflow.com/questions/874461/read-mat-files-in-python)
 

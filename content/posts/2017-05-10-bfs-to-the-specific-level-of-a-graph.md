@@ -43,7 +43,6 @@ Note:
 
 这个问题还有一个简化版的问题[Word Ladder](https://leetcode.com/problems/word-ladder/#/description)，只要求出`beginWord`和`endWord`之间最短变换的路径长度。可以用上面的解法，或者直接DFS这个图，第一次遇到`endWord`时返回路径长度即可。
 
-###References
-[Share two similar Java solution that Accpted by OJ.](https://discuss.leetcode.com/topic/2857/share-two-similar-java-solution-that-accpted-by-oj/2)
+[^1]:[Share two similar Java solution that Accpted by OJ.](https://discuss.leetcode.com/topic/2857/share-two-similar-java-solution-that-accpted-by-oj/2)
 
 

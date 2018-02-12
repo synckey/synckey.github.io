@@ -23,8 +23,6 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 
 Then if you want to push to both of them, just rum `git push` as normal.
 
-###References
-
-[git 添加多个远程库(remote)](http://blog.csdn.net/fancivez/article/details/51544354)
+[^1]:[git 添加多个远程库(remote)](http://blog.csdn.net/fancivez/article/details/51544354)
 
 

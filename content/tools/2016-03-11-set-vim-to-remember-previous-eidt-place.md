@@ -20,6 +20,5 @@ syntax enable
 set nu
 ```
     
-###参考
-[让VIM记录文件上次编辑的位置](http://www.2cto.com/os/201311/255061.html)
+[^1]:[让VIM记录文件上次编辑的位置](http://www.2cto.com/os/201311/255061.html)
 

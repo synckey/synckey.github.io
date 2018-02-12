@@ -110,7 +110,5 @@ $$
 分布的定义，就自然而然的给出了逻辑回归函数。
 
 
-###References
-[Andrew Ng Machine Learning ](http://open.163.com/special/opencourse/machinelearning.html)
-
-[Michael I. Jordan The exponential family: Basics](http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf)
+[^1]:[Andrew Ng Machine Learning ](http://open.163.com/special/opencourse/machinelearning.html)
+[^2]:[Michael I. Jordan The exponential family: Basics](http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf)

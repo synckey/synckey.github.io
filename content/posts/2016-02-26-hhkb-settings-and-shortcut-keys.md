@@ -35,5 +35,4 @@ hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所�
   - Ctrl+l 类似 clear 命令效果
   - Ctrl+y 粘贴
   
-###References
-[码农神器HHKB Pro2入手与开箱](http://www.xiaozhou.net/got_hhkb_pro_2-2013-06-03.html)
+[^1]:[码农神器HHKB Pro2入手与开箱](http://www.xiaozhou.net/got_hhkb_pro_2-2013-06-03.html)
