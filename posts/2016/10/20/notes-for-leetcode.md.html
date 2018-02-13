@@ -105,6 +105,7 @@
         <h2>1.Binary Number Representation</h2>
 <pre><code class="language-java">x = 0b1111; // which is equals to `x = 15`; and is useful when use the number for masking.
 </code></pre>
+
 <h2>2.Rotate Function</h2>
 <h3>Original Question</h3>
 <p>原始问题链接：<a href="https://leetcode.com/problems/rotate-function/">Rotate Function</a>.</p>
@@ -121,6 +122,7 @@ F(1) = (0 * 6) + (1 * 4) + (2 * 3) + (3 * 2) = 0 + 4 + 6 + 6 = 16
 F(2) = (0 * 2) + (1 * 6) + (2 * 4) + (3 * 3) = 0 + 6 + 8 + 9 = 23
 F(3) = (0 * 3) + (1 * 2) + (2 * 6) + (3 * 4) = 0 + 2 + 12 + 12 = 26
 </code></pre>
+
 <p>So the maximum value of $F(0), F(1), F(2), F(3)$ is $F(3) = 26$.</p>
 <h3>思路(<a href="https://discuss.leetcode.com/topic/58616/java-solution-o-n-with-non-mathametical-explaination/8">来源</a>)</h3>
 <p>定义新的函数 $D(n)$为 $B_k[0]=A[n]$时$F(n)$ 的值，求 $F(n)$ 的最大值等价于求 $D(n)$ 的最大值，从而有：
@@ -147,6 +149,7 @@ $$
     return max;
 } 
 </code></pre>
+
 <h2>3. Pascal's Triangle(杨辉三角)</h2>
 <h3>问题</h3>
 <p>原始问题连接:<a href="https://leetcode.com/problems/pascals-triangle-ii/">Pascal's Triangle II</a>.</p>
@@ -180,10 +183,12 @@ public List&lt;Integer&gt; getRow(int rowIndex) {
     }
 }
 </code></pre>
+
 <h3>4.Convert Char to Numeric</h3>
 <pre><code class="language-java">Character.getNumericValue('5');
 int number = '5' - '0';
 </code></pre>
+
 <h3>5. 将一个数字二进制表示的第一个1后面的所有位都置为1，例如input 是<code>5</code>，二进制表示是<code>101</code>，希望得到<code>111</code>。</h3>
 <h3>6.素数(prime number)</h3>
 <h4>素数的定义</h4>
@@ -199,17 +204,30 @@ set.add(3);
 System.out.println(set);
 //:~output [1, 2, 3]
 </code></pre>
+
 <h3>8. Word Ladder II</h3>
 <p>太麻烦了，单独开一篇：<a href="/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html">BFS遍历到图的指定层的一种解法。</a></p>
 <h3>9. 中位数定义</h3>
 <p>如果有一组数据(假设其个数为n)，将其排序，如果n为奇数，则中间的那个数为中位数，如果n为偶数，则中间两个数的平均值为这组数据的中位数。</p>
 <h3>10. 计算平均值防止溢出</h3>
 <p>一般情况下我们想要计算两个int:a,b的平均值时，我们会使用$(a+b)/2$的方式，如果a,b为数组的下标，这么做一般没有问题。但是如果a,b的值很大，a + b &gt; Integer.MAX_VALUE时，这样做就会导致溢出，从而返回错误的结果。所以保守起见，可以使用$a+(a-b)/2$的方式来计算a,b的平均值，不会溢出哦。</p>
-<h3>References</h3>
-<p><a href="https://discuss.leetcode.com/topic/65028/java-clean-code-with-explanations-and-running-time-2-solutions">Solution to Convert a Number to Hexadecimal</a></p>
-<p><a href="https://leetcode.com/problems/rotate-function/">Rotate Function</a></p>
-<p><a href="https://discuss.leetcode.com/topic/58616/java-solution-o-n-with-non-mathametical-explaination/8">Java Solution O(n) with non mathametical explaination</a></p>
-<p><a href="https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0">素数</a></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://discuss.leetcode.com/topic/65028/java-clean-code-with-explanations-and-running-time-2-solutions">Solution to Convert a Number to Hexadecimal</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://leetcode.com/problems/rotate-function/">Rotate Function</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://discuss.leetcode.com/topic/58616/java-solution-o-n-with-non-mathametical-explaination/8">Java Solution O(n) with non mathametical explaination</a>&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0">素数</a>&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 <nav id="post-nav">
     <span class="prev">
         <a href="/posts/2016/11/06/succeed-to-get-sfv.html" title="SFV Got">Previous</a></span>
@@ -270,16 +288,14 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
+
 <div id="wrapper">
     <div class="footer">
         &copy; 2018 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>
-</div>
-
-
-<script src="/theme/js/theme.js"></script>
+</div><script src="/theme/js/theme.js"></script>
 <!-- Baidu Analytics -->
 <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -307,7 +323,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
-
 </div>
 </body>
 </html>

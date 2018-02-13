@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog - tools</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/tools.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-12-06T00:00:00+08:00</updated><entry><title>Produce 1000 Unique Four Digit Numbers</title><link href="http://synckey.name/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html" rel="alternate"></link><published>2017-12-06T00:00:00+08:00</published><updated>2017-12-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-06:/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html</id><summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br/&gt;
-Conditions:  &lt;br/&gt;
-1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br/&gt;
+&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br /&gt;
+Conditions:  &lt;br /&gt;
+1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br /&gt;
 2. No sequential numbers. 1234, 1856 are not acceptable.  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。&lt;/p&gt;
@@ -11,9 +11,9 @@ import java.util.List;
 
 /**
  * Created by …&lt;/code&gt;&lt;/pre&gt;</summary><content type="html">&lt;blockquote&gt;
-&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br/&gt;
-Conditions:  &lt;br/&gt;
-1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br/&gt;
+&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br /&gt;
+Conditions:  &lt;br /&gt;
+1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br /&gt;
 2. No sequential numbers. 1234, 1856 are not acceptable.  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。&lt;/p&gt;
@@ -62,6 +62,7 @@ public class GenNumbers {
 &lt;pre&gt;&lt;code class="language-bash"&gt;https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;You want to push to them within one command.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;# if your project is cloned from this repository, 
 # you can simply ignore this first command
@@ -69,21 +70,30 @@ git remote add origin https://git …&lt;/code&gt;&lt;/pre&gt;</summary><content
 &lt;pre&gt;&lt;code class="language-bash"&gt;https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;You want to push to them within one command.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;# if your project is cloned from this repository, 
 # you can simply ignore this first command
 git remote add origin https://git.coding.net/synckey/synckey.git
 git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Then if you want to push to both of them, just rum &lt;code&gt;git push&lt;/code&gt; as normal.&lt;/p&gt;
-&lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://blog.csdn.net/fancivez/article/details/51544354"&gt;git 添加多个远程库(remote)&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="git"></category></entry><entry><title>Enable Pelican to Render Markdown Tables</title><link href="http://synckey.name/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html</id><summary type="html">&lt;p&gt;Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="http://blog.csdn.net/fancivez/article/details/51544354"&gt;git 添加多个远程库(remote)&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="tools"></category><category term="git"></category></entry><entry><title>Enable Pelican to Render Markdown Tables</title><link href="http://synckey.name/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html</id><summary type="html">&lt;p&gt;Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-python"&gt;MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.tables':{},
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Then,you can use the following code to generate the table below:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-markdown"&gt;|First Header  | Second Header|
 |------------- | -------------|
@@ -94,13 +104,15 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Then,you can use the following code to generate the table below:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-markdown"&gt;|First Header  | Second Header|
 |------------- | -------------|
 |Content Cell  | Content Cell|
 |Content Cell  | Content Cell|
 &lt;/code&gt;&lt;/pre&gt;
-&lt;table class="table table-hover table-striped"&gt;
+
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;First Header&lt;/th&gt;
@@ -121,27 +133,41 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;p&gt;By default,if you use bootstrap, the table will not have borders, you can tackle this problem by adding the following codes  to the end of your html file.&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-javascript"&gt;&amp;lt;script&amp;gt;
    $(document).ready(function () {
-      $("table").attr("class","table table-condensed table-bordered");
+      $(&amp;quot;table&amp;quot;).attr(&amp;quot;class&amp;quot;,&amp;quot;table table-condensed table-bordered&amp;quot;);
    });
 &amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://pythonhosted.org/Markdown/extensions/tables.html"&gt;Markdown extensions&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican Document&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="pelican"></category><category term="blog"></category></entry><entry><title>Rename a Tensor or Operation in Tensorflow</title><link href="http://synckey.name/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html" rel="alternate"></link><published>2017-03-17T00:00:00+08:00</published><updated>2017-03-17T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-17:/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html</id><summary type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost no runtime cost:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-python"&gt;with tf.name_scope("abc"):
+
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican Document&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="tools"></category><category term="pelican"></category><category term="blog"></category></entry><entry><title>Rename a Tensor or Operation in Tensorflow</title><link href="http://synckey.name/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html" rel="alternate"></link><published>2017-03-17T00:00:00+08:00</published><updated>2017-03-17T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-17:/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html</id><summary type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost no runtime cost:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;with tf.name_scope(&amp;quot;abc&amp;quot;):
     z = x + y
-    z = tf.identity(z, name="z")
+    z = tf.identity(z, name=&amp;quot;z&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;The tf.identity function returns a Tensor with the same shape and contents as the input Tensor or value.&lt;/p&gt;
 &lt;p&gt;The recommended way to structure your name scope is to assign the name of the scope itself to the "output" from the scope (if there is a single output op):&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-python"&gt;with tf.name_scope("abc") as scope:
-    # z will get the name "abc". x and y will have names in "abc/..." if they
+&lt;pre&gt;&lt;code class="language-python"&gt;with tf.name_scope(&amp;quot;abc&amp;quot;) as scope:
+    # z will get the name &amp;quot;abc&amp;quot;. x and y will have names in &amp;quot;abc/...&amp;quot; if they
     # are converted to tensors.
     z = tf.add(x, y, name=scope)
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;This is how the TensorFlow libraries are structured, and it tends to give the best visualization in TensorBoard.&lt;/p&gt;
-&lt;h4&gt;References&lt;/h4&gt;
-&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/34399588/how-to-rename-a-variable-which-respects-the-name-scope/34399966#34399966"&gt;How to rename a variable which respects the name scope?&lt;/a&gt;&lt;/p&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="tools."></category></entry><entry><title>My Bashrc Backup</title><link href="http://synckey.name/posts/2016/10/11/my-bashrc-backup.html" rel="alternate"></link><published>2016-10-11T00:00:00+08:00</published><updated>2016-10-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-11:/posts/2016/10/11/my-bashrc-backup.html</id><summary type="html">&lt;pre&gt;&lt;code class="language-bash"&gt;# .bashrc
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/34399588/how-to-rename-a-variable-which-respects-the-name-scope/34399966#34399966"&gt;How to rename a variable which respects the name scope?&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="tools."></category></entry><entry><title>My Bashrc Backup</title><link href="http://synckey.name/posts/2016/10/11/my-bashrc-backup.html" rel="alternate"></link><published>2016-10-11T00:00:00+08:00</published><updated>2016-10-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-11:/posts/2016/10/11/my-bashrc-backup.html</id><summary type="html">&lt;pre&gt;&lt;code class="language-bash"&gt;# .bashrc
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -151,7 +177,7 @@ export LS_OPTIONS='--color=auto' # 如果没有指定，则自动选择颜色
 export CLICOLOR='Yes' #是否输出颜色
 export LSCOLORS='Exfxcxdxbxegedabagacad' #指定颜色
 alias ll='ls -l'
-export PS1="\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]"
+export PS1=&amp;quot;\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]&amp;quot;
 # vim:ts=4:sw=4 …&lt;/code&gt;&lt;/pre&gt;</summary><content type="html">&lt;pre&gt;&lt;code class="language-bash"&gt;# .bashrc
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -162,58 +188,84 @@ export LS_OPTIONS='--color=auto' # 如果没有指定，则自动选择颜色
 export CLICOLOR='Yes' #是否输出颜色
 export LSCOLORS='Exfxcxdxbxegedabagacad' #指定颜色
 alias ll='ls -l'
-export PS1="\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]"
+export PS1=&amp;quot;\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]&amp;quot;
 # vim:ts=4:sw=4
 export PATH=$PATH:/usr/local/bin/
 &lt;/code&gt;&lt;/pre&gt;</content><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category><category term="macos"></category></entry><entry><title>JVM Monitor Tool---jvisualvm</title><link href="http://synckey.name/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html" rel="alternate"></link><published>2016-07-26T00:00:00+08:00</published><updated>2016-07-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-07-26:/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html</id><summary type="html">&lt;h2&gt;通过 jvisualvm 查看 jvm 内部详细信息&lt;/h2&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;jvisualvm -Dcom.sun.management.jmxremote.port=8999 -Dcom.sun.management.jmxremote.ssl=false \
 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=10.86.46.252
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2&gt;查看哪个线程使用 cpu 最多&lt;/h2&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;ps -mp 2633 -o THREAD,tid,time | sort -rn
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式 …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;通过 jvisualvm 查看 jvm 内部详细信息&lt;/h2&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;jvisualvm -Dcom.sun.management.jmxremote.port=8999 -Dcom.sun.management.jmxremote.ssl=false \
 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=10.86.46.252
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2&gt;查看哪个线程使用 cpu 最多&lt;/h2&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;ps -mp 2633 -o THREAD,tid,time | sort -rn
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;printf "%x\n" 3626
+&lt;pre&gt;&lt;code class="language-bash"&gt;printf &amp;quot;%x\n&amp;quot; 3626
 e18
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;最后用 jstack 查看线程的运行 stack:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;jstack 2633 |grep e18 -A 30
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://blog.chinaunix.net/uid-10449864-id-3463151.html"&gt;生产环境下JAVA进程高CPU占用故障排查&lt;/a&gt;&lt;/p&gt;</content><category term="java"></category><category term="posts"></category><category term="jvm"></category><category term="profile"></category><category term="trouble shooting"></category></entry><entry><title>让VIM记录文件上次编辑的位置</title><link href="http://synckey.name/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html" rel="alternate"></link><published>2016-03-11T00:00:00+08:00</published><updated>2016-03-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-11:/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html</id><summary type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
+
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="http://blog.chinaunix.net/uid-10449864-id-3463151.html"&gt;生产环境下JAVA进程高CPU占用故障排查&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="java"></category><category term="posts"></category><category term="jvm"></category><category term="profile"></category><category term="trouble shooting"></category></entry><entry><title>让VIM记录文件上次编辑的位置</title><link href="http://synckey.name/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html" rel="alternate"></link><published>2016-03-11T00:00:00+08:00</published><updated>2016-03-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-11:/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html</id><summary type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-vim"&gt;autocmd BufReadPost *
-\ if line("'\"")&amp;gt;0&amp;amp;&amp;amp;line("'\"")&amp;lt;=line("$") |
-\ exe "normal g'\"" |
+\ if line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;gt;0&amp;amp;&amp;amp;line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;lt;=line(&amp;quot;$&amp;quot;) |
+\ exe &amp;quot;normal g'\&amp;quot;&amp;quot; |
 \ endif
 autocmd BufReadPost *
-\ if line("'\"")&amp;gt;0&amp;amp;&amp;amp;line("'\"")&amp;lt;=line("$") |
-\ exe "normal g'\"" |
+\ if line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;gt;0&amp;amp;&amp;amp;line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;lt;=line(&amp;quot;$&amp;quot;) |
+\ exe &amp;quot;normal g'\&amp;quot;&amp;quot; |
 \ endif
 syntax enable
 set nu
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;参考&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.2cto.com/os/201311/255061.html"&gt;让VIM记录文件上次编辑的位置&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
+
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="http://www.2cto.com/os/201311/255061.html"&gt;让VIM记录文件上次编辑的位置&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</summary><content type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-vim"&gt;autocmd BufReadPost *
-\ if line("'\"")&amp;gt;0&amp;amp;&amp;amp;line("'\"")&amp;lt;=line("$") |
-\ exe "normal g'\"" |
+\ if line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;gt;0&amp;amp;&amp;amp;line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;lt;=line(&amp;quot;$&amp;quot;) |
+\ exe &amp;quot;normal g'\&amp;quot;&amp;quot; |
 \ endif
 autocmd BufReadPost *
-\ if line("'\"")&amp;gt;0&amp;amp;&amp;amp;line("'\"")&amp;lt;=line("$") |
-\ exe "normal g'\"" |
+\ if line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;gt;0&amp;amp;&amp;amp;line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;lt;=line(&amp;quot;$&amp;quot;) |
+\ exe &amp;quot;normal g'\&amp;quot;&amp;quot; |
 \ endif
 syntax enable
 set nu
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;参考&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.2cto.com/os/201311/255061.html"&gt;让VIM记录文件上次编辑的位置&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category></entry><entry><title>A Misuse of Spark Broadcast</title><link href="http://synckey.name/posts/2015/11/03/a-misuse-of-spark-broadcast.html" rel="alternate"></link><published>2015-11-03T00:00:00+08:00</published><updated>2015-11-03T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-11-03:/posts/2015/11/03/a-misuse-of-spark-broadcast.html</id><summary type="html">&lt;p&gt;在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：&lt;/p&gt;
+
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="http://www.2cto.com/os/201311/255061.html"&gt;让VIM记录文件上次编辑的位置&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category></entry><entry><title>A Misuse of Spark Broadcast</title><link href="http://synckey.name/posts/2015/11/03/a-misuse-of-spark-broadcast.html" rel="alternate"></link><published>2015-11-03T00:00:00+08:00</published><updated>2015-11-03T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-11-03:/posts/2015/11/03/a-misuse-of-spark-broadcast.html</id><summary type="html">&lt;p&gt;在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;public class Test implements Function&amp;lt;String, Boolean&amp;gt; {
 
     private Map&amp;lt;String,String&amp;gt; lookupTable=new HashMap&amp;lt;String, String&amp;gt;();
@@ -238,6 +290,7 @@ set nu
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;结果发现task的序列化时间还是很长。事实上，这个类实在Driver上被实例化的，Test的成员变量&lt;code&gt;lookupTable&lt;/code&gt;是要被序列化并奋发到worker的。改成如下
 的代码，才能正确的使用spark的broadcast广播数据。&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;public class Test implements Function&amp;lt;String, Boolean&amp;gt; {
@@ -257,6 +310,7 @@ set nu
 }
 &lt;/code&gt;&lt;/pre&gt;</content><category term="spark"></category></entry><entry><title>Iterm2 Clone Session</title><link href="http://synckey.name/posts/2015/05/20/iterm2-clone-session.html" rel="alternate"></link><published>2015-05-20T00:00:00+08:00</published><updated>2015-05-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-05-20:/posts/2015/05/20/iterm2-clone-session.html</id><summary type="html">&lt;pre&gt;&lt;code class="language-bash"&gt;vim ~/.ssh/config
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;贴入如下内容:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;Host *
 ServerAliveInterval 30
@@ -264,11 +318,13 @@ ControlMaster auto
 ControlPath ~/.ssh/master-%r@%h:%p
 ControlPersist yes 
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;退出iterm2，重新登录即可。&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/"&gt;Iterm2 auto login 自动登录脚本&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://laughingchs.iteye.com/blog/1317703"&gt;linux clone session&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;pre&gt;&lt;code class="language-bash"&gt;vim ~/.ssh/config
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;贴入如下内容:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;Host *
 ServerAliveInterval 30
@@ -276,6 +332,7 @@ ControlMaster auto
 ControlPath ~/.ssh/master-%r@%h:%p
 ControlPersist yes 
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;退出iterm2，重新登录即可。&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/"&gt;Iterm2 auto login 自动登录脚本&lt;/a&gt;&lt;/p&gt;

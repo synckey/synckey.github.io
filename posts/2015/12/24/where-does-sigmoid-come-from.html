@@ -109,7 +109,7 @@
 </blockquote>
 <p>逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
 <p align="center">
-<img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="60%"/>
+<img src="/static/images/sigmoid.svg" alt="sigmoid"  width="60%" />
 </p>
 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。</p>
 <h3>1.逻辑回归的建模</h3>
@@ -188,9 +188,17 @@ b(y)        &amp;=&amp; 1
 $$</p>
 <p>这就是为什么对 $y$  的预测使用 $ h_{\theta}(x)=\frac{1}{1+e^{-\theta x}} $方程。事实上，一旦你假设 $y|x;\theta  \sim  Bernoulli(p)$, 由GLM和指数族
 分布的定义，就自然而然的给出了逻辑回归函数。</p>
-<h3>References</h3>
-<p><a href="http://open.163.com/special/opencourse/machinelearning.html">Andrew Ng Machine Learning </a></p>
-<p><a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf">Michael I. Jordan The exponential family: Basics</a></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="http://open.163.com/special/opencourse/machinelearning.html">Andrew Ng Machine Learning </a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf">Michael I. Jordan The exponential family: Basics</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 <nav id="post-nav">
     <span class="prev">
         <a href="/posts/2015/12/24/plot-sigmoid-in-matlab.html" title="Plot Sigmoid in Matlab">Previous</a></span>
@@ -251,16 +259,14 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
+
 <div id="wrapper">
     <div class="footer">
         &copy; 2018 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>
-</div>
-
-
-<script src="/theme/js/theme.js"></script>
+</div><script src="/theme/js/theme.js"></script>
 <!-- Baidu Analytics -->
 <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -288,7 +294,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
-
 </div>
 </body>
 </html>

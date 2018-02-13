@@ -118,6 +118,7 @@
     }
 }
 </code></pre>
+
 <p>结果发现task的序列化时间还是很长。事实上，这个类实在Driver上被实例化的，Test的成员变量<code>lookupTable</code>是要被序列化并奋发到worker的。改成如下
 的代码，才能正确的使用spark的broadcast广播数据。</p>
 <pre><code class="language-java">public class Test implements Function&lt;String, Boolean&gt; {
@@ -196,16 +197,14 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
+
 <div id="wrapper">
     <div class="footer">
         &copy; 2018 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>
-</div>
-
-
-<script src="/theme/js/theme.js"></script>
+</div><script src="/theme/js/theme.js"></script>
 <!-- Baidu Analytics -->
 <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -233,7 +232,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
-
 </div>
 </body>
 </html>

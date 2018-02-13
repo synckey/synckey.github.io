@@ -110,18 +110,28 @@
 <pre><code class="language-bash">jvisualvm -Dcom.sun.management.jmxremote.port=8999 -Dcom.sun.management.jmxremote.ssl=false \
 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=10.86.46.252
 </code></pre>
+
 <h2>查看哪个线程使用 cpu 最多</h2>
 <pre><code class="language-bash">ps -mp 2633 -o THREAD,tid,time | sort -rn
 </code></pre>
+
 <p>找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式:</p>
-<pre><code class="language-bash">printf "%x\n" 3626
+<pre><code class="language-bash">printf &quot;%x\n&quot; 3626
 e18
 </code></pre>
+
 <p>最后用 jstack 查看线程的运行 stack:</p>
 <pre><code class="language-bash">jstack 2633 |grep e18 -A 30
 </code></pre>
-<h3>References</h3>
-<p><a href="http://blog.chinaunix.net/uid-10449864-id-3463151.html">生产环境下JAVA进程高CPU占用故障排查</a></p>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="http://blog.chinaunix.net/uid-10449864-id-3463151.html">生产环境下JAVA进程高CPU占用故障排查</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 <nav id="post-nav">
     <span class="prev">
         <a href="/posts/2016/10/11/my-bashrc-backup.html" title="My Bashrc Backup">Previous</a></span>
@@ -182,16 +192,14 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
+
 <div id="wrapper">
     <div class="footer">
         &copy; 2018 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>
-</div>
-
-
-<script src="/theme/js/theme.js"></script>
+</div><script src="/theme/js/theme.js"></script>
 <!-- Baidu Analytics -->
 <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -219,7 +227,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
-
 </div>
 </body>
 </html>

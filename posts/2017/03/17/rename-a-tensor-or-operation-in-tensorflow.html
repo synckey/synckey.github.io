@@ -105,20 +105,28 @@
             <h2 class="headline">2017-03-17 Beijing </h2>
         </header>
         <p>Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost no runtime cost:</p>
-<pre><code class="language-python">with tf.name_scope("abc"):
+<pre><code class="language-python">with tf.name_scope(&quot;abc&quot;):
     z = x + y
-    z = tf.identity(z, name="z")
+    z = tf.identity(z, name=&quot;z&quot;)
 </code></pre>
+
 <p>The tf.identity function returns a Tensor with the same shape and contents as the input Tensor or value.</p>
 <p>The recommended way to structure your name scope is to assign the name of the scope itself to the "output" from the scope (if there is a single output op):</p>
-<pre><code class="language-python">with tf.name_scope("abc") as scope:
-    # z will get the name "abc". x and y will have names in "abc/..." if they
+<pre><code class="language-python">with tf.name_scope(&quot;abc&quot;) as scope:
+    # z will get the name &quot;abc&quot;. x and y will have names in &quot;abc/...&quot; if they
     # are converted to tensors.
     z = tf.add(x, y, name=scope)
 </code></pre>
+
 <p>This is how the TensorFlow libraries are structured, and it tends to give the best visualization in TensorBoard.</p>
-<h4>References</h4>
-<p><a href="https://stackoverflow.com/questions/34399588/how-to-rename-a-variable-which-respects-the-name-scope/34399966#34399966">How to rename a variable which respects the name scope?</a></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://stackoverflow.com/questions/34399588/how-to-rename-a-variable-which-respects-the-name-scope/34399966#34399966">How to rename a variable which respects the name scope?</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 <nav id="post-nav">
     <span class="prev">
         <a href="/posts/2017/03/19/see-you-ten-years-later.html" title="今朝一别，或是流水十年">Previous</a></span>
@@ -179,16 +187,14 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
+
 <div id="wrapper">
     <div class="footer">
         &copy; 2018 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>
-</div>
-
-
-<script src="/theme/js/theme.js"></script>
+</div><script src="/theme/js/theme.js"></script>
 <!-- Baidu Analytics -->
 <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -216,7 +222,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
-
 </div>
 </body>
 </html>

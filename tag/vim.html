@@ -110,7 +110,7 @@ export LS_OPTIONS='--color=auto' # 如果没有指定，则自动选择颜色
 export CLICOLOR='Yes' #是否输出颜色
 export LSCOLORS='Exfxcxdxbxegedabagacad' #指定颜色
 alias ll='ls -l'
-export PS1="\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]"
+export PS1=&quot;\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]&quot;
 # vim:ts=4:sw=4 …</code></pre></div>
                 <div class="center-block">
                     <a class="btn" href="/posts/2016/10/11/my-bashrc-backup.html">--READ MORE--</a>
@@ -125,18 +125,25 @@ export PS1="\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]"
                 </div>
                 <div><p>在<code>~/.vimrc</code>中加入如下配置:</p>
 <pre><code class="language-vim">autocmd BufReadPost *
-\ if line("'\"")&gt;0&amp;&amp;line("'\"")&lt;=line("$") |
-\ exe "normal g'\"" |
+\ if line(&quot;'\&quot;&quot;)&gt;0&amp;&amp;line(&quot;'\&quot;&quot;)&lt;=line(&quot;$&quot;) |
+\ exe &quot;normal g'\&quot;&quot; |
 \ endif
 autocmd BufReadPost *
-\ if line("'\"")&gt;0&amp;&amp;line("'\"")&lt;=line("$") |
-\ exe "normal g'\"" |
+\ if line(&quot;'\&quot;&quot;)&gt;0&amp;&amp;line(&quot;'\&quot;&quot;)&lt;=line(&quot;$&quot;) |
+\ exe &quot;normal g'\&quot;&quot; |
 \ endif
 syntax enable
 set nu
 </code></pre>
-<h3>参考</h3>
-<p><a href="http://www.2cto.com/os/201311/255061.html">让VIM记录文件上次编辑的位置</a></p></div>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="http://www.2cto.com/os/201311/255061.html">让VIM记录文件上次编辑的位置</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
                 <div class="center-block">
                     <a class="btn" href="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">--READ MORE--</a>
                 </div>
@@ -144,16 +151,14 @@ set nu
         </div>
     </div>
 </div>
+
 <div id="wrapper">
     <div class="footer">
         &copy; 2016 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>
-</div>
-
-
-<script src="/theme/js/theme.js"></script>
+</div><script src="/theme/js/theme.js"></script>
 <!-- Baidu Analytics -->
 <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -181,7 +186,6 @@ set nu
 </script>
 
 <!-- End Google Analytics Code -->
-
 </div>
 </body>
 </html>

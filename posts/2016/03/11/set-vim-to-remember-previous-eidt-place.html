@@ -37,13 +37,13 @@
 
 <meta name="author" content="Andy"/>
 <meta name="keywords" content="tools,vim,linux,config"/>
-<meta name="description" content="在~/.vimrc中加入如下配置: autocmd BufReadPost * \ if line(&#34;&#39;\&#34;&#34;)&gt;0&amp;&amp;line(&#34;&#39;\&#34;&#34;)&lt;=line(&#34;$&#34;) | \ exe &#34;normal g&#39;\&#34;&#34; | \ endif autocmd BufReadPost * \ if line(&#34;&#39;\&#34;&#34;)&gt;0&amp;&amp;line(&#34;&#39;\&#34;&#34;)&lt;=line(&#34;$&#34;) | \ exe &#34;normal g&#39;\&#34;&#34; | \ endif syntax enable set nu 参考 让VIM记录文件上次编辑的位置"/>
+<meta name="description" content="在~/.vimrc中加入如下配置: autocmd BufReadPost * \ if line(&#34;&#39;\&#34;&#34;)&gt;0&amp;&amp;line(&#34;&#39;\&#34;&#34;)&lt;=line(&#34;$&#34;) | \ exe &#34;normal g&#39;\&#34;&#34; | \ endif autocmd BufReadPost * \ if line(&#34;&#39;\&#34;&#34;)&gt;0&amp;&amp;line(&#34;&#39;\&#34;&#34;)&lt;=line(&#34;$&#34;) | \ exe &#34;normal g&#39;\&#34;&#34; | \ endif syntax enable set nu 让VIM记录文件上次编辑的位置 ↩"/>
 
 <meta property="og:site_name" content="Andy's Blog"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="让VIM记录文件上次编辑的位置"/>
 <meta property="og:url" content="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html"/>
-<meta property="og:description" content="在~/.vimrc中加入如下配置: autocmd BufReadPost * \ if line(&#34;&#39;\&#34;&#34;)&gt;0&amp;&amp;line(&#34;&#39;\&#34;&#34;)&lt;=line(&#34;$&#34;) | \ exe &#34;normal g&#39;\&#34;&#34; | \ endif autocmd BufReadPost * \ if line(&#34;&#39;\&#34;&#34;)&gt;0&amp;&amp;line(&#34;&#39;\&#34;&#34;)&lt;=line(&#34;$&#34;) | \ exe &#34;normal g&#39;\&#34;&#34; | \ endif syntax enable set nu 参考 让VIM记录文件上次编辑的位置"/>
+<meta property="og:description" content="在~/.vimrc中加入如下配置: autocmd BufReadPost * \ if line(&#34;&#39;\&#34;&#34;)&gt;0&amp;&amp;line(&#34;&#39;\&#34;&#34;)&lt;=line(&#34;$&#34;) | \ exe &#34;normal g&#39;\&#34;&#34; | \ endif autocmd BufReadPost * \ if line(&#34;&#39;\&#34;&#34;)&gt;0&amp;&amp;line(&#34;&#39;\&#34;&#34;)&lt;=line(&#34;$&#34;) | \ exe &#34;normal g&#39;\&#34;&#34; | \ endif syntax enable set nu 让VIM记录文件上次编辑的位置 ↩"/>
 <meta property="article:published_time" content=" 2016-03-11" />
 <meta property="article:section" content="tools"/>
 <meta property="article:tag" content="tools"/>
@@ -107,18 +107,25 @@
         </header>
         <p>在<code>~/.vimrc</code>中加入如下配置:</p>
 <pre><code class="language-vim">autocmd BufReadPost *
-\ if line("'\"")&gt;0&amp;&amp;line("'\"")&lt;=line("$") |
-\ exe "normal g'\"" |
+\ if line(&quot;'\&quot;&quot;)&gt;0&amp;&amp;line(&quot;'\&quot;&quot;)&lt;=line(&quot;$&quot;) |
+\ exe &quot;normal g'\&quot;&quot; |
 \ endif
 autocmd BufReadPost *
-\ if line("'\"")&gt;0&amp;&amp;line("'\"")&lt;=line("$") |
-\ exe "normal g'\"" |
+\ if line(&quot;'\&quot;&quot;)&gt;0&amp;&amp;line(&quot;'\&quot;&quot;)&lt;=line(&quot;$&quot;) |
+\ exe &quot;normal g'\&quot;&quot; |
 \ endif
 syntax enable
 set nu
 </code></pre>
-<h3>参考</h3>
-<p><a href="http://www.2cto.com/os/201311/255061.html">让VIM记录文件上次编辑的位置</a></p>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="http://www.2cto.com/os/201311/255061.html">让VIM记录文件上次编辑的位置</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 <nav id="post-nav">
     <span class="prev">
         <a href="/posts/2016/03/26/notes-of-grammar-in-use.html" title="Grammar in Use 笔记">Previous</a></span>
@@ -179,16 +186,14 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
+
 <div id="wrapper">
     <div class="footer">
         &copy; 2018 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>
-</div>
-
-
-<script src="/theme/js/theme.js"></script>
+</div><script src="/theme/js/theme.js"></script>
 <!-- Baidu Analytics -->
 <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -216,7 +221,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
-
 </div>
 </body>
 </html>

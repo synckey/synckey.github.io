@@ -96,29 +96,6 @@
         <div class="excerpt">
             <div class="post">
                 <div class="header center-block">
-                    <h1><a href="/posts/2016/10/11/my-bashrc-backup.html">My Bashrc Backup</a></h1>
-                    <h2 class="headline">2016-10-11 Beijing </h2>
-                </div>
-                <div><pre><code class="language-bash"># .bashrc
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
-fi
-# User specific aliases and functions
-export LS_OPTIONS='--color=auto' # 如果没有指定，则自动选择颜色
-export CLICOLOR='Yes' #是否输出颜色
-export LSCOLORS='Exfxcxdxbxegedabagacad' #指定颜色
-alias ll='ls -l'
-export PS1="\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]"
-# vim:ts=4:sw=4 …</code></pre></div>
-                <div class="center-block">
-                    <a class="btn" href="/posts/2016/10/11/my-bashrc-backup.html">--READ MORE--</a>
-                </div>
-            </div>
-        </div>
-        <div class="excerpt">
-            <div class="post">
-                <div class="header center-block">
                     <h1><a href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">JVM Monitor Tool---jvisualvm</a></h1>
                     <h2 class="headline">2016-07-26 Beijing </h2>
                 </div>
@@ -126,9 +103,11 @@ export PS1="\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]"
 <pre><code class="language-bash">jvisualvm -Dcom.sun.management.jmxremote.port=8999 -Dcom.sun.management.jmxremote.ssl=false \
 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=10.86.46.252
 </code></pre>
+
 <h2>查看哪个线程使用 cpu 最多</h2>
 <pre><code class="language-bash">ps -mp 2633 -o THREAD,tid,time | sort -rn
 </code></pre>
+
 <p>找到占用 cpu 时间最多的线程。然后将线程 id 转换成16进制格式 …</p></div>
                 <div class="center-block">
                     <a class="btn" href="/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html">--READ MORE--</a>
@@ -180,18 +159,25 @@ export PS1="\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]"
                 </div>
                 <div><p>在<code>~/.vimrc</code>中加入如下配置:</p>
 <pre><code class="language-vim">autocmd BufReadPost *
-\ if line("'\"")&gt;0&amp;&amp;line("'\"")&lt;=line("$") |
-\ exe "normal g'\"" |
+\ if line(&quot;'\&quot;&quot;)&gt;0&amp;&amp;line(&quot;'\&quot;&quot;)&lt;=line(&quot;$&quot;) |
+\ exe &quot;normal g'\&quot;&quot; |
 \ endif
 autocmd BufReadPost *
-\ if line("'\"")&gt;0&amp;&amp;line("'\"")&lt;=line("$") |
-\ exe "normal g'\"" |
+\ if line(&quot;'\&quot;&quot;)&gt;0&amp;&amp;line(&quot;'\&quot;&quot;)&lt;=line(&quot;$&quot;) |
+\ exe &quot;normal g'\&quot;&quot; |
 \ endif
 syntax enable
 set nu
 </code></pre>
-<h3>参考</h3>
-<p><a href="http://www.2cto.com/os/201311/255061.html">让VIM记录文件上次编辑的位置</a></p></div>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="http://www.2cto.com/os/201311/255061.html">让VIM记录文件上次编辑的位置</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
                 <div class="center-block">
                     <a class="btn" href="/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html">--READ MORE--</a>
                 </div>
@@ -225,7 +211,7 @@ set nu
 <h2>神经网络</h2>
 <h3>Neurons</h3>
 <p><div class="figure">
-<img alt="SingleNeuron" class="" src="/static/images/SingleNeuron.png" width="40%"/>
+<img src="/static/images/SingleNeuron.png" alt="SingleNeuron"  width="40%" />
 </div></p>
 <p>神经网络的基本组成单元,叫神经元(neuron),途中的神经元是一个以$x_1,x_x,x_3$(和一个$+1$截距项(intercept term))为输入,以$h_{W,b}(x)=f(W^Tx)=f …</p></div>
                 <div class="center-block">
@@ -242,8 +228,9 @@ set nu
                 <div><p>入了hhkb的坑,买了一个hhkb types pro2,折腾了一阵子.个人感觉hhkb的手感并不比cherry青轴手感好,但是有一点比青轴好太多,就是按键很灵敏.以前我的cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事,F1按的太多以后就总是有点不灵,而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉,不是键帽材质)不是很清爽.比Cherry好的第二优点是使用寿命,机械键盘的开关说是有2000w次的寿命,理论上可以用5-8年,而hhkb属于静电电容键盘,按键的触发是根据电容的变化来判断的,每次敲击是没有物理接触的,所以经典电容理的开关理论上是不会坏的,可以作为程序猿传家宝传给儿子.虽然hhkb的手感并没有让人很惊艳,但是用一阵子之后再换回mac book自带的键盘就感觉差太多了,再加上熟悉了hhkb键盘布局以后用回mac的键盘老是误按,所以现在算是离不开hhkb了.</p>
 <p>我用hhkb的开关是<code>011001</code>,主要是使用macintosh的键盘布局并且将delete键设置为'BS'.另外,也安装了<a href="https://pqrs.org/osx/karabiner/index.html.en">Karabiner</a>这款神器,它一方面可以设置系统自动识别是否插入了外接键盘,如果插入了外接键盘,可以将mac的键盘disable掉,另一方面它具有强大的改键功能.硬件方面,买了一个miniusb右弯的接头,这样把hhkb放在mac键盘上的时候,线就不会弯曲到挡着屏幕了.</p>
 <p align="center">
-<img alt="miniusb" class="img-rounded img-responsive" src="/static/images/miniusb.jpg" title="An awesome picture caption!" width="50%"/>
+<img src="/static/images/miniusb.jpg" alt="miniusb"  width="50%" class="img-responsive img-rounded"  title="An awesome picture caption!" />
 </p>
+
 <p>hhkb的键盘布局最大的特点就把Control键移到了Caps键的位置,所以小拇指很容易就能按到它,所以hhkb的键盘布局对emacs非常友好.而mac os操作系统对emacs风格的快捷键原生就有支持,在界面中可以通过<code>CTRL+B …</code></p></div>
                 <div class="center-block">
                     <a class="btn" href="/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html">--READ MORE--</a>
@@ -262,8 +249,9 @@ y=1./[1+exp(-a.*x)];
 plot(x,y,'b');
 grid on;
 </code></pre>
+
 <p align="center">
-<img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="50%"/>
+<img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" />
 </p></div>
                 <div class="center-block">
                     <a class="btn" href="/posts/2015/12/24/plot-sigmoid-in-matlab.html">--READ MORE--</a>
@@ -281,7 +269,7 @@ grid on;
 </blockquote>
 <p>逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
 <p align="center">
-<img alt="sigmoid" class="" src="/static/images/sigmoid.svg" width="60%"/>
+<img src="/static/images/sigmoid.svg" alt="sigmoid"  width="60%" />
 </p>
 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。</p>
 <h3>1.逻辑回归的建模</h3>
@@ -314,21 +302,45 @@ grid on;
                 </div>
             </div>
         </div>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2015/05/20/iterm2-clone-session.html">Iterm2 Clone Session</a></h1>
+                    <h2 class="headline">2015-05-20 Beijing </h2>
+                </div>
+                <div><pre><code class="language-bash">vim ~/.ssh/config
+</code></pre>
+
+<p>贴入如下内容:</p>
+<pre><code class="language-bash">Host *
+ServerAliveInterval 30
+ControlMaster auto
+ControlPath ~/.ssh/master-%r@%h:%p
+ControlPersist yes 
+</code></pre>
+
+<p>退出iterm2，重新登录即可。</p>
+<h3>References</h3>
+<p><a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/">Iterm2 auto login 自动登录脚本</a></p>
+<p><a href="http://laughingchs.iteye.com/blog/1317703">linux clone session</a></p></div>
+                <div class="center-block">
+                    <a class="btn" href="/posts/2015/05/20/iterm2-clone-session.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
 <div class="pagination">
     <a href="/author/andy4.html" class="next">&raquo;</a>
 </div>
     </div>
 </div>
+
 <div id="wrapper">
     <div class="footer">
         &copy; 2018 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>
-</div>
-
-
-<script src="/theme/js/theme.js"></script>
+</div><script src="/theme/js/theme.js"></script>
 <!-- Baidu Analytics -->
 <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -356,7 +368,6 @@ grid on;
 </script>
 
 <!-- End Google Analytics Code -->
-
 </div>
 </body>
 </html>

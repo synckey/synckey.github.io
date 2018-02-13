@@ -106,6 +106,7 @@
         </header>
         <pre><code class="language-bash">vim ~/.ssh/config
 </code></pre>
+
 <p>贴入如下内容:</p>
 <pre><code class="language-bash">Host *
 ServerAliveInterval 30
@@ -113,6 +114,7 @@ ControlMaster auto
 ControlPath ~/.ssh/master-%r@%h:%p
 ControlPersist yes 
 </code></pre>
+
 <p>退出iterm2，重新登录即可。</p>
 <h3>References</h3>
 <p><a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/">Iterm2 auto login 自动登录脚本</a></p>
@@ -177,16 +179,14 @@ s.setAttribute('data-timestamp', +new Date());
     </div>
 </div>
 <!-- /.entry-content -->
+
 <div id="wrapper">
     <div class="footer">
         &copy; 2018 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>
-</div>
-
-
-<script src="/theme/js/theme.js"></script>
+</div><script src="/theme/js/theme.js"></script>
 <!-- Baidu Analytics -->
 <script type="text/javascript">
     var _hmt = _hmt || [];
@@ -214,7 +214,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 
 <!-- End Google Analytics Code -->
-
 </div>
 </body>
 </html>
