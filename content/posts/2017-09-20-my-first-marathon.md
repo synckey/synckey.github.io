@@ -43,5 +43,5 @@ Place: Beijing
 
 <div class="figure"> 
     <img src="/static/images/first_marathon_transcript.jpg" alt="2016.06.17 北京马拉松"/>
-    <div class="caption">2016.06.17 北京马拉松</div>
+    <div class="caption">2017.06.17 北京马拉松</div>
 </div>
