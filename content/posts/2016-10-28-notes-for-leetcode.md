@@ -132,6 +132,39 @@ System.out.println(set);
 ### 10. 计算平均值防止溢出
 一般情况下我们想要计算两个int:a,b的平均值时，我们会使用$(a+b)/2$的方式，如果a,b为数组的下标，这么做一般没有问题。但是如果a,b的值很大，a + b > Integer.MAX_VALUE时，这样做就会导致溢出，从而返回错误的结果。所以保守起见，可以使用$a+(a-b)/2$的方式来计算a,b的平均值，不会溢出哦。
 
+### 11. TreeSet celling and floor
+```language-java
+   /**
+     * Returns the least key greater than or equal to the given key,
+     * or {@code null} if there is no such key.
+     *
+     * @param key the key
+     * @return the least key greater than or equal to {@code key},
+     *         or {@code null} if there is no such key
+     * @throws ClassCastException if the specified key cannot be compared
+     *         with the keys currently in the map
+     * @throws NullPointerException if the specified key is null
+     *         and this map does not permit null keys
+     */
+    K ceilingKey(K key);
+    
+    
+    /**
+     * Returns the greatest key less than or equal to the given key,
+     * or {@code null} if there is no such key.
+     *
+     * @param key the key
+     * @return the greatest key less than or equal to {@code key},
+     *         or {@code null} if there is no such key
+     * @throws ClassCastException if the specified key cannot be compared
+     *         with the keys currently in the map
+     * @throws NullPointerException if the specified key is null
+     *         and this map does not permit null keys
+     */
+    K floorKey(K key);
+
+
+```
 [^1]:[Solution to Convert a Number to Hexadecimal](https://discuss.leetcode.com/topic/65028/java-clean-code-with-explanations-and-running-time-2-solutions)
 [^2]:[Rotate Function](https://leetcode.com/problems/rotate-function/)
 [^3]:[Java Solution O(n) with non mathametical explaination](https://discuss.leetcode.com/topic/58616/java-solution-o-n-with-non-mathametical-explaination/8)
