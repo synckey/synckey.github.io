@@ -96,6 +96,26 @@
         <div class="excerpt">
             <div class="post">
                 <div class="header center-block">
+                    <h1><a href="/posts/2016/10/20/notes-for-leetcode.md.html">Notes for Leetcode</a></h1>
+                    <h2 class="headline">2016-10-20 Beijing </h2>
+                </div>
+                <div><h2>1.Binary Number Representation</h2>
+<pre><code class="language-java">x = 0b1111; // which is equals to `x = 15`; and is useful when use the number for masking.
+</code></pre>
+
+<h2>2.Rotate Function</h2>
+<h3>Original Question</h3>
+<p>原始问题链接：<a href="https://leetcode.com/problems/rotate-function/">Rotate Function</a>.</p>
+<p>Given an array of integers $A$ and let $n$ to be its length.</p>
+<p>Assume $B_k$ to be an array obtained by …</p></div>
+                <div class="center-block">
+                    <a class="btn" href="/posts/2016/10/20/notes-for-leetcode.md.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
                     <h1><a href="/posts/2016/10/11/my-bashrc-backup.html">My Bashrc Backup</a></h1>
                     <h2 class="headline">2016-10-11 Beijing </h2>
                 </div>
@@ -301,27 +321,6 @@ grid on;
 分布可以认为是二项分布一个特例($n=1$)，其结果只能取$0$或1。假设实验成功的概率为$p$,则$Bernoulli …</p></div>
                 <div class="center-block">
                     <a class="btn" href="/posts/2015/12/24/where-does-sigmoid-come-from.html">--READ MORE--</a>
-                </div>
-            </div>
-        </div>
-        <div class="excerpt">
-            <div class="post">
-                <div class="header center-block">
-                    <h1><a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></h1>
-                    <h2 class="headline">2015-11-03 Beijing </h2>
-                </div>
-                <div><p>在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：</p>
-<pre><code class="language-java">public class Test implements Function&lt;String, Boolean&gt; {
-
-    private Map&lt;String,String&gt; lookupTable=new HashMap&lt;String, String&gt;();
-
-    public Test(Broadcast&lt;Map&lt;String,String&gt;&gt; broadcast){
-       this.lookupTable=broadcast.value();
-    }
-    public Boolean call(String line) throws Exception {
-        if (this.lookupTable.containsKey …</code></pre></div>
-                <div class="center-block">
-                    <a class="btn" href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">--READ MORE--</a>
                 </div>
             </div>
         </div>

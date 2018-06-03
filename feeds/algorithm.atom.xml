@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog - algorithm</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/algorithm.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-12-06T00:00:00+08:00</updated><entry><title>Produce 1000 Unique Four Digit Numbers</title><link href="http://synckey.name/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html" rel="alternate"></link><published>2017-12-06T00:00:00+08:00</published><updated>2017-12-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-06:/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br /&gt;
+Conditions:  &lt;br /&gt;
+1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br /&gt;
+2. No sequential numbers. 1234, 1856 are not acceptable.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-java"&gt;import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by …&lt;/code&gt;&lt;/pre&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;p&gt;Produce 1000 unique four digit numbers.&lt;br /&gt;
+Conditions:  &lt;br /&gt;
+1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br /&gt;
+2. No sequential numbers. 1234, 1856 are not acceptable.  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-java"&gt;import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by andy on 06/12/2017.
+ */
+public class GenNumbers {
+    private static int[] digits = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9,};
+    private static final int RESULT_SIZE = 1000;
+
+    /**
+     * @param tempresult
+     * @param previous
+     * @param result
+     */
+    private static void genNumber(int tempresult, int previous,
+                                  List&amp;lt;Integer&amp;gt; result, int depth,
+                                  int maxDepth) {
+        if (result.size() &amp;gt;= RESULT_SIZE || depth &amp;gt; maxDepth) {
+            return;
+        }
+        for (int i : digits) {
+            if (i == previous || i == previous + 1) {
+                continue;
+            }
+            int tmp = tempresult * 10 + i;
+            if (depth == maxDepth &amp;amp;&amp;amp; result.size() &amp;lt; RESULT_SIZE) {
+                result.add(tmp);
+            } else {
+                genNumber(tmp, i, result, depth + 1, maxDepth);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        List&amp;lt;Integer&amp;gt; result = new ArrayList&amp;lt;Integer&amp;gt;(RESULT_SIZE);
+        genNumber(0, -1, result, 0, 3);
+        System.out.println(result);
+        System.out.println(result.size());
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content><category term="java"></category><category term="algorithm"></category></entry></feed>

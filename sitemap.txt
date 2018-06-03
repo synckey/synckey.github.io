@@ -6,6 +6,7 @@ http://synckey.name/
 http://synckey.name/archives.html
 http://synckey.name/tags.html
 http://synckey.name/categories.html
+http://synckey.name/posts/2018/06/02/leetcode-124.html
 http://synckey.name/posts/2018/02/04/colorful-clouds-chasing-the-moon.html
 http://synckey.name/posts/2018/02/03/a-joke.html
 http://synckey.name/posts/2018/01/01/2017-summery.html
@@ -46,6 +47,7 @@ http://synckey.name/posts/2014/11/24/distance-learning-vs-school-learning.html
 http://synckey.name/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html
 http://synckey.name/posts/2014/10/31/the-catcher-in-the-rye.html
 http://synckey.name/posts/2014/10/22/big-sarcosaurus.html
+http://synckey.name/category/algorithm.html
 http://synckey.name/category/digest.html
 http://synckey.name/category/ielts.html
 http://synckey.name/category/life.html
@@ -54,13 +56,13 @@ http://synckey.name/category/posts.html
 http://synckey.name/category/sfv.html
 http://synckey.name/category/summery.html
 http://synckey.name/category/tools.html
+http://synckey.name/tag/algorithm.html
 http://synckey.name/tag/life.html
 http://synckey.name/tag/posts.html
 http://synckey.name/tag/summery.html
 http://synckey.name/tag/digest.html
 http://synckey.name/tag/poem.html
 http://synckey.name/tag/java.html
-http://synckey.name/tag/algorithm.html
 http://synckey.name/tag/ielts.html
 http://synckey.name/tag/sfv.html
 http://synckey.name/tag/tools.html

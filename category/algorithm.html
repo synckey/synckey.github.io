@@ -22,7 +22,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
-    <title>Authors - Andy's Blog</title>
+    <title>algorithm - Andy's Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -35,7 +35,8 @@
     <div id='wx_pic' class="hidden" style="display: none"><img
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
-    <meta name="author" content="andy"/>
+<meta name="author" content="andy"/>
+<meta name="keywords" content="algorithm"/>
 
     <!-- Open Graph tags -->
     <meta property="og:site_name" content="Andy's Blog"/>
@@ -92,18 +93,36 @@
 </nav>
 
 <div id="wrapper">
-    <div class="post">
-        <header>
-            <h1>Authors on Andy's Blog</h1>
-        </header>
-        <li><a href="/author/andy.html">Andy</a> (40)</li>
-        <li><a href="/author/hollie.html">Hollie</a> (1)</li>
+    <div class="article-list">
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
+                    <h1><a href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">Produce 1000 Unique Four Digit Numbers</a></h1>
+                    <h2 class="headline">2017-12-06 Beijing </h2>
+                </div>
+                <div><blockquote>
+<p>Produce 1000 unique four digit numbers.<br />
+Conditions:  <br />
+1. No consecutive numbers. 2268, 1155 are not acceptable. <br />
+2. No sequential numbers. 1234, 1856 are not acceptable.  </p>
+</blockquote>
+<p>题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。</p>
+<pre><code class="language-java">import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by …</code></pre></div>
+                <div class="center-block">
+                    <a class="btn" href="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <div id="wrapper">
     <div class="footer">
-        &copy; 2018 andy
+        &copy; 2017 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>

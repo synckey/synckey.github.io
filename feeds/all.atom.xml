@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/all.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2018-02-04T00:00:00+08:00</updated><entry><title>《彩云追月》</title><link href="http://synckey.name/posts/2018/02/04/colorful-clouds-chasing-the-moon.html" rel="alternate"></link><published>2018-02-04T00:00:00+08:00</published><updated>2018-02-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-02-04:/posts/2018/02/04/colorful-clouds-chasing-the-moon.html</id><summary type="html">&lt;p&gt;2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/all.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2018-06-02T00:00:00+08:00</updated><entry><title>Leetcode-124 Binary Tree Maximum Path Sum</title><link href="http://synckey.name/posts/2018/06/02/leetcode-124.html" rel="alternate"></link><published>2018-06-02T00:00:00+08:00</published><updated>2018-06-02T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-06-02:/posts/2018/06/02/leetcode-124.html</id><summary type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/description/"&gt;leetcode link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Given a non-empty binary tree, find the maximum path sum.&lt;/p&gt;
+&lt;p&gt;For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/description/"&gt;leetcode link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Given a non-empty binary tree, find the maximum path sum.&lt;/p&gt;
+&lt;p&gt;For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;Input: [1,2,3]
+
+       1
+      / \
+     2   3
+
+Output: 6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-bash"&gt;Input: [-10,9,20,null,null,15,7]
+
+   -10
+   / \
+  9  20
+    /  \
+   15   7
+
+Output: 42
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;Solution&lt;/h4&gt;
+&lt;p&gt;For every Node &lt;code&gt;a&lt;/code&gt;, check the path &lt;code&gt;sum&lt;/code&gt; with &lt;code&gt;a&lt;/code&gt; as root, if &lt;code&gt;sum&lt;/code&gt; &amp;gt; &lt;code&gt;currentMaxSum&lt;/code&gt;, we can update &lt;code&gt;currentMaxSum = sum&lt;/code&gt;.&lt;br /&gt;
+With recursion we can get all the path sum for every node. &lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-java"&gt;/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    int maxSum = Integer.MIN_VALUE;
+    private int findMax(TreeNode root){
+        if(root == null) return 0;
+        int left = findMax(root.left);
+        int right = findMax(root.right);
+        int sum = root.val + left + right;
+        if(sum &amp;gt; maxSum) maxSum = sum;
+        // Math.max(left, right)  because we're tracing the path, for a certain node, 
+        // only its left or right could be added to the path.
+        // Math.max(Math.max(left, right) + root.val, 0), 
+        // if a node's path sum is negative,  we can safely ignore this node.
+        return Math.max(Math.max(left, right) + root.val, 0);
+
+    }
+    public int maxPathSum(TreeNode root) {
+        findMax(root);
+        return maxSum;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39775/Accepted-short-solution-in-Java"&gt;Accepted short solution in Java&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="algorithm"></category></entry><entry><title>《彩云追月》</title><link href="http://synckey.name/posts/2018/02/04/colorful-clouds-chasing-the-moon.html" rel="alternate"></link><published>2018-02-04T00:00:00+08:00</published><updated>2018-02-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-02-04:/posts/2018/02/04/colorful-clouds-chasing-the-moon.html</id><summary type="html">&lt;p&gt;2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
 唱出了女子在花落之时与情人约见而情人爽约的失望和愁苦。&lt;/p&gt;
 &lt;p&gt;阴差阳错的，在昨天居然听到了这个歌曲的交响乐版，原来《几度花落时》的曲修改自《彩月追月》，初衷也不是男欢女爱。《彩云追月》来自广东民间，最早见于清代，
 描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。&lt;/p&gt;
@@ -413,7 +482,7 @@ characteristics that can develop into a disability or disease.（&lt;a href="htt
 &lt;p&gt;最终我的成绩是4小时33分钟41秒，对我来说，已经很满足了。套用一句话，那就是，一切才刚刚开始。&lt;/p&gt;
 &lt;div class="figure"&gt; 
     &lt;img src="/static/images/first_marathon_transcript.jpg" alt="2016.06.17 北京马拉松"/&gt;
-    &lt;div class="caption"&gt;2016.06.17 北京马拉松&lt;/div&gt;
+    &lt;div class="caption"&gt;2017.06.17 北京马拉松&lt;/div&gt;
 &lt;/div&gt;</content><category term="life"></category></entry><entry><title>Auckland 小记</title><link href="http://synckey.name/posts/2017/06/26/new-to-auckland.html" rel="alternate"></link><published>2017-06-26T00:00:00+08:00</published><updated>2017-06-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-26:/posts/2017/06/26/new-to-auckland.html</id><summary type="html">&lt;p&gt;来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。&lt;/p&gt;
 &lt;p&gt;到奥克兰下飞机已经是早上6.30，跟我一起下飞机的都是中国人。一下飞机就买了一张vodaphone的手机卡，卖手机卡的是中国人，说的是中国话，收银员是个漂亮的高挑当地妹子。在海关排队入境花了大概有半个小时，海关官员看了下签证，问了下我帮朋友带了什么，就放行了。出来还要过一道安检，这次主要是查有没有带危害当地生物安全的食品，种子等，新西兰是一个岛国，生态异常脆弱。&lt;/p&gt;
 &lt;p&gt;出机场看到外面乌云密布，天空非常的低，在下着小雨，有点冷，还好很快就找到接机的小伙伴，一路送到住所。路两边都是矮矮的两层小楼，路很窄，但是车速很快。&lt;/p&gt;
@@ -1439,6 +1508,39 @@ System.out.println(set);
 &lt;p&gt;如果有一组数据(假设其个数为n)，将其排序，如果n为奇数，则中间的那个数为中位数，如果n为偶数，则中间两个数的平均值为这组数据的中位数。&lt;/p&gt;
 &lt;h3&gt;10. 计算平均值防止溢出&lt;/h3&gt;
 &lt;p&gt;一般情况下我们想要计算两个int:a,b的平均值时，我们会使用$(a+b)/2$的方式，如果a,b为数组的下标，这么做一般没有问题。但是如果a,b的值很大，a + b &amp;gt; Integer.MAX_VALUE时，这样做就会导致溢出，从而返回错误的结果。所以保守起见，可以使用$a+(a-b)/2$的方式来计算a,b的平均值，不会溢出哦。&lt;/p&gt;
+&lt;h3&gt;11. TreeSet celling and floor&lt;/h3&gt;
+&lt;pre&gt;&lt;code class="language-java"&gt;   /**
+     * Returns the least key greater than or equal to the given key,
+     * or {@code null} if there is no such key.
+     *
+     * @param key the key
+     * @return the least key greater than or equal to {@code key},
+     *         or {@code null} if there is no such key
+     * @throws ClassCastException if the specified key cannot be compared
+     *         with the keys currently in the map
+     * @throws NullPointerException if the specified key is null
+     *         and this map does not permit null keys
+     */
+    K ceilingKey(K key);
+
+
+    /**
+     * Returns the greatest key less than or equal to the given key,
+     * or {@code null} if there is no such key.
+     *
+     * @param key the key
+     * @return the greatest key less than or equal to {@code key},
+     *         or {@code null} if there is no such key
+     * @throws ClassCastException if the specified key cannot be compared
+     *         with the keys currently in the map
+     * @throws NullPointerException if the specified key is null
+     *         and this map does not permit null keys
+     */
+    K floorKey(K key);
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;div class="footnote"&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
@@ -2247,8 +2349,7 @@ ControlPersist yes
 &lt;h2&gt;进行中&lt;/h2&gt;
 &lt;h3&gt;睡眠&lt;/h3&gt;
 &lt;p&gt;好的睡眠肯定是很重要的啦，我自己是每天23：00左右睡，每天6：00起床。一开始6：00起不来，没关系，闹钟响了什么都不要想，
-先站起来再说（忘了那本书里面说的了）。减肥本来就是很辛苦，所以一定要休息好。
-a&lt;/p&gt;
+先站起来再说（忘了那本书里面说的了）。减肥本来就是很辛苦，所以一定要休息好。&lt;/p&gt;
 &lt;h3&gt;饮食&lt;/h3&gt;
 &lt;p&gt;都说减肥要&lt;code&gt;管住嘴，迈开腿&lt;/code&gt;，饮食其实在减肥里面是最重要的，不过一定要保证均衡的营养摄入，吃大量的蔬菜，水果，膳食纤维，蛋白质。&lt;/p&gt;
 &lt;ul&gt;

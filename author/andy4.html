@@ -96,6 +96,27 @@
         <div class="excerpt">
             <div class="post">
                 <div class="header center-block">
+                    <h1><a href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">A Misuse of Spark Broadcast</a></h1>
+                    <h2 class="headline">2015-11-03 Beijing </h2>
+                </div>
+                <div><p>在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：</p>
+<pre><code class="language-java">public class Test implements Function&lt;String, Boolean&gt; {
+
+    private Map&lt;String,String&gt; lookupTable=new HashMap&lt;String, String&gt;();
+
+    public Test(Broadcast&lt;Map&lt;String,String&gt;&gt; broadcast){
+       this.lookupTable=broadcast.value();
+    }
+    public Boolean call(String line) throws Exception {
+        if (this.lookupTable.containsKey …</code></pre></div>
+                <div class="center-block">
+                    <a class="btn" href="/posts/2015/11/03/a-misuse-of-spark-broadcast.html">--READ MORE--</a>
+                </div>
+            </div>
+        </div>
+        <div class="excerpt">
+            <div class="post">
+                <div class="header center-block">
                     <h1><a href="/posts/2015/05/20/iterm2-clone-session.html">Iterm2 Clone Session</a></h1>
                     <h2 class="headline">2015-05-20 Beijing </h2>
                 </div>

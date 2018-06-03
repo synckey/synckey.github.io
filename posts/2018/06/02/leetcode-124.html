@@ -22,7 +22,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
 <!-- End Google Tag Manager -->
-    <title>Produce 1000 Unique Four Digit Numbers</title>
+    <title>Leetcode-124 Binary Tree Maximum Path Sum</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -36,17 +36,16 @@
             src='/static/images/wechat_logo_300x300.jpg'/></div>
 
 <meta name="author" content="Andy"/>
-<meta name="keywords" content="java,algorithm"/>
-<meta name="description" content="Produce 1000 unique four digit numbers. Conditions: 1. No consecutive numbers. 2268, 1155 are not acceptable. 2. No sequential numbers. 1234, 1856 are not acceptable. 题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。 import java.util.ArrayList; import java.util.List; /** * Created by …"/>
+<meta name="keywords" content="algorithm"/>
+<meta name="description" content="leetcode link Given a non-empty binary tree, find the maximum path sum. For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need …"/>
 
 <meta property="og:site_name" content="Andy's Blog"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Produce 1000 Unique Four Digit Numbers"/>
-<meta property="og:url" content="/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html"/>
-<meta property="og:description" content="Produce 1000 unique four digit numbers. Conditions: 1. No consecutive numbers. 2268, 1155 are not acceptable. 2. No sequential numbers. 1234, 1856 are not acceptable. 题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。 import java.util.ArrayList; import java.util.List; /** * Created by …"/>
-<meta property="article:published_time" content=" 2017-12-06" />
-<meta property="article:section" content="algorithm"/>
-<meta property="article:tag" content="java"/>
+<meta property="og:title" content="Leetcode-124 Binary Tree Maximum Path Sum"/>
+<meta property="og:url" content="/posts/2018/06/02/leetcode-124.html"/>
+<meta property="og:description" content="leetcode link Given a non-empty binary tree, find the maximum path sum. For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need …"/>
+<meta property="article:published_time" content=" 2018-06-02" />
+<meta property="article:section" content="posts"/>
 <meta property="article:tag" content="algorithm"/>
 <meta property="article:author" content="Andy"/>
 
@@ -100,62 +99,79 @@
 <div id="wrapper">
     <div class="post">
         <header>
-            <h1>Produce 1000 Unique Four Digit Numbers</h1>
-            <h2 class="headline">2017-12-06 Beijing </h2>
+            <h1>Leetcode-124 Binary Tree Maximum Path Sum</h1>
+            <h2 class="headline">2018-06-02 Vancouver </h2>
         </header>
-        <blockquote>
-<p>Produce 1000 unique four digit numbers.<br />
-Conditions:  <br />
-1. No consecutive numbers. 2268, 1155 are not acceptable. <br />
-2. No sequential numbers. 1234, 1856 are not acceptable.  </p>
-</blockquote>
-<p>题目的要求很简单，可以从根节点构建一棵树，向这个树的节点添加节点时，只要满足题目的两个要求:a.每一位不与前一位相同，b.每一位不是前一个数字的顺序下一个数字。从根节点到叶子节点每条路径上的节点所组成的数字，就是答案。当然，题目要求的数字位数是4位，所以只要构建一颗深度为5的树就行了，这棵树的根节点为空，不需要要算在路径里面。</p>
-<pre><code class="language-java">import java.util.ArrayList;
-import java.util.List;
+        <p><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/description/">leetcode link</a></p>
+<p>Given a non-empty binary tree, find the maximum path sum.</p>
+<p>For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root.</p>
+<p>Example 1:</p>
+<pre><code class="language-bash">Input: [1,2,3]
 
-/**
- * Created by andy on 06/12/2017.
+       1
+      / \
+     2   3
+
+Output: 6
+</code></pre>
+
+<p>Example 2:</p>
+<pre><code class="language-bash">Input: [-10,9,20,null,null,15,7]
+
+   -10
+   / \
+  9  20
+    /  \
+   15   7
+
+Output: 42
+
+</code></pre>
+
+<h4>Solution</h4>
+<p>For every Node <code>a</code>, check the path <code>sum</code> with <code>a</code> as root, if <code>sum</code> &gt; <code>currentMaxSum</code>, we can update <code>currentMaxSum = sum</code>.<br />
+With recursion we can get all the path sum for every node. </p>
+<pre><code class="language-java">/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
  */
-public class GenNumbers {
-    private static int[] digits = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9,};
-    private static final int RESULT_SIZE = 1000;
+class Solution {
+    int maxSum = Integer.MIN_VALUE;
+    private int findMax(TreeNode root){
+        if(root == null) return 0;
+        int left = findMax(root.left);
+        int right = findMax(root.right);
+        int sum = root.val + left + right;
+        if(sum &gt; maxSum) maxSum = sum;
+        // Math.max(left, right)  because we're tracing the path, for a certain node, 
+        // only its left or right could be added to the path.
+        // Math.max(Math.max(left, right) + root.val, 0), 
+        // if a node's path sum is negative,  we can safely ignore this node.
+        return Math.max(Math.max(left, right) + root.val, 0);
 
-    /**
-     * @param tempresult
-     * @param previous
-     * @param result
-     */
-    private static void genNumber(int tempresult, int previous,
-                                  List&lt;Integer&gt; result, int depth,
-                                  int maxDepth) {
-        if (result.size() &gt;= RESULT_SIZE || depth &gt; maxDepth) {
-            return;
-        }
-        for (int i : digits) {
-            if (i == previous || i == previous + 1) {
-                continue;
-            }
-            int tmp = tempresult * 10 + i;
-            if (depth == maxDepth &amp;&amp; result.size() &lt; RESULT_SIZE) {
-                result.add(tmp);
-            } else {
-                genNumber(tmp, i, result, depth + 1, maxDepth);
-            }
-        }
     }
-
-    public static void main(String[] args) {
-        List&lt;Integer&gt; result = new ArrayList&lt;Integer&gt;(RESULT_SIZE);
-        genNumber(0, -1, result, 0, 3);
-        System.out.println(result);
-        System.out.println(result.size());
+    public int maxPathSum(TreeNode root) {
+        findMax(root);
+        return maxSum;
     }
 }
 </code></pre>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39775/Accepted-short-solution-in-Java">Accepted short solution in Java</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 <nav id="post-nav">
-    <span class="prev">
-        <a href="/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html" title="金缕曲词二首(清顾贞观)">Previous</a></span>
-    <span class="next"><a href="/posts/2017/11/27/life-is-one-man-fight.html" title="一个人的战争">Next</a></span>
+    <span class="next"><a href="/posts/2018/02/04/colorful-clouds-chasing-the-moon.html" title="《彩云追月》">Next</a></span>
 </nav><!--
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -181,8 +197,8 @@ public class GenNumbers {
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "http://synckey.name/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = "posts/2017/12/06/produce-1000-unique-four-digit-numbers.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "http://synckey.name/posts/2018/06/02/leetcode-124.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "posts/2018/06/02/leetcode-124.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
