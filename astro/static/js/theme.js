@@ -49,8 +49,7 @@ $(document).ready(function () {
             if(!cla.startsWith('language-')) {
                 cla='language-'+cla;
             }
-            //$(this).parent('pre').addClass(cla);
-            $(this).addClass(cla);
+            if($(this).parent().is("pre")) $(this).addClass(cla);
     });
 });
 /*
