@@ -7,7 +7,7 @@ Author: Andy
 Place: Vancouver
 
 > This post records many of the leetcodes that I think worth a second try.
-> The solutions mainly come from the discussions, which are pretty smart ones. I can not list all the originate pages for them, 
+> The solutions mainly come from the discussions, which are pretty smart ones. I can not list all the original pages for them, 
 > but they can be easily found by Google.
 
 
