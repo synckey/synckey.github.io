@@ -1,6 +1,6 @@
 .tip, a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     font: inherit;
-    font-size: 100%;
+    font-size: 105%;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
@@ -88,7 +88,7 @@ blockquote:after, blockquote:before, q:after, q:before {
 /*end of google material icons*/
 
 .post h1, .post-body ul, .tip, blockquote, h3, h4, h5, ol, p, pre {
-    margin-bottom: 20px
+    margin-bottom: 5px
 }
 
 body, html {
@@ -741,16 +741,13 @@ a.symbol {
 a.symbol:hover {
     color: #bcd4da
 }
-
 code {
     font-family: PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', Monospace;
     font-size: 100%;
     padding: 0.1em 0.1em;
     border-radius: 3px;
-    background-color: #f5f5f5;
-
+ /*   background-color: #f5f5f5;*/
 }
-
 pre code {
     padding: 0
 }
