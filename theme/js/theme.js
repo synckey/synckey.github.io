@@ -42,6 +42,15 @@ $(document).ready(function () {
     });
     $('.fancybox-thumb').fancybox(fancybox_settings);
 
+    // for prism
+    $('code').each(function () {
+            var cla = $(this).attr('class');
+            if(cla == null) cla='language-python';
+            if(!cla.startsWith('language-')) {
+                cla='language-'+cla;
+            }
+            if($(this).parent().is('pre')) $(this).addClass(cla);
+    });
 });
 /*
 异步分页
@@ -70,4 +79,5 @@ ias.on('rendered', function () {
 
 $(document).ready(function () {
     $('body').css('padding-top', $('.navbar').height() + 'px');
+
 });

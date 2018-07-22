@@ -88,7 +88,7 @@ blockquote:after, blockquote:before, q:after, q:before {
 /*end of google material icons*/
 
 .post h1, .post-body ul, .tip, blockquote, h3, h4, h5, ol, p, pre {
-    margin-bottom: 20px
+    margin-bottom: 5px
 }
 
 body, html {
@@ -96,7 +96,7 @@ body, html {
 }
 
 body {
-    font: 17px/1 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+    font: 20px/1 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     color: #666;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility
@@ -162,7 +162,7 @@ nav.main-nav {
 }
 
 nav.main-nav a {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.35;
     top: 8px;
@@ -226,7 +226,8 @@ li {
 }
 
 #post-body, .tip, p {
-    line-height: 1.7
+    line-height: 1.7;
+    text-align: justify;
 }
 
 b, strong {
@@ -741,16 +742,13 @@ a.symbol {
 a.symbol:hover {
     color: #bcd4da
 }
-
 code {
     font-family: PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', Monospace;
-    font-size: 100%;
-    padding: 0.1em 0.1em;
+    font-size: 85%;
+    padding: 0.1em 0.3em;
     border-radius: 3px;
     background-color: #f5f5f5;
-
 }
-
 pre code {
     padding: 0
 }

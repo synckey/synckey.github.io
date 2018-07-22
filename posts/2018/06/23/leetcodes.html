@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55913313-1"></script>
+<script type="text/javascript">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-55913313-1');
+</script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K3XTKKX');</script>
+<!-- End Google Tag Manager -->
+    <title>Leetcodes</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="/favicon.ico" rel="icon">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/favicon.ico"><![endif]-->
+    <link rel="apple-touch-icon" href="/favicon.ico">
+
+    <div id='wx_pic' class="hidden" style="display: none"><img
+            src='/static/images/wechat_logo_300x300.jpg'/></div>
+
+<meta name="author" content="Andy"/>
+<meta name="keywords" content="algorithm"/>
+<meta name="description" content="This post records many of the leetcodes that I think worth a second try. The solutions mainly come from the discussions, which are pretty smart ones. I can not list all the original pages for them, but they can be easily found by Google. 857. Minimum Cost to Hire K …"/>
+
+<meta property="og:site_name" content="Andy's Blog"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Leetcodes"/>
+<meta property="og:url" content="/posts/2018/06/23/leetcodes.html"/>
+<meta property="og:description" content="This post records many of the leetcodes that I think worth a second try. The solutions mainly come from the discussions, which are pretty smart ones. I can not list all the original pages for them, but they can be easily found by Google. 857. Minimum Cost to Hire K …"/>
+<meta property="article:published_time" content=" 2018-06-23" />
+<meta property="article:section" content="posts"/>
+<meta property="article:tag" content="algorithm"/>
+<meta property="article:author" content="Andy"/>
+
+    <script src="/theme/js/jquery.min.js"></script>
+    <script src="/theme/js/highcharts.js"></script>
+    <script src="/theme/js/exporting.js"></script>
+    <script src="/theme/js/jquery-ias.min.js"></script>
+    <script src="/theme/js/prism.js"></script>
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/theme/fancybox/source/jquery.fancybox.css" type="text/css"
+          media="screen"/>
+    <script type="text/javascript" src="/theme/fancybox/source/jquery.fancybox.pack.js"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-buttons.css"
+          type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+    <link rel="stylesheet" href="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.css"
+          type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="/theme/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script type="text/javascript"
+            src="/theme/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <link rel="stylesheet" href="/theme/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="/theme/css/prism.css"/>
+    <link rel="stylesheet" href="/theme/css/style.css"/>
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+          title="Andy's Blog ATOM Feed"/>
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3XTKKX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="main-nav">
+    <a href="/">Home</a>
+    <a href="/archives.html">Archives</a>
+    <a class="mob-hidden" href="/feeds/all.atom.xml">RSS</a>
+</nav>
+
+<div id="wrapper">
+    <div class="post">
+        <header>
+            <h1>Leetcodes</h1>
+            <h2 class="headline">2018-06-23 Vancouver </h2>
+        </header>
+        <blockquote>
+<p>This post records many of the leetcodes that I think worth a second try.
+The solutions mainly come from the discussions, which are pretty smart ones. I can not list all the original pages for them, 
+but they can be easily found by Google.</p>
+</blockquote>
+<h3><a href="https://leetcode.com/problems/minimum-cost-to-hire-k-workers/description/">857. Minimum Cost to Hire K Workers</a></h3>
+<p>There are <code>N</code> workers.  The <code>i-th</code> worker has a <code>quality[i]</code> and a minimum wage expectation <code>wage[i]</code>.</p>
+<p>Now we want to hire exactly <code>K</code> workers to form a paid group.  When hiring a group of <code>K</code> workers, we must pay them according to the following rules:  </p>
+<ol>
+<li>Every worker in the paid group should be paid in the ratio of their quality compared to other workers in the paid group.</li>
+<li>Every worker in the paid group must be paid at least their minimum wage expectation.   </li>
+</ol>
+<p>Return the least amount of money needed to form a paid group satisfying the above conditions.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code class="java">Input: quality = [10,20,5], wage = [70,50,30], K = 2
+Output: 105.00000
+Explanation: We pay 70 to 0-th worker and 35 to 2-th worker.
+</code></pre>
+
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: quality = [3,1,10,10,1], wage = [4,8,2,2,7], K = 3
+Output: 30.66667
+Explanation: We pay 4 to 0-th worker, 13.33333 to 2-th and 3-th workers seperately. 
+</code></pre>
+
+<p><strong>Note:</strong></p>
+<ol>
+<li>1 &lt;= K &lt;= N &lt;= 10000, where N = quality.length = wage.length</li>
+<li>1 &lt;= quality[i] &lt;= 10000</li>
+<li>1 &lt;= wage[i] &lt;= 10000</li>
+<li>Answers within 10^-5 of the correct answer will be considered correct.</li>
+</ol>
+<pre><code>class Solution {
+    public double mincostToHireWorkers(int[] q, int[] w, int K) {
+        double[][] workers = new double[w.length][2];
+        for (int i = 0; i &lt; w.length; i++) {
+            workers[i] = new double[]{((double) w[i]) / q[i], (double) q[i]};
+        }
+        Arrays.sort(workers, (a, b) -&gt; Double.compare(a[0], b[0]));
+        double res = Double.MAX_VALUE, qsum = 0;
+        PriorityQueue&lt;Double&gt; pq = new PriorityQueue&lt;&gt;();
+        for (double[] worker : workers) {
+            qsum += worker[1];
+            pq.add(-worker[1]);
+            if (pq.size() &gt; K) qsum += pq.poll();
+            if (pq.size() == K) res = Math.min(res, qsum * worker[0]);
+        }
+        return res;
+    }
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/contest/weekly-contest-90/problems/mirror-reflection/">858. Mirror Reflection</a></h3>
+<p>There is a special square room with mirrors on each of the four walls.  Except for the southwest corner, there are receptors on each of the remaining corners, numbered 0, 1, and 2.<br />
+The square room has walls of length p, and a laser ray from the southwest corner first meets the east wall at a distance q from the 0th receptor.<br />
+Return the number of the receptor that the ray meets first.  (It is guaranteed that the ray will meet a receptor eventually.)
+<strong>Example 1:</strong></p>
+<pre><code>Input: p = 2, q = 1
+Output: 2
+Explanation: The ray meets receptor 2 the first time it gets reflected back to the left wall.
+</code></pre>
+
+<p><img alt="image" src="https://drive.google.com/uc?id=1FbPFKkJfS_DqQdI1w_AMw4c_cLheHrHO" /></p>
+<p><strong>Note:</strong>   </p>
+<ol>
+<li>1 &lt;= p &lt;= 1000</li>
+<li>0 &lt;= q &lt;= p</li>
+</ol>
+<pre><code class="java">class Solution {
+    int gcd(int a, int b) {
+        if (b == 0) return a;
+        return gcd(b, a % b);
+    }
+
+    public int mirrorReflection(int p, int q) {
+        /*
+        It can be expanded to this...
+        ...
+        |-0
+        | |
+        2-1
+        | |
+        |-0
+        | |
+        2-1
+        | |
+        |-0
+        you just need to know ?q=kp (?,k belong to Z)
+        */
+        int vertlen = p * q / gcd(p, q);
+        int box = vertlen / p;
+        if (box % 2 == 0) return 0;
+        int reftime = vertlen / q;
+        if (reftime % 2 == 0) return 2;
+        return 1;
+    }
+
+</code></pre>
+
+<h3><a href="https://leetcode.com/problems/word-break-ii/description/">140. Word Break II</a></h3>
+<p>Given a <strong>non-empty</strong> string s and a dictionary wordDict containing a list of <strong>non-empty</strong> words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>The same word in the dictionary may be reused multiple times in the segmentation.</li>
+<li>You may assume the dictionary does not contain duplicate words.
+<strong>Example 1:</strong></li>
+</ul>
+<pre><code>Input:
+s = &quot;catsanddog&quot;
+wordDict = [&quot;cat&quot;, &quot;cats&quot;, &quot;and&quot;, &quot;sand&quot;, &quot;dog&quot;]
+Output:
+[
+  &quot;cats and dog&quot;,
+  &quot;cat sand dog&quot;
+]
+</code></pre>
+
+<p><strong>Example 2:</strong></p>
+<pre><code>Input:
+s = &quot;pineapplepenapple&quot;
+wordDict = [&quot;apple&quot;, &quot;pen&quot;, &quot;applepen&quot;, &quot;pine&quot;, &quot;pineapple&quot;]
+Output:
+[
+  &quot;pine apple pen apple&quot;,
+  &quot;pineapple pen apple&quot;,
+  &quot;pine applepen apple&quot;
+]
+Explanation: Note that you are allowed to reuse a dictionary word.
+</code></pre>
+
+<p><strong>Example 3:</strong></p>
+<pre><code>Input:
+s = &quot;catsandog&quot;
+wordDict = [&quot;cats&quot;, &quot;dog&quot;, &quot;sand&quot;, &quot;and&quot;, &quot;cat&quot;]
+Output:
+[]
+</code></pre>
+
+<h3><a href="https://leetcode.com/articles/exam-room/">855. Exam Room</a></h3>
+<pre><code class="java">class Solution {
+    private List&lt;String&gt; breakS(String s, Set&lt;String&gt; dic, Map&lt;String, List&lt;String&gt;&gt; memo) {
+        if (memo.containsKey(s)) return memo.get(s);
+        List&lt;String&gt; res = new LinkedList&lt;&gt;();
+        if (s.length() == 0) {
+            res.add(&quot;&quot;);
+            return res;
+        }
+        for (String ds : dic) {
+            if (s.startsWith(ds)) {
+                String sub = s.substring(ds.length());
+                List&lt;String&gt; subList = breakS(sub, dic, memo);
+                for (String su : subList) {
+                    res.add(ds + (su.isEmpty() ? &quot;&quot; : &quot; &quot;) + su);
+                }
+            }
+        }
+        memo.put(s, res);
+        return res;
+
+    }
+
+    public List&lt;String&gt; wordBreak(String s, List&lt;String&gt; wordDict) {
+        List&lt;String&gt; res = new LinkedList();
+        if (s.length() == 0) return res;
+        Set&lt;String&gt; dic = new HashSet(wordDict);
+        Map&lt;String, List&lt;String&gt;&gt; map = new HashMap&lt;&gt;();
+        breakS(s, dic, map);
+        return map.get(s);
+    }
+}
+</code></pre>
+
+<p>In an exam room, there are <code>N</code> seats in a single row, numbered <code>0, 1, 2, ..., N-1</code>. <br />
+When a student enters the room, they must sit in the seat that maximizes the distance to the closest person.  If there are multiple such seats, they sit in the seat with the lowest number.  (Also, if no one is in the room, then the student sits at seat number 0.).<br />
+Return a class <code>ExamRoom(int N)</code> that exposes two functions: <code>ExamRoom.seat()</code> returning an int representing what seat the student sat in, and <code>ExamRoom.leave(int p)</code> representing that the student in seat number p now leaves the room.  It is guaranteed that any calls to <code>ExamRoom.leave(p)</code> have a student sitting in seat <code>p</code>.<br />
+<strong>Example 1:</strong></p>
+<pre><code>Input: [&quot;ExamRoom&quot;,&quot;seat&quot;,&quot;seat&quot;,&quot;seat&quot;,&quot;seat&quot;,&quot;leave&quot;,&quot;seat&quot;], [[10],[],[],[],[],[4],[]]
+Output: [null,0,9,4,2,null,5]
+Explanation:
+ExamRoom(10) -&gt; null
+seat() -&gt; 0, no one is in the room, then the student sits at seat number 0.
+seat() -&gt; 9, the student sits at the last seat number 9.
+seat() -&gt; 4, the student sits at the last seat number 4.
+seat() -&gt; 2, the student sits at the last seat number 2.
+leave(4) -&gt; null
+seat() -&gt; 5, the student​​​​​​​ sits at the last seat number 5.
+​​​​​​​
+</code></pre>
+
+<p><strong>Note:</strong></p>
+<ol>
+<li>1 &lt;= N &lt;= 10^9</li>
+<li>ExamRoom.seat() and ExamRoom.leave() will be called at most 10^4 times across all test cases.</li>
+<li>Calls to ExamRoom.leave(p) are guaranteed to have a student currently sitting in seat number p.</li>
+</ol>
+<h3><a href="https://leetcode.com/problems/k-similar-strings/discuss/139872/Java-Backtracking-with-Memorization/146428">854. K-Similar Strings</a></h3>
+<p>Strings A and B are K-similar (for some non-negative integer K) if we can swap the positions of two letters in A exactly K times so that the resulting string equals B.</p>
+<p>Given two anagrams A and B, return the smallest K for which A and B are K-similar.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: A = &quot;ab&quot;, B = &quot;ba&quot;
+Output: 1
+</code></pre>
+
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: A = &quot;abc&quot;, B = &quot;bca&quot;
+Output: 2
+</code></pre>
+
+<p><strong>Example 3:</strong></p>
+<pre><code>Input: A = &quot;abac&quot;, B = &quot;baca&quot;
+Output: 2
+</code></pre>
+
+<p><strong>Example 4:</strong></p>
+<pre><code>Input: A = &quot;aabc&quot;, B = &quot;abca&quot;
+Output: 2
+</code></pre>
+
+<p><strong>Note:</strong>
+1. 1 &lt;= A.length == B.length &lt;= 20
+1. A and B contain only lowercase letters from the set {'a', 'b', 'c', 'd', 'e', 'f'}</p>
+<p>Simple and straightforward. Swap the characters in A using backtracking to get close to B.
+Use a map to memorize.</p>
+<pre><code class="java">
+
+class Solution {
+    public int kSimilarity(String A, String B) {
+        Map&lt;String, Integer&gt; map = new HashMap&lt;&gt;();
+        return backtrack(A.toCharArray(), B, map, 0);
+    }
+    private int backtrack(char[] A, String B, Map&lt;String, Integer&gt; map, int i) {
+        String sa = new String(A);
+        if (sa.equals(B)) {
+            return 0;
+        }
+        if (map.containsKey(sa)) {
+            return map.get(sa);
+        }
+        int min = Integer.MAX_VALUE;
+        while (i &lt; A.length &amp;&amp; A[i] == B.charAt(i)) {
+            i++;
+        }
+        for (int j = i + 1; j &lt; B.length(); j++) {
+            if (A[j] == B.charAt(i)) {
+                swap(A, i, j);
+                int next = backtrack(A, B, map, i + 1);
+                if (next != Integer.MAX_VALUE) {
+                    min = Math.min(min, next + 1);
+                }
+                swap(A, i, j);
+            }
+        }
+        map.put(sa, min);
+        return min;
+    }
+    private void swap(char[] cs, int i, int j) {
+        char temp = cs[i];
+        cs[i] = cs[j];
+        cs[j] = temp;
+    }
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/problems/gas-station/discuss/42568/Share-some-of-my-ideas.">134. Gas Station</a></h3>
+<p>There are N gas stations along a circular route, where the amount of gas at station i is <code>gas[i]</code>.<br />
+You have a car with an unlimited gas tank and it costs <code>cost[i]</code> of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. <br />
+Return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return -1. <br />
+<strong>Note:</strong><br />
+- If there exists a solution, it is guaranteed to be unique.
+- Both input arrays are non-empty and have the same length.
+- Each element in the input arrays is a non-negative integer.  </p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: 
+gas  = [1,2,3,4,5]
+cost = [3,4,5,1,2]
+Output: 3
+Explanation:
+Start at station 3 (index 3) and fill up with 4 unit of gas. Your tank = 0 + 4 = 4
+Travel to station 4. Your tank = 4 - 1 + 5 = 8
+Travel to station 0. Your tank = 8 - 2 + 1 = 7
+Travel to station 1. Your tank = 7 - 3 + 2 = 6
+Travel to station 2. Your tank = 6 - 4 + 3 = 5
+Travel to station 3. The cost is 5. Your gas is just enough to travel back to station 3.
+Therefore, return 3 as the starting index.
+</code></pre>
+
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: 
+gas  = [2,3,4]
+cost = [3,4,3]
+Output: -1
+Explanation:
+You can't start at station 0 or 1, as there is not enough gas to travel to the next station.
+Let's start at station 2 and fill up with 4 unit of gas. Your tank = 0 + 4 = 4
+Travel to station 0. Your tank = 4 - 3 + 2 = 3
+Travel to station 1. Your tank = 3 - 3 + 3 = 3
+You cannot travel back to station 2, as it requires 4 unit of gas but you only have 3.
+Therefore, you can't travel around the circuit once no matter where you start.
+</code></pre>
+
+<p>I have thought for a long time and got two ideas:
+1. If car starts at A and can not reach B. Any station between A and B
+can not reach B.(B is the first station that A can not reach.)
+1. If the total number of gas is bigger than the total number of cost. There must be a solution.<br />
+Here is my solution based on those ideas:</p>
+<pre><code> public int canCompleteCircuit(int[] gas, int[] cost) {
+        int start = 0,total = 0,tank = 0;
+
+        //if car fails at 'start', record the next station
+        for(int i = 0; i &lt; gas.length; i++) {
+            tank += gas[i] - cost[i];
+            if (tank &lt; 0) {
+                start = i + 1; //move starting position forward
+                total += tank; //add the negative tank value to total
+                tank = 0; //reset tank
+            }
+        }
+        //negative total + positive tank should be 0 or more, if so we can do a round trip and return start
+        return (total+tank &lt; 0)? -1: start;
+    }
+</code></pre>
+
+<p>Proof of idea 1:<br />
+- Assume A is reachable to any points before B.
+The gas on car when it is at station A is 0.
+- When the car reaches station x (x is between A and B), the gas on car is g (and g &gt;= 0).
+- If starting from x with gas amount g could not reach B, then starts from x with gas amount 0 could not reach B.
+- For cases when there are stations between A and B that are not reachable from A, we can reduce these cases to the above situation.  </p>
+<p>Proof of idea 2:
+- We assume that a car could run even when there is negative amount of oil and the oil dash board would goes down to the negative space. (let's imagine that would happen)
+- Then we start from station 0, and keep track of the amount of oil. When we go to the end of station, our oil dash board amount would be g (g &gt;= 0)
+There would be a toughest time that the oil dash board shows the minimum amount of oil. Assume the position is x;
+- We start from x and goes to the end of station. Then we will never come to the situation that our oil dash board goes below 0.
+- We go from end of station to station 0. We have oil g left.
+- We start from station 0 and then to x. We will never come to the situation that our oil dash board goes below 0;
+- Approved</p>
+<h3><a href="https://leetcode.com/problems/longest-consecutive-sequence/discuss/41057/Simple-O(n)-with-Explanation-Just-walk-each-streak">128. Longest Consecutive Sequence</a></h3>
+<p>Given an unsorted array of integers, find the length of the longest consecutive elements sequence.<br />
+Your algorithm should run in O(n) complexity.<br />
+<strong>Example:</strong></p>
+<pre><code>Input: [100, 4, 200, 1, 3, 2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+</code></pre>
+
+<pre><code class="java">class Solution {
+    public int longestConsecutive(int[] nums) {
+
+        Set&lt;Integer&gt; set = new HashSet();
+        for(int n:nums) set.add(n);
+        int res = 0;
+        for(int i:nums){
+            int count = 1;
+            if(!set.contains(i-1)) {
+                int y = i+1;
+                while(set.contains(y)) y++;
+                res= Math.max(res, y-i);
+            }
+        }
+        return res;
+    }
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/problems/palindrome-partitioning-ii/description/">132. Palindrome Partitioning II</a></h3>
+<p>Given a string s, partition s such that every substring of the partition is a palindrome.<br />
+Return the minimum cuts needed for a palindrome partitioning of s.<br />
+<strong>Example:</strong></p>
+<pre><code>Input: &quot;aab&quot;
+Output: 1
+Explanation: The palindrome partitioning [&quot;aa&quot;,&quot;b&quot;] could be produced using 1 cut.
+</code></pre>
+
+<pre><code class="java">class Solution {
+   private void find(String s, int l, int r, int[] dp) {
+        while (l &gt;= 0 &amp;&amp; r &lt; s.length() &amp;&amp; s.charAt(l) == s.charAt(r)) {
+            if (l == 0) dp[r] = 0;
+            else {
+                dp[r] = Math.min(dp[r], dp[l-1] + 1);
+            }
+            l--;
+            r++;
+        }
+    }
+
+    public int minCut(String s) {
+        int[] dp = new int[s.length()];
+        for (int i = 0; i &lt; s.length(); i++) {
+            dp[i] = i;
+        }
+        for (int i = 0; i &lt; s.length(); i++) {
+            find(s, i, i, dp);
+            find(s, i, i + 1, dp);
+        }
+        return dp[s.length() - 1];
+
+    }
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/problems/rectangle-area-ii/description/">850. Rectangle Area II</a></h3>
+<p>We are given a list of (axis-aligned) <code>rectangles</code>.  Each <code>rectangle[i] = [x1, y1, x2, y2]</code>, where (x1, y1) are the coordinates of the bottom-left corner, and (x2, y2) are the coordinates of the top-right corner of the <code>ith</code> rectangle.</p>
+<p>Find the total area covered by all rectangles in the plane.  Since the answer may be too large, return it modulo <code>10^9 + 7</code>.</p>
+<p><img alt="image" src="https://drive.google.com/uc?id=1jpZ-jXJ8cX9rpJeOhJwZ0pw5rxt6bAcg" /></p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: [[0,0,2,2],[1,0,2,3],[1,0,3,1]]
+Output: 6
+Explanation: As illustrated in the picture.
+</code></pre>
+
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: [[0,0,1000000000,1000000000]]
+Output: 49
+Explanation: The answer is 10^18 modulo (10^9 + 7), which is (10^9)^2 = (-7)^2 = 49.
+</code></pre>
+
+<p><strong>Note</strong>:<br />
+- 1 &lt;= rectangles.length &lt;= 200
+- rectanges[i].length = 4
+- 0 &lt;= rectangles[i][j] &lt;= 10^9
+- The total area covered by all rectangles will never exceed 2^63 - 1 and thus will fit in a 64-bit signed integer.</p>
+<pre><code class="java">class Solution {
+        public int rectangleArea(int[][] rectangles) {
+        Set&lt;Integer&gt; xs = new HashSet();
+        Set&lt;Integer&gt; ys = new HashSet();
+        for (int[] r : rectangles) {
+            xs.add(r[0]);
+            xs.add(r[2]);
+            ys.add(r[1]);
+            ys.add(r[3]);
+        }
+        List&lt;Integer&gt; xsort = new ArrayList&lt;&gt;(xs);
+        List&lt;Integer&gt; ysort = new ArrayList&lt;&gt;(ys);
+        Collections.sort(xsort);
+        Collections.sort(ysort);
+        Map&lt;Integer, Integer&gt; xmap = new HashMap&lt;&gt;();
+        Map&lt;Integer, Integer&gt; ymap = new HashMap&lt;&gt;();
+        for (int i = 0; i &lt; xsort.size(); i++) {
+            xmap.put(xsort.get(i), i);
+        }
+
+        for (int i = 0; i &lt; ysort.size(); i++) {
+            ymap.put(ysort.get(i), i);
+        }
+        boolean[][] grid = new boolean[xmap.size()][ymap.size()];
+        for (int[] r : rectangles) {
+            for (int x = xmap.get(r[0]); x &lt; xmap.get(r[2]); x++) {
+                for (int y = ymap.get(r[1]); y &lt; ymap.get(r[3]); y++) {
+                    grid[x][y] = true;
+                }
+
+            }
+        }
+        long res = 0;
+        for (int i = 0; i &lt; grid.length; i++) {
+            for (int j = 0; j &lt; grid[0].length; j++) {
+                if (grid[i][j]) {
+                    res += (long)(xsort.get(i + 1) - xsort.get(i)) * (ysort.get(j + 1) - ysort.get(j));
+                }
+            }
+        }
+        return (int) (res % 1000000007);
+    }
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/contest/weekly-contest-88/problems/loud-and-rich/">851. Loud and Rich</a></h3>
+<p>In a group of N people (labelled <code>0, 1, 2, ..., N-1</code>), each person has different amounts of money, and different levels of quietness.<br />
+For convenience, we'll call the person with label <code>x</code>, simply "person <code>x</code>".<br />
+We'll say that <code>richer[i] = [x, y]</code> if person <code>x</code> definitely has more money than person <code>y</code>.  Note that richer may only be a subset of valid observations.</p>
+<p>Also, we'll say <code>quiet[x] = q</code> if person <code>x</code> has quietness <code>q</code>.</p>
+<p>Now, return <code>answer</code>, where <code>answer[x] = y</code> if <code>y</code> is the least quiet person (that is, the person <code>y</code> with the smallest value of <code>quiet[y]</code>), among all people who definitely have equal to or more money than person <code>x</code>.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: richer = [[1,0],[2,1],[3,1],[3,7],[4,3],[5,3],[6,3]], quiet = [3,2,5,4,6,1,7,0]
+Output: [5,5,2,5,4,5,6,7]
+Explanation: 
+answer[0] = 5.
+Person 5 has more money than 3, which has more money than 1, which has more money than 0.
+The only person who is quieter (has lower quiet[x]) is person 7, but
+it isn't clear if they have more money than person 0.
+
+answer[7] = 7.
+Among all people that definitely have equal to or more money than person 7
+(which could be persons 3, 4, 5, 6, or 7), the person who is the quietest (has lower quiet[x])
+is person 7.
+</code></pre>
+
+<pre><code class="java">class Solution {
+  private int dfs(int target, List&lt;List&lt;Integer&gt;&gt; tree, int[] quiet, int[] res) {
+        if (res[target] &gt;= 0) return res[target];
+        res[target] = target;
+        for (int i : tree.get(target)) {
+            if (quiet[res[target]] &gt; quiet[dfs(i, tree, quiet, res)]) res[target] = res[i];
+        }
+        return res[target];
+    }
+
+    public int[] loudAndRich(int[][] richer, int[] quiet) {
+        ArrayList&lt;List&lt;Integer&gt;&gt; tree = new ArrayList&lt;&gt;();
+        for (int i = 0; i &lt; quiet.length; i++) tree.add(new LinkedList&lt;&gt;());
+        for (int[] a : richer) {
+            tree.get(a[1]).add(a[0]);
+        }
+
+        int[] res = new int[quiet.length];
+        Arrays.fill(res, -1);
+
+        for (int i = 0; i &lt; res.length; i++) {
+            dfs(i, tree, quiet, res);
+        }
+
+        return res;
+    }
+}
+</code></pre>
+
+<p>The other answers can be filled out with similar reasoning.<br />
+<strong>Note:</strong><br />
+1.  1 &lt;= quiet.length = N &lt;= 500
+2.  0 &lt;= quiet[i] &lt; N, all quiet[i] are different.
+3.  0 &lt;= richer.length &lt;= N * (N-1) / 2
+4.  0 &lt;= richer[i][j] &lt; N
+5.  richer[i][0] != richer[i][1]
+6.  richer[i]'s are all different.
+7.  The observations in richer are all logically consistent.</p>
+<h3><a href="https://leetcode.com/problems/palindrome-partitioning/discuss/41963/Java:-Backtracking-solution.">Palindrome Partitioning</a></h3>
+<p>Given a string s, partition s such that every substring of the partition is a palindrome.<br />
+Return all possible palindrome partitioning of s.<br />
+<strong>Example:</strong></p>
+<pre><code>Input: &quot;aab&quot;
+Output:
+[
+  [&quot;aa&quot;,&quot;b&quot;],
+  [&quot;a&quot;,&quot;a&quot;,&quot;b&quot;]
+]
+</code></pre>
+
+<pre><code class="java">Class Solution{
+    List&lt;List&lt;String&gt;&gt; resultLst;
+    ArrayList&lt;String&gt; currLst;
+
+    public List&lt;List&lt;String&gt;&gt; partition(String s) {
+        resultLst = new ArrayList&lt;&gt;();
+        currLst = new ArrayList&lt;&gt;();
+        backTrack(s, 0);
+        return resultLst;
+    }
+
+    public void backTrack(String s, int l) {
+        if (currLst.size() &gt; 0 //the initial str could be palindrome
+                &amp;&amp; l &gt;= s.length()) {
+            List&lt;String&gt; r = (ArrayList&lt;String&gt;) currLst.clone();
+            resultLst.add(r);
+        }
+        for (int i = l; i &lt; s.length(); i++) {
+            if (isPalindrome(s, l, i)) {
+                if (l == i)
+                    currLst.add(Character.toString(s.charAt(i)));
+                else
+                    currLst.add(s.substring(l, i + 1));
+                backTrack(s, i + 1);
+                currLst.remove(currLst.size() - 1);
+            }
+        }
+    }
+
+    public boolean isPalindrome(String str, int l, int r) {
+        if (l == r) return true;
+        while (l &lt; r) {
+            if (str.charAt(l) != str.charAt(r)) return false;
+            l++;
+            r--;
+        }
+        return true;
+    }
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/problems/regular-expression-matching/discuss/5651/Easy-DP-Java-Solution-with-detailed-Explanation">Regular Expression Matching</a></h3>
+<p>Here are some conditions to figure out, then the logic can be very straightforward.</p>
+<pre><code>1.If p.charAt(j) == s.charAt(i) :  dp[i][j] = dp[i-1][j-1];
+2.If p.charAt(j) == '.' : dp[i][j] = dp[i-1][j-1];
+3.If p.charAt(j) == '*': 
+    //here are two sub conditions:
+    1 if p.charAt(j-1) != s.charAt(i) : dp[i][j] = dp[i][j-2]  //in this case, a* only counts as empty
+    2.if p.charAt(i-1) == s.charAt(i) or p.charAt(i-1) == '.':
+        dp[i][j] = dp[i-1][j]    //in this case, a* counts as multiple a 
+        or dp[i][j] = dp[i][j-1]   // in this case, a* counts as single a
+        or dp[i][j] = dp[i][j-2]   // in this case, a* counts as empty
+</code></pre>
+
+<p>Here is the solution</p>
+<pre><code>public boolean isMatch(String s, String p) {
+
+    if (s == null || p == null) {
+        return false;
+    }
+    boolean[][] dp = new boolean[s.length()+1][p.length()+1];
+    dp[0][0] = true;
+    for (int i = 0; i &lt; p.length(); i++) {
+        if (p.charAt(i) == '*' &amp;&amp; dp[0][i-1]) {
+            dp[0][i+1] = true;
+        }
+    }
+    for (int i = 0 ; i &lt; s.length(); i++) {
+        for (int j = 0; j &lt; p.length(); j++) {
+            if (p.charAt(j) == '.') {
+                dp[i+1][j+1] = dp[i][j];
+            }
+            if (p.charAt(j) == s.charAt(i)) {
+                dp[i+1][j+1] = dp[i][j];
+            }
+            if (p.charAt(j) == '*') {
+                if (p.charAt(j-1) != s.charAt(i) &amp;&amp; p.charAt(j-1) != '.') {
+                    dp[i+1][j+1] = dp[i+1][j-1];
+                } else {
+                    dp[i+1][j+1] = (dp[i+1][j] || dp[i][j+1] || dp[i+1][j-1]);
+                }
+            }
+        }
+    }
+    return dp[s.length()][p.length()];
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/description/">Binary Tree Maximum Path Sum</a></h3>
+<p>Given a non-empty binary tree, find the maximum path sum.<br />
+For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root.<br />
+Example 1:</p>
+<pre><code>Input: [1,2,3]
+
+       1
+      / \
+     2   3
+
+Output: 6
+</code></pre>
+
+<p>Example 2:</p>
+<pre><code>Input: [-10,9,20,null,null,15,7]
+
+   -10
+   / \
+  9  20
+    /  \
+   15   7
+
+Output: 42
+
+</code></pre>
+
+<h4><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39775/Accepted-short-solution-in-Java">Solution</a></h4>
+<p>For every Node <code>a</code>, check the path <code>sum</code> with <code>a</code> as root, if <code>sum</code> &gt; <code>currentMaxSum</code>, we can update <code>currentMaxSum = sum</code>.<br />
+With recursion we can get all the path sum for every node. </p>
+<pre><code>/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    int maxSum = Integer.MIN_VALUE;
+    private int findMax(TreeNode root){
+        if(root == null) return 0;
+        int left = findMax(root.left);
+        int right = findMax(root.right);
+        int sum = root.val + left + right;
+        if(sum &gt; maxSum) maxSum = sum;
+        // Math.max(left, right)  because we're tracing the path, for a certain node, 
+        // only its left or right could be added to the path.
+        // Math.max(Math.max(left, right) + root.val, 0), 
+        // if a node's path sum is negative,  we can safely ignore this node.
+        return Math.max(Math.max(left, right) + root.val, 0);
+
+    }
+    public int maxPathSum(TreeNode root) {
+        findMax(root);
+        return maxSum;
+    }
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/problems/remove-k-digits/description/">Remove K Digits</a></h3>
+<p>Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.</p>
+<p><strong>Note</strong>:
+- The length of num is less than 10002 and will be ≥ k. 
+- The given num does not contain any leading zero. </p>
+<p>Example 1:  </p>
+<pre><code>Input: num = &quot;1432219&quot;, k = 3 
+Output: &quot;1219&quot; 
+Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest. 
+</code></pre>
+
+<p>Example 2:</p>
+<pre><code>Input: num = &quot;10200&quot;, k = 1 
+Output: &quot;200&quot; 
+Explanation: Remove the leading 1 and the number is 200. Note that the output must not contain leading zeroes.
+</code></pre>
+
+<p>Example 3:</p>
+<pre><code>Input: num = &quot;10&quot;, k = 2
+Output: &quot;0&quot; 
+Explanation: Remove all the digits from the number and it is left with nothing which is 0.
+</code></pre>
+
+<h4>Solution <a href="https://leetcode.com/problems/remove-k-digits/discuss/88660/A-greedy-method-using-stack-O(n)-time-and-O(n)-space">A greedy method using stack, O(n) time and O(n) space</a></h4>
+<pre><code>public class Solution {
+    public String removeKdigits(String num, int k) {
+        int digits = num.length() - k;
+        char[] stk = new char[num.length()];
+        int top = 0;
+        // k keeps track of how many characters we can remove
+        // if the previous character in stk is larger than the current one
+        // then removing it will get a smaller number
+        // but we can only do so when k is larger than 0
+        for (int i = 0; i &lt; num.length(); ++i) {
+            char c = num.charAt(i);
+            while (top &gt; 0 &amp;&amp; stk[top-1] &gt; c &amp;&amp; k &gt; 0) {
+                top -= 1;
+                k -= 1;
+            }
+            stk[top++] = c;
+        }
+        // find the index of first non-zero digit
+        int idx = 0;
+        while (idx &lt; digits &amp;&amp; stk[idx] == '0') idx++;
+        return idx == digits? &quot;0&quot;: new String(stk, idx, digits - idx);
+    }
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/problems/single-number-ii/discuss/43295/Detailed-explanation-and-generalization-of-the-bitwise-operation-method-for-single-numbers">Single Number II</a></h3>
+<p>The usual bit manipulation code is bit hard to get and replicate. I like to think about the number in 32 bits and just count how many 1s are there in each bit, and <code>sum %= 3</code> will clear it once it reaches 3. After running for all the numbers for each bit, if we have a 1, then that 1 belongs to the single number, we can simply move it back to its spot by doing <code>ans |= sum &lt;&lt; i</code>;</p>
+<p>This has complexity of O(32n), which is essentially O(n) and very easy to think and implement. Plus, you get a general solution for any times of occurrence. Say all the numbers have 5 times, just do <code>sum %= 5</code>.</p>
+<pre><code class="java">public int singleNumber(int[] nums) {
+    int ans = 0;
+    for(int i = 0; i &lt; 32; i++) {
+        int sum = 0;
+        for(int j = 0; j &lt; nums.length; j++) {
+            if(((nums[j] &gt;&gt; i) &amp; 1) == 1) {
+                sum++;
+                sum %= 3;
+            }
+        }
+        if(sum != 0) {
+            ans |= sum &lt;&lt; i;
+        }
+    }
+    return ans;
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/problems/distinct-subsequences/discuss/37327/easy-to-understand-dp-in-java">Distinct Subsequences</a></h3>
+<p>Given a string <strong>S</strong> and a string <strong>T</strong>, count the number of distinct subsequences of <strong>S</strong> which equals <strong>T</strong>.</p>
+<p>A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, <code>"ACE"</code> is a subsequence of <code>"ABCDE"</code> while <code>"AEC"</code> is not).</p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: S = &quot;rabbbit&quot;, T = &quot;rabbit&quot;
+Output: 3
+Explanation:
+
+As shown below, there are 3 ways you can generate &quot;rabbit&quot; from S.
+(The caret symbol ^ means the chosen letters)
+
+rabbbit
+^^^^ ^^
+rabbbit
+^^ ^^^^
+rabbbit
+^^^ ^^^
+</code></pre>
+
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: S = &quot;babgbag&quot;, T = &quot;bag&quot;
+Output: 5
+Explanation:
+
+As shown below, there are 5 ways you can generate &quot;bag&quot; from S.
+(The caret symbol ^ means the chosen letters)
+
+babgbag
+^^ ^
+babgbag
+^^    ^
+babgbag
+^    ^^
+babgbag
+  ^  ^^
+babgbag
+    ^^^
+</code></pre>
+
+<p>The idea is the following:</p>
+<ul>
+<li>we will build an array mem where mem[i+1][j+1] means that S[0..j] contains T[0..i] that many times as distinct subsequences. Therefor the result will be mem[T.length()][S.length()].</li>
+<li>we can build this array rows-by-rows:</li>
+<li>the first row must be filled with 1. That's because the empty string is a subsequence of any string but only 1 time. So mem[0][j] = 1 for every j. So with this we not only make our lives easier, but we also return correct value if T is an empty string.</li>
+<li>the first column of every rows except the first must be 0. This is because an empty string cannot contain a non-empty string as a substring -- the very first item of the array: mem[0][0] = 1, because an empty string contains the empty string 1 time.<br />
+So the matrix looks like this:</li>
+</ul>
+<pre><code>  S 0123....j
+T +----------+
+  |1111111111|
+0 |0         |
+1 |0         |
+2 |0         |
+. |0         |
+. |0         |
+i |0         |
+</code></pre>
+
+<p>From here we can easily fill the whole grid: for each <code>(x, y)</code>, we check if <code>S[x] == T[y]</code> we add the previous item and the previous item in the previous row, otherwise we copy the previous item in the same row. The reason is simple:
+<em> if the current character in S doesn't equal to current character T, then we have the same number of distinct subsequences as we had without the new character.
+</em> if the current character in S equal to the current character T, then the distinct number of subsequences: the number we had before plus the distinct number of subsequences we had with less longer T and less longer S.<br />
+An example:<br />
+<code>S: [acdabefbc]</code> and <code>T: [ab]</code>  </p>
+<p>first we check with <code>a</code>:  </p>
+<pre><code>           * *
+      S = [acdabefbc]
+mem[1] = [0111222222]
+</code></pre>
+
+<p>then we check with <code>ab</code>:</p>
+<pre><code>               *  * ]
+      S = [acdabefbc]
+mem[1] = [0111222222]
+mem[2] = [0000022244]
+</code></pre>
+
+<p>And the result is 4, as the distinct subsequences are:</p>
+<pre><code>      S = [a   b    ]
+      S = [a      b ]
+      S = [   ab    ]
+      S = [   a   b ]
+</code></pre>
+
+<p>See the code in Java:</p>
+<pre><code class="java">public int numDistinct(String S, String T) {
+    // array creation
+    int[][] mem = new int[T.length()+1][S.length()+1];
+
+    // filling the first row: with 1s
+    for(int j=0; j&lt;=S.length(); j++) {
+        mem[0][j] = 1;
+    }
+
+    // the first column is 0 by default in every other rows but the first, which we need.
+
+    for(int i=0; i&lt;T.length(); i++) {
+        for(int j=0; j&lt;S.length(); j++) {
+            if(T.charAt(i) == S.charAt(j)) {
+                mem[i+1][j+1] = mem[i][j] + mem[i+1][j];
+            } else {
+                mem[i+1][j+1] = mem[i+1][j];
+            }
+        }
+    }
+
+    return mem[T.length()][S.length()];
+}
+</code></pre>
+
+<h3><a href="https://leetcode.com/problems/minimum-window-substring/discuss/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems">10-line template that can solve most 'substring' problems</a></h3>
+<p>For most substring problem, we are given a string and need to find a substring of it which satisfy some restrictions. A general way is to use a hashmap assisted with two pointers. The template is given below.</p>
+<pre><code class="java">int findSubstring(string s){
+        vector&lt;int&gt; map(128,0);
+        int counter; // check whether the substring is valid
+        int begin=0, end=0; //two pointers, one point to tail and one  head
+        int d; //the length of substring
+
+        for() { /* initialize the hash map here */ }
+
+        while(end&lt;s.size()){
+
+            if(map[s[end++]]-- ?){  /* modify counter here */ }
+
+            while(/* counter condition */){ 
+
+                 /* update d here if finding minimum*/
+
+                //increase begin to make it invalid/valid again
+
+                if(map[s[begin++]]++ ?){ /*modify counter here*/ }
+            }  
+
+            /* update d here if finding maximum*/
+        }
+        return d;
+  }
+</code></pre>
+
+<p>One thing needs to be mentioned is that when asked to find maximum substring, we should update maximum after the inner while loop to guarantee that the substring is valid. On the other hand, when asked to find minimum substring, we should update minimum inside the inner while loop.<br />
+The code of solving Longest Substring with At Most Two Distinct Characters is below:</p>
+<pre><code class="java">int lengthOfLongestSubstringTwoDistinct(string s) {
+        vector&lt;int&gt; map(128, 0);
+        int counter=0, begin=0, end=0, d=0; 
+        while(end&lt;s.size()){
+            if(map[s[end++]]++==0) counter++;
+            while(counter&gt;2) if(map[s[begin++]]--==1) counter--;
+            d=max(d, end-begin);
+        }
+        return d;
+    }
+</code></pre>
+
+<p>The code of solving Longest Substring Without Repeating Characters is below:</p>
+<pre><code>int lengthOfLongestSubstring(string s) {
+        vector&lt;int&gt; map(128,0);
+        int counter=0, begin=0, end=0, d=0; 
+        while(end&lt;s.size()){
+            if(map[s[end++]]++&gt;0) counter++; 
+            while(counter&gt;0) if(map[s[begin++]]--&gt;1) counter--;
+            d=max(d, end-begin); //while valid, update d
+        }
+        return d;
+    }
+</code></pre>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39775/Accepted-short-solution-in-Java">Accepted short solution in Java</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://leetcode.com/problems/remove-k-digits/discuss/88660/A-greedy-method-using-stack-O(n)-time-and-O(n)-space">A greedy method using stack, O(n) time and O(n) space</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<nav id="post-nav">
+    <span class="next"><a href="/posts/2018/02/04/colorful-clouds-chasing-the-moon.html" title="《彩云追月》">Next</a></span>
+</nav><!--
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'synckey'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+-->
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "http://synckey.name/posts/2018/06/23/leetcodes.html";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "posts/2018/06/23/leetcodes.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'http://synckey.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+
+
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+-->
+<!-- End Disqus Code -->
+</div>
+<div class="separator"></div>
+<div class="separator"></div>
+<div class="separator"></div>
+    </div>
+</div>
+<!-- /.entry-content -->
+
+<div id="wrapper">
+    <div class="footer">
+        &copy; 2018 andy
+        &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+        Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+    </div>
+</div><script src="/theme/js/theme.js"></script>
+<!-- Baidu Analytics -->
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?5c7645d659d92aabca4e974b4aa61755";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<!-- End Google Analytics Code -->
+</div>
+</body>
+</html>

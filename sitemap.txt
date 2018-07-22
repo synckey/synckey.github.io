@@ -6,7 +6,7 @@ http://synckey.name/
 http://synckey.name/archives.html
 http://synckey.name/tags.html
 http://synckey.name/categories.html
-http://synckey.name/posts/2018/06/02/leetcode-124.html
+http://synckey.name/posts/2018/06/23/leetcodes.html
 http://synckey.name/posts/2018/02/04/colorful-clouds-chasing-the-moon.html
 http://synckey.name/posts/2018/02/03/a-joke.html
 http://synckey.name/posts/2018/01/01/2017-summery.html
