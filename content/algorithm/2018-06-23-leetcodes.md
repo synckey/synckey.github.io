@@ -43,7 +43,7 @@ Explanation: We pay 4 to 0-th worker, 13.33333 to 2-th and 3-th workers seperate
 1. 1 <= wage[i] <= 10000
 1. Answers within 10^-5 of the correct answer will be considered correct.
 
-```java
+```
 class Solution {
     public double mincostToHireWorkers(int[] q, int[] w, int K) {
         double[][] workers = new double[w.length][2];
