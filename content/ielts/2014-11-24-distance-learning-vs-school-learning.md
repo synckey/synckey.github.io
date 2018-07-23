@@ -9,7 +9,7 @@ Place: Beijing
 but some people think that it cannot bring the same benefits of attending college or university.
 To what extent do you agree or disagree.
 
-**Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).
+**Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).
 
 Distance learning is a relatively recent phenomenon and if it is as  good as traditional classroom-based learning still
 remains to be controversial.Many people believe that the online courses are better than those provided at school,but

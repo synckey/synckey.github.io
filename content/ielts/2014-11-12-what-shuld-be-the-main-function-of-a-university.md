@@ -14,7 +14,7 @@ Place: Beijing
 >Give reasons for your answer and include any relevant examples from your own knowledge or experience.
 >Write at least 250 words.
 
-**Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).
+**Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).
 
 Recently,what kind of knowledge should a university provide its graduates with has been increasingly popular.Some of us
 hold the view that universities should teach their students job-related skills.But others do not agree,they

@@ -7,7 +7,7 @@ Place: Beijing
 
 >Some people think that employers should be required to employ equal numbers of men and women. To what extent do you agree or disagree?
 
-**Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).
+**Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).
 
 It is undoubtedly that men and women are playing different roles in our society. There are opinions that suggest companies
 to employ the same number of females and males. Personally,I don't think this is a good suggestion.

@@ -7,7 +7,7 @@ Place: Beijing
 
 >Some people think that it is acceptable to use animals for the benefit of humans. Others, however, think that it is wrong to exploit animals for human purposes. Discuss both these views and give your own opinion.
 
-**Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).
+**Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).
 
 It is undoubtedly the case that the number of animals used for human being's benefit  is increasingly large.Some people think
 this is unethical and unfair to benefit from animals ,but others hold the opposite view. Personally, my opinion is that we should

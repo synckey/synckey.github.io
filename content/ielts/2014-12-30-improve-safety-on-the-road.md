@@ -7,7 +7,7 @@ Place: Beijing
 
 >The only way to improve safety on the road is to severely punish driving offenders. To what extent do you agree or disagree?
 
-**Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse,etc).
+**Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).
 
 The number of traffic accidents is increasingly large recently which leads to a various of social problems.Some people
 think that the best and only way to improve traffic  safety is by imposing severe punishments on those who have violated the traffic
