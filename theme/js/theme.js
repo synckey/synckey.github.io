@@ -40,6 +40,7 @@ $(document).ready(function () {
             $(this).wrap('<a href="' + this.src + '"  data-fancybox rel="fancybox-thumb" class="fancybox-thumb" title="' + alt + '"></a>');
         });
     });
+
     $('.fancybox-thumb').fancybox(fancybox_settings);
 
     // for prism
@@ -62,13 +63,14 @@ var ias = jQuery.ias({
     pagination: '.pagination',
     next: '.next'
 });
+
 ias.extension(new IASSpinnerExtension(
 
 ));
 
 ias.extension(new IASTriggerExtension({
     offset: 30,
-    text: '<a class="load-more J_listLoadMore" href="javascript:;" id="info_flows_next_link">点击加载更多</a>',
+    text: '<a class="load-more" href="javascript:;" id="info_flows_next_link">点击加载更多</a>',
 }));
 
 ias.extension(new IASNoneLeftExtension({text: ""}));
