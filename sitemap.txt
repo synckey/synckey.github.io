@@ -95,3 +95,4 @@ http://synckey.name/tag/notes.html
 http://synckey.name/tag/personal.html
 http://synckey.name/author/andy.html
 http://synckey.name/author/hollie.html
+http://synckey.name/author/jian.html
