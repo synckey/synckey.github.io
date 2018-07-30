@@ -1215,24 +1215,24 @@ System.out.println(set);
 &lt;p&gt;上周六中午，从小店门口路过，看到大爷大妈也在里面，于是又进了小店，想吃一碗饺子，然而大爷大妈只是在这里帮新主人吸引老客户而已，他们真的不开了。他们不开店了将会何去何从？想问却也没问的出口。今晚再次看到大爷在小店里，就走进去要了一份盖饭，大爷叫了我一声小王，像有什么事，没说什么就走了。吃饭的时候，新老板娘说大娘生病了，要回老家养病，才把这家店转让了。不知道大娘得的什么病，也不知道他们看病花了多少钱，有没有医保可以报销。记得大爷以前说他们住在一个地下室，他说他们租不起一套好一点的房子---也许是舍不得租。&lt;/p&gt;
 &lt;p&gt;一场突如其来的病，让一个本充满希望的家庭，又回到了原点。离开北京对他们来说福兮？祸兮？无从知晓。&lt;/p&gt;
 &lt;p&gt;只希望曾经多吃了几碗饺子。&lt;/p&gt;</content><category term="life"></category></entry><entry><title>HHKB 设置与快捷键</title><link href="http://synckey.name/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html" rel="alternate"></link><published>2016-02-26T00:00:00+08:00</published><updated>2016-02-26T00:00:00+08:00</updated><author><name>Jian</name></author><id>tag:synckey.name,2016-02-26:/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html</id><summary type="html">&lt;p&gt;终于入了HHKB的坑，买了一个 HHKB Types pro2， 折腾了一阵子。感觉HHKB的手感并不比Cherry青轴手感好，但是有一点比青轴好太多，就是按键很灵敏。 
-以前我的Cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事，&lt;code&gt;F1&lt;/code&gt;按的太多以后就总是有点不灵，而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉，不是键帽材质)不是很清爽。
-比Cherry好的第二优点是使用寿命，机械键盘的开关说是有 2000w 次的寿命，理论上可以用5-8年。&lt;/p&gt;
+以前我的Cherry &lt;code&gt;F1&lt;/code&gt;按的太多以后就总是有点不灵，而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉，不是键帽材质)不是很清爽。
+比Cherry好的第二个优点是使用寿命，机械键盘的开关说是有 2000w 次的寿命，理论上可以用5-8年。&lt;/p&gt;
 &lt;p&gt;而HHKB属于静电电容键盘，按键的触发是根据电容的变化来判断的，每次敲击都没有物理接触，所以静电容理的开关理论上是不会坏的，可以作为程序猿传家宝传给儿子。
 虽然HHKB的手感并没有让人很惊艳，但是用一阵子之后再换回Mac Book Pro自带的键盘就感觉差太多了，再加上熟悉了HHKB键盘布局以后用回MBP的键盘老是误按，现在算是离不开HHKB了。&lt;/p&gt;
 &lt;p&gt;我用HHKB的开关是&lt;code&gt;011001&lt;/code&gt;，主要是使用Macintosh的键盘布局并且将delete键设置为'BS'。另外，也安装了&lt;a href="https://pqrs.org/osx/karabiner/"&gt;Karabiner-Elements&lt;/a&gt;这款神器，
-它设置系统自动识别是否插入了外接键盘，如果插入了某个型号的外接键盘，可以将MBP的键盘Disable掉， 防止误按。
+它讷讷个设置系统自动识别是否插入了外接键盘，如果插入了某个型号的外接键盘，可以将MBP的键盘Disable掉， 防止误按。
 硬件方面，买了一个miniusb右弯的接头，这样把HHKB放在MBP键盘上的时候，线就不会弯曲而挡着屏幕了。&lt;/p&gt;
 &lt;div class="figure"&gt; 
 &lt;img src="/static/images/miniusb.jpg" alt="miniusb"  width="50%" /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Mac OS 相比 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;终于入了HHKB的坑，买了一个 HHKB Types pro2， 折腾了一阵子。感觉HHKB的手感并不比Cherry青轴手感好，但是有一点比青轴好太多，就是按键很灵敏。 
-以前我的Cherry不知道是我自己人品不好买到瑕疵品了还是怎么回事，&lt;code&gt;F1&lt;/code&gt;按的太多以后就总是有点不灵，而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉，不是键帽材质)不是很清爽。
-比Cherry好的第二优点是使用寿命，机械键盘的开关说是有 2000w 次的寿命，理论上可以用5-8年。&lt;/p&gt;
+以前我的Cherry &lt;code&gt;F1&lt;/code&gt;按的太多以后就总是有点不灵，而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉，不是键帽材质)不是很清爽。
+比Cherry好的第二个优点是使用寿命，机械键盘的开关说是有 2000w 次的寿命，理论上可以用5-8年。&lt;/p&gt;
 &lt;p&gt;而HHKB属于静电电容键盘，按键的触发是根据电容的变化来判断的，每次敲击都没有物理接触，所以静电容理的开关理论上是不会坏的，可以作为程序猿传家宝传给儿子。
 虽然HHKB的手感并没有让人很惊艳，但是用一阵子之后再换回Mac Book Pro自带的键盘就感觉差太多了，再加上熟悉了HHKB键盘布局以后用回MBP的键盘老是误按，现在算是离不开HHKB了。&lt;/p&gt;
 &lt;p&gt;我用HHKB的开关是&lt;code&gt;011001&lt;/code&gt;，主要是使用Macintosh的键盘布局并且将delete键设置为'BS'。另外，也安装了&lt;a href="https://pqrs.org/osx/karabiner/"&gt;Karabiner-Elements&lt;/a&gt;这款神器，
-它设置系统自动识别是否插入了外接键盘，如果插入了某个型号的外接键盘，可以将MBP的键盘Disable掉， 防止误按。
+它讷讷个设置系统自动识别是否插入了外接键盘，如果插入了某个型号的外接键盘，可以将MBP的键盘Disable掉， 防止误按。
 硬件方面，买了一个miniusb右弯的接头，这样把HHKB放在MBP键盘上的时候，线就不会弯曲而挡着屏幕了。&lt;/p&gt;
 &lt;div class="figure"&gt; 
 &lt;img src="/static/images/miniusb.jpg" alt="miniusb"  width="50%" /&gt;
