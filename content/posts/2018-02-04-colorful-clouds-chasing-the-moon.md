@@ -1,7 +1,7 @@
-Title: 《彩云追月》
-Date: 2018.02.04
+Title: 彩云追月
+Date: 2018-02-04
 Category: life
-Tags: life,posts,summery
+Tags: life,posts
 Slug: colorful-clouds-chasing-the-moon
 Author: Andy
 Place: Beijing
