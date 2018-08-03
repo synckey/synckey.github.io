@@ -14,7 +14,7 @@ Place: Beijing
 虽然HHKB的手感并没有让人很惊艳，但是用一阵子之后再换回Mac Book Pro自带的键盘就感觉差太多了，再加上熟悉了HHKB键盘布局以后用回MBP的键盘老是误按，现在算是离不开HHKB了。
 
 我用HHKB的开关是`011001`，主要是使用Macintosh的键盘布局并且将delete键设置为'BS'。另外，也安装了[Karabiner-Elements](https://pqrs.org/osx/karabiner/)这款神器，
-它讷讷个设置系统自动识别是否插入了外接键盘，如果插入了某个型号的外接键盘，可以将MBP的键盘Disable掉， 防止误按。
+它能够设置系统自动识别是否插入了外接键盘，如果插入了某个型号的外接键盘，可以将MBP的键盘Disable掉， 防止误按。
 硬件方面，买了一个miniusb右弯的接头，这样把HHKB放在MBP键盘上的时候，线就不会弯曲而挡着屏幕了。
 
 <div class="figure"> 
