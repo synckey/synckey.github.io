@@ -96,7 +96,7 @@ body, html {
 }
 
 body {
-    font: 20px/1 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+    font: 18px/1 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     color: #666;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility
@@ -226,7 +226,7 @@ li {
 }
 
 #post-body, .tip, p {
-    line-height: 1.7;
+    line-height: 1.6;
     text-align: justify;
 }
 
