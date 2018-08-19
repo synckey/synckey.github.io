@@ -2892,9 +2892,9 @@ set nu
 在这个示意图中,黄色的圆圈代表神经元,蓝色的圆圈代表整个神经网络的输入.被标为$+1$的圆圈称作&lt;strong&gt;bias unit&lt;/strong&gt;,代表&lt;strong&gt;截距项&lt;/strong&gt;(intercept term).
 网络最左边的层叫做&lt;strong&gt;输入层&lt;/strong&gt;(input layer),最右边叫做&lt;strong&gt;输出层&lt;/strong&gt;(output layer).中间所有的节点组成的层叫做&lt;strong&gt;隐藏层&lt;/strong&gt;(hidden layer),因为我们不能在训练样本里面观察到它的值.&lt;/p&gt;
 &lt;p&gt;神经网络也可以有多个输出单元,比如,下面的神经网络有两个隐藏曾,$L_2$和$L_3$,输出层$L_4$有两个输出单元:
-&lt;p align="center"&gt;
+&lt;div class="figure"&gt;
 &lt;img src="/static/images/MultiOutputNetwork.png" alt="MultiOutputNetwork"  width="50%" /&gt;
-&lt;/p&gt;
+&lt;/div&gt;
 如果你的任务是预测多个输出,这种神经网络很适用.&lt;/p&gt;
 &lt;h4&gt;向前传播&lt;/h4&gt;
 &lt;p&gt;每层每个节点的计算方法:
@@ -3119,18 +3119,18 @@ plot(x,y,'b');
 grid on;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p align="center"&gt;
+&lt;div class="figure"&gt;
 &lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" /&gt;
-&lt;/p&gt;</summary><content type="html">&lt;pre&gt;&lt;code class="language-matlab"&gt;a=2;
+&lt;/div&gt;</summary><content type="html">&lt;pre&gt;&lt;code class="language-matlab"&gt;a=2;
 x=-10:0.1:10;
 y=1./[1+exp(-a.*x)];
 plot(x,y,'b');
 grid on;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p align="center"&gt;
+&lt;div class="figure"&gt;
 &lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" /&gt;
-&lt;/p&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>Where does sigmoid come from</title><link href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/where-does-sigmoid-come-from.html</id><summary type="html">&lt;blockquote&gt;
+&lt;/div&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>Where does sigmoid come from</title><link href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/where-does-sigmoid-come-from.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;主要根据Andrew Ng的教学讲义整理。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
