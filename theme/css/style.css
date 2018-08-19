@@ -104,14 +104,15 @@ body {
 
 h1 {
     font-size: 30px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    color: #222
+    /*letter-spacing: -1px;*/
+    color: #222;
+    margin-bottom: 10px;
 }
 
 h2 {
-    font: italic 19px/1.3em Georgia, serif;
-    color: #bbb
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
 }
 
 .profile #wrapper {
