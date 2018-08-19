@@ -49,9 +49,9 @@ input->feature representation->learning algorithm
 网络最左边的层叫做**输入层**(input layer),最右边叫做**输出层**(output layer).中间所有的节点组成的层叫做**隐藏层**(hidden layer),因为我们不能在训练样本里面观察到它的值.
 
 神经网络也可以有多个输出单元,比如,下面的神经网络有两个隐藏曾,$L_2$和$L_3$,输出层$L_4$有两个输出单元:
-<p align="center">
+<div class="figure">
 <img src="/static/images/MultiOutputNetwork.png" alt="MultiOutputNetwork"  width="50%" />
-</p>
+</div>
 如果你的任务是预测多个输出,这种神经网络很适用.
 
 

@@ -13,7 +13,7 @@ y=1./[1+exp(-a.*x)];
 plot(x,y,'b');
 grid on;
 ```
-<p align="center">
+<div class="figure">
 <img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" />
-</p>
+</div>
 
