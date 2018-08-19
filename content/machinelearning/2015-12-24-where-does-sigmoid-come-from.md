@@ -8,9 +8,9 @@ Place: Beijing
 >主要根据Andrew Ng的教学讲义整理。
 
 逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
-<p align="center">
+<div class="figure">
 <img src="/static/images/sigmoid.svg" alt="sigmoid"  width="60%" />
-</p>
+</div>
 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。
 
 ###1.逻辑回归的建模
