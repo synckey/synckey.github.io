@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/all.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2018-08-19T00:00:00+08:00</updated><entry><title>超市</title><link href="http://synckey.name/posts/2018/08/19/supermarket.html" rel="alternate"></link><published>2018-08-19T00:00:00+08:00</published><updated>2018-08-19T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-19:/posts/2018/08/19/supermarket.html</id><summary type="html">&lt;p&gt;对中国人来说，来到一个新地方，首先就是让自己的胃熟悉那里，所以先要找餐馆，再找超市，超市不仅仅能满足你的胃。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/all.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2018-08-25T00:00:00+08:00</updated><entry><title>浮生六记</title><link href="http://synckey.name/posts/2018/08/25/six-chapters-from-a-floating-life.html" rel="alternate"></link><published>2018-08-25T00:00:00+08:00</published><updated>2018-08-25T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-25:/posts/2018/08/25/six-chapters-from-a-floating-life.html</id><summary type="html">&lt;p&gt;小时候穿着开裆裤在墙底下扒开准头抓蚯蚓，玩完了发现小鸡鸡肿起来了，于是奶奶就带我去邻居家里找一只鸭子，给鸭子叉两口，很快就好了。
+今天读到沈复的《浮生六记》，原来中国人在清朝就已经用这种方式治疗被蚯蚓哈肿起来的小鸡鸡了，为之一笑。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;贪此生涯，卵为蚯蚓所哈（吴俗称阳曰卵），肿不能便，捉鸭开口哈之，婢妪偶释手，鸭颠其颈作吞噬状，惊而大哭，传为语柄。&lt;/p&gt;
+&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;小时候穿着开裆裤在墙底下扒开准头抓蚯蚓，玩完了发现小鸡鸡肿起来了，于是奶奶就带我去邻居家里找一只鸭子，给鸭子叉两口，很快就好了。
+今天读到沈复的《浮生六记》，原来中国人在清朝就已经用这种方式治疗被蚯蚓哈肿起来的小鸡鸡了，为之一笑。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;贪此生涯，卵为蚯蚓所哈（吴俗称阳曰卵），肿不能便，捉鸭开口哈之，婢妪偶释手，鸭颠其颈作吞噬状，惊而大哭，传为语柄。&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="life"></category><category term="posts"></category></entry><entry><title>超市</title><link href="http://synckey.name/posts/2018/08/19/supermarket.html" rel="alternate"></link><published>2018-08-19T00:00:00+08:00</published><updated>2018-08-19T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-19:/posts/2018/08/19/supermarket.html</id><summary type="html">&lt;p&gt;对中国人来说，来到一个新地方，首先就是让自己的胃熟悉那里，所以先要找餐馆，再找超市，超市不仅仅能满足你的胃。&lt;/p&gt;
 &lt;p&gt;每想到超市，我就想到家庭。一个家庭对待生活的态度可以从早餐的丰盛程度看出来。最精致的当然是早晨一切现做，不管是粥还是小菜。
 从这一点来看，大部分总过家庭的早餐算是精致的。或者早晨总有一个人要早起，去菜市场买新做好的包子豆浆之类。
 再次一点的就是在家里热现成的了，比如热一杯牛奶，两片面包。最不精致的吃法应该就是在路边买一个煎饼果子或者鸡蛋饼拎到办公室了，懒人福音。
@@ -3134,9 +3142,9 @@ grid on;
 &lt;p&gt;主要根据Andrew Ng的教学讲义整理。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
-&lt;p align="center"&gt;
+&lt;div class="figure"&gt;
 &lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="60%" /&gt;
-&lt;/p&gt;
+&lt;/div&gt;
 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。&lt;/p&gt;
 &lt;h3&gt;1.逻辑回归的建模&lt;/h3&gt;
 &lt;p&gt;首先从逻辑回归($Logistic$ $Regression$)的基本假设说起。在二分类中，我们假设 $y \in \lbrace0,1\rbrace$,在给定 $x$ 的情况下，很自然
@@ -3145,9 +3153,9 @@ grid on;
 &lt;p&gt;主要根据Andrew Ng的教学讲义整理。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
-&lt;p align="center"&gt;
+&lt;div class="figure"&gt;
 &lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="60%" /&gt;
-&lt;/p&gt;
+&lt;/div&gt;
 书里面都说它的输出可以认为是预测的概率，但是，为什么是$sigmoid$，它是从哪来的呢？为什么可以它做二分类?书里面好像都没有说呢。&lt;/p&gt;
 &lt;h3&gt;1.逻辑回归的建模&lt;/h3&gt;
 &lt;p&gt;首先从逻辑回归($Logistic$ $Regression$)的基本假设说起。在二分类中，我们假设 $y \in \lbrace0,1\rbrace$,在给定 $x$ 的情况下，很自然
