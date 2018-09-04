@@ -6,7 +6,7 @@ http://synckey.name/
 http://synckey.name/archives.html
 http://synckey.name/tags.html
 http://synckey.name/categories.html
-http://synckey.name/posts/2018/09/03/brunch.html
+http://synckey.name/posts/2018/09/03/food-in-vancouver.html
 http://synckey.name/posts/2018/08/25/six-chapters-from-a-floating-life.html
 http://synckey.name/posts/2018/08/19/supermarket.html
 http://synckey.name/posts/2018/08/12/ballpoint-pen.html
