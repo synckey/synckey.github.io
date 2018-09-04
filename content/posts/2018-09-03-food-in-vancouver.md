@@ -2,7 +2,7 @@ Title: 我认识的温哥华美食
 Date: 2018-09-03
 Category: life
 Tags: life, posts
-Slug: brunch
+Slug: food-in-vancouver
 Author: jian
 Place: Vancouver
 
