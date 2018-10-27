@@ -1,20 +1,14 @@
-.tip, a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    font: inherit;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    border: 0
-}
 
 .figure, .center-block {
     text-align: center;
+    margin-top: 15px;
 }
 
 .caption {
     font-size: 80%;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    color: #666;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -87,32 +81,15 @@ blockquote:after, blockquote:before, q:after, q:before {
 
 /*end of google material icons*/
 
-.post h1, .post-body ul, .tip, blockquote, h3, h4, h5, ol, p, pre {
-    margin-bottom: 5px
-}
+
 
 body, html {
     height: 100%
 }
 
 body {
-    font: 18px/1 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
-    color: #666;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility
-}
-
-h1 {
-    font-size: 30px;
-    /*letter-spacing: -1px;*/
-    color: #222;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 20px;
-    color: #222;
-    margin-bottom: 10px;
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 18px;
 }
 
 .profile #wrapper {
@@ -145,7 +122,6 @@ h2 {
 }
 
 .profile h2 {
-    font-family: Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
@@ -169,8 +145,10 @@ nav.main-nav a {
     top: 8px;
     right: 6px;
     padding: 8px 12px;
-    color: #333;
-    border-radius: 3px
+    color: #bbb;
+    border-radius: 3px;
+    text-decoration: none;
+
 }
 
 nav.main-nav a.cta {
@@ -185,35 +163,12 @@ nav.main-nav a.cta {
     padding: 30px 40px 100px;
 }
 
-#wrapper.home, .wrapper.home {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 40px 20px
+
+a {
+    /*text-decoration: none;*/
+    color: #000000;
 }
 
-.home #avatar {
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%
-}
-
-#post-list a:hover, #post-list li:hover .dates, #title, #title:hover, a, nav.main-nav a:hover {
-    text-decoration: none;
-    color: #5694f1
-}
-
-p a {
-    color: #5694f1
-}
-
-#post-list a, #post-nav a, a, nav.main-nav a {
-    -webkit-transition: all .15s ease;
-    -moz-transition: all .15s ease;
-    -ms-transition: all .15s ease;
-    -o-transition: all .15s ease;
-    transition: all .15s ease
-}
 
 ul, ol {
     margin: 0 0 20px;
@@ -226,7 +181,7 @@ li {
     /*list-style-type: circle;*/
 }
 
-#post-body, .tip, p {
+p {
     line-height: 1.6;
     text-align: justify;
 }
@@ -240,14 +195,6 @@ em, i {
     font-style: italic
 }
 
-#title {
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 100%;
-    display: inline-block;
-    margin: 0;
-    padding-bottom: 20px
-}
 
 .description {
     font: italic 14px/1.4em Georgia, serif;
@@ -255,86 +202,45 @@ em, i {
     color: #aaa
 }
 
-.home h1 {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    color: #222
-}
-
-.home h2 {
-    font: italic 19px/1.3em Georgia, serif;
-    color: #bbb
-}
-
 .post header {
     text-align: center
 }
 
-.post h1 {
-    font: 300 30px/1.4em Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
-    margin-bottom: 14px;
-    /*text-transform: uppercase;*/
-    color: #222
-}
-
-.post h2 {
-    font: 300 24px/1.5 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
-    margin-bottom: 10px;
-    color: #111
-}
-
 .post h2.headline {
-    font: 400 14px/1.5em Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     display: inline-block;
     margin: -5px 0 54px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #b2b9be
+    color: #b2b9be;
+    font-size:14px;
 }
 
-#post-list h2 {
-    font: 17px/1.5em Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
-    max-width: 400px;
-    margin-top: 2px;
-    color: #aaa
+h1, h2, h3, h4, h5, h6{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
+    color: #666666;
+    line-height: 150%;
 }
 
-h3, h4, h5 {
-    color: #333
+h2 {
+    margin-top: 30px;
 }
 
 h3 {
-    font-size: 20px;
-    font-weight: 400
+    margin-top: 20px;
 }
 
 h4 {
-    font-size: 16px
+    margin-top: 15px;
 }
 
 h5 {
-    font-size: 15px;
     font-weight: 700
 }
 
 h6 {
-    font-size: 13px;
-    font-weight: 700;
     margin-bottom: 6px;
-    color: #666
 }
 
-#post-body .tip, #post-body blockquote, #post-body p {
-    text-align: justify
-}
-
-#post-body img {
-    display: block;
-    margin-right: auto;
-    margin-bottom: 12px;
-    margin-left: auto
-}
 
 p.small {
     font-size: 14px;
@@ -346,11 +252,15 @@ p.small {
 }
 
 blockquote {
-    padding-left: 1em;
-    border-left: 0.25em solid #dfe2e5;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-left: 4px solid #dfe2e5;
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, STKaiti, KaiTi, '楷体', SimKai, DFKai-SB, NSimSun, serif;
 }
-blockquote p{
+
+blockquote p {
     line-height: 1.5;
 }
 
@@ -361,16 +271,6 @@ blockquote p{
     border-left: 3px solid rgba(240, 90, 90, .22)
 }
 
-#post-body ol, #post-body ul {
-    font-size: 15px;
-    font-weight: 400;
-    padding-left: 20px
-}
-
-#post-body ol li {
-    margin-left: 20px;
-    list-style: unset
-}
 
 hr {
     display: block;
@@ -442,17 +342,17 @@ th, thead th {
 }
 
 img {
-    max-width: 100%;
-    border-radius: 3px
+    max-width: 90%;
+    display: block;
+    box-shadow: 0 0 10px #555;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 0 10px #555;
 }
 
-#badge {
-    position: absolute;
-    right: 8px;
-    bottom: 8px;
-    width: 48px;
-    height: 48px
-}
 
 #archive-list {
     margin-top: 100px
@@ -474,89 +374,33 @@ img {
     border-bottom: 1px solid #eee
 }
 
+
 #post-list a {
-    font: 300 19px/1.7 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     display: block;
-    /*text-transform: uppercase;*/
-    color: #333
+    color: #666666;
+    text-decoration: none;
+
 }
 
 #post-list .dates {
-    font: 300 17px/1.8 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     position: relative;
     top: 1px;
     float: right;
     color: #bbb
 }
 
-#post-list-footer {
-    margin-top: 20px;
-    padding-top: 100px;
-    border-top: 1px solid #eee
-}
-
-#archive-link {
-    font-size: 13px;
-    font-weight: 700;
-    display: inline-block;
-    padding: 3px 10px 6px;
-    border-radius: 4px;
-    box-shadow: 0 0 0 1px hsla(207, 83%, 80%, 1)
-}
-
-#archive-link:hover {
-    color: #fff;
-    background: #5694f1;
-    box-shadow: 0 0 0 1px #5694f1
-}
-
-#archive-link span {
-    font-size: 17px;
-    position: relative;
-    top: 0
-}
-
-.footer {
+.footer, .footer a {
     padding: 40px 0 0;
     text-align: center;
+    color: #888;
+    font-size: 40%;
+    display:none;
 }
 
 .post, .profile {
     margin: 80px 0 0
 }
 
-#post-meta {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1.4;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: #444;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee
-}
-
-#post-meta div span {
-    font-weight: 500;
-    display: block;
-    color: #aaa
-}
-
-#post-meta div span.dark {
-    color: #1e2025
-}
-
-#post-meta div {
-    float: left;
-    margin: 0 25px 0 0
-}
-
-#sharing {
-    float: right;
-    margin: -2px
-}
 
 #sharing a:hover {
     opacity: .8
@@ -570,14 +414,6 @@ img {
     padding-bottom: 80px;
 }
 
-#post-nav span {
-    position: relative;
-    -webkit-transition: all .1s linear;
-    -moz-transition: all .1s linear;
-    -ms-transition: all .1s linear;
-    -o-transition: all .1s linear;
-    transition: all .1s linear
-}
 
 #post-nav span.prev {
     float: left
@@ -597,7 +433,6 @@ h1.archive {
 }
 
 h2.month {
-    font: bold 13px/1 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
     width: 100%;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -610,73 +445,15 @@ h2.month {
     margin-bottom: 0
 }
 
-#archive-list a {
-    font: bold 17px/1.7 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
-    display: block;
-    color: #333
-}
-
-#archive-list .dates {
-    font: 300 17px/1.7 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
-    position: relative;
-    top: 1px;
-    float: right;
-    color: #bbb
-}
-
-#archive-list li a:hover, #archive-list li:hover .dates {
-    color: #5694f1
-}
-
-#post-meta img.avatar {
-    float: left;
-    width: 36px;
-    height: 36px;
-    margin-top: 3px;
-    margin-right: 20px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #eee
-}
-
-#post-list.archive.readmore h3 {
-    font: 400 20px Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
-    margin-bottom: 30px
-}
-
-#post-list.archive.readmore a {
-    font: 400 16px/1.6 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
-    color: #5694f1
-}
-
-#post-list.archive.readmore a:hover {
-    opacity: .8
-}
-
-#post-list.archive.readmore .dates {
-    font: 300 16px/1.6 Cairo, PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif
-}
-
-#sharing a.facebook {
-    background: #4361b3
-}
-
-#sharing a.twitter {
-    background: #4fafed
-}
-
-#sharing a {
-    display: inline-block;
-    margin-top: 4px;
-    vertical-align: middle;
-    font-size: 13px;
-    font-weight: 700;
-    margin-left: 2px;
-    padding: 6px 10px;
-    color: #fff;
-    border-radius: 4px
-}
 
 @media screen and (max-width: 540px) {
+    blockquote {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
     #wrapper, .wrapper {
         padding: 20px
     }
@@ -743,8 +520,9 @@ a.symbol {
 a.symbol:hover {
     color: #bcd4da
 }
+
 code {
-    font-family: PingHei, 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', Monospace;
+    font-family: Inconsolata, Consolas, "DEJA VU SANS MONO", "DROID SANS MONO", Proggy, monospace;
     font-size: 85%;
     padding: 0.1em 0.3em;
     border-radius: 3px;
@@ -802,163 +580,16 @@ pre code {
         width: 280px;
         margin: 20px auto !important
     }
-}
 
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
-}
-
-@-webkit-keyframes fadeInDown {
-    0% {
-        -webkit-transform: translateY(-20px);
-        opacity: 0
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        opacity: 1
+    blockquote {
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
     }
 }
 
-@keyframes fadeInDown {
-    0% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-        opacity: 0
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1
-    }
-}
 
-.fadeInDown {
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown
-}
-
-.comment_change, .comment_create, .comment_num {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1;
-    padding-bottom: 5px;
-    color: #2a2e2e;
-    border-bottom: 2px solid #5694f1
-}
-
-.comment_create {
-    margin-left: 24px;
-    cursor: pointer;
-    border-bottom: 0
-}
-
-.comment_change {
-    float: right;
-    margin-top: 1px;
-    cursor: pointer;
-    border-bottom: 0
-}
-
-.comment_avatar {
-    float: left;
-    width: 48px;
-    height: 48px;
-    border-radius: 3px;
-    background: #ddd
-}
-
-.comment_desc {
-    margin-left: 62px
-}
-
-.author_name {
-    font-size: 14px;
-    font-weight: 700;
-    display: inline;
-    padding-right: 10px;
-    color: #656c7a
-}
-
-.comment_reply, .comment_time {
-    font-size: 12px;
-    color: #656c7a
-}
-
-.comment_reply {
-    padding-left: 10px;
-    cursor: pointer
-}
-
-.comment_message {
-    font-size: 15px;
-    margin-left: 62px
-}
-
-.comment_message p {
-    color: #2a2e2e
-}
-
-.comment_children {
-    margin-left: 62px
-}
-
-.comment_children .comment_avatar {
-    width: 36px;
-    height: 36px;
-    margin-top: 7px
-}
-
-.comment_children .comment_desc, .comment_children .comment_message {
-    margin-left: 50px
-}
-
-#comment_title {
-    height: 30px;
-    margin-top: 34px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #e7e9ee
-}
-
-.comment_loading {
-    display: block;
-    margin: 30px auto
-}
-
-@media screen and (max-width: 660px) {
-    .comment_avatar, .comment_children .comment_avatar {
-        width: 30px;
-        height: 30px
-    }
-
-    .comment_children .comment_desc, .comment_children .comment_message, .comment_desc, .comment_message {
-        margin-left: 40px
-    }
-
-    .author_name {
-        font-size: 15px;
-        line-height: 1;
-        display: block;
-        margin-bottom: 2px
-    }
-
-    .comment_children .comment_avatar {
-        margin-top: 0
-    }
-
-    .comment_children {
-        margin-left: 0;
-        padding-left: 15px;
-        border-left: 2px solid #e7e9ee
-    }
-
-    .comment_children .comment_message, .comment_message {
-        margin-top: 4px;
-        margin-left: 0
-    }
-}
 
 .footnote li {
     list-style-position: outside;
