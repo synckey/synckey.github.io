@@ -218,27 +218,6 @@ em, i {
 h1, h2, h3, h4, h5, h6{
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
     color: #666666;
-    line-height: 150%;
-}
-
-h2 {
-    margin-top: 30px;
-}
-
-h3 {
-    margin-top: 20px;
-}
-
-h4 {
-    margin-top: 15px;
-}
-
-h5 {
-    font-weight: 700
-}
-
-h6 {
-    margin-bottom: 6px;
 }
 
 
@@ -396,10 +375,10 @@ img {
     font-size: 40%;
     display:none;
 }
-
+/*
 .post, .profile {
     margin: 80px 0 0
-}
+}*/
 
 
 #sharing a:hover {

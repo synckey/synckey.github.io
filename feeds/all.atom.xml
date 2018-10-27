@@ -2249,37 +2249,37 @@ mat = scipy.io.loadmat('file.mat')
 &lt;p&gt;从《我是歌手》开始关注徐佳莹，7月份在西直门看了她的演唱会，被她的活泼所惊艳。&lt;/p&gt;
 &lt;p&gt;从今年来开始关注窦文涛的《锵锵三人行》，每集都看，他在优酷做的圆桌派第一季也看完了。
 其他每集都看的节目《有今晚八零后》和《暴走大事件》。以上就是本年的全部精神生活。&lt;/p&gt;
-&lt;p&gt;2016，full of serendipities！&lt;/p&gt;</content><category term="life"></category><category term="posts"></category><category term="mm"></category><category term="summery"></category></entry><entry><title>《概率论》复习笔记</title><link href="http://synckey.name/posts/2017/02/20/review-of-probability.html" rel="alternate"></link><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-20:/posts/2017/02/20/review-of-probability.html</id><summary type="html">&lt;h4&gt;1. 随机事件和概率&lt;/h4&gt;
-&lt;h5&gt;1.1全概率公式&lt;/h5&gt;
+&lt;p&gt;2016，full of serendipities！&lt;/p&gt;</content><category term="life"></category><category term="posts"></category><category term="mm"></category><category term="summery"></category></entry><entry><title>《概率论》复习笔记</title><link href="http://synckey.name/posts/2017/02/20/review-of-probability.html" rel="alternate"></link><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-20:/posts/2017/02/20/review-of-probability.html</id><summary type="html">&lt;h3&gt;1. 随机事件和概率&lt;/h3&gt;
+&lt;h4&gt;1.1 全概率公式&lt;/h4&gt;
 &lt;p&gt;设事件 $A_1,A_2,\cdots,A_n$ 两两互不相容，$P(A_i)&amp;gt;0(i=1,2,\cdots,n)$，且$\sum\limits_{i=1}^{n}{A_i}=\Omega$，
 则对任一事件$B$，有
 $$
 P(B)=\sum_{i=1}^{n}{P(A_i)\cdot P{(B|A_i)}}.
 $$
 满足公式中的$A_1,A_2,\cdots,A_n$  叫&lt;strong&gt;完备事件组&lt;/strong&gt;。&lt;/p&gt;
-&lt;h5&gt;1.2贝叶斯公式 …&lt;/h5&gt;</summary><content type="html">&lt;h4&gt;1. 随机事件和概率&lt;/h4&gt;
-&lt;h5&gt;1.1全概率公式&lt;/h5&gt;
+&lt;h4&gt;1 …&lt;/h4&gt;</summary><content type="html">&lt;h3&gt;1. 随机事件和概率&lt;/h3&gt;
+&lt;h4&gt;1.1 全概率公式&lt;/h4&gt;
 &lt;p&gt;设事件 $A_1,A_2,\cdots,A_n$ 两两互不相容，$P(A_i)&amp;gt;0(i=1,2,\cdots,n)$，且$\sum\limits_{i=1}^{n}{A_i}=\Omega$，
 则对任一事件$B$，有
 $$
 P(B)=\sum_{i=1}^{n}{P(A_i)\cdot P{(B|A_i)}}.
 $$
 满足公式中的$A_1,A_2,\cdots,A_n$  叫&lt;strong&gt;完备事件组&lt;/strong&gt;。&lt;/p&gt;
-&lt;h5&gt;1.2贝叶斯公式&lt;/h5&gt;
+&lt;h4&gt;1.2 贝叶斯公式&lt;/h4&gt;
 &lt;p&gt;设事件 $A_1,A_2,\cdots,A_n$ 构成完备事件组，则对任一事件 $B(P(B)&amp;gt;0)$，有
 $$
   P(A_k|B)=\frac{P(A_k)P(B|A_k)}{\sum_{i=1}^{n}{P(A_i)P(B|A_i)}}   {   (k=1,2,\cdots,n)}.
 $$&lt;/p&gt;
-&lt;h5&gt;1.3伯努利概型&lt;/h5&gt;
+&lt;h4&gt;1.3 伯努利概型&lt;/h4&gt;
 &lt;p&gt;若实验$E$ 只有两种可能的结果：$A$ 及$\overline{A}$，记$P(A)=p,P(\overline{A})=1-p=q$，这种实验称为&lt;strong&gt;伯努利(Bernoulli)实验&lt;/strong&gt;。 若将实验$E$ 重复$n$ 次，且每次实验结果互不影响（相互独立），则称为 &lt;strong&gt;n重伯努利实验&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;设每次实验中，事件$A$发生的概率为$p(0&amp;lt;p&amp;lt;1)$，则在 $n$ 次 重复独立实验中，$A$ 发生$k$次的概率为:
 $$
 P_n(k)=C_n^kp^k(1-p)^{n-k},k=0,1,2,\cdots,n.
 $$&lt;/p&gt;
-&lt;h4&gt;2.随机变量及其分布&lt;/h4&gt;
+&lt;h3&gt;2. 随机变量及其分布&lt;/h3&gt;
 &lt;p&gt;设实验$E$的样本空间为$\Omega$，如果对每一个样本点$\omega\in\Omega$，都有唯一实数 $X(\omega)$与之对应，称$X=X(\omega)$为样本空间$\Omega$上的&lt;strong&gt;随机变量&lt;/strong&gt;。
 对于随机变量，一般分两类进行讨论，如果随机变量的取值只有有限个活无限可列个数值，则称这种随机变量为&lt;strong&gt;离散型随机变量&lt;/strong&gt;。其余的统称为非离散型随机变量，在非离散型随机变量中，最重要的是&lt;strong&gt;连续型随机变量&lt;/strong&gt;。&lt;/p&gt;
-&lt;h5&gt;2.1离散型随机变量及其分布&lt;/h5&gt;
+&lt;h4&gt;2.1 离散型随机变量及其分布&lt;/h4&gt;
 &lt;h6&gt;超几何分布&lt;/h6&gt;
 &lt;p&gt;一般来说，在总共$N$ 件产品中，其中有$M$件次品，先从中任取$n$件（不放回地抽取），则这$n$件中所含的次品数$X$是一个离散随机变量，其概率分布为：
 $$
@@ -2808,9 +2808,7 @@ e18
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;was going to (do something)= I intended to do it but didn't do it.&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Do not use will to talk about what you have already decided or arranged to do.We often use will in those situations:&lt;/p&gt;
-&lt;ol&gt;
+&lt;li&gt;Do not use will to talk about what you have already decided or arranged to do.We often use will in those situations:&lt;ol&gt;
 &lt;li&gt;Offering to do sth.&lt;ul&gt;
 &lt;li&gt;That bag looks very heavy.I will help with it.&lt;/li&gt;
 &lt;/ul&gt;
@@ -2829,15 +2827,9 @@ e18
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;不规则动词们:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;fall-&amp;gt;fell-&amp;gt;fallen&lt;/li&gt;
-&lt;li&gt;fly-&amp;gt;flew-&amp;gt;flown&lt;/li&gt;
-&lt;li&gt;begin-&amp;gt;began-&amp;gt;begun&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content><category term="英语"></category><category term="语法"></category></entry><entry><title>让VIM记录文件上次编辑的位置</title><link href="http://synckey.name/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html" rel="alternate"></link><published>2016-03-11T00:00:00+08:00</published><updated>2016-03-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-11:/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html</id><summary type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
+&lt;h3&gt;不规则动词&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1SVEDIVSxgNnAzOue1fjUx47RJrohZwAS/view?usp=sharing"&gt;常用不规则动词和音标&lt;/a&gt;&lt;/p&gt;</content><category term="英语"></category><category term="语法"></category></entry><entry><title>让VIM记录文件上次编辑的位置</title><link href="http://synckey.name/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html" rel="alternate"></link><published>2016-03-11T00:00:00+08:00</published><updated>2016-03-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-11:/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html</id><summary type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-vim"&gt;autocmd BufReadPost *
 \ if line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;gt;0&amp;amp;&amp;amp;line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;lt;=line(&amp;quot;$&amp;quot;) |
 \ exe &amp;quot;normal g'\&amp;quot;&amp;quot; |
@@ -3364,9 +3356,9 @@ ControlPersist yes
 &lt;p&gt;声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;心理准备&lt;/h2&gt;
-&lt;h3&gt;1.动机——为什么要减肥?&lt;/h3&gt;
+&lt;h3&gt;1. 动机——为什么要减肥?&lt;/h3&gt;
 &lt;p&gt;首先，要想清楚为什么要减肥？为了更漂亮，身材更好，为了不当人见人厌的死胖子？&lt;/p&gt;
-&lt;h3&gt;2.目标和计划&lt;/h3&gt;
+&lt;h3&gt;2. 目标和计划&lt;/h3&gt;
 &lt;p&gt;有了动机以后就可以制定目标了，很多人一开始就把目标定在减20斤减30斤，这个目标是很具体的，看起来也是可达成的，但是很难坚持下去，
 因为可能折腾了一个月，体重还是没有任何变化，就丧失信心，中途放弃了。对我个人而言，我的目标其实就是完成计划，不是减多少斤，而是坚持了多久，做了多少天运动。
 制定减肥计划最重要的两条就是：a.不能对我的日常生活产生干扰，b.可持续。 所以我每天的运动时间限制在1个小时以内（一开始要更短），
@@ -3377,9 +3369,9 @@ ControlPersist yes
 &lt;p&gt;声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;心理准备&lt;/h2&gt;
-&lt;h3&gt;1.动机——为什么要减肥?&lt;/h3&gt;
+&lt;h3&gt;1. 动机——为什么要减肥?&lt;/h3&gt;
 &lt;p&gt;首先，要想清楚为什么要减肥？为了更漂亮，身材更好，为了不当人见人厌的死胖子？&lt;/p&gt;
-&lt;h3&gt;2.目标和计划&lt;/h3&gt;
+&lt;h3&gt;2. 目标和计划&lt;/h3&gt;
 &lt;p&gt;有了动机以后就可以制定目标了，很多人一开始就把目标定在减20斤减30斤，这个目标是很具体的，看起来也是可达成的，但是很难坚持下去，
 因为可能折腾了一个月，体重还是没有任何变化，就丧失信心，中途放弃了。对我个人而言，我的目标其实就是完成计划，不是减多少斤，而是坚持了多久，做了多少天运动。
 制定减肥计划最重要的两条就是：a.不能对我的日常生活产生干扰，b.可持续。 所以我每天的运动时间限制在1个小时以内（一开始要更短），
@@ -3456,7 +3448,7 @@ ControlPersist yes
 &lt;li&gt;2015.09.12 第一次也是唯一一次跑到30km，耗时：02:45:21，平均配速：05:30/km，中途没有补给，真的很饿。&lt;/li&gt;
 &lt;li&gt;2016.04.17 北京国际长跑节半程马拉松，耗时: 01:47:35，平均配速04:55/km。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;有图有真相&lt;/h3&gt;
+&lt;h2&gt;有图有真相&lt;/h2&gt;
 &lt;div class="figure"&gt;
     &lt;img src="/static/images/2015_04_13_comparasion.jpg" alt="体重对比" class="img-responsive carousel-inner img-rounded"/&gt;
 &lt;/div&gt;
@@ -3514,54 +3506,55 @@ lose their breadwinners and will face financial problems.This means that their f
 death if they do not follow the laws.Keeping this in mind,they will think twice before  breaking the law.&lt;/p&gt;
 &lt;p&gt;On the other hand,deterrent from punishing still remains to be a significant way to gain road safety. For example, if an offender
 is punished strictly, he and his friends will be deterred and are less possible to offend again.In some countries,if a person
-seriously break a certain law,such as drunk driving,he may lose the right to drive again. So, severe punishment surely contributes to
+seriously break a certain law, such as drunk driving,he may lose the right to drive again. So, severe punishment surely contributes to
 the improvement of road safety.&lt;/p&gt;
-&lt;p&gt;In conclusion,we can help people to improve the traffic safety by teaching them the importance of safe driving.Although punishment
-is also a good way to do so,but it is not the best way and only way.Pedestrians and drivers should all  obey traffic regulations and
+&lt;p&gt;In conclusion, we can help people to improve the traffic safety by teaching them the importance of safe driving. Although punishment
+is also a good way to do so, but it is not the best way and only way. Pedestrians and drivers should all  obey traffic regulations and
 laws to keep safe.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Use Animals For Humans</title><link href="http://synckey.name/posts/2014/12/22/use-animals-for-humans.html" rel="alternate"></link><published>2014-12-22T00:00:00+08:00</published><updated>2014-12-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-22:/posts/2014/12/22/use-animals-for-humans.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that it is acceptable to use animals for the benefit of humans. Others, however, think that it is wrong to exploit animals for human purposes. Discuss both these views and give your own opinion.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach.I …&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach. I …&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that it is acceptable to use animals for the benefit of humans. Others, however, think that it is wrong to exploit animals for human purposes. Discuss both these views and give your own opinion.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).&lt;/p&gt;
-&lt;p&gt;It is undoubtedly the case that the number of animals used for human being's benefit  is increasingly large.Some people think
-this is unethical and unfair to benefit from animals ,but others hold the opposite view. Personally, my opinion is that we should
-use animals correctly and ethically.&lt;/p&gt;
-&lt;p&gt;Firstly,we are at the top of the food chain, it is completely  natural to kill animals for food.There are thousands of animal farms all over the world which provide chicken,beef and so on,
-Without them,many people will encounter starving,because meat is main food that provide protein and nutrition for human beings.In order to live on, we have to raise and kill animals for food.&lt;/p&gt;
-&lt;p&gt;Meanwhile,animals play a significant role in scientific research.They have been used in many fields,ranging from medical tests to space exploring.For instance,
-in medical industry, before a new drug is put into production,animal testing is a necessary to see if the drug is safe or have some unpredictable side effects.
-We have to depend on animals in those areas,because we do not have alternatives,scientists can not do experiments on a human being instead of a rat.&lt;/p&gt;
-&lt;p&gt;However, other people argue that we do not have the right to take the animals' lives for our own benefits,lives should be
-respected. What is more ,the benefits of researches can not justify the suffering caused. But,this is unrealistic .
+&lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach. I am glad to receive any kind of advises(grammar or misuse, etc).&lt;/p&gt;
+&lt;p&gt;It is undoubtedly the case that the number of animals used for human being's benefit  is increasingly large.
+Some people think this is unethical and unfair to benefit from animals, but others hold the opposite view. 
+Personally, my opinion is that we shoulduse animals correctly and ethically.&lt;/p&gt;
+&lt;p&gt;Firstly, we are at the top of the food chain, it is completely  natural to kill animals for food.There are thousands of animal farms all over the world which provide chicken, beef and so on.
+Without them, many people will encounter starving, because meat is main food that provide protein and nutrition for human beings.
+In order to live on, we have to raise and kill animals for food.&lt;/p&gt;
+&lt;p&gt;Meanwhile, animals play a significant role in scientific research. They have been used in many fields,ranging from medical tests to space exploring.
+For instance, in medical industry, before a new drug is put into production, animal testing is a necessary to see if the drug is safe or have some unpredictable side effects.
+We have to depend on animals in those areas,because we do not have alternatives, scientists can not do experiments on a human being instead of a rat.&lt;/p&gt;
+&lt;p&gt;However, other people argue that we do not have the right to take the animals' lives for our own benefits, lives should be respected.
+What is more, the benefits of researches can not justify the suffering caused. But, this is unrealistic.
 We should focus on how to minimize the sufferings that animals experienced when used by people.&lt;/p&gt;
-&lt;p&gt;In sum,animal is an extremely important source of food for human beings which can contribute to the science as well.We can surely use
-animals to live on,but we should use them scientifically and ethically.&lt;/p&gt;
+&lt;p&gt;In sum, animal is an extremely important source of food for human beings which can contribute to the science as well.
+We can surely use animals to live on,but we should use them scientifically and ethically.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://ielts-simon.com/ielts-help-and-english-pr/2011/06/ielts-writing-task-2-gender-and-university-essay.html"&gt;IELTS globalisation essay&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Forcing the Employers to Hire the Same Number of Men and Women</title><link href="http://synckey.name/posts/2014/12/16/gender-balance.html" rel="alternate"></link><published>2014-12-16T00:00:00+08:00</published><updated>2014-12-16T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-16:/posts/2014/12/16/gender-balance.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that employers should be required to employ equal numbers of men and women. To what extent do you agree or disagree?&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach. I am glad to receive any kind of advises(grammar or misuse, etc).&lt;/p&gt;
 &lt;p&gt;It …&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that employers should be required to employ equal numbers of men and women. To what extent do you agree or disagree?&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach. I am glad to receive any kind of advises(grammar or misuse, etc).&lt;/p&gt;
 &lt;p&gt;It is undoubtedly that men and women are playing different roles in our society. There are opinions that suggest companies
-to employ the same number of females and males. Personally,I don't think this is a good suggestion.&lt;/p&gt;
-&lt;p&gt;Generally,women have their advantages in many areas.They are tender and have better communication skills so that they
-have the ability to make people feel comfortable. This means they are suitable for  many positions,for instance,
-consultants,teachers,nursers,in which they can easily reach higher achievements than men.&lt;/p&gt;
-&lt;p&gt;However,males are usually physically stronger and more sensible than females.Industries that are labor-intensive may surely
-employ  more men than women. Meanwhile, men are better at emotion control which helps them to improve their leadership and
-make calm decisions.That is why we can see that there are more male presidents than females, despite the fact that women are
-play increasingly significant roles in our society.&lt;/p&gt;
-&lt;p&gt;So,it is obvious that man and woman both have their own advantages in different professions.Asking the employers to employ the same
-number of females and males is unfair and unrealistic.But a company can surely benifit from a balanced number of males and females,
-as it can help to promote the productivity.If the productivity of  a company is not bounded to the gender,employing equal
-number of men and women seems to be the best choice for them.&lt;/p&gt;
-&lt;p&gt;In conclusion, making the most of the gender advantages is benificial for both companies and society.That is why I don't
-agree with the view that forcing the employers to hire the same number of men and women.&lt;/p&gt;
+to employ the same number of females and males. Personally, I don't think this is a good suggestion.&lt;/p&gt;
+&lt;p&gt;Generally, women have their advantages in many areas. They are tender and have better communication skills so that they
+have the ability to make people feel comfortable. This means they are suitable for  many positions, 
+for instance, consultants, teachers, nursers, in which they can easily reach higher achievements than men.&lt;/p&gt;
+&lt;p&gt;However, males are usually physically stronger and more sensible than females.
+Industries that are labor-intensive may surely employ  more men than women.
+Meanwhile, men are better at emotion control which helps them to improve their leadership and make calm decisions.
+That is why we can see that there are more male presidents than females, despite the fact that women are play increasingly significant roles in our society.&lt;/p&gt;
+&lt;p&gt;So, it is obvious that man and woman both have their own advantages in different professions.
+Asking the employers to employ the same number of females and males is unfair and unrealistic.
+But a company can surely benifit from a balanced number of males and females, as it can help to promote the productivity.
+If the productivity of  a company is not bounded to the gender,employing equal number of men and women seems to be the best choice for them.&lt;/p&gt;
+&lt;p&gt;In conclusion, making the most of the gender advantages is benificial for both companies and society.
+That is why I don't agree with the view that forcing the employers to hire the same number of men and women.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://ielts-simon.com/ielts-help-and-english-pr/2011/06/ielts-writing-task-2-gender-and-university-essay.html"&gt;IELTS globalisation essay&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Distance Learning vs School Learing</title><link href="http://synckey.name/posts/2014/11/24/distance-learning-vs-school-learning.html" rel="alternate"></link><published>2014-11-24T00:00:00+08:00</published><updated>2014-11-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-24:/posts/2014/11/24/distance-learning-vs-school-learning.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Many people use distance-learning programmes(study material post, TV, Internet, etc.) to study at home,
@@ -3575,21 +3568,23 @@ To what extent do you agree or disagree.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).&lt;/p&gt;
 &lt;p&gt;Distance learning is a relatively recent phenomenon and if it is as  good as traditional classroom-based learning still
-remains to be controversial.Many people believe that the online courses are better than those provided at school,but
-others hold the totally opposite view.Personally,I think that we can benefit from both approaches,they can make up for
-each other.&lt;/p&gt;
-&lt;p&gt;In terms of distance learning,it is convenient for adults,especially people who are busy with their works.Studying at
-home enables them to receive further education, which is significantly important for us in a tech-driven society.Meanwhile,
-the courses on the Internet or TV are usually well prepared and given by renowned experts,which helps to ensure the quality.&lt;/p&gt;
-&lt;p&gt;But school education is surely one of the most import sources of information and knowledge.They can provide structured courses
-as well as better schedules.The teachers in the school can not only help us to learn,but also provide specific guidances
-and life experience.And discussing with classmates from the school contributes to better understanding of what we are
-learning.&lt;/p&gt;
-&lt;p&gt;So,we can make the most of both distance learning and classroom-based learning. If a student did not catch waht he had learned
-on the class,he can download some courses from Internet to make up for it.An adult can also turn to classes for help
-when he encounter some problems which he can not tackle all by himself.&lt;/p&gt;
-&lt;p&gt;So, while we are taking advantage of technology,we should not neglect the importance of traditional learning.We should
-chose our learning methods according to our circumstances.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>What Should Be the Main Function Of A University</title><link href="http://synckey.name/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html" rel="alternate"></link><published>2014-11-12T00:00:00+08:00</published><updated>2014-11-12T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-12:/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html</id><summary type="html">&lt;blockquote&gt;
+remains to be controversial.Many people believe that the online courses are better than those provided at school,
+but others hold the totally opposite view. Personally, I think that we can benefit from both approaches, 
+they can make up for each other.&lt;/p&gt;
+&lt;p&gt;In terms of distance learning, it is convenient for adults, especially people who are busy with their work.
+Studying at home enables them to receive further education, which is significantly important for us in a tech-driven society.
+Meanwhile, the courses on the Internet or TV are usually well prepared and given by renowned experts,
+which helps to ensure the quality.&lt;/p&gt;
+&lt;p&gt;But school education is undoubtedly one of the most import sources of information and knowledge.
+They can provide structured courses as well as better schedules. 
+The teachers in the school can not only help us to learn, 
+but also provide specific guidance and life experience.
+And discussing with classmates from the school contributes to better understanding of what we are learning.&lt;/p&gt;
+&lt;p&gt;So we can make the most of both distance learning and classroom-based learning. 
+If a student did not catch waht he had learned on the class, he can download some courses from Internet to make up for it. 
+An adult can also turn to classes for help when he encounter some problems which he can not tackle all by himself.&lt;/p&gt;
+&lt;p&gt;So, while we are taking advantage of technology,we should not neglect the importance of traditional learning.
+We should chose our learning methods according to our circumstances.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>What Should Be the Main Function Of A University</title><link href="http://synckey.name/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html" rel="alternate"></link><published>2014-11-12T00:00:00+08:00</published><updated>2014-11-12T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-12:/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that universities should provide graduates with the knowledge and skills needed in the workplace. 
 Others think that the true function of a university should be to give access to knowledge for its own sake,
 regardless of whether the course is useful to an employer.&lt;/p&gt;
@@ -3602,23 +3597,24 @@ regardless of whether the course is useful to an employer.&lt;/p&gt;
 Write at least 250 words.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).&lt;/p&gt;
-&lt;p&gt;Recently,what kind of knowledge should a university provide its graduates with has been increasingly popular.Some of us
-hold the view that universities should teach their students job-related skills.But others do not agree,they
-think that universities should mainly focus on theoretical knowledge.Personally,I agree with the later view.&lt;/p&gt;
-&lt;p&gt;The basic knowledge,many of which have developed for hundred of years and have been refined by countless of experts,is 
-significantly important to a university student.Without it, they can not form their systematic knowledge of their 
-professions which will lead to serious results,for instance,they may be unable to do further or complex jobs.That is why 
-many people think that the universities should put more attention on teaching basic knowledge.&lt;/p&gt;
-&lt;p&gt;What is more,companies concern about the ability of solving problems and the ability to learn fast more than job skills.
-Many renowned companies,such as google and facebook,ask a lot of basic questions in their job interviews.They believe 
-that,if you are able to learn the basic lessons well at school, you can soon become a skilled employee after professional
-trainings.So, if a university teaches basic knowledge better,it can anticipate more competitive graduates.&lt;/p&gt;
+&lt;p&gt;Recently, what kind of knowledge should a university provide its graduates with has been increasingly popular. Some of us
+hold the view that universities should teach their students job-related skills.But others do not agree, they
+think that universities should mainly focus on teaching theoretical knowledge. Personally,I agree with the later view.&lt;/p&gt;
+&lt;p&gt;The basic knowledge, many of which have been developing for hundred of years and have been refined by countless of experts, 
+is significantly important to a university student. Without it, they can not form their systematic knowledge of their 
+professions which will lead to serious results, for instance, they may be unable to do complex jobs. 
+That is why many people think that the universities should pay more attention on teaching basic knowledge.&lt;/p&gt;
+&lt;p&gt;What is more, companies concern about the ability of solving problems and the ability to learn fast more than job skills.
+Many renowned companies, such as google and facebook, ask a lot of basic questions in their job interviews.
+They believe that, if you are able to learn the basic lessons well at school, 
+you can soon become a skilled employee after professional trainings.
+So, if a university teaches basic knowledge better, it can anticipate more competitive graduates.&lt;/p&gt;
 &lt;p&gt;As to the job-related skills, the technology used in industry is developing extraordinarily fast that the universities can 
-not keep pace with it.It is hard for them to decide what is the best skill for their students.However,they should not totally
-ignore the requirements of the job market,alternatively,they can invite some companies to their campus to introduce what 
-kind of skill they want.&lt;/p&gt;
-&lt;p&gt;In summary,although the main goal of going to universities of many students is finding a ideal job after graduating,universities
-should help their students to build a good knowledge system and help them to be quick learners and problem solvers instead of
+not keep pace with it.It is hard for them to decide what is the best skill for their students. 
+However, they should not totally ignore the requirements of the job market,alternatively, 
+they can invite some companies to their campus to introduce what kind of skill they want.  &lt;/p&gt;
+&lt;p&gt;In summary, although the main goal of going to universities of many students is finding a ideal job after graduating,
+universities should help their students to build a good knowledge system and help them to be quick learners and problem solvers instead of
 just teaching them job-related skills.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>The Catcher in the Rye</title><link href="http://synckey.name/posts/2014/10/31/the-catcher-in-the-rye.html" rel="alternate"></link><published>2014-10-31T00:00:00+08:00</published><updated>2014-10-31T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-31:/posts/2014/10/31/the-catcher-in-the-rye.html</id><summary type="html">&lt;p&gt;Holden Caulfied 是一个16岁的男孩，他因为课程不及格被学校开除，在他的眼里，周围的人要有奇怪的习惯和毛病。&lt;/p&gt;
 &lt;p&gt;在离开学校之前他与他的室友打了一家，因为室友和他最喜欢的女生约会，他心里非常不舒服。一个十六岁的男孩，面对自己的梦中小情人，
 宁愿远远的看着她，也不希望她跟别的男孩子约会。更何况她的约会对象在Holden看来根本配不上她。Holden心里当然不高兴。打完架他决定早点离开学校了。&lt;/p&gt;
@@ -3647,17 +3643,17 @@ cliff. What I have to do, I have to catch everybody if they start to go over the
 &lt;p&gt;走的时候，他跟他妹妹借钱，因为他没钱了。Phoebe把她圣诞节的所有的钱都给了他，他其实也不想全部都要，但是她坚持要给他。他花的非常节省，因为这是他妹妹的钱。&lt;/p&gt;
 &lt;p&gt;他打电话给他的以前的一个老师去他家借宿，夜里醒来发现老师在抚摸他的脸，他吓坏了，怀疑老师是gay,于是他连夜逃了出来，他产生了一个念头，离家出走，决定去西部，装作一个又聋又哑的人。走前还想跟Phoebe道别，于是给妹妹留了纸条，中午在博物馆门口等她。在学校和博物馆里，他都看到有人在墙上写着&lt;code&gt;Fuck you&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;他等来了妹妹，妹妹却拖着行李箱要和他一起走，他慌了，不希望妹妹和她一起走，因为她是他最爱的人，没有人想要最爱的人跟自己一起做愚蠢的事情。他们一起走到了游乐场，他看着妹妹开心的坐着旋转木马，填空下着大雨，他看着妹妹不停的旋转，心里开心极了，于是决定不走了。&lt;/p&gt;
-&lt;p&gt;也许每个人的内心都和Holden一样，看别人都觉得虚伪做作，总觉得自己才是最对的，最好的。即使这样也有值得牵挂的和珍爱的人，如果幸运，自己珍爱的人也能珍爱你。心中保有的那奔跑在绿色麦田和跳跃在蓝天白云上的小小幻想，跟他们在一起才会想起吧。&lt;/p&gt;</content><category term="notes"></category></entry><entry><title>Big Sarcosaurus</title><link href="http://synckey.name/posts/2014/10/22/big-sarcosaurus.html" rel="alternate"></link><published>2014-10-22T00:00:00+08:00</published><updated>2014-10-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-22:/posts/2014/10/22/big-sarcosaurus.html</id><summary type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
-would take an exam today and she would have some time after then. I invited her to come to see me and have lunch 
-together …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat ,which was kind of a surprise for me.She said that she 
-would take an exam today and she would have some time after then. I invited her to come to see me and have lunch 
-together. She said that she had bought some Big Sarcosaurus(&lt;code&gt;大懒龙&lt;/code&gt; in Chinese).I  don't know what
-it is and incorrectly, I thought it was a restaurant.I searched it on the baidu map,and the website told me  that it
-was 1h away from me. I might do not have enough time to go there and I told her to cancel the lunch.However,
-I was wrong,Big Sacrosaurus can be taken away. It was significantly nice for Wen to come back(&lt;code&gt;angrily&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;I really enjoy the lunch in Pizza hut,during which we talked about her work,and mine.Joy combined with upset makes her
-work interesting and challenging. I know She can make it and grow up to a good banker.&lt;/p&gt;
-&lt;p&gt;It is not good recently,but I really appreciate the time talking with Wen and the Big Sacrosaurus she brought for me .&lt;/p&gt;
+&lt;p&gt;也许每个人的内心都和Holden一样，看别人都觉得虚伪做作，总觉得自己才是最对的，最好的。即使这样也有值得牵挂的和珍爱的人，如果幸运，自己珍爱的人也能珍爱你。心中保有的那奔跑在绿色麦田和跳跃在蓝天白云上的小小幻想，跟他们在一起才会想起吧。&lt;/p&gt;</content><category term="notes"></category></entry><entry><title>Big Sarcosaurus</title><link href="http://synckey.name/posts/2014/10/22/big-sarcosaurus.html" rel="alternate"></link><published>2014-10-22T00:00:00+08:00</published><updated>2014-10-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-22:/posts/2014/10/22/big-sarcosaurus.html</id><summary type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat, which was kind of a surprise for me.
+She said that she  would take an exam today and she would have some time after then. 
+I invited her to come to see me and have lunch together …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat, which was kind of a surprise for me.
+She said that she  would take an exam today and she would have some time after then. 
+I invited her to come to see me and have lunch together. She said that she had bought some Big Sarcosaurus(&lt;code&gt;大懒龙&lt;/code&gt; in Chinese).
+I  don't know what it is and incorrectly, I thought it was a restaurant. I searched it on the baidu map,and the website told me that it was 1h away from me. 
+I might do not have enough time to go there and I told her to cancel the lunch.
+However, I was wrong, Big Sacrosaurus can be taken away. It was significantly nice for Wen to come back(angrily).&lt;/p&gt;
+&lt;p&gt;I really enjoy the lunch in PizzaHut, during which we talked about her work,and mine.
+Joice combined with upset makes her work interesting and challenging. I know She can make it and grow up to a good banker.&lt;/p&gt;
+&lt;p&gt;It is not good recently, but I really appreciate the time talking with Wen and the Big Sacrosaurus she brought for me .&lt;/p&gt;
 &lt;div class="figure"&gt;
     &lt;img src="/static/images/bigsarcosaurus.jpg" alt="Big Sarcosaurus" style="width:50%" /&gt;
     &lt;div class="caption"&gt;Big Sarcosaurus&lt;/div&gt;
