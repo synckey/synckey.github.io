@@ -16,25 +16,26 @@ Place: Beijing
 
 **Notice:** this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).
 
-Recently,what kind of knowledge should a university provide its graduates with has been increasingly popular.Some of us
-hold the view that universities should teach their students job-related skills.But others do not agree,they
-think that universities should mainly focus on theoretical knowledge.Personally,I agree with the later view.
+Recently, what kind of knowledge should a university provide its graduates with has been increasingly popular. Some of us
+hold the view that universities should teach their students job-related skills.But others do not agree, they
+think that universities should mainly focus on teaching theoretical knowledge. Personally,I agree with the later view.
 
-The basic knowledge,many of which have developed for hundred of years and have been refined by countless of experts,is 
-significantly important to a university student.Without it, they can not form their systematic knowledge of their 
-professions which will lead to serious results,for instance,they may be unable to do further or complex jobs.That is why 
-many people think that the universities should put more attention on teaching basic knowledge.
+The basic knowledge, many of which have been developing for hundred of years and have been refined by countless of experts, 
+is significantly important to a university student. Without it, they can not form their systematic knowledge of their 
+professions which will lead to serious results, for instance, they may be unable to do complex jobs. 
+That is why many people think that the universities should pay more attention on teaching basic knowledge.
 
-What is more,companies concern about the ability of solving problems and the ability to learn fast more than job skills.
-Many renowned companies,such as google and facebook,ask a lot of basic questions in their job interviews.They believe 
-that,if you are able to learn the basic lessons well at school, you can soon become a skilled employee after professional
-trainings.So, if a university teaches basic knowledge better,it can anticipate more competitive graduates.
+What is more, companies concern about the ability of solving problems and the ability to learn fast more than job skills.
+Many renowned companies, such as google and facebook, ask a lot of basic questions in their job interviews.
+They believe that, if you are able to learn the basic lessons well at school, 
+you can soon become a skilled employee after professional trainings.
+So, if a university teaches basic knowledge better, it can anticipate more competitive graduates.
 
 As to the job-related skills, the technology used in industry is developing extraordinarily fast that the universities can 
-not keep pace with it.It is hard for them to decide what is the best skill for their students.However,they should not totally
-ignore the requirements of the job market,alternatively,they can invite some companies to their campus to introduce what 
-kind of skill they want.
+not keep pace with it.It is hard for them to decide what is the best skill for their students. 
+However, they should not totally ignore the requirements of the job market,alternatively, 
+they can invite some companies to their campus to introduce what kind of skill they want.  
 
-In summary,although the main goal of going to universities of many students is finding a ideal job after graduating,universities
-should help their students to build a good knowledge system and help them to be quick learners and problem solvers instead of
+In summary, although the main goal of going to universities of many students is finding a ideal job after graduating,
+universities should help their students to build a good knowledge system and help them to be quick learners and problem solvers instead of
 just teaching them job-related skills.

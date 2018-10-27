@@ -83,8 +83,6 @@ Place: Beijing
    
     
 
-* 不规则动词们:
-    * fall->fell->fallen
-    * fly->flew->flown
-    * begin->began->begun
+### 不规则动词
+[常用不规则动词和音标](https://drive.google.com/file/d/1SVEDIVSxgNnAzOue1fjUx47RJrohZwAS/view?usp=sharing)
 

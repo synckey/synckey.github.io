@@ -21,10 +21,10 @@ death if they do not follow the laws.Keeping this in mind,they will think twice 
 
 On the other hand,deterrent from punishing still remains to be a significant way to gain road safety. For example, if an offender
 is punished strictly, he and his friends will be deterred and are less possible to offend again.In some countries,if a person
-seriously break a certain law,such as drunk driving,he may lose the right to drive again. So, severe punishment surely contributes to
+seriously break a certain law, such as drunk driving,he may lose the right to drive again. So, severe punishment surely contributes to
 the improvement of road safety.
 
-In conclusion,we can help people to improve the traffic safety by teaching them the importance of safe driving.Although punishment
-is also a good way to do so,but it is not the best way and only way.Pedestrians and drivers should all  obey traffic regulations and
+In conclusion, we can help people to improve the traffic safety by teaching them the importance of safe driving. Although punishment
+is also a good way to do so, but it is not the best way and only way. Pedestrians and drivers should all  obey traffic regulations and
 laws to keep safe.
 
