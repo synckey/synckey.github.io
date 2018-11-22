@@ -1,5 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog - tools</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/tools.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2017-06-04T00:00:00+08:00</updated><entry><title>Git Push to Two Repositories at the Same Time</title><link href="http://synckey.name/posts/2017/06/04/git-push-to-two-repositories.html" rel="alternate"></link><published>2017-06-04T00:00:00+08:00</published><updated>2017-06-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-04:/posts/2017/06/04/git-push-to-two-repositories.html</id><summary type="html">&lt;p&gt;Suppose You have 2 repositories:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog - tools</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/tools.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2018-11-20T00:00:00+08:00</updated><entry><title>Four Beautiful and Simple Beamer Templates</title><link href="http://synckey.name/posts/2018/11/20/four-beautiful-and-simple-beamber-templates.html" rel="alternate"></link><published>2018-11-20T00:00:00+08:00</published><updated>2018-11-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-11-20:/posts/2018/11/20/four-beautiful-and-simple-beamber-templates.html</id><summary type="html">&lt;p&gt;I have 4 beautiful simple beamer templates to share, they are all compatible with English and Chinese. 
+You don't have to install any other fonts or softwares in order to compile them. All you need is just a &lt;code&gt;make&lt;/code&gt; or &lt;code&gt;xelatex&lt;/code&gt;.
+The code and pdfs could be found from &lt;a href="https://github.com/synckey/beamers"&gt;github …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I have 4 beautiful simple beamer templates to share, they are all compatible with English and Chinese. 
+You don't have to install any other fonts or softwares in order to compile them. All you need is just a &lt;code&gt;make&lt;/code&gt; or &lt;code&gt;xelatex&lt;/code&gt;.
+The code and pdfs could be found from &lt;a href="https://github.com/synckey/beamers"&gt;github&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;1. algiers&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/synckey/beamers/master/algiers/algiers.pdf"&gt;pdf&lt;/a&gt;
+&lt;div class="figure"&gt;
+    &lt;img src="/static/images/beamer/algiers01.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers02.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers03.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers04.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers05.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers06.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers07.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers08.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers09.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers10.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers11.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers12.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers13.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/algiers14.jpeg" style="max-width:100%"/&gt;
+    &lt;div class="caption"&gt;algiers&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3&gt;2. iqss&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/synckey/beamers/master/iqss/iqss.pdf"&gt;pdf&lt;/a&gt;
+&lt;div class="figure"&gt;
+    &lt;img src="/static/images/beamer/iqss01.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss02.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss03.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss04.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss05.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss06.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss07.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss08.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss09.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss11.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss12.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss13.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss14.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss15.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss16.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss17.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss18.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss19.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/iqss20.jpeg" style="max-width:100%"/&gt;
+    &lt;div class="caption"&gt;iqss&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3&gt;3. naked&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/synckey/beamers/master/naked/naked.pdf"&gt;pdf&lt;/a&gt;
+&lt;div class="figure"&gt;
+    &lt;img src="/static/images/beamer/naked01.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/naked02.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/naked03.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/naked04.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/naked05.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/naked06.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/naked07.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/naked08.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/naked09.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/naked10.jpeg" style="max-width:100%"/&gt;
+    &lt;div class="caption"&gt;naked&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h3&gt;4. simple&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/synckey/beamers/master/simple/simple.pdf"&gt;pdf&lt;/a&gt;&lt;/p&gt;
+&lt;div class="figure"&gt;
+    &lt;img src="/static/images/beamer/simple01.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/simple02.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/simple03.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/simple04.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/simple05.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/simple06.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/simple07.jpeg" style="max-width:100%"/&gt;
+    &lt;img src="/static/images/beamer/simple08.jpeg" style="max-width:100%"/&gt;
+    &lt;div class="caption"&gt;simple&lt;/div&gt;
+&lt;/div&gt;</content><category term="Latex"></category><category term="beamer"></category><category term="slide"></category></entry><entry><title>Git Push to Two Repositories at the Same Time</title><link href="http://synckey.name/posts/2017/06/04/git-push-to-two-repositories.html" rel="alternate"></link><published>2017-06-04T00:00:00+08:00</published><updated>2017-06-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-04:/posts/2017/06/04/git-push-to-two-repositories.html</id><summary type="html">&lt;p&gt;Suppose You have 2 repositories:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
 &lt;/code&gt;&lt;/pre&gt;

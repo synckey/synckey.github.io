@@ -6,6 +6,7 @@ http://synckey.name/
 http://synckey.name/archives.html
 http://synckey.name/tags.html
 http://synckey.name/categories.html
+http://synckey.name/posts/2018/11/20/four-beautiful-and-simple-beamber-templates.html
 http://synckey.name/posts/2018/09/03/food-in-vancouver.html
 http://synckey.name/posts/2018/08/25/six-chapters-from-a-floating-life.html
 http://synckey.name/posts/2018/08/19/supermarket.html
@@ -23,7 +24,6 @@ http://synckey.name/posts/2017/11/26/useful-set-phrases.html
 http://synckey.name/posts/2017/09/20/my-first-marathon.html
 http://synckey.name/posts/2017/06/26/new-to-auckland.html
 http://synckey.name/posts/2017/06/04/git-push-to-two-repositories.html
-http://synckey.name/posts/2017/05/24/necessities-you-should-take-for-the-first-time-go-to-nz.html
 http://synckey.name/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html
 http://synckey.name/posts/2017/03/30/read-mat-files-in-python.html
 http://synckey.name/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html
@@ -62,6 +62,9 @@ http://synckey.name/category/posts.html
 http://synckey.name/category/sfv.html
 http://synckey.name/category/summery.html
 http://synckey.name/category/tools.html
+http://synckey.name/tag/latex.html
+http://synckey.name/tag/beamer.html
+http://synckey.name/tag/slide.html
 http://synckey.name/tag/life.html
 http://synckey.name/tag/posts.html
 http://synckey.name/tag/algorithm.html
@@ -73,12 +76,12 @@ http://synckey.name/tag/ielts.html
 http://synckey.name/tag/sfv.html
 http://synckey.name/tag/tools.html
 http://synckey.name/tag/git.html
-http://synckey.name/tag/mm.html
 http://synckey.name/tag/machine-learning.html
 http://synckey.name/tag/deep-learning.html
 http://synckey.name/tag/probability.html
 http://synckey.name/tag/pelican.html
 http://synckey.name/tag/blog.html
+http://synckey.name/tag/mm.html
 http://synckey.name/tag/vim.html
 http://synckey.name/tag/linux.html
 http://synckey.name/tag/config.html
@@ -100,5 +103,4 @@ http://synckey.name/tag/writing.html
 http://synckey.name/tag/notes.html
 http://synckey.name/tag/personal.html
 http://synckey.name/author/andy.html
-http://synckey.name/author/hollie.html
 http://synckey.name/author/jian.html
