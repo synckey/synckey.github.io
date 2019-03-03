@@ -103,8 +103,7 @@
             <h1>Java 中 volatile, spin lock 和 synchroized 的语义</h1>
             <h2 class="headline">2017-12-02 Beijing </h2>
         </header>
-        <p><img src="/static/images/2016.06.09_babies.jpg" alt="fuck"/></p>
-<p>读《深入理解Java虚拟机》<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>，对volatile，spin lock，synchronized　有了新的认识，整理记录如下。</p>
+        <p>读《深入理解Java虚拟机》<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>，对volatile，spin lock，synchronized　有了新的认识，整理记录如下。</p>
 <h3>Java内存模型（Java Memory Model）</h3>
 <p><div class="figure">
     <img src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" alt="degree_deploma"  width="100%" class="img-responsive carousel-inner img-rounded"/>
@@ -139,29 +138,29 @@ Java还提供了一种在某些情况下比上锁更便捷的机制---volatile�
 由于volatile变量只能保证可见性，在不符合以下两条规则的运算场景中，我们然要通过加锁来保证原子性。</p>
 <ol>
 <li>对变量的写操作不依赖于当前值<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>。</li>
-<li>
-<p>该变量没有包含在具有其他变量的不变式中。  </p>
-<p>:::java
-@NotThreadSafe
-public class NumberRange {
-    private int lower, upper;
-    public int getLower() { return lower; }
-    public int getUpper() { return upper; }</p>
-<pre><code>public void setLower(int value) { 
-    if (value &gt; upper) 
-        throw new IllegalArgumentException(...);
-    lower = value;
-}
-
-public void setUpper(int value) { 
-    if (value &lt; lower) 
-        throw new IllegalArgumentException(...);
-    upper = value;
-}
-</code></pre>
-<p>}</p>
-</li>
+<li>该变量没有包含在具有其他变量的不变式中。  </li>
 </ol>
+<pre><code class="language-java">    @NotThreadSafe
+    public class NumberRange {
+        private int lower, upper;
+        public int getLower() { return lower; }
+        public int getUpper() { return upper; }
+
+        public void setLower(int value) { 
+            if (value &gt; upper) 
+                throw new IllegalArgumentException(...);
+            lower = value;
+        }
+
+        public void setUpper(int value) { 
+            if (value &lt; lower) 
+                throw new IllegalArgumentException(...);
+            upper = value;
+        }
+    }
+
+</code></pre>
+
 <p>以上的代码，就算把<code>lower</code>,<code>upper</code>设置为volatile的也不能保证这个类是线程安全的。例如，如果初始状态是 (0, 5)，同一时间内，线程 A
 调用 <code>setLower(4)</code> 并且线程 B 调用 <code>setUpper(3)</code>，显然这两个操作交叉存入的值是不符合条件的，那么两个线程都会通过用于保护不变式的检查，
 使得最后的范围值是(4, 3) —— 一个无效值。我们需要使 
