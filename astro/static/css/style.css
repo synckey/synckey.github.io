@@ -86,11 +86,12 @@ blockquote:after, blockquote:before, q:after, q:before {
 body, html {
     height: 100%
 }
-
+/*
 body {
     font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: 18px;
 }
+*/
 
 .profile #wrapper {
     max-width: 800px;
@@ -215,9 +216,13 @@ em, i {
     font-size:14px;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
-    color: #666666;
+body, h1, h2, h3, h4, h5, h6  {
+    /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;*/
+   font-family: Raleway, "Microsoft YaHei", Lato, Verdana, sans-serif, serif, Helvetica, Arial;
+   font-weight: normal;
+   color: #413f3f;
+   -webkit-font-smoothing: antialiased;
+
 }
 
 
