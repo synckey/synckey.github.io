@@ -7,7 +7,6 @@ Place: Beijing
 status:draft
 
 
-<img src="/static/images/2016.06.09_babies.jpg" alt="fuck"/>
 
   
 读《深入理解Java虚拟机》[^1]，对volatile，spin lock，synchronized　有了新的认识，整理记录如下。
@@ -61,7 +60,7 @@ Java还提供了一种在某些情况下比上锁更便捷的机制---volatile�
 
 
 
-    :::java
+```language-java
     @NotThreadSafe
     public class NumberRange {
         private int lower, upper;
@@ -81,7 +80,7 @@ Java还提供了一种在某些情况下比上锁更便捷的机制---volatile�
         }
     }
 
-
+```
 
 以上的代码，就算把`lower`,`upper`设置为volatile的也不能保证这个类是线程安全的。例如，如果初始状态是 (0, 5)，同一时间内，线程 A
 调用 `setLower(4)` 并且线程 B 调用 `setUpper(3)`，显然这两个操作交叉存入的值是不符合条件的，那么两个线程都会通过用于保护不变式的检查，

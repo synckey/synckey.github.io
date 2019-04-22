@@ -120,6 +120,7 @@ Given a **non-empty** string s and a dictionary wordDict containing a list of **
 
 * The same word in the dictionary may be reused multiple times in the segmentation.
 * You may assume the dictionary does not contain duplicate words.
+
 **Example 1:**
 ```
 Input:

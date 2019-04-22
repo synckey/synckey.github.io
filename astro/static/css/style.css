@@ -88,9 +88,9 @@ body, html {
 }
 
 body {
-    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    font-size: 18px;
+    font-size: 110%;
 }
+
 
 .profile #wrapper {
     max-width: 800px;
@@ -163,12 +163,9 @@ nav.main-nav a.cta {
     padding: 30px 40px 100px;
 }
 
-
 a {
-    /*text-decoration: none;*/
-    color: #000000;
+    color: #413f3f;
 }
-
 
 ul, ol {
     margin: 0 0 20px;
@@ -215,9 +212,12 @@ em, i {
     font-size:14px;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
-    color: #666666;
+body, h1, h2, h3, h4, h5, h6  {
+   font-family: Raleway, "Microsoft YaHei", Lato, Verdana, sans-serif, serif, Helvetica, Arial;
+   font-weight: normal;
+   color: #413f3f;
+   -webkit-font-smoothing: antialiased;
+
 }
 
 

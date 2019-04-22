@@ -5,6 +5,8 @@ Tags: life, posts
 Slug: food-in-vancouver
 Author: jian
 Place: Vancouver
+Status:draft
+
 
 来温哥华以后第一次听说brunch这个词，大概就是早午餐的意思，早餐午餐并成一顿吃了，
 虽然我们中国人也常常这么吃，这个词算是老外的一个特殊饮食文化。
