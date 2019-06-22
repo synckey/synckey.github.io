@@ -163,11 +163,9 @@ nav.main-nav a.cta {
     padding: 30px 40px 100px;
 }
 
-/*
 a {
-    color: #000000;
+    color: #413f3f;
 }
-*/
 
 ul, ol {
     margin: 0 0 20px;
@@ -215,7 +213,6 @@ em, i {
 }
 
 body, h1, h2, h3, h4, h5, h6  {
-    /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;*/
    font-family: Raleway, "Microsoft YaHei", Lato, Verdana, sans-serif, serif, Helvetica, Arial;
    font-weight: normal;
    color: #413f3f;

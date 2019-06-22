@@ -347,9 +347,9 @@ Explanation: The ray meets receptor 2 the first time it gets reflected back to t
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The same word in the dictionary may be reused multiple times in the segmentation.&lt;/li&gt;
-&lt;li&gt;You may assume the dictionary does not contain duplicate words.
-&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;You may assume the dictionary does not contain duplicate words.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Input:
 s = &amp;quot;catsanddog&amp;quot;
 wordDict = [&amp;quot;cat&amp;quot;, &amp;quot;cats&amp;quot;, &amp;quot;and&amp;quot;, &amp;quot;sand&amp;quot;, &amp;quot;dog&amp;quot;]
