@@ -3,6 +3,7 @@ pages:
   script:
     - mkdir .public
     - cp -r * .public
+    - rm ./public/.gitlab-ci.yml
     - mv .public public
   artifacts:
     paths:
