@@ -60,7 +60,8 @@ STATIC_PATHS = ['static', 'static/images/favicon.ico', 'static/CNAME']
 EXTRA_PATH_METADATA = {
     "static/images/favicon.ico": {"path": "favicon.ico"},
     "static/CNAME": {"path": "CNAME"},
-    "static/robots.txt": {"path": "robots.txt"}
+    "static/robots.txt": {"path": "robots.txt"},
+    "static/.nojekyll": {"path": ".nojekyll"}
 }
 
 SITEMAP = {
