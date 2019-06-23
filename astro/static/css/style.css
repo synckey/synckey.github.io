@@ -8,7 +8,7 @@
     font-size: 80%;
     margin-top: 10px;
     margin-bottom: 15px;
-    color: #666;
+    color: #555;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -86,12 +86,6 @@ blockquote:after, blockquote:before, q:after, q:before {
 body, html {
     height: 100%
 }
-/*
-body {
-    font-size: 110%;
-}
-*/
-
 
 .profile #wrapper {
     max-width: 800px;
@@ -216,7 +210,7 @@ em, i {
 body, h1, h2, h3, h4, h5, h6  {
    font-family: Raleway, "Microsoft YaHei", Lato, Verdana, sans-serif, serif, Helvetica, Arial;
    font-weight: normal;
-   color: #413f3f;
+   color: #555;
    -webkit-font-smoothing: antialiased;
 
 }
