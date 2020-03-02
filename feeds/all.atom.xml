@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/all.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2018-11-20T00:00:00+08:00</updated><entry><title>Four Beautiful and Simple Beamer Templates</title><link href="http://synckey.name/posts/2018/11/20/four-beautiful-and-simple-beamber-templates.html" rel="alternate"></link><published>2018-11-20T00:00:00+08:00</published><updated>2018-11-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-11-20:/posts/2018/11/20/four-beautiful-and-simple-beamber-templates.html</id><summary type="html">&lt;p&gt;I have 4 beautiful simple beamer templates to share, they are all compatible with English and Chinese. 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Andy's Blog</title><link href="http://synckey.name/" rel="alternate"></link><link href="http://synckey.name/feeds/all.atom.xml" rel="self"></link><id>http://synckey.name/</id><updated>2020-03-02T00:00:00+08:00</updated><entry><title>Good Leetcode Problems</title><link href="http://synckey.name/posts/2020/03/02/leetcodes.html" rel="alternate"></link><published>2020-03-02T00:00:00+08:00</published><updated>2020-03-02T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2020-03-02:/posts/2020/03/02/leetcodes.html</id><content type="html">&lt;p&gt;After solving 600+ leetcode problems, I collected some good problems with solutions that are easy to understand.&lt;/p&gt;
+&lt;p&gt;It could be found &lt;a href="/static/images/algorithms.pdf"&gt;here&lt;/a&gt;, enjoy leetcoding.&lt;/p&gt;</content><category term="posts"></category><category term="algorithm"></category></entry><entry><title>Good Leetcode Problems</title><link href="http://synckey.name/posts/2020/03/02/leetcodes.html" rel="alternate"></link><published>2020-03-02T00:00:00+08:00</published><updated>2020-03-02T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2020-03-02:/posts/2020/03/02/leetcodes.html</id><content type="html">&lt;p&gt;After solving 600+ leetcode problems, I collected some good problems with solutions that are easy to understand.&lt;/p&gt;
+&lt;p&gt;It could be found &lt;a href="/static/images/algorithms.pdf"&gt;here&lt;/a&gt;, enjoy leetcoding.&lt;/p&gt;</content><category term="posts"></category><category term="algorithm"></category></entry><entry><title>Four Beautiful and Simple Beamer Templates</title><link href="http://synckey.name/posts/2018/11/20/four-beautiful-and-simple-beamber-templates.html" rel="alternate"></link><published>2018-11-20T00:00:00+08:00</published><updated>2018-11-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-11-20:/posts/2018/11/20/four-beautiful-and-simple-beamber-templates.html</id><summary type="html">&lt;p&gt;I have 4 beautiful simple beamer templates to share, they are all compatible with English and Chinese. 
 You don't have to install any other fonts or softwares in order to compile them. All you need is just a &lt;code&gt;make&lt;/code&gt; or &lt;code&gt;xelatex&lt;/code&gt;.
 The code and pdfs could be found from &lt;a href="https://github.com/synckey/beamers"&gt;github …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;I have 4 beautiful simple beamer templates to share, they are all compatible with English and Chinese. 
 You don't have to install any other fonts or softwares in order to compile them. All you need is just a &lt;code&gt;make&lt;/code&gt; or &lt;code&gt;xelatex&lt;/code&gt;.
@@ -74,15 +76,11 @@ The code and pdfs could be found from &lt;a href="https://github.com/synckey/bea
     &lt;img src="/static/images/beamer/simple07.jpeg" style="max-width:100%"/&gt;
     &lt;img src="/static/images/beamer/simple08.jpeg" style="max-width:100%"/&gt;
     &lt;div class="caption"&gt;simple&lt;/div&gt;
-&lt;/div&gt;</content><category term="Latex"></category><category term="beamer"></category><category term="slide"></category></entry><entry><title>浮生六记</title><link href="http://synckey.name/posts/2018/08/25/six-chapters-from-a-floating-life.html" rel="alternate"></link><published>2018-08-25T00:00:00+08:00</published><updated>2018-08-25T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-25:/posts/2018/08/25/six-chapters-from-a-floating-life.html</id><summary type="html">&lt;p&gt;小时候穿着开裆裤在墙底下扒开准头抓蚯蚓，玩完了发现小鸡鸡肿起来了，于是奶奶就带我去邻居家里找一只鸭子，给鸭子叉两口，很快就好了。
+&lt;/div&gt;</content><category term="tools"></category><category term="Latex"></category><category term="beamer"></category><category term="slide"></category></entry><entry><title>浮生六记</title><link href="http://synckey.name/posts/2018/08/25/six-chapters-from-a-floating-life.html" rel="alternate"></link><published>2018-08-25T00:00:00+08:00</published><updated>2018-08-25T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-25:/posts/2018/08/25/six-chapters-from-a-floating-life.html</id><content type="html">&lt;p&gt;小时候穿着开裆裤在墙底下扒开准头抓蚯蚓，玩完了发现小鸡鸡肿起来了，于是奶奶就带我去邻居家里找一只鸭子，给鸭子叉两口，很快就好了。
 今天读到沈复的《浮生六记》，原来中国人在清朝就已经用这种方式治疗被蚯蚓哈肿起来的小鸡鸡了，为之一笑。  &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;贪此生涯，卵为蚯蚓所哈（吴俗称阳曰卵），肿不能便，捉鸭开口哈之，婢妪偶释手，鸭颠其颈作吞噬状，惊而大哭，传为语柄。&lt;/p&gt;
-&lt;/blockquote&gt;</summary><content type="html">&lt;p&gt;小时候穿着开裆裤在墙底下扒开准头抓蚯蚓，玩完了发现小鸡鸡肿起来了，于是奶奶就带我去邻居家里找一只鸭子，给鸭子叉两口，很快就好了。
-今天读到沈复的《浮生六记》，原来中国人在清朝就已经用这种方式治疗被蚯蚓哈肿起来的小鸡鸡了，为之一笑。  &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;贪此生涯，卵为蚯蚓所哈（吴俗称阳曰卵），肿不能便，捉鸭开口哈之，婢妪偶释手，鸭颠其颈作吞噬状，惊而大哭，传为语柄。&lt;/p&gt;
-&lt;/blockquote&gt;</content><category term="life"></category><category term="posts"></category></entry><entry><title>超市</title><link href="http://synckey.name/posts/2018/08/19/supermarket.html" rel="alternate"></link><published>2018-08-19T00:00:00+08:00</published><updated>2018-08-19T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-19:/posts/2018/08/19/supermarket.html</id><summary type="html">&lt;p&gt;对中国人来说，来到一个新地方，首先就是让自己的胃熟悉那里，所以先要找餐馆，再找超市，超市不仅仅能满足你的胃。&lt;/p&gt;
+&lt;/blockquote&gt;</content><category term="life"></category><category term="life"></category><category term="posts"></category></entry><entry><title>超市</title><link href="http://synckey.name/posts/2018/08/19/supermarket.html" rel="alternate"></link><published>2018-08-19T00:00:00+08:00</published><updated>2018-08-19T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-19:/posts/2018/08/19/supermarket.html</id><summary type="html">&lt;p&gt;对中国人来说，来到一个新地方，首先就是让自己的胃熟悉那里，所以先要找餐馆，再找超市，超市不仅仅能满足你的胃。&lt;/p&gt;
 &lt;p&gt;每想到超市，我就想到家庭。一个家庭对待生活的态度可以从早餐的丰盛程度看出来。最精致的当然是早晨一切现做，不管是粥还是小菜。
 从这一点来看，大部分总过家庭的早餐算是精致的。或者早晨总有一个人要早起，去菜市场买新做好的包子豆浆之类。
 再次一点的就是在家里热现成的了，比如热一杯牛奶，两片面包。最不精致的吃法应该就是在路边买一个煎饼果子或者鸡蛋饼拎到办公室了，懒人福音。
@@ -106,7 +104,7 @@ The code and pdfs could be found from &lt;a href="https://github.com/synckey/bea
 比如打扫卫生，洗衣做饭。私以为，厨房的油烟也是生活的一部分，所以我们通常在超市采购的，大部分是食品，从饼干面包到油盐酱醋，
 把它们从超市搬运到冰箱，再从冰箱搬运到自己的胃里。&lt;/p&gt;
 &lt;p&gt;一个人生活久了，周五的超市采购就有了仪式感。下班以后一个人去吃一顿好的，边吃边打开下厨房，看中什么美食，再去超市精挑细选，买好食材，
-照着菜谱做出来，这样度过周五的晚上，不亦快哉？做完周末吃的也有着落了，不用叫外卖了，不亦快哉？&lt;/p&gt;</content><category term="life"></category><category term="posts"></category></entry><entry><title>圆珠笔</title><link href="http://synckey.name/posts/2018/08/12/ballpoint-pen.html" rel="alternate"></link><published>2018-08-12T00:00:00+08:00</published><updated>2018-08-12T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-12:/posts/2018/08/12/ballpoint-pen.html</id><summary type="html">&lt;p&gt;温哥华虽然物资并不丰富，圆珠笔的选项倒是也有不少，为了能买到一支顺滑好用的，买了几种比较流行的笔做了一些对比。我自己对圆珠笔的要求就是顺滑，下墨，
+照着菜谱做出来，这样度过周五的晚上，不亦快哉？做完周末吃的也有着落了，不用叫外卖了，不亦快哉？&lt;/p&gt;</content><category term="life"></category><category term="life"></category><category term="posts"></category></entry><entry><title>圆珠笔</title><link href="http://synckey.name/posts/2018/08/12/ballpoint-pen.html" rel="alternate"></link><published>2018-08-12T00:00:00+08:00</published><updated>2018-08-12T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-12:/posts/2018/08/12/ballpoint-pen.html</id><summary type="html">&lt;p&gt;温哥华虽然物资并不丰富，圆珠笔的选项倒是也有不少，为了能买到一支顺滑好用的，买了几种比较流行的笔做了一些对比。我自己对圆珠笔的要求就是顺滑，下墨，
 握感好。很喜欢那种写着写着圆珠笔的旁边就会挂着一些墨滴的那种笔，因为这样正说明这种笔很下墨，并且顺滑。一般说来，大街上发的广告笔，都是这样的，
 就是不太好买。&lt;/p&gt;
 &lt;p&gt;公司里面提供的笔是有名的 BIC Round Stick， BIC 是一个法国品牌，写起来非常顺滑，握感是这篇文章里面提到的笔当中最好的，因为它的笔身非常的细。
@@ -143,7 +141,7 @@ The code and pdfs could be found from &lt;a href="https://github.com/synckey/bea
 &lt;div class="figure"&gt;
     &lt;img src="/static/images/staples_ball_point_pen.jpg" alt="staples_ball_point_pen.jpg" /&gt;
     &lt;div class="caption"&gt;给主角一张特写，图片来自 Staples 官网&lt;/div&gt;
-&lt;/div&gt;</content><category term="life"></category><category term="posts"></category></entry><entry><title>为了理想而死</title><link href="http://synckey.name/posts/2018/08/06/dying-for-dream.html" rel="alternate"></link><published>2018-08-06T00:00:00+08:00</published><updated>2018-08-06T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-06:/posts/2018/08/06/dying-for-dream.html</id><summary type="html">&lt;p&gt;重读李敖的《北京法源寺》，其中最打动我的，就是谭嗣同在变法失败以后本来可以逃走，但是他却没有逃走，反而要心甘情愿被西太后抓住，然后被砍头于菜市口。
+&lt;/div&gt;</content><category term="life"></category><category term="life"></category><category term="posts"></category></entry><entry><title>为了理想而死</title><link href="http://synckey.name/posts/2018/08/06/dying-for-dream.html" rel="alternate"></link><published>2018-08-06T00:00:00+08:00</published><updated>2018-08-06T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-08-06:/posts/2018/08/06/dying-for-dream.html</id><summary type="html">&lt;p&gt;重读李敖的《北京法源寺》，其中最打动我的，就是谭嗣同在变法失败以后本来可以逃走，但是他却没有逃走，反而要心甘情愿被西太后抓住，然后被砍头于菜市口。
 所有人在劝他走的时候，他的理论是革命要有分工，有的人需要逃走，有的人则需要流血，来证明自己所走的道路是失败的，警醒后人。
 谭嗣同他们跟光绪皇帝搞的戊戌变法，本质上是一种改良，但是这种改良却失败了。谭嗣同希望以自己的死，提醒世人，改良的道路在当时的中国是走不通的，只有革命流血才能救中国。
 后来的辛亥革命也证明了他的论断是正确的，但是他没有机会看到了。&lt;/p&gt;
@@ -162,16 +160,16 @@ The code and pdfs could be found from &lt;a href="https://github.com/synckey/bea
 再者，如果活着而亲眼看见自己梦想幻灭，又会是多么痛苦的一件事。就像康有为，年轻时是激进派，老了却成了保守派，要搞什么复辟，最终只能眼睁睁的看着大清灭亡了。&lt;/p&gt;
 &lt;p&gt;书中推崇的另外一种死，也是本来可以不死，但是为了防止别人害怕事情泄露，或者为了向另外一个勇士致敬，自己先死了给他看。田光的故事摘抄如下：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;在秦国将要灭亡六国前，燕国太 子丹想用刺客要胁或刺杀秦始皇的办法，来兔于亡国。于是太子丹去拜访一 位老侠客，叫田光，请田光执行这个行刺计划。田光说千里马年轻的时候， 一天可跑千里，可是老了以后，一匹差劲的普通的马都可以赶过它，你太子丹听说的我、仰慕的我，其实是年轻时代的我，现在我老了，没办法执行这 个计划了，但我有个朋友叫荆轲，他可以担任。太子丹于是请田光去找荆轲， 并嘱咐田光不要向其他人泄漏这个计划。田光见到荆轲，得到荆轲同意后， 就叫荆轲直接跟太子丹接洽，他自己就自杀了。&lt;/p&gt;
+&lt;p&gt;在秦国将要灭亡六国前，燕国太子丹想用刺客要胁或刺杀秦始皇的办法，来兔于亡国。于是太子丹去拜访一 位老侠客，叫田光，请田光执行这个行刺计划。田光说千里马年轻的时候， 一天可跑千里，可是老了以后，一匹差劲的普通的马都可以赶过它，你太子丹听说的我、仰慕的我，其实是年轻时代的我，现在我老了，没办法执行这 个计划了，但我有个朋友叫荆轲，他可以担任。太子丹于是请田光去找荆轲， 并嘱咐田光不要向其他人泄漏这个计划。田光见到荆轲，得到荆轲同意后， 就叫荆轲直接跟太子丹接洽，他自己就自杀了。&lt;/p&gt;
 &lt;p&gt;第一、士为知已者死，太子丹求他帮忙，他愿意献身救国，死来配合这一点，这显然是不使荆轲为难。荆轲也高，他居然不劝田光也不拦田光， 他知道像田光这样壮烈的性格，用先自杀来给这件行刺计划做一道序幕，是很自然的事。他要劝田光拦田光，反倒远了、俗了。荆轲后来去行刺，失败了，他是笑着死的。他从燕国出发前，大家就感到成功的希望不多。太子丹和知道这个机密计划的人，都在易水河边，穿白衣戴白帽送他，唱的歌是‘风 萧萧兮易水寒，壮士一去兮不复还’。大家的心情，由这首歌就看出来。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;李敖在书中歌颂的都是这种千古奇情，而他自己，也算是为了自己的理想和追求撒过热血，付出过代价的人吧，他为了台湾的言论自由，做了6年多的牢房。
-幸运的是他后来又活了下来，所以又开始鼓吹活着的重要，他说，“战胜敌人的唯一方法，就是活的比他久”。虽然这两个观点看起来有点矛盾，
-但是我觉得他的精神就是要抛头颅的时候，我们一点也畏惧，坐牢算的聊什么，生命又算得了什么。
+&lt;p&gt;李敖在书中歌颂的都是这种千古奇情，而他自己，也算是为了自己的理想和追求撒过热血，付出过代价的人吧，他为了台湾的言论自由，蹲了6年多的牢房。
+幸运的是他后来又活了下来，所以又开始鼓吹活着的重要，他说，"胜敌人的唯一方法，就是活的比他久"。虽然这两个观点看起来有点矛盾，
+但是我觉得他的精神就是要抛头颅的时候，我们一点也畏惧，坐牢算的了什么，生命又算得了什么。
 既然敌人搞不死我，那我就要活的更好，更勇猛的复仇，去“敌人的坟头撒尿”。&lt;/p&gt;
-&lt;p&gt;如果谭嗣同不死，中国也能走上后来的道路，那他的死，价值又在何方？为了理想而死，在现代的我看起来，是一件多么难的事情，虽然战火离我们也只有几十年的时间，但是生命好像变得愈发宝贵又不宝贵。
-没法想象如果有一天我自己面临谭嗣同或者李敖那样，抓捕人员一直在家门口徘徊，会是什么情况，我想我一定不会那么从容，那么不迫，那么冷静的写几封家书，交代自己的后事。
-毕竟我每天所做的，也仅仅是为了填饱肚子而已，跟理想想去甚远。&lt;/p&gt;</content><category term="life"></category><category term="posts"></category></entry><entry><title>租房</title><link href="http://synckey.name/posts/2018/07/30/my-renting-stories.html" rel="alternate"></link><published>2018-07-30T00:00:00+08:00</published><updated>2018-07-30T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-07-30:/posts/2018/07/30/my-renting-stories.html</id><summary type="html">&lt;p&gt;来到温哥华重新开始了租房的生活以后，我想起了许多租房的往事，虽然这些记忆并不十分甜蜜，可它们毕竟是我经历过的生活。&lt;/p&gt;
+&lt;p&gt;如果谭嗣同不死，中国也能走上后来的道路，那他的死，价值又在何方？为了理想而死，在现代的我看起来，是一件多么难的事情，虽然战火离我们也只有几十年的时间，
+但是生命好像变得愈发宝贵又不宝贵。没法想象如果有一天我自己面临谭嗣同或者李敖那样，抓捕人员一直在家门口徘徊，会是什么情况，我想我一定不会那么从容，
+那么不迫，那么冷静的写几封家书，交代自己的后事。毕竟我每天所做的，也仅仅是为了填饱肚子而已，跟理想想去甚远。&lt;/p&gt;</content><category term="life"></category><category term="life"></category><category term="posts"></category></entry><entry><title>租房</title><link href="http://synckey.name/posts/2018/07/30/my-renting-stories.html" rel="alternate"></link><published>2018-07-30T00:00:00+08:00</published><updated>2018-07-30T00:00:00+08:00</updated><author><name>jian</name></author><id>tag:synckey.name,2018-07-30:/posts/2018/07/30/my-renting-stories.html</id><summary type="html">&lt;p&gt;来到温哥华重新开始了租房的生活以后，我想起了许多租房的往事，虽然这些记忆并不十分甜蜜，可它们毕竟是我经历过的生活。&lt;/p&gt;
 &lt;p&gt;大三暑假过来北京实习的时候，拎着一个大编织袋背着一大书包的书，就从济南跑到了北京。北京南站出来，从4号线转到13号线再转到昌平线，
 然后再打一个黑出租才能来到第一个租的三居室，房子是室友已经先找好的。这个三居室里面，没有洗衣机，也没有空调，更没有做饭的工具。
 所以在那个房子里面的第一顿饭是在楼下的小超市买的老干妈加冷馒头。因为没有空调，夏天只能靠着小电风扇续命。&lt;/p&gt;
@@ -238,7 +236,7 @@ The code and pdfs could be found from &lt;a href="https://github.com/synckey/bea
 每到一个地方，我就会想想窥探这里的过往，以前这里是什么样子？好像答案有一股洗衣粉的味道，那味道是从旧衣服里面发出来的。有时候也想窥探未来，然而未来往往没有线索，
 因为我从来不把我自己的旧衣服扔在一个地方，我只会把他们扔在垃圾箱里。&lt;/p&gt;
 &lt;p&gt;后来从这里搬走的时候，回头看到了链家的广告牌，那上面写着这里的房价，差不多是12万一平，我想这是我迄今住过单位面积最贵的地方了吧。&lt;/p&gt;
-&lt;p&gt;以上就是我在北京租房的故事。&lt;/p&gt;</content><category term="life"></category><category term="posts"></category></entry><entry><title>Leetcodes</title><link href="http://synckey.name/posts/2018/06/23/leetcodes.html" rel="alternate"></link><published>2018-06-23T00:00:00+08:00</published><updated>2018-06-23T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-06-23:/posts/2018/06/23/leetcodes.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;以上就是我在北京租房的故事。&lt;/p&gt;</content><category term="life"></category><category term="life"></category><category term="posts"></category></entry><entry><title>Leetcodes</title><link href="http://synckey.name/posts/2018/06/23/leetcodes.html" rel="alternate"></link><published>2018-06-23T00:00:00+08:00</published><updated>2018-06-23T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-06-23:/posts/2018/06/23/leetcodes.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;This post records many of the leetcodes that I think worth a second try.
 The solutions mainly come from the discussions, which are pretty smart ones. I can not list all the original pages for them, 
 but they can be easily found by Google.&lt;/p&gt;
@@ -1057,8 +1055,8 @@ i |0         |
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;From here we can easily fill the whole grid: for each &lt;code&gt;(x, y)&lt;/code&gt;, we check if &lt;code&gt;S[x] == T[y]&lt;/code&gt; we add the previous item and the previous item in the previous row, otherwise we copy the previous item in the same row. The reason is simple:
-&lt;em&gt; if the current character in S doesn't equal to current character T, then we have the same number of distinct subsequences as we had without the new character.
-&lt;/em&gt; if the current character in S equal to the current character T, then the distinct number of subsequences: the number we had before plus the distinct number of subsequences we had with less longer T and less longer S.&lt;br /&gt;
+* if the current character in S doesn't equal to current character T, then we have the same number of distinct subsequences as we had without the new character.
+* if the current character in S equal to the current character T, then the distinct number of subsequences: the number we had before plus the distinct number of subsequences we had with less longer T and less longer S.&lt;br /&gt;
 An example:&lt;br /&gt;
 &lt;code&gt;S: [acdabefbc]&lt;/code&gt; and &lt;code&gt;T: [ab]&lt;/code&gt;  &lt;/p&gt;
 &lt;p&gt;first we check with &lt;code&gt;a&lt;/code&gt;:  &lt;/p&gt;
@@ -1167,22 +1165,957 @@ The code of solving Longest Substring with At Most Two Distinct Characters is be
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39775/Accepted-short-solution-in-Java"&gt;Accepted short solution in Java&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39775/Accepted-short-solution-in-Java"&gt;Accepted short solution in Java&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="https://leetcode.com/problems/remove-k-digits/discuss/88660/A-greedy-method-using-stack-O(n)-time-and-O(n)-space"&gt;A greedy method using stack, O(n) time and O(n) space&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://leetcode.com/problems/remove-k-digits/discuss/88660/A-greedy-method-using-stack-O(n)-time-and-O(n)-space"&gt;A greedy method using stack, O(n) time and O(n) space&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="algorithm"></category></entry><entry><title>彩云追月</title><link href="http://synckey.name/posts/2018/02/04/colorful-clouds-chasing-the-moon.html" rel="alternate"></link><published>2018-02-04T00:00:00+08:00</published><updated>2018-02-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-02-04:/posts/2018/02/04/colorful-clouds-chasing-the-moon.html</id><summary type="html">&lt;p&gt;2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
+&lt;/div&gt;</content><category term="posts"></category><category term="algorithm"></category></entry><entry><title>Leetcodes</title><link href="http://synckey.name/posts/2018/06/23/leetcodes.html" rel="alternate"></link><published>2018-06-23T00:00:00+08:00</published><updated>2018-06-23T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-06-23:/posts/2018/06/23/leetcodes.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;This post records many of the leetcodes that I think worth a second try.
+The solutions mainly come from the discussions, which are pretty smart ones. I can not list all the original pages for them, 
+but they can be easily found by Google.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/minimum-cost-to-hire-k-workers/description/"&gt;857. Minimum Cost to Hire K …&lt;/a&gt;&lt;/h3&gt;</summary><content type="html">&lt;blockquote&gt;
+&lt;p&gt;This post records many of the leetcodes that I think worth a second try.
+The solutions mainly come from the discussions, which are pretty smart ones. I can not list all the original pages for them, 
+but they can be easily found by Google.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/minimum-cost-to-hire-k-workers/description/"&gt;857. Minimum Cost to Hire K Workers&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;There are &lt;code&gt;N&lt;/code&gt; workers.  The &lt;code&gt;i-th&lt;/code&gt; worker has a &lt;code&gt;quality[i]&lt;/code&gt; and a minimum wage expectation &lt;code&gt;wage[i]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now we want to hire exactly &lt;code&gt;K&lt;/code&gt; workers to form a paid group.  When hiring a group of &lt;code&gt;K&lt;/code&gt; workers, we must pay them according to the following rules:  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Every worker in the paid group should be paid in the ratio of their quality compared to other workers in the paid group.&lt;/li&gt;
+&lt;li&gt;Every worker in the paid group must be paid at least their minimum wage expectation.   &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Return the least amount of money needed to form a paid group satisfying the above conditions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class="java"&gt;Input: quality = [10,20,5], wage = [70,50,30], K = 2
+Output: 105.00000
+Explanation: We pay 70 to 0-th worker and 35 to 2-th worker.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: quality = [3,1,10,10,1], wage = [4,8,2,2,7], K = 3
+Output: 30.66667
+Explanation: We pay 4 to 0-th worker, 13.33333 to 2-th and 3-th workers seperately. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;1 &amp;lt;= K &amp;lt;= N &amp;lt;= 10000, where N = quality.length = wage.length&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;= quality[i] &amp;lt;= 10000&lt;/li&gt;
+&lt;li&gt;1 &amp;lt;= wage[i] &amp;lt;= 10000&lt;/li&gt;
+&lt;li&gt;Answers within 10^-5 of the correct answer will be considered correct.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;class Solution {
+    public double mincostToHireWorkers(int[] q, int[] w, int K) {
+        double[][] workers = new double[w.length][2];
+        for (int i = 0; i &amp;lt; w.length; i++) {
+            workers[i] = new double[]{((double) w[i]) / q[i], (double) q[i]};
+        }
+        Arrays.sort(workers, (a, b) -&amp;gt; Double.compare(a[0], b[0]));
+        double res = Double.MAX_VALUE, qsum = 0;
+        PriorityQueue&amp;lt;Double&amp;gt; pq = new PriorityQueue&amp;lt;&amp;gt;();
+        for (double[] worker : workers) {
+            qsum += worker[1];
+            pq.add(-worker[1]);
+            if (pq.size() &amp;gt; K) qsum += pq.poll();
+            if (pq.size() == K) res = Math.min(res, qsum * worker[0]);
+        }
+        return res;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/contest/weekly-contest-90/problems/mirror-reflection/"&gt;858. Mirror Reflection&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;There is a special square room with mirrors on each of the four walls.  Except for the southwest corner, there are receptors on each of the remaining corners, numbered 0, 1, and 2.&lt;br /&gt;
+The square room has walls of length p, and a laser ray from the southwest corner first meets the east wall at a distance q from the 0th receptor.&lt;br /&gt;
+Return the number of the receptor that the ray meets first.  (It is guaranteed that the ray will meet a receptor eventually.)
+&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: p = 2, q = 1
+Output: 2
+Explanation: The ray meets receptor 2 the first time it gets reflected back to the left wall.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img alt="image" src="https://drive.google.com/uc?id=1FbPFKkJfS_DqQdI1w_AMw4c_cLheHrHO" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;   &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;1 &amp;lt;= p &amp;lt;= 1000&lt;/li&gt;
+&lt;li&gt;0 &amp;lt;= q &amp;lt;= p&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class="java"&gt;class Solution {
+    int gcd(int a, int b) {
+        if (b == 0) return a;
+        return gcd(b, a % b);
+    }
+
+    public int mirrorReflection(int p, int q) {
+        /*
+        It can be expanded to this...
+        ...
+        |-0
+        | |
+        2-1
+        | |
+        |-0
+        | |
+        2-1
+        | |
+        |-0
+        you just need to know ?q=kp (?,k belong to Z)
+        */
+        int vertlen = p * q / gcd(p, q);
+        int box = vertlen / p;
+        if (box % 2 == 0) return 0;
+        int reftime = vertlen / q;
+        if (reftime % 2 == 0) return 2;
+        return 1;
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/word-break-ii/description/"&gt;140. Word Break II&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a &lt;strong&gt;non-empty&lt;/strong&gt; string s and a dictionary wordDict containing a list of &lt;strong&gt;non-empty&lt;/strong&gt; words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The same word in the dictionary may be reused multiple times in the segmentation.&lt;/li&gt;
+&lt;li&gt;You may assume the dictionary does not contain duplicate words.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input:
+s = &amp;quot;catsanddog&amp;quot;
+wordDict = [&amp;quot;cat&amp;quot;, &amp;quot;cats&amp;quot;, &amp;quot;and&amp;quot;, &amp;quot;sand&amp;quot;, &amp;quot;dog&amp;quot;]
+Output:
+[
+  &amp;quot;cats and dog&amp;quot;,
+  &amp;quot;cat sand dog&amp;quot;
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input:
+s = &amp;quot;pineapplepenapple&amp;quot;
+wordDict = [&amp;quot;apple&amp;quot;, &amp;quot;pen&amp;quot;, &amp;quot;applepen&amp;quot;, &amp;quot;pine&amp;quot;, &amp;quot;pineapple&amp;quot;]
+Output:
+[
+  &amp;quot;pine apple pen apple&amp;quot;,
+  &amp;quot;pineapple pen apple&amp;quot;,
+  &amp;quot;pine applepen apple&amp;quot;
+]
+Explanation: Note that you are allowed to reuse a dictionary word.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input:
+s = &amp;quot;catsandog&amp;quot;
+wordDict = [&amp;quot;cats&amp;quot;, &amp;quot;dog&amp;quot;, &amp;quot;sand&amp;quot;, &amp;quot;and&amp;quot;, &amp;quot;cat&amp;quot;]
+Output:
+[]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/articles/exam-room/"&gt;855. Exam Room&lt;/a&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class="java"&gt;class Solution {
+    private List&amp;lt;String&amp;gt; breakS(String s, Set&amp;lt;String&amp;gt; dic, Map&amp;lt;String, List&amp;lt;String&amp;gt;&amp;gt; memo) {
+        if (memo.containsKey(s)) return memo.get(s);
+        List&amp;lt;String&amp;gt; res = new LinkedList&amp;lt;&amp;gt;();
+        if (s.length() == 0) {
+            res.add(&amp;quot;&amp;quot;);
+            return res;
+        }
+        for (String ds : dic) {
+            if (s.startsWith(ds)) {
+                String sub = s.substring(ds.length());
+                List&amp;lt;String&amp;gt; subList = breakS(sub, dic, memo);
+                for (String su : subList) {
+                    res.add(ds + (su.isEmpty() ? &amp;quot;&amp;quot; : &amp;quot; &amp;quot;) + su);
+                }
+            }
+        }
+        memo.put(s, res);
+        return res;
+
+    }
+
+    public List&amp;lt;String&amp;gt; wordBreak(String s, List&amp;lt;String&amp;gt; wordDict) {
+        List&amp;lt;String&amp;gt; res = new LinkedList();
+        if (s.length() == 0) return res;
+        Set&amp;lt;String&amp;gt; dic = new HashSet(wordDict);
+        Map&amp;lt;String, List&amp;lt;String&amp;gt;&amp;gt; map = new HashMap&amp;lt;&amp;gt;();
+        breakS(s, dic, map);
+        return map.get(s);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In an exam room, there are &lt;code&gt;N&lt;/code&gt; seats in a single row, numbered &lt;code&gt;0, 1, 2, ..., N-1&lt;/code&gt;. &lt;br /&gt;
+When a student enters the room, they must sit in the seat that maximizes the distance to the closest person.  If there are multiple such seats, they sit in the seat with the lowest number.  (Also, if no one is in the room, then the student sits at seat number 0.).&lt;br /&gt;
+Return a class &lt;code&gt;ExamRoom(int N)&lt;/code&gt; that exposes two functions: &lt;code&gt;ExamRoom.seat()&lt;/code&gt; returning an int representing what seat the student sat in, and &lt;code&gt;ExamRoom.leave(int p)&lt;/code&gt; representing that the student in seat number p now leaves the room.  It is guaranteed that any calls to &lt;code&gt;ExamRoom.leave(p)&lt;/code&gt; have a student sitting in seat &lt;code&gt;p&lt;/code&gt;.&lt;br /&gt;
+&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [&amp;quot;ExamRoom&amp;quot;,&amp;quot;seat&amp;quot;,&amp;quot;seat&amp;quot;,&amp;quot;seat&amp;quot;,&amp;quot;seat&amp;quot;,&amp;quot;leave&amp;quot;,&amp;quot;seat&amp;quot;], [[10],[],[],[],[],[4],[]]
+Output: [null,0,9,4,2,null,5]
+Explanation:
+ExamRoom(10) -&amp;gt; null
+seat() -&amp;gt; 0, no one is in the room, then the student sits at seat number 0.
+seat() -&amp;gt; 9, the student sits at the last seat number 9.
+seat() -&amp;gt; 4, the student sits at the last seat number 4.
+seat() -&amp;gt; 2, the student sits at the last seat number 2.
+leave(4) -&amp;gt; null
+seat() -&amp;gt; 5, the student​​​​​​​ sits at the last seat number 5.
+​​​​​​​
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;1 &amp;lt;= N &amp;lt;= 10^9&lt;/li&gt;
+&lt;li&gt;ExamRoom.seat() and ExamRoom.leave() will be called at most 10^4 times across all test cases.&lt;/li&gt;
+&lt;li&gt;Calls to ExamRoom.leave(p) are guaranteed to have a student currently sitting in seat number p.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/k-similar-strings/discuss/139872/Java-Backtracking-with-Memorization/146428"&gt;854. K-Similar Strings&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Strings A and B are K-similar (for some non-negative integer K) if we can swap the positions of two letters in A exactly K times so that the resulting string equals B.&lt;/p&gt;
+&lt;p&gt;Given two anagrams A and B, return the smallest K for which A and B are K-similar.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: A = &amp;quot;ab&amp;quot;, B = &amp;quot;ba&amp;quot;
+Output: 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: A = &amp;quot;abc&amp;quot;, B = &amp;quot;bca&amp;quot;
+Output: 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: A = &amp;quot;abac&amp;quot;, B = &amp;quot;baca&amp;quot;
+Output: 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 4:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: A = &amp;quot;aabc&amp;quot;, B = &amp;quot;abca&amp;quot;
+Output: 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;
+1. 1 &amp;lt;= A.length == B.length &amp;lt;= 20
+1. A and B contain only lowercase letters from the set {'a', 'b', 'c', 'd', 'e', 'f'}&lt;/p&gt;
+&lt;p&gt;Simple and straightforward. Swap the characters in A using backtracking to get close to B.
+Use a map to memorize.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="java"&gt;
+
+class Solution {
+    public int kSimilarity(String A, String B) {
+        Map&amp;lt;String, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();
+        return backtrack(A.toCharArray(), B, map, 0);
+    }
+    private int backtrack(char[] A, String B, Map&amp;lt;String, Integer&amp;gt; map, int i) {
+        String sa = new String(A);
+        if (sa.equals(B)) {
+            return 0;
+        }
+        if (map.containsKey(sa)) {
+            return map.get(sa);
+        }
+        int min = Integer.MAX_VALUE;
+        while (i &amp;lt; A.length &amp;amp;&amp;amp; A[i] == B.charAt(i)) {
+            i++;
+        }
+        for (int j = i + 1; j &amp;lt; B.length(); j++) {
+            if (A[j] == B.charAt(i)) {
+                swap(A, i, j);
+                int next = backtrack(A, B, map, i + 1);
+                if (next != Integer.MAX_VALUE) {
+                    min = Math.min(min, next + 1);
+                }
+                swap(A, i, j);
+            }
+        }
+        map.put(sa, min);
+        return min;
+    }
+    private void swap(char[] cs, int i, int j) {
+        char temp = cs[i];
+        cs[i] = cs[j];
+        cs[j] = temp;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/gas-station/discuss/42568/Share-some-of-my-ideas."&gt;134. Gas Station&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;There are N gas stations along a circular route, where the amount of gas at station i is &lt;code&gt;gas[i]&lt;/code&gt;.&lt;br /&gt;
+You have a car with an unlimited gas tank and it costs &lt;code&gt;cost[i]&lt;/code&gt; of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. &lt;br /&gt;
+Return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return -1. &lt;br /&gt;
+&lt;strong&gt;Note:&lt;/strong&gt;&lt;br /&gt;
+- If there exists a solution, it is guaranteed to be unique.
+- Both input arrays are non-empty and have the same length.
+- Each element in the input arrays is a non-negative integer.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: 
+gas  = [1,2,3,4,5]
+cost = [3,4,5,1,2]
+Output: 3
+Explanation:
+Start at station 3 (index 3) and fill up with 4 unit of gas. Your tank = 0 + 4 = 4
+Travel to station 4. Your tank = 4 - 1 + 5 = 8
+Travel to station 0. Your tank = 8 - 2 + 1 = 7
+Travel to station 1. Your tank = 7 - 3 + 2 = 6
+Travel to station 2. Your tank = 6 - 4 + 3 = 5
+Travel to station 3. The cost is 5. Your gas is just enough to travel back to station 3.
+Therefore, return 3 as the starting index.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: 
+gas  = [2,3,4]
+cost = [3,4,3]
+Output: -1
+Explanation:
+You can't start at station 0 or 1, as there is not enough gas to travel to the next station.
+Let's start at station 2 and fill up with 4 unit of gas. Your tank = 0 + 4 = 4
+Travel to station 0. Your tank = 4 - 3 + 2 = 3
+Travel to station 1. Your tank = 3 - 3 + 3 = 3
+You cannot travel back to station 2, as it requires 4 unit of gas but you only have 3.
+Therefore, you can't travel around the circuit once no matter where you start.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I have thought for a long time and got two ideas:
+1. If car starts at A and can not reach B. Any station between A and B
+can not reach B.(B is the first station that A can not reach.)
+1. If the total number of gas is bigger than the total number of cost. There must be a solution.&lt;br /&gt;
+Here is my solution based on those ideas:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; public int canCompleteCircuit(int[] gas, int[] cost) {
+        int start = 0,total = 0,tank = 0;
+
+        //if car fails at 'start', record the next station
+        for(int i = 0; i &amp;lt; gas.length; i++) {
+            tank += gas[i] - cost[i];
+            if (tank &amp;lt; 0) {
+                start = i + 1; //move starting position forward
+                total += tank; //add the negative tank value to total
+                tank = 0; //reset tank
+            }
+        }
+        //negative total + positive tank should be 0 or more, if so we can do a round trip and return start
+        return (total+tank &amp;lt; 0)? -1: start;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Proof of idea 1:&lt;br /&gt;
+- Assume A is reachable to any points before B.
+The gas on car when it is at station A is 0.
+- When the car reaches station x (x is between A and B), the gas on car is g (and g &amp;gt;= 0).
+- If starting from x with gas amount g could not reach B, then starts from x with gas amount 0 could not reach B.
+- For cases when there are stations between A and B that are not reachable from A, we can reduce these cases to the above situation.  &lt;/p&gt;
+&lt;p&gt;Proof of idea 2:
+- We assume that a car could run even when there is negative amount of oil and the oil dash board would goes down to the negative space. (let's imagine that would happen)
+- Then we start from station 0, and keep track of the amount of oil. When we go to the end of station, our oil dash board amount would be g (g &amp;gt;= 0)
+There would be a toughest time that the oil dash board shows the minimum amount of oil. Assume the position is x;
+- We start from x and goes to the end of station. Then we will never come to the situation that our oil dash board goes below 0.
+- We go from end of station to station 0. We have oil g left.
+- We start from station 0 and then to x. We will never come to the situation that our oil dash board goes below 0;
+- Approved&lt;/p&gt;
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/longest-consecutive-sequence/discuss/41057/Simple-O(n)-with-Explanation-Just-walk-each-streak"&gt;128. Longest Consecutive Sequence&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given an unsorted array of integers, find the length of the longest consecutive elements sequence.&lt;br /&gt;
+Your algorithm should run in O(n) complexity.&lt;br /&gt;
+&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [100, 4, 200, 1, 3, 2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class="java"&gt;class Solution {
+    public int longestConsecutive(int[] nums) {
+
+        Set&amp;lt;Integer&amp;gt; set = new HashSet();
+        for(int n:nums) set.add(n);
+        int res = 0;
+        for(int i:nums){
+            int count = 1;
+            if(!set.contains(i-1)) {
+                int y = i+1;
+                while(set.contains(y)) y++;
+                res= Math.max(res, y-i);
+            }
+        }
+        return res;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/palindrome-partitioning-ii/description/"&gt;132. Palindrome Partitioning II&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a string s, partition s such that every substring of the partition is a palindrome.&lt;br /&gt;
+Return the minimum cuts needed for a palindrome partitioning of s.&lt;br /&gt;
+&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: &amp;quot;aab&amp;quot;
+Output: 1
+Explanation: The palindrome partitioning [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;] could be produced using 1 cut.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class="java"&gt;class Solution {
+   private void find(String s, int l, int r, int[] dp) {
+        while (l &amp;gt;= 0 &amp;amp;&amp;amp; r &amp;lt; s.length() &amp;amp;&amp;amp; s.charAt(l) == s.charAt(r)) {
+            if (l == 0) dp[r] = 0;
+            else {
+                dp[r] = Math.min(dp[r], dp[l-1] + 1);
+            }
+            l--;
+            r++;
+        }
+    }
+
+    public int minCut(String s) {
+        int[] dp = new int[s.length()];
+        for (int i = 0; i &amp;lt; s.length(); i++) {
+            dp[i] = i;
+        }
+        for (int i = 0; i &amp;lt; s.length(); i++) {
+            find(s, i, i, dp);
+            find(s, i, i + 1, dp);
+        }
+        return dp[s.length() - 1];
+
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/rectangle-area-ii/description/"&gt;850. Rectangle Area II&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;We are given a list of (axis-aligned) &lt;code&gt;rectangles&lt;/code&gt;.  Each &lt;code&gt;rectangle[i] = [x1, y1, x2, y2]&lt;/code&gt;, where (x1, y1) are the coordinates of the bottom-left corner, and (x2, y2) are the coordinates of the top-right corner of the &lt;code&gt;ith&lt;/code&gt; rectangle.&lt;/p&gt;
+&lt;p&gt;Find the total area covered by all rectangles in the plane.  Since the answer may be too large, return it modulo &lt;code&gt;10^9 + 7&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image" src="https://drive.google.com/uc?id=1jpZ-jXJ8cX9rpJeOhJwZ0pw5rxt6bAcg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [[0,0,2,2],[1,0,2,3],[1,0,3,1]]
+Output: 6
+Explanation: As illustrated in the picture.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [[0,0,1000000000,1000000000]]
+Output: 49
+Explanation: The answer is 10^18 modulo (10^9 + 7), which is (10^9)^2 = (-7)^2 = 49.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:&lt;br /&gt;
+- 1 &amp;lt;= rectangles.length &amp;lt;= 200
+- rectanges[i].length = 4
+- 0 &amp;lt;= rectangles[i][j] &amp;lt;= 10^9
+- The total area covered by all rectangles will never exceed 2^63 - 1 and thus will fit in a 64-bit signed integer.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="java"&gt;class Solution {
+        public int rectangleArea(int[][] rectangles) {
+        Set&amp;lt;Integer&amp;gt; xs = new HashSet();
+        Set&amp;lt;Integer&amp;gt; ys = new HashSet();
+        for (int[] r : rectangles) {
+            xs.add(r[0]);
+            xs.add(r[2]);
+            ys.add(r[1]);
+            ys.add(r[3]);
+        }
+        List&amp;lt;Integer&amp;gt; xsort = new ArrayList&amp;lt;&amp;gt;(xs);
+        List&amp;lt;Integer&amp;gt; ysort = new ArrayList&amp;lt;&amp;gt;(ys);
+        Collections.sort(xsort);
+        Collections.sort(ysort);
+        Map&amp;lt;Integer, Integer&amp;gt; xmap = new HashMap&amp;lt;&amp;gt;();
+        Map&amp;lt;Integer, Integer&amp;gt; ymap = new HashMap&amp;lt;&amp;gt;();
+        for (int i = 0; i &amp;lt; xsort.size(); i++) {
+            xmap.put(xsort.get(i), i);
+        }
+
+        for (int i = 0; i &amp;lt; ysort.size(); i++) {
+            ymap.put(ysort.get(i), i);
+        }
+        boolean[][] grid = new boolean[xmap.size()][ymap.size()];
+        for (int[] r : rectangles) {
+            for (int x = xmap.get(r[0]); x &amp;lt; xmap.get(r[2]); x++) {
+                for (int y = ymap.get(r[1]); y &amp;lt; ymap.get(r[3]); y++) {
+                    grid[x][y] = true;
+                }
+
+            }
+        }
+        long res = 0;
+        for (int i = 0; i &amp;lt; grid.length; i++) {
+            for (int j = 0; j &amp;lt; grid[0].length; j++) {
+                if (grid[i][j]) {
+                    res += (long)(xsort.get(i + 1) - xsort.get(i)) * (ysort.get(j + 1) - ysort.get(j));
+                }
+            }
+        }
+        return (int) (res % 1000000007);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/contest/weekly-contest-88/problems/loud-and-rich/"&gt;851. Loud and Rich&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;In a group of N people (labelled &lt;code&gt;0, 1, 2, ..., N-1&lt;/code&gt;), each person has different amounts of money, and different levels of quietness.&lt;br /&gt;
+For convenience, we'll call the person with label &lt;code&gt;x&lt;/code&gt;, simply "person &lt;code&gt;x&lt;/code&gt;".&lt;br /&gt;
+We'll say that &lt;code&gt;richer[i] = [x, y]&lt;/code&gt; if person &lt;code&gt;x&lt;/code&gt; definitely has more money than person &lt;code&gt;y&lt;/code&gt;.  Note that richer may only be a subset of valid observations.&lt;/p&gt;
+&lt;p&gt;Also, we'll say &lt;code&gt;quiet[x] = q&lt;/code&gt; if person &lt;code&gt;x&lt;/code&gt; has quietness &lt;code&gt;q&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now, return &lt;code&gt;answer&lt;/code&gt;, where &lt;code&gt;answer[x] = y&lt;/code&gt; if &lt;code&gt;y&lt;/code&gt; is the least quiet person (that is, the person &lt;code&gt;y&lt;/code&gt; with the smallest value of &lt;code&gt;quiet[y]&lt;/code&gt;), among all people who definitely have equal to or more money than person &lt;code&gt;x&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: richer = [[1,0],[2,1],[3,1],[3,7],[4,3],[5,3],[6,3]], quiet = [3,2,5,4,6,1,7,0]
+Output: [5,5,2,5,4,5,6,7]
+Explanation: 
+answer[0] = 5.
+Person 5 has more money than 3, which has more money than 1, which has more money than 0.
+The only person who is quieter (has lower quiet[x]) is person 7, but
+it isn't clear if they have more money than person 0.
+
+answer[7] = 7.
+Among all people that definitely have equal to or more money than person 7
+(which could be persons 3, 4, 5, 6, or 7), the person who is the quietest (has lower quiet[x])
+is person 7.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class="java"&gt;class Solution {
+  private int dfs(int target, List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; tree, int[] quiet, int[] res) {
+        if (res[target] &amp;gt;= 0) return res[target];
+        res[target] = target;
+        for (int i : tree.get(target)) {
+            if (quiet[res[target]] &amp;gt; quiet[dfs(i, tree, quiet, res)]) res[target] = res[i];
+        }
+        return res[target];
+    }
+
+    public int[] loudAndRich(int[][] richer, int[] quiet) {
+        ArrayList&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; tree = new ArrayList&amp;lt;&amp;gt;();
+        for (int i = 0; i &amp;lt; quiet.length; i++) tree.add(new LinkedList&amp;lt;&amp;gt;());
+        for (int[] a : richer) {
+            tree.get(a[1]).add(a[0]);
+        }
+
+        int[] res = new int[quiet.length];
+        Arrays.fill(res, -1);
+
+        for (int i = 0; i &amp;lt; res.length; i++) {
+            dfs(i, tree, quiet, res);
+        }
+
+        return res;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The other answers can be filled out with similar reasoning.&lt;br /&gt;
+&lt;strong&gt;Note:&lt;/strong&gt;&lt;br /&gt;
+1.  1 &amp;lt;= quiet.length = N &amp;lt;= 500
+2.  0 &amp;lt;= quiet[i] &amp;lt; N, all quiet[i] are different.
+3.  0 &amp;lt;= richer.length &amp;lt;= N * (N-1) / 2
+4.  0 &amp;lt;= richer[i][j] &amp;lt; N
+5.  richer[i][0] != richer[i][1]
+6.  richer[i]'s are all different.
+7.  The observations in richer are all logically consistent.&lt;/p&gt;
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/palindrome-partitioning/discuss/41963/Java:-Backtracking-solution."&gt;Palindrome Partitioning&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a string s, partition s such that every substring of the partition is a palindrome.&lt;br /&gt;
+Return all possible palindrome partitioning of s.&lt;br /&gt;
+&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: &amp;quot;aab&amp;quot;
+Output:
+[
+  [&amp;quot;aa&amp;quot;,&amp;quot;b&amp;quot;],
+  [&amp;quot;a&amp;quot;,&amp;quot;a&amp;quot;,&amp;quot;b&amp;quot;]
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class="java"&gt;Class Solution{
+    List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; resultLst;
+    ArrayList&amp;lt;String&amp;gt; currLst;
+
+    public List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; partition(String s) {
+        resultLst = new ArrayList&amp;lt;&amp;gt;();
+        currLst = new ArrayList&amp;lt;&amp;gt;();
+        backTrack(s, 0);
+        return resultLst;
+    }
+
+    public void backTrack(String s, int l) {
+        if (currLst.size() &amp;gt; 0 //the initial str could be palindrome
+                &amp;amp;&amp;amp; l &amp;gt;= s.length()) {
+            List&amp;lt;String&amp;gt; r = (ArrayList&amp;lt;String&amp;gt;) currLst.clone();
+            resultLst.add(r);
+        }
+        for (int i = l; i &amp;lt; s.length(); i++) {
+            if (isPalindrome(s, l, i)) {
+                if (l == i)
+                    currLst.add(Character.toString(s.charAt(i)));
+                else
+                    currLst.add(s.substring(l, i + 1));
+                backTrack(s, i + 1);
+                currLst.remove(currLst.size() - 1);
+            }
+        }
+    }
+
+    public boolean isPalindrome(String str, int l, int r) {
+        if (l == r) return true;
+        while (l &amp;lt; r) {
+            if (str.charAt(l) != str.charAt(r)) return false;
+            l++;
+            r--;
+        }
+        return true;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/regular-expression-matching/discuss/5651/Easy-DP-Java-Solution-with-detailed-Explanation"&gt;Regular Expression Matching&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Here are some conditions to figure out, then the logic can be very straightforward.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1.If p.charAt(j) == s.charAt(i) :  dp[i][j] = dp[i-1][j-1];
+2.If p.charAt(j) == '.' : dp[i][j] = dp[i-1][j-1];
+3.If p.charAt(j) == '*': 
+    //here are two sub conditions:
+    1 if p.charAt(j-1) != s.charAt(i) : dp[i][j] = dp[i][j-2]  //in this case, a* only counts as empty
+    2.if p.charAt(i-1) == s.charAt(i) or p.charAt(i-1) == '.':
+        dp[i][j] = dp[i-1][j]    //in this case, a* counts as multiple a 
+        or dp[i][j] = dp[i][j-1]   // in this case, a* counts as single a
+        or dp[i][j] = dp[i][j-2]   // in this case, a* counts as empty
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here is the solution&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public boolean isMatch(String s, String p) {
+
+    if (s == null || p == null) {
+        return false;
+    }
+    boolean[][] dp = new boolean[s.length()+1][p.length()+1];
+    dp[0][0] = true;
+    for (int i = 0; i &amp;lt; p.length(); i++) {
+        if (p.charAt(i) == '*' &amp;amp;&amp;amp; dp[0][i-1]) {
+            dp[0][i+1] = true;
+        }
+    }
+    for (int i = 0 ; i &amp;lt; s.length(); i++) {
+        for (int j = 0; j &amp;lt; p.length(); j++) {
+            if (p.charAt(j) == '.') {
+                dp[i+1][j+1] = dp[i][j];
+            }
+            if (p.charAt(j) == s.charAt(i)) {
+                dp[i+1][j+1] = dp[i][j];
+            }
+            if (p.charAt(j) == '*') {
+                if (p.charAt(j-1) != s.charAt(i) &amp;amp;&amp;amp; p.charAt(j-1) != '.') {
+                    dp[i+1][j+1] = dp[i+1][j-1];
+                } else {
+                    dp[i+1][j+1] = (dp[i+1][j] || dp[i][j+1] || dp[i+1][j-1]);
+                }
+            }
+        }
+    }
+    return dp[s.length()][p.length()];
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/description/"&gt;Binary Tree Maximum Path Sum&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a non-empty binary tree, find the maximum path sum.&lt;br /&gt;
+For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root.&lt;br /&gt;
+Example 1:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [1,2,3]
+
+       1
+      / \
+     2   3
+
+Output: 6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: [-10,9,20,null,null,15,7]
+
+   -10
+   / \
+  9  20
+    /  \
+   15   7
+
+Output: 42
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;&lt;a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39775/Accepted-short-solution-in-Java"&gt;Solution&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;For every Node &lt;code&gt;a&lt;/code&gt;, check the path &lt;code&gt;sum&lt;/code&gt; with &lt;code&gt;a&lt;/code&gt; as root, if &lt;code&gt;sum&lt;/code&gt; &amp;gt; &lt;code&gt;currentMaxSum&lt;/code&gt;, we can update &lt;code&gt;currentMaxSum = sum&lt;/code&gt;.&lt;br /&gt;
+With recursion we can get all the path sum for every node. &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    int maxSum = Integer.MIN_VALUE;
+    private int findMax(TreeNode root){
+        if(root == null) return 0;
+        int left = findMax(root.left);
+        int right = findMax(root.right);
+        int sum = root.val + left + right;
+        if(sum &amp;gt; maxSum) maxSum = sum;
+        // Math.max(left, right)  because we're tracing the path, for a certain node, 
+        // only its left or right could be added to the path.
+        // Math.max(Math.max(left, right) + root.val, 0), 
+        // if a node's path sum is negative,  we can safely ignore this node.
+        return Math.max(Math.max(left, right) + root.val, 0);
+
+    }
+    public int maxPathSum(TreeNode root) {
+        findMax(root);
+        return maxSum;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/remove-k-digits/description/"&gt;Remove K Digits&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:
+- The length of num is less than 10002 and will be ≥ k. 
+- The given num does not contain any leading zero. &lt;/p&gt;
+&lt;p&gt;Example 1:  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: num = &amp;quot;1432219&amp;quot;, k = 3 
+Output: &amp;quot;1219&amp;quot; 
+Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: num = &amp;quot;10200&amp;quot;, k = 1 
+Output: &amp;quot;200&amp;quot; 
+Explanation: Remove the leading 1 and the number is 200. Note that the output must not contain leading zeroes.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Example 3:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: num = &amp;quot;10&amp;quot;, k = 2
+Output: &amp;quot;0&amp;quot; 
+Explanation: Remove all the digits from the number and it is left with nothing which is 0.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4&gt;Solution &lt;a href="https://leetcode.com/problems/remove-k-digits/discuss/88660/A-greedy-method-using-stack-O(n)-time-and-O(n)-space"&gt;A greedy method using stack, O(n) time and O(n) space&lt;/a&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;public class Solution {
+    public String removeKdigits(String num, int k) {
+        int digits = num.length() - k;
+        char[] stk = new char[num.length()];
+        int top = 0;
+        // k keeps track of how many characters we can remove
+        // if the previous character in stk is larger than the current one
+        // then removing it will get a smaller number
+        // but we can only do so when k is larger than 0
+        for (int i = 0; i &amp;lt; num.length(); ++i) {
+            char c = num.charAt(i);
+            while (top &amp;gt; 0 &amp;amp;&amp;amp; stk[top-1] &amp;gt; c &amp;amp;&amp;amp; k &amp;gt; 0) {
+                top -= 1;
+                k -= 1;
+            }
+            stk[top++] = c;
+        }
+        // find the index of first non-zero digit
+        int idx = 0;
+        while (idx &amp;lt; digits &amp;amp;&amp;amp; stk[idx] == '0') idx++;
+        return idx == digits? &amp;quot;0&amp;quot;: new String(stk, idx, digits - idx);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/single-number-ii/discuss/43295/Detailed-explanation-and-generalization-of-the-bitwise-operation-method-for-single-numbers"&gt;Single Number II&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The usual bit manipulation code is bit hard to get and replicate. I like to think about the number in 32 bits and just count how many 1s are there in each bit, and &lt;code&gt;sum %= 3&lt;/code&gt; will clear it once it reaches 3. After running for all the numbers for each bit, if we have a 1, then that 1 belongs to the single number, we can simply move it back to its spot by doing &lt;code&gt;ans |= sum &amp;lt;&amp;lt; i&lt;/code&gt;;&lt;/p&gt;
+&lt;p&gt;This has complexity of O(32n), which is essentially O(n) and very easy to think and implement. Plus, you get a general solution for any times of occurrence. Say all the numbers have 5 times, just do &lt;code&gt;sum %= 5&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="java"&gt;public int singleNumber(int[] nums) {
+    int ans = 0;
+    for(int i = 0; i &amp;lt; 32; i++) {
+        int sum = 0;
+        for(int j = 0; j &amp;lt; nums.length; j++) {
+            if(((nums[j] &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) {
+                sum++;
+                sum %= 3;
+            }
+        }
+        if(sum != 0) {
+            ans |= sum &amp;lt;&amp;lt; i;
+        }
+    }
+    return ans;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/distinct-subsequences/discuss/37327/easy-to-understand-dp-in-java"&gt;Distinct Subsequences&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Given a string &lt;strong&gt;S&lt;/strong&gt; and a string &lt;strong&gt;T&lt;/strong&gt;, count the number of distinct subsequences of &lt;strong&gt;S&lt;/strong&gt; which equals &lt;strong&gt;T&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, &lt;code&gt;"ACE"&lt;/code&gt; is a subsequence of &lt;code&gt;"ABCDE"&lt;/code&gt; while &lt;code&gt;"AEC"&lt;/code&gt; is not).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: S = &amp;quot;rabbbit&amp;quot;, T = &amp;quot;rabbit&amp;quot;
+Output: 3
+Explanation:
+
+As shown below, there are 3 ways you can generate &amp;quot;rabbit&amp;quot; from S.
+(The caret symbol ^ means the chosen letters)
+
+rabbbit
+^^^^ ^^
+rabbbit
+^^ ^^^^
+rabbbit
+^^^ ^^^
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Input: S = &amp;quot;babgbag&amp;quot;, T = &amp;quot;bag&amp;quot;
+Output: 5
+Explanation:
+
+As shown below, there are 5 ways you can generate &amp;quot;bag&amp;quot; from S.
+(The caret symbol ^ means the chosen letters)
+
+babgbag
+^^ ^
+babgbag
+^^    ^
+babgbag
+^    ^^
+babgbag
+  ^  ^^
+babgbag
+    ^^^
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The idea is the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;we will build an array mem where mem[i+1][j+1] means that S[0..j] contains T[0..i] that many times as distinct subsequences. Therefor the result will be mem[T.length()][S.length()].&lt;/li&gt;
+&lt;li&gt;we can build this array rows-by-rows:&lt;/li&gt;
+&lt;li&gt;the first row must be filled with 1. That's because the empty string is a subsequence of any string but only 1 time. So mem[0][j] = 1 for every j. So with this we not only make our lives easier, but we also return correct value if T is an empty string.&lt;/li&gt;
+&lt;li&gt;the first column of every rows except the first must be 0. This is because an empty string cannot contain a non-empty string as a substring -- the very first item of the array: mem[0][0] = 1, because an empty string contains the empty string 1 time.&lt;br /&gt;
+So the matrix looks like this:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;  S 0123....j
+T +----------+
+  |1111111111|
+0 |0         |
+1 |0         |
+2 |0         |
+. |0         |
+. |0         |
+i |0         |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;From here we can easily fill the whole grid: for each &lt;code&gt;(x, y)&lt;/code&gt;, we check if &lt;code&gt;S[x] == T[y]&lt;/code&gt; we add the previous item and the previous item in the previous row, otherwise we copy the previous item in the same row. The reason is simple:
+* if the current character in S doesn't equal to current character T, then we have the same number of distinct subsequences as we had without the new character.
+* if the current character in S equal to the current character T, then the distinct number of subsequences: the number we had before plus the distinct number of subsequences we had with less longer T and less longer S.&lt;br /&gt;
+An example:&lt;br /&gt;
+&lt;code&gt;S: [acdabefbc]&lt;/code&gt; and &lt;code&gt;T: [ab]&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;first we check with &lt;code&gt;a&lt;/code&gt;:  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;           * *
+      S = [acdabefbc]
+mem[1] = [0111222222]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;then we check with &lt;code&gt;ab&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;               *  * ]
+      S = [acdabefbc]
+mem[1] = [0111222222]
+mem[2] = [0000022244]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And the result is 4, as the distinct subsequences are:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;      S = [a   b    ]
+      S = [a      b ]
+      S = [   ab    ]
+      S = [   a   b ]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;See the code in Java:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="java"&gt;public int numDistinct(String S, String T) {
+    // array creation
+    int[][] mem = new int[T.length()+1][S.length()+1];
+
+    // filling the first row: with 1s
+    for(int j=0; j&amp;lt;=S.length(); j++) {
+        mem[0][j] = 1;
+    }
+
+    // the first column is 0 by default in every other rows but the first, which we need.
+
+    for(int i=0; i&amp;lt;T.length(); i++) {
+        for(int j=0; j&amp;lt;S.length(); j++) {
+            if(T.charAt(i) == S.charAt(j)) {
+                mem[i+1][j+1] = mem[i][j] + mem[i+1][j];
+            } else {
+                mem[i+1][j+1] = mem[i+1][j];
+            }
+        }
+    }
+
+    return mem[T.length()][S.length()];
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;&lt;a href="https://leetcode.com/problems/minimum-window-substring/discuss/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems"&gt;10-line template that can solve most 'substring' problems&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For most substring problem, we are given a string and need to find a substring of it which satisfy some restrictions. A general way is to use a hashmap assisted with two pointers. The template is given below.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="java"&gt;int findSubstring(string s){
+        vector&amp;lt;int&amp;gt; map(128,0);
+        int counter; // check whether the substring is valid
+        int begin=0, end=0; //two pointers, one point to tail and one  head
+        int d; //the length of substring
+
+        for() { /* initialize the hash map here */ }
+
+        while(end&amp;lt;s.size()){
+
+            if(map[s[end++]]-- ?){  /* modify counter here */ }
+
+            while(/* counter condition */){ 
+
+                 /* update d here if finding minimum*/
+
+                //increase begin to make it invalid/valid again
+
+                if(map[s[begin++]]++ ?){ /*modify counter here*/ }
+            }  
+
+            /* update d here if finding maximum*/
+        }
+        return d;
+  }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;One thing needs to be mentioned is that when asked to find maximum substring, we should update maximum after the inner while loop to guarantee that the substring is valid. On the other hand, when asked to find minimum substring, we should update minimum inside the inner while loop.&lt;br /&gt;
+The code of solving Longest Substring with At Most Two Distinct Characters is below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="java"&gt;int lengthOfLongestSubstringTwoDistinct(string s) {
+        vector&amp;lt;int&amp;gt; map(128, 0);
+        int counter=0, begin=0, end=0, d=0; 
+        while(end&amp;lt;s.size()){
+            if(map[s[end++]]++==0) counter++;
+            while(counter&amp;gt;2) if(map[s[begin++]]--==1) counter--;
+            d=max(d, end-begin);
+        }
+        return d;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The code of solving Longest Substring Without Repeating Characters is below:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;int lengthOfLongestSubstring(string s) {
+        vector&amp;lt;int&amp;gt; map(128,0);
+        int counter=0, begin=0, end=0, d=0; 
+        while(end&amp;lt;s.size()){
+            if(map[s[end++]]++&amp;gt;0) counter++; 
+            while(counter&amp;gt;0) if(map[s[begin++]]--&amp;gt;1) counter--;
+            d=max(d, end-begin); //while valid, update d
+        }
+        return d;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39775/Accepted-short-solution-in-Java"&gt;Accepted short solution in Java&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;&lt;a href="https://leetcode.com/problems/remove-k-digits/discuss/88660/A-greedy-method-using-stack-O(n)-time-and-O(n)-space"&gt;A greedy method using stack, O(n) time and O(n) space&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content><category term="posts"></category><category term="algorithm"></category></entry><entry><title>彩云追月</title><link href="http://synckey.name/posts/2018/02/04/colorful-clouds-chasing-the-moon.html" rel="alternate"></link><published>2018-02-04T00:00:00+08:00</published><updated>2018-02-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-02-04:/posts/2018/02/04/colorful-clouds-chasing-the-moon.html</id><summary type="html">&lt;p&gt;2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
 唱出了女子在花落之时与情人约见而情人爽约的失望和愁苦。&lt;/p&gt;
 &lt;p&gt;阴差阳错的，在昨天居然听到了这个歌曲的交响乐版，原来《几度花落时》的曲修改自《彩月追月》，初衷也不是男欢女爱。《彩云追月》来自广东民间，最早见于清代，
-描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。&lt;/p&gt;
+描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。&lt;/p&gt;
 &lt;p&gt;网上有很多彩云追月的音频，有李云迪和郎朗分别演奏的钢琴solo，好听自不细说。但是中国交响乐团的交响曲版更加可听，小提琴和大提琴交替演奏的主旋律比钢琴solo更能触动心弦。&lt;/p&gt;
 &lt;p&gt;可是对我来说，虽然没有歌词，听歌可以任凭想象了，依然听不到轻松和写意。从2011年8月到2018年2月，6年半的时间，事事变迁，什么都变了，情却惊人的相似，
 在北京的生活以《几度花落时》始，以《彩月追月》终，就像这单曲，循环 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;2011年8月初入职北京实习，彼时异常苦闷，终日听凤飞飞《几度花落时》。这首歌有靡靡之音之嫌，旋律十分凄美，秋天听了异常凄冷。凤飞飞用她沙哑的声音，
 唱出了女子在花落之时与情人约见而情人爽约的失望和愁苦。&lt;/p&gt;
 &lt;p&gt;阴差阳错的，在昨天居然听到了这个歌曲的交响乐版，原来《几度花落时》的曲修改自《彩月追月》，初衷也不是男欢女爱。《彩云追月》来自广东民间，最早见于清代，
-描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。&lt;/p&gt;
+描写的是市民平凡生活的轻松写意。1935年，聂耳和任光改编为管弦乐&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;。《彩云追月》的寓意是仙人驾五彩祥云奔向月宫。比起《几度花落时》的小情小爱格调要高出许多。&lt;/p&gt;
 &lt;p&gt;网上有很多彩云追月的音频，有李云迪和郎朗分别演奏的钢琴solo，好听自不细说。但是中国交响乐团的交响曲版更加可听，小提琴和大提琴交替演奏的主旋律比钢琴solo更能触动心弦。&lt;/p&gt;
 &lt;p&gt;可是对我来说，虽然没有歌词，听歌可以任凭想象了，依然听不到轻松和写意。从2011年8月到2018年2月，6年半的时间，事事变迁，什么都变了，情却惊人的相似，
 在北京的生活以《几度花落时》始，以《彩月追月》终，就像这单曲，循环，循环，再循环。&lt;/p&gt;
@@ -1213,37 +2146,25 @@ The code of solving Longest Substring with At Most Two Distinct Characters is be
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://baike.baidu.com/item/%E5%BD%A9%E4%BA%91%E8%BF%BD%E6%9C%88/949874?fr=aladdin"&gt;彩云追月&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://baike.baidu.com/item/%E5%BD%A9%E4%BA%91%E8%BF%BD%E6%9C%88/949874?fr=aladdin"&gt;彩云追月&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="https://music.163.com/#/song?id=396860"&gt;《彩云追月》交响乐版，网易云音乐&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://music.163.com/#/song?id=396860"&gt;《彩云追月》交响乐版，网易云音乐&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="life"></category><category term="posts"></category></entry><entry><title>笑话一则</title><link href="http://synckey.name/posts/2018/02/03/a-joke.html" rel="alternate"></link><published>2018-02-03T00:00:00+08:00</published><updated>2018-02-03T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-02-03:/posts/2018/02/03/a-joke.html</id><summary type="html">&lt;blockquote&gt;
+&lt;/div&gt;</content><category term="life"></category><category term="life"></category><category term="posts"></category></entry><entry><title>笑话一则</title><link href="http://synckey.name/posts/2018/02/03/a-joke.html" rel="alternate"></link><published>2018-02-03T00:00:00+08:00</published><updated>2018-02-03T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-02-03:/posts/2018/02/03/a-joke.html</id><content type="html">&lt;blockquote&gt;
 &lt;p&gt;有一座庙，庙里和尚都说道性很高，可戒女色。有人要测验他们，请他们围成一个大圆圈，每人都盘腿坐下，两腿中间，放一面鼓。然后请来一个美女，在圈中大跳脱衣舞。
 不料一跳之下，所有小和尚腿上的鼓都咚咚敲响起来，唯有老和尚的寂然不动。大家对老和尚佩服极了。不料把鼓拿起来一看，原来鼓皮都给捅破了。
-这个故事说明了一件事，就是人要”不可见欲“才能自治。&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+这个故事说明了一件事，就是人要”不可见欲“才能自治。&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class="footnote"&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;李敖《上山上山爱》&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;李敖《上山上山爱》&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><content type="html">&lt;blockquote&gt;
-&lt;p&gt;有一座庙，庙里和尚都说道性很高，可戒女色。有人要测验他们，请他们围成一个大圆圈，每人都盘腿坐下，两腿中间，放一面鼓。然后请来一个美女，在圈中大跳脱衣舞。
-不料一跳之下，所有小和尚腿上的鼓都咚咚敲响起来，唯有老和尚的寂然不动。大家对老和尚佩服极了。不料把鼓拿起来一看，原来鼓皮都给捅破了。
-这个故事说明了一件事，就是人要”不可见欲“才能自治。&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class="footnote"&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;李敖《上山上山爱》&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</content><category term="digest"></category></entry><entry><title>2017 Full of Changes</title><link href="http://synckey.name/posts/2018/01/01/2017-summery.html" rel="alternate"></link><published>2018-01-01T00:00:00+08:00</published><updated>2018-01-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-01-01:/posts/2018/01/01/2017-summery.html</id><summary type="html">&lt;p&gt;2017年马上就要过去了，回望这一年，最大的感觉就是变化，事情在变，想法在变，人也在变。&lt;/p&gt;
+&lt;/div&gt;</content><category term="digest"></category><category term="digest"></category></entry><entry><title>2017 Full of Changes</title><link href="http://synckey.name/posts/2018/01/01/2017-summery.html" rel="alternate"></link><published>2018-01-01T00:00:00+08:00</published><updated>2018-01-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2018-01-01:/posts/2018/01/01/2017-summery.html</id><summary type="html">&lt;p&gt;2017年马上就要过去了，回望这一年，最大的感觉就是变化，事情在变，想法在变，人也在变。&lt;/p&gt;
 &lt;p&gt;2017年的开始本以为这会是最惊心动魄的一年，因为在前一年我决定了要去新西兰工作。在2017年刚开始，一切都已经准备就绪了，签证已经办好，
 决心也已经下定。过完年已经开始着手准备登录以后的 EOI 的材料（出生公正，无犯罪记录证明）。机票订好了以后就开始准备找工作，
 根据新西兰的格式改了一份简历，在 &lt;a href="https://www.seek.co.nz/"&gt;Seek&lt;/a&gt; 上查看各种相关和不太相关的职位，投了大概有20份。这些简历大部分是石沉大海，唯一收到的回应就是拒绝。
@@ -1334,7 +2255,7 @@ The code of solving Longest Substring with At Most Two Distinct Characters is be
 &lt;li&gt;《深入理解Java虚拟机》2017.12.03&lt;/li&gt;
 &lt;li&gt;《苏东坡传》林语堂&lt;/li&gt;
 &lt;li&gt;《美的历程》&lt;/li&gt;
-&lt;/ul&gt;</content><category term="life"></category><category term="posts"></category><category term="summery"></category></entry><entry><title>金缕曲词二首(清顾贞观)</title><link href="http://synckey.name/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html" rel="alternate"></link><published>2017-12-07T00:00:00+08:00</published><updated>2017-12-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-07:/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html</id><summary type="html">&lt;p&gt;李敖在《北京法源寺》的楔子中写道“时间年复一年的在前进、风俗周而复始的在重演。团圆、团圆、大团圆，多少中国人民在风霜里、在烽火下、在骨肉离散中，
+&lt;/ul&gt;</content><category term="summery"></category><category term="life"></category><category term="posts"></category><category term="summery"></category></entry><entry><title>金缕曲词二首(清顾贞观)</title><link href="http://synckey.name/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html" rel="alternate"></link><published>2017-12-07T00:00:00+08:00</published><updated>2017-12-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-07:/posts/2017/12/07/shu-tian-ya-wan-jia-deng-huo.html</id><summary type="html">&lt;p&gt;李敖在《北京法源寺》的楔子中写道“时间年复一年的在前进、风俗周而复始的在重演。团圆、团圆、大团圆，多少中国人民在风霜里、在烽火下、在骨肉离散中，
 为这一梦想揉进了辛酸与涕泪。”。他又时常在他的节目中提到“数天涯，依然骨肉，几家能够？”这几句词，道尽了中国人自古的离别相思苦。
 这首词后面有一段感人的故事，羁旅之客，读之神悲。维基文库上有关这首词的介绍和原文摘抄如下。&lt;/p&gt;
 &lt;p&gt;顺治十四年（公元1657年），好友吴兆骞因“丁酉科场案”被株连而流放宁古塔。顾贞观与吴兆骞私交甚厚，情同手足，为救吴而奔走呼号，遍求满朝权贵。
@@ -1347,7 +2268,7 @@ The code of solving Longest Substring with At Most Two Distinct Characters is be
 莹然在堂，迢递关河，归省无日……”。读毕情绪激动，夜不能眠，在北京千佛寺大雪之夜作《金缕曲》词两阕（即下面所录的“其一”、“其二”）赠之，哀怨情深，
 被称为“千古绝调”。纳兰性德见之，泣下数行，认为此词与李陵的《别离诗》及向秀悼念嵇康的《思旧赋》相媲美，求其父明珠相救，康熙二十年，吴兆骞遇赦归京。&lt;/p&gt;
 &lt;p&gt;顾贞观与纳兰性德为忘年之交，纳兰性德对顾贞观一见如故，立刻写了一阕《金缕曲》相赠，词中有“后身缘恐结他生里”句，顾贞观后来记载，当时他看到此句时，
-甚觉不祥，只说不出来。但他也相当倾折于这位文采风流的相国公子，便和了一阕词。&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+甚觉不祥，只说不出来。但他也相当倾折于这位文采风流的相国公子，便和了一阕词。&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;寄吴汉槎宁古塔，以词代书，丙辰冬寓京师千佛寺，冰雪中作。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1366,7 +2287,7 @@ The code of solving Longest Substring with At Most Two Distinct Characters is be
 廿载包胥承一诺，盼乌头马角终相救。 &lt;br /&gt;
 置此札，君怀袖。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;“数天涯，依然骨肉，几家能够？”让人不禁想起宋朝人写的这首诗&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;p&gt;“数天涯，依然骨肉，几家能够？”让人不禁想起宋朝人写的这首诗&lt;sup id="fnref:2"&gt;&lt;a class="footnote-ref" href="#fn:2"&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;月儿弯弯照九州，几家欢乐几家愁。&lt;br /&gt;
 几家夫妇同罗帐，几个飘零在外头？&lt;/p&gt;
@@ -1390,13 +2311,13 @@ The code of solving Longest Substring with At Most Two Distinct Characters is be
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://zh.m.wikisource.org/zh-hans/%E9%87%91%E7%B8%B7%E6%9B%B2_(%E9%A1%A7%E8%B2%9E%E8%A7%80)"&gt;金缕曲 (顾贞观)&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zh.m.wikisource.org/zh-hans/%E9%87%91%E7%B8%B7%E6%9B%B2_(%E9%A1%A7%E8%B2%9E%E8%A7%80)"&gt;金缕曲 (顾贞观)&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="http://www.dugushici.com/mingju/12761"&gt;月儿弯弯照九州&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.dugushici.com/mingju/12761"&gt;月儿弯弯照九州&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="poem"></category></entry><entry><title>Produce 1000 Unique Four Digit Numbers</title><link href="http://synckey.name/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html" rel="alternate"></link><published>2017-12-06T00:00:00+08:00</published><updated>2017-12-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-06:/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html</id><summary type="html">&lt;blockquote&gt;
+&lt;/div&gt;</content><category term="digest"></category><category term="poem"></category></entry><entry><title>Produce 1000 Unique Four Digit Numbers</title><link href="http://synckey.name/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html" rel="alternate"></link><published>2017-12-06T00:00:00+08:00</published><updated>2017-12-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-12-06:/posts/2017/12/06/produce-1000-unique-four-digit-numbers.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Produce 1000 unique four digit numbers.&lt;br /&gt;
 Conditions:  &lt;br /&gt;
 1. No consecutive numbers. 2268, 1155 are not acceptable. &lt;br /&gt;
@@ -1455,17 +2376,12 @@ public class GenNumbers {
         System.out.println(result.size());
     }
 }
-&lt;/code&gt;&lt;/pre&gt;</content><category term="java"></category><category term="algorithm"></category></entry><entry><title>一个人的战争</title><link href="http://synckey.name/posts/2017/11/27/life-is-one-man-fight.html" rel="alternate"></link><published>2017-11-27T00:00:00+08:00</published><updated>2017-11-27T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-11-27:/posts/2017/11/27/life-is-one-man-fight.html</id><summary type="html">&lt;blockquote&gt;
+&lt;/code&gt;&lt;/pre&gt;</content><category term="algorithm"></category><category term="java"></category><category term="algorithm"></category></entry><entry><title>一个人的战争</title><link href="http://synckey.name/posts/2017/11/27/life-is-one-man-fight.html" rel="alternate"></link><published>2017-11-27T00:00:00+08:00</published><updated>2017-11-27T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-11-27:/posts/2017/11/27/life-is-one-man-fight.html</id><content type="html">&lt;blockquote&gt;
 &lt;p&gt;有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from &lt;a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment"&gt;假装在纽约&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class="figure" &gt; 
     &lt;img src="/static/images/2017.11.27.one-man-fight.jpg" alt="一个人的战争"  class="carousel-inner img-rounded img-responsive center-block" style="width:100%" /&gt;
-&lt;/div&gt;</summary><content type="html">&lt;blockquote&gt;
-&lt;p&gt;有很多这样的时刻。你惊心动魄，而世界一无所知。你翻山越岭，而天地寂静无声。人生说到底，是一场一个人的战争。 ​​​​--from &lt;a href="https://weibo.com/1645101450/DsOk6EG7r?type=comment"&gt;假装在纽约&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class="figure" &gt; 
-    &lt;img src="/static/images/2017.11.27.one-man-fight.jpg" alt="一个人的战争"  class="carousel-inner img-rounded img-responsive center-block" style="width:100%" /&gt;
-&lt;/div&gt;</content><category term="digest"></category></entry><entry><title>Useful Set Phrases</title><link href="http://synckey.name/posts/2017/11/26/useful-set-phrases.html" rel="alternate"></link><published>2017-11-26T00:00:00+08:00</published><updated>2017-11-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-11-26:/posts/2017/11/26/useful-set-phrases.html</id><summary type="html">&lt;p&gt;Hard liquor (Whiskey, bourbon, vodka), spirits        &lt;br /&gt;
+&lt;/div&gt;</content><category term="digest"></category><category term="digest"></category></entry><entry><title>Useful Set Phrases</title><link href="http://synckey.name/posts/2017/11/26/useful-set-phrases.html" rel="alternate"></link><published>2017-11-26T00:00:00+08:00</published><updated>2017-11-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-11-26:/posts/2017/11/26/useful-set-phrases.html</id><summary type="html">&lt;p&gt;Hard liquor (Whiskey, bourbon, vodka), spirits        &lt;br /&gt;
 a shot of whiskey&lt;br /&gt;
 upper hand&lt;br /&gt;
 let off steam: 释放鸭梨&lt;br /&gt;
@@ -1551,7 +2467,7 @@ while "dog breeding" refers specifically to the artificial selection of dogs, in
 Artificial selection in dog breeding has influenced behavior, shape, and size of dogs. Some dogs have certain inheritable
 characteristics that can develop into a disability or disease.（&lt;a href="https://en.wikipedia.org/wiki/Dog_breeding"&gt;from wikipedia&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;When I met the guy, I absolutely did not have any spark or chemistry or butterflies.&lt;/p&gt;
-&lt;h5&gt;extreme sports&lt;/h5&gt;</content><category term="ielts"></category></entry><entry><title>第一次跑马</title><link href="http://synckey.name/posts/2017/09/20/my-first-marathon.html" rel="alternate"></link><published>2017-09-20T00:00:00+08:00</published><updated>2017-09-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-09-20:/posts/2017/09/20/my-first-marathon.html</id><summary type="html">&lt;p&gt;如果时光回退到 2014 年，那时候我 180 斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体，
+&lt;h5&gt;extreme sports&lt;/h5&gt;</content><category term="ielts"></category><category term="ielts"></category></entry><entry><title>第一次跑马</title><link href="http://synckey.name/posts/2017/09/20/my-first-marathon.html" rel="alternate"></link><published>2017-09-20T00:00:00+08:00</published><updated>2017-09-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-09-20:/posts/2017/09/20/my-first-marathon.html</id><summary type="html">&lt;p&gt;如果时光回退到 2014 年，那时候我 180 斤，在一个艳阳高照的冬日，我决定跑步减肥，开始了我的跑步生涯。跑步对胖子殊非易事，半跑半走拖着肥胖的身体，
 气喘吁吁，跑了 10 公里，花了两个小时。那时候没有专业跑步鞋，甚至连运动短裤和T恤都没有。&lt;/p&gt;
 &lt;p&gt;后来买了最低标准的装备，一双 ascis 跑步鞋，一条运动短裤，开始正规的跑步训练。那时候严格按照《爱上跑步十三周》练，循序渐进，跑步本身给我的痛苦并不很大。
 最大的痛苦来自于冬天早上 6 点钟从被窝里面爬出来，踏着月色去跑步。最冷的时候，有零下十一度，凌晨的小区只有三三两两的行人，早起的遛狗的大妈，通宵不睡的保安。
@@ -1585,7 +2501,7 @@ characteristics that can develop into a disability or disease.（&lt;a href="htt
 &lt;div class="figure"&gt; 
     &lt;img src="/static/images/first_marathon_transcript.jpg" alt="2016.06.17 北京马拉松"/&gt;
     &lt;div class="caption"&gt;2017.06.17 北京马拉松&lt;/div&gt;
-&lt;/div&gt;</content><category term="life"></category></entry><entry><title>Auckland 小记</title><link href="http://synckey.name/posts/2017/06/26/new-to-auckland.html" rel="alternate"></link><published>2017-06-26T00:00:00+08:00</published><updated>2017-06-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-26:/posts/2017/06/26/new-to-auckland.html</id><summary type="html">&lt;p&gt;来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。&lt;/p&gt;
+&lt;/div&gt;</content><category term="posts"></category><category term="life"></category></entry><entry><title>Auckland 小记</title><link href="http://synckey.name/posts/2017/06/26/new-to-auckland.html" rel="alternate"></link><published>2017-06-26T00:00:00+08:00</published><updated>2017-06-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-26:/posts/2017/06/26/new-to-auckland.html</id><summary type="html">&lt;p&gt;来奥克兰的航班一路艰辛，北京飞重庆转机晚点3个小时，重庆到奥克兰晚点12个小时，战战兢兢害怕航班取消，后来随着发动机的轰鸣，终于起飞。&lt;/p&gt;
 &lt;p&gt;到奥克兰下飞机已经是早上6.30，跟我一起下飞机的都是中国人。一下飞机就买了一张vodaphone的手机卡，卖手机卡的是中国人，说的是中国话，收银员是个漂亮的高挑当地妹子。在海关排队入境花了大概有半个小时，海关官员看了下签证，问了下我帮朋友带了什么，就放行了。出来还要过一道安检，这次主要是查有没有带危害当地生物安全的食品，种子等，新西兰是一个岛国，生态异常脆弱。&lt;/p&gt;
 &lt;p&gt;出机场看到外面乌云密布，天空非常的低，在下着小雨，有点冷，还好很快就找到接机的小伙伴，一路送到住所。路两边都是矮矮的两层小楼，路很窄，但是车速很快。&lt;/p&gt;
 &lt;p&gt;租的房子在一个小山坡上，窗外是大树和花草，室内的感觉有点阴冷。但是这种翠绿，是我非常喜欢的，绿油油。&lt;/p&gt;
@@ -1623,7 +2539,7 @@ characteristics that can develop into a disability or disease.（&lt;a href="htt
 &lt;div class="figure"&gt;
     &lt;img src="/static/images/albert_park.jpg" alt="albert_park" class="img-responsive carousel-inner img-rounded"/&gt;
     &lt;div class="caption"&gt;Albert Park&lt;/div&gt;
-&lt;/div&gt;</content><category term="sfv"></category></entry><entry><title>Git Push to Two Repositories at the Same Time</title><link href="http://synckey.name/posts/2017/06/04/git-push-to-two-repositories.html" rel="alternate"></link><published>2017-06-04T00:00:00+08:00</published><updated>2017-06-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-04:/posts/2017/06/04/git-push-to-two-repositories.html</id><summary type="html">&lt;p&gt;Suppose You have 2 repositories:&lt;/p&gt;
+&lt;/div&gt;</content><category term="sfv"></category><category term="sfv"></category></entry><entry><title>Git Push to Two Repositories at the Same Time</title><link href="http://synckey.name/posts/2017/06/04/git-push-to-two-repositories.html" rel="alternate"></link><published>2017-06-04T00:00:00+08:00</published><updated>2017-06-04T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-06-04:/posts/2017/06/04/git-push-to-two-repositories.html</id><summary type="html">&lt;p&gt;Suppose You have 2 repositories:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;https://github.com/synckey/synckey.github.io.git
 https://git.coding.net/synckey/synckey.git
 &lt;/code&gt;&lt;/pre&gt;
@@ -1648,10 +2564,10 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://blog.csdn.net/fancivez/article/details/51544354"&gt;git 添加多个远程库(remote)&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.csdn.net/fancivez/article/details/51544354"&gt;git 添加多个远程库(remote)&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="tools"></category><category term="git"></category></entry><entry><title>BFS遍历到图的指定层的一种方法</title><link href="http://synckey.name/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html" rel="alternate"></link><published>2017-05-10T00:00:00+08:00</published><updated>2017-05-10T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-05-10:/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html</id><summary type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;leetcode原题&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</content><category term="tools"></category><category term="tools"></category><category term="git"></category></entry><entry><title>BFS遍历到图的指定层的一种方法</title><link href="http://synckey.name/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html" rel="alternate"></link><published>2017-05-10T00:00:00+08:00</published><updated>2017-05-10T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-05-10:/posts/2017/05/10/BFS-to-the-specific-level-of-a-graph.html</id><summary type="html">&lt;p&gt;&lt;a href="https://leetcode.com/problems/word-ladder/#/description"&gt;leetcode原题&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Only one letter can be changed at a time.&lt;/li&gt;
@@ -1684,10 +2600,10 @@ git remote set-url --add https://git.coding.net/synckey/synckey.git
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/2857/share-two-similar-java-solution-that-accpted-by-oj/2"&gt;Share two similar Java solution that Accpted by OJ.&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/2857/share-two-similar-java-solution-that-accpted-by-oj/2"&gt;Share two similar Java solution that Accpted by OJ.&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="algorithm"></category></entry><entry><title>Read .mat Files in Python</title><link href="http://synckey.name/posts/2017/03/30/read-mat-files-in-python.html" rel="alternate"></link><published>2017-03-30T00:00:00+08:00</published><updated>2017-03-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-30:/posts/2017/03/30/read-mat-files-in-python.html</id><summary type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
+&lt;/div&gt;</content><category term="posts"></category><category term="algorithm"></category></entry><entry><title>Read .mat Files in Python</title><link href="http://synckey.name/posts/2017/03/30/read-mat-files-in-python.html" rel="alternate"></link><published>2017-03-30T00:00:00+08:00</published><updated>2017-03-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-30:/posts/2017/03/30/read-mat-files-in-python.html</id><content type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-python"&gt;import scipy.io
 mat = scipy.io.loadmat('file.mat')
 &lt;/code&gt;&lt;/pre&gt;
@@ -1697,23 +2613,10 @@ mat = scipy.io.loadmat('file.mat')
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><content type="html">&lt;p&gt;Some of the open datasets come with matlab format, we can load the matlab format files with python with the following codes :&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-python"&gt;import scipy.io
-mat = scipy.io.loadmat('file.mat')
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Enjoy^_^&lt;/p&gt;
-&lt;div class="footnote"&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://stackoverflow.com/questions/874461/read-mat-files-in-python"&gt;read-mat-files-in-python&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>Enable Pelican to Render Markdown Tables</title><link href="http://synckey.name/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html</id><summary type="html">&lt;p&gt;Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:&lt;/p&gt;
+&lt;/div&gt;</content><category term="machinelearning"></category><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>Enable Pelican to Render Markdown Tables</title><link href="http://synckey.name/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/posts/2017/03/19/enable-pelican-to-render-markdown-tables.html</id><summary type="html">&lt;p&gt;Pelican will not process markdown style table in default. However, if you want to use this kind of tables, you can add the follow config to pelicanconf.py:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-python"&gt;MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.tables':{},
@@ -1769,10 +2672,10 @@ mat = scipy.io.loadmat('file.mat')
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican Document&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican Document&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="tools"></category><category term="pelican"></category><category term="blog"></category></entry><entry><title>今朝一别，或是流水十年</title><link href="http://synckey.name/posts/2017/03/19/see-you-ten-years-later.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/posts/2017/03/19/see-you-ten-years-later.html</id><summary type="html">&lt;p&gt;周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。&lt;/p&gt;
+&lt;/div&gt;</content><category term="tools"></category><category term="tools"></category><category term="pelican"></category><category term="blog"></category></entry><entry><title>今朝一别，或是流水十年</title><link href="http://synckey.name/posts/2017/03/19/see-you-ten-years-later.html" rel="alternate"></link><published>2017-03-19T00:00:00+08:00</published><updated>2017-03-19T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-19:/posts/2017/03/19/see-you-ten-years-later.html</id><summary type="html">&lt;p&gt;周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。&lt;/p&gt;
 &lt;p&gt;跟jw是大学室友，他的床，就在我的隔壁，每天晚上他爬上床，我都能听到。进大学的第一天，我刚到宿舍，就看到他坐在那里，当时对他的第一印象，头很大，可能头大就是他聪明的原因吧。jw和我一样，来自农村的家庭，家里也不富裕，所以共同语言有不少。当时我们常常一起上课，一起出去买东西，没想到后来还一起来了北京，一起去百度实习。虽然他去百度正式工作的时候，我已经不在百度了。&lt;/p&gt;
 &lt;p&gt;2011年夏天，也就是大三快到大四的下学期，我拿了百度的实习offer，学院跟百度有合作，搞了一个&lt;a href="https://github.com/gmsh/dnscache"&gt;项目实训&lt;/a&gt;，jw，我，还有gms分一组，那时候我们每天都顶着夏日，来到机房，敲代码，调试代码。 后来因为他在项目里面表现优异，百度也给了他面试机会。最终，他也拿到了百度的实习offer，百度运维部实习。跟我不是同一批，如果我没记错，他是在我后面入职的。在百度实习的时候，我们并没有很多交集 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;周五jw发微信过来，约周末吃个饭道别。他四月就要去法国读博，用他的话来说，此次见后，可能要十年八年都见不到了。&lt;/p&gt;
 &lt;p&gt;跟jw是大学室友，他的床，就在我的隔壁，每天晚上他爬上床，我都能听到。进大学的第一天，我刚到宿舍，就看到他坐在那里，当时对他的第一印象，头很大，可能头大就是他聪明的原因吧。jw和我一样，来自农村的家庭，家里也不富裕，所以共同语言有不少。当时我们常常一起上课，一起出去买东西，没想到后来还一起来了北京，一起去百度实习。虽然他去百度正式工作的时候，我已经不在百度了。&lt;/p&gt;
@@ -1800,7 +2703,7 @@ mat = scipy.io.loadmat('file.mat')
 何因北归去，
 淮上对秋山.&lt;br /&gt;
   --&amp;lt;淮上喜会梁川故友&amp;gt; 韦应物
-&lt;/blockquote&gt;&lt;/p&gt;</content><category term="life"></category></entry><entry><title>Rename a Tensor or Operation in Tensorflow</title><link href="http://synckey.name/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html" rel="alternate"></link><published>2017-03-17T00:00:00+08:00</published><updated>2017-03-17T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-17:/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html</id><summary type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost no runtime cost:&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/p&gt;</content><category term="posts"></category><category term="life"></category></entry><entry><title>Rename a Tensor or Operation in Tensorflow</title><link href="http://synckey.name/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html" rel="alternate"></link><published>2017-03-17T00:00:00+08:00</published><updated>2017-03-17T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-03-17:/posts/2017/03/17/rename-a-tensor-or-operation-in-tensorflow.html</id><summary type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sometimes we want to rename a Tensor(or an Operation) in Tensorflow, there is no way to do that directly, because a tf.Operation (or tf.Tensor) is immutable once it has been created. The typical way to rename an op is therefore to use tf.identity(), which has almost no runtime cost:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-python"&gt;with tf.name_scope(&amp;quot;abc&amp;quot;):
     z = x + y
     z = tf.identity(z, name=&amp;quot;z&amp;quot;)
@@ -1819,10 +2722,10 @@ mat = scipy.io.loadmat('file.mat')
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/34399588/how-to-rename-a-variable-which-respects-the-name-scope/34399966#34399966"&gt;How to rename a variable which respects the name scope?&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/34399588/how-to-rename-a-variable-which-respects-the-name-scope/34399966#34399966"&gt;How to rename a variable which respects the name scope?&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="tools."></category></entry><entry><title>2016 Full of Serendipities</title><link href="http://synckey.name/posts/2017/02/23/2016-summery.html" rel="alternate"></link><published>2017-02-23T00:00:00+08:00</published><updated>2017-02-23T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-23:/posts/2017/02/23/2016-summery.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;</content><category term="tools"></category><category term="machine learning"></category><category term="deep learning"></category><category term="tools."></category></entry><entry><title>2016 Full of Serendipities</title><link href="http://synckey.name/posts/2017/02/23/2016-summery.html" rel="alternate"></link><published>2017-02-23T00:00:00+08:00</published><updated>2017-02-23T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-23:/posts/2017/02/23/2016-summery.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;2016于我，是充满惊喜的一年，所以只有在它过去了那么久以后，才能安静的把这一些写下来。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;不知道每个人心里是不是都有不愿意提及的往事，在某些时候，你是彻底的骗子，无赖，恶魔。有一阵子活在自己虚设的缱绻而又梦境里，不问对错，不追因果，一切那么自然而然。即使你知道这梦总有梦醒的时刻，结局早已写好，也假装要让它继续圆下去，因为从开始你就是恶魔，恶魔总要让梦破碎。这些事，本可以远离，不用歇斯底里，更不用刨根问底。可喜的是，放弃本不珍贵的东西并不难。高中的时候读过的诗，要过许多年，才解其中意，真正做到的，又能有几个？&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;爱里不见是非,&lt;br /&gt;
@@ -1921,7 +2824,7 @@ mat = scipy.io.loadmat('file.mat')
 &lt;p&gt;从《我是歌手》开始关注徐佳莹，7月份在西直门看了她的演唱会，被她的活泼所惊艳。&lt;/p&gt;
 &lt;p&gt;从今年来开始关注窦文涛的《锵锵三人行》，每集都看，他在优酷做的圆桌派第一季也看完了。
 其他每集都看的节目《有今晚八零后》和《暴走大事件》。以上就是本年的全部精神生活。&lt;/p&gt;
-&lt;p&gt;2016，full of serendipities！&lt;/p&gt;</content><category term="life"></category><category term="posts"></category><category term="mm"></category><category term="summery"></category></entry><entry><title>《概率论》复习笔记</title><link href="http://synckey.name/posts/2017/02/20/review-of-probability.html" rel="alternate"></link><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-20:/posts/2017/02/20/review-of-probability.html</id><summary type="html">&lt;h3&gt;1. 随机事件和概率&lt;/h3&gt;
+&lt;p&gt;2016，full of serendipities！&lt;/p&gt;</content><category term="summery"></category><category term="life"></category><category term="posts"></category><category term="mm"></category><category term="summery"></category></entry><entry><title>《概率论》复习笔记</title><link href="http://synckey.name/posts/2017/02/20/review-of-probability.html" rel="alternate"></link><published>2017-02-20T00:00:00+08:00</published><updated>2017-02-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2017-02-20:/posts/2017/02/20/review-of-probability.html</id><summary type="html">&lt;h3&gt;1. 随机事件和概率&lt;/h3&gt;
 &lt;h4&gt;1.1 全概率公式&lt;/h4&gt;
 &lt;p&gt;设事件 $A_1,A_2,\cdots,A_n$ 两两互不相容，$P(A_i)&amp;gt;0(i=1,2,\cdots,n)$，且$\sum\limits_{i=1}^{n}{A_i}=\Omega$，
 则对任一事件$B$，有
@@ -1994,10 +2897,10 @@ $$
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://www.amazon.cn/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E6%95%99%E7%A8%8B-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/dp/B005EV51AO/ref=sr_1_1?ie=UTF8&amp;amp;qid=1487571721&amp;amp;sr=8-1&amp;amp;keywords=%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1+%E5%88%98%E5%BB%BA%E4%BA%9A"&gt;《概率论与数理统计》&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.amazon.cn/%E5%A4%A7%E5%AD%A6%E6%95%B0%E5%AD%A6%E6%95%99%E7%A8%8B-%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/dp/B005EV51AO/ref=sr_1_1?ie=UTF8&amp;amp;qid=1487571721&amp;amp;sr=8-1&amp;amp;keywords=%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1+%E5%88%98%E5%BB%BA%E4%BA%9A"&gt;《概率论与数理统计》&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>SFV 材料准备</title><link href="http://synckey.name/posts/2016/11/07/sfv-documents.html" rel="alternate"></link><published>2016-11-07T00:00:00+08:00</published><updated>2016-11-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-07:/posts/2016/11/07/sfv-documents.html</id><summary type="html">&lt;h2&gt;需要准备的材料列表&lt;/h2&gt;
+&lt;/div&gt;</content><category term="machinelearning"></category><category term="machine learning"></category><category term="deep learning"></category><category term="probability"></category></entry><entry><title>SFV 材料准备</title><link href="http://synckey.name/posts/2016/11/07/sfv-documents.html" rel="alternate"></link><published>2016-11-07T00:00:00+08:00</published><updated>2016-11-07T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-07:/posts/2016/11/07/sfv-documents.html</id><summary type="html">&lt;h2&gt;需要准备的材料列表&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;护照（原件）&lt;/li&gt;
 &lt;li&gt;拍证件照&lt;/li&gt;
@@ -2099,7 +3002,7 @@ $$
   $(document).ready(function () {
     $("table").attr("class","table table-condensed table-bordered");
   });
-&lt;/script&gt;</content><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>SFV Got</title><link href="http://synckey.name/posts/2016/11/06/succeed-to-get-sfv.html" rel="alternate"></link><published>2016-11-06T00:00:00+08:00</published><updated>2016-11-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-06:/posts/2016/11/06/succeed-to-get-sfv.html</id><summary type="html">&lt;h3&gt;为什么要抢SFV(Silver Fern Job Search Visa)&lt;/h3&gt;
+&lt;/script&gt;</content><category term="sfv"></category><category term="mm"></category><category term="life"></category><category term="sfv"></category></entry><entry><title>SFV Got</title><link href="http://synckey.name/posts/2016/11/06/succeed-to-get-sfv.html" rel="alternate"></link><published>2016-11-06T00:00:00+08:00</published><updated>2016-11-06T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-11-06:/posts/2016/11/06/succeed-to-get-sfv.html</id><summary type="html">&lt;h3&gt;为什么要抢SFV(Silver Fern Job Search Visa)&lt;/h3&gt;
 &lt;p&gt;其实这个问题很难回答，也许是我自己没有想清楚，也许是我自己患得患失。早在2014年从前单位离职的时候，当时的直属领导就问我为什么要离职？1 2 3 4 blabla，不好可以细数一大堆。换个工作就没有这些问题了么？他问道。我无法回答，那是我第一次换工作，我无从知晓——在一个地方遇到问题，就想要逃避，不去面对，这个问题永远也解决不了。逃避，不是解决问题的办法。想要出去的想法其实和换工作一样。眼前不好，不代表换个地方就好。去新西兰是否真的就比国内好？我像三年前一样，茫然不晓。  然而，自己的内心里常常知道自己想要什么（尽管大部分想要的常常也得不到）。自己如此强烈的想要出去的原因可能如下：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;污染。从2012年就开始见识了帝都的雾霾，即使戴着口罩也有那种独特的恶心的气味也逃避不掉。无数个想去奔跑的清晨，被困在房间里面做 insanity。有雾霾的日子，心情不会好。 作为一个健身爱好者和惜命如此的少年，并不想在身体蠢蠢欲动的时候被困在室内。尤其是，不想自己的伴侣 …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h3&gt;为什么要抢SFV(Silver Fern Job Search Visa)&lt;/h3&gt;
@@ -2128,7 +3031,7 @@ $$
 &lt;li&gt;趁年轻，趁还能折腾，也为了能跟妹子过上赤脚跑步的生活，折腾一下，大不了两年以后拿了永久回头签回来。给自己，也是给未来一次机会。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;从决定抢 SFV，到抢到 SFV，到决定使用这个签证去新西兰，心路变化大致如上，有惊喜有失落。自己的命运被托付在一个网页上，甚至从未蒙面的中介手里，却只能旁观，这种感觉也挺神奇和无奈。&lt;/p&gt;
-&lt;p&gt;如果是命运注定要漂泊，大江大海等我来！&lt;/p&gt;</content><category term="mm"></category><category term="life"></category><category term="SFV"></category></entry><entry><title>Notes for Leetcode</title><link href="http://synckey.name/posts/2016/10/20/notes-for-leetcode.md.html" rel="alternate"></link><published>2016-10-20T00:00:00+08:00</published><updated>2016-10-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-20:/posts/2016/10/20/notes-for-leetcode.md.html</id><summary type="html">&lt;h2&gt;1.Binary Number Representation&lt;/h2&gt;
+&lt;p&gt;如果是命运注定要漂泊，大江大海等我来！&lt;/p&gt;</content><category term="SFV"></category><category term="mm"></category><category term="life"></category><category term="SFV"></category></entry><entry><title>Notes for Leetcode</title><link href="http://synckey.name/posts/2016/10/20/notes-for-leetcode.md.html" rel="alternate"></link><published>2016-10-20T00:00:00+08:00</published><updated>2016-10-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-20:/posts/2016/10/20/notes-for-leetcode.md.html</id><summary type="html">&lt;h2&gt;1.Binary Number Representation&lt;/h2&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;x = 0b1111; // which is equals to `x = 15`; and is useful when use the number for masking.
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -2282,19 +3185,19 @@ System.out.println(set);
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/65028/java-clean-code-with-explanations-and-running-time-2-solutions"&gt;Solution to Convert a Number to Hexadecimal&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/65028/java-clean-code-with-explanations-and-running-time-2-solutions"&gt;Solution to Convert a Number to Hexadecimal&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="https://leetcode.com/problems/rotate-function/"&gt;Rotate Function&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://leetcode.com/problems/rotate-function/"&gt;Rotate Function&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:3"&gt;
-&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/58616/java-solution-o-n-with-non-mathametical-explaination/8"&gt;Java Solution O(n) with non mathametical explaination&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://discuss.leetcode.com/topic/58616/java-solution-o-n-with-non-mathametical-explaination/8"&gt;Java Solution O(n) with non mathametical explaination&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:4"&gt;
-&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0"&gt;素数&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://zh.wikipedia.org/wiki/%E7%B4%A0%E6%95%B0"&gt;素数&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="algorithm"></category></entry><entry><title>My Bashrc Backup</title><link href="http://synckey.name/posts/2016/10/11/my-bashrc-backup.html" rel="alternate"></link><published>2016-10-11T00:00:00+08:00</published><updated>2016-10-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-11:/posts/2016/10/11/my-bashrc-backup.html</id><summary type="html">&lt;pre&gt;&lt;code class="language-bash"&gt;# .bashrc
+&lt;/div&gt;</content><category term="posts"></category><category term="algorithm"></category></entry><entry><title>My Bashrc Backup</title><link href="http://synckey.name/posts/2016/10/11/my-bashrc-backup.html" rel="alternate"></link><published>2016-10-11T00:00:00+08:00</published><updated>2016-10-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-10-11:/posts/2016/10/11/my-bashrc-backup.html</id><summary type="html">&lt;pre&gt;&lt;code class="language-bash"&gt;# .bashrc
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -2318,7 +3221,7 @@ alias ll='ls -l'
 export PS1=&amp;quot;\[\e[0;31m\][\u@\H \w]\\$ \[\e[m\]&amp;quot;
 # vim:ts=4:sw=4
 export PATH=$PATH:/usr/local/bin/
-&lt;/code&gt;&lt;/pre&gt;</content><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category><category term="macos"></category></entry><entry><title>JVM Monitor Tool---jvisualvm</title><link href="http://synckey.name/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html" rel="alternate"></link><published>2016-07-26T00:00:00+08:00</published><updated>2016-07-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-07-26:/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html</id><summary type="html">&lt;h2&gt;通过 jvisualvm 查看 jvm 内部详细信息&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;</content><category term="tools"></category><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category><category term="macos"></category></entry><entry><title>JVM Monitor Tool---jvisualvm</title><link href="http://synckey.name/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html" rel="alternate"></link><published>2016-07-26T00:00:00+08:00</published><updated>2016-07-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-07-26:/posts/2016/07/26/jvm-monitor-tool-jvisualvm.html</id><summary type="html">&lt;h2&gt;通过 jvisualvm 查看 jvm 内部详细信息&lt;/h2&gt;
 &lt;pre&gt;&lt;code class="language-bash"&gt;jvisualvm -Dcom.sun.management.jmxremote.port=8999 -Dcom.sun.management.jmxremote.ssl=false \
 -Dcom.sun.management.jmxremote.authenticate=false -Djava.rmi.server.hostname=10.86.46.252
 &lt;/code&gt;&lt;/pre&gt;
@@ -2349,10 +3252,10 @@ e18
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://blog.chinaunix.net/uid-10449864-id-3463151.html"&gt;生产环境下JAVA进程高CPU占用故障排查&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.chinaunix.net/uid-10449864-id-3463151.html"&gt;生产环境下JAVA进程高CPU占用故障排查&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="java"></category><category term="posts"></category><category term="jvm"></category><category term="profile"></category><category term="trouble shooting"></category></entry><entry><title>上品饺子</title><link href="http://synckey.name/posts/2016/04/20/shang-pin-jiao-zi.html" rel="alternate"></link><published>2016-04-20T00:00:00+08:00</published><updated>2016-04-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-04-20:/posts/2016/04/20/shang-pin-jiao-zi.html</id><summary type="html">&lt;p&gt;在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。&lt;/p&gt;
+&lt;/div&gt;</content><category term="tools"></category><category term="java"></category><category term="posts"></category><category term="jvm"></category><category term="profile"></category><category term="trouble shooting"></category></entry><entry><title>上品饺子</title><link href="http://synckey.name/posts/2016/04/20/shang-pin-jiao-zi.html" rel="alternate"></link><published>2016-04-20T00:00:00+08:00</published><updated>2016-04-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-04-20:/posts/2016/04/20/shang-pin-jiao-zi.html</id><summary type="html">&lt;p&gt;在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。&lt;/p&gt;
 &lt;p&gt;从此，就爱上了他们家的饺子，破了减肥不吃晚饭的戒。每次下班经过他们家门口，就走不动了，要做一番心里斗争。结果往往是要进去吃一大碗韭菜猪肉的水饺，加一个荷包蛋才会满足。也常常跟同事推荐，“有空一定要带你们一起去尝一尝水饺——都是手工的，他们家也有面条，面条上的猪肝，肉丝，木耳，香菇，都是现炒的，热腾腾的 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;在住的楼下，有一家不起眼的水饺店，叫上品饺子。饺子店房子很矮，门口挺破。从门口路过很多次，可是从来没有进去过——那样的外观让人一点食欲也没有。可是有一天突然很想吃水饺，就推门走了进去。里面并不大，就4,5张桌子，每个桌子能坐4个人。叫了一碗韭菜鸡蛋的水饺，汤饺。大概10分钟，饺子端上来了，碗很大，汤色是暗红色的，加了醋和酱油，汤上还漂浮着几根香菜梗，闻起来很香。水饺很大，很饱满，尝了一口，很鲜。饺子吃起来是浓浓的韭菜香，是纯手工包的。本来已经做好了吃速冻睡觉的准备，但这满满的一大碗人工包的饺子，的确让人欣喜。&lt;/p&gt;
 &lt;p&gt;从此，就爱上了他们家的饺子，破了减肥不吃晚饭的戒。每次下班经过他们家门口，就走不动了，要做一番心里斗争。结果往往是要进去吃一大碗韭菜猪肉的水饺，加一个荷包蛋才会满足。也常常跟同事推荐，“有空一定要带你们一起去尝一尝水饺——都是手工的，他们家也有面条，面条上的猪肝，肉丝，木耳，香菇，都是现炒的，热腾腾的”。&lt;/p&gt;
 &lt;p&gt;小店的主人是一位大爷，大概50多岁，大爷的一家都在经营折这家饺子馆——大爷负责送外卖，大娘掌勺，女儿叫晶晶，负责端盘子和收钱，儿子负责包饺子，做凉菜。他们家的第五个成员，一直小黄，叫喵喵。喵喵总是在不停的叫，大爷有时候不去送外卖，就会把喵喵抱在腿上，笑眯眯的看着客人在吃饺子。&lt;/p&gt;
@@ -2366,7 +3269,7 @@ e18
 &lt;p&gt;失落的退了出来，真的不开了么？&lt;/p&gt;
 &lt;p&gt;上周六中午，从小店门口路过，看到大爷大妈也在里面，于是又进了小店，想吃一碗饺子，然而大爷大妈只是在这里帮新主人吸引老客户而已，他们真的不开了。他们不开店了将会何去何从？想问却也没问的出口。今晚再次看到大爷在小店里，就走进去要了一份盖饭，大爷叫了我一声小王，像有什么事，没说什么就走了。吃饭的时候，新老板娘说大娘生病了，要回老家养病，才把这家店转让了。不知道大娘得的什么病，也不知道他们看病花了多少钱，有没有医保可以报销。记得大爷以前说他们住在一个地下室，他说他们租不起一套好一点的房子---也许是舍不得租。&lt;/p&gt;
 &lt;p&gt;一场突如其来的病，让一个本充满希望的家庭，又回到了原点。离开北京对他们来说福兮？祸兮？无从知晓。&lt;/p&gt;
-&lt;p&gt;只希望曾经多吃了几碗饺子。&lt;/p&gt;</content><category term="life"></category></entry><entry><title>Grammar in Use 笔记</title><link href="http://synckey.name/posts/2016/03/26/notes-of-grammar-in-use.html" rel="alternate"></link><published>2016-03-26T00:00:00+08:00</published><updated>2016-03-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-26:/posts/2016/03/26/notes-of-grammar-in-use.html</id><summary type="html">&lt;h3&gt;主要的时态&lt;/h3&gt;
+&lt;p&gt;只希望曾经多吃了几碗饺子。&lt;/p&gt;</content><category term="posts"></category><category term="life"></category></entry><entry><title>Grammar in Use 笔记</title><link href="http://synckey.name/posts/2016/03/26/notes-of-grammar-in-use.html" rel="alternate"></link><published>2016-03-26T00:00:00+08:00</published><updated>2016-03-26T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-26:/posts/2016/03/26/notes-of-grammar-in-use.html</id><summary type="html">&lt;h3&gt;主要的时态&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;past(I did)&lt;/li&gt;
 &lt;li&gt;present continuous(I am doing)&lt;/li&gt;
@@ -2501,7 +3404,7 @@ e18
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;不规则动词&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1SVEDIVSxgNnAzOue1fjUx47RJrohZwAS/view?usp=sharing"&gt;常用不规则动词和音标&lt;/a&gt;&lt;/p&gt;</content><category term="英语"></category><category term="语法"></category></entry><entry><title>让VIM记录文件上次编辑的位置</title><link href="http://synckey.name/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html" rel="alternate"></link><published>2016-03-11T00:00:00+08:00</published><updated>2016-03-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-11:/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html</id><summary type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1SVEDIVSxgNnAzOue1fjUx47RJrohZwAS/view?usp=sharing"&gt;常用不规则动词和音标&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="英语"></category><category term="语法"></category></entry><entry><title>让VIM记录文件上次编辑的位置</title><link href="http://synckey.name/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html" rel="alternate"></link><published>2016-03-11T00:00:00+08:00</published><updated>2016-03-11T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-11:/posts/2016/03/11/set-vim-to-remember-previous-eidt-place.html</id><content type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-vim"&gt;autocmd BufReadPost *
 \ if line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;gt;0&amp;amp;&amp;amp;line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;lt;=line(&amp;quot;$&amp;quot;) |
 \ exe &amp;quot;normal g'\&amp;quot;&amp;quot; |
@@ -2518,30 +3421,10 @@ set nu
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://www.2cto.com/os/201311/255061.html"&gt;让VIM记录文件上次编辑的位置&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.2cto.com/os/201311/255061.html"&gt;让VIM记录文件上次编辑的位置&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><content type="html">&lt;p&gt;在&lt;code&gt;~/.vimrc&lt;/code&gt;中加入如下配置:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-vim"&gt;autocmd BufReadPost *
-\ if line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;gt;0&amp;amp;&amp;amp;line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;lt;=line(&amp;quot;$&amp;quot;) |
-\ exe &amp;quot;normal g'\&amp;quot;&amp;quot; |
-\ endif
-autocmd BufReadPost *
-\ if line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;gt;0&amp;amp;&amp;amp;line(&amp;quot;'\&amp;quot;&amp;quot;)&amp;lt;=line(&amp;quot;$&amp;quot;) |
-\ exe &amp;quot;normal g'\&amp;quot;&amp;quot; |
-\ endif
-syntax enable
-set nu
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class="footnote"&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://www.2cto.com/os/201311/255061.html"&gt;让VIM记录文件上次编辑的位置&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</content><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category></entry><entry><title>Summary Concepts of Deep Learning</title><link href="http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html" rel="alternate"></link><published>2016-03-01T00:00:00+08:00</published><updated>2016-03-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-01:/posts/2016/03/01/summary-concepts-of-deep-learning.html</id><summary type="html">&lt;h2&gt;机器学习&lt;/h2&gt;
+&lt;/div&gt;</content><category term="tools"></category><category term="tools"></category><category term="vim"></category><category term="linux"></category><category term="config"></category></entry><entry><title>Summary Concepts of Deep Learning</title><link href="http://synckey.name/posts/2016/03/01/summary-concepts-of-deep-learning.html" rel="alternate"></link><published>2016-03-01T00:00:00+08:00</published><updated>2016-03-01T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2016-03-01:/posts/2016/03/01/summary-concepts-of-deep-learning.html</id><summary type="html">&lt;h2&gt;机器学习&lt;/h2&gt;
 &lt;p&gt;input-&amp;gt;feature representation-&amp;gt;learning algorithm&lt;/p&gt;
 &lt;h3&gt;监督学习&lt;/h3&gt;
 &lt;p&gt;标注过的训练数据.&lt;/p&gt;
@@ -2768,19 +3651,19 @@ $$
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://blog.csdn.net/zouxy09/article/details/8775518"&gt;Deep Learning（深度学习）学习笔记整理系列&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.csdn.net/zouxy09/article/details/8775518"&gt;Deep Learning（深度学习）学习笔记整理系列&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="http://www.deeplearningbook.org/"&gt;Deep Learning&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.deeplearningbook.org/"&gt;Deep Learning&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:3"&gt;
-&lt;p&gt;&lt;a href="http://ufldl.stanford.edu/tutorial/"&gt;Deep Learning Tutorial&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ufldl.stanford.edu/tutorial/"&gt;Deep Learning Tutorial&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:4"&gt;
-&lt;p&gt;&lt;a href="http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B"&gt;http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B"&gt;http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="machine learning"></category><category term="deep learning"></category></entry><entry><title>HHKB 设置与快捷键</title><link href="http://synckey.name/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html" rel="alternate"></link><published>2016-02-26T00:00:00+08:00</published><updated>2016-02-26T00:00:00+08:00</updated><author><name>Jian</name></author><id>tag:synckey.name,2016-02-26:/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html</id><summary type="html">&lt;p&gt;终于入了HHKB的坑，买了一个 HHKB Types pro2， 折腾了一阵子。感觉HHKB的手感并不比Cherry青轴手感好，但是有一点比青轴好太多，就是按键很灵敏。 
+&lt;/div&gt;</content><category term="machinelearning"></category><category term="machine learning"></category><category term="deep learning"></category></entry><entry><title>HHKB 设置与快捷键</title><link href="http://synckey.name/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html" rel="alternate"></link><published>2016-02-26T00:00:00+08:00</published><updated>2016-02-26T00:00:00+08:00</updated><author><name>Jian</name></author><id>tag:synckey.name,2016-02-26:/posts/2016/02/26/hhkb-settings-and-shortcut-keys.html</id><summary type="html">&lt;p&gt;终于入了HHKB的坑，买了一个 HHKB Types pro2， 折腾了一阵子。感觉HHKB的手感并不比Cherry青轴手感好，但是有一点比青轴好太多，就是按键很灵敏。 
 以前我的Cherry &lt;code&gt;F1&lt;/code&gt;按的太多以后就总是有点不灵，而且Cherry的按键总是给人一种按下去粘粘的弹不起来的感觉(按键感觉，不是键帽材质)不是很清爽。
 比Cherry好的第二个优点是使用寿命，机械键盘的开关说是有 2000w 次的寿命，理论上可以用5-8年。&lt;/p&gt;
 &lt;p&gt;而HHKB属于静电电容键盘，按键的触发是根据电容的变化来判断的，每次敲击都没有物理接触，所以静电容理的开关理论上是不会坏的，可以作为程序猿传家宝传给儿子。
@@ -2825,10 +3708,10 @@ $$
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://www.xiaozhou.net/got_HHKB_pro_2-2013-06-03.html"&gt;码农神器HHKB Pro2入手与开箱&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.xiaozhou.net/got_HHKB_pro_2-2013-06-03.html"&gt;码农神器HHKB Pro2入手与开箱&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="HHKB"></category><category term="keyboad"></category></entry><entry><title>Plot Sigmoid in Matlab</title><link href="http://synckey.name/posts/2015/12/24/plot-sigmoid-in-matlab.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/plot-sigmoid-in-matlab.html</id><summary type="html">&lt;pre&gt;&lt;code class="language-matlab"&gt;a=2;
+&lt;/div&gt;</content><category term="posts"></category><category term="HHKB"></category><category term="keyboad"></category></entry><entry><title>Plot Sigmoid in Matlab</title><link href="http://synckey.name/posts/2015/12/24/plot-sigmoid-in-matlab.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/plot-sigmoid-in-matlab.html</id><content type="html">&lt;pre&gt;&lt;code class="language-matlab"&gt;a=2;
 x=-10:0.1:10;
 y=1./[1+exp(-a.*x)];
 plot(x,y,'b');
@@ -2837,16 +3720,7 @@ grid on;
 
 &lt;div class="figure"&gt;
 &lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" /&gt;
-&lt;/div&gt;</summary><content type="html">&lt;pre&gt;&lt;code class="language-matlab"&gt;a=2;
-x=-10:0.1:10;
-y=1./[1+exp(-a.*x)];
-plot(x,y,'b');
-grid on;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class="figure"&gt;
-&lt;img src="/static/images/sigmoid.svg" alt="sigmoid"  width="50%" /&gt;
-&lt;/div&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>Where does sigmoid come from</title><link href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/where-does-sigmoid-come-from.html</id><summary type="html">&lt;blockquote&gt;
+&lt;/div&gt;</content><category term="machinelearning"></category><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>Where does sigmoid come from</title><link href="http://synckey.name/posts/2015/12/24/where-does-sigmoid-come-from.html" rel="alternate"></link><published>2015-12-24T00:00:00+08:00</published><updated>2015-12-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-12-24:/posts/2015/12/24/where-does-sigmoid-come-from.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;主要根据Andrew Ng的教学讲义整理。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;逻辑回归(Logistic Regression)是机器学习中用的最广泛的算法之一，其中 $sigmoid$ 函数是逻辑回归用到的核心函数，它的输出形状如下:
@@ -2945,13 +3819,13 @@ $$&lt;/p&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="http://open.163.com/special/opencourse/machinelearning.html"&gt;Andrew Ng Machine Learning &lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://open.163.com/special/opencourse/machinelearning.html"&gt;Andrew Ng Machine Learning &lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf"&gt;Michael I. Jordan The exponential family: Basics&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.cs.berkeley.edu/~jordan/courses/260-spring10/other-readings/chapter8.pdf"&gt;Michael I. Jordan The exponential family: Basics&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>A Misuse of Spark Broadcast</title><link href="http://synckey.name/posts/2015/11/03/a-misuse-of-spark-broadcast.html" rel="alternate"></link><published>2015-11-03T00:00:00+08:00</published><updated>2015-11-03T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-11-03:/posts/2015/11/03/a-misuse-of-spark-broadcast.html</id><summary type="html">&lt;p&gt;在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：&lt;/p&gt;
+&lt;/div&gt;</content><category term="machinelearning"></category><category term="machine learning"></category><category term="technology"></category><category term="logistic regression"></category></entry><entry><title>A Misuse of Spark Broadcast</title><link href="http://synckey.name/posts/2015/11/03/a-misuse-of-spark-broadcast.html" rel="alternate"></link><published>2015-11-03T00:00:00+08:00</published><updated>2015-11-03T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-11-03:/posts/2015/11/03/a-misuse-of-spark-broadcast.html</id><summary type="html">&lt;p&gt;在写Spark的作业时，如果用到大的lookup table，可以将这个Map直接作为Function的成员变量，这种方案最简单，但是会导致Task的Deserialization时间边的很长，严重影响作业运行时间。Spark可以将一个变量广播并缓存到所有节点上，作为task运行的一个本地查找表。由于之前对Spark api不是很了解，所以就用以下的方式使用了查找表：&lt;/p&gt;
 &lt;pre&gt;&lt;code class="language-java"&gt;public class Test implements Function&amp;lt;String, Boolean&amp;gt; {
 
     private Map&amp;lt;String,String&amp;gt; lookupTable=new HashMap&amp;lt;String, String&amp;gt;();
@@ -2994,7 +3868,7 @@ $$&lt;/p&gt;
         return false;
     }
 }
-&lt;/code&gt;&lt;/pre&gt;</content><category term="spark"></category></entry><entry><title>Iterm2 Clone Session</title><link href="http://synckey.name/posts/2015/05/20/iterm2-clone-session.html" rel="alternate"></link><published>2015-05-20T00:00:00+08:00</published><updated>2015-05-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-05-20:/posts/2015/05/20/iterm2-clone-session.html</id><summary type="html">&lt;pre&gt;&lt;code class="language-bash"&gt;vim ~/.ssh/config
+&lt;/code&gt;&lt;/pre&gt;</content><category term="tools"></category><category term="spark"></category></entry><entry><title>Iterm2 Clone Session</title><link href="http://synckey.name/posts/2015/05/20/iterm2-clone-session.html" rel="alternate"></link><published>2015-05-20T00:00:00+08:00</published><updated>2015-05-20T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-05-20:/posts/2015/05/20/iterm2-clone-session.html</id><content type="html">&lt;pre&gt;&lt;code class="language-bash"&gt;vim ~/.ssh/config
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;贴入如下内容:&lt;/p&gt;
@@ -3008,21 +3882,7 @@ ControlPersist yes
 &lt;p&gt;退出iterm2，重新登录即可。&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/"&gt;Iterm2 auto login 自动登录脚本&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://laughingchs.iteye.com/blog/1317703"&gt;linux clone session&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;pre&gt;&lt;code class="language-bash"&gt;vim ~/.ssh/config
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;贴入如下内容:&lt;/p&gt;
-&lt;pre&gt;&lt;code class="language-bash"&gt;Host *
-ServerAliveInterval 30
-ControlMaster auto
-ControlPath ~/.ssh/master-%r@%h:%p
-ControlPersist yes 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;退出iterm2，重新登录即可。&lt;/p&gt;
-&lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://www.dbathink.com/2012/10/iterm2-auto-automatic-login-log-on-script/"&gt;Iterm2 auto login 自动登录脚本&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://laughingchs.iteye.com/blog/1317703"&gt;linux clone session&lt;/a&gt;&lt;/p&gt;</content><category term="iterm2"></category><category term="mac"></category><category term="session"></category></entry><entry><title>我是怎么减掉了30斤</title><link href="http://synckey.name/posts/2015/04/13/my-experience-of-losing-weight.html" rel="alternate"></link><published>2015-04-13T00:00:00+08:00</published><updated>2015-04-13T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-04-13:/posts/2015/04/13/my-experience-of-losing-weight.html</id><summary type="html">&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="http://laughingchs.iteye.com/blog/1317703"&gt;linux clone session&lt;/a&gt;&lt;/p&gt;</content><category term="tools"></category><category term="iterm2"></category><category term="mac"></category><category term="session"></category></entry><entry><title>我是怎么减掉了30斤</title><link href="http://synckey.name/posts/2015/04/13/my-experience-of-losing-weight.html" rel="alternate"></link><published>2015-04-13T00:00:00+08:00</published><updated>2015-04-13T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2015-04-13:/posts/2015/04/13/my-experience-of-losing-weight.html</id><summary type="html">&lt;div id="weight_container" style=" margin: 0 auto"&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;声明:本文是个人减肥经验，不适合每一个人，请勿盲目采取本文的方法，作者不对任何不良后果负责。&lt;/p&gt;
@@ -3160,7 +4020,7 @@ $(function () {
         }]
     });
 });
-&lt;/script&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Improve Safety On The Road</title><link href="http://synckey.name/posts/2014/12/30/improve-safety-on-the-road.html" rel="alternate"></link><published>2014-12-30T00:00:00+08:00</published><updated>2014-12-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-30:/posts/2014/12/30/improve-safety-on-the-road.html</id><summary type="html">&lt;blockquote&gt;
+&lt;/script&gt;</content><category term="posts"></category><category term="ielts"></category><category term="writing"></category></entry><entry><title>Improve Safety On The Road</title><link href="http://synckey.name/posts/2014/12/30/improve-safety-on-the-road.html" rel="alternate"></link><published>2014-12-30T00:00:00+08:00</published><updated>2014-12-30T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-30:/posts/2014/12/30/improve-safety-on-the-road.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;The only way to improve safety on the road is to severely punish driving offenders. To what extent do you agree or disagree?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach.I am glad to receive any kind of advises(grammar or misuse, etc).&lt;/p&gt;
@@ -3182,7 +4042,7 @@ seriously break a certain law, such as drunk driving,he may lose the right to dr
 the improvement of road safety.&lt;/p&gt;
 &lt;p&gt;In conclusion, we can help people to improve the traffic safety by teaching them the importance of safe driving. Although punishment
 is also a good way to do so, but it is not the best way and only way. Pedestrians and drivers should all  obey traffic regulations and
-laws to keep safe.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Use Animals For Humans</title><link href="http://synckey.name/posts/2014/12/22/use-animals-for-humans.html" rel="alternate"></link><published>2014-12-22T00:00:00+08:00</published><updated>2014-12-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-22:/posts/2014/12/22/use-animals-for-humans.html</id><summary type="html">&lt;blockquote&gt;
+laws to keep safe.&lt;/p&gt;</content><category term="ielts"></category><category term="ielts"></category><category term="writing"></category></entry><entry><title>Use Animals For Humans</title><link href="http://synckey.name/posts/2014/12/22/use-animals-for-humans.html" rel="alternate"></link><published>2014-12-22T00:00:00+08:00</published><updated>2014-12-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-22:/posts/2014/12/22/use-animals-for-humans.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that it is acceptable to use animals for the benefit of humans. Others, however, think that it is wrong to exploit animals for human purposes. Discuss both these views and give your own opinion.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach. I …&lt;/p&gt;</summary><content type="html">&lt;blockquote&gt;
@@ -3204,7 +4064,7 @@ We should focus on how to minimize the sufferings that animals experienced when 
 &lt;p&gt;In sum, animal is an extremely important source of food for human beings which can contribute to the science as well.
 We can surely use animals to live on,but we should use them scientifically and ethically.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://ielts-simon.com/ielts-help-and-english-pr/2011/06/ielts-writing-task-2-gender-and-university-essay.html"&gt;IELTS globalisation essay&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Forcing the Employers to Hire the Same Number of Men and Women</title><link href="http://synckey.name/posts/2014/12/16/gender-balance.html" rel="alternate"></link><published>2014-12-16T00:00:00+08:00</published><updated>2014-12-16T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-16:/posts/2014/12/16/gender-balance.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="http://ielts-simon.com/ielts-help-and-english-pr/2011/06/ielts-writing-task-2-gender-and-university-essay.html"&gt;IELTS globalisation essay&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="ielts"></category><category term="writing"></category></entry><entry><title>Forcing the Employers to Hire the Same Number of Men and Women</title><link href="http://synckey.name/posts/2014/12/16/gender-balance.html" rel="alternate"></link><published>2014-12-16T00:00:00+08:00</published><updated>2014-12-16T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-12-16:/posts/2014/12/16/gender-balance.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that employers should be required to employ equal numbers of men and women. To what extent do you agree or disagree?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Notice:&lt;/strong&gt; this is my practice writing  which may be the worst approach. I am glad to receive any kind of advises(grammar or misuse, etc).&lt;/p&gt;
@@ -3228,7 +4088,7 @@ If the productivity of  a company is not bounded to the gender,employing equal n
 &lt;p&gt;In conclusion, making the most of the gender advantages is benificial for both companies and society.
 That is why I don't agree with the view that forcing the employers to hire the same number of men and women.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://ielts-simon.com/ielts-help-and-english-pr/2011/06/ielts-writing-task-2-gender-and-university-essay.html"&gt;IELTS globalisation essay&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>Distance Learning vs School Learing</title><link href="http://synckey.name/posts/2014/11/24/distance-learning-vs-school-learning.html" rel="alternate"></link><published>2014-11-24T00:00:00+08:00</published><updated>2014-11-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-24:/posts/2014/11/24/distance-learning-vs-school-learning.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="http://ielts-simon.com/ielts-help-and-english-pr/2011/06/ielts-writing-task-2-gender-and-university-essay.html"&gt;IELTS globalisation essay&lt;/a&gt;&lt;/p&gt;</content><category term="ielts"></category><category term="ielts"></category><category term="writing"></category></entry><entry><title>Distance Learning vs School Learing</title><link href="http://synckey.name/posts/2014/11/24/distance-learning-vs-school-learning.html" rel="alternate"></link><published>2014-11-24T00:00:00+08:00</published><updated>2014-11-24T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-24:/posts/2014/11/24/distance-learning-vs-school-learning.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Many people use distance-learning programmes(study material post, TV, Internet, etc.) to study at home,
 but some people think that it cannot bring the same benefits of attending college or university.
 To what extent do you agree or disagree.&lt;/p&gt;
@@ -3256,7 +4116,7 @@ And discussing with classmates from the school contributes to better understandi
 If a student did not catch waht he had learned on the class, he can download some courses from Internet to make up for it. 
 An adult can also turn to classes for help when he encounter some problems which he can not tackle all by himself.&lt;/p&gt;
 &lt;p&gt;So, while we are taking advantage of technology,we should not neglect the importance of traditional learning.
-We should chose our learning methods according to our circumstances.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>What Should Be the Main Function Of A University</title><link href="http://synckey.name/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html" rel="alternate"></link><published>2014-11-12T00:00:00+08:00</published><updated>2014-11-12T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-12:/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html</id><summary type="html">&lt;blockquote&gt;
+We should chose our learning methods according to our circumstances.&lt;/p&gt;</content><category term="ielts"></category><category term="ielts"></category><category term="writing"></category></entry><entry><title>What Should Be the Main Function Of A University</title><link href="http://synckey.name/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html" rel="alternate"></link><published>2014-11-12T00:00:00+08:00</published><updated>2014-11-12T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-11-12:/posts/2014/11/12/what-shuld-be-the-main-function-of-a-university.html</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;Some people think that universities should provide graduates with the knowledge and skills needed in the workplace. 
 Others think that the true function of a university should be to give access to knowledge for its own sake,
 regardless of whether the course is useful to an employer.&lt;/p&gt;
@@ -3287,7 +4147,7 @@ However, they should not totally ignore the requirements of the job market,alter
 they can invite some companies to their campus to introduce what kind of skill they want.  &lt;/p&gt;
 &lt;p&gt;In summary, although the main goal of going to universities of many students is finding a ideal job after graduating,
 universities should help their students to build a good knowledge system and help them to be quick learners and problem solvers instead of
-just teaching them job-related skills.&lt;/p&gt;</content><category term="ielts"></category><category term="writing"></category></entry><entry><title>The Catcher in the Rye</title><link href="http://synckey.name/posts/2014/10/31/the-catcher-in-the-rye.html" rel="alternate"></link><published>2014-10-31T00:00:00+08:00</published><updated>2014-10-31T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-31:/posts/2014/10/31/the-catcher-in-the-rye.html</id><summary type="html">&lt;p&gt;Holden Caulfied 是一个16岁的男孩，他因为课程不及格被学校开除，在他的眼里，周围的人要有奇怪的习惯和毛病。&lt;/p&gt;
+just teaching them job-related skills.&lt;/p&gt;</content><category term="ielts"></category><category term="ielts"></category><category term="writing"></category></entry><entry><title>The Catcher in the Rye</title><link href="http://synckey.name/posts/2014/10/31/the-catcher-in-the-rye.html" rel="alternate"></link><published>2014-10-31T00:00:00+08:00</published><updated>2014-10-31T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-31:/posts/2014/10/31/the-catcher-in-the-rye.html</id><summary type="html">&lt;p&gt;Holden Caulfied 是一个16岁的男孩，他因为课程不及格被学校开除，在他的眼里，周围的人要有奇怪的习惯和毛病。&lt;/p&gt;
 &lt;p&gt;在离开学校之前他与他的室友打了一家，因为室友和他最喜欢的女生约会，他心里非常不舒服。一个十六岁的男孩，面对自己的梦中小情人，
 宁愿远远的看着她，也不希望她跟别的男孩子约会。更何况她的约会对象在Holden看来根本配不上她。Holden心里当然不高兴。打完架他决定早点离开学校了。&lt;/p&gt;
 &lt;p&gt;对于一个青春期的孩子来说，也许最大的恐惧就是不合群，希望和同龄人做一样的事情，上课，考试，放假。可是Hoden却不得不提前开始寒假，又不能回家，
@@ -3315,18 +4175,4 @@ cliff. What I have to do, I have to catch everybody if they start to go over the
 &lt;p&gt;走的时候，他跟他妹妹借钱，因为他没钱了。Phoebe把她圣诞节的所有的钱都给了他，他其实也不想全部都要，但是她坚持要给他。他花的非常节省，因为这是他妹妹的钱。&lt;/p&gt;
 &lt;p&gt;他打电话给他的以前的一个老师去他家借宿，夜里醒来发现老师在抚摸他的脸，他吓坏了，怀疑老师是gay,于是他连夜逃了出来，他产生了一个念头，离家出走，决定去西部，装作一个又聋又哑的人。走前还想跟Phoebe道别，于是给妹妹留了纸条，中午在博物馆门口等她。在学校和博物馆里，他都看到有人在墙上写着&lt;code&gt;Fuck you&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;他等来了妹妹，妹妹却拖着行李箱要和他一起走，他慌了，不希望妹妹和她一起走，因为她是他最爱的人，没有人想要最爱的人跟自己一起做愚蠢的事情。他们一起走到了游乐场，他看着妹妹开心的坐着旋转木马，填空下着大雨，他看着妹妹不停的旋转，心里开心极了，于是决定不走了。&lt;/p&gt;
-&lt;p&gt;也许每个人的内心都和Holden一样，看别人都觉得虚伪做作，总觉得自己才是最对的，最好的。即使这样也有值得牵挂的和珍爱的人，如果幸运，自己珍爱的人也能珍爱你。心中保有的那奔跑在绿色麦田和跳跃在蓝天白云上的小小幻想，跟他们在一起才会想起吧。&lt;/p&gt;</content><category term="notes"></category></entry><entry><title>Big Sarcosaurus</title><link href="http://synckey.name/posts/2014/10/22/big-sarcosaurus.html" rel="alternate"></link><published>2014-10-22T00:00:00+08:00</published><updated>2014-10-22T00:00:00+08:00</updated><author><name>Andy</name></author><id>tag:synckey.name,2014-10-22:/posts/2014/10/22/big-sarcosaurus.html</id><summary type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat, which was kind of a surprise for me.
-She said that she  would take an exam today and she would have some time after then. 
-I invited her to come to see me and have lunch together …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Wen asked me how I was those days  in the morning via wechat, which was kind of a surprise for me.
-She said that she  would take an exam today and she would have some time after then. 
-I invited her to come to see me and have lunch together. She said that she had bought some Big Sarcosaurus(&lt;code&gt;大懒龙&lt;/code&gt; in Chinese).
-I  don't know what it is and incorrectly, I thought it was a restaurant. I searched it on the baidu map,and the website told me that it was 1h away from me. 
-I might do not have enough time to go there and I told her to cancel the lunch.
-However, I was wrong, Big Sacrosaurus can be taken away. It was significantly nice for Wen to come back(angrily).&lt;/p&gt;
-&lt;p&gt;I really enjoy the lunch in PizzaHut, during which we talked about her work,and mine.
-Joice combined with upset makes her work interesting and challenging. I know She can make it and grow up to a good banker.&lt;/p&gt;
-&lt;p&gt;It is not good recently, but I really appreciate the time talking with Wen and the Big Sacrosaurus she brought for me .&lt;/p&gt;
-&lt;div class="figure"&gt;
-    &lt;img src="/static/images/bigsarcosaurus.jpg" alt="Big Sarcosaurus" style="width:50%" /&gt;
-    &lt;div class="caption"&gt;Big Sarcosaurus&lt;/div&gt;
-&lt;/div&gt;</content><category term="personal"></category></entry></feed>
+&lt;p&gt;也许每个人的内心都和Holden一样，看别人都觉得虚伪做作，总觉得自己才是最对的，最好的。即使这样也有值得牵挂的和珍爱的人，如果幸运，自己珍爱的人也能珍爱你。心中保有的那奔跑在绿色麦田和跳跃在蓝天白云上的小小幻想，跟他们在一起才会想起吧。&lt;/p&gt;</content><category term="Posts"></category><category term="notes"></category></entry></feed>

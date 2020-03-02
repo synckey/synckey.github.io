@@ -103,11 +103,11 @@
             <h1>Java 中 volatile, spin lock 和 synchroized 的语义</h1>
             <h2 class="headline">2017-12-02 Beijing </h2>
         </header>
-        <p>读《深入理解Java虚拟机》<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>，对volatile，spin lock，synchronized　有了新的认识，整理记录如下。</p>
+        <p>读《深入理解Java虚拟机》<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>，对volatile，spin lock，synchronized　有了新的认识，整理记录如下。</p>
 <h3>Java内存模型（Java Memory Model）</h3>
 <p><div class="figure">
     <img src="/static/images/java-volatile-spinlock-synchronized-jmm.svg" alt="degree_deploma"  width="100%" class="img-responsive carousel-inner img-rounded"/>
-    <div class="caption">线程，主内存，工作内存三者之间的关系<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></div>
+    <div class="caption">线程，主内存，工作内存三者之间的关系<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></div>
  </div></p>
 <p>给定一个程序和一组执行序列，一个内存模型描述了一组执行序列是不是这个程序的合法执行序列。Java内存模型根据一系列规则来检测执行序列中的每个读操作和
 其对应的写操作是不是合法，它描述了一个程序可能的行为。</p>
@@ -137,7 +137,7 @@ Java还提供了一种在某些情况下比上锁更便捷的机制---volatile�
 变量的运算在并发下并不安全。因为运算操作并不是原子的，例如<code>x++</code>看上去是单独操作，但是却是由读取-修改-写入操作序列组成的组合操作。
 由于volatile变量只能保证可见性，在不符合以下两条规则的运算场景中，我们然要通过加锁来保证原子性。</p>
 <ol>
-<li>对变量的写操作不依赖于当前值<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>。</li>
+<li>对变量的写操作不依赖于当前值<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>。</li>
 <li>该变量没有包含在具有其他变量的不变式中。  </li>
 </ol>
 <pre><code class="language-java">    @NotThreadSafe
@@ -179,16 +179,16 @@ Java还提供了一种在某些情况下比上锁更便捷的机制---volatile�
 <hr />
 <ol>
 <li id="fn:1">
-<p><a href="https://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-JVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%91%A8%E5%BF%97%E6%98%8E/dp/B00D2ID4PK/ref=sr_1_1?ie=UTF8&amp;qid=1512302879&amp;sr=8-1&amp;keywords=%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E8%99%9A%E6%8B%9F%E6%9C%BA">深入理解Java虚拟机:JVM高级特性与最佳实践(第2版)</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p><a href="https://www.amazon.cn/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-JVM%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7%E4%B8%8E%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5-%E5%91%A8%E5%BF%97%E6%98%8E/dp/B00D2ID4PK/ref=sr_1_1?ie=UTF8&amp;qid=1512302879&amp;sr=8-1&amp;keywords=%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E8%99%9A%E6%8B%9F%E6%9C%BA">深入理解Java虚拟机:JVM高级特性与最佳实践(第2版)</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p><a href="https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html">JSR 133 (Java Memory Model) FAQ</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p><a href="https://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html">JSR 133 (Java Memory Model) FAQ</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p><a href="https://docs.oracle.com/javase/specs/jls/se9/jls9.pdf">jls9</a>&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p><a href="https://docs.oracle.com/javase/specs/jls/se9/jls9.pdf">jls9</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p><a href="https://www.ibm.com/developerworks/cn/java/j-jtp06197.html">正确使用 Volatile 变量</a>&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p><a href="https://www.ibm.com/developerworks/cn/java/j-jtp06197.html">正确使用 Volatile 变量</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -252,7 +252,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 <div id="wrapper">
     <div class="footer">
-        &copy; 2018 andy
+        &copy; 2020 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>

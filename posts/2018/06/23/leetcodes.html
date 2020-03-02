@@ -917,8 +917,8 @@ i |0         |
 </code></pre>
 
 <p>From here we can easily fill the whole grid: for each <code>(x, y)</code>, we check if <code>S[x] == T[y]</code> we add the previous item and the previous item in the previous row, otherwise we copy the previous item in the same row. The reason is simple:
-<em> if the current character in S doesn't equal to current character T, then we have the same number of distinct subsequences as we had without the new character.
-</em> if the current character in S equal to the current character T, then the distinct number of subsequences: the number we had before plus the distinct number of subsequences we had with less longer T and less longer S.<br />
+* if the current character in S doesn't equal to current character T, then we have the same number of distinct subsequences as we had without the new character.
+* if the current character in S equal to the current character T, then the distinct number of subsequences: the number we had before plus the distinct number of subsequences we had with less longer T and less longer S.<br />
 An example:<br />
 <code>S: [acdabefbc]</code> and <code>T: [ab]</code>  </p>
 <p>first we check with <code>a</code>:  </p>
@@ -1027,10 +1027,10 @@ The code of solving Longest Substring with At Most Two Distinct Characters is be
 <hr />
 <ol>
 <li id="fn:1">
-<p><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39775/Accepted-short-solution-in-Java">Accepted short solution in Java</a>&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/discuss/39775/Accepted-short-solution-in-Java">Accepted short solution in Java</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p><a href="https://leetcode.com/problems/remove-k-digits/discuss/88660/A-greedy-method-using-stack-O(n)-time-and-O(n)-space">A greedy method using stack, O(n) time and O(n) space</a>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p><a href="https://leetcode.com/problems/remove-k-digits/discuss/88660/A-greedy-method-using-stack-O(n)-time-and-O(n)-space">A greedy method using stack, O(n) time and O(n) space</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1097,7 +1097,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 <div id="wrapper">
     <div class="footer">
-        &copy; 2018 andy
+        &copy; 2020 andy
         &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
         Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
     </div>
